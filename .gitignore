@@ -12,3 +12,6 @@ Thumbs.db
 
 # Other
 .claude/
+
+# Node.js
+node_modules/
