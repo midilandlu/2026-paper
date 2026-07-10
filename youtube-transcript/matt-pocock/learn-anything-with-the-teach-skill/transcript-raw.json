@@ -1,0 +1,1947 @@
+[
+  {
+    "text": "I realized the other day, I've been",
+    "start": 0,
+    "duration": 3.72
+  },
+  {
+    "text": "teaching stuff for 10 years. I was a",
+    "start": 1.2,
+    "duration": 4.16
+  },
+  {
+    "text": "voice coach for 6 years and I've been",
+    "start": 3.72,
+    "duration": 3.72
+  },
+  {
+    "text": "doing this job teaching devs for 4",
+    "start": 5.36,
+    "duration": 3.44
+  },
+  {
+    "text": "years. And for a while I've been",
+    "start": 7.44,
+    "duration": 3.24
+  },
+  {
+    "text": "thinking, wouldn't it be great if I",
+    "start": 8.8,
+    "duration": 3.24
+  },
+  {
+    "text": "could take everything I know about",
+    "start": 10.68,
+    "duration": 3.64
+  },
+  {
+    "text": "teaching and put it inside a skill so",
+    "start": 12.04,
+    "duration": 4.32
+  },
+  {
+    "text": "that anyone could learn anything. I had",
+    "start": 14.32,
+    "duration": 3.92
+  },
+  {
+    "text": "a long bus ride to London the other day",
+    "start": 16.36,
+    "duration": 4.36
+  },
+  {
+    "text": "and I wrote a teach skill and it turns",
+    "start": 18.24,
+    "duration": 4.88
+  },
+  {
+    "text": "out that it's pretty good. It taught me",
+    "start": 20.72,
+    "duration": 4.4
+  },
+  {
+    "text": "how to solve a Rubik's Cube, which is",
+    "start": 23.12,
+    "duration": 3.48
+  },
+  {
+    "text": "something, you know, I've always wanted",
+    "start": 25.12,
+    "duration": 3.68
+  },
+  {
+    "text": "to learn how to do, but I never really",
+    "start": 26.6,
+    "duration": 4.36
+  },
+  {
+    "text": "had the time or inclination to do it.",
+    "start": 28.8,
+    "duration": 3.6
+  },
+  {
+    "text": "But with this teach skill, it felt like",
+    "start": 30.96,
+    "duration": 3.72
+  },
+  {
+    "text": "I had a real teacher who was teaching",
+    "start": 32.4,
+    "duration": 4.92
+  },
+  {
+    "text": "how I like to be taught and was totally",
+    "start": 34.68,
+    "duration": 4.16
+  },
+  {
+    "text": "aligned with my mission. And I'm going",
+    "start": 37.32,
+    "duration": 2.8
+  },
+  {
+    "text": "to show you how I did it. The key",
+    "start": 38.84,
+    "duration": 2.8
+  },
+  {
+    "text": "concept when we're looking at a teach",
+    "start": 40.12,
+    "duration": 4.44
+  },
+  {
+    "text": "skill is some skills can be stateful and",
+    "start": 41.64,
+    "duration": 5.44
+  },
+  {
+    "text": "some skills can be stateless. If a skill",
+    "start": 44.56,
+    "duration": 3.96
+  },
+  {
+    "text": "is stateless, it means that it doesn't",
+    "start": 47.08,
+    "duration": 4.08
+  },
+  {
+    "text": "retain any state from previous runs. It",
+    "start": 48.52,
+    "duration": 4.4
+  },
+  {
+    "text": "doesn't have any memory of the things",
+    "start": 51.16,
+    "duration": 3.24
+  },
+  {
+    "text": "that you've done before. In other words,",
+    "start": 52.92,
+    "duration": 3.2
+  },
+  {
+    "text": "a stateless skill doesn't save anything",
+    "start": 54.4,
+    "duration": 3.6
+  },
+  {
+    "text": "on the file system to help it pick up",
+    "start": 56.12,
+    "duration": 3.6
+  },
+  {
+    "text": "where it left off later. Whereas",
+    "start": 58,
+    "duration": 4.16
+  },
+  {
+    "text": "stateful skills do do that. They save",
+    "start": 59.72,
+    "duration": 4.28
+  },
+  {
+    "text": "things either to the local file system",
+    "start": 62.16,
+    "duration": 4.08
+  },
+  {
+    "text": "or they save things to MCP servers. They",
+    "start": 64,
+    "duration": 4.52
+  },
+  {
+    "text": "keep notes that they later track.",
+    "start": 66.24,
+    "duration": 3.96
+  },
+  {
+    "text": "Initially, I was thinking about teach as",
+    "start": 68.52,
+    "duration": 3.64
+  },
+  {
+    "text": "a kind of stateless skill where you",
+    "start": 70.2,
+    "duration": 4.16
+  },
+  {
+    "text": "would just say, \"Teach me this thing.\"",
+    "start": 72.16,
+    "duration": 4.04
+  },
+  {
+    "text": "and then it would just find some good",
+    "start": 74.36,
+    "duration": 4.44
+  },
+  {
+    "text": "resources for you and give you like a an",
+    "start": 76.2,
+    "duration": 4.16
+  },
+  {
+    "text": "output that would teach you a lesson",
+    "start": 78.8,
+    "duration": 3
+  },
+  {
+    "text": "about that thing. But I realized that",
+    "start": 80.36,
+    "duration": 3.08
+  },
+  {
+    "text": "all the good teaching that I do is",
+    "start": 81.8,
+    "duration": 4.52
+  },
+  {
+    "text": "stateful where I teach you, I being the",
+    "start": 83.44,
+    "duration": 5.2
+  },
+  {
+    "text": "teacher, I remember where you've got to.",
+    "start": 86.32,
+    "duration": 4.44
+  },
+  {
+    "text": "I know what you've learned. I know what",
+    "start": 88.64,
+    "duration": 4.24
+  },
+  {
+    "text": "you can go to next and I've got a bunch",
+    "start": 90.76,
+    "duration": 4.12
+  },
+  {
+    "text": "of great resources that I remember from",
+    "start": 92.88,
+    "duration": 3.36
+  },
+  {
+    "text": "previous times that I've taught this",
+    "start": 94.88,
+    "duration": 3.64
+  },
+  {
+    "text": "thing to teach you about it. So, I",
+    "start": 96.24,
+    "duration": 4.24
+  },
+  {
+    "text": "decided that teach had to be a stateful",
+    "start": 98.52,
+    "duration": 4.04
+  },
+  {
+    "text": "skill. As an example, if you've used my",
+    "start": 100.48,
+    "duration": 4.04
+  },
+  {
+    "text": "skills repo before, you know that grill",
+    "start": 102.56,
+    "duration": 4.56
+  },
+  {
+    "text": "me is totally stateless. It just grills",
+    "start": 104.52,
+    "duration": 5.16
+  },
+  {
+    "text": "you about a topic until you're ready to",
+    "start": 107.12,
+    "duration": 5.24
+  },
+  {
+    "text": "implement. But then grill with docs is",
+    "start": 109.68,
+    "duration": 4.88
+  },
+  {
+    "text": "actually stateful. In other words, it",
+    "start": 112.36,
+    "duration": 4.8
+  },
+  {
+    "text": "saves some local ADRs, architectural",
+    "start": 114.56,
+    "duration": 4.68
+  },
+  {
+    "text": "decision records. It saves some other",
+    "start": 117.16,
+    "duration": 3.32
+  },
+  {
+    "text": "stuff, some",
+    "start": 119.24,
+    "duration": 3.4
+  },
+  {
+    "text": "glossaries to the repo as well. And so",
+    "start": 120.48,
+    "duration": 4.04
+  },
+  {
+    "text": "Grill with Docs is stateful and it gets",
+    "start": 122.64,
+    "duration": 4.32
+  },
+  {
+    "text": "better over time, whereas Grill me is",
+    "start": 124.52,
+    "duration": 4.239
+  },
+  {
+    "text": "totally stateless. Now, one of these is",
+    "start": 126.96,
+    "duration": 3.719
+  },
+  {
+    "text": "not better than the other, they're just",
+    "start": 128.759,
+    "duration": 4.121
+  },
+  {
+    "text": "useful in different situations. And so",
+    "start": 130.679,
+    "duration": 3.441
+  },
+  {
+    "text": "when you're designing skills, you need",
+    "start": 132.88,
+    "duration": 2.76
+  },
+  {
+    "text": "to be careful to think about whether",
+    "start": 134.12,
+    "duration": 4.36
+  },
+  {
+    "text": "they need to be stateless or stateful.",
+    "start": 135.64,
+    "duration": 4.6
+  },
+  {
+    "text": "And Teach needed to be stateful. The way",
+    "start": 138.48,
+    "duration": 3.52
+  },
+  {
+    "text": "you install this skill is you go to my",
+    "start": 140.24,
+    "duration": 4.12
+  },
+  {
+    "text": "skills repo, mapper.got skills. You go",
+    "start": 142,
+    "duration": 4.4
+  },
+  {
+    "text": "down to this quick start here and you",
+    "start": 144.36,
+    "duration": 4.48
+  },
+  {
+    "text": "just run the skills.sh installer and you",
+    "start": 146.4,
+    "duration": 4.24
+  },
+  {
+    "text": "choose the Teach skill. Once you do",
+    "start": 148.84,
+    "duration": 4
+  },
+  {
+    "text": "that, you go to an empty directory and",
+    "start": 150.64,
+    "duration": 4.64
+  },
+  {
+    "text": "you run Teach inside your coding agent.",
+    "start": 152.84,
+    "duration": 3.92
+  },
+  {
+    "text": "So for instance, in this directory,",
+    "start": 155.28,
+    "duration": 3.36
+  },
+  {
+    "text": "which is my Rubik's Cube directory, I",
+    "start": 156.76,
+    "duration": 3.88
+  },
+  {
+    "text": "said, \"Teach me to how to solve a",
+    "start": 158.64,
+    "duration": 3.68
+  },
+  {
+    "text": "Rubik's Cube.\" And you'll notice during",
+    "start": 160.64,
+    "duration": 4.6
+  },
+  {
+    "text": "my journey how many files it has created",
+    "start": 162.32,
+    "duration": 4.84
+  },
+  {
+    "text": "here. But the first one it created was",
+    "start": 165.24,
+    "duration": 3.28
+  },
+  {
+    "text": "the mission. I believe that for a",
+    "start": 167.16,
+    "duration": 3.16
+  },
+  {
+    "text": "teacher to be effective, you need to",
+    "start": 168.52,
+    "duration": 4.6
+  },
+  {
+    "text": "understand why a student wants to learn",
+    "start": 170.32,
+    "duration": 5.2
+  },
+  {
+    "text": "the thing. And so I got this skill to",
+    "start": 173.12,
+    "duration": 5.24
+  },
+  {
+    "text": "create a mission for you. Here it says,",
+    "start": 175.52,
+    "duration": 3.88
+  },
+  {
+    "text": "\"Matt wants to be able to take a",
+    "start": 178.36,
+    "duration": 2.8
+  },
+  {
+    "text": "scrambled 3 by 3 Rubik's Cube and solve",
+    "start": 179.4,
+    "duration": 3.6
+  },
+  {
+    "text": "it unaided at least once. The goal is",
+    "start": 181.16,
+    "duration": 3.44
+  },
+  {
+    "text": "the achievement itself, not speed, not",
+    "start": 183,
+    "duration": 3.12
+  },
+  {
+    "text": "theory.\" The next thing it does is it",
+    "start": 184.6,
+    "duration": 4
+  },
+  {
+    "text": "creates a set of resources. So it goes",
+    "start": 186.12,
+    "duration": 5
+  },
+  {
+    "text": "and searches the web for actual primary",
+    "start": 188.6,
+    "duration": 5.04
+  },
+  {
+    "text": "source, high trust resources that it's",
+    "start": 191.12,
+    "duration": 4.76
+  },
+  {
+    "text": "going to use to create the lessons out",
+    "start": 193.64,
+    "duration": 3.8
+  },
+  {
+    "text": "of. It does this on the first pass when",
+    "start": 195.88,
+    "duration": 3.52
+  },
+  {
+    "text": "you ask it to teach you something and",
+    "start": 197.44,
+    "duration": 4.44
+  },
+  {
+    "text": "then it will continue to update these as",
+    "start": 199.4,
+    "duration": 4.36
+  },
+  {
+    "text": "you go. And then it will create your",
+    "start": 201.88,
+    "duration": 4
+  },
+  {
+    "text": "first lesson for you. And lessons are",
+    "start": 203.76,
+    "duration": 3.72
+  },
+  {
+    "text": "stored in the lessons folder and then",
+    "start": 205.88,
+    "duration": 3.12
+  },
+  {
+    "text": "numbered like this and they're all",
+    "start": 207.48,
+    "duration": 4.08
+  },
+  {
+    "text": "individual HTML files. HTML is just so",
+    "start": 209,
+    "duration": 4.44
+  },
+  {
+    "text": "much richer than markdown, it allows it",
+    "start": 211.56,
+    "duration": 3.84
+  },
+  {
+    "text": "to be so much more expressive, so much",
+    "start": 213.44,
+    "duration": 3.84
+  },
+  {
+    "text": "more interactive. And this is really the",
+    "start": 215.4,
+    "duration": 4.08
+  },
+  {
+    "text": "core of what makes this such a good",
+    "start": 217.28,
+    "duration": 3.76
+  },
+  {
+    "text": "learning experience. And here is my",
+    "start": 219.48,
+    "duration": 3.64
+  },
+  {
+    "text": "first lesson, anatomy, notation and the",
+    "start": 221.04,
+    "duration": 4.84
+  },
+  {
+    "text": "white cross. And it basically teaches",
+    "start": 223.12,
+    "duration": 5.36
+  },
+  {
+    "text": "you just what you need to know at that",
+    "start": 225.88,
+    "duration": 4.56
+  },
+  {
+    "text": "moment. It gives you diagrams, it gives",
+    "start": 228.48,
+    "duration": 4.12
+  },
+  {
+    "text": "you very simple explainers, gives you",
+    "start": 230.44,
+    "duration": 4.12
+  },
+  {
+    "text": "call outs, and it gives you quizzes,",
+    "start": 232.6,
+    "duration": 3.96
+  },
+  {
+    "text": "too. One thing I find really important",
+    "start": 234.56,
+    "duration": 3.4
+  },
+  {
+    "text": "whenever you're teaching anything is to",
+    "start": 236.56,
+    "duration": 4.36
+  },
+  {
+    "text": "develop a feedback loop, and quizzes are",
+    "start": 237.96,
+    "duration": 5.08
+  },
+  {
+    "text": "okay at this. They're basically good if",
+    "start": 240.92,
+    "duration": 4.08
+  },
+  {
+    "text": "you can't find any richer feedback loop.",
+    "start": 243.04,
+    "duration": 3.44
+  },
+  {
+    "text": "Again, if we zoom down this, we've got",
+    "start": 245,
+    "duration": 4.56
+  },
+  {
+    "text": "notations, we've got traps, we've got",
+    "start": 246.48,
+    "duration": 4.88
+  },
+  {
+    "text": "your first skill here. And so, it's",
+    "start": 249.56,
+    "duration": 3.72
+  },
+  {
+    "text": "giving me the knowledge that I need, but",
+    "start": 251.36,
+    "duration": 3.68
+  },
+  {
+    "text": "also encouraging me to develop the",
+    "start": 253.28,
+    "duration": 3.92
+  },
+  {
+    "text": "skills I need, which is slightly",
+    "start": 255.04,
+    "duration": 4.12
+  },
+  {
+    "text": "different. And the And the skill itself",
+    "start": 257.2,
+    "duration": 3.759
+  },
+  {
+    "text": "knows that. Once I completed the lesson,",
+    "start": 259.16,
+    "duration": 3.44
+  },
+  {
+    "text": "and I said, \"Yes, I can make the white",
+    "start": 260.959,
+    "duration": 4.241
+  },
+  {
+    "text": "cross,\" then it recommended that, or",
+    "start": 262.6,
+    "duration": 5.16
+  },
+  {
+    "text": "rather recorded that, inside a learning",
+    "start": 265.2,
+    "duration": 4.76
+  },
+  {
+    "text": "record here. And these learning records",
+    "start": 267.76,
+    "duration": 5.04
+  },
+  {
+    "text": "are very simple records that the agent",
+    "start": 269.96,
+    "duration": 6.4
+  },
+  {
+    "text": "creates when I report how I'm doing. So,",
+    "start": 272.8,
+    "duration": 5.44
+  },
+  {
+    "text": "this allows it to keep track of how I'm",
+    "start": 276.36,
+    "duration": 3.76
+  },
+  {
+    "text": "doing, and just like a real teacher,",
+    "start": 278.24,
+    "duration": 4.08
+  },
+  {
+    "text": "then tailor the next lesson to what I",
+    "start": 280.12,
+    "duration": 3.64
+  },
+  {
+    "text": "need. Here's another explainer from",
+    "start": 282.32,
+    "duration": 4.16
+  },
+  {
+    "text": "slightly further down this course. I",
+    "start": 283.76,
+    "duration": 4.48
+  },
+  {
+    "text": "suppose it's kind of creating a course",
+    "start": 286.48,
+    "duration": 4.12
+  },
+  {
+    "text": "as we go based on what I need. So, this",
+    "start": 288.24,
+    "duration": 4.92
+  },
+  {
+    "text": "one here, it was okay, it started to add",
+    "start": 290.6,
+    "duration": 5.44
+  },
+  {
+    "text": "like little citations now. Again, more",
+    "start": 293.16,
+    "duration": 4.56
+  },
+  {
+    "text": "quizzes. I mean, I I just find this",
+    "start": 296.04,
+    "duration": 4.16
+  },
+  {
+    "text": "layout really nice to look at and really",
+    "start": 297.72,
+    "duration": 3.96
+  },
+  {
+    "text": "useful. I was sort of working on the",
+    "start": 300.2,
+    "duration": 3.48
+  },
+  {
+    "text": "skill as I was building this, too. And",
+    "start": 301.68,
+    "duration": 3.96
+  },
+  {
+    "text": "so, I added this little bottom or thing",
+    "start": 303.68,
+    "duration": 4.68
+  },
+  {
+    "text": "at the bottom. It says It tries to find",
+    "start": 305.64,
+    "duration": 5.08
+  },
+  {
+    "text": "uh communities where you can ask",
+    "start": 308.36,
+    "duration": 4.12
+  },
+  {
+    "text": "questions here. Because sure, you can",
+    "start": 310.72,
+    "duration": 4.12
+  },
+  {
+    "text": "develop knowledge and skills here, but",
+    "start": 312.48,
+    "duration": 4.24
+  },
+  {
+    "text": "the only way you're going to be develop",
+    "start": 314.84,
+    "duration": 4.04
+  },
+  {
+    "text": "wisdom about the thing is actually",
+    "start": 316.72,
+    "duration": 3.88
+  },
+  {
+    "text": "interacting with a community testing",
+    "start": 318.88,
+    "duration": 3.32
+  },
+  {
+    "text": "your ideas out in the real world. It",
+    "start": 320.6,
+    "duration": 3.56
+  },
+  {
+    "text": "also develops reference material for",
+    "start": 322.2,
+    "duration": 3.36
+  },
+  {
+    "text": "you, too. This was something I noticed",
+    "start": 324.16,
+    "duration": 3.44
+  },
+  {
+    "text": "that I needed. So, there's a glossary.",
+    "start": 325.56,
+    "duration": 4.12
+  },
+  {
+    "text": "This glossary has the anatomy, it has",
+    "start": 327.6,
+    "duration": 4.68
+  },
+  {
+    "text": "the notation here, has the solving grip,",
+    "start": 329.68,
+    "duration": 5.2
+  },
+  {
+    "text": "the daisy, sort of anything like weird",
+    "start": 332.28,
+    "duration": 5.12
+  },
+  {
+    "text": "jargon that we've learned is going to go",
+    "start": 334.88,
+    "duration": 4.08
+  },
+  {
+    "text": "into the glossary. This is really",
+    "start": 337.4,
+    "duration": 2.68
+  },
+  {
+    "text": "useful, especially if you're learning",
+    "start": 338.96,
+    "duration": 2.76
+  },
+  {
+    "text": "like a coding language using this. It",
+    "start": 340.08,
+    "duration": 3.6
+  },
+  {
+    "text": "also means that future lessons can be",
+    "start": 341.72,
+    "duration": 3.88
+  },
+  {
+    "text": "more concise because they're able to",
+    "start": 343.68,
+    "duration": 4.28
+  },
+  {
+    "text": "reference the term in the glossary, and",
+    "start": 345.6,
+    "duration": 4.04
+  },
+  {
+    "text": "you can look back if you're confused. It",
+    "start": 347.96,
+    "duration": 3.24
+  },
+  {
+    "text": "also creates cheat sheets for you. So",
+    "start": 349.64,
+    "duration": 3.6
+  },
+  {
+    "text": "this is a solve card here where it's",
+    "start": 351.2,
+    "duration": 4.12
+  },
+  {
+    "text": "basically just giving me the entire",
+    "start": 353.24,
+    "duration": 4.8
+  },
+  {
+    "text": "solve. If I want just a single place to",
+    "start": 355.32,
+    "duration": 4.96
+  },
+  {
+    "text": "look at how to create or solve a Rubik's",
+    "start": 358.04,
+    "duration": 4.04
+  },
+  {
+    "text": "Cube, this is the place I can go. And",
+    "start": 360.28,
+    "duration": 3.92
+  },
+  {
+    "text": "finally, just to explain this notes.md",
+    "start": 362.08,
+    "duration": 4.36
+  },
+  {
+    "text": "file, this is where the agent can note",
+    "start": 364.2,
+    "duration": 4.28
+  },
+  {
+    "text": "down any of my preferences, note down",
+    "start": 366.44,
+    "duration": 3.64
+  },
+  {
+    "text": "any watch outs, and it's just kind of",
+    "start": 368.48,
+    "duration": 3.24
+  },
+  {
+    "text": "internal note taking for the agent",
+    "start": 370.08,
+    "duration": 3.2
+  },
+  {
+    "text": "itself. So let's imagine that I sit down",
+    "start": 371.72,
+    "duration": 3.56
+  },
+  {
+    "text": "to a session and I basically want to",
+    "start": 373.28,
+    "duration": 3.96
+  },
+  {
+    "text": "fill in the teacher on what I've been",
+    "start": 375.28,
+    "duration": 4.8
+  },
+  {
+    "text": "doing since I last had a session. So I",
+    "start": 377.24,
+    "duration": 5.52
+  },
+  {
+    "text": "just say teach and I can basically",
+    "start": 380.08,
+    "duration": 5.28
+  },
+  {
+    "text": "complete the Rubik's Cube now except for",
+    "start": 382.76,
+    "duration": 5.159
+  },
+  {
+    "text": "the corner cycle, which I've still not",
+    "start": 385.36,
+    "duration": 4.64
+  },
+  {
+    "text": "quite got into memory. Let's go ahead",
+    "start": 387.919,
+    "duration": 4.121
+  },
+  {
+    "text": "and see what it says. It starts of",
+    "start": 390,
+    "duration": 4
+  },
+  {
+    "text": "course, because this is a empty context,",
+    "start": 392.04,
+    "duration": 3.72
+  },
+  {
+    "text": "by checking the state of my teaching",
+    "start": 394,
+    "duration": 4.88
+  },
+  {
+    "text": "workspace. It's checking all of the",
+    "start": 395.76,
+    "duration": 5.4
+  },
+  {
+    "text": "solve cards, seeing how far I've got to.",
+    "start": 398.88,
+    "duration": 4
+  },
+  {
+    "text": "It's now giving me a decent diagnosis",
+    "start": 401.16,
+    "duration": 2.96
+  },
+  {
+    "text": "for what I'm feeling. It's saying the",
+    "start": 402.88,
+    "duration": 3.4
+  },
+  {
+    "text": "concept is solid for the corner cycle,",
+    "start": 404.12,
+    "duration": 4.32
+  },
+  {
+    "text": "which is a particular algorithm, but",
+    "start": 406.28,
+    "duration": 3.639
+  },
+  {
+    "text": "it's the one that hasn't reached muscle",
+    "start": 408.44,
+    "duration": 2.88
+  },
+  {
+    "text": "memory. Let me look at the existing",
+    "start": 409.919,
+    "duration": 3.241
+  },
+  {
+    "text": "memorization lesson, one earlier lesson",
+    "start": 411.32,
+    "duration": 3.4
+  },
+  {
+    "text": "to match the house style. So we've",
+    "start": 413.16,
+    "duration": 3.68
+  },
+  {
+    "text": "turned the agent basically into a",
+    "start": 414.72,
+    "duration": 4.12
+  },
+  {
+    "text": "teacher and you've got to work with it",
+    "start": 416.84,
+    "duration": 3.52
+  },
+  {
+    "text": "in the same way that you would any",
+    "start": 418.84,
+    "duration": 3.36
+  },
+  {
+    "text": "one-to-one teacher. You tell it what",
+    "start": 420.36,
+    "duration": 3.04
+  },
+  {
+    "text": "problems you're having and it will",
+    "start": 422.2,
+    "duration": 4
+  },
+  {
+    "text": "design lessons to find solutions. The",
+    "start": 423.4,
+    "duration": 4.92
+  },
+  {
+    "text": "model I'm using here is Opus 4.8 with",
+    "start": 426.2,
+    "duration": 3.88
+  },
+  {
+    "text": "medium effort, by the way. It's also",
+    "start": 428.32,
+    "duration": 4.72
+  },
+  {
+    "text": "using a key teaching term here, the zone",
+    "start": 430.08,
+    "duration": 5.16
+  },
+  {
+    "text": "of proximal development. One algorithm,",
+    "start": 433.04,
+    "duration": 3.92
+  },
+  {
+    "text": "pure muscle memory work. The zone of",
+    "start": 435.24,
+    "duration": 3.36
+  },
+  {
+    "text": "proximal development is this key",
+    "start": 436.96,
+    "duration": 4.44
+  },
+  {
+    "text": "teaching idea which I am obsessed with.",
+    "start": 438.6,
+    "duration": 4.12
+  },
+  {
+    "text": "And it's the idea that you should always",
+    "start": 441.4,
+    "duration": 3.56
+  },
+  {
+    "text": "teach someone in the area where they are",
+    "start": 442.72,
+    "duration": 4.199
+  },
+  {
+    "text": "perfectly challenged but not",
+    "start": 444.96,
+    "duration": 3.56
+  },
+  {
+    "text": "intimidated. This means that every",
+    "start": 446.919,
+    "duration": 4.321
+  },
+  {
+    "text": "lesson has to be concise, compact, and",
+    "start": 448.52,
+    "duration": 4.96
+  },
+  {
+    "text": "exactly framed at that zone of proximal",
+    "start": 451.24,
+    "duration": 4.44
+  },
+  {
+    "text": "development. So the student's not bored,",
+    "start": 453.48,
+    "duration": 4.24
+  },
+  {
+    "text": "but also not freaked out. So we can see",
+    "start": 455.68,
+    "duration": 4
+  },
+  {
+    "text": "it's now created this lesson, the corner",
+    "start": 457.72,
+    "duration": 3.96
+  },
+  {
+    "text": "cycle lesson. And it's created this",
+    "start": 459.68,
+    "duration": 4.68
+  },
+  {
+    "text": "exact lesson for us. So, it's basically",
+    "start": 461.68,
+    "duration": 4.6
+  },
+  {
+    "text": "just breaking it down, paying more",
+    "start": 464.36,
+    "duration": 3.84
+  },
+  {
+    "text": "attention to it, giving me new mental",
+    "start": 466.28,
+    "duration": 4.36
+  },
+  {
+    "text": "models. One four move phrase played",
+    "start": 468.2,
+    "duration": 4.32
+  },
+  {
+    "text": "twice. Okay, that is handy. And the idea",
+    "start": 470.64,
+    "duration": 4.36
+  },
+  {
+    "text": "is I would walk through this lesson. Oh,",
+    "start": 472.52,
+    "duration": 4.32
+  },
+  {
+    "text": "look at this. Oh my gosh, look at this.",
+    "start": 475,
+    "duration": 2.84
+  },
+  {
+    "text": "So, it's actually given me an",
+    "start": 476.84,
+    "duration": 2.76
+  },
+  {
+    "text": "interactive tap thing I could do. Okay,",
+    "start": 477.84,
+    "duration": 6.76
+  },
+  {
+    "text": "so it's U R U' prime L' prime U",
+    "start": 479.6,
+    "duration": 8.36
+  },
+  {
+    "text": "R' prime U' prime L. Oh my god, look at",
+    "start": 484.6,
+    "duration": 5.32
+  },
+  {
+    "text": "this. So, it's got guided mode. So, I",
+    "start": 487.96,
+    "duration": 5.44
+  },
+  {
+    "text": "can turn off that. Oh, that's That's",
+    "start": 489.92,
+    "duration": 5.2
+  },
+  {
+    "text": "unreasonably cool. You see what being in",
+    "start": 493.4,
+    "duration": 3.24
+  },
+  {
+    "text": "HTML gives us here, right? We've got the",
+    "start": 495.12,
+    "duration": 3.56
+  },
+  {
+    "text": "full power of the browser to mess about",
+    "start": 496.64,
+    "duration": 3.76
+  },
+  {
+    "text": "with here. So, you get the idea of what",
+    "start": 498.68,
+    "duration": 3.76
+  },
+  {
+    "text": "these lessons look like. They are short,",
+    "start": 500.4,
+    "duration": 3.92
+  },
+  {
+    "text": "they are really focused, and it gives me",
+    "start": 502.44,
+    "duration": 4.16
+  },
+  {
+    "text": "exactly what to practice now. And this",
+    "start": 504.32,
+    "duration": 3.88
+  },
+  {
+    "text": "also means because everything has been",
+    "start": 506.6,
+    "duration": 3.8
+  },
+  {
+    "text": "saved to the file system, I can clear",
+    "start": 508.2,
+    "duration": 4.8
+  },
+  {
+    "text": "this, and every time I run teach again,",
+    "start": 510.4,
+    "duration": 4.16
+  },
+  {
+    "text": "it will have all the context it needs to",
+    "start": 513,
+    "duration": 2.88
+  },
+  {
+    "text": "keep me in the zone of proximal",
+    "start": 514.56,
+    "duration": 3.12
+  },
+  {
+    "text": "development. Let's briefly look at the",
+    "start": 515.88,
+    "duration": 4.36
+  },
+  {
+    "text": "skill itself here. It's really quite",
+    "start": 517.68,
+    "duration": 4.28
+  },
+  {
+    "text": "simple, although it is one of the longer",
+    "start": 520.24,
+    "duration": 3.56
+  },
+  {
+    "text": "skills that I've put together. The user",
+    "start": 521.96,
+    "duration": 3.16
+  },
+  {
+    "text": "has asked you to teach them something.",
+    "start": 523.8,
+    "duration": 3.48
+  },
+  {
+    "text": "This is a stateful request. They intend",
+    "start": 525.12,
+    "duration": 3.48
+  },
+  {
+    "text": "to learn the topic over multiple",
+    "start": 527.28,
+    "duration": 2.92
+  },
+  {
+    "text": "sessions. It goes into the shape of the",
+    "start": 528.6,
+    "duration": 3.04
+  },
+  {
+    "text": "teaching workspace, which we've looked",
+    "start": 530.2,
+    "duration": 3.76
+  },
+  {
+    "text": "at already, and it has a sectional",
+    "start": 531.64,
+    "duration": 5.199
+  },
+  {
+    "text": "philosophy here. So, I really define the",
+    "start": 533.96,
+    "duration": 5.2
+  },
+  {
+    "text": "terms that the AI should think in. It",
+    "start": 536.839,
+    "duration": 4
+  },
+  {
+    "text": "should think in terms of giving them",
+    "start": 539.16,
+    "duration": 3.96
+  },
+  {
+    "text": "knowledge from high-quality, high-trust",
+    "start": 540.839,
+    "duration": 4.601
+  },
+  {
+    "text": "resources, skills, highly relevant",
+    "start": 543.12,
+    "duration": 4.08
+  },
+  {
+    "text": "interactive lessons, and actually",
+    "start": 545.44,
+    "duration": 3.84
+  },
+  {
+    "text": "developing the skills, and then wisdom",
+    "start": 547.2,
+    "duration": 3.48
+  },
+  {
+    "text": "that comes from interacting from other",
+    "start": 549.28,
+    "duration": 2.88
+  },
+  {
+    "text": "learners and practitioners. We go",
+    "start": 550.68,
+    "duration": 3.44
+  },
+  {
+    "text": "further down here, and we touch on the",
+    "start": 552.16,
+    "duration": 3.679
+  },
+  {
+    "text": "shape of the lessons themselves. We've",
+    "start": 554.12,
+    "duration": 3.28
+  },
+  {
+    "text": "talked about the mission as well,",
+    "start": 555.839,
+    "duration": 3.681
+  },
+  {
+    "text": "mission.md, the zone of proximal",
+    "start": 557.4,
+    "duration": 4.08
+  },
+  {
+    "text": "development, acquiring knowledge and",
+    "start": 559.52,
+    "duration": 3.6
+  },
+  {
+    "text": "skills, how to do that, acquiring",
+    "start": 561.48,
+    "duration": 4.04
+  },
+  {
+    "text": "wisdom, which basically when the learner",
+    "start": 563.12,
+    "duration": 4.32
+  },
+  {
+    "text": "is ready to go out into the world, once",
+    "start": 565.52,
+    "duration": 3.56
+  },
+  {
+    "text": "they've got the knowledge and skills,",
+    "start": 567.44,
+    "duration": 3
+  },
+  {
+    "text": "how do you delegate them to the",
+    "start": 569.08,
+    "duration": 3.52
+  },
+  {
+    "text": "community? When the user asks a question",
+    "start": 570.44,
+    "duration": 3.52
+  },
+  {
+    "text": "that appears to require wisdom, your",
+    "start": 572.6,
+    "duration": 3.12
+  },
+  {
+    "text": "default posture should be to attempt to",
+    "start": 573.96,
+    "duration": 3.8
+  },
+  {
+    "text": "answer, but to ultimately delegate to a",
+    "start": 575.72,
+    "duration": 4.08
+  },
+  {
+    "text": "community. My idea with this teach skill",
+    "start": 577.76,
+    "duration": 4.56
+  },
+  {
+    "text": "is not to have you hooked onto the agent",
+    "start": 579.8,
+    "duration": 4.08
+  },
+  {
+    "text": "for learning everything. It's to",
+    "start": 582.32,
+    "duration": 3.24
+  },
+  {
+    "text": "actually give you the skills you need to",
+    "start": 583.88,
+    "duration": 4.16
+  },
+  {
+    "text": "feel confident to go out and work with a",
+    "start": 585.56,
+    "duration": 4.32
+  },
+  {
+    "text": "community and send you out into the",
+    "start": 588.04,
+    "duration": 3.68
+  },
+  {
+    "text": "world. That's the dream of this stuff.",
+    "start": 589.88,
+    "duration": 3.48
+  },
+  {
+    "text": "We've also got more material here on",
+    "start": 591.72,
+    "duration": 3.32
+  },
+  {
+    "text": "reference.documents and finally on",
+    "start": 593.36,
+    "duration": 4.8
+  },
+  {
+    "text": "notes.md, but that really is the skill.",
+    "start": 595.04,
+    "duration": 4.64
+  },
+  {
+    "text": "There's a few little bits of supporting",
+    "start": 598.16,
+    "duration": 3.44
+  },
+  {
+    "text": "documents for like learning record",
+    "start": 599.68,
+    "duration": 3.36
+  },
+  {
+    "text": "format, the mission format, the",
+    "start": 601.6,
+    "duration": 3.08
+  },
+  {
+    "text": "resources format, etc. In terms of",
+    "start": 603.04,
+    "duration": 3.44
+  },
+  {
+    "text": "engineering, I can imagine this skill",
+    "start": 604.68,
+    "duration": 3.92
+  },
+  {
+    "text": "being really useful in onboarding people",
+    "start": 606.48,
+    "duration": 4.04
+  },
+  {
+    "text": "to a code base. Creating documentation",
+    "start": 608.6,
+    "duration": 4.84
+  },
+  {
+    "text": "is a real pain in the ass because not",
+    "start": 610.52,
+    "duration": 4.6
+  },
+  {
+    "text": "only do you need to keep it up to date,",
+    "start": 613.44,
+    "duration": 3.28
+  },
+  {
+    "text": "but that documentation is probably",
+    "start": 615.12,
+    "duration": 3.56
+  },
+  {
+    "text": "outside the person's zone of proximal",
+    "start": 616.72,
+    "duration": 4.32
+  },
+  {
+    "text": "development. They might have worked with",
+    "start": 618.68,
+    "duration": 4.2
+  },
+  {
+    "text": "your stack before, they might just need",
+    "start": 621.04,
+    "duration": 4.36
+  },
+  {
+    "text": "to know the specific problem domain, or",
+    "start": 622.88,
+    "duration": 3.56
+  },
+  {
+    "text": "they might have worked with the problem",
+    "start": 625.4,
+    "duration": 3.08
+  },
+  {
+    "text": "domain before, but they have no idea",
+    "start": 626.44,
+    "duration": 4.28
+  },
+  {
+    "text": "what TypeScript is or things like that.",
+    "start": 628.48,
+    "duration": 4.04
+  },
+  {
+    "text": "So, you can think of teach here as, you",
+    "start": 630.72,
+    "duration": 3
+  },
+  {
+    "text": "know, you start them off in their own",
+    "start": 632.52,
+    "duration": 2.88
+  },
+  {
+    "text": "workspace, you point them at code base,",
+    "start": 633.72,
+    "duration": 3.4
+  },
+  {
+    "text": "you teach them how to, you know, they",
+    "start": 635.4,
+    "duration": 3.6
+  },
+  {
+    "text": "learn independently how to work with the",
+    "start": 637.12,
+    "duration": 4.36
+  },
+  {
+    "text": "code, what the concepts are, and guess",
+    "start": 639,
+    "duration": 4.12
+  },
+  {
+    "text": "what? You've got a productive employee",
+    "start": 641.48,
+    "duration": 3.64
+  },
+  {
+    "text": "in record time. For me, I'm excited to",
+    "start": 643.12,
+    "duration": 3.8
+  },
+  {
+    "text": "use this just on my side projects, on",
+    "start": 645.12,
+    "duration": 4.28
+  },
+  {
+    "text": "having fun, on just learning stuff that",
+    "start": 646.92,
+    "duration": 3.96
+  },
+  {
+    "text": "I wouldn't have learned how to do",
+    "start": 649.4,
+    "duration": 2.96
+  },
+  {
+    "text": "before, you know, solving this freaking",
+    "start": 650.88,
+    "duration": 3.6
+  },
+  {
+    "text": "Rubik's Cube. I might even dig out a bit",
+    "start": 652.36,
+    "duration": 4.08
+  },
+  {
+    "text": "of old chess material and see if it can",
+    "start": 654.48,
+    "duration": 3.44
+  },
+  {
+    "text": "teach me some openings. And I wanted to",
+    "start": 656.44,
+    "duration": 3.76
+  },
+  {
+    "text": "end here by talking about an idea that",
+    "start": 657.92,
+    "duration": 4.44
+  },
+  {
+    "text": "I've had for a while that I think this",
+    "start": 660.2,
+    "duration": 5.24
+  },
+  {
+    "text": "teach skill really proves or rather",
+    "start": 662.36,
+    "duration": 4.88
+  },
+  {
+    "text": "makes very plain to me, which is that",
+    "start": 665.44,
+    "duration": 4.84
+  },
+  {
+    "text": "we, the developer community, engineers",
+    "start": 667.24,
+    "duration": 4.88
+  },
+  {
+    "text": "out there, are the first people to",
+    "start": 670.28,
+    "duration": 5.76
+  },
+  {
+    "text": "really experience what AI can do on",
+    "start": 672.12,
+    "duration": 5.84
+  },
+  {
+    "text": "something that it's really good at. AI",
+    "start": 676.04,
+    "duration": 3.92
+  },
+  {
+    "text": "is currently better at writing code than",
+    "start": 677.96,
+    "duration": 3.879
+  },
+  {
+    "text": "it is at almost anything else. There are",
+    "start": 679.96,
+    "duration": 4.16
+  },
+  {
+    "text": "a few exceptions, but really AI is very",
+    "start": 681.839,
+    "duration": 4.041
+  },
+  {
+    "text": "good at writing code, and developers",
+    "start": 684.12,
+    "duration": 4.08
+  },
+  {
+    "text": "have an advantage that we're the first",
+    "start": 685.88,
+    "duration": 4.88
+  },
+  {
+    "text": "people to really get to test AI out on a",
+    "start": 688.2,
+    "duration": 5.32
+  },
+  {
+    "text": "problem where it's very good at it. This",
+    "start": 690.76,
+    "duration": 5
+  },
+  {
+    "text": "means that we are the first people",
+    "start": 693.52,
+    "duration": 3.76
+  },
+  {
+    "text": "really in the world, you know, with a",
+    "start": 695.76,
+    "duration": 4.32
+  },
+  {
+    "text": "couple of exceptions, that get to know",
+    "start": 697.28,
+    "duration": 5
+  },
+  {
+    "text": "AI, that get to build these cool things,",
+    "start": 700.08,
+    "duration": 4.4
+  },
+  {
+    "text": "and it means that we're the first movers",
+    "start": 702.28,
+    "duration": 4.88
+  },
+  {
+    "text": "in this new space. We can take the ideas",
+    "start": 704.48,
+    "duration": 4.08
+  },
+  {
+    "text": "that we develop here, turn them into",
+    "start": 707.16,
+    "duration": 4.2
+  },
+  {
+    "text": "skills, and start bringing them out to",
+    "start": 708.56,
+    "duration": 4.56
+  },
+  {
+    "text": "the world. I think that's incredibly",
+    "start": 711.36,
+    "duration": 3.24
+  },
+  {
+    "text": "exciting, and it's something that I'm",
+    "start": 713.12,
+    "duration": 3
+  },
+  {
+    "text": "going to be exploring more, and this",
+    "start": 714.6,
+    "duration": 3.76
+  },
+  {
+    "text": "teach skill is kind of the first phase",
+    "start": 716.12,
+    "duration": 3.6
+  },
+  {
+    "text": "of that. So, when you're working with",
+    "start": 718.36,
+    "duration": 3.52
+  },
+  {
+    "text": "Clo code or Codex, and you're struggling",
+    "start": 719.72,
+    "duration": 3.84
+  },
+  {
+    "text": "with it, and you're losing motivation,",
+    "start": 721.88,
+    "duration": 4.12
+  },
+  {
+    "text": "you think, \"God, this sucks.\" Just think",
+    "start": 723.56,
+    "duration": 4.68
+  },
+  {
+    "text": "that you'll be able to take the skills",
+    "start": 726,
+    "duration": 3.8
+  },
+  {
+    "text": "that you are learning now, the instincts",
+    "start": 728.24,
+    "duration": 3.52
+  },
+  {
+    "text": "that you're building working with AI,",
+    "start": 729.8,
+    "duration": 4.36
+  },
+  {
+    "text": "and take them outside of coding domains.",
+    "start": 731.76,
+    "duration": 3.72
+  },
+  {
+    "text": "That, I think, is going to be an",
+    "start": 734.16,
+    "duration": 3.64
+  },
+  {
+    "text": "incredibly valuable skill, no matter",
+    "start": 735.48,
+    "duration": 4.44
+  },
+  {
+    "text": "what the future of work looks like.",
+    "start": 737.8,
+    "duration": 4.08
+  },
+  {
+    "text": "We're all going to be working with AI,",
+    "start": 739.92,
+    "duration": 4.32
+  },
+  {
+    "text": "and we are the first people to really",
+    "start": 741.88,
+    "duration": 3.72
+  },
+  {
+    "text": "get to do it. Now, if you're digging my",
+    "start": 744.24,
+    "duration": 3.48
+  },
+  {
+    "text": "skills, then you should go to AI Hero",
+    "start": 745.6,
+    "duration": 4.48
+  },
+  {
+    "text": "{slash} skills, and sign up for my",
+    "start": 747.72,
+    "duration": 4.2
+  },
+  {
+    "text": "newsletter that lets you know whenever I",
+    "start": 750.08,
+    "duration": 4.2
+  },
+  {
+    "text": "release a new skill, whenever I have any",
+    "start": 751.92,
+    "duration": 4.28
+  },
+  {
+    "text": "changes, because I do change the skills",
+    "start": 754.28,
+    "duration": 3.32
+  },
+  {
+    "text": "all the time. If you want up-to-date",
+    "start": 756.2,
+    "duration": 3.32
+  },
+  {
+    "text": "information on how to use my skills for",
+    "start": 757.6,
+    "duration": 4.28
+  },
+  {
+    "text": "engineering and for other stuff, too,",
+    "start": 759.52,
+    "duration": 3.88
+  },
+  {
+    "text": "then check it out. But, overall, thanks",
+    "start": 761.88,
+    "duration": 3.2
+  },
+  {
+    "text": "for watching. I can't wait to see the",
+    "start": 763.4,
+    "duration": 3.48
+  },
+  {
+    "text": "languages that you're learning, coding",
+    "start": 765.08,
+    "duration": 3.92
+  },
+  {
+    "text": "languages or human languages, the new",
+    "start": 766.88,
+    "duration": 3.56
+  },
+  {
+    "text": "skills that you're developing. I'm going",
+    "start": 769,
+    "duration": 3
+  },
+  {
+    "text": "to get this thing to teach me vocal",
+    "start": 770.44,
+    "duration": 3
+  },
+  {
+    "text": "harmonies as well. It's always a skill",
+    "start": 772,
+    "duration": 2.68
+  },
+  {
+    "text": "that I've wanted to know, but never been",
+    "start": 773.44,
+    "duration": 3.56
+  },
+  {
+    "text": "very good at. And, ah,",
+    "start": 774.68,
+    "duration": 4
+  },
+  {
+    "text": "I just can't wait to get using this",
+    "start": 777,
+    "duration": 3.28
+  },
+  {
+    "text": "thing myself and seeing how you're using",
+    "start": 778.68,
+    "duration": 3.36
+  },
+  {
+    "text": "it, too. But, overall, thanks so much",
+    "start": 780.28,
+    "duration": 3.28
+  },
+  {
+    "text": "for watching, and I'll see you very",
+    "start": 782.04,
+    "duration": 3.92
+  },
+  {
+    "text": "soon.",
+    "start": 783.56,
+    "duration": 2.4
+  }
+]

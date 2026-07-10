@@ -1,0 +1,1197 @@
+[
+  {
+    "text": "Hi everyone.",
+    "start": "00:00:02",
+    "end": "00:00:03"
+  },
+  {
+    "text": "I'm Apurva and I'm a data scientist turned developer advocate currently at MongoDB.",
+    "start": "00:00:03",
+    "end": "00:00:11"
+  },
+  {
+    "text": "I spent the first of my career building machine learning applications for various cybersecurity use cases and I now use that applied machine learning knowledge to help AI builders successfully build AI applications with MongoDB and Voyage AI.",
+    "start": "00:00:08",
+    "end": "00:00:27"
+  },
+  {
+    "text": "In this talk you'll learn how to think through building AI systems end-to-end from idea to production.",
+    "start": "00:00:25",
+    "end": "00:00:32"
+  },
+  {
+    "text": "We'll take a real-world use case and walk through all the steps of designing it and hopefully in the end you'll walk away with a repeatable framework that you can apply to any AI system you design.",
+    "start": "00:00:32",
+    "end": "00:00:44"
+  },
+  {
+    "text": "Now, you might be thinking in the age of AI do we even need to think about what we build?",
+    "start": "00:00:46",
+    "end": "00:00:52"
+  },
+  {
+    "text": "Just wipe code it and ship it, right?",
+    "start": "00:00:52",
+    "end": "00:00:54"
+  },
+  {
+    "text": "But that's actually where I want to start.",
+    "start": "00:00:54",
+    "end": "00:01:00"
+  },
+  {
+    "text": "Now, here's the problem with that.",
+    "start": "00:00:57",
+    "end": "00:01:00"
+  },
+  {
+    "text": "Wipe coding works great when you're building for fun, the stakes are low, and you can easily eyeball whether the output of what you're building is right.",
+    "start": "00:01:01",
+    "end": "00:01:11"
+  },
+  {
+    "text": "But the moment you're building something real, something other people depend on, something with real consequences, just ship it is actually kind of dangerous.",
+    "start": "00:01:09",
+    "end": "00:01:20"
+  },
+  {
+    "text": "Uh and it's not just me saying it, folks from Anthropic and OpenAI who are so bullish on AI coding are saying the same thing.",
+    "start": "00:01:19",
+    "end": "00:01:25"
+  },
+  {
+    "text": "These are actually quotes from their talks over the past few months.",
+    "start": "00:01:25",
+    "end": "00:01:33"
+  },
+  {
+    "text": "Specs are the new code.",
+    "start": "00:01:30",
+    "end": "00:01:33"
+  },
+  {
+    "text": "The art is in defining the product requirements, the system design, and evaluate criteria so you can be confident that your AI coding buddies are building the right thing.",
+    "start": "00:01:33",
+    "end": "00:01:43"
+  },
+  {
+    "text": "And the rest of the talk is just about that.",
+    "start": "00:01:43",
+    "end": "00:01:45"
+  },
+  {
+    "text": "How do we do this well?",
+    "start": "00:01:45",
+    "end": "00:01:47"
+  },
+  {
+    "text": "It's useful to think about it as a framework.",
+    "start": "00:01:49",
+    "end": "00:01:52"
+  },
+  {
+    "text": "Four phases.",
+    "start": "00:01:52",
+    "end": "00:01:53"
+  },
+  {
+    "text": "You start with product requirements.",
+    "start": "00:01:53",
+    "end": "00:01:56"
+  },
+  {
+    "text": "What are you actually building, for whom, and what are the constraints?",
+    "start": "00:01:56",
+    "end": "00:02:02"
+  },
+  {
+    "text": "Then system design, the data, the architecture, the patterns that actually help you meet these requirements.",
+    "start": "00:01:59",
+    "end": "00:02:09"
+  },
+  {
+    "text": "Then comes evaluation and monitoring.",
+    "start": "00:02:07",
+    "end": "00:02:11"
+  },
+  {
+    "text": "How do you know what's being built actually works before and also after you ship?",
+    "start": "00:02:09",
+    "end": "00:02:18"
+  },
+  {
+    "text": "And finally, how do you optimize for cost, not just for accuracy, but also for cost, latency, and reliability before you ship and or as you find gaps in production.",
+    "start": "00:02:15",
+    "end": "00:02:29"
+  },
+  {
+    "text": "Instead of talking abstractly through a framework, I thought why not apply it to a real-world use case so you can see how exactly each decision flows from one stage of the framework to the next.",
+    "start": "00:02:30",
+    "end": "00:02:45"
+  },
+  {
+    "text": "So let's take the example of a health insurance claims review system.",
+    "start": "00:02:42",
+    "end": "00:02:49"
+  },
+  {
+    "text": "So adjudicating health insurance claims has historically been an extremely manual process where human medical reviewers have to cross-reference clinical guidelines, insurance coverage policies, patient history, and stuff to decide whether or not a medical treatment, procedure, or medication is covered by a patient's health insurance policy.",
+    "start": "00:02:49",
+    "end": "00:03:13"
+  },
+  {
+    "text": "Now, if you live somewhere that has free health care, even there there's things that are covered and things that are not by your health care system.",
+    "start": "00:03:13",
+    "end": "00:03:24"
+  },
+  {
+    "text": "So you're still subject to some version of this process.",
+    "start": "00:03:24",
+    "end": "00:03:29"
+  },
+  {
+    "text": "Now, our goal with building this system is to see if we can improve or simplify the experience for medical reviewers with the help of AI.",
+    "start": "00:03:27",
+    "end": "00:03:38"
+  },
+  {
+    "text": "So let's see what the product requirements stage of the framework for this application might look like.",
+    "start": "00:03:38",
+    "end": "00:03:45"
+  },
+  {
+    "text": "So first thing to do is quantify the business problem.",
+    "start": "00:03:45",
+    "end": "00:03:50"
+  },
+  {
+    "text": "The business problem should focus on something specific, uh clearly state who the users of the application are, uh the current state of things, and quantify the users' pain point.",
+    "start": "00:03:50",
+    "end": "00:04:01"
+  },
+  {
+    "text": "It should not prescribe what the system is going to be, whether it's going to be an agent, a multi-agent system, something else.",
+    "start": "00:04:01",
+    "end": "00:04:11"
+  },
+  {
+    "text": "Uh that will come later.",
+    "start": "00:04:08",
+    "end": "00:04:11"
+  },
+  {
+    "text": "So, here's what the business problem for our claims review system could look like.",
+    "start": "00:04:14",
+    "end": "00:04:18"
+  },
+  {
+    "text": "Medical reviewers at MDB Health spend an average of 2 days processing claim review requests, which is four times the industry standard for non-urgent cases, and 12 times the industry standard for urgent ones.",
+    "start": "00:04:18",
+    "end": "00:04:34"
+  },
+  {
+    "text": "Delays at this scale postpone patient care, uh particularly for time-sensitive treatment.",
+    "start": "00:04:31",
+    "end": "00:04:38"
+  },
+  {
+    "text": "So, as you can see, this business problem is user-specific.",
+    "start": "00:04:38",
+    "end": "00:04:43"
+  },
+  {
+    "text": "It says this is meant for medical reviewers.",
+    "start": "00:04:43",
+    "end": "00:04:47"
+  },
+  {
+    "text": "Uh it states the current state, which is like this manual process that leads to them spending 2 days processing uh claim reviews.",
+    "start": "00:04:44",
+    "end": "00:04:56"
+  },
+  {
+    "text": "It's measurable because it states some baselines.",
+    "start": "00:04:54",
+    "end": "00:04:59"
+  },
+  {
+    "text": "Uh it's solution-agnostic.",
+    "start": "00:04:57",
+    "end": "00:05:00"
+  },
+  {
+    "text": "It doesn't really tell you uh what the system should look like, uh and it's very focused on a specific problem.",
+    "start": "00:05:00",
+    "end": "00:05:08"
+  },
+  {
+    "text": "Next, you want to gather any business constraints for the application.",
+    "start": "00:05:10",
+    "end": "00:05:17"
+  },
+  {
+    "text": "So, any regulatory uh compliance requirements, any constraints on data leaving your organization, procurement constraints, meaning are certain vendors uh not approved for use within the organization.",
+    "start": "00:05:17",
+    "end": "00:05:28"
+  },
+  {
+    "text": "Uh all of these would be good to know before you even start designing the system.",
+    "start": "00:05:28",
+    "end": "00:05:34"
+  },
+  {
+    "text": "So, for our application, say these are some of the business constraints.",
+    "start": "00:05:33",
+    "end": "00:05:38"
+  },
+  {
+    "text": "Patient data has to stay within the approved cloud environment.",
+    "start": "00:05:36",
+    "end": "00:05:42"
+  },
+  {
+    "text": "Um only models available on the approved cloud can be used.",
+    "start": "00:05:42",
+    "end": "00:05:47"
+  },
+  {
+    "text": "Um there's some use cases where human review is required.",
+    "start": "00:05:47",
+    "end": "00:05:51"
+  },
+  {
+    "text": "So, any complex use cases require a senior physician's review.",
+    "start": "00:05:51",
+    "end": "00:05:55"
+  },
+  {
+    "text": "Um what else?",
+    "start": "00:05:55",
+    "end": "00:05:59"
+  },
+  {
+    "text": "Any denial decisions must be uh reviewed by a human reviewer.",
+    "start": "00:05:56",
+    "end": "00:06:02"
+  },
+  {
+    "text": "So, there's cases which you can't fully automate with AI.",
+    "start": "00:06:02",
+    "end": "00:06:06"
+  },
+  {
+    "text": "So, yeah, all of these are useful design inputs.",
+    "start": "00:06:04",
+    "end": "00:06:07"
+  },
+  {
+    "text": "So, you want to have these sooner rather than later.",
+    "start": "00:06:07",
+    "end": "00:06:11"
+  },
+  {
+    "text": "Also good to know of any performance requirements.",
+    "start": "00:06:14",
+    "end": "00:06:18"
+  },
+  {
+    "text": "Uh do we need sub-millisecond responses or do we have some leeway there?",
+    "start": "00:06:18",
+    "end": "00:06:23"
+  },
+  {
+    "text": "Uh how much can we spend per month on LLM inference?",
+    "start": "00:06:23",
+    "end": "00:06:29"
+  },
+  {
+    "text": "Any uptime SLAs to be aware of?",
+    "start": "00:06:29",
+    "end": "00:06:30"
+  },
+  {
+    "text": "Next, if you're building an AI product, identifying the role of AI uh in your product is helpful.",
+    "start": "00:06:31",
+    "end": "00:06:39"
+  },
+  {
+    "text": "And I like to think about the role of AI along three dimensions.",
+    "start": "00:06:37",
+    "end": "00:06:41"
+  },
+  {
+    "text": "First, is AI critical to your product or complementary?",
+    "start": "00:06:41",
+    "end": "00:06:47"
+  },
+  {
+    "text": "In this case, complementary since um claims are already happening without claim reviews already happening without AI, but they are just slower.",
+    "start": "00:06:44",
+    "end": "00:06:56"
+  },
+  {
+    "text": "Next, will this be a reactive or proactive system?",
+    "start": "00:06:54",
+    "end": "00:06:59"
+  },
+  {
+    "text": "Meaning, is it triggered by a user or an event or does it proactively do things?",
+    "start": "00:06:59",
+    "end": "00:07:05"
+  },
+  {
+    "text": "In this case, it's going to be a reactive system since uh it's triggered by a claims application actually being submitted.",
+    "start": "00:07:05",
+    "end": "00:07:13"
+  },
+  {
+    "text": "And finally, what's the level of autonomy uh for AI in the application?",
+    "start": "00:07:12",
+    "end": "00:07:18"
+  },
+  {
+    "text": "So, in our case, the business constraints prescribe human review in certain cases.",
+    "start": "00:07:17",
+    "end": "00:07:23"
+  },
+  {
+    "text": "So, our system can be semi-autonomous at max.",
+    "start": "00:07:23",
+    "end": "00:07:27"
+  },
+  {
+    "text": "And finally, as part of defining what you're solving for, you also want to come up with one to two uh success metrics aligned with the business problem so you can capture what success looks like.",
+    "start": "00:07:28",
+    "end": "00:07:42"
+  },
+  {
+    "text": "A good success metric is specific, measurable, achievable, relevant, and time-bound.",
+    "start": "00:07:39",
+    "end": "00:07:46"
+  },
+  {
+    "text": "And here's an example of a success metric for our claims review application.",
+    "start": "00:07:46",
+    "end": "00:07:51"
+  },
+  {
+    "text": "So, it says it says reduce the average processing time for urgent claim review requests from 2 days to 1 hour within 90 days of launch.",
+    "start": "00:07:51",
+    "end": "00:08:01"
+  },
+  {
+    "text": "So, it's super specific.",
+    "start": "00:08:01",
+    "end": "00:08:02"
+  },
+  {
+    "text": "It's measurable because it's saying uh the processing time needs to be 1 hour.",
+    "start": "00:08:02",
+    "end": "00:08:12"
+  },
+  {
+    "text": "Uh it seems achievable because um there'll be AI in the loop, so hopefully any information gathering uh getting an initial recommended recommendation will be faster.",
+    "start": "00:08:09",
+    "end": "00:08:22"
+  },
+  {
+    "text": "Uh it's very relevant and rooted in the business problem from before, and it's time-bound because it gives you uh a window for when we need to start seeing success.",
+    "start": "00:08:20",
+    "end": "00:08:32"
+  },
+  {
+    "text": "Okay, so at this point we figured out uh the what.",
+    "start": "00:08:35",
+    "end": "00:08:39"
+  },
+  {
+    "text": "Let's look at the how.",
+    "start": "00:08:39",
+    "end": "00:08:43"
+  },
+  {
+    "text": "The first thing you want to think about here is your data strategy.",
+    "start": "00:08:41",
+    "end": "00:08:46"
+  },
+  {
+    "text": "What does uh what data does your application need?",
+    "start": "00:08:46",
+    "end": "00:08:50"
+  },
+  {
+    "text": "Do you even have access to it?",
+    "start": "00:08:50",
+    "end": "00:08:52"
+  },
+  {
+    "text": "Where does it reside?",
+    "start": "00:08:52",
+    "end": "00:08:53"
+  },
+  {
+    "text": "Uh is it ready for consumption in its raw form, and so on?",
+    "start": "00:08:53",
+    "end": "00:08:58"
+  },
+  {
+    "text": "So, for our claims review application, these are the data sources that we might need, where they reside, and what their raw access formats might look like.",
+    "start": "00:08:58",
+    "end": "00:09:09"
+  },
+  {
+    "text": "So, we need uh clinical guidelines probably, uh which describe what care is appropriate for a given condition.",
+    "start": "00:09:09",
+    "end": "00:09:17"
+  },
+  {
+    "text": "Uh MDB Health's coverage policies that state what MDB Health will and will not pay for.",
+    "start": "00:09:17",
+    "end": "00:09:24"
+  },
+  {
+    "text": "And finally, the patient's claims history to know any uh past conditions, uh procedures that were performed, when they were performed, and so on.",
+    "start": "00:09:22",
+    "end": "00:09:33"
+  },
+  {
+    "text": "Let's assume that the clinical guidelines and coverage policies are stored as PDFs in something like Confluence and claims are stored in MongoDB as and when they are processed.",
+    "start": "00:09:33",
+    "end": "00:09:46"
+  },
+  {
+    "text": "The next thing to think about is data update frequency.",
+    "start": "00:09:46",
+    "end": "00:09:50"
+  },
+  {
+    "text": "How often do the data sources update?",
+    "start": "00:09:50",
+    "end": "00:09:52"
+  },
+  {
+    "text": "Now, if you're doing any sort of data processing on these raw data sources and you typically are, these pipelines are going to have to run at the right cadence to keep up.",
+    "start": "00:09:52",
+    "end": "00:10:04"
+  },
+  {
+    "text": "Otherwise, our system is going to work off of stale information and that's not good, especially in such a high-stakes use case.",
+    "start": "00:10:02",
+    "end": "00:10:11"
+  },
+  {
+    "text": "So, let's work this out for our claims review system.",
+    "start": "00:10:11",
+    "end": "00:10:16"
+  },
+  {
+    "text": "Clinical guide These probably update annually.",
+    "start": "00:10:15",
+    "end": "00:10:20"
+  },
+  {
+    "text": "Uh internal coverage policies may be quarterly and the patient's claim history needs to be updated whenever a new claim is processed.",
+    "start": "00:10:19",
+    "end": "00:10:29"
+  },
+  {
+    "text": "And in our success metrics, if you recall, uh we've said we want to aim for a 1-hour time frame for adjudicating urgent claims, so these will probably get updated hourly.",
+    "start": "00:10:29",
+    "end": "00:10:40"
+  },
+  {
+    "text": "Next, can the data be consumed directly by our application or does it need any processing?",
+    "start": "00:10:42",
+    "end": "00:10:49"
+  },
+  {
+    "text": "For clinical guidelines, which are typically long documents, you probably want to chunk them, embed the chunks, and also extract metadata such as procedure names, publication dates to make it suitable for retrieval using something like vector search or hybrid search.",
+    "start": "00:10:47",
+    "end": "00:11:07"
+  },
+  {
+    "text": "Same goes for coverage policies, but for patient claims history, which is already well-formatted and stored in MongoDB, we might just need to remove personally identifiable information before passing it to an LLM.",
+    "start": "00:11:04",
+    "end": "00:11:19"
+  },
+  {
+    "text": "Next, we want to think about what retrieval techniques would be best suited for each of the data sources.",
+    "start": "00:11:20",
+    "end": "00:11:28"
+  },
+  {
+    "text": "And you kind of already start thinking about this in the data processing step, but let's quickly formalize this.",
+    "start": "00:11:28",
+    "end": "00:11:33"
+  },
+  {
+    "text": "Now, clinical guidelines and coverage policies are well suited for vector search, but they can contain medical terminologies, such as diagnosis codes, procedure codes, that might not be picked up by vector search.",
+    "start": "00:11:33",
+    "end": "00:11:47"
+  },
+  {
+    "text": "So, um but these will be picked up by metadata filters or something like keyword search.",
+    "start": "00:11:47",
+    "end": "00:11:52"
+  },
+  {
+    "text": "So, for these, you'd either want to use vector search with metadata pre-filtering or hybrid search.",
+    "start": "00:11:52",
+    "end": "00:12:00"
+  },
+  {
+    "text": "For getting the patient's claims history, you can do an exact match on the patient name or ID, whatever the patient identifier is in the system.",
+    "start": "00:12:01",
+    "end": "00:12:11"
+  },
+  {
+    "text": "Next, you want to think about what the system architecture looks like.",
+    "start": "00:12:12",
+    "end": "00:12:18"
+  },
+  {
+    "text": "Now, it can be tempting to jump straight to building an agent.",
+    "start": "00:12:16",
+    "end": "00:12:20"
+  },
+  {
+    "text": "There's so much hype around them, or let a coding agent decide what the system architecture should look like, but you risk ending up with an over-engineered system by doing this.",
+    "start": "00:12:20",
+    "end": "00:12:33"
+  },
+  {
+    "text": "So, what you instead want to do is start with the simplest design, evaluate it, find gaps during the evaluation, and iterate from there.",
+    "start": "00:12:31",
+    "end": "00:12:42"
+  },
+  {
+    "text": "To decide what the system should look like, let's first map out how an insurance claim would flow through the system, because this will help us inform the architecture.",
+    "start": "00:12:42",
+    "end": "00:12:55"
+  },
+  {
+    "text": "So, first, the claim request and any clinical notes from the physician are received by our system.",
+    "start": "00:12:52",
+    "end": "00:13:03"
+  },
+  {
+    "text": "Then the system needs to retrieve any clinical guidelines and coverage policies that are relevant to the current claim, and also retrieve the patient's claims history.",
+    "start": "00:12:59",
+    "end": "00:13:15"
+  },
+  {
+    "text": "Then all of this information, along with the claim itself, and any system prompts on how the LLM should generate go about generating the recommendations, all of these are passed to the LLM, Um, and it uses those to generate uh, a recommendation of whether the claim is claim should be approved or rejected.",
+    "start": "00:13:12",
+    "end": "00:13:37"
+  },
+  {
+    "text": "Now, if it's a complex case, our uh, system or the LLM at this point should uh, send its initial recommendation um, to a senior physician.",
+    "start": "00:13:34",
+    "end": "00:13:46"
+  },
+  {
+    "text": "And if the LLM's recommendation is to deny the claim, then it should also be escalated to a human medical reviewer.",
+    "start": "00:13:46",
+    "end": "00:13:54"
+  },
+  {
+    "text": "And finally, the final decision should be logged to MongoDB, which is where we are storing our claim documents uh, along with a reasoning for why the claim was approved or rejected.",
+    "start": "00:13:54",
+    "end": "00:14:06"
+  },
+  {
+    "text": "Now, let's talk about some of the most common AI design patterns that we see uh, in AI systems today and see which of those might apply to our system.",
+    "start": "00:14:10",
+    "end": "00:14:20"
+  },
+  {
+    "text": "So, the first one is rag, uh, short for retrieval augmented generation.",
+    "start": "00:14:20",
+    "end": "00:14:25"
+  },
+  {
+    "text": "You all probably know it at this point.",
+    "start": "00:14:25",
+    "end": "00:14:28"
+  },
+  {
+    "text": "Um, basically, in these systems, you simply augment and LLM's pre-trained knowledge with external knowledge sources.",
+    "start": "00:14:28",
+    "end": "00:14:34"
+  },
+  {
+    "text": "So, information from external knowledge sources.",
+    "start": "00:14:34",
+    "end": "00:14:37"
+  },
+  {
+    "text": "Then, there's AI agents where you give uh, a single LLM or multiple LLMs in the case of multi-agent systems full autonomy to complete tasks end-to-end with the help of a set of tools.",
+    "start": "00:14:38",
+    "end": "00:14:52"
+  },
+  {
+    "text": "And then, there's agentic systems, which cover uh, a broad spectrum of semi-autonomous AI systems.",
+    "start": "00:14:52",
+    "end": "00:15:01"
+  },
+  {
+    "text": "A common architectural pattern for uh, these types of systems are control flows, where LLMs perform certain tasks within the workflow, but the sequence of steps in the workflow itself is predetermined by design or by code.",
+    "start": "00:15:01",
+    "end": "00:15:17"
+  },
+  {
+    "text": "Then, there's LLM as a router, where LLMs have limited autonomy in that their job is simply to categorize incoming requests and route them to different downstream workflows.",
+    "start": "00:15:18",
+    "end": "00:15:31"
+  },
+  {
+    "text": "Then you have human in the loop where an LLM or agent can take certain actions, but it needs human intervention somewhere in the process.",
+    "start": "00:15:32",
+    "end": "00:15:45"
+  },
+  {
+    "text": "And finally, there's fine-tuning.",
+    "start": "00:15:42",
+    "end": "00:15:46"
+  },
+  {
+    "text": "So, if you're observing that the LLM's failures are behavioral rather than data or orchestration issues, or if you need superior performance on a domain-specific task, then fine-tuning is a good technique to explore.",
+    "start": "00:15:46",
+    "end": "00:16:01"
+  },
+  {
+    "text": "I don't have the time to go too deep into these here, but if you'd like to learn more about these design patterns, I'm going to leave this resource here for you to check out later.",
+    "start": "00:16:02",
+    "end": "00:16:13"
+  },
+  {
+    "text": "So, we've thought through what the workflow of this system should look like.",
+    "start": "00:16:18",
+    "end": "00:16:21"
+  },
+  {
+    "text": "We've spoken about a few different AI design patterns.",
+    "start": "00:16:21",
+    "end": "00:16:27"
+  },
+  {
+    "text": "Now, let's apply those and decide what design patterns um we'd need to implement for our system.",
+    "start": "00:16:25",
+    "end": "00:16:34"
+  },
+  {
+    "text": "So, since we need to retrieve clinical guidelines, coverage policies, and stuff to inform the decision, this is This definitely looks like a rag component.",
+    "start": "00:16:32",
+    "end": "00:16:44"
+  },
+  {
+    "text": "So, we need some form of rag.",
+    "start": "00:16:42",
+    "end": "00:16:46"
+  },
+  {
+    "text": "The workflow is pre-structured in that the LLM first provides its recommendation on whether or not a claim should be approved or rejected, and in very specific and well-defined cases, it needs to escalate claims to human reviewers.",
+    "start": "00:16:44",
+    "end": "00:16:59"
+  },
+  {
+    "text": "So, this sounds like a controlled workflow.",
+    "start": "00:16:59",
+    "end": "00:17:04"
+  },
+  {
+    "text": "You could also argue that this looks a little bit like LLM as a router, especially if you use an additional LLM call to decide what a complex case looks like, unless this is already well-defined.",
+    "start": "00:17:02",
+    "end": "00:17:15"
+  },
+  {
+    "text": "So, yeah, this could be an LLM as a router, but uh for now let's just go with control flow.",
+    "start": "00:17:15",
+    "end": "00:17:20"
+  },
+  {
+    "text": "And finally, there's also an element of human in the loop, right?",
+    "start": "00:17:21",
+    "end": "00:17:26"
+  },
+  {
+    "text": "Since human reviewers are very much a part of the workflow.",
+    "start": "00:17:26",
+    "end": "00:17:29"
+  },
+  {
+    "text": "And finally, in the design phase, you also want to think about the end user experience and how you'll collect feedback from your users to improve the system.",
+    "start": "00:17:30",
+    "end": "00:17:41"
+  },
+  {
+    "text": "Here are some questions to ask yourself in this stage to help think through uh what the UX and feedback mechanism should look like.",
+    "start": "00:17:39",
+    "end": "00:17:50"
+  },
+  {
+    "text": "So, first, what does the system take as input?",
+    "start": "00:17:48",
+    "end": "00:17:51"
+  },
+  {
+    "text": "In our case, it's going to be a claim request form of some kind.",
+    "start": "00:17:51",
+    "end": "00:17:58"
+  },
+  {
+    "text": "Then, what does the system produce as output?",
+    "start": "00:17:56",
+    "end": "00:17:58"
+  },
+  {
+    "text": "So, in our case, it's going to be uh an approval or denial verdict along with an explanation for why uh a claim was approved or rejected.",
+    "start": "00:17:58",
+    "end": "00:18:11"
+  },
+  {
+    "text": "Where does the system live?",
+    "start": "00:18:09",
+    "end": "00:18:12"
+  },
+  {
+    "text": "Does it have a standalone app?",
+    "start": "00:18:12",
+    "end": "00:18:13"
+  },
+  {
+    "text": "Is it embedded in an existing website?",
+    "start": "00:18:13",
+    "end": "00:18:15"
+  },
+  {
+    "text": "Is it a Slack bot?",
+    "start": "00:18:15",
+    "end": "00:18:18"
+  },
+  {
+    "text": "Uh and so on.",
+    "start": "00:18:18",
+    "end": "00:18:20"
+  },
+  {
+    "text": "Uh so, for our application, it's very likely going to be embedded within MDB Health's main website, let's say.",
+    "start": "00:18:18",
+    "end": "00:18:29"
+  },
+  {
+    "text": "Uh what triggers the system?",
+    "start": "00:18:27",
+    "end": "00:18:31"
+  },
+  {
+    "text": "So, in our case, very clearly, a claim submission.",
+    "start": "00:18:31",
+    "end": "00:18:35"
+  },
+  {
+    "text": "What's the human's role?",
+    "start": "00:18:33",
+    "end": "00:18:35"
+  },
+  {
+    "text": "So, in our case, they are going to review the system's assessment and make the final decision in some cases.",
+    "start": "00:18:35",
+    "end": "00:18:44"
+  },
+  {
+    "text": "Um how does the system explain itself?",
+    "start": "00:18:41",
+    "end": "00:18:45"
+  },
+  {
+    "text": "In our case, um it explains itself by providing citations, so quoting uh the clinical guidelines and coverage policies that uh informed the system's assessment.",
+    "start": "00:18:44",
+    "end": "00:19:00"
+  },
+  {
+    "text": "And finally, how does it give feedback?",
+    "start": "00:18:57",
+    "end": "00:19:02"
+  },
+  {
+    "text": "So, remember, for our system, um the consumers are medical reviewers.",
+    "start": "00:19:00",
+    "end": "00:19:08"
+  },
+  {
+    "text": "Um so, they can provide feedback by overriding the verdict of the LLM and also log a reason for why Uh they can also we can maybe also have them flag any irrelevant citations.",
+    "start": "00:19:05",
+    "end": "00:19:20"
+  },
+  {
+    "text": "So, if their LM is hallucinating um clinical guidelines and policies or yeah, quoting the wrong ones for a particular claim, then we can have them flag those as well.",
+    "start": "00:19:20",
+    "end": "00:19:33"
+  },
+  {
+    "text": "All right.",
+    "start": "00:19:37",
+    "end": "00:19:38"
+  },
+  {
+    "text": "So, at this point we've decided what the architecture of our system should look like, but we also need to decide what our stack should look like.",
+    "start": "00:19:38",
+    "end": "00:19:49"
+  },
+  {
+    "text": "Once again, it might be tempting to have a coding agent recommend what tools to use, but they might not necessarily apply to your system or you might not be able to use them based on the constraints that we identified during the product requirement stage.",
+    "start": "00:19:47",
+    "end": "00:20:03"
+  },
+  {
+    "text": "So, we had constraints around models need to be supported by our cloud provider and things like that.",
+    "start": "00:20:03",
+    "end": "00:20:11"
+  },
+  {
+    "text": "I'm not going to get into this too much since our constraints are well, hypothetical, but I just want to mention that this is the next step and the different tooling decisions to be made such as what model to use.",
+    "start": "00:20:12",
+    "end": "00:20:28"
+  },
+  {
+    "text": "There's a bunch of data processing tools out there that have some nice out of the box data processing capabilities.",
+    "start": "00:20:25",
+    "end": "00:20:35"
+  },
+  {
+    "text": "If retrieval is part of your system, then and you're using things like vector search, then you might need to decide what embedding models to use, what vector database to use.",
+    "start": "00:20:33",
+    "end": "00:20:45"
+  },
+  {
+    "text": "Um then there's orchestration frameworks and so on.",
+    "start": "00:20:45",
+    "end": "00:20:49"
+  },
+  {
+    "text": "So, I'm just going to leave this here for reference later on.",
+    "start": "00:20:49",
+    "end": "00:20:53"
+  },
+  {
+    "text": "Next, let's talk about evaluation and monitoring.",
+    "start": "00:20:56",
+    "end": "00:20:59"
+  },
+  {
+    "text": "How do you know that what you've built works before and also after you ship?",
+    "start": "00:20:59",
+    "end": "00:21:04"
+  },
+  {
+    "text": "So, evaluation is before, monitoring is after you ship, and you need both of them.",
+    "start": "00:21:04",
+    "end": "00:21:11"
+  },
+  {
+    "text": "But before we get into evaluation metrics, let's talk about guardrails because these weren't really really a thing pre-LLMs.",
+    "start": "00:21:12",
+    "end": "00:21:21"
+  },
+  {
+    "text": "The reason they've become a topic of conversation is because unlike traditional software, LLM-based systems are going to are probabilistic systems and can produce outputs that are unexpected, incorrect, or even harmful.",
+    "start": "00:21:20",
+    "end": "00:21:35"
+  },
+  {
+    "text": "And guardrails are an attempt to mitigate these risks and ensure that your system behaves within acceptable boundaries.",
+    "start": "00:21:33",
+    "end": "00:21:40"
+  },
+  {
+    "text": "And what those boundaries are are something you need to define.",
+    "start": "00:21:40",
+    "end": "00:21:46"
+  },
+  {
+    "text": "So for inputs to your system, the goal is usually to detect invalid, irrelevant, or harmful inputs.",
+    "start": "00:21:43",
+    "end": "00:21:52"
+  },
+  {
+    "text": "Uh so for our claims review system, an input like write me a poem is irrelevant and our system should reject this claim.",
+    "start": "00:21:50",
+    "end": "00:22:02"
+  },
+  {
+    "text": "Similarly, for outputs, our goal is to detect invalid, incorrect, or hallucinated, uh or harmful outputs.",
+    "start": "00:22:00",
+    "end": "00:22:10"
+  },
+  {
+    "text": "So for our claims application, we'll consider uh a response to be invalid if the system doesn't provide citations for uh what informed an approval or denial.",
+    "start": "00:22:08",
+    "end": "00:22:22"
+  },
+  {
+    "text": "Now guardrail compliance is not the only thing you want to measure.",
+    "start": "00:22:20",
+    "end": "00:22:25"
+  },
+  {
+    "text": "You want to measure the quality of the responses, uh create and measure domain-specific accuracy metrics, and also general system health.",
+    "start": "00:22:25",
+    "end": "00:22:37"
+  },
+  {
+    "text": "So for input guardrail compliance, uh for our system, we can calculate a claim rejection rate.",
+    "start": "00:22:34",
+    "end": "00:22:41"
+  },
+  {
+    "text": "How often is our uh system rejecting claims because they don't obey uh our input guardrails.",
+    "start": "00:22:41",
+    "end": "00:22:48"
+  },
+  {
+    "text": "Now if it's rejecting too many times, then that's a call for investigation, but if you didn't measure this in the first place, then you won't have anything to investigate, so uh there we go.",
+    "start": "00:22:48",
+    "end": "00:22:57"
+  },
+  {
+    "text": "That's why you need metrics.",
+    "start": "00:22:57",
+    "end": "00:22:58"
+  },
+  {
+    "text": "For output guardrail compliance, we can have something like a missing citation rate, how many times is the LLM producing responses without citations.",
+    "start": "00:22:58",
+    "end": "00:23:07"
+  },
+  {
+    "text": "For response quality, we can measure faithfulness, which is whether or not the claims approval or rejection is actually rooted in the retrieved uh information like clinical guidelines and policies.",
+    "start": "00:23:07",
+    "end": "00:23:21"
+  },
+  {
+    "text": "Then you want to define at least one domain or application-specific metric.",
+    "start": "00:23:24",
+    "end": "00:23:30"
+  },
+  {
+    "text": "So, in our case, something like claim processing time might be a good one because that's really uh our North Star.",
+    "start": "00:23:29",
+    "end": "00:23:39"
+  },
+  {
+    "text": "And system-level metrics are usually uh around overall system health.",
+    "start": "00:23:36",
+    "end": "00:23:44"
+  },
+  {
+    "text": "So, uh what's your system's average token cost, token usage, uh average number of turns in a conversation.",
+    "start": "00:23:44",
+    "end": "00:23:50"
+  },
+  {
+    "text": "Uh so, here just to not have another latency metric, uh I put down something like cost for recommendation.",
+    "start": "00:23:50",
+    "end": "00:23:59"
+  },
+  {
+    "text": "So, once you evaluated your system and ship your product in front of users, then comes monitoring the system for regressions in real time.",
+    "start": "00:24:00",
+    "end": "00:24:10"
+  },
+  {
+    "text": "Now, in production, you still want to track the metrics that you used for uh offline evaluation, so the metrics that we talked about, but you might also be able to track additional metrics that can act as uh implicit indicators of your product's success or like how uh uh how happy users are with your product and overall system health.",
+    "start": "00:24:08",
+    "end": "00:24:33"
+  },
+  {
+    "text": "For example, for the claims review app, you can track how often a human reviewer overrides the AI verdict.",
+    "start": "00:24:31",
+    "end": "00:24:39"
+  },
+  {
+    "text": "Uh now, you want this rate to be low uh because that means the system is not doing its job.",
+    "start": "00:24:39",
+    "end": "00:24:45"
+  },
+  {
+    "text": "So, if you ever start seeing is seeing it increasing about above a certain threshold, then you need to go and investigate.",
+    "start": "00:24:42",
+    "end": "00:24:52"
+  },
+  {
+    "text": "Or you can also track something like how long does it take for a human to review the AI recommendation.",
+    "start": "00:24:50",
+    "end": "00:24:57"
+  },
+  {
+    "text": "If it takes too long, which means um this could mean that the responses are very verbose, confusing.",
+    "start": "00:24:57",
+    "end": "00:25:04"
+  },
+  {
+    "text": "So, yeah, these would be uh some good indicators to track uh once you ship your product to production.",
+    "start": "00:25:04",
+    "end": "00:25:11"
+  },
+  {
+    "text": "Now, once you have a working prototype that you've evaluated, accuracy looks good, it's time to move to production, right?",
+    "start": "00:25:12",
+    "end": "00:25:21"
+  },
+  {
+    "text": "Well, what about cost, latency, and reliability?",
+    "start": "00:25:19",
+    "end": "00:25:24"
+  },
+  {
+    "text": "Uh these constraints become absolutely non-negotiable as you're moving your product to production.",
+    "start": "00:25:24",
+    "end": "00:25:31"
+  },
+  {
+    "text": "So, you might need to do a few more iterations, evaluations, and testing uh between accuracy looks good and moving to production.",
+    "start": "00:25:31",
+    "end": "00:25:42"
+  },
+  {
+    "text": "So, let's talk about some optimization techniques for each of these.",
+    "start": "00:25:40",
+    "end": "00:25:46"
+  },
+  {
+    "text": "So, optimizing for accuracy.",
+    "start": "00:25:44",
+    "end": "00:25:48"
+  },
+  {
+    "text": "In LLM-based applications, it really comes down to optimizing the information that uh ends up in the LLM's context window.",
+    "start": "00:25:48",
+    "end": "00:25:56"
+  },
+  {
+    "text": "And here are some techniques for you to refer to later, but let's quickly talk about which of these uh might apply to our claims review application.",
+    "start": "00:25:55",
+    "end": "00:26:05"
+  },
+  {
+    "text": "So, prompt engineering, of course.",
+    "start": "00:26:05",
+    "end": "00:26:07"
+  },
+  {
+    "text": "Uh reranking is another good one because uh retrieval is a big component of it.",
+    "start": "00:26:07",
+    "end": "00:26:13"
+  },
+  {
+    "text": "So, uh a reranker will make sure that the information being retrieved um is surfacing information in the right order of relevance, which is important when working with LLMs.",
+    "start": "00:26:13",
+    "end": "00:26:24"
+  },
+  {
+    "text": "Uh we are also persisting patient history uh to MongoDB, so our application already has some form of memory, but you could also think about other types of information that might be uh useful to persist across sessions.",
+    "start": "00:26:22",
+    "end": "00:26:38"
+  },
+  {
+    "text": "Here are some techniques for cost and latency optimization.",
+    "start": "00:26:36",
+    "end": "00:26:43"
+  },
+  {
+    "text": "For our use case, semantic caching could be useful to expedite decisions based on uh similar claims from the past.",
+    "start": "00:26:41",
+    "end": "00:26:50"
+  },
+  {
+    "text": "Uh batch processing, perhaps, to process claims in batches instead of one at a time.",
+    "start": "00:26:50",
+    "end": "00:26:58"
+  },
+  {
+    "text": "And finally, optimizing for reliability.",
+    "start": "00:26:54",
+    "end": "00:27:00"
+  },
+  {
+    "text": "Most of these would be useful for our use case since they're mainly solving for API failures, but I want to specifically call out structured outputs, which would be a good one to make sure that our system is always producing a structured output which contains not just the decision, but also the citations.",
+    "start": "00:26:58",
+    "end": "00:27:19"
+  },
+  {
+    "text": "This brings me to the end of my talk, but I wanted to leave you with a few takeaways.",
+    "start": "00:27:17",
+    "end": "00:27:24"
+  },
+  {
+    "text": "Think deeply about your product's requirements before having AI generate any code.",
+    "start": "00:27:24",
+    "end": "00:27:29"
+  },
+  {
+    "text": "The product spec is the hard part now, it's not the code anymore.",
+    "start": "00:27:29",
+    "end": "00:27:35"
+  },
+  {
+    "text": "Your latency budget, your cost ceiling, any regulatory requirements, all of these shape every architectural decision downstream.",
+    "start": "00:27:40",
+    "end": "00:27:50"
+  },
+  {
+    "text": "So, good to identify business and performance constraints before starting to design your application.",
+    "start": "00:27:50",
+    "end": "00:27:56"
+  },
+  {
+    "text": "Design the simplest system that meets your needs.",
+    "start": "00:27:57",
+    "end": "00:28:01"
+  },
+  {
+    "text": "Evaluate it and then iterate from there.",
+    "start": "00:28:01",
+    "end": "00:28:03"
+  },
+  {
+    "text": "The most common mistake I see is over-engineering the solution before knowing what's actually failing or not even evaluating what's actually failing.",
+    "start": "00:28:03",
+    "end": "00:28:16"
+  },
+  {
+    "text": "And that brings me to evaluation.",
+    "start": "00:28:14",
+    "end": "00:28:19"
+  },
+  {
+    "text": "Build evaluation in from the start.",
+    "start": "00:28:16",
+    "end": "00:28:22"
+  },
+  {
+    "text": "You can't improve what you can't measure.",
+    "start": "00:28:22",
+    "end": "00:28:25"
+  },
+  {
+    "text": "Link to our GenAI cookbook that has a ton of examples of different retrieval technique, agentic design patterns, and some of the evaluation and optimization techniques that I was talking about.",
+    "start": "00:28:23",
+    "end": "00:28:39"
+  },
+  {
+    "text": "And yeah, thank you so much for taking the time to listen to my talk.",
+    "start": "00:28:40",
+    "end": "00:28:46"
+  },
+  {
+    "text": "I'll see you at the conference.",
+    "start": "00:28:46",
+    "end": "00:28:47"
+  },
+  {
+    "text": ">> conference.",
+    "start": "00:28:47",
+    "end": "00:28:50"
+  }
+]

@@ -1,0 +1,3622 @@
+[
+  {
+    "text": "Hi everyone. I'm Apurva and I'm a data",
+    "start": 2.08,
+    "duration": 4.32
+  },
+  {
+    "text": "scientist turned developer advocate",
+    "start": 4.52,
+    "duration": 3.88
+  },
+  {
+    "text": "currently at MongoDB.",
+    "start": 6.4,
+    "duration": 5
+  },
+  {
+    "text": "I spent the first of my career building",
+    "start": 8.4,
+    "duration": 5.12
+  },
+  {
+    "text": "machine learning applications for",
+    "start": 11.4,
+    "duration": 4.52
+  },
+  {
+    "text": "various cybersecurity use cases and I",
+    "start": 13.52,
+    "duration": 4.24
+  },
+  {
+    "text": "now use that applied machine learning",
+    "start": 15.92,
+    "duration": 3.72
+  },
+  {
+    "text": "knowledge to help AI builders",
+    "start": 17.76,
+    "duration": 4.84
+  },
+  {
+    "text": "successfully build AI applications with",
+    "start": 19.64,
+    "duration": 5.52
+  },
+  {
+    "text": "MongoDB and Voyage AI.",
+    "start": 22.6,
+    "duration": 4.8
+  },
+  {
+    "text": "In this talk you'll learn how to think",
+    "start": 25.16,
+    "duration": 4.48
+  },
+  {
+    "text": "through building AI systems end-to-end",
+    "start": 27.4,
+    "duration": 4.84
+  },
+  {
+    "text": "from idea to production. We'll take a",
+    "start": 29.64,
+    "duration": 5.04
+  },
+  {
+    "text": "real-world use case and walk through all",
+    "start": 32.24,
+    "duration": 4.52
+  },
+  {
+    "text": "the steps of designing it and hopefully",
+    "start": 34.68,
+    "duration": 3.56
+  },
+  {
+    "text": "in the end you'll walk away with a",
+    "start": 36.76,
+    "duration": 3.44
+  },
+  {
+    "text": "repeatable framework that you can apply",
+    "start": 38.24,
+    "duration": 3
+  },
+  {
+    "text": "to",
+    "start": 40.2,
+    "duration": 4.68
+  },
+  {
+    "text": "any AI system you design.",
+    "start": 41.24,
+    "duration": 3.64
+  },
+  {
+    "text": "Now, you might be thinking in the age of",
+    "start": 46.4,
+    "duration": 5
+  },
+  {
+    "text": "AI do we even need to think about what",
+    "start": 48.88,
+    "duration": 5.16
+  },
+  {
+    "text": "we build? Just wipe code it and ship it,",
+    "start": 51.4,
+    "duration": 4.64
+  },
+  {
+    "text": "right? But that's actually where I want",
+    "start": 54.04,
+    "duration": 3.24
+  },
+  {
+    "text": "to start.",
+    "start": 56.04,
+    "duration": 4.76
+  },
+  {
+    "text": "Now, here's the problem with that.",
+    "start": 57.28,
+    "duration": 3.52
+  },
+  {
+    "text": "Wipe coding works great when you're",
+    "start": 61.08,
+    "duration": 4.2
+  },
+  {
+    "text": "building for fun, the stakes are low,",
+    "start": 62.84,
+    "duration": 4.36
+  },
+  {
+    "text": "and you can easily eyeball whether the",
+    "start": 65.28,
+    "duration": 4.32
+  },
+  {
+    "text": "output of what you're building is right.",
+    "start": 67.2,
+    "duration": 3.96
+  },
+  {
+    "text": "But the moment you're building something",
+    "start": 69.6,
+    "duration": 4.44
+  },
+  {
+    "text": "real, something other people depend on,",
+    "start": 71.16,
+    "duration": 5.2
+  },
+  {
+    "text": "something with real consequences, just",
+    "start": 74.04,
+    "duration": 5.04
+  },
+  {
+    "text": "ship it is actually kind of dangerous.",
+    "start": 76.36,
+    "duration": 4.56
+  },
+  {
+    "text": "Uh and it's not just me saying it, folks",
+    "start": 79.08,
+    "duration": 4.16
+  },
+  {
+    "text": "from Anthropic and OpenAI who are so",
+    "start": 80.92,
+    "duration": 4.16
+  },
+  {
+    "text": "bullish on AI coding are saying the same",
+    "start": 83.24,
+    "duration": 3.88
+  },
+  {
+    "text": "thing. These are actually quotes from",
+    "start": 85.08,
+    "duration": 5.24
+  },
+  {
+    "text": "their talks over the past few months.",
+    "start": 87.12,
+    "duration": 5.88
+  },
+  {
+    "text": "Specs are the new code. The art is in",
+    "start": 90.32,
+    "duration": 4.68
+  },
+  {
+    "text": "defining the product requirements, the",
+    "start": 93,
+    "duration": 4.28
+  },
+  {
+    "text": "system design, and evaluate",
+    "start": 95,
+    "duration": 4.36
+  },
+  {
+    "text": "criteria so you can be confident that",
+    "start": 97.28,
+    "duration": 4.12
+  },
+  {
+    "text": "your AI coding buddies are building the",
+    "start": 99.36,
+    "duration": 4
+  },
+  {
+    "text": "right thing. And the rest of the talk is",
+    "start": 101.4,
+    "duration": 6.2
+  },
+  {
+    "text": "just about that. How do we do this well?",
+    "start": 103.36,
+    "duration": 4.24
+  },
+  {
+    "text": "It's useful to think about it as a",
+    "start": 109.52,
+    "duration": 4.44
+  },
+  {
+    "text": "framework. Four phases. You start with",
+    "start": 111.52,
+    "duration": 4.08
+  },
+  {
+    "text": "product requirements. What are you",
+    "start": 113.96,
+    "duration": 3.36
+  },
+  {
+    "text": "actually building,",
+    "start": 115.6,
+    "duration": 4.36
+  },
+  {
+    "text": "for whom, and what are the constraints?",
+    "start": 117.32,
+    "duration": 5.08
+  },
+  {
+    "text": "Then system design, the data, the",
+    "start": 119.96,
+    "duration": 4.92
+  },
+  {
+    "text": "architecture, the patterns that actually",
+    "start": 122.4,
+    "duration": 5.079
+  },
+  {
+    "text": "help you meet these requirements.",
+    "start": 124.88,
+    "duration": 4.96
+  },
+  {
+    "text": "Then comes evaluation and monitoring.",
+    "start": 127.479,
+    "duration": 3.841
+  },
+  {
+    "text": "How do you know",
+    "start": 129.84,
+    "duration": 3.96
+  },
+  {
+    "text": "what's being built actually works before",
+    "start": 131.32,
+    "duration": 4.6
+  },
+  {
+    "text": "and also after you ship?",
+    "start": 133.8,
+    "duration": 4.2
+  },
+  {
+    "text": "And finally, how do you optimize for",
+    "start": 135.92,
+    "duration": 3.72
+  },
+  {
+    "text": "cost,",
+    "start": 138,
+    "duration": 3.36
+  },
+  {
+    "text": "not just for accuracy, but also for",
+    "start": 139.64,
+    "duration": 4.4
+  },
+  {
+    "text": "cost, latency, and reliability before",
+    "start": 141.36,
+    "duration": 5.8
+  },
+  {
+    "text": "you ship and or as you find gaps in",
+    "start": 144.04,
+    "duration": 5.84
+  },
+  {
+    "text": "production.",
+    "start": 147.16,
+    "duration": 2.72
+  },
+  {
+    "text": "Instead of talking abstractly through a",
+    "start": 150.36,
+    "duration": 4.68
+  },
+  {
+    "text": "framework, I thought why not apply it to",
+    "start": 152.28,
+    "duration": 4.88
+  },
+  {
+    "text": "a real-world use case so you can see how",
+    "start": 155.04,
+    "duration": 5.12
+  },
+  {
+    "text": "exactly each decision flows from",
+    "start": 157.16,
+    "duration": 5.799
+  },
+  {
+    "text": "one stage of the framework to the next.",
+    "start": 160.16,
+    "duration": 5
+  },
+  {
+    "text": "So let's take the example of a health",
+    "start": 162.959,
+    "duration": 6.081
+  },
+  {
+    "text": "insurance claims review system.",
+    "start": 165.16,
+    "duration": 3.88
+  },
+  {
+    "text": "So adjudicating health insurance claims",
+    "start": 169.6,
+    "duration": 4.16
+  },
+  {
+    "text": "has historically been an extremely",
+    "start": 171.76,
+    "duration": 3.92
+  },
+  {
+    "text": "manual process where",
+    "start": 173.76,
+    "duration": 4.4
+  },
+  {
+    "text": "human medical reviewers have to",
+    "start": 175.68,
+    "duration": 4.6
+  },
+  {
+    "text": "cross-reference clinical guidelines,",
+    "start": 178.16,
+    "duration": 4.88
+  },
+  {
+    "text": "insurance coverage policies, patient",
+    "start": 180.28,
+    "duration": 4.959
+  },
+  {
+    "text": "history, and stuff to decide whether or",
+    "start": 183.04,
+    "duration": 3.28
+  },
+  {
+    "text": "not",
+    "start": 185.239,
+    "duration": 3.241
+  },
+  {
+    "text": "a medical treatment, procedure, or",
+    "start": 186.32,
+    "duration": 4.639
+  },
+  {
+    "text": "medication is covered by a patient's",
+    "start": 188.48,
+    "duration": 5
+  },
+  {
+    "text": "health insurance policy. Now, if you",
+    "start": 190.959,
+    "duration": 4.201
+  },
+  {
+    "text": "live somewhere that has free health",
+    "start": 193.48,
+    "duration": 2.64
+  },
+  {
+    "text": "care,",
+    "start": 195.16,
+    "duration": 2.64
+  },
+  {
+    "text": "even there there's things that are",
+    "start": 196.12,
+    "duration": 4.119
+  },
+  {
+    "text": "covered and things that are not by your",
+    "start": 197.8,
+    "duration": 3.68
+  },
+  {
+    "text": "health care system. So you're still",
+    "start": 200.239,
+    "duration": 7.081
+  },
+  {
+    "text": "subject to some version of this process.",
+    "start": 201.48,
+    "duration": 7.64
+  },
+  {
+    "text": "Now, our goal with building this system",
+    "start": 207.32,
+    "duration": 4.24
+  },
+  {
+    "text": "is to see if we can improve or simplify",
+    "start": 209.12,
+    "duration": 5.839
+  },
+  {
+    "text": "the experience for medical reviewers",
+    "start": 211.56,
+    "duration": 6.44
+  },
+  {
+    "text": "with the help of AI.",
+    "start": 214.959,
+    "duration": 3.041
+  },
+  {
+    "text": "So let's see what the product",
+    "start": 218.239,
+    "duration": 3.761
+  },
+  {
+    "text": "requirements stage of the framework for",
+    "start": 220.08,
+    "duration": 5.56
+  },
+  {
+    "text": "this application might look like.",
+    "start": 222,
+    "duration": 3.64
+  },
+  {
+    "text": "So first thing to do is quantify the",
+    "start": 225.72,
+    "duration": 4.6
+  },
+  {
+    "text": "business problem. The business problem",
+    "start": 227.88,
+    "duration": 5.64
+  },
+  {
+    "text": "should focus on something specific, uh",
+    "start": 230.32,
+    "duration": 5
+  },
+  {
+    "text": "clearly state who the users of the",
+    "start": 233.52,
+    "duration": 5.28
+  },
+  {
+    "text": "application are, uh the current state of",
+    "start": 235.32,
+    "duration": 5.92
+  },
+  {
+    "text": "things, and quantify the users' pain",
+    "start": 238.8,
+    "duration": 4.76
+  },
+  {
+    "text": "point. It should not prescribe what the",
+    "start": 241.24,
+    "duration": 3.92
+  },
+  {
+    "text": "system is going to be, whether it's",
+    "start": 243.56,
+    "duration": 3.6
+  },
+  {
+    "text": "going to be an agent, a multi-agent",
+    "start": 245.16,
+    "duration": 3.72
+  },
+  {
+    "text": "system, something else.",
+    "start": 247.16,
+    "duration": 4.799
+  },
+  {
+    "text": "Uh that will come later.",
+    "start": 248.88,
+    "duration": 3.079
+  },
+  {
+    "text": "So, here's what the business problem for",
+    "start": 254,
+    "duration": 3.72
+  },
+  {
+    "text": "our claims review system could look",
+    "start": 256.04,
+    "duration": 4.8
+  },
+  {
+    "text": "like. Medical reviewers at MDB Health",
+    "start": 257.72,
+    "duration": 5.52
+  },
+  {
+    "text": "spend an average of 2 days processing",
+    "start": 260.84,
+    "duration": 4.52
+  },
+  {
+    "text": "claim review requests, which is four",
+    "start": 263.24,
+    "duration": 3.72
+  },
+  {
+    "text": "times the industry standard for",
+    "start": 265.36,
+    "duration": 4.04
+  },
+  {
+    "text": "non-urgent cases, and 12 times the",
+    "start": 266.96,
+    "duration": 4.76
+  },
+  {
+    "text": "industry standard for urgent ones.",
+    "start": 269.4,
+    "duration": 4.68
+  },
+  {
+    "text": "Delays at this scale postpone patient",
+    "start": 271.72,
+    "duration": 5.199
+  },
+  {
+    "text": "care, uh particularly for time-sensitive",
+    "start": 274.08,
+    "duration": 5.44
+  },
+  {
+    "text": "treatment. So, as you can see, this",
+    "start": 276.919,
+    "duration": 4.761
+  },
+  {
+    "text": "business problem is user-specific. It",
+    "start": 279.52,
+    "duration": 3.8
+  },
+  {
+    "text": "says this is meant for medical",
+    "start": 281.68,
+    "duration": 2.88
+  },
+  {
+    "text": "reviewers.",
+    "start": 283.32,
+    "duration": 4.04
+  },
+  {
+    "text": "Uh it states the current state, which is",
+    "start": 284.56,
+    "duration": 4.84
+  },
+  {
+    "text": "like this manual process that leads to",
+    "start": 287.36,
+    "duration": 4.76
+  },
+  {
+    "text": "them spending 2 days processing",
+    "start": 289.4,
+    "duration": 4.76
+  },
+  {
+    "text": "uh claim reviews.",
+    "start": 292.12,
+    "duration": 4.24
+  },
+  {
+    "text": "It's measurable because it states some",
+    "start": 294.16,
+    "duration": 3.68
+  },
+  {
+    "text": "baselines.",
+    "start": 296.36,
+    "duration": 3.24
+  },
+  {
+    "text": "Uh it's solution-agnostic. It doesn't",
+    "start": 297.84,
+    "duration": 3.8
+  },
+  {
+    "text": "really tell you uh what the system",
+    "start": 299.6,
+    "duration": 3.52
+  },
+  {
+    "text": "should look like,",
+    "start": 301.64,
+    "duration": 4.64
+  },
+  {
+    "text": "uh and it's very focused on a specific",
+    "start": 303.12,
+    "duration": 5.68
+  },
+  {
+    "text": "problem.",
+    "start": 306.28,
+    "duration": 2.52
+  },
+  {
+    "text": "Next, you want to gather any business",
+    "start": 310.919,
+    "duration": 4.161
+  },
+  {
+    "text": "constraints for the application. So, any",
+    "start": 313.04,
+    "duration": 5.32
+  },
+  {
+    "text": "regulatory uh compliance requirements,",
+    "start": 315.08,
+    "duration": 6.04
+  },
+  {
+    "text": "any constraints on data leaving your",
+    "start": 318.36,
+    "duration": 4.88
+  },
+  {
+    "text": "organization, procurement constraints,",
+    "start": 321.12,
+    "duration": 4.56
+  },
+  {
+    "text": "meaning are certain vendors uh not",
+    "start": 323.24,
+    "duration": 3.56
+  },
+  {
+    "text": "approved for use within the",
+    "start": 325.68,
+    "duration": 3.64
+  },
+  {
+    "text": "organization. Uh all of these would be",
+    "start": 326.8,
+    "duration": 4.24
+  },
+  {
+    "text": "good to know before you even start",
+    "start": 329.32,
+    "duration": 3.68
+  },
+  {
+    "text": "designing the system.",
+    "start": 331.04,
+    "duration": 3.92
+  },
+  {
+    "text": "So, for our application, say these are",
+    "start": 333,
+    "duration": 3.56
+  },
+  {
+    "text": "some of the business constraints.",
+    "start": 334.96,
+    "duration": 3.56
+  },
+  {
+    "text": "Patient data has to stay within the",
+    "start": 336.56,
+    "duration": 4.76
+  },
+  {
+    "text": "approved cloud environment. Um only",
+    "start": 338.52,
+    "duration": 4.84
+  },
+  {
+    "text": "models available on the approved cloud",
+    "start": 341.32,
+    "duration": 4.76
+  },
+  {
+    "text": "can be used. Um",
+    "start": 343.36,
+    "duration": 5.4
+  },
+  {
+    "text": "there's some use cases where human",
+    "start": 346.08,
+    "duration": 5.12
+  },
+  {
+    "text": "review is required. So, any complex use",
+    "start": 348.76,
+    "duration": 4.8
+  },
+  {
+    "text": "cases require a senior physician's",
+    "start": 351.2,
+    "duration": 4.44
+  },
+  {
+    "text": "review. Um",
+    "start": 353.56,
+    "duration": 3.24
+  },
+  {
+    "text": "what else?",
+    "start": 355.64,
+    "duration": 4.16
+  },
+  {
+    "text": "Any denial decisions must be uh reviewed",
+    "start": 356.8,
+    "duration": 4.88
+  },
+  {
+    "text": "by a human reviewer. So, there's cases",
+    "start": 359.8,
+    "duration": 4.36
+  },
+  {
+    "text": "which you can't fully automate with AI.",
+    "start": 361.68,
+    "duration": 4.88
+  },
+  {
+    "text": "So, yeah, all of these are useful design",
+    "start": 364.16,
+    "duration": 3.84
+  },
+  {
+    "text": "inputs. So, you want to have these",
+    "start": 366.56,
+    "duration": 4.68
+  },
+  {
+    "text": "sooner rather than later.",
+    "start": 368,
+    "duration": 3.24
+  },
+  {
+    "text": "Also good to know of any performance",
+    "start": 374.52,
+    "duration": 4.32
+  },
+  {
+    "text": "requirements. Uh do we need",
+    "start": 376.76,
+    "duration": 4.159
+  },
+  {
+    "text": "sub-millisecond responses or do we have",
+    "start": 378.84,
+    "duration": 4.52
+  },
+  {
+    "text": "some leeway there? Uh how much can we",
+    "start": 380.919,
+    "duration": 5.361
+  },
+  {
+    "text": "spend per month on LLM inference? Any",
+    "start": 383.36,
+    "duration": 6.88
+  },
+  {
+    "text": "uptime SLAs to be aware of?",
+    "start": 386.28,
+    "duration": 3.96
+  },
+  {
+    "text": "Next, if you're building an AI product,",
+    "start": 391.08,
+    "duration": 4.48
+  },
+  {
+    "text": "identifying the role of AI uh in your",
+    "start": 393.2,
+    "duration": 4.44
+  },
+  {
+    "text": "product is helpful.",
+    "start": 395.56,
+    "duration": 3.96
+  },
+  {
+    "text": "And I like to think about the role of AI",
+    "start": 397.64,
+    "duration": 4.48
+  },
+  {
+    "text": "along three dimensions. First, is AI",
+    "start": 399.52,
+    "duration": 3.88
+  },
+  {
+    "text": "critical to your product or",
+    "start": 402.12,
+    "duration": 2.72
+  },
+  {
+    "text": "complementary?",
+    "start": 403.4,
+    "duration": 4.36
+  },
+  {
+    "text": "In this case, complementary since um",
+    "start": 404.84,
+    "duration": 4.8
+  },
+  {
+    "text": "claims are already happening without",
+    "start": 407.76,
+    "duration": 3.64
+  },
+  {
+    "text": "claim reviews already happening without",
+    "start": 409.64,
+    "duration": 5.08
+  },
+  {
+    "text": "AI, but they are just slower.",
+    "start": 411.4,
+    "duration": 5.519
+  },
+  {
+    "text": "Next, will this be a reactive or",
+    "start": 414.72,
+    "duration": 3.76
+  },
+  {
+    "text": "proactive system? Meaning, is it",
+    "start": 416.919,
+    "duration": 5.041
+  },
+  {
+    "text": "triggered by a user or an event or does",
+    "start": 418.48,
+    "duration": 6.12
+  },
+  {
+    "text": "it proactively do things? In this case,",
+    "start": 421.96,
+    "duration": 5.2
+  },
+  {
+    "text": "it's going to be a reactive system since",
+    "start": 424.6,
+    "duration": 4.52
+  },
+  {
+    "text": "uh it's triggered by a claims",
+    "start": 427.16,
+    "duration": 5.04
+  },
+  {
+    "text": "application actually being submitted.",
+    "start": 429.12,
+    "duration": 4.6
+  },
+  {
+    "text": "And finally, what's the level of",
+    "start": 432.2,
+    "duration": 5.04
+  },
+  {
+    "text": "autonomy uh for AI in the application?",
+    "start": 433.72,
+    "duration": 5
+  },
+  {
+    "text": "So, in our case, the business",
+    "start": 437.24,
+    "duration": 3.48
+  },
+  {
+    "text": "constraints prescribe human review in",
+    "start": 438.72,
+    "duration": 4.72
+  },
+  {
+    "text": "certain cases. So, our system can be",
+    "start": 440.72,
+    "duration": 6.32
+  },
+  {
+    "text": "semi-autonomous at max.",
+    "start": 443.44,
+    "duration": 3.6
+  },
+  {
+    "text": "And finally, as part of defining what",
+    "start": 448.04,
+    "duration": 3.52
+  },
+  {
+    "text": "you're solving for, you also want to",
+    "start": 449.919,
+    "duration": 4.641
+  },
+  {
+    "text": "come up with one to two uh success",
+    "start": 451.56,
+    "duration": 4.52
+  },
+  {
+    "text": "metrics aligned with the business",
+    "start": 454.56,
+    "duration": 3.48
+  },
+  {
+    "text": "problem so you can capture what success",
+    "start": 456.08,
+    "duration": 3.24
+  },
+  {
+    "text": "looks like.",
+    "start": 458.04,
+    "duration": 4.32
+  },
+  {
+    "text": "A good success metric is specific,",
+    "start": 459.32,
+    "duration": 5.96
+  },
+  {
+    "text": "measurable, achievable, relevant, and",
+    "start": 462.36,
+    "duration": 5.24
+  },
+  {
+    "text": "time-bound. And here's an example of a",
+    "start": 465.28,
+    "duration": 4.4
+  },
+  {
+    "text": "success metric for our claims review",
+    "start": 467.6,
+    "duration": 4.84
+  },
+  {
+    "text": "application. So, it says it says reduce",
+    "start": 469.68,
+    "duration": 4.76
+  },
+  {
+    "text": "the average processing time for urgent",
+    "start": 472.44,
+    "duration": 4.32
+  },
+  {
+    "text": "claim review requests from 2 days to 1",
+    "start": 474.44,
+    "duration": 3.36
+  },
+  {
+    "text": "hour",
+    "start": 476.76,
+    "duration": 4.44
+  },
+  {
+    "text": "within 90 days of launch. So, it's super",
+    "start": 477.8,
+    "duration": 6
+  },
+  {
+    "text": "specific. It's measurable because it's",
+    "start": 481.2,
+    "duration": 5.04
+  },
+  {
+    "text": "saying uh",
+    "start": 483.8,
+    "duration": 5.4
+  },
+  {
+    "text": "the processing time needs to be 1 hour.",
+    "start": 486.24,
+    "duration": 5.88
+  },
+  {
+    "text": "Uh it seems achievable because um",
+    "start": 489.2,
+    "duration": 4.84
+  },
+  {
+    "text": "there'll be AI in the loop, so hopefully",
+    "start": 492.12,
+    "duration": 4.64
+  },
+  {
+    "text": "any information gathering uh getting an",
+    "start": 494.04,
+    "duration": 5.2
+  },
+  {
+    "text": "initial recommended recommendation will",
+    "start": 496.76,
+    "duration": 4.04
+  },
+  {
+    "text": "be faster.",
+    "start": 499.24,
+    "duration": 3.72
+  },
+  {
+    "text": "Uh it's very relevant and rooted in the",
+    "start": 500.8,
+    "duration": 4.4
+  },
+  {
+    "text": "business problem from before, and it's",
+    "start": 502.96,
+    "duration": 4.4
+  },
+  {
+    "text": "time-bound because it gives you uh a",
+    "start": 505.2,
+    "duration": 5.12
+  },
+  {
+    "text": "window for when we need to start seeing",
+    "start": 507.36,
+    "duration": 5.6
+  },
+  {
+    "text": "success.",
+    "start": 510.32,
+    "duration": 2.64
+  },
+  {
+    "text": "Okay, so at this point we figured out uh",
+    "start": 515.44,
+    "duration": 6.24
+  },
+  {
+    "text": "the what. Let's look at the how.",
+    "start": 518.159,
+    "duration": 4.921
+  },
+  {
+    "text": "The first thing you want to think about",
+    "start": 521.68,
+    "duration": 4.8
+  },
+  {
+    "text": "here is your data strategy. What does uh",
+    "start": 523.08,
+    "duration": 5.759
+  },
+  {
+    "text": "what data does your application need? Do",
+    "start": 526.48,
+    "duration": 4.56
+  },
+  {
+    "text": "you even have access to it? Where does",
+    "start": 528.839,
+    "duration": 4.961
+  },
+  {
+    "text": "it reside? Uh is it ready for",
+    "start": 531.04,
+    "duration": 7.32
+  },
+  {
+    "text": "consumption in its raw form, and so on?",
+    "start": 533.8,
+    "duration": 4.56
+  },
+  {
+    "text": "So, for our claims review application,",
+    "start": 538.96,
+    "duration": 3.68
+  },
+  {
+    "text": "these are the data sources that we might",
+    "start": 540.64,
+    "duration": 4.12
+  },
+  {
+    "text": "need, where they reside, and what their",
+    "start": 542.64,
+    "duration": 4.96
+  },
+  {
+    "text": "raw access formats might look like. So,",
+    "start": 544.76,
+    "duration": 5.4
+  },
+  {
+    "text": "we need uh clinical guidelines probably,",
+    "start": 547.6,
+    "duration": 4.12
+  },
+  {
+    "text": "uh which describe what care is",
+    "start": 550.16,
+    "duration": 4.92
+  },
+  {
+    "text": "appropriate for a given condition. Uh",
+    "start": 551.72,
+    "duration": 5.92
+  },
+  {
+    "text": "MDB Health's coverage policies that",
+    "start": 555.08,
+    "duration": 5.4
+  },
+  {
+    "text": "state what MDB Health will and will not",
+    "start": 557.64,
+    "duration": 5.08
+  },
+  {
+    "text": "pay for.",
+    "start": 560.48,
+    "duration": 3.88
+  },
+  {
+    "text": "And finally, the patient's claims",
+    "start": 562.72,
+    "duration": 4.84
+  },
+  {
+    "text": "history to know any uh past conditions,",
+    "start": 564.36,
+    "duration": 5.32
+  },
+  {
+    "text": "uh procedures that were performed, when",
+    "start": 567.56,
+    "duration": 5.44
+  },
+  {
+    "text": "they were performed, and so on.",
+    "start": 569.68,
+    "duration": 3.32
+  },
+  {
+    "text": "Let's assume that the clinical",
+    "start": 573.32,
+    "duration": 3.76
+  },
+  {
+    "text": "guidelines and coverage policies are",
+    "start": 575.2,
+    "duration": 3.96
+  },
+  {
+    "text": "stored as PDFs in something like",
+    "start": 577.08,
+    "duration": 3.4
+  },
+  {
+    "text": "Confluence",
+    "start": 579.16,
+    "duration": 4.32
+  },
+  {
+    "text": "and claims are stored in MongoDB as and",
+    "start": 580.48,
+    "duration": 6.04
+  },
+  {
+    "text": "when they are processed.",
+    "start": 583.48,
+    "duration": 3.04
+  },
+  {
+    "text": "The next thing to think about is data",
+    "start": 586.68,
+    "duration": 4.52
+  },
+  {
+    "text": "update frequency. How often do the data",
+    "start": 588.48,
+    "duration": 5.12
+  },
+  {
+    "text": "sources update? Now, if you're doing any",
+    "start": 591.2,
+    "duration": 4.52
+  },
+  {
+    "text": "sort of data processing on these raw",
+    "start": 593.6,
+    "duration": 4.6
+  },
+  {
+    "text": "data sources and you typically are,",
+    "start": 595.72,
+    "duration": 5.2
+  },
+  {
+    "text": "these pipelines are going to have to run",
+    "start": 598.2,
+    "duration": 4.56
+  },
+  {
+    "text": "at the right cadence to keep up.",
+    "start": 600.92,
+    "duration": 3.64
+  },
+  {
+    "text": "Otherwise, our system is going to work",
+    "start": 602.76,
+    "duration": 4
+  },
+  {
+    "text": "off of stale information and that's not",
+    "start": 604.56,
+    "duration": 4.08
+  },
+  {
+    "text": "good, especially in such a high-stakes",
+    "start": 606.76,
+    "duration": 4.52
+  },
+  {
+    "text": "use case.",
+    "start": 608.64,
+    "duration": 2.64
+  },
+  {
+    "text": "So, let's work this out for our claims",
+    "start": 611.64,
+    "duration": 3.56
+  },
+  {
+    "text": "review system.",
+    "start": 613.6,
+    "duration": 3.16
+  },
+  {
+    "text": "Clinical guide",
+    "start": 615.2,
+    "duration": 4.24
+  },
+  {
+    "text": "These probably update annually.",
+    "start": 616.76,
+    "duration": 3.44
+  },
+  {
+    "text": "Uh",
+    "start": 619.44,
+    "duration": 2.96
+  },
+  {
+    "text": "internal coverage policies may be",
+    "start": 620.2,
+    "duration": 4.44
+  },
+  {
+    "text": "quarterly and the patient's claim",
+    "start": 622.4,
+    "duration": 4.32
+  },
+  {
+    "text": "history needs to be updated whenever a",
+    "start": 624.64,
+    "duration": 4.08
+  },
+  {
+    "text": "new claim is processed. And in our",
+    "start": 626.72,
+    "duration": 4.28
+  },
+  {
+    "text": "success metrics, if you recall,",
+    "start": 628.72,
+    "duration": 3.8
+  },
+  {
+    "text": "uh we've said we want to aim for a",
+    "start": 631,
+    "duration": 3.72
+  },
+  {
+    "text": "1-hour time frame for adjudicating",
+    "start": 632.52,
+    "duration": 4.2
+  },
+  {
+    "text": "urgent claims, so these will probably",
+    "start": 634.72,
+    "duration": 5.44
+  },
+  {
+    "text": "get updated hourly.",
+    "start": 636.72,
+    "duration": 3.44
+  },
+  {
+    "text": "Next, can the data be consumed directly",
+    "start": 642.4,
+    "duration": 4.08
+  },
+  {
+    "text": "by our application or does it need any",
+    "start": 644.52,
+    "duration": 3.36
+  },
+  {
+    "text": "processing?",
+    "start": 646.48,
+    "duration": 3.04
+  },
+  {
+    "text": "For clinical guidelines, which are",
+    "start": 647.88,
+    "duration": 3.64
+  },
+  {
+    "text": "typically long documents, you probably",
+    "start": 649.52,
+    "duration": 4.12
+  },
+  {
+    "text": "want to chunk them,",
+    "start": 651.52,
+    "duration": 3.92
+  },
+  {
+    "text": "embed the chunks, and also extract",
+    "start": 653.64,
+    "duration": 3.88
+  },
+  {
+    "text": "metadata such as procedure names,",
+    "start": 655.44,
+    "duration": 4.48
+  },
+  {
+    "text": "publication dates to make it suitable",
+    "start": 657.52,
+    "duration": 3.96
+  },
+  {
+    "text": "for retrieval using something like",
+    "start": 659.92,
+    "duration": 4.2
+  },
+  {
+    "text": "vector search or hybrid search.",
+    "start": 661.48,
+    "duration": 6
+  },
+  {
+    "text": "Same goes for coverage policies, but for",
+    "start": 664.12,
+    "duration": 5.2
+  },
+  {
+    "text": "patient claims history, which is already",
+    "start": 667.48,
+    "duration": 4.24
+  },
+  {
+    "text": "well-formatted and stored in MongoDB, we",
+    "start": 669.32,
+    "duration": 5
+  },
+  {
+    "text": "might just need to remove personally",
+    "start": 671.72,
+    "duration": 5
+  },
+  {
+    "text": "identifiable information before passing",
+    "start": 674.32,
+    "duration": 5.4
+  },
+  {
+    "text": "it to an LLM.",
+    "start": 676.72,
+    "duration": 3
+  },
+  {
+    "text": "Next, we want to think about what",
+    "start": 680.68,
+    "duration": 3.6
+  },
+  {
+    "text": "retrieval techniques would be best",
+    "start": 682.48,
+    "duration": 3.92
+  },
+  {
+    "text": "suited for each of the data sources. And",
+    "start": 684.28,
+    "duration": 4.2
+  },
+  {
+    "text": "you kind of already start thinking about",
+    "start": 686.4,
+    "duration": 4.2
+  },
+  {
+    "text": "this in the data processing step, but",
+    "start": 688.48,
+    "duration": 4.28
+  },
+  {
+    "text": "let's quickly formalize this. Now,",
+    "start": 690.6,
+    "duration": 3.72
+  },
+  {
+    "text": "clinical guidelines and coverage",
+    "start": 692.76,
+    "duration": 3.08
+  },
+  {
+    "text": "policies",
+    "start": 694.32,
+    "duration": 3.28
+  },
+  {
+    "text": "are well suited for vector search, but",
+    "start": 695.84,
+    "duration": 4.48
+  },
+  {
+    "text": "they can contain medical terminologies,",
+    "start": 697.6,
+    "duration": 4.8
+  },
+  {
+    "text": "such as diagnosis codes, procedure",
+    "start": 700.32,
+    "duration": 4.44
+  },
+  {
+    "text": "codes, that might not be picked up by",
+    "start": 702.4,
+    "duration": 4.64
+  },
+  {
+    "text": "vector search. So,",
+    "start": 704.76,
+    "duration": 3.24
+  },
+  {
+    "text": "um",
+    "start": 707.04,
+    "duration": 2.48
+  },
+  {
+    "text": "but these will be picked up by metadata",
+    "start": 708,
+    "duration": 3.32
+  },
+  {
+    "text": "filters or something like keyword",
+    "start": 709.52,
+    "duration": 3.96
+  },
+  {
+    "text": "search. So, for these, you'd either want",
+    "start": 711.32,
+    "duration": 5.32
+  },
+  {
+    "text": "to use vector search with metadata",
+    "start": 713.48,
+    "duration": 7.44
+  },
+  {
+    "text": "pre-filtering or hybrid search.",
+    "start": 716.64,
+    "duration": 4.28
+  },
+  {
+    "text": "For getting the patient's claims",
+    "start": 721.28,
+    "duration": 3.52
+  },
+  {
+    "text": "history, you can do an exact match on",
+    "start": 722.56,
+    "duration": 4.64
+  },
+  {
+    "text": "the patient name or ID, whatever the",
+    "start": 724.8,
+    "duration": 6.96
+  },
+  {
+    "text": "patient identifier is in the system.",
+    "start": 727.2,
+    "duration": 4.56
+  },
+  {
+    "text": "Next, you want to think about what the",
+    "start": 732.72,
+    "duration": 3.8
+  },
+  {
+    "text": "system architecture looks like.",
+    "start": 734.36,
+    "duration": 4.16
+  },
+  {
+    "text": "Now, it can be tempting to jump straight",
+    "start": 736.52,
+    "duration": 4.12
+  },
+  {
+    "text": "to building an agent. There's so much",
+    "start": 738.52,
+    "duration": 3.76
+  },
+  {
+    "text": "hype around them,",
+    "start": 740.64,
+    "duration": 3.92
+  },
+  {
+    "text": "or let a coding agent decide what the",
+    "start": 742.28,
+    "duration": 4.32
+  },
+  {
+    "text": "system architecture should look like,",
+    "start": 744.56,
+    "duration": 4
+  },
+  {
+    "text": "but you risk ending up with an",
+    "start": 746.6,
+    "duration": 4.76
+  },
+  {
+    "text": "over-engineered system by doing this.",
+    "start": 748.56,
+    "duration": 5.08
+  },
+  {
+    "text": "So, what you instead want to do is start",
+    "start": 751.36,
+    "duration": 4.16
+  },
+  {
+    "text": "with the simplest design,",
+    "start": 753.64,
+    "duration": 3.52
+  },
+  {
+    "text": "evaluate it,",
+    "start": 755.52,
+    "duration": 3.92
+  },
+  {
+    "text": "find gaps during the evaluation, and",
+    "start": 757.16,
+    "duration": 5.2
+  },
+  {
+    "text": "iterate from there.",
+    "start": 759.44,
+    "duration": 2.92
+  },
+  {
+    "text": "To decide what the system should look",
+    "start": 762.839,
+    "duration": 3.721
+  },
+  {
+    "text": "like, let's first map out how an",
+    "start": 764.44,
+    "duration": 3.52
+  },
+  {
+    "text": "insurance claim would flow through the",
+    "start": 766.56,
+    "duration": 3.6
+  },
+  {
+    "text": "system, because this will help us",
+    "start": 767.96,
+    "duration": 4.76
+  },
+  {
+    "text": "inform the architecture.",
+    "start": 770.16,
+    "duration": 5.04
+  },
+  {
+    "text": "So, first, the claim request and any",
+    "start": 772.72,
+    "duration": 4.32
+  },
+  {
+    "text": "clinical notes from the physician are",
+    "start": 775.2,
+    "duration": 4.4
+  },
+  {
+    "text": "received by our system.",
+    "start": 777.04,
+    "duration": 5.96
+  },
+  {
+    "text": "Then the system needs to retrieve any",
+    "start": 779.6,
+    "duration": 5.08
+  },
+  {
+    "text": "clinical guidelines and coverage",
+    "start": 783,
+    "duration": 4.12
+  },
+  {
+    "text": "policies that are relevant to the",
+    "start": 784.68,
+    "duration": 3.76
+  },
+  {
+    "text": "current claim,",
+    "start": 787.12,
+    "duration": 3
+  },
+  {
+    "text": "and also retrieve the patient's claims",
+    "start": 788.44,
+    "duration": 3.96
+  },
+  {
+    "text": "history.",
+    "start": 790.12,
+    "duration": 5.68
+  },
+  {
+    "text": "Then all of this information, along with",
+    "start": 792.4,
+    "duration": 6.52
+  },
+  {
+    "text": "the claim itself, and any system prompts",
+    "start": 795.8,
+    "duration": 5.8
+  },
+  {
+    "text": "on how the LLM should generate go about",
+    "start": 798.92,
+    "duration": 4.4
+  },
+  {
+    "text": "generating the recommendations, all of",
+    "start": 801.6,
+    "duration": 4.76
+  },
+  {
+    "text": "these are passed to the LLM, Um, and it",
+    "start": 803.32,
+    "duration": 5.64
+  },
+  {
+    "text": "uses those to generate uh, a",
+    "start": 806.36,
+    "duration": 5.04
+  },
+  {
+    "text": "recommendation of whether the claim is",
+    "start": 808.96,
+    "duration": 5.92
+  },
+  {
+    "text": "claim should be approved or rejected.",
+    "start": 811.4,
+    "duration": 6.08
+  },
+  {
+    "text": "Now, if it's a complex case, our uh,",
+    "start": 814.88,
+    "duration": 5.52
+  },
+  {
+    "text": "system or the LLM at this point should",
+    "start": 817.48,
+    "duration": 5.76
+  },
+  {
+    "text": "uh, send its initial recommendation um,",
+    "start": 820.4,
+    "duration": 6.16
+  },
+  {
+    "text": "to a senior physician. And if the LLM's",
+    "start": 823.24,
+    "duration": 5.6
+  },
+  {
+    "text": "recommendation is to deny the claim,",
+    "start": 826.56,
+    "duration": 4.64
+  },
+  {
+    "text": "then it should also be escalated to a",
+    "start": 828.84,
+    "duration": 5.8
+  },
+  {
+    "text": "human medical reviewer.",
+    "start": 831.2,
+    "duration": 3.44
+  },
+  {
+    "text": "And finally, the final decision should",
+    "start": 834.8,
+    "duration": 4
+  },
+  {
+    "text": "be logged to MongoDB, which is where we",
+    "start": 836.68,
+    "duration": 4.24
+  },
+  {
+    "text": "are storing our claim documents uh,",
+    "start": 838.8,
+    "duration": 4.56
+  },
+  {
+    "text": "along with a reasoning for why the claim",
+    "start": 840.92,
+    "duration": 6
+  },
+  {
+    "text": "was approved or rejected.",
+    "start": 843.36,
+    "duration": 3.56
+  },
+  {
+    "text": "Now, let's talk about some of the most",
+    "start": 850,
+    "duration": 4.4
+  },
+  {
+    "text": "common AI design patterns that we see",
+    "start": 851.84,
+    "duration": 4.92
+  },
+  {
+    "text": "uh, in AI systems today and see which of",
+    "start": 854.4,
+    "duration": 5.04
+  },
+  {
+    "text": "those might apply to our system. So, the",
+    "start": 856.76,
+    "duration": 5.16
+  },
+  {
+    "text": "first one is rag, uh, short for",
+    "start": 859.44,
+    "duration": 4.72
+  },
+  {
+    "text": "retrieval augmented generation. You all",
+    "start": 861.92,
+    "duration": 5.04
+  },
+  {
+    "text": "probably know it at this point. Um,",
+    "start": 864.16,
+    "duration": 4.72
+  },
+  {
+    "text": "basically, in these systems, you simply",
+    "start": 866.96,
+    "duration": 4.52
+  },
+  {
+    "text": "augment and LLM's pre-trained knowledge",
+    "start": 868.88,
+    "duration": 4.8
+  },
+  {
+    "text": "with external knowledge sources. So,",
+    "start": 871.48,
+    "duration": 3.92
+  },
+  {
+    "text": "information from external knowledge",
+    "start": 873.68,
+    "duration": 4.28
+  },
+  {
+    "text": "sources.",
+    "start": 875.4,
+    "duration": 2.56
+  },
+  {
+    "text": "Then, there's AI agents where you give",
+    "start": 878,
+    "duration": 6.12
+  },
+  {
+    "text": "uh, a single LLM or multiple LLMs in the",
+    "start": 880.72,
+    "duration": 5.52
+  },
+  {
+    "text": "case of multi-agent systems full",
+    "start": 884.12,
+    "duration": 4.32
+  },
+  {
+    "text": "autonomy to complete tasks end-to-end",
+    "start": 886.24,
+    "duration": 6.28
+  },
+  {
+    "text": "with the help of a set of tools.",
+    "start": 888.44,
+    "duration": 4.08
+  },
+  {
+    "text": "And then, there's agentic systems, which",
+    "start": 892.76,
+    "duration": 4.76
+  },
+  {
+    "text": "cover uh, a broad spectrum of",
+    "start": 894.92,
+    "duration": 6.44
+  },
+  {
+    "text": "semi-autonomous AI systems.",
+    "start": 897.52,
+    "duration": 3.84
+  },
+  {
+    "text": "A common architectural pattern for uh,",
+    "start": 901.56,
+    "duration": 4.44
+  },
+  {
+    "text": "these types of systems are control",
+    "start": 904.04,
+    "duration": 4.56
+  },
+  {
+    "text": "flows, where LLMs perform certain tasks",
+    "start": 906,
+    "duration": 4.96
+  },
+  {
+    "text": "within the workflow, but the sequence of",
+    "start": 908.6,
+    "duration": 4
+  },
+  {
+    "text": "steps in the workflow itself is",
+    "start": 910.96,
+    "duration": 6.76
+  },
+  {
+    "text": "predetermined by design or by code.",
+    "start": 912.6,
+    "duration": 5.12
+  },
+  {
+    "text": "Then, there's LLM as a router, where",
+    "start": 918.12,
+    "duration": 4.92
+  },
+  {
+    "text": "LLMs have limited autonomy in that their",
+    "start": 920.68,
+    "duration": 4.48
+  },
+  {
+    "text": "job is simply to",
+    "start": 923.04,
+    "duration": 4.28
+  },
+  {
+    "text": "categorize incoming requests and route",
+    "start": 925.16,
+    "duration": 6.48
+  },
+  {
+    "text": "them to different downstream workflows.",
+    "start": 927.32,
+    "duration": 4.32
+  },
+  {
+    "text": "Then you have human in the loop where an",
+    "start": 932,
+    "duration": 4.68
+  },
+  {
+    "text": "LLM or agent can take certain actions,",
+    "start": 934.08,
+    "duration": 5.48
+  },
+  {
+    "text": "but it needs human intervention",
+    "start": 936.68,
+    "duration": 6.04
+  },
+  {
+    "text": "somewhere in the process.",
+    "start": 939.56,
+    "duration": 5.6
+  },
+  {
+    "text": "And finally, there's fine-tuning. So, if",
+    "start": 942.72,
+    "duration": 4.8
+  },
+  {
+    "text": "you're observing that the LLM's failures",
+    "start": 945.16,
+    "duration": 4.8
+  },
+  {
+    "text": "are behavioral rather than data or",
+    "start": 947.52,
+    "duration": 4.4
+  },
+  {
+    "text": "orchestration issues,",
+    "start": 949.96,
+    "duration": 4.76
+  },
+  {
+    "text": "or if you need superior performance on a",
+    "start": 951.92,
+    "duration": 5.6
+  },
+  {
+    "text": "domain-specific task, then fine-tuning",
+    "start": 954.72,
+    "duration": 3.88
+  },
+  {
+    "text": "is",
+    "start": 957.52,
+    "duration": 4.44
+  },
+  {
+    "text": "a good technique to explore.",
+    "start": 958.6,
+    "duration": 3.36
+  },
+  {
+    "text": "I don't have the time to go too deep",
+    "start": 962.24,
+    "duration": 3.28
+  },
+  {
+    "text": "into these here, but if you'd like to",
+    "start": 963.96,
+    "duration": 4.04
+  },
+  {
+    "text": "learn more about these design patterns,",
+    "start": 965.52,
+    "duration": 4.12
+  },
+  {
+    "text": "I'm going to leave this resource here",
+    "start": 968,
+    "duration": 5.12
+  },
+  {
+    "text": "for you to check out later.",
+    "start": 969.64,
+    "duration": 3.48
+  },
+  {
+    "text": "So, we've thought through what the",
+    "start": 978.2,
+    "duration": 2.52
+  },
+  {
+    "text": "workflow of this system should look",
+    "start": 979.32,
+    "duration": 3.6
+  },
+  {
+    "text": "like. We've spoken about a few different",
+    "start": 980.72,
+    "duration": 4.32
+  },
+  {
+    "text": "AI design patterns.",
+    "start": 982.92,
+    "duration": 4.919
+  },
+  {
+    "text": "Now, let's apply those and decide what",
+    "start": 985.04,
+    "duration": 4.72
+  },
+  {
+    "text": "design patterns um",
+    "start": 987.839,
+    "duration": 5.041
+  },
+  {
+    "text": "we'd need to implement for our system.",
+    "start": 989.76,
+    "duration": 5
+  },
+  {
+    "text": "So, since we need to retrieve clinical",
+    "start": 992.88,
+    "duration": 4.28
+  },
+  {
+    "text": "guidelines, coverage policies, and stuff",
+    "start": 994.76,
+    "duration": 5.28
+  },
+  {
+    "text": "to inform the decision, this is This",
+    "start": 997.16,
+    "duration": 5.04
+  },
+  {
+    "text": "definitely looks like a rag component.",
+    "start": 1000.04,
+    "duration": 4.64
+  },
+  {
+    "text": "So, we need some form of rag.",
+    "start": 1002.2,
+    "duration": 4.44
+  },
+  {
+    "text": "The workflow is pre-structured in that",
+    "start": 1004.68,
+    "duration": 3.44
+  },
+  {
+    "text": "the LLM first provides its",
+    "start": 1006.64,
+    "duration": 4.04
+  },
+  {
+    "text": "recommendation on whether or not a claim",
+    "start": 1008.12,
+    "duration": 5.04
+  },
+  {
+    "text": "should be approved or rejected, and in",
+    "start": 1010.68,
+    "duration": 5.52
+  },
+  {
+    "text": "very specific and well-defined cases,",
+    "start": 1013.16,
+    "duration": 5
+  },
+  {
+    "text": "it needs to escalate claims to human",
+    "start": 1016.2,
+    "duration": 3.88
+  },
+  {
+    "text": "reviewers. So, this sounds like a",
+    "start": 1018.16,
+    "duration": 4.32
+  },
+  {
+    "text": "controlled workflow.",
+    "start": 1020.08,
+    "duration": 4.2
+  },
+  {
+    "text": "You could also argue that this looks a",
+    "start": 1022.48,
+    "duration": 3.52
+  },
+  {
+    "text": "little bit like LLM as a router,",
+    "start": 1024.28,
+    "duration": 3.559
+  },
+  {
+    "text": "especially if you use",
+    "start": 1026,
+    "duration": 3.959
+  },
+  {
+    "text": "an additional LLM call to decide what a",
+    "start": 1027.839,
+    "duration": 4.641
+  },
+  {
+    "text": "complex case looks like, unless this is",
+    "start": 1029.959,
+    "duration": 4.561
+  },
+  {
+    "text": "already well-defined. So, yeah, this",
+    "start": 1032.48,
+    "duration": 4.64
+  },
+  {
+    "text": "could be an LLM as a router, but",
+    "start": 1034.52,
+    "duration": 4.04
+  },
+  {
+    "text": "uh for now let's just go with control",
+    "start": 1037.12,
+    "duration": 3.76
+  },
+  {
+    "text": "flow.",
+    "start": 1038.56,
+    "duration": 2.32
+  },
+  {
+    "text": "And finally, there's also an element of",
+    "start": 1041.839,
+    "duration": 3.801
+  },
+  {
+    "text": "human in the loop, right? Since human",
+    "start": 1043.64,
+    "duration": 3.76
+  },
+  {
+    "text": "reviewers are very much a part of the",
+    "start": 1045.64,
+    "duration": 4.28
+  },
+  {
+    "text": "workflow.",
+    "start": 1047.4,
+    "duration": 2.52
+  },
+  {
+    "text": "And finally, in the design phase, you",
+    "start": 1050.92,
+    "duration": 3.6
+  },
+  {
+    "text": "also want to think about the end user",
+    "start": 1052.72,
+    "duration": 3.64
+  },
+  {
+    "text": "experience and how you'll collect",
+    "start": 1054.52,
+    "duration": 3.6
+  },
+  {
+    "text": "feedback from your users to improve the",
+    "start": 1056.36,
+    "duration": 3.36
+  },
+  {
+    "text": "system.",
+    "start": 1058.12,
+    "duration": 3.24
+  },
+  {
+    "text": "Here are some questions to ask yourself",
+    "start": 1059.72,
+    "duration": 4.12
+  },
+  {
+    "text": "in this stage to help think through uh",
+    "start": 1061.36,
+    "duration": 4.52
+  },
+  {
+    "text": "what the UX and feedback mechanism",
+    "start": 1063.84,
+    "duration": 4.2
+  },
+  {
+    "text": "should look like.",
+    "start": 1065.88,
+    "duration": 4.16
+  },
+  {
+    "text": "So, first, what does the system take as",
+    "start": 1068.04,
+    "duration": 4.64
+  },
+  {
+    "text": "input? In our case, it's going to be a",
+    "start": 1070.04,
+    "duration": 6.24
+  },
+  {
+    "text": "claim request form of some kind.",
+    "start": 1072.68,
+    "duration": 5.52
+  },
+  {
+    "text": "Then, what does the system produce as",
+    "start": 1076.28,
+    "duration": 3.6
+  },
+  {
+    "text": "output? So, in our case, it's going to",
+    "start": 1078.2,
+    "duration": 2.68
+  },
+  {
+    "text": "be",
+    "start": 1079.88,
+    "duration": 3.6
+  },
+  {
+    "text": "uh an approval or denial verdict along",
+    "start": 1080.88,
+    "duration": 5.36
+  },
+  {
+    "text": "with an explanation for why uh a claim",
+    "start": 1083.48,
+    "duration": 6
+  },
+  {
+    "text": "was approved or rejected.",
+    "start": 1086.24,
+    "duration": 4.96
+  },
+  {
+    "text": "Where does the system live? Does it have",
+    "start": 1089.48,
+    "duration": 4.52
+  },
+  {
+    "text": "a standalone app? Is it embedded in an",
+    "start": 1091.2,
+    "duration": 6.04
+  },
+  {
+    "text": "existing website? Is it a Slack bot? Uh",
+    "start": 1094,
+    "duration": 4.44
+  },
+  {
+    "text": "and so on.",
+    "start": 1097.24,
+    "duration": 3.04
+  },
+  {
+    "text": "Uh so, for",
+    "start": 1098.44,
+    "duration": 4.28
+  },
+  {
+    "text": "our application, it's very likely going",
+    "start": 1100.28,
+    "duration": 4.64
+  },
+  {
+    "text": "to be embedded within MDB Health's main",
+    "start": 1102.72,
+    "duration": 4.52
+  },
+  {
+    "text": "website, let's say.",
+    "start": 1104.92,
+    "duration": 4.76
+  },
+  {
+    "text": "Uh what triggers the system? So, in our",
+    "start": 1107.24,
+    "duration": 6.12
+  },
+  {
+    "text": "case, very clearly, a claim submission.",
+    "start": 1109.68,
+    "duration": 5.6
+  },
+  {
+    "text": "What's the human's role? So, in our",
+    "start": 1113.36,
+    "duration": 3.28
+  },
+  {
+    "text": "case, they are going to review the",
+    "start": 1115.28,
+    "duration": 3.64
+  },
+  {
+    "text": "system's assessment and make the final",
+    "start": 1116.64,
+    "duration": 5.32
+  },
+  {
+    "text": "decision in some cases.",
+    "start": 1118.92,
+    "duration": 5.52
+  },
+  {
+    "text": "Um how does the system explain itself?",
+    "start": 1121.96,
+    "duration": 3.8
+  },
+  {
+    "text": "In our case,",
+    "start": 1124.44,
+    "duration": 3.08
+  },
+  {
+    "text": "um it explains itself by providing",
+    "start": 1125.76,
+    "duration": 4.04
+  },
+  {
+    "text": "citations, so quoting",
+    "start": 1127.52,
+    "duration": 4.08
+  },
+  {
+    "text": "uh the clinical guidelines and coverage",
+    "start": 1129.8,
+    "duration": 5.12
+  },
+  {
+    "text": "policies that uh informed the system's",
+    "start": 1131.6,
+    "duration": 5.88
+  },
+  {
+    "text": "assessment.",
+    "start": 1134.92,
+    "duration": 5.4
+  },
+  {
+    "text": "And finally, how does it give feedback?",
+    "start": 1137.48,
+    "duration": 5.08
+  },
+  {
+    "text": "So, remember, for our system, um the",
+    "start": 1140.32,
+    "duration": 4.84
+  },
+  {
+    "text": "consumers are medical reviewers.",
+    "start": 1142.56,
+    "duration": 5.88
+  },
+  {
+    "text": "Um so, they can provide feedback by",
+    "start": 1145.16,
+    "duration": 6.36
+  },
+  {
+    "text": "overriding the verdict of the LLM and",
+    "start": 1148.44,
+    "duration": 5.44
+  },
+  {
+    "text": "also log a reason for why",
+    "start": 1151.52,
+    "duration": 4.52
+  },
+  {
+    "text": "Uh they can also we can maybe also have",
+    "start": 1153.88,
+    "duration": 4.72
+  },
+  {
+    "text": "them flag any irrelevant citations. So,",
+    "start": 1156.04,
+    "duration": 5.4
+  },
+  {
+    "text": "if their LM is hallucinating",
+    "start": 1158.6,
+    "duration": 3.88
+  },
+  {
+    "text": "um",
+    "start": 1161.44,
+    "duration": 4.48
+  },
+  {
+    "text": "clinical guidelines and policies or",
+    "start": 1162.48,
+    "duration": 6.28
+  },
+  {
+    "text": "yeah, quoting the wrong ones for a",
+    "start": 1165.92,
+    "duration": 4.88
+  },
+  {
+    "text": "particular claim, then we can have them",
+    "start": 1168.76,
+    "duration": 5.08
+  },
+  {
+    "text": "flag those as well.",
+    "start": 1170.8,
+    "duration": 3.04
+  },
+  {
+    "text": "All right. So, at this point we've",
+    "start": 1177.04,
+    "duration": 3.68
+  },
+  {
+    "text": "decided what the architecture of our",
+    "start": 1178.44,
+    "duration": 4.28
+  },
+  {
+    "text": "system should look like,",
+    "start": 1180.72,
+    "duration": 3.64
+  },
+  {
+    "text": "but we also need to decide what our",
+    "start": 1182.72,
+    "duration": 4.28
+  },
+  {
+    "text": "stack should look like.",
+    "start": 1184.36,
+    "duration": 4.64
+  },
+  {
+    "text": "Once again, it might be tempting to have",
+    "start": 1187,
+    "duration": 4.52
+  },
+  {
+    "text": "a coding agent recommend what tools to",
+    "start": 1189,
+    "duration": 4.92
+  },
+  {
+    "text": "use, but they might not necessarily",
+    "start": 1191.52,
+    "duration": 4.68
+  },
+  {
+    "text": "apply to your system or you might not be",
+    "start": 1193.92,
+    "duration": 3.56
+  },
+  {
+    "text": "able to use them based on the",
+    "start": 1196.2,
+    "duration": 3.88
+  },
+  {
+    "text": "constraints that we identified during",
+    "start": 1197.48,
+    "duration": 4.44
+  },
+  {
+    "text": "the product requirement stage. So, we",
+    "start": 1200.08,
+    "duration": 4.2
+  },
+  {
+    "text": "had constraints around",
+    "start": 1201.92,
+    "duration": 3.72
+  },
+  {
+    "text": "models",
+    "start": 1204.28,
+    "duration": 3.24
+  },
+  {
+    "text": "need to be supported by our cloud",
+    "start": 1205.64,
+    "duration": 5.44
+  },
+  {
+    "text": "provider and things like that.",
+    "start": 1207.52,
+    "duration": 3.56
+  },
+  {
+    "text": "I'm not going to get into this too much",
+    "start": 1212.28,
+    "duration": 3.8
+  },
+  {
+    "text": "since our constraints are well,",
+    "start": 1214,
+    "duration": 3.44
+  },
+  {
+    "text": "hypothetical,",
+    "start": 1216.08,
+    "duration": 3
+  },
+  {
+    "text": "but I just want to mention that this is",
+    "start": 1217.44,
+    "duration": 3.4
+  },
+  {
+    "text": "the next step and the different tooling",
+    "start": 1219.08,
+    "duration": 5.12
+  },
+  {
+    "text": "decisions to be made such as what model",
+    "start": 1220.84,
+    "duration": 4.64
+  },
+  {
+    "text": "to use.",
+    "start": 1224.2,
+    "duration": 3.8
+  },
+  {
+    "text": "There's a bunch of data processing tools",
+    "start": 1225.48,
+    "duration": 4.48
+  },
+  {
+    "text": "out there that have some nice out of the",
+    "start": 1228,
+    "duration": 5.6
+  },
+  {
+    "text": "box data processing capabilities.",
+    "start": 1229.96,
+    "duration": 5.68
+  },
+  {
+    "text": "If retrieval is part of your system,",
+    "start": 1233.6,
+    "duration": 4.4
+  },
+  {
+    "text": "then and you're using things like vector",
+    "start": 1235.64,
+    "duration": 4
+  },
+  {
+    "text": "search, then you might need to decide",
+    "start": 1238,
+    "duration": 3.64
+  },
+  {
+    "text": "what embedding models to use, what",
+    "start": 1239.64,
+    "duration": 5.52
+  },
+  {
+    "text": "vector database to use. Um then there's",
+    "start": 1241.64,
+    "duration": 6.64
+  },
+  {
+    "text": "orchestration frameworks and so on. So,",
+    "start": 1245.16,
+    "duration": 4.76
+  },
+  {
+    "text": "I'm just going to leave this here for",
+    "start": 1248.28,
+    "duration": 4.8
+  },
+  {
+    "text": "reference later on.",
+    "start": 1249.92,
+    "duration": 3.16
+  },
+  {
+    "text": "Next, let's talk about evaluation and",
+    "start": 1256.36,
+    "duration": 4.36
+  },
+  {
+    "text": "monitoring. How do you know that what",
+    "start": 1258.4,
+    "duration": 4.72
+  },
+  {
+    "text": "you've built works before and also after",
+    "start": 1260.72,
+    "duration": 5.2
+  },
+  {
+    "text": "you ship? So, evaluation is before,",
+    "start": 1263.12,
+    "duration": 5
+  },
+  {
+    "text": "monitoring is after you ship, and you",
+    "start": 1265.92,
+    "duration": 5.16
+  },
+  {
+    "text": "need both of them.",
+    "start": 1268.12,
+    "duration": 2.96
+  },
+  {
+    "text": "But before we get into evaluation",
+    "start": 1272.16,
+    "duration": 3.4
+  },
+  {
+    "text": "metrics, let's talk about guardrails",
+    "start": 1273.76,
+    "duration": 3.8
+  },
+  {
+    "text": "because these weren't really really a",
+    "start": 1275.56,
+    "duration": 4.44
+  },
+  {
+    "text": "thing pre-LLMs.",
+    "start": 1277.56,
+    "duration": 4.04
+  },
+  {
+    "text": "The reason they've become a topic of",
+    "start": 1280,
+    "duration": 3.32
+  },
+  {
+    "text": "conversation is because unlike",
+    "start": 1281.6,
+    "duration": 4.36
+  },
+  {
+    "text": "traditional software, LLM-based systems",
+    "start": 1283.32,
+    "duration": 4.88
+  },
+  {
+    "text": "are going to are probabilistic systems",
+    "start": 1285.96,
+    "duration": 3.92
+  },
+  {
+    "text": "and can produce outputs that are",
+    "start": 1288.2,
+    "duration": 5.48
+  },
+  {
+    "text": "unexpected, incorrect, or even harmful.",
+    "start": 1289.88,
+    "duration": 5.2
+  },
+  {
+    "text": "And guardrails are an attempt to",
+    "start": 1293.68,
+    "duration": 3.24
+  },
+  {
+    "text": "mitigate these risks and ensure that",
+    "start": 1295.08,
+    "duration": 3.8
+  },
+  {
+    "text": "your system behaves within acceptable",
+    "start": 1296.92,
+    "duration": 4.36
+  },
+  {
+    "text": "boundaries. And what those boundaries",
+    "start": 1298.88,
+    "duration": 5.08
+  },
+  {
+    "text": "are are something you need to define.",
+    "start": 1301.28,
+    "duration": 4.72
+  },
+  {
+    "text": "So for inputs to your system, the goal",
+    "start": 1303.96,
+    "duration": 4.08
+  },
+  {
+    "text": "is usually to detect invalid,",
+    "start": 1306,
+    "duration": 4.64
+  },
+  {
+    "text": "irrelevant, or harmful inputs.",
+    "start": 1308.04,
+    "duration": 4.92
+  },
+  {
+    "text": "Uh so for our claims review system, an",
+    "start": 1310.64,
+    "duration": 5.8
+  },
+  {
+    "text": "input like write me a poem is irrelevant",
+    "start": 1312.96,
+    "duration": 7.96
+  },
+  {
+    "text": "and our system should reject this claim.",
+    "start": 1316.44,
+    "duration": 6.48
+  },
+  {
+    "text": "Similarly, for outputs, our goal is to",
+    "start": 1320.92,
+    "duration": 4.2
+  },
+  {
+    "text": "detect invalid, incorrect, or",
+    "start": 1322.92,
+    "duration": 5.68
+  },
+  {
+    "text": "hallucinated, uh or harmful outputs.",
+    "start": 1325.12,
+    "duration": 5.4
+  },
+  {
+    "text": "So for our claims application, we'll",
+    "start": 1328.6,
+    "duration": 4.8
+  },
+  {
+    "text": "consider uh a response to be invalid if",
+    "start": 1330.52,
+    "duration": 5.8
+  },
+  {
+    "text": "the system doesn't provide citations for",
+    "start": 1333.4,
+    "duration": 7.12
+  },
+  {
+    "text": "uh what informed an approval or denial.",
+    "start": 1336.32,
+    "duration": 6.12
+  },
+  {
+    "text": "Now guardrail compliance is not the only",
+    "start": 1340.52,
+    "duration": 3.4
+  },
+  {
+    "text": "thing you want to measure. You want to",
+    "start": 1342.44,
+    "duration": 4.56
+  },
+  {
+    "text": "measure the quality of the responses,",
+    "start": 1343.92,
+    "duration": 3.76
+  },
+  {
+    "text": "uh",
+    "start": 1347,
+    "duration": 2.68
+  },
+  {
+    "text": "create and measure domain-specific",
+    "start": 1347.68,
+    "duration": 4
+  },
+  {
+    "text": "accuracy metrics, and also general",
+    "start": 1349.68,
+    "duration": 4.52
+  },
+  {
+    "text": "system health.",
+    "start": 1351.68,
+    "duration": 5.36
+  },
+  {
+    "text": "So for input guardrail compliance, uh",
+    "start": 1354.2,
+    "duration": 4.76
+  },
+  {
+    "text": "for our system, we can calculate a claim",
+    "start": 1357.04,
+    "duration": 5.16
+  },
+  {
+    "text": "rejection rate. How often is our uh",
+    "start": 1358.96,
+    "duration": 5.2
+  },
+  {
+    "text": "system rejecting claims because they",
+    "start": 1362.2,
+    "duration": 5.04
+  },
+  {
+    "text": "don't obey uh our input guardrails. Now",
+    "start": 1364.16,
+    "duration": 4.92
+  },
+  {
+    "text": "if it's rejecting too many times, then",
+    "start": 1367.24,
+    "duration": 3.76
+  },
+  {
+    "text": "that's a call for investigation, but if",
+    "start": 1369.08,
+    "duration": 3.8
+  },
+  {
+    "text": "you didn't measure this in the first",
+    "start": 1371,
+    "duration": 3.64
+  },
+  {
+    "text": "place, then you won't have anything to",
+    "start": 1372.88,
+    "duration": 3.44
+  },
+  {
+    "text": "investigate, so",
+    "start": 1374.64,
+    "duration": 3.2
+  },
+  {
+    "text": "uh there we go. That's why you need",
+    "start": 1376.32,
+    "duration": 3.28
+  },
+  {
+    "text": "metrics. For output guardrail",
+    "start": 1377.84,
+    "duration": 3.6
+  },
+  {
+    "text": "compliance, we can have something like a",
+    "start": 1379.6,
+    "duration": 4.28
+  },
+  {
+    "text": "missing citation rate, how many times is",
+    "start": 1381.44,
+    "duration": 4.4
+  },
+  {
+    "text": "the LLM producing responses without",
+    "start": 1383.88,
+    "duration": 4.84
+  },
+  {
+    "text": "citations. For response quality, we can",
+    "start": 1385.84,
+    "duration": 4.8
+  },
+  {
+    "text": "measure faithfulness, which is whether",
+    "start": 1388.72,
+    "duration": 4.28
+  },
+  {
+    "text": "or not the claims approval or rejection",
+    "start": 1390.64,
+    "duration": 5.8
+  },
+  {
+    "text": "is actually rooted in the retrieved uh",
+    "start": 1393,
+    "duration": 5.48
+  },
+  {
+    "text": "information like clinical guidelines and",
+    "start": 1396.44,
+    "duration": 4.76
+  },
+  {
+    "text": "policies.",
+    "start": 1398.48,
+    "duration": 2.72
+  },
+  {
+    "text": "Then you want to define at least one",
+    "start": 1404.92,
+    "duration": 4.4
+  },
+  {
+    "text": "domain or application-specific metric.",
+    "start": 1407,
+    "duration": 3.76
+  },
+  {
+    "text": "So, in our case, something like claim",
+    "start": 1409.32,
+    "duration": 2.92
+  },
+  {
+    "text": "processing time might be a good one",
+    "start": 1410.76,
+    "duration": 3.12
+  },
+  {
+    "text": "because that's really",
+    "start": 1412.24,
+    "duration": 4.6
+  },
+  {
+    "text": "uh our North Star.",
+    "start": 1413.88,
+    "duration": 5.52
+  },
+  {
+    "text": "And system-level metrics are usually uh",
+    "start": 1416.84,
+    "duration": 5.12
+  },
+  {
+    "text": "around overall system health. So,",
+    "start": 1419.4,
+    "duration": 5.44
+  },
+  {
+    "text": "uh what's your system's average token",
+    "start": 1421.96,
+    "duration": 5.8
+  },
+  {
+    "text": "cost, token usage, uh average number of",
+    "start": 1424.84,
+    "duration": 5.8
+  },
+  {
+    "text": "turns in a conversation. Uh so, here",
+    "start": 1427.76,
+    "duration": 4.6
+  },
+  {
+    "text": "just to",
+    "start": 1430.64,
+    "duration": 3.96
+  },
+  {
+    "text": "not have another latency metric, uh I",
+    "start": 1432.36,
+    "duration": 3.88
+  },
+  {
+    "text": "put down something like cost for",
+    "start": 1434.6,
+    "duration": 4.64
+  },
+  {
+    "text": "recommendation.",
+    "start": 1436.24,
+    "duration": 3
+  },
+  {
+    "text": "So, once you evaluated your system and",
+    "start": 1440.68,
+    "duration": 4.32
+  },
+  {
+    "text": "ship your product in front of users,",
+    "start": 1442.88,
+    "duration": 3.88
+  },
+  {
+    "text": "then comes monitoring the system for",
+    "start": 1445,
+    "duration": 3.96
+  },
+  {
+    "text": "regressions in real time.",
+    "start": 1446.76,
+    "duration": 4.16
+  },
+  {
+    "text": "Now, in production, you still want to",
+    "start": 1448.96,
+    "duration": 4.36
+  },
+  {
+    "text": "track the metrics that you used for uh",
+    "start": 1450.92,
+    "duration": 4.32
+  },
+  {
+    "text": "offline evaluation, so the metrics that",
+    "start": 1453.32,
+    "duration": 2.56
+  },
+  {
+    "text": "we",
+    "start": 1455.24,
+    "duration": 2.64
+  },
+  {
+    "text": "talked about, but you might also be able",
+    "start": 1455.88,
+    "duration": 4.2
+  },
+  {
+    "text": "to track additional metrics that can act",
+    "start": 1457.88,
+    "duration": 4.76
+  },
+  {
+    "text": "as uh implicit indicators of your",
+    "start": 1460.08,
+    "duration": 6.12
+  },
+  {
+    "text": "product's success or like how uh uh",
+    "start": 1462.64,
+    "duration": 6.32
+  },
+  {
+    "text": "how happy users are with your product",
+    "start": 1466.2,
+    "duration": 5.56
+  },
+  {
+    "text": "and overall system health.",
+    "start": 1468.96,
+    "duration": 4.64
+  },
+  {
+    "text": "For example, for the claims review app,",
+    "start": 1471.76,
+    "duration": 4.2
+  },
+  {
+    "text": "you can track how often a human reviewer",
+    "start": 1473.6,
+    "duration": 4.76
+  },
+  {
+    "text": "overrides the AI verdict. Uh now, you",
+    "start": 1475.96,
+    "duration": 4.76
+  },
+  {
+    "text": "want this rate to be low uh because that",
+    "start": 1478.36,
+    "duration": 4.08
+  },
+  {
+    "text": "means the system is not doing its job.",
+    "start": 1480.72,
+    "duration": 4.72
+  },
+  {
+    "text": "So, if you ever start seeing is seeing",
+    "start": 1482.44,
+    "duration": 5.04
+  },
+  {
+    "text": "it increasing about above a certain",
+    "start": 1485.44,
+    "duration": 3.88
+  },
+  {
+    "text": "threshold, then you need to go and",
+    "start": 1487.48,
+    "duration": 3.16
+  },
+  {
+    "text": "investigate.",
+    "start": 1489.32,
+    "duration": 3.56
+  },
+  {
+    "text": "Or you can also track something like how",
+    "start": 1490.64,
+    "duration": 4.6
+  },
+  {
+    "text": "long does it take for a human to review",
+    "start": 1492.88,
+    "duration": 4.56
+  },
+  {
+    "text": "the AI recommendation. If it takes too",
+    "start": 1495.24,
+    "duration": 4.32
+  },
+  {
+    "text": "long, which means um",
+    "start": 1497.44,
+    "duration": 3.88
+  },
+  {
+    "text": "this could mean that the responses are",
+    "start": 1499.56,
+    "duration": 4.8
+  },
+  {
+    "text": "very verbose, confusing. So, yeah, these",
+    "start": 1501.32,
+    "duration": 5.16
+  },
+  {
+    "text": "would be uh some good indicators to",
+    "start": 1504.36,
+    "duration": 4.28
+  },
+  {
+    "text": "track uh once you ship your product to",
+    "start": 1506.48,
+    "duration": 4.84
+  },
+  {
+    "text": "production.",
+    "start": 1508.64,
+    "duration": 2.68
+  },
+  {
+    "text": "Now, once you have a working prototype",
+    "start": 1512.52,
+    "duration": 3.84
+  },
+  {
+    "text": "that you've evaluated, accuracy looks",
+    "start": 1514.04,
+    "duration": 4.44
+  },
+  {
+    "text": "good, it's time to move to production,",
+    "start": 1516.36,
+    "duration": 3.12
+  },
+  {
+    "text": "right?",
+    "start": 1518.48,
+    "duration": 2.56
+  },
+  {
+    "text": "Well,",
+    "start": 1519.48,
+    "duration": 3.76
+  },
+  {
+    "text": "what about cost, latency, and",
+    "start": 1521.04,
+    "duration": 4.96
+  },
+  {
+    "text": "reliability? Uh these constraints become",
+    "start": 1523.24,
+    "duration": 4.72
+  },
+  {
+    "text": "absolutely non-negotiable as you're",
+    "start": 1526,
+    "duration": 4.44
+  },
+  {
+    "text": "moving your product to production. So,",
+    "start": 1527.96,
+    "duration": 4
+  },
+  {
+    "text": "you might need to do a few more",
+    "start": 1530.44,
+    "duration": 4.36
+  },
+  {
+    "text": "iterations, evaluations, and testing uh",
+    "start": 1531.96,
+    "duration": 5.88
+  },
+  {
+    "text": "between accuracy looks good and moving",
+    "start": 1534.8,
+    "duration": 5.72
+  },
+  {
+    "text": "to production.",
+    "start": 1537.84,
+    "duration": 4.56
+  },
+  {
+    "text": "So, let's talk about some optimization",
+    "start": 1540.52,
+    "duration": 3.76
+  },
+  {
+    "text": "techniques for each of these.",
+    "start": 1542.4,
+    "duration": 4.48
+  },
+  {
+    "text": "So, optimizing for accuracy. In",
+    "start": 1544.28,
+    "duration": 4.76
+  },
+  {
+    "text": "LLM-based applications, it really comes",
+    "start": 1546.88,
+    "duration": 5.2
+  },
+  {
+    "text": "down to optimizing the information that",
+    "start": 1549.04,
+    "duration": 5.96
+  },
+  {
+    "text": "uh ends up in the LLM's context window.",
+    "start": 1552.08,
+    "duration": 4.56
+  },
+  {
+    "text": "And here are some techniques for you to",
+    "start": 1555,
+    "duration": 3.64
+  },
+  {
+    "text": "refer to later, but let's quickly talk",
+    "start": 1556.64,
+    "duration": 4.6
+  },
+  {
+    "text": "about which of these uh might apply to",
+    "start": 1558.64,
+    "duration": 4.84
+  },
+  {
+    "text": "our claims review application. So,",
+    "start": 1561.24,
+    "duration": 4.6
+  },
+  {
+    "text": "prompt engineering, of course. Uh",
+    "start": 1563.48,
+    "duration": 4.84
+  },
+  {
+    "text": "reranking is another good one because uh",
+    "start": 1565.84,
+    "duration": 5.64
+  },
+  {
+    "text": "retrieval is a big component of it. So,",
+    "start": 1568.32,
+    "duration": 5.28
+  },
+  {
+    "text": "uh a reranker will make sure that the",
+    "start": 1571.48,
+    "duration": 5.92
+  },
+  {
+    "text": "information being retrieved um is",
+    "start": 1573.6,
+    "duration": 5.72
+  },
+  {
+    "text": "surfacing information in the right order",
+    "start": 1577.4,
+    "duration": 3.56
+  },
+  {
+    "text": "of relevance, which is important when",
+    "start": 1579.32,
+    "duration": 3.24
+  },
+  {
+    "text": "working with LLMs.",
+    "start": 1580.96,
+    "duration": 3.32
+  },
+  {
+    "text": "Uh we are also persisting patient",
+    "start": 1582.56,
+    "duration": 3.8
+  },
+  {
+    "text": "history uh to MongoDB, so our",
+    "start": 1584.28,
+    "duration": 4.08
+  },
+  {
+    "text": "application already has some form of",
+    "start": 1586.36,
+    "duration": 4.28
+  },
+  {
+    "text": "memory, but you could also think about",
+    "start": 1588.36,
+    "duration": 5
+  },
+  {
+    "text": "other types of information that might be",
+    "start": 1590.64,
+    "duration": 6.04
+  },
+  {
+    "text": "uh useful to persist across sessions.",
+    "start": 1593.36,
+    "duration": 5.2
+  },
+  {
+    "text": "Here are some techniques for cost and",
+    "start": 1596.68,
+    "duration": 4.76
+  },
+  {
+    "text": "latency optimization.",
+    "start": 1598.56,
+    "duration": 4.8
+  },
+  {
+    "text": "For our use case, semantic caching could",
+    "start": 1601.44,
+    "duration": 5.04
+  },
+  {
+    "text": "be useful to expedite decisions based on",
+    "start": 1603.36,
+    "duration": 5.96
+  },
+  {
+    "text": "uh similar claims from the past. Uh",
+    "start": 1606.48,
+    "duration": 4.68
+  },
+  {
+    "text": "batch processing, perhaps, to process",
+    "start": 1609.32,
+    "duration": 3.96
+  },
+  {
+    "text": "claims in batches instead of one at a",
+    "start": 1611.16,
+    "duration": 3.44
+  },
+  {
+    "text": "time.",
+    "start": 1613.28,
+    "duration": 5.04
+  },
+  {
+    "text": "And finally, optimizing for reliability.",
+    "start": 1614.6,
+    "duration": 5.4
+  },
+  {
+    "text": "Most of these would be useful for our",
+    "start": 1618.32,
+    "duration": 3.4
+  },
+  {
+    "text": "use case since they're mainly solving",
+    "start": 1620,
+    "duration": 4.28
+  },
+  {
+    "text": "for API failures, but I want to",
+    "start": 1621.72,
+    "duration": 4.04
+  },
+  {
+    "text": "specifically call out structured",
+    "start": 1624.28,
+    "duration": 2.92
+  },
+  {
+    "text": "outputs,",
+    "start": 1625.76,
+    "duration": 2.88
+  },
+  {
+    "text": "which would be a good one to make sure",
+    "start": 1627.2,
+    "duration": 4.08
+  },
+  {
+    "text": "that our system is always producing a",
+    "start": 1628.64,
+    "duration": 4.8
+  },
+  {
+    "text": "structured output which contains not",
+    "start": 1631.28,
+    "duration": 3.68
+  },
+  {
+    "text": "just the decision, but also the",
+    "start": 1633.44,
+    "duration": 3.96
+  },
+  {
+    "text": "citations.",
+    "start": 1634.96,
+    "duration": 4.64
+  },
+  {
+    "text": "This brings me to the end of my talk,",
+    "start": 1637.4,
+    "duration": 4.12
+  },
+  {
+    "text": "but I wanted to leave you with a few",
+    "start": 1639.6,
+    "duration": 4.72
+  },
+  {
+    "text": "takeaways.",
+    "start": 1641.52,
+    "duration": 2.8
+  },
+  {
+    "text": "Think deeply about your product's",
+    "start": 1644.64,
+    "duration": 4
+  },
+  {
+    "text": "requirements before having AI generate",
+    "start": 1646.4,
+    "duration": 4.68
+  },
+  {
+    "text": "any code. The product spec is the hard",
+    "start": 1648.64,
+    "duration": 3.68
+  },
+  {
+    "text": "part now,",
+    "start": 1651.08,
+    "duration": 4.6
+  },
+  {
+    "text": "it's not the code anymore.",
+    "start": 1652.32,
+    "duration": 3.36
+  },
+  {
+    "text": "Your latency budget, your cost ceiling,",
+    "start": 1660.28,
+    "duration": 4.64
+  },
+  {
+    "text": "any regulatory requirements, all of",
+    "start": 1662.68,
+    "duration": 4.68
+  },
+  {
+    "text": "these shape every architectural decision",
+    "start": 1664.92,
+    "duration": 4.12
+  },
+  {
+    "text": "downstream. So,",
+    "start": 1667.36,
+    "duration": 4.12
+  },
+  {
+    "text": "good to identify business and",
+    "start": 1669.04,
+    "duration": 4.32
+  },
+  {
+    "text": "performance constraints before starting",
+    "start": 1671.48,
+    "duration": 5.2
+  },
+  {
+    "text": "to design your application.",
+    "start": 1673.36,
+    "duration": 3.32
+  },
+  {
+    "text": "Design the simplest system that meets",
+    "start": 1677.88,
+    "duration": 4.52
+  },
+  {
+    "text": "your needs. Evaluate it and then iterate",
+    "start": 1679.72,
+    "duration": 4.88
+  },
+  {
+    "text": "from there. The most common mistake I",
+    "start": 1682.4,
+    "duration": 4.56
+  },
+  {
+    "text": "see is over-engineering the solution",
+    "start": 1684.6,
+    "duration": 5.08
+  },
+  {
+    "text": "before knowing what's actually failing",
+    "start": 1686.96,
+    "duration": 5.12
+  },
+  {
+    "text": "or not even evaluating what's actually",
+    "start": 1689.68,
+    "duration": 4.64
+  },
+  {
+    "text": "failing.",
+    "start": 1692.08,
+    "duration": 4.76
+  },
+  {
+    "text": "And that brings me to evaluation.",
+    "start": 1694.32,
+    "duration": 5.28
+  },
+  {
+    "text": "Build evaluation in from the start. You",
+    "start": 1696.84,
+    "duration": 6.48
+  },
+  {
+    "text": "can't improve what you can't measure.",
+    "start": 1699.6,
+    "duration": 6.12
+  },
+  {
+    "text": "Link to our GenAI cookbook that has a",
+    "start": 1703.32,
+    "duration": 4.8
+  },
+  {
+    "text": "ton of examples of",
+    "start": 1705.72,
+    "duration": 4.44
+  },
+  {
+    "text": "different retrieval technique, agentic",
+    "start": 1708.12,
+    "duration": 4.2
+  },
+  {
+    "text": "design patterns, and",
+    "start": 1710.16,
+    "duration": 4.48
+  },
+  {
+    "text": "some of the evaluation and optimization",
+    "start": 1712.32,
+    "duration": 6.8
+  },
+  {
+    "text": "techniques that I was talking about.",
+    "start": 1714.64,
+    "duration": 4.48
+  },
+  {
+    "text": "And yeah, thank you so much for taking",
+    "start": 1720.64,
+    "duration": 3.96
+  },
+  {
+    "text": "the time to listen to my talk. I'll see",
+    "start": 1722.32,
+    "duration": 5.28
+  },
+  {
+    "text": "you at the conference.",
+    "start": 1724.6,
+    "duration": 3
+  },
+  {
+    "text": ">> conference.",
+    "start": 1727.72,
+    "duration": 2.56
+  }
+]

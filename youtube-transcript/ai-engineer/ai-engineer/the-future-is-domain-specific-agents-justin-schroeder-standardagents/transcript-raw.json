@@ -1,0 +1,4017 @@
+[
+  {
+    "text": "Okay, so I'm going to be talking about",
+    "start": 2.96,
+    "duration": 5.8
+  },
+  {
+    "text": "domain-specific agents and why I really",
+    "start": 5.12,
+    "duration": 5.84
+  },
+  {
+    "text": "think that they are going to play an",
+    "start": 8.76,
+    "duration": 4.08
+  },
+  {
+    "text": "unbelievably important role in the",
+    "start": 10.96,
+    "duration": 4.28
+  },
+  {
+    "text": "future of AI and in the future of how we",
+    "start": 12.84,
+    "duration": 3.88
+  },
+  {
+    "text": "build agents.",
+    "start": 15.24,
+    "duration": 3.16
+  },
+  {
+    "text": "To get started real quick, my name's",
+    "start": 16.72,
+    "duration": 4.6
+  },
+  {
+    "text": "Justin Schrader. Uh you can find me on X",
+    "start": 18.4,
+    "duration": 6.48
+  },
+  {
+    "text": "at JP Schrader. And um I work at a small",
+    "start": 21.32,
+    "duration": 5.76
+  },
+  {
+    "text": "company called Standard Agents, which",
+    "start": 24.88,
+    "duration": 3.44
+  },
+  {
+    "text": "nobody's heard of right now cuz we're",
+    "start": 27.08,
+    "duration": 3.8
+  },
+  {
+    "text": "still kind of in stealth mode. Um after",
+    "start": 28.32,
+    "duration": 4.72
+  },
+  {
+    "text": "this talk, if you're interested, feel",
+    "start": 30.88,
+    "duration": 4.56
+  },
+  {
+    "text": "free to reach out to me and uh I can let",
+    "start": 33.04,
+    "duration": 4.08
+  },
+  {
+    "text": "you know a little bit more.",
+    "start": 35.44,
+    "duration": 4.36
+  },
+  {
+    "text": "Mostly, I'm known for doing a lot of",
+    "start": 37.12,
+    "duration": 4.92
+  },
+  {
+    "text": "different open-source projects. Uh Dmux,",
+    "start": 39.8,
+    "duration": 4.48
+  },
+  {
+    "text": "which is a great multiplexer for all of",
+    "start": 42.04,
+    "duration": 3.76
+  },
+  {
+    "text": "your coding agents.",
+    "start": 44.28,
+    "duration": 3.48
+  },
+  {
+    "text": "Uh ArrowJS, which is sort of like a UI",
+    "start": 45.8,
+    "duration": 4.72
+  },
+  {
+    "text": "framework, sort of like React for um the",
+    "start": 47.76,
+    "duration": 4.92
+  },
+  {
+    "text": "agentic era. A bunch more that I won't",
+    "start": 50.52,
+    "duration": 4.16
+  },
+  {
+    "text": "get into, but you know, maybe check them",
+    "start": 52.68,
+    "duration": 3.76
+  },
+  {
+    "text": "out if you're interested.",
+    "start": 54.68,
+    "duration": 2.72
+  },
+  {
+    "text": "Okay.",
+    "start": 56.44,
+    "duration": 3.36
+  },
+  {
+    "text": "I think we can all agree that the moment",
+    "start": 57.4,
+    "duration": 5.32
+  },
+  {
+    "text": "in time that we are in is very similar",
+    "start": 59.8,
+    "duration": 5.12
+  },
+  {
+    "text": "to the Industrial Revolution. Um in",
+    "start": 62.72,
+    "duration": 4
+  },
+  {
+    "text": "fact, it might be like an accelerated",
+    "start": 64.92,
+    "duration": 3.48
+  },
+  {
+    "text": "Industrial Revolution. Maybe it's a",
+    "start": 66.72,
+    "duration": 3.12
+  },
+  {
+    "text": "bigger deal, but it's certainly not",
+    "start": 68.4,
+    "duration": 3.2
+  },
+  {
+    "text": "smaller. I probably don't need to",
+    "start": 69.84,
+    "duration": 3.36
+  },
+  {
+    "text": "convince you of that if you're listening",
+    "start": 71.6,
+    "duration": 3.72
+  },
+  {
+    "text": "to one of these talks. Um but that is",
+    "start": 73.2,
+    "duration": 4.12
+  },
+  {
+    "text": "the moment we find us find ourselves in.",
+    "start": 75.32,
+    "duration": 3.64
+  },
+  {
+    "text": "So, I actually think it's helpful to go",
+    "start": 77.32,
+    "duration": 4.68
+  },
+  {
+    "text": "back and sort of look at what was the",
+    "start": 78.96,
+    "duration": 5.16
+  },
+  {
+    "text": "key catalyst of the Industrial",
+    "start": 82,
+    "duration": 4
+  },
+  {
+    "text": "Revolution. And ultimately, it was that",
+    "start": 84.12,
+    "duration": 4.16
+  },
+  {
+    "text": "we learned how to harness energy with",
+    "start": 86,
+    "duration": 3.96
+  },
+  {
+    "text": "machines.",
+    "start": 88.28,
+    "duration": 3.04
+  },
+  {
+    "text": "We learned how to harness energy with",
+    "start": 89.96,
+    "duration": 4.12
+  },
+  {
+    "text": "machines. And what's interesting is that",
+    "start": 91.32,
+    "duration": 5.16
+  },
+  {
+    "text": "in this next era, we are essentially",
+    "start": 94.08,
+    "duration": 5.24
+  },
+  {
+    "text": "learning to harness intelligence with",
+    "start": 96.48,
+    "duration": 4.52
+  },
+  {
+    "text": "agents.",
+    "start": 99.32,
+    "duration": 4.32
+  },
+  {
+    "text": "And agents, I think, can be thought of a",
+    "start": 101,
+    "duration": 4.72
+  },
+  {
+    "text": "little bit like the machine of",
+    "start": 103.64,
+    "duration": 4.56
+  },
+  {
+    "text": "yesteryear. It's the thing that is going",
+    "start": 105.72,
+    "duration": 7.32
+  },
+  {
+    "text": "to use the intelligence. Not so much us,",
+    "start": 108.2,
+    "duration": 6.8
+  },
+  {
+    "text": "but the agents.",
+    "start": 113.04,
+    "duration": 4.2
+  },
+  {
+    "text": "What's interesting about that is I bet",
+    "start": 115,
+    "duration": 4.32
+  },
+  {
+    "text": "if I was in an actual room with you guys",
+    "start": 117.24,
+    "duration": 4.56
+  },
+  {
+    "text": "and and we all put up our hands, I bet a",
+    "start": 119.32,
+    "duration": 4.76
+  },
+  {
+    "text": "lot of you when I say what is an agent",
+    "start": 121.8,
+    "duration": 4.44
+  },
+  {
+    "text": "instantly have examples that pop into",
+    "start": 124.08,
+    "duration": 5.2
+  },
+  {
+    "text": "mind, but also probably can't pull out a",
+    "start": 126.24,
+    "duration": 4.88
+  },
+  {
+    "text": "definition immediately. Some of you",
+    "start": 129.28,
+    "duration": 3.16
+  },
+  {
+    "text": "maybe can,",
+    "start": 131.12,
+    "duration": 3.64
+  },
+  {
+    "text": "um but the reality is that we haven't",
+    "start": 132.44,
+    "duration": 5.4
+  },
+  {
+    "text": "even coalesced on a definition",
+    "start": 134.76,
+    "duration": 5.4
+  },
+  {
+    "text": "of what an agent is, even though we're",
+    "start": 137.84,
+    "duration": 5.16
+  },
+  {
+    "text": "well into the agentic era at this point.",
+    "start": 140.16,
+    "duration": 5
+  },
+  {
+    "text": "And I think that's kind of interesting.",
+    "start": 143,
+    "duration": 4.12
+  },
+  {
+    "text": "Um here's my definition. You can feel",
+    "start": 145.16,
+    "duration": 4.12
+  },
+  {
+    "text": "free to agree with it or not, but agents",
+    "start": 147.12,
+    "duration": 5.72
+  },
+  {
+    "text": "are deterministic software that harness",
+    "start": 149.28,
+    "duration": 6.04
+  },
+  {
+    "text": "the non-deterministic results produced",
+    "start": 152.84,
+    "duration": 5.64
+  },
+  {
+    "text": "by models in pursuit of some desired",
+    "start": 155.32,
+    "duration": 4.36
+  },
+  {
+    "text": "objective.",
+    "start": 158.48,
+    "duration": 3.32
+  },
+  {
+    "text": "Now,",
+    "start": 159.68,
+    "duration": 4.279
+  },
+  {
+    "text": "deterministic software might make you",
+    "start": 161.8,
+    "duration": 4.76
+  },
+  {
+    "text": "think more like a harness, and I",
+    "start": 163.959,
+    "duration": 4.281
+  },
+  {
+    "text": "actually think the distinction between",
+    "start": 166.56,
+    "duration": 3.28
+  },
+  {
+    "text": "an agent and a harness is really",
+    "start": 168.24,
+    "duration": 4.719
+  },
+  {
+    "text": "pedantic, not very helpful, um and for",
+    "start": 169.84,
+    "duration": 5.72
+  },
+  {
+    "text": "the most part, in most cases, you can",
+    "start": 172.959,
+    "duration": 4.401
+  },
+  {
+    "text": "just conflate the two. A harness is an",
+    "start": 175.56,
+    "duration": 3.88
+  },
+  {
+    "text": "agent and an agent is a harness, okay?",
+    "start": 177.36,
+    "duration": 4.12
+  },
+  {
+    "text": "And for the for the purposes of this",
+    "start": 179.44,
+    "duration": 3.32
+  },
+  {
+    "text": "talk, we're going to go ahead and just",
+    "start": 181.48,
+    "duration": 2.68
+  },
+  {
+    "text": "move forward with that. I think you",
+    "start": 182.76,
+    "duration": 3.04
+  },
+  {
+    "text": "could probably make some good arguments",
+    "start": 184.16,
+    "duration": 3.92
+  },
+  {
+    "text": "for why one is the other and vice versa,",
+    "start": 185.8,
+    "duration": 5.96
+  },
+  {
+    "text": "but really not important right now.",
+    "start": 188.08,
+    "duration": 6.12
+  },
+  {
+    "text": "Now, if you did have some examples pop",
+    "start": 191.76,
+    "duration": 3.72
+  },
+  {
+    "text": "to mind, they might have been like",
+    "start": 194.2,
+    "duration": 3.759
+  },
+  {
+    "text": "Claude or Codex,",
+    "start": 195.48,
+    "duration": 5.2
+  },
+  {
+    "text": "um you know, OpenClaude, Hermes. But you",
+    "start": 197.959,
+    "duration": 4.641
+  },
+  {
+    "text": "know what's interesting is I bet if you",
+    "start": 200.68,
+    "duration": 4.6
+  },
+  {
+    "text": "went out onto, you know, the the streets",
+    "start": 202.6,
+    "duration": 5.6
+  },
+  {
+    "text": "of corporate America in any city, maybe",
+    "start": 205.28,
+    "duration": 4.52
+  },
+  {
+    "text": "not San Francisco, but any city in",
+    "start": 208.2,
+    "duration": 4.92
+  },
+  {
+    "text": "America, and you asked somebody just in",
+    "start": 209.8,
+    "duration": 6.04
+  },
+  {
+    "text": "an office building, could you name an",
+    "start": 213.12,
+    "duration": 3.96
+  },
+  {
+    "text": "agent",
+    "start": 215.84,
+    "duration": 3
+  },
+  {
+    "text": "by name?",
+    "start": 217.08,
+    "duration": 4.08
+  },
+  {
+    "text": "I think some people are going to get",
+    "start": 218.84,
+    "duration": 4.04
+  },
+  {
+    "text": "Claude.",
+    "start": 221.16,
+    "duration": 4.359
+  },
+  {
+    "text": "Some people might get Codex.",
+    "start": 222.88,
+    "duration": 4.04
+  },
+  {
+    "text": "And that's about it. I don't think",
+    "start": 225.519,
+    "duration": 2.881
+  },
+  {
+    "text": "hardly anybody's going to be getting",
+    "start": 226.92,
+    "duration": 4.28
+  },
+  {
+    "text": "OpenClaude or Hermes. Uh Uh, and and",
+    "start": 228.4,
+    "duration": 4.56
+  },
+  {
+    "text": "really even Claude, I don't know that",
+    "start": 231.2,
+    "duration": 3.32
+  },
+  {
+    "text": "people would even know that that's an",
+    "start": 232.96,
+    "duration": 2.88
+  },
+  {
+    "text": "agent.",
+    "start": 234.52,
+    "duration": 3.64
+  },
+  {
+    "text": "These things are not well understood.",
+    "start": 235.84,
+    "duration": 6.6
+  },
+  {
+    "text": "And yet, what's so crazy is everybody is",
+    "start": 238.16,
+    "duration": 6.92
+  },
+  {
+    "text": "building agents. I have a real estate",
+    "start": 242.44,
+    "duration": 4.2
+  },
+  {
+    "text": "agency down the street that's building",
+    "start": 245.08,
+    "duration": 4.56
+  },
+  {
+    "text": "agents. I know in like independent",
+    "start": 246.64,
+    "duration": 5.4
+  },
+  {
+    "text": "private insurance brokers building their",
+    "start": 249.64,
+    "duration": 4.76
+  },
+  {
+    "text": "own agents. I know Fortune 500",
+    "start": 252.04,
+    "duration": 4.319
+  },
+  {
+    "text": "companies, lots of them, building their",
+    "start": 254.4,
+    "duration": 4.88
+  },
+  {
+    "text": "own custom agents. Everybody is trying",
+    "start": 256.359,
+    "duration": 5.961
+  },
+  {
+    "text": "to build their own custom agents. And I",
+    "start": 259.28,
+    "duration": 5.48
+  },
+  {
+    "text": "know people don't believe me, uh, but go",
+    "start": 262.32,
+    "duration": 4.68
+  },
+  {
+    "text": "talk to them. Just go talk to people.",
+    "start": 264.76,
+    "duration": 4.48
+  },
+  {
+    "text": "They are trying to build custom agents.",
+    "start": 267,
+    "duration": 5.84
+  },
+  {
+    "text": "And I can't help but wonder why. Nobody",
+    "start": 269.24,
+    "duration": 5.72
+  },
+  {
+    "text": "seems to be asking this question, why?",
+    "start": 272.84,
+    "duration": 4.2
+  },
+  {
+    "text": "There's already AI everywhere. You can",
+    "start": 274.96,
+    "duration": 4.88
+  },
+  {
+    "text": "get on ChatGPT all the way down to some",
+    "start": 277.04,
+    "duration": 5.32
+  },
+  {
+    "text": "open-source model from China on some,",
+    "start": 279.84,
+    "duration": 4.36
+  },
+  {
+    "text": "you know, rickety website. There's",
+    "start": 282.36,
+    "duration": 3.44
+  },
+  {
+    "text": "everything in between, but still people",
+    "start": 284.2,
+    "duration": 3.52
+  },
+  {
+    "text": "want to build custom agents. And",
+    "start": 285.8,
+    "duration": 2.8
+  },
+  {
+    "text": "ultimately, it comes down to",
+    "start": 287.72,
+    "duration": 4.28
+  },
+  {
+    "text": "integration. Businesses want their data",
+    "start": 288.6,
+    "duration": 7.36
+  },
+  {
+    "text": "properly integrated into AI. They They",
+    "start": 292,
+    "duration": 6.44
+  },
+  {
+    "text": "believe, and are probably right, that if",
+    "start": 295.96,
+    "duration": 4.76
+  },
+  {
+    "text": "they appropriately leverage AI, they're",
+    "start": 298.44,
+    "duration": 4.04
+  },
+  {
+    "text": "going to have these dramatic gains in",
+    "start": 300.72,
+    "duration": 3.6
+  },
+  {
+    "text": "their business and so on and so forth.",
+    "start": 302.48,
+    "duration": 3.52
+  },
+  {
+    "text": "So, they need to figure out how to get",
+    "start": 304.32,
+    "duration": 3.72
+  },
+  {
+    "text": "integrated. And building their own",
+    "start": 306,
+    "duration": 5.2
+  },
+  {
+    "text": "custom agents is obviously a way to do",
+    "start": 308.04,
+    "duration": 4.72
+  },
+  {
+    "text": "that. And it's one of the first ways",
+    "start": 311.2,
+    "duration": 4.16
+  },
+  {
+    "text": "that they discover, um, as a mechanism",
+    "start": 312.76,
+    "duration": 5.159
+  },
+  {
+    "text": "for doing it. The problem, though, is",
+    "start": 315.36,
+    "duration": 6.44
+  },
+  {
+    "text": "that agents are really hard. You have to",
+    "start": 317.919,
+    "duration": 7.081
+  },
+  {
+    "text": "take very, very careful care of the",
+    "start": 321.8,
+    "duration": 4.6
+  },
+  {
+    "text": "agentic loop and make sure that it's",
+    "start": 325,
+    "duration": 4.12
+  },
+  {
+    "text": "properly orchestrated. There are a ton",
+    "start": 326.4,
+    "duration": 4.28
+  },
+  {
+    "text": "of different provider abstractions you",
+    "start": 329.12,
+    "duration": 3.44
+  },
+  {
+    "text": "need to think about. Um, fortunately,",
+    "start": 330.68,
+    "duration": 3.239
+  },
+  {
+    "text": "there's some good tools coming out",
+    "start": 332.56,
+    "duration": 3.24
+  },
+  {
+    "text": "around that, you know, like the",
+    "start": 333.919,
+    "duration": 4.961
+  },
+  {
+    "text": "the Vercel AI SDK is great. Um,",
+    "start": 335.8,
+    "duration": 4.76
+  },
+  {
+    "text": "durable execution, you need to make sure",
+    "start": 338.88,
+    "duration": 4.4
+  },
+  {
+    "text": "if there's faults, we can pick back up.",
+    "start": 340.56,
+    "duration": 5.6
+  },
+  {
+    "text": "These are relatively hard problems, um,",
+    "start": 343.28,
+    "duration": 4.2
+  },
+  {
+    "text": "especially if you're thinking about it",
+    "start": 346.16,
+    "duration": 2.64
+  },
+  {
+    "text": "at scale.",
+    "start": 347.48,
+    "duration": 2.92
+  },
+  {
+    "text": "And the reality is there's just tons",
+    "start": 348.8,
+    "duration": 3.2
+  },
+  {
+    "text": "more. There's all kinds of validations",
+    "start": 350.4,
+    "duration": 3.12
+  },
+  {
+    "text": "and stop conditions and so on and so",
+    "start": 352,
+    "duration": 2.56
+  },
+  {
+    "text": "forth.",
+    "start": 353.52,
+    "duration": 2.88
+  },
+  {
+    "text": "And so what often happens is people do",
+    "start": 354.56,
+    "duration": 3.52
+  },
+  {
+    "text": "try to build their own custom agents,",
+    "start": 356.4,
+    "duration": 3.6
+  },
+  {
+    "text": "and they sort of work as a demo, but but",
+    "start": 358.08,
+    "duration": 4.88
+  },
+  {
+    "text": "not much more than that. Um, and really",
+    "start": 360,
+    "duration": 5
+  },
+  {
+    "text": "it turns out that it's an absolute",
+    "start": 362.96,
+    "duration": 4.2
+  },
+  {
+    "text": "nightmare for people. Um, building",
+    "start": 365,
+    "duration": 5.44
+  },
+  {
+    "text": "robust agents is just hard. And if you",
+    "start": 367.16,
+    "duration": 6.32
+  },
+  {
+    "text": "go talk to anybody in an IT department,",
+    "start": 370.44,
+    "duration": 5.2
+  },
+  {
+    "text": "they are pulling their hair out because",
+    "start": 373.48,
+    "duration": 4.68
+  },
+  {
+    "text": "there are so many different concerns.",
+    "start": 375.64,
+    "duration": 4.4
+  },
+  {
+    "text": "Um, there's no defined way to build an",
+    "start": 378.16,
+    "duration": 3.96
+  },
+  {
+    "text": "agent right now. Like, actually no",
+    "start": 380.04,
+    "duration": 4.92
+  },
+  {
+    "text": "defined way. The closest thing maybe is,",
+    "start": 382.12,
+    "duration": 5.12
+  },
+  {
+    "text": "uh, Eve that just came out from Vercel",
+    "start": 384.96,
+    "duration": 4.8
+  },
+  {
+    "text": "is maybe like the closest thing. Um, but",
+    "start": 387.24,
+    "duration": 4.72
+  },
+  {
+    "text": "in reality, everybody's kind of coming",
+    "start": 389.76,
+    "duration": 4.28
+  },
+  {
+    "text": "up with their own way to do it.",
+    "start": 391.96,
+    "duration": 4.24
+  },
+  {
+    "text": "Um, telemetry and observability on these",
+    "start": 394.04,
+    "duration": 4.28
+  },
+  {
+    "text": "agents is unbelievably hard, especially",
+    "start": 396.2,
+    "duration": 3.76
+  },
+  {
+    "text": "at scale. Like, if you want to know",
+    "start": 398.32,
+    "duration": 4.12
+  },
+  {
+    "text": "exactly what is getting transmitted on",
+    "start": 399.96,
+    "duration": 4.64
+  },
+  {
+    "text": "every single step of every single turn",
+    "start": 402.44,
+    "duration": 4.2
+  },
+  {
+    "text": "of your agent, so that way you can",
+    "start": 404.6,
+    "duration": 3.84
+  },
+  {
+    "text": "diagnose it and fine-tune it and make",
+    "start": 406.64,
+    "duration": 3.92
+  },
+  {
+    "text": "sure things aren't going off the rails,",
+    "start": 408.44,
+    "duration": 4.2
+  },
+  {
+    "text": "that is very hard to do.",
+    "start": 410.56,
+    "duration": 4.68
+  },
+  {
+    "text": "Uh, agents are also not portable. So, if",
+    "start": 412.64,
+    "duration": 5
+  },
+  {
+    "text": "I do get a good agent working, if I've",
+    "start": 415.24,
+    "duration": 4.679
+  },
+  {
+    "text": "managed to climb to the top of, you",
+    "start": 417.64,
+    "duration": 4.08
+  },
+  {
+    "text": "know, this mountain and I've got a good",
+    "start": 419.919,
+    "duration": 4
+  },
+  {
+    "text": "agent that's finally working well, well,",
+    "start": 421.72,
+    "duration": 4.034
+  },
+  {
+    "text": "it works well on my machine.",
+    "start": 423.919,
+    "duration": 2.601
+  },
+  {
+    "text": ">> [laughter]",
+    "start": 425.754,
+    "duration": 2.566
+  },
+  {
+    "text": ">> But if I try to pass it off to somebody",
+    "start": 426.52,
+    "duration": 3.8
+  },
+  {
+    "text": "else, there's a very high likelihood",
+    "start": 428.32,
+    "duration": 3.56
+  },
+  {
+    "text": "that between all of the environment",
+    "start": 430.32,
+    "duration": 4.04
+  },
+  {
+    "text": "variable configurations and and system",
+    "start": 431.88,
+    "duration": 5.16
+  },
+  {
+    "text": "requirements and and runtimes, there's a",
+    "start": 434.36,
+    "duration": 4.24
+  },
+  {
+    "text": "good chance it's not going to run on",
+    "start": 437.04,
+    "duration": 3.04
+  },
+  {
+    "text": "that person's machine.",
+    "start": 438.6,
+    "duration": 3.56
+  },
+  {
+    "text": "And they're not composable. So, even if",
+    "start": 440.08,
+    "duration": 4.24
+  },
+  {
+    "text": "I get, you know, a really good chatbot",
+    "start": 442.16,
+    "duration": 5.4
+  },
+  {
+    "text": "working for my university, the chances",
+    "start": 444.32,
+    "duration": 5.64
+  },
+  {
+    "text": "that I'm going to then be able to reuse",
+    "start": 447.56,
+    "duration": 4.84
+  },
+  {
+    "text": "that for another thing is very, very",
+    "start": 449.96,
+    "duration": 5.32
+  },
+  {
+    "text": "low. I can't just easily share that.",
+    "start": 452.4,
+    "duration": 6.16
+  },
+  {
+    "text": "So, what often happens is after a short",
+    "start": 455.28,
+    "duration": 5.32
+  },
+  {
+    "text": "pursuit towards agents, people kind of",
+    "start": 458.56,
+    "duration": 3.52
+  },
+  {
+    "text": "back away and say, \"Okay, fine. No more",
+    "start": 460.6,
+    "duration": 3.56
+  },
+  {
+    "text": "agents, no agents. Instead, we're going",
+    "start": 462.08,
+    "duration": 4.6
+  },
+  {
+    "text": "to do the MCP thing. We've heard about",
+    "start": 464.16,
+    "duration": 5.52
+  },
+  {
+    "text": "this, it works.\" And sure enough,",
+    "start": 466.68,
+    "duration": 5.56
+  },
+  {
+    "text": "Model Context Protocol, it does work.",
+    "start": 469.68,
+    "duration": 4.68
+  },
+  {
+    "text": "And really, it it works pretty well to",
+    "start": 472.24,
+    "duration": 3.96
+  },
+  {
+    "text": "take, you know, your corporate",
+    "start": 474.36,
+    "duration": 4
+  },
+  {
+    "text": "information like Zillow's information",
+    "start": 476.2,
+    "duration": 4.4
+  },
+  {
+    "text": "and then shove that into one of these",
+    "start": 478.36,
+    "duration": 4.6
+  },
+  {
+    "text": "really large",
+    "start": 480.6,
+    "duration": 4.04
+  },
+  {
+    "text": "pre-existing agents, something like",
+    "start": 482.96,
+    "duration": 4.08
+  },
+  {
+    "text": "Claude or ChatGPT, which I would",
+    "start": 484.64,
+    "duration": 5.68
+  },
+  {
+    "text": "consider a large general-purpose agent.",
+    "start": 487.04,
+    "duration": 4.68
+  },
+  {
+    "text": "Um and it and it sort of works like",
+    "start": 490.32,
+    "duration": 2.68
+  },
+  {
+    "text": "that. Uh",
+    "start": 491.72,
+    "duration": 3.4
+  },
+  {
+    "text": "and and it works okay. But if you take a",
+    "start": 493,
+    "duration": 4.64
+  },
+  {
+    "text": "look, this is actually from the MCP",
+    "start": 495.12,
+    "duration": 5.6
+  },
+  {
+    "text": "website, and if you take a look at what",
+    "start": 497.64,
+    "duration": 5.52
+  },
+  {
+    "text": "is supported in MCP clients around the",
+    "start": 500.72,
+    "duration": 5.199
+  },
+  {
+    "text": "world, you will notice that only one of",
+    "start": 503.16,
+    "duration": 5.6
+  },
+  {
+    "text": "these columns is actually filled out all",
+    "start": 505.919,
+    "duration": 4.721
+  },
+  {
+    "text": "the way down.",
+    "start": 508.76,
+    "duration": 4.44
+  },
+  {
+    "text": "And that, of course, is tools.",
+    "start": 510.64,
+    "duration": 6.64
+  },
+  {
+    "text": "So, MCP has become a de facto tool",
+    "start": 513.2,
+    "duration": 7.08
+  },
+  {
+    "text": "distribution mechanism for agents. So,",
+    "start": 517.28,
+    "duration": 6.4
+  },
+  {
+    "text": "if I need to get my company's tools into",
+    "start": 520.28,
+    "duration": 7
+  },
+  {
+    "text": "that other agent, then MCP's a good way",
+    "start": 523.68,
+    "duration": 5.96
+  },
+  {
+    "text": "to do that. It has not proven to be",
+    "start": 527.28,
+    "duration": 7.72
+  },
+  {
+    "text": "great at providing other value yet.",
+    "start": 529.64,
+    "duration": 7.88
+  },
+  {
+    "text": "And frankly, tools are just not enough.",
+    "start": 535,
+    "duration": 3.72
+  },
+  {
+    "text": "You know, I I I",
+    "start": 537.52,
+    "duration": 3.52
+  },
+  {
+    "text": "I like to joke that we didn't land a man",
+    "start": 538.72,
+    "duration": 5.119
+  },
+  {
+    "text": "on the moon by giving one guy a ton of",
+    "start": 541.04,
+    "duration": 4.12
+  },
+  {
+    "text": "tools.",
+    "start": 543.839,
+    "duration": 3.481
+  },
+  {
+    "text": "That's not a realistic way to get a",
+    "start": 545.16,
+    "duration": 5.72
+  },
+  {
+    "text": "really large project done.",
+    "start": 547.32,
+    "duration": 6.24
+  },
+  {
+    "text": "So, uh you know, maybe MCP's not the",
+    "start": 550.88,
+    "duration": 5.88
+  },
+  {
+    "text": "way, but aha, we have skills. We have",
+    "start": 553.56,
+    "duration": 6.44
+  },
+  {
+    "text": "skills, and skills are great. Um I I I",
+    "start": 556.76,
+    "duration": 5.12
+  },
+  {
+    "text": "actually do enjoy skills. I'm sure you",
+    "start": 560,
+    "duration": 3.36
+  },
+  {
+    "text": "do, too. We install them all the time",
+    "start": 561.88,
+    "duration": 2.959
+  },
+  {
+    "text": "for all kinds of things. And",
+    "start": 563.36,
+    "duration": 3.52
+  },
+  {
+    "text": "fundamentally, what a skill is is a",
+    "start": 564.839,
+    "duration": 4.161
+  },
+  {
+    "text": "markdown file, which basically works as",
+    "start": 566.88,
+    "duration": 3.84
+  },
+  {
+    "text": "documentation.",
+    "start": 569,
+    "duration": 3.36
+  },
+  {
+    "text": "Now, interestingly, there's lots of",
+    "start": 570.72,
+    "duration": 3.08
+  },
+  {
+    "text": "research out there that shows that if",
+    "start": 572.36,
+    "duration": 3.52
+  },
+  {
+    "text": "you use very many of these, it actually",
+    "start": 573.8,
+    "duration": 5.04
+  },
+  {
+    "text": "makes your agent substantially worse.",
+    "start": 575.88,
+    "duration": 6.44
+  },
+  {
+    "text": "But, they do work as documentation for",
+    "start": 578.84,
+    "duration": 5.8
+  },
+  {
+    "text": "various complex things.",
+    "start": 582.32,
+    "duration": 4.16
+  },
+  {
+    "text": "So, you know, back to the analogy of a",
+    "start": 584.64,
+    "duration": 3.12
+  },
+  {
+    "text": "man getting to the moon, it's a little",
+    "start": 586.48,
+    "duration": 3.36
+  },
+  {
+    "text": "bit like just giving this guy, you know,",
+    "start": 587.76,
+    "duration": 4.24
+  },
+  {
+    "text": "a ton of documentation. And the",
+    "start": 589.84,
+    "duration": 3.84
+  },
+  {
+    "text": "documentation's going to help, but it's",
+    "start": 592,
+    "duration": 4.6
+  },
+  {
+    "text": "not the fundamental problem.",
+    "start": 593.68,
+    "duration": 4.92
+  },
+  {
+    "text": "So, what's the fundamental problem?",
+    "start": 596.6,
+    "duration": 3.28
+  },
+  {
+    "text": "Okay.",
+    "start": 598.6,
+    "duration": 3.92
+  },
+  {
+    "text": "Let's build up a basic agent stack here.",
+    "start": 599.88,
+    "duration": 4.2
+  },
+  {
+    "text": "Let's start with a model. All agents",
+    "start": 602.52,
+    "duration": 3.12
+  },
+  {
+    "text": "start with a model.",
+    "start": 604.08,
+    "duration": 3.2
+  },
+  {
+    "text": "Big one, small one, doesn't matter. They",
+    "start": 605.64,
+    "duration": 3.24
+  },
+  {
+    "text": "start with a model.",
+    "start": 607.28,
+    "duration": 3.68
+  },
+  {
+    "text": "Then, you have something like a system",
+    "start": 608.88,
+    "duration": 4.2
+  },
+  {
+    "text": "prompt on top of that, which tells the",
+    "start": 610.96,
+    "duration": 4.6
+  },
+  {
+    "text": "model what its role in the grand",
+    "start": 613.08,
+    "duration": 5.28
+  },
+  {
+    "text": "universe is, sort of like its its life",
+    "start": 615.56,
+    "duration": 4.36
+  },
+  {
+    "text": "objective.",
+    "start": 618.36,
+    "duration": 3.08
+  },
+  {
+    "text": "Then, we have tools, the things that it",
+    "start": 619.92,
+    "duration": 3.08
+  },
+  {
+    "text": "can actually do, the effects it can",
+    "start": 621.44,
+    "duration": 2.6
+  },
+  {
+    "text": "take.",
+    "start": 623,
+    "duration": 3.28
+  },
+  {
+    "text": "And then, skills would be layered on top",
+    "start": 624.04,
+    "duration": 5.48
+  },
+  {
+    "text": "of that. And then, MCP would be layered",
+    "start": 626.28,
+    "duration": 4.92
+  },
+  {
+    "text": "on top of that. And then, finally, you",
+    "start": 629.52,
+    "duration": 3.12
+  },
+  {
+    "text": "have all the messages from the",
+    "start": 631.2,
+    "duration": 4.72
+  },
+  {
+    "text": "conversation. That is roughly the stack",
+    "start": 632.64,
+    "duration": 6.12
+  },
+  {
+    "text": "of information that gets passed along",
+    "start": 635.92,
+    "duration": 5.64
+  },
+  {
+    "text": "within the runtime of an agent.",
+    "start": 638.76,
+    "duration": 5.72
+  },
+  {
+    "text": "And if you take a look here, almost all",
+    "start": 641.56,
+    "duration": 4.48
+  },
+  {
+    "text": "of it",
+    "start": 644.48,
+    "duration": 4.08
+  },
+  {
+    "text": "is context.",
+    "start": 646.04,
+    "duration": 3.96
+  },
+  {
+    "text": "Basically, everything. The system",
+    "start": 648.56,
+    "duration": 3.44
+  },
+  {
+    "text": "prompt, tools, skills, all of that is",
+    "start": 650,
+    "duration": 4.839
+  },
+  {
+    "text": "stuff that ends up in the context of the",
+    "start": 652,
+    "duration": 4.16
+  },
+  {
+    "text": "agent.",
+    "start": 654.839,
+    "duration": 3.881
+  },
+  {
+    "text": "And so, basically, people are trying to",
+    "start": 656.16,
+    "duration": 6.32
+  },
+  {
+    "text": "solve the integration problem by working",
+    "start": 658.72,
+    "duration": 8
+  },
+  {
+    "text": "on the context or the model. These are",
+    "start": 662.48,
+    "duration": 6.92
+  },
+  {
+    "text": "the two areas where we constantly see",
+    "start": 666.72,
+    "duration": 5.64
+  },
+  {
+    "text": "new advances. We also see, you know, new",
+    "start": 669.4,
+    "duration": 5.08
+  },
+  {
+    "text": "new things come out like skills and and",
+    "start": 672.36,
+    "duration": 5.36
+  },
+  {
+    "text": "MCP, um new technologies, new protocols.",
+    "start": 674.48,
+    "duration": 5.76
+  },
+  {
+    "text": "They are all coming out in the in the",
+    "start": 677.72,
+    "duration": 7.32
+  },
+  {
+    "text": "area of the context and the model.",
+    "start": 680.24,
+    "duration": 4.8
+  },
+  {
+    "text": "So, how does it actually work then?",
+    "start": 685.32,
+    "duration": 5.76
+  },
+  {
+    "text": "Well, basically, you work at a company,",
+    "start": 688.08,
+    "duration": 4.24
+  },
+  {
+    "text": "you occasionally need to do some",
+    "start": 691.08,
+    "duration": 3
+  },
+  {
+    "text": "business travel, so you've got a couple",
+    "start": 692.32,
+    "duration": 2.92
+  },
+  {
+    "text": "travel",
+    "start": 694.08,
+    "duration": 3.28
+  },
+  {
+    "text": "MCPs installed. You've also got, you",
+    "start": 695.24,
+    "duration": 4.08
+  },
+  {
+    "text": "know, Figma and Playwright installed on",
+    "start": 697.36,
+    "duration": 3.96
+  },
+  {
+    "text": "yours. And all of these are building up",
+    "start": 699.32,
+    "duration": 4.24
+  },
+  {
+    "text": "in that context layer. And then you've",
+    "start": 701.32,
+    "duration": 4.56
+  },
+  {
+    "text": "got some, you know, Gmail MCPs to go",
+    "start": 703.56,
+    "duration": 4.4
+  },
+  {
+    "text": "check your mail for you and some Google",
+    "start": 705.88,
+    "duration": 4.56
+  },
+  {
+    "text": "Sheets to go fill out some other uh some",
+    "start": 707.96,
+    "duration": 4.4
+  },
+  {
+    "text": "other uh expense reports or something",
+    "start": 710.44,
+    "duration": 3.88
+  },
+  {
+    "text": "like that. And then you've got skills.",
+    "start": 712.36,
+    "duration": 4.08
+  },
+  {
+    "text": "You're a developer, so you've got some",
+    "start": 714.32,
+    "duration": 4.16
+  },
+  {
+    "text": "React fixers and linters. This is",
+    "start": 716.44,
+    "duration": 3.6
+  },
+  {
+    "text": "actually, I think, like, the number one",
+    "start": 718.48,
+    "duration": 3.28
+  },
+  {
+    "text": "or the number two most popular MCP",
+    "start": 720.04,
+    "duration": 3.28
+  },
+  {
+    "text": "server that's out there.",
+    "start": 721.76,
+    "duration": 4.28
+  },
+  {
+    "text": "Um maybe you've got uh Matt's uh grill",
+    "start": 723.32,
+    "duration": 5
+  },
+  {
+    "text": "me skill or or maybe you've got the",
+    "start": 726.04,
+    "duration": 4.04
+  },
+  {
+    "text": "GitHub skill.",
+    "start": 728.32,
+    "duration": 3.64
+  },
+  {
+    "text": "And basically, what you're doing is you",
+    "start": 730.08,
+    "duration": 5.16
+  },
+  {
+    "text": "are inflating that context layer. And we",
+    "start": 731.96,
+    "duration": 4.88
+  },
+  {
+    "text": "have a term for this in engineering.",
+    "start": 735.24,
+    "duration": 4
+  },
+  {
+    "text": "It's called inheritance. The idea of",
+    "start": 736.84,
+    "duration": 5
+  },
+  {
+    "text": "inheritance is you take an object and",
+    "start": 739.24,
+    "duration": 5.44
+  },
+  {
+    "text": "then you add more attributes to it to",
+    "start": 741.84,
+    "duration": 5.92
+  },
+  {
+    "text": "allow that one object to have other",
+    "start": 744.68,
+    "duration": 4.4
+  },
+  {
+    "text": "properties.",
+    "start": 747.76,
+    "duration": 3.2
+  },
+  {
+    "text": "Right? And that's exactly what we are",
+    "start": 749.08,
+    "duration": 4.92
+  },
+  {
+    "text": "doing here with an agent. We're saying,",
+    "start": 750.96,
+    "duration": 5.28
+  },
+  {
+    "text": "\"This agent is pretty good, but if we",
+    "start": 754,
+    "duration": 4.8
+  },
+  {
+    "text": "add all of these addish- additional",
+    "start": 756.24,
+    "duration": 5
+  },
+  {
+    "text": "extra layers, then the agent can do",
+    "start": 758.8,
+    "duration": 4.44
+  },
+  {
+    "text": "stuff that it previously couldn't do",
+    "start": 761.24,
+    "duration": 4.16
+  },
+  {
+    "text": "before.\" That is exactly what",
+    "start": 763.24,
+    "duration": 4.599
+  },
+  {
+    "text": "inheritance is. And the truth about",
+    "start": 765.4,
+    "duration": 5.52
+  },
+  {
+    "text": "inheritance is it works. It does work.",
+    "start": 767.839,
+    "duration": 5.121
+  },
+  {
+    "text": "That's why these things are out there",
+    "start": 770.92,
+    "duration": 4.28
+  },
+  {
+    "text": "and they are working.",
+    "start": 772.96,
+    "duration": 5.04
+  },
+  {
+    "text": "But, there's an old saying,",
+    "start": 775.2,
+    "duration": 6.12
+  },
+  {
+    "text": "\"Composition over inheritance.\" And it",
+    "start": 778,
+    "duration": 6.32
+  },
+  {
+    "text": "turns out this this is as old as time.",
+    "start": 781.32,
+    "duration": 5.4
+  },
+  {
+    "text": "Eventually, inheritance starts to break",
+    "start": 784.32,
+    "duration": 4.68
+  },
+  {
+    "text": "down. Imagine, like, you know, okay,",
+    "start": 786.72,
+    "duration": 5.68
+  },
+  {
+    "text": "I've got five skills on uh ChatGPT or on",
+    "start": 789,
+    "duration": 5.92
+  },
+  {
+    "text": "or on Claude, excuse me. And uh that",
+    "start": 792.4,
+    "duration": 4.6
+  },
+  {
+    "text": "works pretty well. Now, what if I have",
+    "start": 794.92,
+    "duration": 5.08
+  },
+  {
+    "text": "100 skills? What if I have 1,000 skills?",
+    "start": 797,
+    "duration": 4.52
+  },
+  {
+    "text": "There's some point at which I get",
+    "start": 800,
+    "duration": 3.839
+  },
+  {
+    "text": "diminishing returns from adding",
+    "start": 801.52,
+    "duration": 5.16
+  },
+  {
+    "text": "additional context. That's That's just",
+    "start": 803.839,
+    "duration": 4.761
+  },
+  {
+    "text": "obvious. We all kind of understand that",
+    "start": 806.68,
+    "duration": 3.36
+  },
+  {
+    "text": "implicitly.",
+    "start": 808.6,
+    "duration": 3.48
+  },
+  {
+    "text": "So, is there an alternative?",
+    "start": 810.04,
+    "duration": 4
+  },
+  {
+    "text": "Well, composition is the alternative to",
+    "start": 812.08,
+    "duration": 3.6
+  },
+  {
+    "text": "inheritance. It looks something like",
+    "start": 814.04,
+    "duration": 3.36
+  },
+  {
+    "text": "this. So, like imagine we have another",
+    "start": 815.68,
+    "duration": 3.76
+  },
+  {
+    "text": "little agent, and again, we're trying to",
+    "start": 817.4,
+    "duration": 6.2
+  },
+  {
+    "text": "provide Figma as an as a as a thing that",
+    "start": 819.44,
+    "duration": 6.88
+  },
+  {
+    "text": "can be done by our primary agent. Well,",
+    "start": 823.6,
+    "duration": 4.88
+  },
+  {
+    "text": "what we could do is have a tiny little",
+    "start": 826.32,
+    "duration": 5.04
+  },
+  {
+    "text": "agent where the actual system prompt of",
+    "start": 828.48,
+    "duration": 6.48
+  },
+  {
+    "text": "the agent is written specifically to be",
+    "start": 831.36,
+    "duration": 5.96
+  },
+  {
+    "text": "a Figma agent. It knows everything about",
+    "start": 834.96,
+    "duration": 5
+  },
+  {
+    "text": "Figma. It it knows all of its all of its",
+    "start": 837.32,
+    "duration": 4.84
+  },
+  {
+    "text": "context, all of its API, all of the",
+    "start": 839.96,
+    "duration": 4.16
+  },
+  {
+    "text": "right places to click and the things to",
+    "start": 842.16,
+    "duration": 3.48
+  },
+  {
+    "text": "do and mouse movements to make and",
+    "start": 844.12,
+    "duration": 3.52
+  },
+  {
+    "text": "everything like that. And then it has",
+    "start": 845.64,
+    "duration": 4.16
+  },
+  {
+    "text": "these precise tools that it needs to",
+    "start": 847.64,
+    "duration": 4.28
+  },
+  {
+    "text": "perform all of those actions, and",
+    "start": 849.8,
+    "duration": 4.68
+  },
+  {
+    "text": "nothing more. Just that.",
+    "start": 851.92,
+    "duration": 5.04
+  },
+  {
+    "text": "And then a very small message history,",
+    "start": 854.48,
+    "duration": 5.28
+  },
+  {
+    "text": "which just has to do with the Figma",
+    "start": 856.96,
+    "duration": 4.88
+  },
+  {
+    "text": "portion of this. And then you can have",
+    "start": 859.76,
+    "duration": 3.24
+  },
+  {
+    "text": "more of these. You can still have your",
+    "start": 861.84,
+    "duration": 2.84
+  },
+  {
+    "text": "Gmail and your travel and your Google",
+    "start": 863,
+    "duration": 3.52
+  },
+  {
+    "text": "Sheets and all that kind of stuff, but",
+    "start": 864.68,
+    "duration": 4.72
+  },
+  {
+    "text": "each of them is a separate isolated",
+    "start": 866.52,
+    "duration": 5.04
+  },
+  {
+    "text": "agent, a full agent.",
+    "start": 869.4,
+    "duration": 4.08
+  },
+  {
+    "text": "Not just a little server with tools on",
+    "start": 871.56,
+    "duration": 4.04
+  },
+  {
+    "text": "it. It's a full agent with its own",
+    "start": 873.48,
+    "duration": 5.359
+  },
+  {
+    "text": "message history, its own agentic loop.",
+    "start": 875.6,
+    "duration": 5.88
+  },
+  {
+    "text": "And then above these, you have a",
+    "start": 878.839,
+    "duration": 4.321
+  },
+  {
+    "text": "coordinator.",
+    "start": 881.48,
+    "duration": 4.44
+  },
+  {
+    "text": "And the communication mechanism for all",
+    "start": 883.16,
+    "duration": 5.72
+  },
+  {
+    "text": "of these small agents speaking to the",
+    "start": 885.92,
+    "duration": 5.88
+  },
+  {
+    "text": "larger agent above it is just English.",
+    "start": 888.88,
+    "duration": 4.68
+  },
+  {
+    "text": "They just talk to each other the way a",
+    "start": 891.8,
+    "duration": 3.2
+  },
+  {
+    "text": "human does.",
+    "start": 893.56,
+    "duration": 4.48
+  },
+  {
+    "text": "So, if the primary agent is saying, \"Oh,",
+    "start": 895,
+    "duration": 5.44
+  },
+  {
+    "text": "I should I should check my mail to see",
+    "start": 898.04,
+    "duration": 4.24
+  },
+  {
+    "text": "if there's anything about going on a",
+    "start": 900.44,
+    "duration": 5.28
+  },
+  {
+    "text": "trip.\" Well, it knows to go ask Gmail",
+    "start": 902.28,
+    "duration": 6.52
+  },
+  {
+    "text": "for any new uh emails about a trip.",
+    "start": 905.72,
+    "duration": 5.08
+  },
+  {
+    "text": "Those funnel their way back up, says,",
+    "start": 908.8,
+    "duration": 3.36
+  },
+  {
+    "text": "\"Oh, yeah, actually there's a trip",
+    "start": 910.8,
+    "duration": 4.56
+  },
+  {
+    "text": "coming up to Los Angeles this weekend.\"",
+    "start": 912.16,
+    "duration": 6.36
+  },
+  {
+    "text": "And then it can go to our travel agent",
+    "start": 915.36,
+    "duration": 5.24
+  },
+  {
+    "text": "and start to make bookings.",
+    "start": 918.52,
+    "duration": 4.96
+  },
+  {
+    "text": "That's kind of a a rough idea of how",
+    "start": 920.6,
+    "duration": 6.4
+  },
+  {
+    "text": "something like this could work.",
+    "start": 923.48,
+    "duration": 5.68
+  },
+  {
+    "text": "And the reality is it does work. And we",
+    "start": 927,
+    "duration": 4.04
+  },
+  {
+    "text": "know it works because this is actually",
+    "start": 929.16,
+    "duration": 3.92
+  },
+  {
+    "text": "how we got to the moon.",
+    "start": 931.04,
+    "duration": 5
+  },
+  {
+    "text": "There were teams of experts. Teams of",
+    "start": 933.08,
+    "duration": 6
+  },
+  {
+    "text": "experts with faces that looked like that",
+    "start": 936.04,
+    "duration": 5.84
+  },
+  {
+    "text": "and faces that looked like that. Each of",
+    "start": 939.08,
+    "duration": 4.08
+  },
+  {
+    "text": "them with different skills and",
+    "start": 941.88,
+    "duration": 2.68
+  },
+  {
+    "text": "capabilities.",
+    "start": 943.16,
+    "duration": 3.52
+  },
+  {
+    "text": "And faces that looked like that. This is",
+    "start": 944.56,
+    "duration": 4.96
+  },
+  {
+    "text": "the Apollo 11 launch day. And look right",
+    "start": 946.68,
+    "duration": 4.36
+  },
+  {
+    "text": "here, there's an agent. I just found an",
+    "start": 949.52,
+    "duration": 3.515
+  },
+  {
+    "text": "agent sitting right there.",
+    "start": 951.04,
+    "duration": 2.76
+  },
+  {
+    "text": ">> [laughter]",
+    "start": 953.035,
+    "duration": 3.805
+  },
+  {
+    "text": ">> That brain of his is that's his LLM. And",
+    "start": 953.8,
+    "duration": 4.88
+  },
+  {
+    "text": "here's his tools right there on the",
+    "start": 956.84,
+    "duration": 3.64
+  },
+  {
+    "text": "dashboard. Those are the tools. Now, he",
+    "start": 958.68,
+    "duration": 4.24
+  },
+  {
+    "text": "didn't have all the tools. He just had",
+    "start": 960.48,
+    "duration": 4.32
+  },
+  {
+    "text": "those tools. And he was really really",
+    "start": 962.92,
+    "duration": 3.48
+  },
+  {
+    "text": "really good at them.",
+    "start": 964.8,
+    "duration": 3.8
+  },
+  {
+    "text": "And then look at that mouth. That's the",
+    "start": 966.4,
+    "duration": 3.4
+  },
+  {
+    "text": "messages.",
+    "start": 968.6,
+    "duration": 3.2
+  },
+  {
+    "text": "Uh we are used to this. We can",
+    "start": 969.8,
+    "duration": 4.76
+  },
+  {
+    "text": "understand this. It implicitly works.",
+    "start": 971.8,
+    "duration": 5.56
+  },
+  {
+    "text": "It's almost a form of biomimicry for the",
+    "start": 974.56,
+    "duration": 6.56
+  },
+  {
+    "text": "agentic world. Um it works.",
+    "start": 977.36,
+    "duration": 5.96
+  },
+  {
+    "text": "And I call them domain-specific agents.",
+    "start": 981.12,
+    "duration": 3.719
+  },
+  {
+    "text": "Um I don't think I was the first person",
+    "start": 983.32,
+    "duration": 3
+  },
+  {
+    "text": "to utter the words domain-specific",
+    "start": 984.839,
+    "duration": 3.121
+  },
+  {
+    "text": "agents. Certainly not the first person",
+    "start": 986.32,
+    "duration": 3.2
+  },
+  {
+    "text": "to have this idea.",
+    "start": 987.96,
+    "duration": 3.96
+  },
+  {
+    "text": "Um but that is what I want to talk to",
+    "start": 989.52,
+    "duration": 5.36
+  },
+  {
+    "text": "you about. Agents that are just targeted",
+    "start": 991.92,
+    "duration": 5.56
+  },
+  {
+    "text": "to very specific domain.",
+    "start": 994.88,
+    "duration": 5.64
+  },
+  {
+    "text": "And we over here at Standard Agents have",
+    "start": 997.48,
+    "duration": 5.359
+  },
+  {
+    "text": "been building this ecosystem for quite",
+    "start": 1000.52,
+    "duration": 3.68
+  },
+  {
+    "text": "some time. So we've gotten to have a",
+    "start": 1002.839,
+    "duration": 3.601
+  },
+  {
+    "text": "really good inside look at how they",
+    "start": 1004.2,
+    "duration": 4.08
+  },
+  {
+    "text": "actually work. And I'm not ready to come",
+    "start": 1006.44,
+    "duration": 3.2
+  },
+  {
+    "text": "out here and announce a product or",
+    "start": 1008.28,
+    "duration": 3.04
+  },
+  {
+    "text": "anything like that. Um but I can give",
+    "start": 1009.64,
+    "duration": 3.32
+  },
+  {
+    "text": "you a little bit of a peek. First of",
+    "start": 1011.32,
+    "duration": 5.12
+  },
+  {
+    "text": "all, they are far more token efficient.",
+    "start": 1012.96,
+    "duration": 6
+  },
+  {
+    "text": "Far more token efficient. We regularly",
+    "start": 1016.44,
+    "duration": 5.96
+  },
+  {
+    "text": "see over 80% token efficiency for any",
+    "start": 1018.96,
+    "duration": 4.879
+  },
+  {
+    "text": "given task.",
+    "start": 1022.4,
+    "duration": 3.559
+  },
+  {
+    "text": "Now, it's a little more complicated",
+    "start": 1023.839,
+    "duration": 4.561
+  },
+  {
+    "text": "because you have to define those tasks a",
+    "start": 1025.959,
+    "duration": 4.321
+  },
+  {
+    "text": "little bit more ahead of time.",
+    "start": 1028.4,
+    "duration": 4.52
+  },
+  {
+    "text": "But if you can have an agent portability",
+    "start": 1030.28,
+    "duration": 4.559
+  },
+  {
+    "text": "where I can take that Gmail agent,",
+    "start": 1032.92,
+    "duration": 3.919
+  },
+  {
+    "text": "squeeze it up, and then send it to",
+    "start": 1034.839,
+    "duration": 3.48
+  },
+  {
+    "text": "somebody else, we can create an",
+    "start": 1036.839,
+    "duration": 4.401
+  },
+  {
+    "text": "ecosystem where we don't have to create",
+    "start": 1038.319,
+    "duration": 4.12
+  },
+  {
+    "text": "every one of these skills and",
+    "start": 1041.24,
+    "duration": 3.92
+  },
+  {
+    "text": "capabilities, but within that domain,",
+    "start": 1042.439,
+    "duration": 6.441
+  },
+  {
+    "text": "you're going to get dramatic efficiency.",
+    "start": 1045.16,
+    "duration": 5.56
+  },
+  {
+    "text": "Um and part of the reason is, if you",
+    "start": 1048.88,
+    "duration": 3.56
+  },
+  {
+    "text": "think about the way that the context",
+    "start": 1050.72,
+    "duration": 3.84
+  },
+  {
+    "text": "work works, I don't need to have the",
+    "start": 1052.44,
+    "duration": 5.52
+  },
+  {
+    "text": "entire context of the conversation when",
+    "start": 1054.56,
+    "duration": 5.4
+  },
+  {
+    "text": "I make a choice to do something.",
+    "start": 1057.96,
+    "duration": 5.36
+  },
+  {
+    "text": "Instead, my primary coordinator level",
+    "start": 1059.96,
+    "duration": 6.52
+  },
+  {
+    "text": "can just ask the Gmail uh hey, get that",
+    "start": 1063.32,
+    "duration": 5.12
+  },
+  {
+    "text": "last email from Debbie. And that is the",
+    "start": 1066.48,
+    "duration": 4.08
+  },
+  {
+    "text": "totality of the context. It literally",
+    "start": 1068.44,
+    "duration": 5.04
+  },
+  {
+    "text": "just has the system message, its tools,",
+    "start": 1070.56,
+    "duration": 5.4
+  },
+  {
+    "text": "and that message that came in. And so,",
+    "start": 1073.48,
+    "duration": 4.48
+  },
+  {
+    "text": "it is then able to perform this very",
+    "start": 1075.96,
+    "duration": 4.84
+  },
+  {
+    "text": "targeted, very specialized, tiny little",
+    "start": 1077.96,
+    "duration": 3.92
+  },
+  {
+    "text": "thing",
+    "start": 1080.8,
+    "duration": 5.2
+  },
+  {
+    "text": "without all of the surrounding context.",
+    "start": 1081.88,
+    "duration": 5.72
+  },
+  {
+    "text": "It's also",
+    "start": 1086,
+    "duration": 4.76
+  },
+  {
+    "text": "far more practical with small language",
+    "start": 1087.6,
+    "duration": 4.92
+  },
+  {
+    "text": "models.",
+    "start": 1090.76,
+    "duration": 5.32
+  },
+  {
+    "text": "If you look at the difference in two",
+    "start": 1092.52,
+    "duration": 5.72
+  },
+  {
+    "text": "models like DeepSeek uh",
+    "start": 1096.08,
+    "duration": 6.4
+  },
+  {
+    "text": "V4 Flash and uh Fable 5,",
+    "start": 1098.24,
+    "duration": 7.68
+  },
+  {
+    "text": "the cost difference is mind-boggling. It",
+    "start": 1102.48,
+    "duration": 6.84
+  },
+  {
+    "text": "is 137",
+    "start": 1105.92,
+    "duration": 7.8
+  },
+  {
+    "text": "times cheaper than Fable per task.",
+    "start": 1109.32,
+    "duration": 5.96
+  },
+  {
+    "text": "137",
+    "start": 1113.72,
+    "duration": 3.64
+  },
+  {
+    "text": "and 37 times.",
+    "start": 1115.28,
+    "duration": 4.2
+  },
+  {
+    "text": "Now, granted, if",
+    "start": 1117.36,
+    "duration": 5.52
+  },
+  {
+    "text": "DeepSeek V4 Flash fails over and over",
+    "start": 1119.48,
+    "duration": 6.2
+  },
+  {
+    "text": "and over again to do the job, then not",
+    "start": 1122.88,
+    "duration": 4.92
+  },
+  {
+    "text": "only is it going to be, you know, not",
+    "start": 1125.68,
+    "duration": 4.04
+  },
+  {
+    "text": "that much cheaper, it's also going to be",
+    "start": 1127.8,
+    "duration": 4.44
+  },
+  {
+    "text": "much more annoying to use it. But that's",
+    "start": 1129.72,
+    "duration": 5.2
+  },
+  {
+    "text": "why domain-specific agents are so great,",
+    "start": 1132.24,
+    "duration": 5.6
+  },
+  {
+    "text": "because you don't need to have the V4",
+    "start": 1134.92,
+    "duration": 5.4
+  },
+  {
+    "text": "Flash do everything.",
+    "start": 1137.84,
+    "duration": 5.28
+  },
+  {
+    "text": "Instead, it only needs to do the tasks",
+    "start": 1140.32,
+    "duration": 5.2
+  },
+  {
+    "text": "that have been specifically picked for",
+    "start": 1143.12,
+    "duration": 4.36
+  },
+  {
+    "text": "it to do. And with a very minimal",
+    "start": 1145.52,
+    "duration": 4.52
+  },
+  {
+    "text": "context, it can execute those very",
+    "start": 1147.48,
+    "duration": 3.96
+  },
+  {
+    "text": "faithfully.",
+    "start": 1150.04,
+    "duration": 3.68
+  },
+  {
+    "text": "So, you get these dramatic cost",
+    "start": 1151.44,
+    "duration": 4
+  },
+  {
+    "text": "reductions not only with the token",
+    "start": 1153.72,
+    "duration": 4.76
+  },
+  {
+    "text": "efficiency, but also because you can use",
+    "start": 1155.44,
+    "duration": 5.24
+  },
+  {
+    "text": "much smaller language models and even",
+    "start": 1158.48,
+    "duration": 4.56
+  },
+  {
+    "text": "non-language models. You can use image",
+    "start": 1160.68,
+    "duration": 4.56
+  },
+  {
+    "text": "generation and diffusion models. You can",
+    "start": 1163.04,
+    "duration": 4.08
+  },
+  {
+    "text": "use all kinds of other models for",
+    "start": 1165.24,
+    "duration": 3.948
+  },
+  {
+    "text": "smaller tasks.",
+    "start": 1167.12,
+    "duration": 2.96
+  },
+  {
+    "text": ">> [snorts]",
+    "start": 1169.188,
+    "duration": 3.372
+  },
+  {
+    "text": ">> You can also enforce really strict",
+    "start": 1170.08,
+    "duration": 4.84
+  },
+  {
+    "text": "limits on the capabilities. And I think",
+    "start": 1172.56,
+    "duration": 3.64
+  },
+  {
+    "text": "you know what I'm talking about. I'm",
+    "start": 1174.92,
+    "duration": 3.84
+  },
+  {
+    "text": "talking about this. Uh we are all flying",
+    "start": 1176.2,
+    "duration": 5.2
+  },
+  {
+    "text": "awfully close to the sun nowadays.",
+    "start": 1178.76,
+    "duration": 4.56
+  },
+  {
+    "text": "We're everybody's just bypassing",
+    "start": 1181.4,
+    "duration": 3.76
+  },
+  {
+    "text": "permissions left and right. And of",
+    "start": 1183.32,
+    "duration": 4.12
+  },
+  {
+    "text": "course, you have to because",
+    "start": 1185.16,
+    "duration": 6.2
+  },
+  {
+    "text": "a coding agent with a big model can do",
+    "start": 1187.44,
+    "duration": 5.28
+  },
+  {
+    "text": "anything.",
+    "start": 1191.36,
+    "duration": 5.04
+  },
+  {
+    "text": "And so, we use it to do everything.",
+    "start": 1192.72,
+    "duration": 5.52
+  },
+  {
+    "text": "In a world that would be powered by",
+    "start": 1196.4,
+    "duration": 4
+  },
+  {
+    "text": "smaller domain-specific agents, those",
+    "start": 1198.24,
+    "duration": 3.76
+  },
+  {
+    "text": "agents can't do everything. They can",
+    "start": 1200.4,
+    "duration": 3.68
+  },
+  {
+    "text": "only do the things that are already",
+    "start": 1202,
+    "duration": 4.6
+  },
+  {
+    "text": "explicitly approved for them to do. It",
+    "start": 1204.08,
+    "duration": 3.6
+  },
+  {
+    "text": "doesn't mean that you still can't have",
+    "start": 1206.6,
+    "duration": 3.24
+  },
+  {
+    "text": "permissions and permission dialogues,",
+    "start": 1207.68,
+    "duration": 4.92
+  },
+  {
+    "text": "but you are opting into a much more",
+    "start": 1209.84,
+    "duration": 6.28
+  },
+  {
+    "text": "controlled ecosystem. And I promise you,",
+    "start": 1212.6,
+    "duration": 7.16
+  },
+  {
+    "text": "when you explain that to",
+    "start": 1216.12,
+    "duration": 6.52
+  },
+  {
+    "text": "Doug in IT, he puts his heart at ease",
+    "start": 1219.76,
+    "duration": 4.48
+  },
+  {
+    "text": "understanding the difference between",
+    "start": 1222.64,
+    "duration": 2.879
+  },
+  {
+    "text": "those two.",
+    "start": 1224.24,
+    "duration": 1.84
+  },
+  {
+    "text": ">> [snorts]",
+    "start": 1225.519,
+    "duration": 2.561
+  },
+  {
+    "text": ">> And uh fourth, they these have excellent",
+    "start": 1226.08,
+    "duration": 4.48
+  },
+  {
+    "text": "scaling characteristics. Because each of",
+    "start": 1228.08,
+    "duration": 4.72
+  },
+  {
+    "text": "these agents is its own small little",
+    "start": 1230.56,
+    "duration": 3.52
+  },
+  {
+    "text": "execution environment, you can",
+    "start": 1232.8,
+    "duration": 3.04
+  },
+  {
+    "text": "parallelize them. You can put them on",
+    "start": 1234.08,
+    "duration": 3.6
+  },
+  {
+    "text": "the cloud very easily without needing",
+    "start": 1235.84,
+    "duration": 5.24
+  },
+  {
+    "text": "like a giant VPC up there. You can run",
+    "start": 1237.68,
+    "duration": 6.2
+  },
+  {
+    "text": "thousands of instances all at the same",
+    "start": 1241.08,
+    "duration": 5.76
+  },
+  {
+    "text": "time um in in all kinds of regions of",
+    "start": 1243.88,
+    "duration": 4.36
+  },
+  {
+    "text": "the world. They don't actually need to",
+    "start": 1246.84,
+    "duration": 3.72
+  },
+  {
+    "text": "be uh you know, geographically",
+    "start": 1248.24,
+    "duration": 4.96
+  },
+  {
+    "text": "co-located or anything like that. Um so,",
+    "start": 1250.56,
+    "duration": 4.32
+  },
+  {
+    "text": "they have very, very good scaling",
+    "start": 1253.2,
+    "duration": 3.76
+  },
+  {
+    "text": "characteristics.",
+    "start": 1254.88,
+    "duration": 5.56
+  },
+  {
+    "text": "Unfortunately, they don't exist.",
+    "start": 1256.96,
+    "duration": 5.239
+  },
+  {
+    "text": "That's the downside.",
+    "start": 1260.44,
+    "duration": 2.28
+  },
+  {
+    "text": ">> [laughter]",
+    "start": 1262.199,
+    "duration": 2.561
+  },
+  {
+    "text": ">> These domain-specific agents don't",
+    "start": 1262.72,
+    "duration": 3.96
+  },
+  {
+    "text": "really exist.",
+    "start": 1264.76,
+    "duration": 4.24
+  },
+  {
+    "text": "Um not in a big public way.",
+    "start": 1266.68,
+    "duration": 5.56
+  },
+  {
+    "text": "Like I said, here at Standard Agents, we",
+    "start": 1269,
+    "duration": 5
+  },
+  {
+    "text": "have them. We are working with them on a",
+    "start": 1272.24,
+    "duration": 3.4
+  },
+  {
+    "text": "daily basis,",
+    "start": 1274,
+    "duration": 4.16
+  },
+  {
+    "text": "but they are not out there in public",
+    "start": 1275.64,
+    "duration": 4.24
+  },
+  {
+    "text": "very much yet.",
+    "start": 1278.16,
+    "duration": 4.32
+  },
+  {
+    "text": "However, that's changing. That is going",
+    "start": 1279.88,
+    "duration": 4.52
+  },
+  {
+    "text": "to change very quickly. We're about",
+    "start": 1282.48,
+    "duration": 4.08
+  },
+  {
+    "text": "halfway through 2026,",
+    "start": 1284.4,
+    "duration": 4.4
+  },
+  {
+    "text": "and and I'm here to make a public",
+    "start": 1286.56,
+    "duration": 4.68
+  },
+  {
+    "text": "prediction that I think as we roll on",
+    "start": 1288.8,
+    "duration": 6.28
+  },
+  {
+    "text": "from from this point to the end of 2026,",
+    "start": 1291.24,
+    "duration": 6.92
+  },
+  {
+    "text": "we are going to see a dramatic uptick in",
+    "start": 1295.08,
+    "duration": 6.16
+  },
+  {
+    "text": "people talking about building",
+    "start": 1298.16,
+    "duration": 4.96
+  },
+  {
+    "text": "domain-specific agents, frameworks",
+    "start": 1301.24,
+    "duration": 3.72
+  },
+  {
+    "text": "around them. All kinds of things are",
+    "start": 1303.12,
+    "duration": 4.52
+  },
+  {
+    "text": "coming down the pipe. And it's not going",
+    "start": 1304.96,
+    "duration": 5.16
+  },
+  {
+    "text": "to be a small trickle. It's it's going",
+    "start": 1307.64,
+    "duration": 4.96
+  },
+  {
+    "text": "to accelerate rapidly, and this will",
+    "start": 1310.12,
+    "duration": 5.12
+  },
+  {
+    "text": "become a one of the main players in the",
+    "start": 1312.6,
+    "duration": 5.48
+  },
+  {
+    "text": "agentic ecosystem. And 2027, I would",
+    "start": 1315.24,
+    "duration": 5.16
+  },
+  {
+    "text": "say, is basically the year of",
+    "start": 1318.08,
+    "duration": 4.16
+  },
+  {
+    "text": "multi-agent orchestration. That's",
+    "start": 1320.4,
+    "duration": 3.44
+  },
+  {
+    "text": "another word you'll start to hear a lot,",
+    "start": 1322.24,
+    "duration": 3.04
+  },
+  {
+    "text": "I think.",
+    "start": 1323.84,
+    "duration": 4.08
+  },
+  {
+    "text": "So, that's my big bold public",
+    "start": 1325.28,
+    "duration": 4.96
+  },
+  {
+    "text": "prediction. I was really excited just a",
+    "start": 1327.92,
+    "duration": 6.44
+  },
+  {
+    "text": "few days ago when Vercel released Eve.",
+    "start": 1330.24,
+    "duration": 6.84
+  },
+  {
+    "text": "This is the first time I actually saw",
+    "start": 1334.36,
+    "duration": 4.48
+  },
+  {
+    "text": "the term that I had been blasting out",
+    "start": 1337.08,
+    "duration": 3.24
+  },
+  {
+    "text": "into the void",
+    "start": 1338.84,
+    "duration": 4.04
+  },
+  {
+    "text": "come back and hit me in my own face.",
+    "start": 1340.32,
+    "duration": 4.56
+  },
+  {
+    "text": "The framework for building agents build",
+    "start": 1342.88,
+    "duration": 4.04
+  },
+  {
+    "text": "a company brain, personal assistant, or",
+    "start": 1344.88,
+    "duration": 4.52
+  },
+  {
+    "text": "domain-specific",
+    "start": 1346.92,
+    "duration": 4.48
+  },
+  {
+    "text": "agent. So, there we go. About halfway",
+    "start": 1349.4,
+    "duration": 3.56
+  },
+  {
+    "text": "through the year,",
+    "start": 1351.4,
+    "duration": 3.6
+  },
+  {
+    "text": "we're going to start picking up steam.",
+    "start": 1352.96,
+    "duration": 4.52
+  },
+  {
+    "text": "That's my prediction.",
+    "start": 1355,
+    "duration": 4.2
+  },
+  {
+    "text": "And there's a number of reasons. One of",
+    "start": 1357.48,
+    "duration": 3.36
+  },
+  {
+    "text": "them is",
+    "start": 1359.2,
+    "duration": 3
+  },
+  {
+    "text": "something that most people believe right",
+    "start": 1360.84,
+    "duration": 3.2
+  },
+  {
+    "text": "now is that the cost of intelligence is",
+    "start": 1362.2,
+    "duration": 5.84
+  },
+  {
+    "text": "going down. That trend reversed in 2026,",
+    "start": 1364.04,
+    "duration": 8.32
+  },
+  {
+    "text": "actually. We track this on on a website.",
+    "start": 1368.04,
+    "duration": 6.76
+  },
+  {
+    "text": "Tokens are not getting cheaper anymore.",
+    "start": 1372.36,
+    "duration": 5.32
+  },
+  {
+    "text": "They are actually going up even when",
+    "start": 1374.8,
+    "duration": 5.4
+  },
+  {
+    "text": "adjusted for IQ. They're up 29% when you",
+    "start": 1377.68,
+    "duration": 5.76
+  },
+  {
+    "text": "adjust for IQ just this year, halfway",
+    "start": 1380.2,
+    "duration": 5.32
+  },
+  {
+    "text": "through the year, we're already up 30%",
+    "start": 1383.44,
+    "duration": 3.88
+  },
+  {
+    "text": "and that can be caused by lots of",
+    "start": 1385.52,
+    "duration": 3.56
+  },
+  {
+    "text": "different things. Of course, um we've",
+    "start": 1387.32,
+    "duration": 4.08
+  },
+  {
+    "text": "got this memory crunch and and you know,",
+    "start": 1389.08,
+    "duration": 4.6
+  },
+  {
+    "text": "probably the long-term trend over a",
+    "start": 1391.4,
+    "duration": 3.96
+  },
+  {
+    "text": "10-year cycle or something is that",
+    "start": 1393.68,
+    "duration": 4.24
+  },
+  {
+    "text": "intelligence will go down, but that does",
+    "start": 1395.36,
+    "duration": 5.84
+  },
+  {
+    "text": "not mean that we need to be paying 137",
+    "start": 1397.92,
+    "duration": 5.84
+  },
+  {
+    "text": "times the cost for something that can be",
+    "start": 1401.2,
+    "duration": 5.36
+  },
+  {
+    "text": "done just as effectively. The problem is",
+    "start": 1403.76,
+    "duration": 5.88
+  },
+  {
+    "text": "it's harder to break those things apart.",
+    "start": 1406.56,
+    "duration": 6.6
+  },
+  {
+    "text": "Now, if you don't account for IQ,",
+    "start": 1409.64,
+    "duration": 6.64
+  },
+  {
+    "text": "tokens are up 76%",
+    "start": 1413.16,
+    "duration": 5.72
+  },
+  {
+    "text": "this year, almost 100% increase in",
+    "start": 1416.28,
+    "duration": 4.72
+  },
+  {
+    "text": "tokens just this year.",
+    "start": 1418.88,
+    "duration": 4.28
+  },
+  {
+    "text": "Um and we're we're not even halfway",
+    "start": 1421,
+    "duration": 3.84
+  },
+  {
+    "text": "through it. So,",
+    "start": 1423.16,
+    "duration": 3.72
+  },
+  {
+    "text": "we are really trending upwards on on",
+    "start": 1424.84,
+    "duration": 4.28
+  },
+  {
+    "text": "token costs. So, anything we can do,",
+    "start": 1426.88,
+    "duration": 3.92
+  },
+  {
+    "text": "especially with large businesses, to",
+    "start": 1429.12,
+    "duration": 2.76
+  },
+  {
+    "text": "bring that down is going to be really",
+    "start": 1430.8,
+    "duration": 3.44
+  },
+  {
+    "text": "important. Um the other the other use",
+    "start": 1431.88,
+    "duration": 4.84
+  },
+  {
+    "text": "case to really consider is putting AI in",
+    "start": 1434.24,
+    "duration": 6.12
+  },
+  {
+    "text": "front of customers. You can't put Fable",
+    "start": 1436.72,
+    "duration": 5.68
+  },
+  {
+    "text": "in front of a customer,",
+    "start": 1440.36,
+    "duration": 4.12
+  },
+  {
+    "text": "um unless that customer has a massive",
+    "start": 1442.4,
+    "duration": 4.72
+  },
+  {
+    "text": "lifetime value. It's just too expensive.",
+    "start": 1444.48,
+    "duration": 4.76
+  },
+  {
+    "text": "So, you need to find a way to create",
+    "start": 1447.12,
+    "duration": 6.08
+  },
+  {
+    "text": "great efficacy while being efficient.",
+    "start": 1449.24,
+    "duration": 5.48
+  },
+  {
+    "text": "And domain-specific agents are going to",
+    "start": 1453.2,
+    "duration": 3.68
+  },
+  {
+    "text": "be the way to do that. So, I'm going to",
+    "start": 1454.72,
+    "duration": 4.68
+  },
+  {
+    "text": "leave you here in momentarily, um but",
+    "start": 1456.88,
+    "duration": 4.72
+  },
+  {
+    "text": "before I do, let's just dream a little",
+    "start": 1459.4,
+    "duration": 5.6
+  },
+  {
+    "text": "bit. Let me dig in a little bit deeper",
+    "start": 1461.6,
+    "duration": 7.16
+  },
+  {
+    "text": "to how an agent could be orchestrated",
+    "start": 1465,
+    "duration": 6.4
+  },
+  {
+    "text": "and what an ideal agent would actually",
+    "start": 1468.76,
+    "duration": 5.16
+  },
+  {
+    "text": "look like. And then, I promise to leave",
+    "start": 1471.4,
+    "duration": 3.72
+  },
+  {
+    "text": "you alone.",
+    "start": 1473.92,
+    "duration": 2.84
+  },
+  {
+    "text": "Here we go. So, remember we got that",
+    "start": 1475.12,
+    "duration": 4.64
+  },
+  {
+    "text": "model and we got the system prompt. And",
+    "start": 1476.76,
+    "duration": 4.84
+  },
+  {
+    "text": "then, at the tool layer, let's break",
+    "start": 1479.76,
+    "duration": 3.4
+  },
+  {
+    "text": "that apart a little bit. On one hand, we",
+    "start": 1481.6,
+    "duration": 3.08
+  },
+  {
+    "text": "have these like functions. This would be",
+    "start": 1483.16,
+    "duration": 3.44
+  },
+  {
+    "text": "like an actual function that can get",
+    "start": 1484.68,
+    "duration": 4.88
+  },
+  {
+    "text": "executed, like write a file to the file",
+    "start": 1486.6,
+    "duration": 4.2
+  },
+  {
+    "text": "system.",
+    "start": 1489.56,
+    "duration": 3.84
+  },
+  {
+    "text": "Then, we have prompts.",
+    "start": 1490.8,
+    "duration": 5.56
+  },
+  {
+    "text": "Prompts are a lot like the system",
+    "start": 1493.4,
+    "duration": 5.88
+  },
+  {
+    "text": "prompt, but they are smaller individual",
+    "start": 1496.36,
+    "duration": 5.4
+  },
+  {
+    "text": "prompts that can get injected",
+    "start": 1499.28,
+    "duration": 4.84
+  },
+  {
+    "text": "and and sub prompts that can you know,",
+    "start": 1501.76,
+    "duration": 4.72
+  },
+  {
+    "text": "you can run a function that actually",
+    "start": 1504.12,
+    "duration": 5.16
+  },
+  {
+    "text": "calls an LLM. So, let's say I have a",
+    "start": 1506.48,
+    "duration": 5.08
+  },
+  {
+    "text": "main agent running, but I want to use",
+    "start": 1509.28,
+    "duration": 4.76
+  },
+  {
+    "text": "Nano Banana just to generate an image",
+    "start": 1511.56,
+    "duration": 5.84
+  },
+  {
+    "text": "when I'm using GLM you know, 5.2 as my",
+    "start": 1514.04,
+    "duration": 6.04
+  },
+  {
+    "text": "primary. Well, you can just have a tool",
+    "start": 1517.4,
+    "duration": 4.12
+  },
+  {
+    "text": "that's a prompt. That would be really",
+    "start": 1520.08,
+    "duration": 3.56
+  },
+  {
+    "text": "cool if you could do that.",
+    "start": 1521.52,
+    "duration": 4.68
+  },
+  {
+    "text": "And then another type of tool could be",
+    "start": 1523.64,
+    "duration": 4.88
+  },
+  {
+    "text": "another full-blown agent, like a",
+    "start": 1526.2,
+    "duration": 4.92
+  },
+  {
+    "text": "complete other domain specific agent",
+    "start": 1528.52,
+    "duration": 5.32
+  },
+  {
+    "text": "could just be one of the tools.",
+    "start": 1531.12,
+    "duration": 4.6
+  },
+  {
+    "text": "So, that's the tool layer.",
+    "start": 1533.84,
+    "duration": 3.68
+  },
+  {
+    "text": "And then you have hooks.",
+    "start": 1535.72,
+    "duration": 4.56
+  },
+  {
+    "text": "Uh what are hooks? Well, in this",
+    "start": 1537.52,
+    "duration": 5.2
+  },
+  {
+    "text": "ideal world, a hook might be something",
+    "start": 1540.28,
+    "duration": 5.68
+  },
+  {
+    "text": "that can kind of harness or change or",
+    "start": 1542.72,
+    "duration": 6.36
+  },
+  {
+    "text": "mutate or perform side effects. So, let",
+    "start": 1545.96,
+    "duration": 4.92
+  },
+  {
+    "text": "me give you an example. LLMs have no",
+    "start": 1549.08,
+    "duration": 4.48
+  },
+  {
+    "text": "idea what time it is at any given point",
+    "start": 1550.88,
+    "duration": 5.28
+  },
+  {
+    "text": "in time. Turns out a really great way to",
+    "start": 1553.56,
+    "duration": 6.08
+  },
+  {
+    "text": "tell them what time it is is you inject",
+    "start": 1556.16,
+    "duration": 6.16
+  },
+  {
+    "text": "an artificial message or an artificial",
+    "start": 1559.64,
+    "duration": 5.172
+  },
+  {
+    "text": "tool call in the message history. So,",
+    "start": 1562.32,
+    "duration": 4.28
+  },
+  {
+    "text": "[snorts] it looks like somebody just",
+    "start": 1564.812,
+    "duration": 3.348
+  },
+  {
+    "text": "said, \"Hey, what time it is?\" and the",
+    "start": 1566.6,
+    "duration": 4.4
+  },
+  {
+    "text": "other person replied, \"Oh, it's 6:45",
+    "start": 1568.16,
+    "duration": 5
+  },
+  {
+    "text": "p.m. Pacific time.\"",
+    "start": 1571,
+    "duration": 4.04
+  },
+  {
+    "text": "Pretty simple.",
+    "start": 1573.16,
+    "duration": 4.76
+  },
+  {
+    "text": "Um you can do that with a hook. Or you",
+    "start": 1575.04,
+    "duration": 5.2
+  },
+  {
+    "text": "could fire off some side effect using a",
+    "start": 1577.92,
+    "duration": 4.56
+  },
+  {
+    "text": "hook. So, this is an important piece of",
+    "start": 1580.24,
+    "duration": 3.72
+  },
+  {
+    "text": "an agent.",
+    "start": 1582.48,
+    "duration": 3.24
+  },
+  {
+    "text": "And then finally, there's there's these",
+    "start": 1583.96,
+    "duration": 3.76
+  },
+  {
+    "text": "agent rules. And agent rules are kind of",
+    "start": 1585.72,
+    "duration": 4.84
+  },
+  {
+    "text": "complicated. It's like how many times",
+    "start": 1587.72,
+    "duration": 5.92
+  },
+  {
+    "text": "should one side have a turn? Like can it",
+    "start": 1590.56,
+    "duration": 6.84
+  },
+  {
+    "text": "go on for 10,000 turns uh or 10,000",
+    "start": 1593.64,
+    "duration": 5.76
+  },
+  {
+    "text": "steps before it's turn is up? You know,",
+    "start": 1597.4,
+    "duration": 3.8
+  },
+  {
+    "text": "there's there's all kinds of interesting",
+    "start": 1599.4,
+    "duration": 4.2
+  },
+  {
+    "text": "little rules. You know, when it calls uh",
+    "start": 1601.2,
+    "duration": 5.08
+  },
+  {
+    "text": "a tool, you know, is it required to",
+    "start": 1603.6,
+    "duration": 4.56
+  },
+  {
+    "text": "validate the whole thing or not, you",
+    "start": 1606.28,
+    "duration": 4.56
+  },
+  {
+    "text": "know? All kinds of of very specific",
+    "start": 1608.16,
+    "duration": 5.48
+  },
+  {
+    "text": "tools uh or or rules that that belong to",
+    "start": 1610.84,
+    "duration": 4.84
+  },
+  {
+    "text": "a specific agent. And altogether, if we",
+    "start": 1613.64,
+    "duration": 4.72
+  },
+  {
+    "text": "bundle all that up, we would call that",
+    "start": 1615.68,
+    "duration": 4.36
+  },
+  {
+    "text": "an agent. But, it's kind of missing a",
+    "start": 1618.36,
+    "duration": 3.28
+  },
+  {
+    "text": "couple things. One,",
+    "start": 1620.04,
+    "duration": 4.68
+  },
+  {
+    "text": "every agent should really have a file",
+    "start": 1621.64,
+    "duration": 5.76
+  },
+  {
+    "text": "system. If you've ever done this with",
+    "start": 1624.72,
+    "duration": 6.12
+  },
+  {
+    "text": "ChatGPT or Claude or Codex, if you just",
+    "start": 1627.4,
+    "duration": 5.44
+  },
+  {
+    "text": "ask it, you know, not inside of a",
+    "start": 1630.84,
+    "duration": 3.68
+  },
+  {
+    "text": "project or anything like, \"Hey, can you",
+    "start": 1632.84,
+    "duration": 3.12
+  },
+  {
+    "text": "make me",
+    "start": 1634.52,
+    "duration": 5.8
+  },
+  {
+    "text": "a PDF for my my son's birthday party?\"",
+    "start": 1635.96,
+    "duration": 7.12
+  },
+  {
+    "text": "Well, it'll do it. And it'll store it in",
+    "start": 1640.32,
+    "duration": 5.2
+  },
+  {
+    "text": "its own little file system. So, the big",
+    "start": 1643.08,
+    "duration": 4
+  },
+  {
+    "text": "labs have already realized that in order",
+    "start": 1645.52,
+    "duration": 3.64
+  },
+  {
+    "text": "to create an effective chat interface,",
+    "start": 1647.08,
+    "duration": 4.36
+  },
+  {
+    "text": "not to mention a big agent, it needs",
+    "start": 1649.16,
+    "duration": 5.04
+  },
+  {
+    "text": "some sort of file system. So, every",
+    "start": 1651.44,
+    "duration": 4.4
+  },
+  {
+    "text": "agent should have its own little sandbox",
+    "start": 1654.2,
+    "duration": 2.96
+  },
+  {
+    "text": "file system.",
+    "start": 1655.84,
+    "duration": 3.8
+  },
+  {
+    "text": "And also, every agent should have a",
+    "start": 1657.16,
+    "duration": 5.52
+  },
+  {
+    "text": "sandboxed code execution location. So,",
+    "start": 1659.64,
+    "duration": 5.04
+  },
+  {
+    "text": "it can write files, it can run those",
+    "start": 1662.68,
+    "duration": 4.68
+  },
+  {
+    "text": "files, and it can do that safely without",
+    "start": 1664.68,
+    "duration": 4.24
+  },
+  {
+    "text": "exfiltrating anything, without",
+    "start": 1667.36,
+    "duration": 3.24
+  },
+  {
+    "text": "interacting with an OS at a higher",
+    "start": 1668.92,
+    "duration": 4.2
+  },
+  {
+    "text": "level. That needs to be baked in as a",
+    "start": 1670.6,
+    "duration": 4.36
+  },
+  {
+    "text": "primitive to every single",
+    "start": 1673.12,
+    "duration": 3.72
+  },
+  {
+    "text": "domain-specific agent.",
+    "start": 1674.96,
+    "duration": 3.84
+  },
+  {
+    "text": "Okay, so, let's say that that's our",
+    "start": 1676.84,
+    "duration": 3.76
+  },
+  {
+    "text": "ideal agent. And now, let's talk about",
+    "start": 1678.8,
+    "duration": 4.16
+  },
+  {
+    "text": "that little agent tool there. What is",
+    "start": 1680.6,
+    "duration": 5.96
+  },
+  {
+    "text": "that? Well, those can be sub-agents,",
+    "start": 1682.96,
+    "duration": 5.36
+  },
+  {
+    "text": "recursive sub-agents even. You could",
+    "start": 1686.56,
+    "duration": 4.32
+  },
+  {
+    "text": "have an agent that calls a sub-agent",
+    "start": 1688.32,
+    "duration": 4.92
+  },
+  {
+    "text": "that calls sub-agents that call",
+    "start": 1690.88,
+    "duration": 4.72
+  },
+  {
+    "text": "sub-agents. Um, and there could be one",
+    "start": 1693.24,
+    "duration": 3.92
+  },
+  {
+    "text": "or there could be many of these at",
+    "start": 1695.6,
+    "duration": 2.96
+  },
+  {
+    "text": "different levels.",
+    "start": 1697.16,
+    "duration": 3.28
+  },
+  {
+    "text": "So, for example, you could have this",
+    "start": 1698.56,
+    "duration": 3.36
+  },
+  {
+    "text": "coordinator agent that's at the very",
+    "start": 1700.44,
+    "duration": 3.36
+  },
+  {
+    "text": "top, and then you could have a",
+    "start": 1701.92,
+    "duration": 4.08
+  },
+  {
+    "text": "Salesforce agent. And that agent knows",
+    "start": 1703.8,
+    "duration": 4.04
+  },
+  {
+    "text": "Salesforce inside and out. It knows all",
+    "start": 1706,
+    "duration": 3.52
+  },
+  {
+    "text": "of its APIs, it knows has all the",
+    "start": 1707.84,
+    "duration": 3.52
+  },
+  {
+    "text": "credentials to communicate with your",
+    "start": 1709.52,
+    "duration": 3.36
+  },
+  {
+    "text": "Salesforce instance in all the",
+    "start": 1711.36,
+    "duration": 3.92
+  },
+  {
+    "text": "appropriate ways. And then, it needs to",
+    "start": 1712.88,
+    "duration": 4.56
+  },
+  {
+    "text": "communicate with a Google Workspace",
+    "start": 1715.28,
+    "duration": 4.36
+  },
+  {
+    "text": "agent. So, it can do all kinds of stuff",
+    "start": 1717.44,
+    "duration": 3.88
+  },
+  {
+    "text": "in there. It can run spreadsheets. I can",
+    "start": 1719.64,
+    "duration": 4.08
+  },
+  {
+    "text": "say, \"Hey, what are all my tops uh my my",
+    "start": 1721.32,
+    "duration": 4.6
+  },
+  {
+    "text": "top sales people this year?\" Boom, it",
+    "start": 1723.72,
+    "duration": 3.52
+  },
+  {
+    "text": "can look in Salesforce, it can",
+    "start": 1725.92,
+    "duration": 2.68
+  },
+  {
+    "text": "coordinate with the sub agent, create a",
+    "start": 1727.24,
+    "duration": 4.24
+  },
+  {
+    "text": "sheet for you, send that back.",
+    "start": 1728.6,
+    "duration": 4.24
+  },
+  {
+    "text": "Perfect.",
+    "start": 1731.48,
+    "duration": 3.2
+  },
+  {
+    "text": "But, maybe then you need to generate",
+    "start": 1732.84,
+    "duration": 3.64
+  },
+  {
+    "text": "some assets. So, the Salesforce agent",
+    "start": 1734.68,
+    "duration": 3.8
+  },
+  {
+    "text": "actually has another sub agent that it",
+    "start": 1736.48,
+    "duration": 4.16
+  },
+  {
+    "text": "can talk to at any time it wants. And",
+    "start": 1738.48,
+    "duration": 4.56
+  },
+  {
+    "text": "it's amazing at generating assets. Maybe",
+    "start": 1740.64,
+    "duration": 4.88
+  },
+  {
+    "text": "that sub agent doesn't just have like,",
+    "start": 1743.04,
+    "duration": 4.32
+  },
+  {
+    "text": "you know, Codex image generation, maybe",
+    "start": 1745.52,
+    "duration": 4
+  },
+  {
+    "text": "it has Nano Banana, maybe it has an SVG",
+    "start": 1747.36,
+    "duration": 4.76
+  },
+  {
+    "text": "generator, all kinds of stuff, so that",
+    "start": 1749.52,
+    "duration": 6.12
+  },
+  {
+    "text": "way it is an amazing asset generator and",
+    "start": 1752.12,
+    "duration": 5.28
+  },
+  {
+    "text": "performs some of its own reflection and",
+    "start": 1755.64,
+    "duration": 3.4
+  },
+  {
+    "text": "QA.",
+    "start": 1757.4,
+    "duration": 4.28
+  },
+  {
+    "text": "And then our primary agent might need a",
+    "start": 1759.04,
+    "duration": 4.76
+  },
+  {
+    "text": "whole legal team agent just so it can",
+    "start": 1761.68,
+    "duration": 3.6
+  },
+  {
+    "text": "check the work that's coming out of",
+    "start": 1763.8,
+    "duration": 2.88
+  },
+  {
+    "text": "these other ones. And maybe the legal",
+    "start": 1765.28,
+    "duration": 3.64
+  },
+  {
+    "text": "team agent really needs a GDPR",
+    "start": 1766.68,
+    "duration": 4.48
+  },
+  {
+    "text": "compliance agent just for those European",
+    "start": 1768.92,
+    "duration": 3.96
+  },
+  {
+    "text": "customers. You know, the main one",
+    "start": 1771.16,
+    "duration": 3.08
+  },
+  {
+    "text": "doesn't have all, you know, you don't we",
+    "start": 1772.88,
+    "duration": 3.2
+  },
+  {
+    "text": "don't want to have 45 megabytes of",
+    "start": 1774.24,
+    "duration": 4.6
+  },
+  {
+    "text": "context just on GDPR. So, we make that a",
+    "start": 1776.08,
+    "duration": 5.04
+  },
+  {
+    "text": "separate sub agent.",
+    "start": 1778.84,
+    "duration": 4.72
+  },
+  {
+    "text": "Uh so, you know, may and then maybe the",
+    "start": 1781.12,
+    "duration": 4.24
+  },
+  {
+    "text": "legal team also needs like an OSHA",
+    "start": 1783.56,
+    "duration": 3.48
+  },
+  {
+    "text": "compliance agent, which is also very",
+    "start": 1785.36,
+    "duration": 3.72
+  },
+  {
+    "text": "complicated. And so, it has a separate",
+    "start": 1787.04,
+    "duration": 3.96
+  },
+  {
+    "text": "one for that. You kind of get the idea.",
+    "start": 1789.08,
+    "duration": 4.76
+  },
+  {
+    "text": "You can end up with all kinds of highly",
+    "start": 1791,
+    "duration": 5.44
+  },
+  {
+    "text": "efficient, small little agents that are",
+    "start": 1793.84,
+    "duration": 5.16
+  },
+  {
+    "text": "all working together,",
+    "start": 1796.44,
+    "duration": 5.56
+  },
+  {
+    "text": "but maintaining small minimal context",
+    "start": 1799,
+    "duration": 5.56
+  },
+  {
+    "text": "windows all the way through.",
+    "start": 1802,
+    "duration": 4.8
+  },
+  {
+    "text": "That's the idea behind domain-specific",
+    "start": 1804.56,
+    "duration": 3.56
+  },
+  {
+    "text": "agents.",
+    "start": 1806.8,
+    "duration": 3.16
+  },
+  {
+    "text": "So, thank you very much. I appreciate",
+    "start": 1808.12,
+    "duration": 3.88
+  },
+  {
+    "text": "you listening to my talk. Again, uh",
+    "start": 1809.96,
+    "duration": 3.72
+  },
+  {
+    "text": "Standard Agents is where we're working,",
+    "start": 1812,
+    "duration": 3.32
+  },
+  {
+    "text": "standardagents.ai. You can actually sign",
+    "start": 1813.68,
+    "duration": 4.72
+  },
+  {
+    "text": "up on there uh for an early access.",
+    "start": 1815.32,
+    "duration": 5.16
+  },
+  {
+    "text": "Um we are slowly starting to roll this",
+    "start": 1818.4,
+    "duration": 4.4
+  },
+  {
+    "text": "out to a few people. Um if your business",
+    "start": 1820.48,
+    "duration": 5.08
+  },
+  {
+    "text": "is super ambitious and really wants to",
+    "start": 1822.8,
+    "duration": 5.12
+  },
+  {
+    "text": "uh try out small domain-specific agents,",
+    "start": 1825.56,
+    "duration": 4.2
+  },
+  {
+    "text": "then um you know, you can write me",
+    "start": 1827.92,
+    "duration": 3.84
+  },
+  {
+    "text": "info@standardagents. And of course, I'd",
+    "start": 1829.76,
+    "duration": 4.56
+  },
+  {
+    "text": "appreciate a follow. Thank you so much.",
+    "start": 1831.76,
+    "duration": 4.76
+  },
+  {
+    "text": "Bye.",
+    "start": 1834.32,
+    "duration": 2.2
+  }
+]

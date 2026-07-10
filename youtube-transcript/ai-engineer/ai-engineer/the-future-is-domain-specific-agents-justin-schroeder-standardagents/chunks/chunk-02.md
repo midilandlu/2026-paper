@@ -1,0 +1,23 @@
+Um you can do that with a hook. Or you could fire off some side effect using a hook. So, this is an important piece of an agent. And then finally, there's there's these agent rules. And agent rules are kind of complicated. [00:26:15 → 00:26:29]
+
+It's like how many times should one side have a turn? Like can it go on for 10,000 turns uh or 10,000 steps before it's turn is up? You know, there's there's all kinds of interesting little rules. You know, when it calls uh a tool, you know, is it required to validate the whole thing or not, you know? All kinds of of very specific tools uh or or rules that that belong to a specific agent. [00:26:29 → 00:26:55]
+
+And altogether, if we bundle all that up, we would call that an agent. But, it's kind of missing a couple things. One, every agent should really have a file system. If you've ever done this with ChatGPT or Claude or Codex, if you just ask it, you know, not inside of a project or anything like, "Hey, can you make me a PDF for my my son's birthday party? " Well, it'll do it. [00:26:55 → 00:27:22]
+
+And it'll store it in its own little file system. So, the big labs have already realized that in order to create an effective chat interface, not to mention a big agent, it needs some sort of file system. So, every agent should have its own little sandbox file system. And also, every agent should have a sandboxed code execution location. So, it can write files, it can run those files, and it can do that safely without exfiltrating anything, without interacting with an OS at a higher level. [00:27:22 → 00:27:51]
+
+That needs to be baked in as a primitive to every single domain-specific agent. Okay, so, let's say that that's our ideal agent. And now, let's talk about that little agent tool there. What is that? Well, those can be sub-agents, recursive sub-agents even. [00:27:51 → 00:28:09]
+
+You could have an agent that calls a sub-agent that calls sub-agents that call sub-agents. Um, and there could be one or there could be many of these at different levels. So, for example, you could have this coordinator agent that's at the very top, and then you could have a Salesforce agent. And that agent knows Salesforce inside and out. It knows all of its APIs, it knows has all the credentials to communicate with your Salesforce instance in all the appropriate ways. [00:28:09 → 00:28:34]
+
+And then, it needs to communicate with a Google Workspace agent. So, it can do all kinds of stuff in there. It can run spreadsheets. I can say, "Hey, what are all my tops uh my my top sales people this year? " Boom, it can look in Salesforce, it can coordinate with the sub agent, create a sheet for you, send that back. [00:28:34 → 00:28:52]
+
+Perfect. But, maybe then you need to generate some assets. So, the Salesforce agent actually has another sub agent that it can talk to at any time it wants. And it's amazing at generating assets. Maybe that sub agent doesn't just have like, you know, Codex image generation, maybe it has Nano Banana, maybe it has an SVG generator, all kinds of stuff, so that way it is an amazing asset generator and performs some of its own reflection and QA. [00:28:51 → 00:29:21]
+
+And then our primary agent might need a whole legal team agent just so it can check the work that's coming out of these other ones. And maybe the legal team agent really needs a GDPR compliance agent just for those European customers. You know, the main one doesn't have all, you know, you don't we don't want to have 45 megabytes of context just on GDPR. So, we make that a separate sub agent. Uh so, you know, may and then maybe the legal team also needs like an OSHA compliance agent, which is also very complicated. [00:29:19 → 00:29:48]
+
+And so, it has a separate one for that. You kind of get the idea. You can end up with all kinds of highly efficient, small little agents that are all working together, but maintaining small minimal context windows all the way through. That's the idea behind domain-specific agents. So, thank you very much. [00:29:48 → 00:30:10]
+
+I appreciate you listening to my talk. Again, uh Standard Agents is where we're working, standardagents. ai. You can actually sign up on there uh for an early access. Um we are slowly starting to roll this out to a few people. [00:30:10 → 00:30:23]
+
+Um if your business is super ambitious and really wants to uh try out small domain-specific agents, then um you know, you can write me info@standardagents. And of course, I'd appreciate a follow. Thank you so much. Bye. [00:30:23 → 00:30:36]

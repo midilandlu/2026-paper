@@ -1,0 +1,1642 @@
+[
+  {
+    "text": "Hi everyone.",
+    "start": "00:00:01",
+    "end": "00:00:03"
+  },
+  {
+    "text": "My name is Audit, pronounced Audit like a tax audit.",
+    "start": "00:00:03",
+    "end": "00:00:07"
+  },
+  {
+    "text": "Um and I'm here to talk to you about what if the harness mattered more than the model?",
+    "start": "00:00:07",
+    "end": "00:00:13"
+  },
+  {
+    "text": "A little bit about me first.",
+    "start": "00:00:11",
+    "end": "00:00:14"
+  },
+  {
+    "text": "I'm a staff engineer at Etsy.",
+    "start": "00:00:14",
+    "end": "00:00:16"
+  },
+  {
+    "text": "I'm also Etsy's IC initiative lead for agent of commerce.",
+    "start": "00:00:16",
+    "end": "00:00:20"
+  },
+  {
+    "text": "I wrote Grokking Algorithms, which is an illustrated book on algorithms.",
+    "start": "00:00:20",
+    "end": "00:00:24"
+  },
+  {
+    "text": "Uh and I also do illustrated posts on ducktyped.",
+    "start": "00:00:22",
+    "end": "00:00:28"
+  },
+  {
+    "text": "org.",
+    "start": "00:00:28",
+    "end": "00:00:29"
+  },
+  {
+    "text": "Um and I want to talk to you about what if the harness mattered more than the model?",
+    "start": "00:00:27",
+    "end": "00:00:37"
+  },
+  {
+    "text": "By which I mean what if we should be paying more attention to building expertise in harnesses?",
+    "start": "00:00:35",
+    "end": "00:00:45"
+  },
+  {
+    "text": "Um and my controversial take here is I hear a lot of people say, \"Oh, the models are so good that you can just keep the harness simple.",
+    "start": "00:00:43",
+    "end": "00:00:55"
+  },
+  {
+    "text": "Just give the model a few tools and it'll do the rest.",
+    "start": "00:00:55",
+    "end": "00:00:59"
+  },
+  {
+    "text": "\" And I've been hearing this so often that it has now uh started becoming the wisdom of the tech industry.",
+    "start": "00:00:59",
+    "end": "00:01:07"
+  },
+  {
+    "text": "Uh to which my answer is, \"Yes, but that's moving in the wrong direction because that is making us reliant on fancy proprietary models that can't be run locally.",
+    "start": "00:01:06",
+    "end": "00:01:22"
+  },
+  {
+    "text": "So, what if we instead talked about the other direction?",
+    "start": "00:01:20",
+    "end": "00:01:24"
+  },
+  {
+    "text": "What if we focused on open-source models that can be run locally?",
+    "start": "00:01:24",
+    "end": "00:01:29"
+  },
+  {
+    "text": "What if we focused on building a harness that is so good that we can get the performance of a cutting-edge model through a local open-source model?",
+    "start": "00:01:28",
+    "end": "00:01:39"
+  },
+  {
+    "text": "So, what if the harness mattered more than the model?",
+    "start": "00:01:37",
+    "end": "00:01:42"
+  },
+  {
+    "text": "What if our focus should be on the harness?",
+    "start": "00:01:42",
+    "end": "00:01:47"
+  },
+  {
+    "text": "Um how much does a harness matter?",
+    "start": "00:01:45",
+    "end": "00:01:49"
+  },
+  {
+    "text": "Right?",
+    "start": "00:01:47",
+    "end": "00:01:48"
+  },
+  {
+    "text": "This is something I have been researching a lot in my spare time.",
+    "start": "00:01:48",
+    "end": "00:01:53"
+  },
+  {
+    "text": "Um there's a really interesting paper that talks about Harness Bench, which is a benchmark for harnesses, which is something we haven't seen a lot of yet.",
+    "start": "00:01:52",
+    "end": "00:02:03"
+  },
+  {
+    "text": "Um it's got 106 tasks.",
+    "start": "00:02:02",
+    "end": "00:02:08"
+  },
+  {
+    "text": "Um it's testing these different models in different harnesses.",
+    "start": "00:02:08",
+    "end": "00:02:12"
+  },
+  {
+    "text": "Uh but the point is that it's running the same setup.",
+    "start": "00:02:10",
+    "end": "00:02:16"
+  },
+  {
+    "text": "It's doing the same evaluation, same model, but testing different harnesses.",
+    "start": "00:02:16",
+    "end": "00:02:23"
+  },
+  {
+    "text": "Um and the results are pretty interesting.",
+    "start": "00:02:22",
+    "end": "00:02:28"
+  },
+  {
+    "text": "So, scores range from 52.",
+    "start": "00:02:25",
+    "end": "00:02:30"
+  },
+  {
+    "text": "4% to 76.",
+    "start": "00:02:30",
+    "end": "00:02:32"
+  },
+  {
+    "text": "2%.",
+    "start": "00:02:32",
+    "end": "00:02:33"
+  },
+  {
+    "text": "So, more than a 20-point difference, and only the harness changed.",
+    "start": "00:02:31",
+    "end": "00:02:38"
+  },
+  {
+    "text": "Um and the really interesting thing is that for weaker models, the harness matters more.",
+    "start": "00:02:36",
+    "end": "00:02:45"
+  },
+  {
+    "text": "Um if the harness matters more than the model, that's great news.",
+    "start": "00:02:44",
+    "end": "00:02:51"
+  },
+  {
+    "text": "Uh because if the model matters more, then we're dependent on a handful of companies who are able to build and train these models.",
+    "start": "00:02:47",
+    "end": "00:03:00"
+  },
+  {
+    "text": "Uh but if the if a good harness can compensate, and can make a weaker model perform better, then you can build our own harnesses, and that's something that any of us can do, and we don't have to depend on paid models.",
+    "start": "00:02:57",
+    "end": "00:03:15"
+  },
+  {
+    "text": "Um so, I have been spending a lot of time and doing a lot of research specifically into what would it take to build a really good harness.",
+    "start": "00:03:13",
+    "end": "00:03:26"
+  },
+  {
+    "text": "Um and I realized early on that none of the existing tools or frameworks of were able to do what I wanted.",
+    "start": "00:03:25",
+    "end": "00:03:39"
+  },
+  {
+    "text": "And I realized that what was actually needed was a language-level solution.",
+    "start": "00:03:39",
+    "end": "00:03:45"
+  },
+  {
+    "text": "So, this is my other controversial take in this talk is I think building a good harness actually requires language-level support.",
+    "start": "00:03:45",
+    "end": "00:03:55"
+  },
+  {
+    "text": "Um and this is kind of where my research has gone in the last 6 months and I've spent a good part of that 6 months building a new language called Agency, which is a language for building agents.",
+    "start": "00:03:53",
+    "end": "00:04:12"
+  },
+  {
+    "text": "Um and just to talk about the terminology there real quick because the terms agent and harness aren't super crisp in the industry yet.",
+    "start": "00:04:10",
+    "end": "00:04:24"
+  },
+  {
+    "text": "They're not super well defined.",
+    "start": "00:04:24",
+    "end": "00:04:25"
+  },
+  {
+    "text": "Um but in this talk I'll kind of use them interchangeably.",
+    "start": "00:04:25",
+    "end": "00:04:28"
+  },
+  {
+    "text": "But when I talk about the agent, I really mean the harness and the model.",
+    "start": "00:04:28",
+    "end": "00:04:36"
+  },
+  {
+    "text": "So if you take Claude code for example, Claude code is an agent.",
+    "start": "00:04:33",
+    "end": "00:04:40"
+  },
+  {
+    "text": "It uses Opus, which is the model, and then everything else is the harness.",
+    "start": "00:04:40",
+    "end": "00:04:45"
+  },
+  {
+    "text": "Um but you know, when we talk about Agency, it's really for building agents, but the thing it's providing is the harness.",
+    "start": "00:04:44",
+    "end": "00:04:56"
+  },
+  {
+    "text": "Um Agency is really good.",
+    "start": "00:04:55",
+    "end": "00:04:58"
+  },
+  {
+    "text": "Uh you know, it's still new.",
+    "start": "00:04:58",
+    "end": "00:05:02"
+  },
+  {
+    "text": "Building a language is a lot of work and it's only 6 months in.",
+    "start": "00:05:00",
+    "end": "00:05:06"
+  },
+  {
+    "text": "Uh but I love this quote by Alan Kay.",
+    "start": "00:05:04",
+    "end": "00:05:10"
+  },
+  {
+    "text": "Simple things should be simple, complex things should be possible.",
+    "start": "00:05:10",
+    "end": "00:05:15"
+  },
+  {
+    "text": "And that's something I love about Agency is that I think you know, when people build agents, there are a lot of primitives, a lot of things that every agent will need to be able to do and those things should be simple to do.",
+    "start": "00:05:12",
+    "end": "00:05:35"
+  },
+  {
+    "text": "Um and there's a lot of complex things that we want to be able to do with agents and it should be possible to do those things in the framework of your choice and with Agency it is possible.",
+    "start": "00:05:32",
+    "end": "00:05:48"
+  },
+  {
+    "text": "Um So now we have a clear goal, which is try to build the best possible harness.",
+    "start": "00:05:46",
+    "end": "00:05:54"
+  },
+  {
+    "text": "And we have a great tool to do it, which is agency.",
+    "start": "00:05:53",
+    "end": "00:05:58"
+  },
+  {
+    "text": "Uh so, the rest of this talk I'm going to talk about building a coding agent in agency.",
+    "start": "00:05:56",
+    "end": "00:06:05"
+  },
+  {
+    "text": "And we'll see the same agent evolve over seven different examples.",
+    "start": "00:06:02",
+    "end": "00:06:10"
+  },
+  {
+    "text": "We'll see the same model, the same task, but the harness will improve each time, and we'll see the harness improve the agent's performance each time.",
+    "start": "00:06:07",
+    "end": "00:06:19"
+  },
+  {
+    "text": "Uh So, you know, like I said, I've been doing a ton of research on this.",
+    "start": "00:06:18",
+    "end": "00:06:26"
+  },
+  {
+    "text": "My goals with this talk are to give you like the basics of building a harness.",
+    "start": "00:06:26",
+    "end": "00:06:30"
+  },
+  {
+    "text": "When we talk about building a good harness, what does that mean?",
+    "start": "00:06:29",
+    "end": "00:06:34"
+  },
+  {
+    "text": "You know, you're starting from zero, what are the basics?",
+    "start": "00:06:34",
+    "end": "00:06:38"
+  },
+  {
+    "text": "Um I'll cover a good bit about agent safety because, you know, when we talk about building agents, what you really want them to be able to do is take action on our behalf.",
+    "start": "00:06:36",
+    "end": "00:06:53"
+  },
+  {
+    "text": "Um But the big problem with that is how do you get how do you give agent capabilities so they can take actions, but not so much capability that they do something unsafe.",
+    "start": "00:06:53",
+    "end": "00:07:07"
+  },
+  {
+    "text": "So, when we talk about agent quality and capability, agent safety goes hand in hand with that.",
+    "start": "00:07:07",
+    "end": "00:07:17"
+  },
+  {
+    "text": "Um At the end, I'll do an introduction to some of the more advanced concepts like sub-agents and self-optimization.",
+    "start": "00:07:14",
+    "end": "00:07:25"
+  },
+  {
+    "text": "I think that's where, you know, more interesting things come in, and we really start to talk about like what are all the possibilities, you know, because when you talk about building a good harness, there are so many things to explore.",
+    "start": "00:07:21",
+    "end": "00:07:38"
+  },
+  {
+    "text": "And so, I hope you stick with me till the end there because that's where we get into some really interesting stuff.",
+    "start": "00:07:35",
+    "end": "00:07:44"
+  },
+  {
+    "text": "Um so this is the code we're going to ask our coding agent to edit.",
+    "start": "00:07:45",
+    "end": "00:07:54"
+  },
+  {
+    "text": "This is a code to calculate the median of an ordered list of numbers.",
+    "start": "00:07:51",
+    "end": "00:08:00"
+  },
+  {
+    "text": "Um and if it's an odd length list, you just take the middle element.",
+    "start": "00:07:59",
+    "end": "00:08:06"
+  },
+  {
+    "text": "If it's an even length list, you need to take the middle two elements and take the mean of those two elements.",
+    "start": "00:08:06",
+    "end": "00:08:15"
+  },
+  {
+    "text": "But right now this function doesn't do that.",
+    "start": "00:08:13",
+    "end": "00:08:18"
+  },
+  {
+    "text": "So there is a bug in this function.",
+    "start": "00:08:16",
+    "end": "00:08:20"
+  },
+  {
+    "text": "There's a test that shows the failure um and we're going to ask our agent to fix this code.",
+    "start": "00:08:18",
+    "end": "00:08:29"
+  },
+  {
+    "text": "So let's go ahead and start.",
+    "start": "00:08:29",
+    "end": "00:08:32"
+  },
+  {
+    "text": "Let's just dive in.",
+    "start": "00:08:32",
+    "end": "00:08:36"
+  },
+  {
+    "text": "Um this is the first example.",
+    "start": "00:08:33",
+    "end": "00:08:36"
+  },
+  {
+    "text": "This is agency code now.",
+    "start": "00:08:36",
+    "end": "00:08:39"
+  },
+  {
+    "text": "And you'll notice that agency looks a lot like TypeScript.",
+    "start": "00:08:37",
+    "end": "00:08:44"
+  },
+  {
+    "text": "It's heavily inspired with by TypeScript with some Python syntax thrown in.",
+    "start": "00:08:44",
+    "end": "00:08:52"
+  },
+  {
+    "text": "Um so the entry point is this node main.",
+    "start": "00:08:48",
+    "end": "00:08:54"
+  },
+  {
+    "text": "I have a simple prompt.",
+    "start": "00:08:52",
+    "end": "00:08:55"
+  },
+  {
+    "text": "The Python function median in demo/median.",
+    "start": "00:08:55",
+    "end": "00:08:59"
+  },
+  {
+    "text": "py has a bug.",
+    "start": "00:08:59",
+    "end": "00:08:59"
+  },
+  {
+    "text": "Please fix the bug.",
+    "start": "00:08:59",
+    "end": "00:09:02"
+  },
+  {
+    "text": "And I just passed that prompt into the LLM function.",
+    "start": "00:09:00",
+    "end": "00:09:03"
+  },
+  {
+    "text": "I get the result and I print the result.",
+    "start": "00:09:03",
+    "end": "00:09:08"
+  },
+  {
+    "text": "Um And of course this isn't going to work because it can't read or write to this file.",
+    "start": "00:09:06",
+    "end": "00:09:13"
+  },
+  {
+    "text": "So let's run this example real quick.",
+    "start": "00:09:13",
+    "end": "00:09:18"
+  },
+  {
+    "text": "Okay.",
+    "start": "00:09:25",
+    "end": "00:09:26"
+  },
+  {
+    "text": "So of course as expected it says you know, in order to help me fix the bug I'll need to see the existing code.",
+    "start": "00:09:26",
+    "end": "00:09:33"
+  },
+  {
+    "text": "Um so this is just the model.",
+    "start": "00:09:32",
+    "end": "00:09:36"
+  },
+  {
+    "text": "Very little harness and of course it can't do anything.",
+    "start": "00:09:36",
+    "end": "00:09:38"
+  },
+  {
+    "text": "So, the most obvious improvement to any harness is give it some tools.",
+    "start": "00:09:38",
+    "end": "00:09:47"
+  },
+  {
+    "text": "So, real quick, let's talk about how tools work in the agency cuz it's very simple.",
+    "start": "00:09:45",
+    "end": "00:09:55"
+  },
+  {
+    "text": "Um I'll define a function.",
+    "start": "00:09:52",
+    "end": "00:09:56"
+  },
+  {
+    "text": "In this case, just for an example, I'm going to define a greet function that greets a user.",
+    "start": "00:09:56",
+    "end": "00:10:04"
+  },
+  {
+    "text": "And then I'll make an LLM call that says, \"Use your greet tool to greet audit.",
+    "start": "00:10:02",
+    "end": "00:10:07"
+  },
+  {
+    "text": "\" And then pass in that tool.",
+    "start": "00:10:07",
+    "end": "00:10:11"
+  },
+  {
+    "text": "Um and every function can automatically be used as a tool in agency.",
+    "start": "00:10:09",
+    "end": "00:10:16"
+  },
+  {
+    "text": "So, there is nothing else to do.",
+    "start": "00:10:16",
+    "end": "00:10:21"
+  },
+  {
+    "text": "Uh agency creates a JSON schema out of this function and sends it to the LLM call.",
+    "start": "00:10:18",
+    "end": "00:10:26"
+  },
+  {
+    "text": "The doc string here will get used as a tool description.",
+    "start": "00:10:24",
+    "end": "00:10:30"
+  },
+  {
+    "text": "So, let's go ahead and run the second example.",
+    "start": "00:10:27",
+    "end": "00:10:35"
+  },
+  {
+    "text": "So, NPX agency Oops, actually.",
+    "start": "00:10:32",
+    "end": "00:10:39"
+  },
+  {
+    "text": "NPX agency example since actually 01 cuz we're going to talk about tools first.",
+    "start": "00:10:39",
+    "end": "00:10:49"
+  },
+  {
+    "text": "So, howdy audit?",
+    "start": "00:10:47",
+    "end": "00:10:53"
+  },
+  {
+    "text": "And how can we know that it ran that tool and then just generate an example, right?",
+    "start": "00:10:49",
+    "end": "00:10:57"
+  },
+  {
+    "text": "So, I'll just also show real quick.",
+    "start": "00:10:57",
+    "end": "00:11:02"
+  },
+  {
+    "text": "Um agency writes out logs and has this great log viewer built in.",
+    "start": "00:11:00",
+    "end": "00:11:10"
+  },
+  {
+    "text": "So, I'll just expand this last run and you can see here it's making this tool call to the greet function with these parameters.",
+    "start": "00:11:07",
+    "end": "00:11:17"
+  },
+  {
+    "text": "The tool responds by returning howdy audit, and the assistant just passes that straight back to us.",
+    "start": "00:11:17",
+    "end": "00:11:26"
+  },
+  {
+    "text": "Um So, that's tools.",
+    "start": "00:11:23",
+    "end": "00:11:30"
+  },
+  {
+    "text": "Now, let's look at using the tools in Agency.",
+    "start": "00:11:30",
+    "end": "00:11:35"
+  },
+  {
+    "text": "So, again, this is you know, the next step of our agent, which is give it tools.",
+    "start": "00:11:35",
+    "end": "00:11:43"
+  },
+  {
+    "text": "Um here is an example where we're giving the agent read and write tools.",
+    "start": "00:11:41",
+    "end": "00:11:50"
+  },
+  {
+    "text": "Again, read and write are just functions that are built into Agency, and because every function can be used as a tool, I can just pass this straight to the LLM.",
+    "start": "00:11:48",
+    "end": "00:12:00"
+  },
+  {
+    "text": "Uh except giving the agent the ability to read and write arbitrary files on our file system is really unsafe.",
+    "start": "00:11:58",
+    "end": "00:12:09"
+  },
+  {
+    "text": "So, by default Agency won't allow you to do this.",
+    "start": "00:12:09",
+    "end": "00:12:13"
+  },
+  {
+    "text": "Agency has a human-in-the-loop feature that would require some sort of approval.",
+    "start": "00:12:13",
+    "end": "00:12:19"
+  },
+  {
+    "text": "We're not providing it anywhere, so this code will crash and print an error.",
+    "start": "00:12:17",
+    "end": "00:12:25"
+  },
+  {
+    "text": "So, let me show you what that looks like.",
+    "start": "00:12:25",
+    "end": "00:12:26"
+  },
+  {
+    "text": "Great.",
+    "start": "00:12:33",
+    "end": "00:12:33"
+  },
+  {
+    "text": "So, interrupt standard read was not handled.",
+    "start": "00:12:33",
+    "end": "00:12:38"
+  },
+  {
+    "text": "Your interrupt message, \"Are you sure you want to read this file?",
+    "start": "00:12:36",
+    "end": "00:12:41"
+  },
+  {
+    "text": "\" You can see the file name it's trying to read, and it's basically telling us that we didn't approve this interrupt.",
+    "start": "00:12:41",
+    "end": "00:12:50"
+  },
+  {
+    "text": "And it's giving us a pointer to the guide, right?",
+    "start": "00:12:50",
+    "end": "00:12:54"
+  },
+  {
+    "text": "Tells us how to use handlers.",
+    "start": "00:12:54",
+    "end": "00:12:56"
+  },
+  {
+    "text": "Um so we started with just a model, we tried tools, and the next step is to make the tools safe.",
+    "start": "00:12:54",
+    "end": "00:13:05"
+  },
+  {
+    "text": "So, we're going to do exactly what that message asked us to do and use a handler.",
+    "start": "00:13:05",
+    "end": "00:13:15"
+  },
+  {
+    "text": "So, now, here's the same code that you know, passing through that read and write uh those read and write functions as tools.",
+    "start": "00:13:12",
+    "end": "00:13:24"
+  },
+  {
+    "text": "Um but now it's wrapped in a handle block.",
+    "start": "00:13:21",
+    "end": "00:13:27"
+  },
+  {
+    "text": "Uh and it has a handler function down here.",
+    "start": "00:13:25",
+    "end": "00:13:32"
+  },
+  {
+    "text": "So, now when those tools call or raise an interrupt, this code is going to execute.",
+    "start": "00:13:28",
+    "end": "00:13:38"
+  },
+  {
+    "text": "So, it'll print the information about that interrupt.",
+    "start": "00:13:36",
+    "end": "00:13:43"
+  },
+  {
+    "text": "Um, it'll ask the user for input using the built-in input function.",
+    "start": "00:13:42",
+    "end": "00:13:48"
+  },
+  {
+    "text": "And if the user approves, the tool call is approved.",
+    "start": "00:13:48",
+    "end": "00:13:54"
+  },
+  {
+    "text": "And I know I'm saying interrupt, and I'm not really defining what that means.",
+    "start": "00:13:52",
+    "end": "00:13:59"
+  },
+  {
+    "text": "Um, and I can get to that a little bit later, but it's essentially a way to pause execution at some point.",
+    "start": "00:13:56",
+    "end": "00:14:08"
+  },
+  {
+    "text": "Um, and ask for human input.",
+    "start": "00:14:04",
+    "end": "00:14:12"
+  },
+  {
+    "text": "And so, interrupts are a great feature in agency, and all the functions in the agency standard library that mutate code or mutate something, or have some sort of destructive action, or read sensitive data data, all throw an interrupt first.",
+    "start": "00:14:08",
+    "end": "00:14:31"
+  },
+  {
+    "text": "So, here's the safe version of our agent where the tools will raise an interrupt by default, and now this code is going to ask the user, do you approve?",
+    "start": "00:14:29",
+    "end": "00:14:49"
+  },
+  {
+    "text": "Let's run this example.",
+    "start": "00:14:45",
+    "end": "00:14:49"
+  },
+  {
+    "text": "Okay, are you sure you want to read this file?",
+    "start": "00:14:53",
+    "end": "00:14:58"
+  },
+  {
+    "text": "I'll just say yes.",
+    "start": "00:14:56",
+    "end": "00:15:00"
+  },
+  {
+    "text": "You can see it's reading.",
+    "start": "00:14:58",
+    "end": "00:15:01"
+  },
+  {
+    "text": "Now it's trying to write to that file.",
+    "start": "00:15:01",
+    "end": "00:15:03"
+  },
+  {
+    "text": "So, you know, that's an example of >> [snorts] >> us making the agent safer by asking for user input.",
+    "start": "00:15:03",
+    "end": "00:15:15"
+  },
+  {
+    "text": "And this is better, and it is safe, but it's also very slow.",
+    "start": "00:15:12",
+    "end": "00:15:19"
+  },
+  {
+    "text": "So, the next thing we want to do is make the agent autonomous, while still keeping it safe, and that's the tricky part, right?",
+    "start": "00:15:17",
+    "end": "00:15:26"
+  },
+  {
+    "text": "How do you give it just enough capability so that you don't have to manually approve every single action without giving it without giving it so much capability that it's like able to do something destructive with your file system.",
+    "start": "00:15:26",
+    "end": "00:15:47"
+  },
+  {
+    "text": "Um so agency has a really cool feature to handle this.",
+    "start": "00:15:44",
+    "end": "00:15:48"
+  },
+  {
+    "text": "It that's called partial function application.",
+    "start": "00:15:48",
+    "end": "00:15:51"
+  },
+  {
+    "text": ">> [clears throat] >> Um it's a concept borrowed from functional programming.",
+    "start": "00:15:51",
+    "end": "00:15:56"
+  },
+  {
+    "text": "It's a really fancy term for a pretty simple concept.",
+    "start": "00:15:56",
+    "end": "00:16:04"
+  },
+  {
+    "text": "So, here's a signature of the read tool, right?",
+    "start": "00:16:01",
+    "end": "00:16:08"
+  },
+  {
+    "text": "Takes a file name and a directory.",
+    "start": "00:16:05",
+    "end": "00:16:10"
+  },
+  {
+    "text": "Um and when you read a file, it's going to look inside that directory for that file name.",
+    "start": "00:16:08",
+    "end": "00:16:17"
+  },
+  {
+    "text": "And with partial function application, what we do is we take that read function and call the partial on it.",
+    "start": "00:16:14",
+    "end": "00:16:24"
+  },
+  {
+    "text": "And give it a directory.",
+    "start": "00:16:22",
+    "end": "00:16:25"
+  },
+  {
+    "text": "And what we're doing here is we're locking the directory argument to demo.",
+    "start": "00:16:25",
+    "end": "00:16:30"
+  },
+  {
+    "text": "Um the LLM isn't going to be able to change that argument.",
+    "start": "00:16:29",
+    "end": "00:16:35"
+  },
+  {
+    "text": "It's not even going to know that that argument exists.",
+    "start": "00:16:34",
+    "end": "00:16:37"
+  },
+  {
+    "text": "When we pass in the read tool now, it's just going to see one parameter, which is file name.",
+    "start": "00:16:37",
+    "end": "00:16:44"
+  },
+  {
+    "text": "It's going to pass in a file name.",
+    "start": "00:16:42",
+    "end": "00:16:47"
+  },
+  {
+    "text": "And it will read that file from this directory.",
+    "start": "00:16:44",
+    "end": "00:16:50"
+  },
+  {
+    "text": "So, we've locked the directory parameter.",
+    "start": "00:16:49",
+    "end": "00:16:51"
+  },
+  {
+    "text": "Now, the agent can only read files from and write files to this directory.",
+    "start": "00:16:51",
+    "end": "00:17:00"
+  },
+  {
+    "text": "Uh partial function application is a really great way to constrain the capabilities of your agent.",
+    "start": "00:16:58",
+    "end": "00:17:07"
+  },
+  {
+    "text": "Now, no human input is needed, but it's still safe.",
+    "start": "00:17:07",
+    "end": "00:17:15"
+  },
+  {
+    "text": "So, let's see that in So, again, run NPX agency examples.",
+    "start": "00:17:12",
+    "end": "00:17:21"
+  },
+  {
+    "text": "PFA is partial function application.",
+    "start": "00:17:18",
+    "end": "00:17:23"
+  },
+  {
+    "text": "So, here it's thinking and you can see it read the file.",
+    "start": "00:17:21",
+    "end": "00:17:31"
+  },
+  {
+    "text": "Didn't need to ask us for permission.",
+    "start": "00:17:28",
+    "end": "00:17:32"
+  },
+  {
+    "text": "And now it said, you know, to fix this issue, it's kind of giving us a new code.",
+    "start": "00:17:31",
+    "end": "00:17:39"
+  },
+  {
+    "text": "But it's not updating the code.",
+    "start": "00:17:35",
+    "end": "00:17:39"
+  },
+  {
+    "text": "It asks, \"Would you like me to update the file with this corrected function?",
+    "start": "00:17:39",
+    "end": "00:17:44"
+  },
+  {
+    "text": "\" But it didn't do that itself.",
+    "start": "00:17:44",
+    "end": "00:17:45"
+  },
+  {
+    "text": "So, you know, this version of this agent is the best one we've seen so far because it does give us the correct solution without any human input needed, but it hasn't actually fixed the code.",
+    "start": "00:17:45",
+    "end": "00:18:03"
+  },
+  {
+    "text": "So, the next step is to get it to actually fix the code.",
+    "start": "00:18:01",
+    "end": "00:18:07"
+  },
+  {
+    "text": "Um and that's where the feedback loop comes in.",
+    "start": "00:18:04",
+    "end": "00:18:11"
+  },
+  {
+    "text": "Um so, there's a very popular agent pattern called react.",
+    "start": "00:18:08",
+    "end": "00:18:16"
+  },
+  {
+    "text": "And react stands for reason and act.",
+    "start": "00:18:16",
+    "end": "00:18:20"
+  },
+  {
+    "text": "And essentially, you're asking the agent to work in this loop.",
+    "start": "00:18:20",
+    "end": "00:18:24"
+  },
+  {
+    "text": "Where you reason, act, observe the consequences of your action, and then decide what to do next.",
+    "start": "00:18:24",
+    "end": "00:18:35"
+  },
+  {
+    "text": "So, in this case, reason, read the two files, act, run the tests, observe, if the tests fail, read the error, and then reason again.",
+    "start": "00:18:32",
+    "end": "00:18:50"
+  },
+  {
+    "text": "So, look at that test failure and think about what you want to do next.",
+    "start": "00:18:50",
+    "end": "00:18:55"
+  },
+  {
+    "text": "And just do this in a loop until the tests pass.",
+    "start": "00:18:55",
+    "end": "00:19:03"
+  },
+  {
+    "text": "So, this is a really key pattern to making the agent better.",
+    "start": "00:18:59",
+    "end": "00:19:08"
+  },
+  {
+    "text": "And so, now let's see the same agent.",
+    "start": "00:19:05",
+    "end": "00:19:11"
+  },
+  {
+    "text": "The only thing we're changing is the prompt and giving it the ability to run these tests and now the agent should work better.",
+    "start": "00:19:08",
+    "end": "00:19:23"
+  },
+  {
+    "text": "In this case, I'm going to also print all the tool calls just so you can see what's happening.",
+    "start": "00:19:24",
+    "end": "00:19:34"
+  },
+  {
+    "text": "Um Well, should maybe All right, hang on.",
+    "start": "00:19:31",
+    "end": "00:19:55"
+  },
+  {
+    "text": "It's always there.",
+    "start": "00:19:52",
+    "end": "00:19:55"
+  },
+  {
+    "text": "There we go.",
+    "start": "00:20:02",
+    "end": "00:20:05"
+  },
+  {
+    "text": "Okay.",
+    "start": "00:20:05",
+    "end": "00:20:07"
+  },
+  {
+    "text": "Now, let's see it in action.",
+    "start": "00:20:04",
+    "end": "00:20:08"
+  },
+  {
+    "text": "Um So, now you can see it's calling the tools.",
+    "start": "00:20:07",
+    "end": "00:20:14"
+  },
+  {
+    "text": "It's reading those two files, like we said.",
+    "start": "00:20:14",
+    "end": "00:20:16"
+  },
+  {
+    "text": "It's running the tests.",
+    "start": "00:20:14",
+    "end": "00:20:18"
+  },
+  {
+    "text": "The tests fail.",
+    "start": "00:20:16",
+    "end": "00:20:20"
+  },
+  {
+    "text": "It's writing to the file.",
+    "start": "00:20:18",
+    "end": "00:20:21"
+  },
+  {
+    "text": "It's running the test again and confirming success.",
+    "start": "00:20:21",
+    "end": "00:20:25"
+  },
+  {
+    "text": "So, this is a really important stage in the harness development because now we finally have an agent that successfully figures out the task, checks that the code is failing, modifies the code, and checks that the code now passes.",
+    "start": "00:20:25",
+    "end": "00:20:49"
+  },
+  {
+    "text": "Um So, let's talk about how we have improved the harness so far.",
+    "start": "00:20:48",
+    "end": "00:20:55"
+  },
+  {
+    "text": "So, we started with just the model, couldn't do anything.",
+    "start": "00:20:53",
+    "end": "00:20:59"
+  },
+  {
+    "text": "Then we added tools, but the agent wasn't safe.",
+    "start": "00:20:57",
+    "end": "00:21:03"
+  },
+  {
+    "text": "Then we added handlers, which added safety, but needed human input.",
+    "start": "00:21:03",
+    "end": "00:21:09"
+  },
+  {
+    "text": "Then we added partial function application, which was safety without requiring human input.",
+    "start": "00:21:08",
+    "end": "00:21:15"
+  },
+  {
+    "text": "And finally, the last one that we just looked at was a feedback loop, which added reasoning.",
+    "start": "00:21:15",
+    "end": "00:21:23"
+  },
+  {
+    "text": "So, the agent made the change and confirmed that the change worked.",
+    "start": "00:21:21",
+    "end": "00:21:27"
+  },
+  {
+    "text": "So, I have two more examples.",
+    "start": "00:21:29",
+    "end": "00:21:33"
+  },
+  {
+    "text": "This one we're going to go in a slightly different direction.",
+    "start": "00:21:31",
+    "end": "00:21:34"
+  },
+  {
+    "text": "And this is where we're getting into some of the more advanced concepts.",
+    "start": "00:21:34",
+    "end": "00:21:40"
+  },
+  {
+    "text": "So, this one is sub-agents.",
+    "start": "00:21:38",
+    "end": "00:21:42"
+  },
+  {
+    "text": "Um everything so far we've done has made the same task better.",
+    "start": "00:21:40",
+    "end": "00:21:45"
+  },
+  {
+    "text": "But with sub-agents, we're asking, \"How do you make the agent do more things?",
+    "start": "00:21:45",
+    "end": "00:21:50"
+  },
+  {
+    "text": "\" Um and let me show you what this code looks like real quick.",
+    "start": "00:21:50",
+    "end": "00:21:58"
+  },
+  {
+    "text": "Okay.",
+    "start": "00:22:02",
+    "end": "00:22:04"
+  },
+  {
+    "text": "So, this program, I'll start by just showing you the prompt we're giving it because it's slightly different.",
+    "start": "00:22:04",
+    "end": "00:22:13"
+  },
+  {
+    "text": "So, fix the failing test in test median.",
+    "start": "00:22:12",
+    "end": "00:22:16"
+  },
+  {
+    "text": "py.",
+    "start": "00:22:16",
+    "end": "00:22:18"
+  },
+  {
+    "text": "Then research Jensen's inequality for medians with the Wikipedia agent and explain it to me in the network form.",
+    "start": "00:22:15",
+    "end": "00:22:23"
+  },
+  {
+    "text": "So, here is a case where we're actually asking the agent to do a little more, right?",
+    "start": "00:22:22",
+    "end": "00:22:32"
+  },
+  {
+    "text": "And this one is interesting because this is our main agent, but for tools, we're not giving it the read and write functions.",
+    "start": "00:22:29",
+    "end": "00:22:40"
+  },
+  {
+    "text": "Instead, we're giving it two sub-agents as tools.",
+    "start": "00:22:40",
+    "end": "00:22:45"
+  },
+  {
+    "text": "And I really like this pattern in agency because I've seen a lot of frameworks make sub-agents their own concept and make them kind of hard to grasp.",
+    "start": "00:22:42",
+    "end": "00:22:57"
+  },
+  {
+    "text": "Um in agency, a sub-agent is just another function.",
+    "start": "00:22:57",
+    "end": "00:22:59"
+  },
+  {
+    "text": "And you just call it, use it like a tool just like you would anywhere else.",
+    "start": "00:22:59",
+    "end": "00:23:05"
+  },
+  {
+    "text": "And that consistency has a lot of benefits.",
+    "start": "00:23:03",
+    "end": "00:23:06"
+  },
+  {
+    "text": "Makes it really easy to write and reason about.",
+    "start": "00:23:06",
+    "end": "00:23:12"
+  },
+  {
+    "text": "So, here's the coding agent sub agent.",
+    "start": "00:23:09",
+    "end": "00:23:14"
+  },
+  {
+    "text": "Um same one as before.",
+    "start": "00:23:13",
+    "end": "00:23:16"
+  },
+  {
+    "text": "You know, there's a system message.",
+    "start": "00:23:16",
+    "end": "00:23:22"
+  },
+  {
+    "text": "This sub agent has its own LLM call, gets its own set of tools.",
+    "start": "00:23:19",
+    "end": "00:23:24"
+  },
+  {
+    "text": ">> [snorts] >> Similarly, you have the Wikipedia agent that has its own tool, which is the search tool.",
+    "start": "00:23:24",
+    "end": "00:23:33"
+  },
+  {
+    "text": "Uh which is a tool built into this agency standard library that lets you search Wikipedia.",
+    "start": "00:23:30",
+    "end": "00:23:38"
+  },
+  {
+    "text": "Uh so, agency has a big standard library that lets you do all kinds of things, including this Wikipedia search tool.",
+    "start": "00:23:36",
+    "end": "00:23:43"
+  },
+  {
+    "text": "I'm also using the callback feature to print the tool call information.",
+    "start": "00:23:42",
+    "end": "00:23:50"
+  },
+  {
+    "text": "And now, let's see this example in action.",
+    "start": "00:23:49",
+    "end": "00:23:54"
+  },
+  {
+    "text": "And this is an example where we're actually asking the agent to do a little bit more.",
+    "start": "00:23:54",
+    "end": "00:24:01"
+  },
+  {
+    "text": "And we're giving it two sub agents to accomplish its task.",
+    "start": "00:23:59",
+    "end": "00:24:05"
+  },
+  {
+    "text": "So, here you can see it's calling those two sub agents.",
+    "start": "00:24:04",
+    "end": "00:24:10"
+  },
+  {
+    "text": "Uh it's calling them in parallel, so the Wikipedia agent is doing the search, the coding agent is modifying the file, and that fixed the error, and now here's a limerick.",
+    "start": "00:24:07",
+    "end": "00:24:23"
+  },
+  {
+    "text": "So, sub agents are cool because they let you add new capabilities without bloating context.",
+    "start": "00:24:21",
+    "end": "00:24:35"
+  },
+  {
+    "text": "Um and this is a good pattern because it allows your agent when it has a lot of different tools at its disposal, it allows your agent to do the right thing more consistently.",
+    "start": "00:24:33",
+    "end": "00:24:51"
+  },
+  {
+    "text": "Often when agents get confused and fail, it's because they have too much context blow, but also because they have too many unrelated concepts in their context.",
+    "start": "00:24:48",
+    "end": "00:25:01"
+  },
+  {
+    "text": "And they have too many tools that are unrelated.",
+    "start": "00:25:01",
+    "end": "00:25:03"
+  },
+  {
+    "text": "And so they have a hard time picking the right tool to use.",
+    "start": "00:25:03",
+    "end": "00:25:08"
+  },
+  {
+    "text": "In this case, we make that problem a lot cleaner.",
+    "start": "00:25:08",
+    "end": "00:25:12"
+  },
+  {
+    "text": "For the top-level agent, we just say, \"Pick the sub-agent you want to call.",
+    "start": "00:25:10",
+    "end": "00:25:17"
+  },
+  {
+    "text": "\" And then the sub-agents have those tools that are kind of grouped in a way that makes sense.",
+    "start": "00:25:17",
+    "end": "00:25:22"
+  },
+  {
+    "text": "Um So now, let's look at the last example, which is self-optimization.",
+    "start": "00:25:21",
+    "end": "00:25:32"
+  },
+  {
+    "text": "Uh Agency has a Japa optimizer built in.",
+    "start": "00:25:28",
+    "end": "00:25:34"
+  },
+  {
+    "text": "It actually has a few optimizers built in, but the Japa one uh is a really interesting one.",
+    "start": "00:25:32",
+    "end": "00:25:39"
+  },
+  {
+    "text": "And the way the optimization feature works is you mark any variables that you want the optimizer to optimize.",
+    "start": "00:25:38",
+    "end": "00:25:51"
+  },
+  {
+    "text": "You can just use this optimize modifier.",
+    "start": "00:25:49",
+    "end": "00:25:54"
+  },
+  {
+    "text": "And then you run the optimizer and give it a goal.",
+    "start": "00:25:51",
+    "end": "00:25:57"
+  },
+  {
+    "text": "So, you know, in this case, you can see that the two initial prompts I have are very basic.",
+    "start": "00:25:55",
+    "end": "00:26:03"
+  },
+  {
+    "text": "I'm giving it hardly any information.",
+    "start": "00:26:03",
+    "end": "00:26:08"
+  },
+  {
+    "text": "And then the goal I give it is, \"Fix the bug in median.",
+    "start": "00:26:06",
+    "end": "00:26:12"
+  },
+  {
+    "text": "py using TDD.",
+    "start": "00:26:12",
+    "end": "00:26:13"
+  },
+  {
+    "text": "\" And the reason this is such a great step for our harness is we're no longer doing trial and error.",
+    "start": "00:26:13",
+    "end": "00:26:23"
+  },
+  {
+    "text": "We're no longer just trying stuff to see what works.",
+    "start": "00:26:21",
+    "end": "00:26:25"
+  },
+  {
+    "text": "Instead, now we have a way to systematically measure and improve performance.",
+    "start": "00:26:25",
+    "end": "00:26:33"
+  },
+  {
+    "text": "So, I'm just going to go ahead and run this code.",
+    "start": "00:26:31",
+    "end": "00:26:40"
+  },
+  {
+    "text": "Um I'm actually going to also reset.",
+    "start": "00:26:35",
+    "end": "00:26:40"
+  },
+  {
+    "text": "Here, I'm going to modify this code.",
+    "start": "00:26:42",
+    "end": "00:26:47"
+  },
+  {
+    "text": "Cool.",
+    "start": "00:26:53",
+    "end": "00:26:57"
+  },
+  {
+    "text": "So now I won't show the full run here because the optimizer takes a while, but you can see first it's like checking what prompts it has that it needs to optimize.",
+    "start": "00:26:54",
+    "end": "00:27:15"
+  },
+  {
+    "text": "It's going to run the agent to establish a baseline.",
+    "start": "00:27:15",
+    "end": "00:27:20"
+  },
+  {
+    "text": "So the baseline objective is 0.",
+    "start": "00:27:20",
+    "end": "00:27:22"
+  },
+  {
+    "text": "2 and it's going to try to improve upon that.",
+    "start": "00:27:22",
+    "end": "00:27:28"
+  },
+  {
+    "text": "So in this case I did run the optimizer earlier just so I could show you what a full run looked like.",
+    "start": "00:27:25",
+    "end": "00:27:33"
+  },
+  {
+    "text": "Um and so here is one where you can see it achieved the objective in the first iteration, so it was actually quite quick in this case.",
+    "start": "00:27:32",
+    "end": "00:27:46"
+  },
+  {
+    "text": "Um and you can see that it's rewritten this prompt.",
+    "start": "00:27:43",
+    "end": "00:27:52"
+  },
+  {
+    "text": "Um So the reason this self-optimization is so great is because we're not guessing and checking.",
+    "start": "00:27:52",
+    "end": "00:27:58"
+  },
+  {
+    "text": "We're systematically measuring and improving, which is a big leap forward.",
+    "start": "00:27:58",
+    "end": "00:28:05"
+  },
+  {
+    "text": "So this is the ladder we just went through for improving the harness.",
+    "start": "00:28:04",
+    "end": "00:28:09"
+  },
+  {
+    "text": "Um you know, first step was nothing, just a model can't even read the file.",
+    "start": "00:28:08",
+    "end": "00:28:14"
+  },
+  {
+    "text": "Then we added tools, but in a way that was unsafe and not allowed in agency.",
+    "start": "00:28:14",
+    "end": "00:28:23"
+  },
+  {
+    "text": "Next we added handlers, which added safety, but made things slower because they required human input.",
+    "start": "00:28:19",
+    "end": "00:28:31"
+  },
+  {
+    "text": "Then we added partial function application, which was safe and fast.",
+    "start": "00:28:29",
+    "end": "00:28:36"
+  },
+  {
+    "text": "Then we added reasoning, which gave us higher confidence in the output of the agent.",
+    "start": "00:28:34",
+    "end": "00:28:41"
+  },
+  {
+    "text": "Uh and then we switched tracks to subagents, added more capabilities, and finally we did self-optimization.",
+    "start": "00:28:39",
+    "end": "00:28:49"
+  },
+  {
+    "text": "So we got measured improvement and not guess and check.",
+    "start": "00:28:49",
+    "end": "00:28:52"
+  },
+  {
+    "text": "So, you know, I hope this gives you an idea of how you can build harnesses and then slowly improve those harnesses.",
+    "start": "00:28:51",
+    "end": "00:29:03"
+  },
+  {
+    "text": "And I hope, you know, you try doing that and come along on this, you know, experimentation with me to see if we can build a better harness.",
+    "start": "00:29:03",
+    "end": "00:29:14"
+  },
+  {
+    "text": "Um because what of the harness matters more than the model.",
+    "start": "00:29:13",
+    "end": "00:29:18"
+  },
+  {
+    "text": "You know, what if we can build a harness that's good enough that we can now start using local models and still get the performance we need for the tasks we want to do.",
+    "start": "00:29:18",
+    "end": "00:29:31"
+  },
+  {
+    "text": "So, what language level support does Agency provide?",
+    "start": "00:29:29",
+    "end": "00:29:33"
+  },
+  {
+    "text": "You know, we used Agency for all these examples.",
+    "start": "00:29:33",
+    "end": "00:29:36"
+  },
+  {
+    "text": "How did it help?",
+    "start": "00:29:36",
+    "end": "00:29:39"
+  },
+  {
+    "text": "Um simple syntax for defining tools.",
+    "start": "00:29:36",
+    "end": "00:29:41"
+  },
+  {
+    "text": "Again, you know, the simple thing should be simple.",
+    "start": "00:29:39",
+    "end": "00:29:42"
+  },
+  {
+    "text": "Every agent is going to need tools.",
+    "start": "00:29:42",
+    "end": "00:29:44"
+  },
+  {
+    "text": "Let's make it easy to use them.",
+    "start": "00:29:44",
+    "end": "00:29:49"
+  },
+  {
+    "text": "Tools for safety, very important for agents.",
+    "start": "00:29:47",
+    "end": "00:29:50"
+  },
+  {
+    "text": "So, interrupts handlers, PFA.",
+    "start": "00:29:50",
+    "end": "00:29:55"
+  },
+  {
+    "text": "True pause and resume execution.",
+    "start": "00:29:52",
+    "end": "00:29:57"
+  },
+  {
+    "text": "I didn't cover this a ton cuz I didn't want to make this talk too long.",
+    "start": "00:29:57",
+    "end": "00:30:01"
+  },
+  {
+    "text": "Um but one of the really killer features of Agency is that when you raise that interrupt, it's actually going to pause execution and return control back to the user.",
+    "start": "00:30:01",
+    "end": "00:30:14"
+  },
+  {
+    "text": "But in a way where you can resume execution later.",
+    "start": "00:30:14",
+    "end": "00:30:17"
+  },
+  {
+    "text": "Uh and as far as I know, very few languages allow you to do something like this.",
+    "start": "00:30:17",
+    "end": "00:30:23"
+  },
+  {
+    "text": "And so, typically most frameworks you'll use, if they have a human in the loop feature, it has a lot of restrictions.",
+    "start": "00:30:23",
+    "end": "00:30:29"
+  },
+  {
+    "text": "There's a lot of things you need to do to work around that.",
+    "start": "00:30:29",
+    "end": "00:30:31"
+  },
+  {
+    "text": "Agency is completely different.",
+    "start": "00:30:31",
+    "end": "00:30:36"
+  },
+  {
+    "text": "If you wanted, you could, you know, raise interrupts inside of a for loop, inside of a tool call, inside of a sub-agent.",
+    "start": "00:30:36",
+    "end": "00:30:45"
+  },
+  {
+    "text": "Um, and it would correctly pause execution, go back to the user, and then resume execution at that exact point inside that subagent, inside that tool call, at that exact point in that for loop.",
+    "start": "00:30:42",
+    "end": "00:30:58"
+  },
+  {
+    "text": "Um, which is really cool.",
+    "start": "00:30:57",
+    "end": "00:31:00"
+  },
+  {
+    "text": "You can serialize the execution, you can come back to it a week later, and you don't need to change anything about all the code we have been looking at.",
+    "start": "00:31:00",
+    "end": "00:31:07"
+  },
+  {
+    "text": "It just works, which is really cool.",
+    "start": "00:31:07",
+    "end": "00:31:12"
+  },
+  {
+    "text": "Uh, it also has these built-in optimizers, which are great, you know, which kind of get you to a more analytical, mathematical way of doing the improvements.",
+    "start": "00:31:10",
+    "end": "00:31:21"
+  },
+  {
+    "text": "So, if you want to try it out, please do.",
+    "start": "00:31:21",
+    "end": "00:31:24"
+  },
+  {
+    "text": "You can PM install All you need is the package and a API key, and you're set.",
+    "start": "00:31:24",
+    "end": "00:31:31"
+  },
+  {
+    "text": "Um, main takeaways, you know, an agent is a model plus a harness for this talk, at least.",
+    "start": "00:31:29",
+    "end": "00:31:36"
+  },
+  {
+    "text": "Uh, better harness equals better performance, especially for weaker models.",
+    "start": "00:31:36",
+    "end": "00:31:43"
+  },
+  {
+    "text": "And then, how do you build a better harness?",
+    "start": "00:31:41",
+    "end": "00:31:44"
+  },
+  {
+    "text": "Give it tools, make it safe, make it autonomous, make it reason, give it subagents, and have it self-optimize.",
+    "start": "00:31:44",
+    "end": "00:31:53"
+  },
+  {
+    "text": "Thank you so much.",
+    "start": "00:31:52",
+    "end": "00:31:54"
+  },
+  {
+    "text": "Again, my name is Aditya Parikh, check out agency agencylang.",
+    "start": "00:31:54",
+    "end": "00:31:58"
+  },
+  {
+    "text": "com, uh, and then please follow me on Blue Sky, if you wish.",
+    "start": "00:31:58",
+    "end": "00:32:01"
+  },
+  {
+    "text": "Thank you.",
+    "start": "00:32:01",
+    "end": "00:32:02"
+  },
+  {
+    "text": "Take care.",
+    "start": "00:32:02",
+    "end": "00:32:04"
+  }
+]

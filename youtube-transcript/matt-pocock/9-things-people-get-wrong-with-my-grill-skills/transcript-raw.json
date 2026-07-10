@@ -1,0 +1,2052 @@
+[
+  {
+    "text": "My Grill Me skills and Grill with Docs",
+    "start": 0,
+    "duration": 3.96
+  },
+  {
+    "text": "have been out there for a while now, and",
+    "start": 1.72,
+    "duration": 4.12
+  },
+  {
+    "text": "people all around the world are using",
+    "start": 3.96,
+    "duration": 4.4
+  },
+  {
+    "text": "them as a replacement for plan mode in",
+    "start": 5.84,
+    "duration": 4.16
+  },
+  {
+    "text": "agents. However, I sometimes hear from",
+    "start": 8.36,
+    "duration": 3.76
+  },
+  {
+    "text": "people using them, like Codex just ask",
+    "start": 10,
+    "duration": 5.2
+  },
+  {
+    "text": "me 200 questions, this issue here. And I",
+    "start": 12.12,
+    "duration": 5.72
+  },
+  {
+    "text": "kind of wince a little bit. The idea of",
+    "start": 15.2,
+    "duration": 4.64
+  },
+  {
+    "text": "these skills is that they relentlessly",
+    "start": 17.84,
+    "duration": 4.2
+  },
+  {
+    "text": "question you, is that they continually",
+    "start": 19.84,
+    "duration": 4.08
+  },
+  {
+    "text": "ask you questions until you reach a",
+    "start": 22.04,
+    "duration": 3.36
+  },
+  {
+    "text": "shared understanding about something.",
+    "start": 23.92,
+    "duration": 3.4
+  },
+  {
+    "text": "And what that does is it relies on the",
+    "start": 25.4,
+    "duration": 3.92
+  },
+  {
+    "text": "skill of the person answering the",
+    "start": 27.32,
+    "duration": 3.8
+  },
+  {
+    "text": "questions. The person answering the",
+    "start": 29.32,
+    "duration": 3.68
+  },
+  {
+    "text": "questions, in other words, you using the",
+    "start": 31.12,
+    "duration": 4
+  },
+  {
+    "text": "Grill Me skill, need to be good at",
+    "start": 33,
+    "duration": 3.76
+  },
+  {
+    "text": "planning. You need to understand things",
+    "start": 35.12,
+    "duration": 4.2
+  },
+  {
+    "text": "like scope. You need to have a sense of",
+    "start": 36.76,
+    "duration": 4.6
+  },
+  {
+    "text": "what questions require what level of",
+    "start": 39.32,
+    "duration": 4.68
+  },
+  {
+    "text": "fidelity to answer. And this is why I",
+    "start": 41.36,
+    "duration": 4.2
+  },
+  {
+    "text": "want to make this video. I want to make",
+    "start": 44,
+    "duration": 4.04
+  },
+  {
+    "text": "you really good at using these skills,",
+    "start": 45.56,
+    "duration": 4.04
+  },
+  {
+    "text": "because these skills themselves are",
+    "start": 48.04,
+    "duration": 3.08
+  },
+  {
+    "text": "really not super long, and they're",
+    "start": 49.6,
+    "duration": 4.28
+  },
+  {
+    "text": "designed to aid you as an engineer, not",
+    "start": 51.12,
+    "duration": 4.76
+  },
+  {
+    "text": "replace you as an engineer. So, I've got",
+    "start": 53.88,
+    "duration": 4.08
+  },
+  {
+    "text": "a list of nine things that people get",
+    "start": 55.88,
+    "duration": 4.24
+  },
+  {
+    "text": "wrong with these skills. But before we",
+    "start": 57.96,
+    "duration": 3.92
+  },
+  {
+    "text": "do that, we're going to look at a few",
+    "start": 60.12,
+    "duration": 4.28
+  },
+  {
+    "text": "lenses for how to understand those",
+    "start": 61.88,
+    "duration": 4.04
+  },
+  {
+    "text": "failure modes, because if we don't",
+    "start": 64.4,
+    "duration": 2.8
+  },
+  {
+    "text": "understand them in the correct way,",
+    "start": 65.92,
+    "duration": 2.6
+  },
+  {
+    "text": "we're not going to be able to change",
+    "start": 67.2,
+    "duration": 2.52
+  },
+  {
+    "text": "them. Now, if you like the way I teach",
+    "start": 68.52,
+    "duration": 2.64
+  },
+  {
+    "text": "and you like the thing I'm teaching",
+    "start": 69.72,
+    "duration": 3.16
+  },
+  {
+    "text": "about, then you are going to really",
+    "start": 71.16,
+    "duration": 3.76
+  },
+  {
+    "text": "enjoy my AI coding for real engineers",
+    "start": 72.88,
+    "duration": 4.32
+  },
+  {
+    "text": "cohort, which the next one starts on",
+    "start": 74.92,
+    "duration": 6.12
+  },
+  {
+    "text": "June 1st. It has only 1 day and 11 hours",
+    "start": 77.2,
+    "duration": 6.88
+  },
+  {
+    "text": "left for 30% off. So, definitely",
+    "start": 81.04,
+    "duration": 4.16
+  },
+  {
+    "text": "you want to get on that. Hopefully, I",
+    "start": 84.08,
+    "duration": 2.64
+  },
+  {
+    "text": "can post this video today, so you have",
+    "start": 85.2,
+    "duration": 3.16
+  },
+  {
+    "text": "time to actually purchase it. So, let's",
+    "start": 86.72,
+    "duration": 3.04
+  },
+  {
+    "text": "get started. The first thing to consider",
+    "start": 88.36,
+    "duration": 2.88
+  },
+  {
+    "text": "here is that when we go into a grilling",
+    "start": 89.76,
+    "duration": 3.2
+  },
+  {
+    "text": "session, what we're really trying to do",
+    "start": 91.24,
+    "duration": 4.44
+  },
+  {
+    "text": "is answer questions. There are probably",
+    "start": 92.96,
+    "duration": 4.64
+  },
+  {
+    "text": "some things that we don't know about the",
+    "start": 95.68,
+    "duration": 3.56
+  },
+  {
+    "text": "thing that we're going to build. Now,",
+    "start": 97.6,
+    "duration": 3.48
+  },
+  {
+    "text": "these questions come at different levels",
+    "start": 99.24,
+    "duration": 4.84
+  },
+  {
+    "text": "of fidelity that are required to answer.",
+    "start": 101.08,
+    "duration": 4.48
+  },
+  {
+    "text": "I'm taking this language from Ryan",
+    "start": 104.08,
+    "duration": 4
+  },
+  {
+    "text": "Singer's amazing book Shape Up. High",
+    "start": 105.56,
+    "duration": 4.6
+  },
+  {
+    "text": "fidelity questions are questions where",
+    "start": 108.08,
+    "duration": 4.6
+  },
+  {
+    "text": "you need a really zoomed in, really",
+    "start": 110.16,
+    "duration": 5.24
+  },
+  {
+    "text": "detailed, high fidelity image in order",
+    "start": 112.68,
+    "duration": 5.4
+  },
+  {
+    "text": "to understand it. And that might mean,",
+    "start": 115.4,
+    "duration": 4.88
+  },
+  {
+    "text": "for instance, how will this piece of UI",
+    "start": 118.08,
+    "duration": 4.76
+  },
+  {
+    "text": "feel when we're using it? Should we",
+    "start": 120.28,
+    "duration": 4.28
+  },
+  {
+    "text": "split all of these form fields into",
+    "start": 122.84,
+    "duration": 3.24
+  },
+  {
+    "text": "multiple different pages, or should we",
+    "start": 124.56,
+    "duration": 3.72
+  },
+  {
+    "text": "have one enormous form where we fill",
+    "start": 126.08,
+    "duration": 4.24
+  },
+  {
+    "text": "them in? The only real way you're going",
+    "start": 128.28,
+    "duration": 5.2
+  },
+  {
+    "text": "to get kind of understanding of that is",
+    "start": 130.32,
+    "duration": 5.44
+  },
+  {
+    "text": "a high-fidelity prototype, or actually",
+    "start": 133.48,
+    "duration": 4.08
+  },
+  {
+    "text": "building the whole thing. Whereas,",
+    "start": 135.76,
+    "duration": 3.44
+  },
+  {
+    "text": "low-fidelity questions are questions",
+    "start": 137.56,
+    "duration": 4.24
+  },
+  {
+    "text": "that you don't need a high-fidelity kind",
+    "start": 139.2,
+    "duration": 4.92
+  },
+  {
+    "text": "of prototype or image to answer. Things",
+    "start": 141.8,
+    "duration": 4.56
+  },
+  {
+    "text": "like, what should what URL should this",
+    "start": 144.12,
+    "duration": 4.32
+  },
+  {
+    "text": "route live on, or things like that. You",
+    "start": 146.36,
+    "duration": 4
+  },
+  {
+    "text": "really just need to answer the question.",
+    "start": 148.44,
+    "duration": 3.519
+  },
+  {
+    "text": "And the first failure mode I see with",
+    "start": 150.36,
+    "duration": 4.2
+  },
+  {
+    "text": "the Grill Me skills is trying to answer",
+    "start": 151.959,
+    "duration": 4.721
+  },
+  {
+    "text": "high-fidelity questions during a",
+    "start": 154.56,
+    "duration": 3.6
+  },
+  {
+    "text": "grilling session. In other words, there",
+    "start": 156.68,
+    "duration": 3.52
+  },
+  {
+    "text": "are questions that are grillable, in",
+    "start": 158.16,
+    "duration": 3.799
+  },
+  {
+    "text": "other words, answerable in a grilling",
+    "start": 160.2,
+    "duration": 3.6
+  },
+  {
+    "text": "session, and questions that are",
+    "start": 161.959,
+    "duration": 3.841
+  },
+  {
+    "text": "ungrillable, questions that are not",
+    "start": 163.8,
+    "duration": 3.56
+  },
+  {
+    "text": "answerable in a grilling session. So,",
+    "start": 165.8,
+    "duration": 3.32
+  },
+  {
+    "text": "then, what do you do when you encounter",
+    "start": 167.36,
+    "duration": 3.599
+  },
+  {
+    "text": "an ungrillable question? When the",
+    "start": 169.12,
+    "duration": 4.76
+  },
+  {
+    "text": "question is about feel, when you need to",
+    "start": 170.959,
+    "duration": 4.961
+  },
+  {
+    "text": "actually see something higher fidelity",
+    "start": 173.88,
+    "duration": 3.92
+  },
+  {
+    "text": "in order to answer it. Well, the thing I",
+    "start": 175.92,
+    "duration": 3.88
+  },
+  {
+    "text": "tend to do is I tend to have a",
+    "start": 177.8,
+    "duration": 4.76
+  },
+  {
+    "text": "prototyping handoff. So, let's imagine",
+    "start": 179.8,
+    "duration": 4.52
+  },
+  {
+    "text": "that in my first session here in the",
+    "start": 182.56,
+    "duration": 4
+  },
+  {
+    "text": "blue, I've done some grilling, and I",
+    "start": 184.32,
+    "duration": 4.16
+  },
+  {
+    "text": "reach an ungrillable question, a",
+    "start": 186.56,
+    "duration": 3.72
+  },
+  {
+    "text": "question that I need to see in a higher",
+    "start": 188.48,
+    "duration": 4.88
+  },
+  {
+    "text": "fidelity. What I do is I use the handoff",
+    "start": 190.28,
+    "duration": 5.56
+  },
+  {
+    "text": "skill, which I will link to below, to",
+    "start": 193.36,
+    "duration": 4.84
+  },
+  {
+    "text": "handoff to a prototyping session, where",
+    "start": 195.84,
+    "duration": 4.6
+  },
+  {
+    "text": "I will then spend another session kind",
+    "start": 198.2,
+    "duration": 4.039
+  },
+  {
+    "text": "of just prototyping on that question,",
+    "start": 200.44,
+    "duration": 4.04
+  },
+  {
+    "text": "seeing it in a higher fidelity. And",
+    "start": 202.239,
+    "duration": 4.521
+  },
+  {
+    "text": "then, whatever I learn from that, I will",
+    "start": 204.48,
+    "duration": 4.12
+  },
+  {
+    "text": "handoff back to the original grilling",
+    "start": 206.76,
+    "duration": 4.12
+  },
+  {
+    "text": "session, so that I can continue with the",
+    "start": 208.6,
+    "duration": 4.08
+  },
+  {
+    "text": "grillable questions. So, that's what a",
+    "start": 210.88,
+    "duration": 3.4
+  },
+  {
+    "text": "lot of my sessions look like, where you",
+    "start": 212.68,
+    "duration": 3.96
+  },
+  {
+    "text": "have a grill with docs, you then handoff",
+    "start": 214.28,
+    "duration": 4.6
+  },
+  {
+    "text": "to a prototype session, and you handoff",
+    "start": 216.64,
+    "duration": 4.36
+  },
+  {
+    "text": "back to the original grill with doc",
+    "start": 218.88,
+    "duration": 4.2
+  },
+  {
+    "text": "session. That's how I answer those more",
+    "start": 221,
+    "duration": 3.68
+  },
+  {
+    "text": "higher fidelity questions. The next",
+    "start": 223.08,
+    "duration": 3.28
+  },
+  {
+    "text": "concept we need to understand here is",
+    "start": 224.68,
+    "duration": 4.839
+  },
+  {
+    "text": "scope, how large a thing you are",
+    "start": 226.36,
+    "duration": 4.96
+  },
+  {
+    "text": "grilling. If the thing you're grilling",
+    "start": 229.519,
+    "duration": 3.881
+  },
+  {
+    "text": "is too big, then you're going to end up",
+    "start": 231.32,
+    "duration": 4.08
+  },
+  {
+    "text": "hitting two problems. First of all, if",
+    "start": 233.4,
+    "duration": 3.32
+  },
+  {
+    "text": "the scope is too large, then you're",
+    "start": 235.4,
+    "duration": 3.04
+  },
+  {
+    "text": "probably going to have high fidelity",
+    "start": 236.72,
+    "duration": 3.72
+  },
+  {
+    "text": "questions that are kind of hidden in",
+    "start": 238.44,
+    "duration": 5
+  },
+  {
+    "text": "there that is quite hard to answer",
+    "start": 240.44,
+    "duration": 5.32
+  },
+  {
+    "text": "without actually seeing the full thing.",
+    "start": 243.44,
+    "duration": 4.68
+  },
+  {
+    "text": "It's always easier to build off of",
+    "start": 245.76,
+    "duration": 4.16
+  },
+  {
+    "text": "something that you know works and that",
+    "start": 248.12,
+    "duration": 3.839
+  },
+  {
+    "text": "you've done a good job on rather than",
+    "start": 249.92,
+    "duration": 4.8
+  },
+  {
+    "text": "trying to endlessly plan scope out into",
+    "start": 251.959,
+    "duration": 4.721
+  },
+  {
+    "text": "the future. This is what a lot of people",
+    "start": 254.72,
+    "duration": 4.2
+  },
+  {
+    "text": "hit when they try to schedule, you know,",
+    "start": 256.68,
+    "duration": 5.6
+  },
+  {
+    "text": "days and days of tasks for their work on",
+    "start": 258.92,
+    "duration": 5.84
+  },
+  {
+    "text": "is that they end up with crap because",
+    "start": 262.28,
+    "duration": 4.76
+  },
+  {
+    "text": "they aren't building on a foundation",
+    "start": 264.76,
+    "duration": 4.28
+  },
+  {
+    "text": "that they are aligned with. In other",
+    "start": 267.04,
+    "duration": 4.52
+  },
+  {
+    "text": "words, they've tried to sort of push out",
+    "start": 269.04,
+    "duration": 4.84
+  },
+  {
+    "text": "too far into the future without building",
+    "start": 271.56,
+    "duration": 3.76
+  },
+  {
+    "text": "on something solid. There's also a",
+    "start": 273.88,
+    "duration": 3.84
+  },
+  {
+    "text": "practical constraints here. If you end",
+    "start": 275.32,
+    "duration": 4.8
+  },
+  {
+    "text": "up grilling on too larger thing, you're",
+    "start": 277.72,
+    "duration": 4.32
+  },
+  {
+    "text": "going to end up hitting the dumb zone of",
+    "start": 280.12,
+    "duration": 3.4
+  },
+  {
+    "text": "the model. Sure, you might start your",
+    "start": 282.04,
+    "duration": 2.76
+  },
+  {
+    "text": "grilling session with a, you know,",
+    "start": 283.52,
+    "duration": 3.08
+  },
+  {
+    "text": "nearly empty context window, but as you",
+    "start": 284.8,
+    "duration": 3.8
+  },
+  {
+    "text": "keep going and going and going, okay,",
+    "start": 286.6,
+    "duration": 3.72
+  },
+  {
+    "text": "you've hardly got to the thing that",
+    "start": 288.6,
+    "duration": 3.4
+  },
+  {
+    "text": "you're, you know, not even answer half",
+    "start": 290.32,
+    "duration": 3.24
+  },
+  {
+    "text": "the questions yet and we're still",
+    "start": 292,
+    "duration": 3.96
+  },
+  {
+    "text": "hitting the dumb zone up here, at which",
+    "start": 293.56,
+    "duration": 4.24
+  },
+  {
+    "text": "point you might need to hand off or",
+    "start": 295.96,
+    "duration": 3.64
+  },
+  {
+    "text": "compact or do something a little bit",
+    "start": 297.8,
+    "duration": 3.2
+  },
+  {
+    "text": "awkward, all of which could have been",
+    "start": 299.6,
+    "duration": 3.4
+  },
+  {
+    "text": "avoided if you just picked a smaller",
+    "start": 301,
+    "duration": 4.16
+  },
+  {
+    "text": "scope to start with and then you'll be",
+    "start": 303,
+    "duration": 4.24
+  },
+  {
+    "text": "able to comfortably grill within the",
+    "start": 305.16,
+    "duration": 3.36
+  },
+  {
+    "text": "smart zone. For those who don't know,",
+    "start": 307.24,
+    "duration": 4.48
+  },
+  {
+    "text": "about 120k is where I estimate most",
+    "start": 308.52,
+    "duration": 4.56
+  },
+  {
+    "text": "state-of-the-art models, that's where",
+    "start": 311.72,
+    "duration": 3.28
+  },
+  {
+    "text": "their dumb zone begins. And so you've",
+    "start": 313.08,
+    "duration": 3.56
+  },
+  {
+    "text": "got to keep a really keen eye on your",
+    "start": 315,
+    "duration": 3.2
+  },
+  {
+    "text": "context window in order to make sure you",
+    "start": 316.64,
+    "duration": 3.44
+  },
+  {
+    "text": "don't push past that because the model",
+    "start": 318.2,
+    "duration": 3.96
+  },
+  {
+    "text": "will start getting too strained kind of",
+    "start": 320.08,
+    "duration": 4
+  },
+  {
+    "text": "in its attention relationships and start",
+    "start": 322.16,
+    "duration": 3.56
+  },
+  {
+    "text": "making stupider decisions. What this",
+    "start": 324.08,
+    "duration": 3.56
+  },
+  {
+    "text": "basically means is if you start out with",
+    "start": 325.72,
+    "duration": 3.88
+  },
+  {
+    "text": "a large scope like this, which is",
+    "start": 327.64,
+    "duration": 3.8
+  },
+  {
+    "text": "probably too big for the agent to",
+    "start": 329.6,
+    "duration": 3.56
+  },
+  {
+    "text": "handle, instead it might be better to",
+    "start": 331.44,
+    "duration": 3.8
+  },
+  {
+    "text": "ahead of time ask the agent to break",
+    "start": 333.16,
+    "duration": 4.32
+  },
+  {
+    "text": "down this scope into smaller scopes,",
+    "start": 335.24,
+    "duration": 4.28
+  },
+  {
+    "text": "which you can then grill on individually",
+    "start": 337.48,
+    "duration": 3.72
+  },
+  {
+    "text": "and answer all of those questions. The",
+    "start": 339.52,
+    "duration": 4.04
+  },
+  {
+    "text": "next lens I want you to look at here is",
+    "start": 341.2,
+    "duration": 4.24
+  },
+  {
+    "text": "whether you're being passive or whether",
+    "start": 343.56,
+    "duration": 5.08
+  },
+  {
+    "text": "you're being active with the agent and",
+    "start": 345.44,
+    "duration": 5.2
+  },
+  {
+    "text": "specifically in your grilling sessions.",
+    "start": 348.64,
+    "duration": 3.44
+  },
+  {
+    "text": "Many of these huge grilling sessions",
+    "start": 350.64,
+    "duration": 3.48
+  },
+  {
+    "text": "that I see people having, I worry that",
+    "start": 352.08,
+    "duration": 4.12
+  },
+  {
+    "text": "they're being too passive with the",
+    "start": 354.12,
+    "duration": 3.96
+  },
+  {
+    "text": "agent. When I'm doing grilling, I'm",
+    "start": 356.2,
+    "duration": 4
+  },
+  {
+    "text": "always quite active, always trying to",
+    "start": 358.08,
+    "duration": 3.96
+  },
+  {
+    "text": "lead the conversation. And remember,",
+    "start": 360.2,
+    "duration": 4.36
+  },
+  {
+    "text": "it's a conversation, not an interview.",
+    "start": 362.04,
+    "duration": 4.64
+  },
+  {
+    "text": "The agent is asking you these questions,",
+    "start": 364.56,
+    "duration": 4.16
+  },
+  {
+    "text": "but you know, it is your job to figure",
+    "start": 366.68,
+    "duration": 3.52
+  },
+  {
+    "text": "out where you're going and figure out",
+    "start": 368.72,
+    "duration": 3.88
+  },
+  {
+    "text": "the scope and keep things on track. And",
+    "start": 370.2,
+    "duration": 3.92
+  },
+  {
+    "text": "so, if you're being too passive, then",
+    "start": 372.6,
+    "duration": 3.56
+  },
+  {
+    "text": "it's very easy for the agent to just do",
+    "start": 374.12,
+    "duration": 3.92
+  },
+  {
+    "text": "stupid things with the interview, like",
+    "start": 376.16,
+    "duration": 5.36
+  },
+  {
+    "text": "ask you 540 questions, explode the",
+    "start": 378.04,
+    "duration": 5.44
+  },
+  {
+    "text": "scope, ask questions about stuff that",
+    "start": 381.52,
+    "duration": 4.2
+  },
+  {
+    "text": "are way too low fidelity. You have to",
+    "start": 383.48,
+    "duration": 4.12
+  },
+  {
+    "text": "take an active hand. But it's also",
+    "start": 385.72,
+    "duration": 4.64
+  },
+  {
+    "text": "possible to be too active, to just keep",
+    "start": 387.6,
+    "duration": 5.12
+  },
+  {
+    "text": "grilling on something that is just too",
+    "start": 390.36,
+    "duration": 4.44
+  },
+  {
+    "text": "low fidelity when you need to actually",
+    "start": 392.72,
+    "duration": 3.96
+  },
+  {
+    "text": "build something to see the thing in",
+    "start": 394.8,
+    "duration": 3.4
+  },
+  {
+    "text": "action. And so, there are two failure",
+    "start": 396.68,
+    "duration": 3.36
+  },
+  {
+    "text": "modes hidden here, being too passive, in",
+    "start": 398.2,
+    "duration": 3.8
+  },
+  {
+    "text": "other words, sitting back too much, and",
+    "start": 400.04,
+    "duration": 4.72
+  },
+  {
+    "text": "actually being a bit too pigheaded, and",
+    "start": 402,
+    "duration": 5.2
+  },
+  {
+    "text": "not getting to code fast enough. So,",
+    "start": 404.76,
+    "duration": 3.64
+  },
+  {
+    "text": "it's important to consider when you're",
+    "start": 407.2,
+    "duration": 3.08
+  },
+  {
+    "text": "using these skills where you fall on",
+    "start": 408.4,
+    "duration": 3.72
+  },
+  {
+    "text": "this axis, whether you're too passive or",
+    "start": 410.28,
+    "duration": 3.48
+  },
+  {
+    "text": "whether you're actually just a bit too",
+    "start": 412.12,
+    "duration": 3.24
+  },
+  {
+    "text": "pushy and active. Another failure mode",
+    "start": 413.76,
+    "duration": 3.8
+  },
+  {
+    "text": "here is that people don't value the",
+    "start": 415.36,
+    "duration": 3.96
+  },
+  {
+    "text": "thing that they're creating during the",
+    "start": 417.56,
+    "duration": 3.44
+  },
+  {
+    "text": "grilling session, which is that when",
+    "start": 419.32,
+    "duration": 3.04
+  },
+  {
+    "text": "you're answering these questions, when",
+    "start": 421,
+    "duration": 3.88
+  },
+  {
+    "text": "you're growing this context window with",
+    "start": 422.36,
+    "duration": 4.76
+  },
+  {
+    "text": "really valuable, you know, answers that",
+    "start": 424.88,
+    "duration": 4.24
+  },
+  {
+    "text": "you've given, design decisions that",
+    "start": 427.12,
+    "duration": 4.4
+  },
+  {
+    "text": "you've taken, this little blue bit of",
+    "start": 429.12,
+    "duration": 4.2
+  },
+  {
+    "text": "context window here is incredibly",
+    "start": 431.52,
+    "duration": 3.96
+  },
+  {
+    "text": "valuable. Now, usually your goal here is",
+    "start": 433.32,
+    "duration": 3.48
+  },
+  {
+    "text": "that if you've got enough budget left,",
+    "start": 435.48,
+    "duration": 3.04
+  },
+  {
+    "text": "then you can immediately start going",
+    "start": 436.8,
+    "duration": 3.119
+  },
+  {
+    "text": "ahead and implementing. In other words,",
+    "start": 438.52,
+    "duration": 2.92
+  },
+  {
+    "text": "you plan for a little while and then you",
+    "start": 439.919,
+    "duration": 3.121
+  },
+  {
+    "text": "go, \"Okay, let's just implement this. We",
+    "start": 441.44,
+    "duration": 2.96
+  },
+  {
+    "text": "don't need to hand off. We've got enough",
+    "start": 443.04,
+    "duration": 3.36
+  },
+  {
+    "text": "space left in the context window to just",
+    "start": 444.4,
+    "duration": 3.4
+  },
+  {
+    "text": "implement it based on the design",
+    "start": 446.4,
+    "duration": 2.92
+  },
+  {
+    "text": "decisions I've already taken.\" However,",
+    "start": 447.8,
+    "duration": 2.84
+  },
+  {
+    "text": "if you're already at the point where you",
+    "start": 449.32,
+    "duration": 3.72
+  },
+  {
+    "text": "need to, you know, quit out of this, you",
+    "start": 450.64,
+    "duration": 4.4
+  },
+  {
+    "text": "need to basically hand off, then it's",
+    "start": 453.04,
+    "duration": 4.84
+  },
+  {
+    "text": "probably time to make a PRD. My two PRD",
+    "start": 455.04,
+    "duration": 5
+  },
+  {
+    "text": "skill is a nice way of creating a",
+    "start": 457.88,
+    "duration": 3.84
+  },
+  {
+    "text": "handoff document that's kind of more",
+    "start": 460.04,
+    "duration": 3.84
+  },
+  {
+    "text": "tailored to engineering, which can be",
+    "start": 461.72,
+    "duration": 4
+  },
+  {
+    "text": "useful on a multi-session or just a",
+    "start": 463.88,
+    "duration": 3.76
+  },
+  {
+    "text": "single session. But one crazy thing I've",
+    "start": 465.72,
+    "duration": 3.16
+  },
+  {
+    "text": "seen people getting wrong is they",
+    "start": 467.64,
+    "duration": 4.44
+  },
+  {
+    "text": "actually clear the context first, and",
+    "start": 468.88,
+    "duration": 5.24
+  },
+  {
+    "text": "they create a new context window, and",
+    "start": 472.08,
+    "duration": 4.16
+  },
+  {
+    "text": "just run two PRD in there. This is",
+    "start": 474.12,
+    "duration": 3.76
+  },
+  {
+    "text": "totally crazy to me. What are you doing?",
+    "start": 476.24,
+    "duration": 3.76
+  },
+  {
+    "text": "You've created this incredible session",
+    "start": 477.88,
+    "duration": 4.08
+  },
+  {
+    "text": "here where you've got this, you know,",
+    "start": 480,
+    "duration": 4.52
+  },
+  {
+    "text": "100,000 tokens of really good design",
+    "start": 481.96,
+    "duration": 3.92
+  },
+  {
+    "text": "decisions, and you're just going to",
+    "start": 484.52,
+    "duration": 3.12
+  },
+  {
+    "text": "chuck it away? Every grilling session,",
+    "start": 485.88,
+    "duration": 3.48
+  },
+  {
+    "text": "every decision that you make in that",
+    "start": 487.64,
+    "duration": 4.12
+  },
+  {
+    "text": "session is so valuable. You know, that",
+    "start": 489.36,
+    "duration": 4.68
+  },
+  {
+    "text": "should be recorded somewhere, and either",
+    "start": 491.76,
+    "duration": 4.48
+  },
+  {
+    "text": "turned into code or put into like a",
+    "start": 494.04,
+    "duration": 3.64
+  },
+  {
+    "text": "handoff document that you can kind of",
+    "start": 496.24,
+    "duration": 3.84
+  },
+  {
+    "text": "refer to later. It is really important",
+    "start": 497.68,
+    "duration": 4.12
+  },
+  {
+    "text": "that you don't just chuck away the stuff",
+    "start": 500.08,
+    "duration": 3.12
+  },
+  {
+    "text": "inside the grilling session. I think",
+    "start": 501.8,
+    "duration": 2.96
+  },
+  {
+    "text": "probably this is a just a skill issue.",
+    "start": 503.2,
+    "duration": 3.44
+  },
+  {
+    "text": "People need to be a lot more aware of",
+    "start": 504.76,
+    "duration": 4.08
+  },
+  {
+    "text": "context management, about kind of the",
+    "start": 506.64,
+    "duration": 3.8
+  },
+  {
+    "text": "decisions they're making in terms of",
+    "start": 508.84,
+    "duration": 4
+  },
+  {
+    "text": "clearing, compacting, handing off. So",
+    "start": 510.44,
+    "duration": 3.84
+  },
+  {
+    "text": "yeah, that was a crazy one for me. Make",
+    "start": 512.84,
+    "duration": 3.879
+  },
+  {
+    "text": "sure you preserve the decisions that",
+    "start": 514.28,
+    "duration": 4.199
+  },
+  {
+    "text": "you've made in your grilling session,",
+    "start": 516.719,
+    "duration": 3.921
+  },
+  {
+    "text": "and create some kind of handoff artifact",
+    "start": 518.479,
+    "duration": 3.321
+  },
+  {
+    "text": "about them. Another thing people get",
+    "start": 520.64,
+    "duration": 3.84
+  },
+  {
+    "text": "wrong is that they use too dumb a model",
+    "start": 521.8,
+    "duration": 4.72
+  },
+  {
+    "text": "for grilling. Understanding which",
+    "start": 524.48,
+    "duration": 3.359
+  },
+  {
+    "text": "questions are low fidelity,",
+    "start": 526.52,
+    "duration": 2.52
+  },
+  {
+    "text": "understanding which questions are high",
+    "start": 527.839,
+    "duration": 3.281
+  },
+  {
+    "text": "fidelity, figuring out what the right",
+    "start": 529.04,
+    "duration": 4.48
+  },
+  {
+    "text": "questions to ask to prompt you to make a",
+    "start": 531.12,
+    "duration": 4.4
+  },
+  {
+    "text": "stronger design, that is something you",
+    "start": 533.52,
+    "duration": 4.2
+  },
+  {
+    "text": "need a good model for. If we think about",
+    "start": 535.52,
+    "duration": 4.36
+  },
+  {
+    "text": "where models draw their knowledge from,",
+    "start": 537.72,
+    "duration": 4.52
+  },
+  {
+    "text": "there are kind of two sources. The first",
+    "start": 539.88,
+    "duration": 4
+  },
+  {
+    "text": "one is their contextual knowledge, the",
+    "start": 542.24,
+    "duration": 3.36
+  },
+  {
+    "text": "stuff that you have passed them",
+    "start": 543.88,
+    "duration": 3.8
+  },
+  {
+    "text": "specifically in their context. This",
+    "start": 545.6,
+    "duration": 3.8
+  },
+  {
+    "text": "might be from reading files or from user",
+    "start": 547.68,
+    "duration": 3.68
+  },
+  {
+    "text": "prompts or from research they do by, you",
+    "start": 549.4,
+    "duration": 3.68
+  },
+  {
+    "text": "know, calling tools and bringing the",
+    "start": 551.36,
+    "duration": 3.16
+  },
+  {
+    "text": "tool results back. But there's also",
+    "start": 553.08,
+    "duration": 2.84
+  },
+  {
+    "text": "their parametric knowledge, the things",
+    "start": 554.52,
+    "duration": 3.36
+  },
+  {
+    "text": "that they were trained to see and",
+    "start": 555.92,
+    "duration": 4.12
+  },
+  {
+    "text": "understand. This is much less reliable,",
+    "start": 557.88,
+    "duration": 4.8
+  },
+  {
+    "text": "but it is kind of what we're relying on",
+    "start": 560.04,
+    "duration": 5.28
+  },
+  {
+    "text": "here. We're relying on the model's",
+    "start": 562.68,
+    "duration": 5.72
+  },
+  {
+    "text": "innate understanding of systems and",
+    "start": 565.32,
+    "duration": 5.64
+  },
+  {
+    "text": "applications to prompt us with good",
+    "start": 568.4,
+    "duration": 4.12
+  },
+  {
+    "text": "ideas of things we might not have",
+    "start": 570.96,
+    "duration": 3.56
+  },
+  {
+    "text": "considered yet. Because if we had",
+    "start": 572.52,
+    "duration": 3.4
+  },
+  {
+    "text": "considered them, then we'd have passed",
+    "start": 574.52,
+    "duration": 3.4
+  },
+  {
+    "text": "them in as contextual knowledge, but",
+    "start": 575.92,
+    "duration": 4.32
+  },
+  {
+    "text": "we're relying on its kind of innate",
+    "start": 577.92,
+    "duration": 4.64
+  },
+  {
+    "text": "understanding in order to provide us",
+    "start": 580.24,
+    "duration": 4.36
+  },
+  {
+    "text": "with off-the-wall suggestions, strange",
+    "start": 582.56,
+    "duration": 3.56
+  },
+  {
+    "text": "ideas. Now, when you're relying on",
+    "start": 584.6,
+    "duration": 3.88
+  },
+  {
+    "text": "parametric knowledge like this, you need",
+    "start": 586.12,
+    "duration": 4.84
+  },
+  {
+    "text": "a model with lots of parameters, and",
+    "start": 588.48,
+    "duration": 4.16
+  },
+  {
+    "text": "that is usually what the big frontier",
+    "start": 590.96,
+    "duration": 3.84
+  },
+  {
+    "text": "models have. And not only that, but",
+    "start": 592.64,
+    "duration": 3.68
+  },
+  {
+    "text": "they're also, you know, top-of-the-line",
+    "start": 594.8,
+    "duration": 4.12
+  },
+  {
+    "text": "trained. They are also just more capable",
+    "start": 596.32,
+    "duration": 4.56
+  },
+  {
+    "text": "than smaller models. And so, using too",
+    "start": 598.92,
+    "duration": 4.08
+  },
+  {
+    "text": "dumb a model is a really common failing",
+    "start": 600.88,
+    "duration": 4.2
+  },
+  {
+    "text": "mode I see during grilling because we're",
+    "start": 603,
+    "duration": 3.8
+  },
+  {
+    "text": "so reliant on parametric knowledge. What",
+    "start": 605.08,
+    "duration": 2.88
+  },
+  {
+    "text": "most people don't know is you can",
+    "start": 606.8,
+    "duration": 3.6
+  },
+  {
+    "text": "actually use a kind of dumber model for",
+    "start": 607.96,
+    "duration": 4.12
+  },
+  {
+    "text": "implementation because most of the",
+    "start": 610.4,
+    "duration": 3.24
+  },
+  {
+    "text": "information you're passing there is",
+    "start": 612.08,
+    "duration": 3.12
+  },
+  {
+    "text": "contextual. You know, by the time you",
+    "start": 613.64,
+    "duration": 2.96
+  },
+  {
+    "text": "get to implementation, you've usually",
+    "start": 615.2,
+    "duration": 3.16
+  },
+  {
+    "text": "got a detailed implementation plan.",
+    "start": 616.6,
+    "duration": 3.52
+  },
+  {
+    "text": "You're passing in the relevant files in",
+    "start": 618.36,
+    "duration": 3.44
+  },
+  {
+    "text": "the codebase, so it's got some things to",
+    "start": 620.12,
+    "duration": 3.4
+  },
+  {
+    "text": "copy. You know, not a lot of that is",
+    "start": 621.8,
+    "duration": 3.2
+  },
+  {
+    "text": "parametric. It's mostly contextual.",
+    "start": 623.52,
+    "duration": 3.32
+  },
+  {
+    "text": "Finally, and this is a dead simple one,",
+    "start": 625,
+    "duration": 3.52
+  },
+  {
+    "text": "but so many people don't do this. You",
+    "start": 626.84,
+    "duration": 3
+  },
+  {
+    "text": "should grill multiple sessions in",
+    "start": 628.52,
+    "duration": 2.84
+  },
+  {
+    "text": "parallel. Usually, the way it works is",
+    "start": 629.84,
+    "duration": 3.64
+  },
+  {
+    "text": "I'm grilling one session, and then I,",
+    "start": 631.36,
+    "duration": 3.72
+  },
+  {
+    "text": "you know, type something to it, or",
+    "start": 633.48,
+    "duration": 3.32
+  },
+  {
+    "text": "usually I'm dictating to it. I answer",
+    "start": 635.08,
+    "duration": 3.32
+  },
+  {
+    "text": "its question, and then I go over into",
+    "start": 636.8,
+    "duration": 3.44
+  },
+  {
+    "text": "the other other session that's usually",
+    "start": 638.4,
+    "duration": 3.68
+  },
+  {
+    "text": "finished by that point. I answer its",
+    "start": 640.24,
+    "duration": 3.48
+  },
+  {
+    "text": "question, and then I go back to the",
+    "start": 642.08,
+    "duration": 3.04
+  },
+  {
+    "text": "original session. And I just bounce",
+    "start": 643.72,
+    "duration": 3.68
+  },
+  {
+    "text": "around like this. People say this is,",
+    "start": 645.12,
+    "duration": 3.8
+  },
+  {
+    "text": "you know, context switching, but really",
+    "start": 647.4,
+    "duration": 3.6
+  },
+  {
+    "text": "it's just managing two separate Slack",
+    "start": 648.92,
+    "duration": 4
+  },
+  {
+    "text": "threads at the same time. You know, it's",
+    "start": 651,
+    "duration": 3.96
+  },
+  {
+    "text": "really not that hard. And sure, you're",
+    "start": 652.92,
+    "duration": 4.36
+  },
+  {
+    "text": "making a lot of high-level decisions",
+    "start": 654.96,
+    "duration": 4.2
+  },
+  {
+    "text": "here, but this is really the only way I",
+    "start": 657.28,
+    "duration": 3.72
+  },
+  {
+    "text": "found of increasing throughput and",
+    "start": 659.16,
+    "duration": 3.92
+  },
+  {
+    "text": "getting more planning done in less time.",
+    "start": 661,
+    "duration": 4.2
+  },
+  {
+    "text": "Usually, I max out at two sessions here",
+    "start": 663.08,
+    "duration": 3.24
+  },
+  {
+    "text": "unless one of them is doing a",
+    "start": 665.2,
+    "duration": 2.76
+  },
+  {
+    "text": "particularly long-running task like some",
+    "start": 666.32,
+    "duration": 4.12
+  },
+  {
+    "text": "research, in which case I will try three",
+    "start": 667.96,
+    "duration": 4.16
+  },
+  {
+    "text": "uh if I'm feeling spicy and feeling high",
+    "start": 670.44,
+    "duration": 3.44
+  },
+  {
+    "text": "energy, but mostly two is my limit. But",
+    "start": 672.12,
+    "duration": 3.44
+  },
+  {
+    "text": "either way, I'm doubling my throughput,",
+    "start": 673.88,
+    "duration": 3.68
+  },
+  {
+    "text": "and it feels pretty nice to do, and you",
+    "start": 675.56,
+    "duration": 3.36
+  },
+  {
+    "text": "should definitely be doing this if you",
+    "start": 677.56,
+    "duration": 2.8
+  },
+  {
+    "text": "have the mental capacity for it. I also",
+    "start": 678.92,
+    "duration": 2.76
+  },
+  {
+    "text": "think that grilling is something that",
+    "start": 680.36,
+    "duration": 3.24
+  },
+  {
+    "text": "you do get better at, and as you get",
+    "start": 681.68,
+    "duration": 3.44
+  },
+  {
+    "text": "better at it, you can add more",
+    "start": 683.6,
+    "duration": 3.08
+  },
+  {
+    "text": "throughput and more parallelism. So,",
+    "start": 685.12,
+    "duration": 2.64
+  },
+  {
+    "text": "let's summarize all the things we",
+    "start": 686.68,
+    "duration": 2.6
+  },
+  {
+    "text": "learned. We learned that grilling is",
+    "start": 687.76,
+    "duration": 3.8
+  },
+  {
+    "text": "primarily about questions. We have",
+    "start": 689.28,
+    "duration": 4.56
+  },
+  {
+    "text": "low-fidelity questions and high-fidelity",
+    "start": 691.56,
+    "duration": 4.6
+  },
+  {
+    "text": "questions. Low-fidelity can be answered",
+    "start": 693.84,
+    "duration": 3.88
+  },
+  {
+    "text": "just by a question and answer. In other",
+    "start": 696.16,
+    "duration": 3.52
+  },
+  {
+    "text": "words, it's a grillable question. But,",
+    "start": 697.72,
+    "duration": 4
+  },
+  {
+    "text": "high-fidelity ones are ungrillable. You",
+    "start": 699.68,
+    "duration": 4.32
+  },
+  {
+    "text": "may need to go into a prototype mode by",
+    "start": 701.72,
+    "duration": 4.24
+  },
+  {
+    "text": "using handoff to handoff to a",
+    "start": 704,
+    "duration": 4.32
+  },
+  {
+    "text": "prototyping session to just figure out",
+    "start": 705.96,
+    "duration": 4.64
+  },
+  {
+    "text": "that question or maybe that question and",
+    "start": 708.32,
+    "duration": 3.88
+  },
+  {
+    "text": "a bunch of others and then go back to",
+    "start": 710.6,
+    "duration": 3.28
+  },
+  {
+    "text": "the original grilling to continue.",
+    "start": 712.2,
+    "duration": 3.16
+  },
+  {
+    "text": "Figuring out the correct scope of the",
+    "start": 713.88,
+    "duration": 3.88
+  },
+  {
+    "text": "work is essential. If you try to grill",
+    "start": 715.36,
+    "duration": 5.12
+  },
+  {
+    "text": "too much, then you will end up just kind",
+    "start": 717.76,
+    "duration": 4.24
+  },
+  {
+    "text": "of blowing through your contacts window,",
+    "start": 720.48,
+    "duration": 3.76
+  },
+  {
+    "text": "burning your own stamina, and you won't",
+    "start": 722,
+    "duration": 3.4
+  },
+  {
+    "text": "have anything to show for it. If you're",
+    "start": 724.24,
+    "duration": 3.04
+  },
+  {
+    "text": "too passive in your grilling sessions,",
+    "start": 725.4,
+    "duration": 3.12
+  },
+  {
+    "text": "then you're just going to sit there",
+    "start": 727.28,
+    "duration": 3.08
+  },
+  {
+    "text": "while the computer just says, you know,",
+    "start": 728.52,
+    "duration": 3.36
+  },
+  {
+    "text": "bombards you with more and more",
+    "start": 730.36,
+    "duration": 3.48
+  },
+  {
+    "text": "questions. But, if you're too active,",
+    "start": 731.88,
+    "duration": 3.8
+  },
+  {
+    "text": "then you might end up just grilling",
+    "start": 733.84,
+    "duration": 4.44
+  },
+  {
+    "text": "endlessly on low-fidelity questions when",
+    "start": 735.68,
+    "duration": 4.2
+  },
+  {
+    "text": "what you really need is just to get to",
+    "start": 738.28,
+    "duration": 3.24
+  },
+  {
+    "text": "code. You need a smart model so that you",
+    "start": 739.88,
+    "duration": 3.76
+  },
+  {
+    "text": "can rely on its parametric information",
+    "start": 741.52,
+    "duration": 5.36
+  },
+  {
+    "text": "to give you better suggestions and give",
+    "start": 743.64,
+    "duration": 4.92
+  },
+  {
+    "text": "you better questions to answer. And",
+    "start": 746.88,
+    "duration": 3.24
+  },
+  {
+    "text": "finally, I would recommend grilling two",
+    "start": 748.56,
+    "duration": 3.8
+  },
+  {
+    "text": "sessions at once. Once you've mastered",
+    "start": 750.12,
+    "duration": 3.6
+  },
+  {
+    "text": "these basics and you understand what",
+    "start": 752.36,
+    "duration": 2.96
+  },
+  {
+    "text": "each session is doing, you should be",
+    "start": 753.72,
+    "duration": 3.04
+  },
+  {
+    "text": "able to flip between them really nicely.",
+    "start": 755.32,
+    "duration": 3.12
+  },
+  {
+    "text": "And probably, you could even go up to",
+    "start": 756.76,
+    "duration": 3.32
+  },
+  {
+    "text": "four if you have a more plastic brain",
+    "start": 758.44,
+    "duration": 2.96
+  },
+  {
+    "text": "than I do. Overall, thanks for watching,",
+    "start": 760.08,
+    "duration": 3.16
+  },
+  {
+    "text": "pals. And if you enjoyed this, then",
+    "start": 761.4,
+    "duration": 4.48
+  },
+  {
+    "text": "you'll really enjoy my AI coding cohort",
+    "start": 763.24,
+    "duration": 5.48
+  },
+  {
+    "text": "for real engineers, which is whoa, 1 day",
+    "start": 765.88,
+    "duration": 5.08
+  },
+  {
+    "text": "10 hours left to get it at a discount.",
+    "start": 768.72,
+    "duration": 4
+  },
+  {
+    "text": "You get a bunch of video content and",
+    "start": 770.96,
+    "duration": 4.04
+  },
+  {
+    "text": "interactive exercises organized in a way",
+    "start": 772.72,
+    "duration": 4.36
+  },
+  {
+    "text": "for maximum speed and maximum efficiency",
+    "start": 775,
+    "duration": 4.52
+  },
+  {
+    "text": "of learning. You get me to answer your",
+    "start": 777.08,
+    "duration": 3.92
+  },
+  {
+    "text": "questions in office hours and in the",
+    "start": 779.52,
+    "duration": 3.4
+  },
+  {
+    "text": "Discord chat. You know, it's great. By",
+    "start": 781,
+    "duration": 3.48
+  },
+  {
+    "text": "the way, if you dug this video, my",
+    "start": 782.92,
+    "duration": 3.48
+  },
+  {
+    "text": "YouTube is exploding recently, so thank",
+    "start": 784.48,
+    "duration": 3.72
+  },
+  {
+    "text": "you all for that. I massively appreciate",
+    "start": 786.4,
+    "duration": 4.16
+  },
+  {
+    "text": "it. I really enjoy making these videos.",
+    "start": 788.2,
+    "duration": 3.88
+  },
+  {
+    "text": "I'm loving making the skills. I think",
+    "start": 790.56,
+    "duration": 4.36
+  },
+  {
+    "text": "we're up to we just beat Gary Tan's G",
+    "start": 792.08,
+    "duration": 4.56
+  },
+  {
+    "text": "stack in terms of number of stars, which",
+    "start": 794.92,
+    "duration": 3.64
+  },
+  {
+    "text": "is wild to me. And if you have an idea",
+    "start": 796.64,
+    "duration": 3.48
+  },
+  {
+    "text": "for a video you want me to make next,",
+    "start": 798.56,
+    "duration": 4.04
+  },
+  {
+    "text": "then let me know about it cuz I thrive",
+    "start": 800.12,
+    "duration": 5.08
+  },
+  {
+    "text": "off your suggestions and your ideas. So,",
+    "start": 802.6,
+    "duration": 4.08
+  },
+  {
+    "text": "thanks for watching, and I will see you",
+    "start": 805.2,
+    "duration": 4
+  },
+  {
+    "text": "very soon.",
+    "start": 806.68,
+    "duration": 2.52
+  }
+]

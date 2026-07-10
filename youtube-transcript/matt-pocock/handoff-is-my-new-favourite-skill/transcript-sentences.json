@@ -1,0 +1,607 @@
+[
+  {
+    "text": "A few weeks ago, I noticed myself doing something with agents that I thought was very clever, but I thought it was just too simple to require a skill.",
+    "start": "00:00:00",
+    "end": "00:00:11"
+  },
+  {
+    "text": "For those who don't know, I'm constantly thinking about skills.",
+    "start": "00:00:11",
+    "end": "00:00:13"
+  },
+  {
+    "text": "I'm constantly thinking about how to package my instincts and coding practices into reusable skills, and this has meant my skills repo has almost 100,000 stars at the time of recording.",
+    "start": "00:00:13",
+    "end": "00:00:23"
+  },
+  {
+    "text": "The skill that I started to think about was a handoff [snorts] skill.",
+    "start": "00:00:23",
+    "end": "00:00:27"
+  },
+  {
+    "text": "And the theory was that this skill would take the context window of the current session and compress it down into a markdown file that could be handed off to another session.",
+    "start": "00:00:27",
+    "end": "00:00:37"
+  },
+  {
+    "text": "And so, a couple of weeks ago, I shipped this.",
+    "start": "00:00:37",
+    "end": "00:00:41"
+  },
+  {
+    "text": "It's inside skills, inside productivity, and it's inside handoff here.",
+    "start": "00:00:38",
+    "end": "00:00:44"
+  },
+  {
+    "text": "And it's a very, very simple skill.",
+    "start": "00:00:44",
+    "end": "00:00:46"
+  },
+  {
+    "text": "It says to write a handoff document summarizing the current conversation so a fresh agent can continue the work.",
+    "start": "00:00:46",
+    "end": "00:00:52"
+  },
+  {
+    "text": "Save it to the temporary directory of the user's operating system, not the current workspace.",
+    "start": "00:00:52",
+    "end": "00:00:56"
+  },
+  {
+    "text": "I put this into my skills folder as an experiment to see how much I would use it.",
+    "start": "00:00:56",
+    "end": "00:01:00"
+  },
+  {
+    "text": "And it turns out I used it a lot.",
+    "start": "00:01:00",
+    "end": "00:01:02"
+  },
+  {
+    "text": "In this video, I'm going to show you a deep dive of the skill, kind of why I designed it, what is the point of it, how it compares to built-in tools in some of these harnesses like compact, and also how you can get the most out of it to make the most of your grilling sessions.",
+    "start": "00:01:02",
+    "end": "00:01:17"
+  },
+  {
+    "text": "And if you dig the kind of stuff I've been showing you, then you will love the course that I've put together, which is AI coding for real engineers.",
+    "start": "00:01:17",
+    "end": "00:01:24"
+  },
+  {
+    "text": "A two-week cohort for folks who want to use AI coding tools for shipping quality code, not slop.",
+    "start": "00:01:24",
+    "end": "00:01:31"
+  },
+  {
+    "text": "It starts on June the 1st.",
+    "start": "00:01:31",
+    "end": "00:01:33"
+  },
+  {
+    "text": "We're doing a discount right now.",
+    "start": "00:01:33",
+    "end": "00:01:34"
+  },
+  {
+    "text": "Get into the link below so you can check it out.",
+    "start": "00:01:34",
+    "end": "00:01:37"
+  },
+  {
+    "text": "Let's start first of all by explaining why I made this skill and how it differs from compaction, which you may have heard of before.",
+    "start": "00:01:37",
+    "end": "00:01:43"
+  },
+  {
+    "text": "When we're inside a session like this, coding session, we essentially, as we, you know, converse with the agent, as it does tool calls, as it makes file edits, then this context window is going to be filled up and filled up with more and more stuff in it.",
+    "start": "00:01:43",
+    "end": "00:01:57"
+  },
+  {
+    "text": "More and more tokens will fill up the context window.",
+    "start": "00:01:57",
+    "end": "00:02:01"
+  },
+  {
+    "text": "Now, in the harness I use, Claude Code, it's the context window is huge, right?",
+    "start": "00:01:59",
+    "end": "00:02:05"
+  },
+  {
+    "text": "You get 1 million tokens worth of context window, but there is actually a smart zone and a dumb zone in these context windows.",
+    "start": "00:02:03",
+    "end": "00:02:12"
+  },
+  {
+    "text": "Early on in the context window, you are going to get much better performance from the agent because the attention relationships are not so strained there.",
+    "start": "00:02:12",
+    "end": "00:02:21"
+  },
+  {
+    "text": "Because there's much fewer tokens to calculate, fewer attention relationships between those tokens, then the agent's attention isn't so diffuse.",
+    "start": "00:02:21",
+    "end": "00:02:30"
+  },
+  {
+    "text": "In other words, it's better able to focus when there's less content in there.",
+    "start": "00:02:30",
+    "end": "00:02:34"
+  },
+  {
+    "text": "This means that as your conversation develops, you're going to get dumber and dumber and dumber responses from the agent all the way up to going up to, you know, 800,000 tokens, which personally I've never been in because around by the 120k token mark, I start to feel like I'm in the dumb zone.",
+    "start": "00:02:34",
+    "end": "00:02:52"
+  },
+  {
+    "text": "So, this means yes, that even though Anthropic advertises a ton of context window on these models, really for, you know, proper smart tasks, you've only got about 120k to work with, which means you need to budget really efficiently and you need to be aware of your context window at all times.",
+    "start": "00:02:52",
+    "end": "00:03:08"
+  },
+  {
+    "text": "So, the question then becomes, what do you do when you're starting to hit up against this dumb zone?",
+    "start": "00:03:08",
+    "end": "00:03:13"
+  },
+  {
+    "text": "How do you recover your conversation?",
+    "start": "00:03:13",
+    "end": "00:03:16"
+  },
+  {
+    "text": "How do you continue the conversation beyond the dumb zone while staying smart?",
+    "start": "00:03:16",
+    "end": "00:03:20"
+  },
+  {
+    "text": "And the answer to that is compact.",
+    "start": "00:03:20",
+    "end": "00:03:22"
+  },
+  {
+    "text": "What compact does is it will take a large conversation like this and summarize it, so you go essentially from near to the dumb zone to all the way into the smart zone here.",
+    "start": "00:03:22",
+    "end": "00:03:36"
+  },
+  {
+    "text": "And there's even sometimes an auto compact buffer, depending on what harness you're using and whether you've got it turned on, which means that when you're near to the end of the context window, let's say deep in the dumb zone, the auto compact buffer will kick in and automatically summarize your conversation inside a new session.",
+    "start": "00:03:34",
+    "end": "00:03:53"
+  },
+  {
+    "text": "This summary usually looks like the files reference, so it's just a list of files that have been referenced, the things that you said in the conversation are usually included, and the general tone of the conversation as well.",
+    "start": "00:03:53",
+    "end": "00:04:04"
+  },
+  {
+    "text": "This is then included as a little nugget at the start of the new session, and as you build up context in the new session, then you're continually referencing the old session.",
+    "start": "00:04:04",
+    "end": "00:04:12"
+  },
+  {
+    "text": "This means as you continue to compact and compact, you're going to end up with this kind of sediment of different layers here from previous conversations.",
+    "start": "00:04:12",
+    "end": "00:04:20"
+  },
+  {
+    "text": "And this can be a little bit inefficient, but it's also a decent way if you want to do certain types of sessions where you just need to barrel on on the same problem again and again and again.",
+    "start": "00:04:20",
+    "end": "00:04:31"
+  },
+  {
+    "text": "It can be really useful for debugging actually, because you can compact all of the other options that you've tried, and then continue to try different things, hit the barrier, and then compact again to just save your state essentially.",
+    "start": "00:04:31",
+    "end": "00:04:45"
+  },
+  {
+    "text": "So it's a way of doing a long-running session, but it's only really one session.",
+    "start": "00:04:45",
+    "end": "00:04:50"
+  },
+  {
+    "text": "So I continue to find compact a really, really useful tool for creating these long single sessions.",
+    "start": "00:04:50",
+    "end": "00:04:55"
+  },
+  {
+    "text": "But what I started to notice was I wanted to do other things with compact.",
+    "start": "00:04:55",
+    "end": "00:04:59"
+  },
+  {
+    "text": "I wanted to compact into another session.",
+    "start": "00:04:59",
+    "end": "00:05:03"
+  },
+  {
+    "text": "For instance, let's say I was in one session here, and while I was in this session, I noticed a little refactoring opportunity.",
+    "start": "00:05:03",
+    "end": "00:05:10"
+  },
+  {
+    "text": "Something that was totally out of bounds, out of scope for my current session, but I knew I would need to get there eventually.",
+    "start": "00:05:10",
+    "end": "00:05:17"
+  },
+  {
+    "text": "So what were my choices?",
+    "start": "00:05:17",
+    "end": "00:05:18"
+  },
+  {
+    "text": "I could extend my current session, but then I would end up with this sort of like diluted context, where I was half working on one thing, half working on the other, and I would definitely hit the dumb zone, right?",
+    "start": "00:05:18",
+    "end": "00:05:29"
+  },
+  {
+    "text": "So I probably wouldn't be able to finish my initial goal.",
+    "start": "00:05:29",
+    "end": "00:05:33"
+  },
+  {
+    "text": "I could compact, but then I would clobber all of the progress that I'd made in my current session, right?",
+    "start": "00:05:31",
+    "end": "00:05:38"
+  },
+  {
+    "text": "What I really wanted to do was just say, \"Okay, I want to complete this other thing in a separate session, and keep my current session pure.",
+    "start": "00:05:38",
+    "end": "00:05:46"
+  },
+  {
+    "text": "\" In other words, this was what I wanted.",
+    "start": "00:05:46",
+    "end": "00:05:48"
+  },
+  {
+    "text": "I wanted to essentially take the context or take just the slice that pertain to this extra bug fix, hand it off to another session, and then these two could just run independently.",
+    "start": "00:05:48",
+    "end": "00:05:58"
+  },
+  {
+    "text": "And so, for a while, what I was doing was saying, \"Okay, take the stuff in my current session.",
+    "start": "00:05:58",
+    "end": "00:06:03"
+  },
+  {
+    "text": "I want to fix this particular bug.",
+    "start": "00:06:03",
+    "end": "00:06:05"
+  },
+  {
+    "text": "Write me a handoff.",
+    "start": "00:06:05",
+    "end": "00:06:05"
+  },
+  {
+    "text": "md document so that I can then just pass that into another agent.",
+    "start": "00:06:05",
+    "end": "00:06:10"
+  },
+  {
+    "text": "\" And it turned out I was doing this so freaking often that I just decided, \"Okay, I need a skill for this.",
+    "start": "00:06:10",
+    "end": "00:06:16"
+  },
+  {
+    "text": "\" I most often use handoff while I'm grilling here.",
+    "start": "00:06:16",
+    "end": "00:06:18"
+  },
+  {
+    "text": "Here, I'm inside a grilling session that I did for planning some future features for Sandcastle, which is my sort of software factory.",
+    "start": "00:06:18",
+    "end": "00:06:25"
+  },
+  {
+    "text": "And what you can see here is that I'm kind of answering some questions.",
+    "start": "00:06:25",
+    "end": "00:06:29"
+  },
+  {
+    "text": "I'm only in Q2 of this grilling session, so not a long one.",
+    "start": "00:06:29",
+    "end": "00:06:31"
+  },
+  {
+    "text": "And I say here, \"I think in future we may want to move the iterations and the completion signal onto a separate API.",
+    "start": "00:06:31",
+    "end": "00:06:37"
+  },
+  {
+    "text": "In fact, let's hand off that task to a separate agent.",
+    "start": "00:06:37",
+    "end": "00:06:41"
+  },
+  {
+    "text": "\" You can see here that when I'm defining handoff, when I'm saying, I'm saying the reason why I'm handing off and exactly what should be in that document.",
+    "start": "00:06:41",
+    "end": "00:06:51"
+  },
+  {
+    "text": "This does two things.",
+    "start": "00:06:51",
+    "end": "00:06:53"
+  },
+  {
+    "text": "First of all, it actually sharpens the current grilling session I'm on.",
+    "start": "00:06:51",
+    "end": "00:06:56"
+  },
+  {
+    "text": "So, it says that given that constraint, Q2 collapses.",
+    "start": "00:06:56",
+    "end": "00:06:58"
+  },
+  {
+    "text": "So, it doesn't actually like it helps my current grilling session because I'm saying that's out of scope, we'll pick that up somewhere else.",
+    "start": "00:06:58",
+    "end": "00:07:06"
+  },
+  {
+    "text": "It then goes and creates a markdown file just here with the focus for the next session, file a GitHub issue, and eventually design for splitting iterations and the completion signal into a separate API.",
+    "start": "00:07:06",
+    "end": "00:07:16"
+  },
+  {
+    "text": "And then later, I just pass this into a another agent in order to create the issue.",
+    "start": "00:07:16",
+    "end": "00:07:22"
+  },
+  {
+    "text": "Simple.",
+    "start": "00:07:22",
+    "end": "00:07:23"
+  },
+  {
+    "text": "Another pattern that I really strongly recommend is handing off during a grilling session to prototype.",
+    "start": "00:07:20",
+    "end": "00:07:29"
+  },
+  {
+    "text": "When you're grilling, when the agent is asking you questions from a grill me or grill with docs, which are more of my skills, you will often find there's two categories of questions you need to answer.",
+    "start": "00:07:29",
+    "end": "00:07:37"
+  },
+  {
+    "text": "There are the kind of known unknowns, the ones that the agent can ask you about, and then there's stuff that you really need to see in code or need to see prototyped.",
+    "start": "00:07:37",
+    "end": "00:07:48"
+  },
+  {
+    "text": "This can be really true with like UI prototypes or complicated bits of logic that you're not quite sure how to deal with yet.",
+    "start": "00:07:48",
+    "end": "00:07:54"
+  },
+  {
+    "text": "So, in this grilling session, we're down to question 13, actually, and we've got a sort of final uh resolution from the agent.",
+    "start": "00:07:54",
+    "end": "00:08:00"
+  },
+  {
+    "text": "And then we can see I say, \"Hand off to prototype the difficult bits here, the window communication, the teal draw SDK integration,\" which was something I was building at the time.",
+    "start": "00:08:00",
+    "end": "00:08:12"
+  },
+  {
+    "text": "It creates the handoff, and then I go and implement the prototype on that branch.",
+    "start": "00:08:12",
+    "end": "00:08:15"
+  },
+  {
+    "text": "So, in the prototype session, this ended up being a huge session, so 169 K tokens, so way bigger than would have fit inside the grilling.",
+    "start": "00:08:14",
+    "end": "00:08:24"
+  },
+  {
+    "text": "And what I did was I created this prototype of the UI and the kind of interaction that I wanted to see.",
+    "start": "00:08:24",
+    "end": "00:08:29"
+  },
+  {
+    "text": "And then I said, \"Okay, let's hand this off back to the grilling session that spawned this.",
+    "start": "00:08:29",
+    "end": "00:08:34"
+  },
+  {
+    "text": "Take all of the learnings from the prototype, anything that's not directly captured in the prototype itself or that's non-obvious, give me a handoff document that I can pass back to the planner.",
+    "start": "00:08:34",
+    "end": "00:08:45"
+  },
+  {
+    "text": "\" This is actually a really common pattern that I'm using here, where you have the initial session where you do some work, you hand off to another session, that session then creates another handoff document, and then passes it back to the original session.",
+    "start": "00:08:45",
+    "end": "00:08:57"
+  },
+  {
+    "text": "It's almost like you've done a kind of DIY sub-agent, where you're able to use a context window for one specific task, compress your learnings from that task, and pass it back to the parent.",
+    "start": "00:08:57",
+    "end": "00:09:08"
+  },
+  {
+    "text": "Then I was able to finish the grilling session and create some proper PRDs and issues with the prototype in there.",
+    "start": "00:09:08",
+    "end": "00:09:17"
+  },
+  {
+    "text": "So, it's incredibly rich pattern for actually getting what you need out of AFK agents and using prototypes.",
+    "start": "00:09:17",
+    "end": "00:09:23"
+  },
+  {
+    "text": "It's very, very cool.",
+    "start": "00:09:23",
+    "end": "00:09:23"
+  },
+  {
+    "text": "It's worth saying, too, that the thing that's cool about just using like a markdown documents here and not relying on kind of native agent stuff is that you can have this first session be Claude code, but you can just pass this to another agent, right?",
+    "start": "00:09:23",
+    "end": "00:09:38"
+  },
+  {
+    "text": "You can pass it to Codex or pass it to, you know, Copilot CLI, whatever you're using.",
+    "start": "00:09:38",
+    "end": "00:09:42"
+  },
+  {
+    "text": "So, if you want to do any kind of adversarial review or any kind of, um, you know, interaction between different coding agents, this is a very, very simple way to do it.",
+    "start": "00:09:42",
+    "end": "00:09:51"
+  },
+  {
+    "text": "We should also just read through the final bits of the skill here just so you understand the reasoning behind everything.",
+    "start": "00:09:51",
+    "end": "00:09:58"
+  },
+  {
+    "text": "The theory here is include a suggested skill section in the document which suggests skills that the agent should invoke.",
+    "start": "00:09:56",
+    "end": "00:10:02"
+  },
+  {
+    "text": "I added this because sometimes it would I use skills to kind of define the flavor of that session and so having a suggested skill section means that you can kind of just paste the handoff document into the new session.",
+    "start": "00:10:02",
+    "end": "00:10:18"
+  },
+  {
+    "text": "It will invoke the skills needed like grill with docs or diagnose or prototype or something and then you're kind of good to go.",
+    "start": "00:10:18",
+    "end": "00:10:24"
+  },
+  {
+    "text": "So, you don't need to think about the skills that you need to use in the next session.",
+    "start": "00:10:24",
+    "end": "00:10:27"
+  },
+  {
+    "text": "It's pretty handy.",
+    "start": "00:10:27",
+    "end": "00:10:29"
+  },
+  {
+    "text": "Another one is do not duplicate content already captured in other artifacts.",
+    "start": "00:10:29",
+    "end": "00:10:32"
+  },
+  {
+    "text": "I would often find these handoff documents just got really big and they were just duplicating stuff that was already present either in other markdown files or in resources like GitHub issues or things like that.",
+    "start": "00:10:32",
+    "end": "00:10:44"
+  },
+  {
+    "text": "So, it's basically saying just use pointers instead of, um, you know, repeating everything that's in the documents.",
+    "start": "00:10:44",
+    "end": "00:10:49"
+  },
+  {
+    "text": "I also really strongly believe that you should save these handoff files to the temporary directory of the user's OS.",
+    "start": "00:10:49",
+    "end": "00:10:55"
+  },
+  {
+    "text": "In other words, these handoff files are disposable.",
+    "start": "00:10:55",
+    "end": "00:10:58"
+  },
+  {
+    "text": "They are not something to be kept around for a long time to rot in your code base's documentation.",
+    "start": "00:10:58",
+    "end": "00:11:03"
+  },
+  {
+    "text": "Another one is redact any sensitive information, API keys, passwords, or PII.",
+    "start": "00:11:03",
+    "end": "00:11:07"
+  },
+  {
+    "text": "This is, you know, pretty essential.",
+    "start": "00:11:07",
+    "end": "00:11:10"
+  },
+  {
+    "text": "You don't want these floating around in markdown files in just random places.",
+    "start": "00:11:10",
+    "end": "00:11:13"
+  },
+  {
+    "text": "And finally, if the user passed arguments, in other words, what the next session will be used for, treat those as a description as to what the next session will focus on and tailor the doc accordingly.",
+    "start": "00:11:13",
+    "end": "00:11:23"
+  },
+  {
+    "text": "I think of this is essential for handoff because in order to write a decent document, the agent needs to know what the next agent session is going to focus on.",
+    "start": "00:11:23",
+    "end": "00:11:32"
+  },
+  {
+    "text": "Every time I used handoff, I always describe the purpose, the reason that we're handing off because I just can't see how you would write a good handoff document otherwise.",
+    "start": "00:11:32",
+    "end": "00:11:41"
+  },
+  {
+    "text": "And of course, dictation makes this really easy cuz I just blast it out and then we're good to go.",
+    "start": "00:11:41",
+    "end": "00:11:46"
+  },
+  {
+    "text": "So, there we go.",
+    "start": "00:11:46",
+    "end": "00:11:46"
+  },
+  {
+    "text": "That's handoff.",
+    "start": "00:11:46",
+    "end": "00:11:48"
+  },
+  {
+    "text": "This is an essential skill in my toolkit that, you know, just like a lot of my other skills didn't exist but a few weeks ago.",
+    "start": "00:11:48",
+    "end": "00:11:53"
+  },
+  {
+    "text": "If you've been enjoying my skills, then you should check out the Cohort course.",
+    "start": "00:11:53",
+    "end": "00:11:57"
+  },
+  {
+    "text": "It is an absolute banger.",
+    "start": "00:11:57",
+    "end": "00:11:58"
+  },
+  {
+    "text": "We had about 2,500 people take it last time and I'm expecting, you know, a decent whack this time, too.",
+    "start": "00:11:58",
+    "end": "00:12:02"
+  },
+  {
+    "text": "Other than that, thank you so much for watching.",
+    "start": "00:12:02",
+    "end": "00:12:05"
+  },
+  {
+    "text": "My bookshelf behind me is filling up with new coding books that I'm going to be reading over the next couple of weeks.",
+    "start": "00:12:05",
+    "end": "00:12:11"
+  },
+  {
+    "text": "I'm thinking about maybe making a sort of what's on my bookshelf video of recommended books.",
+    "start": "00:12:11",
+    "end": "00:12:17"
+  },
+  {
+    "text": "And I don't know.",
+    "start": "00:12:15",
+    "end": "00:12:16"
+  },
+  {
+    "text": "If you like that, then maybe give us a like and a comment or let me know what you want to see next.",
+    "start": "00:12:16",
+    "end": "00:12:22"
+  },
+  {
+    "text": "Either way, thanks for watching and I'll see you very soon.",
+    "start": "00:12:20",
+    "end": "00:12:25"
+  }
+]

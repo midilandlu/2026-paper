@@ -1,0 +1,2147 @@
+[
+  {
+    "text": "Hello friends. First video in a while",
+    "start": 0.08,
+    "duration": 3.92
+  },
+  {
+    "text": "and that is because I've been working on",
+    "start": 1.839,
+    "duration": 5.52
+  },
+  {
+    "text": "version 1.1 of my skills repo. It has an",
+    "start": 4,
+    "duration": 5.12
+  },
+  {
+    "text": "astonishing amount of stuff in there.",
+    "start": 7.359,
+    "duration": 4.32
+  },
+  {
+    "text": "There is an entire new approach to",
+    "start": 9.12,
+    "duration": 4.479
+  },
+  {
+    "text": "grilling which probably deserves its own",
+    "start": 11.679,
+    "duration": 3.281
+  },
+  {
+    "text": "video, but I'll try and squeeze it in",
+    "start": 13.599,
+    "duration": 4.481
+  },
+  {
+    "text": "here. There is a bunch of new changes to",
+    "start": 14.96,
+    "duration": 5.76
+  },
+  {
+    "text": "existing skills, including a rename of",
+    "start": 18.08,
+    "duration": 4.88
+  },
+  {
+    "text": "two main flow skills. There is just",
+    "start": 20.72,
+    "duration": 4.08
+  },
+  {
+    "text": "really way too much for me to summarize",
+    "start": 22.96,
+    "duration": 3.2
+  },
+  {
+    "text": "in this intro, so you're just going to",
+    "start": 24.8,
+    "duration": 2.88
+  },
+  {
+    "text": "have to watch the video to find out. We",
+    "start": 26.16,
+    "duration": 3.199
+  },
+  {
+    "text": "can see the PR is literally ready to",
+    "start": 27.68,
+    "duration": 4.32
+  },
+  {
+    "text": "merge now. So, why not? Let's actually",
+    "start": 29.359,
+    "duration": 4.321
+  },
+  {
+    "text": "freaking merge this thing. And just like",
+    "start": 32,
+    "duration": 5.2
+  },
+  {
+    "text": "that, we have our version 1.1 ready to",
+    "start": 33.68,
+    "duration": 4.96
+  },
+  {
+    "text": "go. Let's start with the two that are",
+    "start": 37.2,
+    "duration": 3.44
+  },
+  {
+    "text": "probably going to be most annoying for",
+    "start": 38.64,
+    "duration": 4
+  },
+  {
+    "text": "you and the most like why did he do",
+    "start": 40.64,
+    "duration": 4.48
+  },
+  {
+    "text": "this? And there is a very specific",
+    "start": 42.64,
+    "duration": 4.96
+  },
+  {
+    "text": "reason that I did it, which is that two",
+    "start": 45.12,
+    "duration": 4.959
+  },
+  {
+    "text": "skills have been renamed. For instance,",
+    "start": 47.6,
+    "duration": 5.76
+  },
+  {
+    "text": "two PRD has now been renamed to two",
+    "start": 50.079,
+    "duration": 5.521
+  },
+  {
+    "text": "spec. And if we go up one level, then we",
+    "start": 53.36,
+    "duration": 6.08
+  },
+  {
+    "text": "go to two uh issues has been renamed to",
+    "start": 55.6,
+    "duration": 5.68
+  },
+  {
+    "text": "two tickets. The reason I've done this",
+    "start": 59.44,
+    "duration": 3.599
+  },
+  {
+    "text": "is that this has just been bugging me",
+    "start": 61.28,
+    "duration": 3.919
+  },
+  {
+    "text": "for a long time. The thing that we were",
+    "start": 63.039,
+    "duration": 5.921
+  },
+  {
+    "text": "creating into PRD wasn't actually a PRD.",
+    "start": 65.199,
+    "duration": 5.92
+  },
+  {
+    "text": "It was a spec. A product requirements",
+    "start": 68.96,
+    "duration": 4.96
+  },
+  {
+    "text": "document kind of describes more things",
+    "start": 71.119,
+    "duration": 5.36
+  },
+  {
+    "text": "about the actual product itself, whereas",
+    "start": 73.92,
+    "duration": 5.28
+  },
+  {
+    "text": "we were allowing things to leak into the",
+    "start": 76.479,
+    "duration": 5.521
+  },
+  {
+    "text": "PRD that weren't necessarily PRDs. So",
+    "start": 79.2,
+    "duration": 4.64
+  },
+  {
+    "text": "for a long time I've wanted to rename it",
+    "start": 82,
+    "duration": 3.92
+  },
+  {
+    "text": "to to spec because that's what we were",
+    "start": 83.84,
+    "duration": 3.279
+  },
+  {
+    "text": "creating. We were just creating a",
+    "start": 85.92,
+    "duration": 3.6
+  },
+  {
+    "text": "specification. Specification is a much",
+    "start": 87.119,
+    "duration": 5.36
+  },
+  {
+    "text": "broader term that actually entails what",
+    "start": 89.52,
+    "duration": 4.8
+  },
+  {
+    "text": "we were building. A specification for a",
+    "start": 92.479,
+    "duration": 3.521
+  },
+  {
+    "text": "thing we want to build. That can be",
+    "start": 94.32,
+    "duration": 3.759
+  },
+  {
+    "text": "technical. It can be non-technical and",
+    "start": 96,
+    "duration": 3.439
+  },
+  {
+    "text": "it can blend the two. It doesn't really",
+    "start": 98.079,
+    "duration": 3.04
+  },
+  {
+    "text": "matter. When it came to two issues, two",
+    "start": 99.439,
+    "duration": 3.36
+  },
+  {
+    "text": "issues always felt like it was biased",
+    "start": 101.119,
+    "duration": 3.841
+  },
+  {
+    "text": "towards GitHub and linear that use",
+    "start": 102.799,
+    "duration": 5.041
+  },
+  {
+    "text": "issues. But really we want this to be",
+    "start": 104.96,
+    "duration": 4.96
+  },
+  {
+    "text": "tickets. you have a spec and then",
+    "start": 107.84,
+    "duration": 3.599
+  },
+  {
+    "text": "underneath the spec you have the tickets",
+    "start": 109.92,
+    "duration": 4.239
+  },
+  {
+    "text": "that are the journey that you uh take to",
+    "start": 111.439,
+    "duration": 4.561
+  },
+  {
+    "text": "actually enact the spec and create it.",
+    "start": 114.159,
+    "duration": 3.28
+  },
+  {
+    "text": "This has been annoying me for a long",
+    "start": 116,
+    "duration": 3.52
+  },
+  {
+    "text": "time and finally it no longer annoys me.",
+    "start": 117.439,
+    "duration": 3.921
+  },
+  {
+    "text": "It brings me joy. Now one irritating",
+    "start": 119.52,
+    "duration": 4.08
+  },
+  {
+    "text": "thing about this rename is that you will",
+    "start": 121.36,
+    "duration": 4.48
+  },
+  {
+    "text": "need to probably delete those skills and",
+    "start": 123.6,
+    "duration": 3.839
+  },
+  {
+    "text": "read them. This means you'll need to run",
+    "start": 125.84,
+    "duration": 4.72
+  },
+  {
+    "text": "npx skills add mapco skills. I'm pretty",
+    "start": 127.439,
+    "duration": 5.041
+  },
+  {
+    "text": "sure that this skills installer won't",
+    "start": 130.56,
+    "duration": 4.16
+  },
+  {
+    "text": "pick up the rename so it won't try to",
+    "start": 132.48,
+    "duration": 5.119
+  },
+  {
+    "text": "update to prd to turn it into tosp spec.",
+    "start": 134.72,
+    "duration": 4.239
+  },
+  {
+    "text": "You get what I mean? And so running this",
+    "start": 137.599,
+    "duration": 3.441
+  },
+  {
+    "text": "command is the safest way to grab all of",
+    "start": 138.959,
+    "duration": 3.761
+  },
+  {
+    "text": "these new skills cuz you get to just",
+    "start": 141.04,
+    "duration": 3.279
+  },
+  {
+    "text": "pick and choose which ones you want. And",
+    "start": 142.72,
+    "duration": 2.56
+  },
+  {
+    "text": "once you've done that, you should",
+    "start": 144.319,
+    "duration": 2.961
+  },
+  {
+    "text": "probably go through a pass through your",
+    "start": 145.28,
+    "duration": 4.64
+  },
+  {
+    "text": "skills folder and just check that uh no",
+    "start": 147.28,
+    "duration": 4.48
+  },
+  {
+    "text": "bad ones are still in there. So you want",
+    "start": 149.92,
+    "duration": 3.599
+  },
+  {
+    "text": "to make sure that you're intentionally",
+    "start": 151.76,
+    "duration": 3.52
+  },
+  {
+    "text": "grabbing all the right skills. The next",
+    "start": 153.519,
+    "duration": 3.761
+  },
+  {
+    "text": "change is that I've fixed a couple of",
+    "start": 155.28,
+    "duration": 3.76
+  },
+  {
+    "text": "bugs that people were having with grill",
+    "start": 157.28,
+    "duration": 3.76
+  },
+  {
+    "text": "me and grill with dogs. Both of them",
+    "start": 159.04,
+    "duration": 4.16
+  },
+  {
+    "text": "rely on this kind of central reference",
+    "start": 161.04,
+    "duration": 4.8
+  },
+  {
+    "text": "grilling skill that kind of show shows",
+    "start": 163.2,
+    "duration": 5.2
+  },
+  {
+    "text": "the LLM how to grill a person. I've",
+    "start": 165.84,
+    "duration": 4.24
+  },
+  {
+    "text": "sharpened up this line here saying",
+    "start": 168.4,
+    "duration": 3.36
+  },
+  {
+    "text": "asking multiple questions at once is",
+    "start": 170.08,
+    "duration": 4.64
+  },
+  {
+    "text": "bewildering even with this d direction",
+    "start": 171.76,
+    "duration": 5.28
+  },
+  {
+    "text": "to ask questions one at a time. It was",
+    "start": 174.72,
+    "duration": 4.879
+  },
+  {
+    "text": "still occasionally just going have",
+    "start": 177.04,
+    "duration": 4.96
+  },
+  {
+    "text": "multiple questions at once. So I've told",
+    "start": 179.599,
+    "duration": 4.961
+  },
+  {
+    "text": "it why we don't want uh multiple",
+    "start": 182,
+    "duration": 4.239
+  },
+  {
+    "text": "questions at once. We've also added a",
+    "start": 184.56,
+    "duration": 3.36
+  },
+  {
+    "text": "confirmation gate on the end. do not",
+    "start": 186.239,
+    "duration": 3.681
+  },
+  {
+    "text": "enact the plan until I confirm we've",
+    "start": 187.92,
+    "duration": 3.679
+  },
+  {
+    "text": "reached a shared understanding. Lots of",
+    "start": 189.92,
+    "duration": 2.8
+  },
+  {
+    "text": "people on different models were",
+    "start": 191.599,
+    "duration": 2.72
+  },
+  {
+    "text": "reporting that the grilling session",
+    "start": 192.72,
+    "duration": 3.599
+  },
+  {
+    "text": "would just end and then it would just go",
+    "start": 194.319,
+    "duration": 4
+  },
+  {
+    "text": "straight into implementation. So this is",
+    "start": 196.319,
+    "duration": 3.521
+  },
+  {
+    "text": "just an extra little gate there.",
+    "start": 198.319,
+    "duration": 4.401
+  },
+  {
+    "text": "Finally, on some situations, it would",
+    "start": 199.84,
+    "duration": 5.759
+  },
+  {
+    "text": "just grill itself, which is very very",
+    "start": 202.72,
+    "duration": 4.799
+  },
+  {
+    "text": "odd. Not something I've noticed or seen",
+    "start": 205.599,
+    "duration": 4
+  },
+  {
+    "text": "in my personal thing, but I I can only",
+    "start": 207.519,
+    "duration": 3.921
+  },
+  {
+    "text": "get a small subset of how these skills",
+    "start": 209.599,
+    "duration": 4.401
+  },
+  {
+    "text": "are actually used. So I've basically",
+    "start": 211.44,
+    "duration": 4.56
+  },
+  {
+    "text": "tried to use a couple of leading words",
+    "start": 214,
+    "duration": 4.239
+  },
+  {
+    "text": "to indicate the difference between facts",
+    "start": 216,
+    "duration": 4.879
+  },
+  {
+    "text": "and decisions. So sometimes it was using",
+    "start": 218.239,
+    "duration": 4.64
+  },
+  {
+    "text": "the previous phrasing here by just",
+    "start": 220.879,
+    "duration": 3.521
+  },
+  {
+    "text": "exploring the codebase and grilling",
+    "start": 222.879,
+    "duration": 2.961
+  },
+  {
+    "text": "itself. This was especially happening",
+    "start": 224.4,
+    "duration": 4.559
+  },
+  {
+    "text": "with fable actually. And so I've decided",
+    "start": 225.84,
+    "duration": 5.92
+  },
+  {
+    "text": "to make a distinction between facts. So",
+    "start": 228.959,
+    "duration": 4.64
+  },
+  {
+    "text": "facts that are things you find yourself",
+    "start": 231.76,
+    "duration": 4.24
+  },
+  {
+    "text": "by exploring the codebase and decisions.",
+    "start": 233.599,
+    "duration": 4.801
+  },
+  {
+    "text": "So decisions are needed to be made by",
+    "start": 236,
+    "duration": 3.68
+  },
+  {
+    "text": "the user. So, just a couple of",
+    "start": 238.4,
+    "duration": 2.8
+  },
+  {
+    "text": "sentences, added a couple of things",
+    "start": 239.68,
+    "duration": 3.279
+  },
+  {
+    "text": "changed around, and this has made it a",
+    "start": 241.2,
+    "duration": 3.119
+  },
+  {
+    "text": "lot more consistent. Definitely getting",
+    "start": 242.959,
+    "duration": 3.36
+  },
+  {
+    "text": "a lot fewer complaints about those weird",
+    "start": 244.319,
+    "duration": 3.28
+  },
+  {
+    "text": "issues happening. The next thing to say",
+    "start": 246.319,
+    "duration": 3.041
+  },
+  {
+    "text": "is that I've added a couple of skills",
+    "start": 247.599,
+    "duration": 5.041
+  },
+  {
+    "text": "that really just take the process that",
+    "start": 249.36,
+    "duration": 5.76
+  },
+  {
+    "text": "was primarily a planning process, didn't",
+    "start": 252.64,
+    "duration": 3.68
+  },
+  {
+    "text": "really hold your hand into",
+    "start": 255.12,
+    "duration": 4.079
+  },
+  {
+    "text": "implementation and turn it into a proper",
+    "start": 256.32,
+    "duration": 4.56
+  },
+  {
+    "text": "software development life cycle. So,",
+    "start": 259.199,
+    "duration": 3.361
+  },
+  {
+    "text": "many folks ask me, what is the flow?",
+    "start": 260.88,
+    "duration": 3.36
+  },
+  {
+    "text": "What is the main flow you're supposed to",
+    "start": 262.56,
+    "duration": 4.639
+  },
+  {
+    "text": "use with the skills? And first of all, I",
+    "start": 264.24,
+    "duration": 4.959
+  },
+  {
+    "text": "mean, this is it. We have number one,",
+    "start": 267.199,
+    "duration": 3.841
+  },
+  {
+    "text": "you're supposed to instead of using plan",
+    "start": 269.199,
+    "duration": 4.72
+  },
+  {
+    "text": "mode, you get an agent to grill you and",
+    "start": 271.04,
+    "duration": 5.36
+  },
+  {
+    "text": "it uses these couple of docs to add a",
+    "start": 273.919,
+    "duration": 4.641
+  },
+  {
+    "text": "glossery to kind of understand you",
+    "start": 276.4,
+    "duration": 4.079
+  },
+  {
+    "text": "better as you go along and also add",
+    "start": 278.56,
+    "duration": 3.6
+  },
+  {
+    "text": "architectural decision records so you",
+    "start": 280.479,
+    "duration": 3.841
+  },
+  {
+    "text": "can capture the non-obvious stuff. The",
+    "start": 282.16,
+    "duration": 3.759
+  },
+  {
+    "text": "stuff that goes in the grill for docs",
+    "start": 284.32,
+    "duration": 4.72
+  },
+  {
+    "text": "then goes into a spec as we saw before.",
+    "start": 285.919,
+    "duration": 4.961
+  },
+  {
+    "text": "That spec kind of defines the",
+    "start": 289.04,
+    "duration": 5.04
+  },
+  {
+    "text": "destination where you're going. Then you",
+    "start": 290.88,
+    "duration": 5.36
+  },
+  {
+    "text": "turn that spec into individual tickets",
+    "start": 294.08,
+    "duration": 4.08
+  },
+  {
+    "text": "so you can spread the development of it",
+    "start": 296.24,
+    "duration": 4.32
+  },
+  {
+    "text": "out over multiple agent sessions. That's",
+    "start": 298.16,
+    "duration": 4.4
+  },
+  {
+    "text": "the purpose of to tickets. You then",
+    "start": 300.56,
+    "duration": 4.079
+  },
+  {
+    "text": "implement each one of those tickets with",
+    "start": 302.56,
+    "duration": 4.24
+  },
+  {
+    "text": "a implement skill. And the implement",
+    "start": 304.639,
+    "duration": 4.721
+  },
+  {
+    "text": "skill is very very simple. It just looks",
+    "start": 306.8,
+    "duration": 4.239
+  },
+  {
+    "text": "like this. Implement the work described",
+    "start": 309.36,
+    "duration": 4.24
+  },
+  {
+    "text": "by the user in the spec or tickets. Use",
+    "start": 311.039,
+    "duration": 5.281
+  },
+  {
+    "text": "TDD where possible at pre-agreed seams.",
+    "start": 313.6,
+    "duration": 5.039
+  },
+  {
+    "text": "That's a nice one. And run type checking",
+    "start": 316.32,
+    "duration": 4
+  },
+  {
+    "text": "regularly. Single test files regularly.",
+    "start": 318.639,
+    "duration": 3.84
+  },
+  {
+    "text": "Full test sweep once at the end. Once",
+    "start": 320.32,
+    "duration": 4.48
+  },
+  {
+    "text": "done, use code review to review the work",
+    "start": 322.479,
+    "duration": 3.681
+  },
+  {
+    "text": "and then commit your work to the current",
+    "start": 324.8,
+    "duration": 3.36
+  },
+  {
+    "text": "branch. I almost didn't make a skill for",
+    "start": 326.16,
+    "duration": 4.24
+  },
+  {
+    "text": "this because it's really simple, right?",
+    "start": 328.16,
+    "duration": 4.4
+  },
+  {
+    "text": "It's just mostly relying on the agents",
+    "start": 330.4,
+    "duration": 4.56
+  },
+  {
+    "text": "prior on its, you know, on the harness",
+    "start": 332.56,
+    "duration": 4.639
+  },
+  {
+    "text": "kind of teaching it what to do. And I",
+    "start": 334.96,
+    "duration": 4.16
+  },
+  {
+    "text": "didn't honestly think we needed a skill",
+    "start": 337.199,
+    "duration": 3.84
+  },
+  {
+    "text": "here. But folks kept asking me what's",
+    "start": 339.12,
+    "duration": 4.079
+  },
+  {
+    "text": "the flow? What's the flow here? And so I",
+    "start": 341.039,
+    "duration": 3.841
+  },
+  {
+    "text": "figured just an implement skill, make it",
+    "start": 343.199,
+    "duration": 3.761
+  },
+  {
+    "text": "nice and simple, right? At each stage of",
+    "start": 344.88,
+    "duration": 3.84
+  },
+  {
+    "text": "the process, call this skill. So that",
+    "start": 346.96,
+    "duration": 3.76
+  },
+  {
+    "text": "means implement earns its place here",
+    "start": 348.72,
+    "duration": 3.919
+  },
+  {
+    "text": "because you know okay once we got two",
+    "start": 350.72,
+    "duration": 3.759
+  },
+  {
+    "text": "tickets then we just got to implement",
+    "start": 352.639,
+    "duration": 3.361
+  },
+  {
+    "text": "each ticket in a separate coding",
+    "start": 354.479,
+    "duration": 3.761
+  },
+  {
+    "text": "session. Implement then itself calls",
+    "start": 356,
+    "duration": 4.88
+  },
+  {
+    "text": "code review and code review I graduated",
+    "start": 358.24,
+    "duration": 5.6
+  },
+  {
+    "text": "this out of in progress on version one.",
+    "start": 360.88,
+    "duration": 5.12
+  },
+  {
+    "text": "So it's been around for a little bit but",
+    "start": 363.84,
+    "duration": 4.079
+  },
+  {
+    "text": "I have made some updates to it in this",
+    "start": 366,
+    "duration": 3.199
+  },
+  {
+    "text": "version two. The theory of the code",
+    "start": 367.919,
+    "duration": 3.761
+  },
+  {
+    "text": "review skill is that it reviews code on",
+    "start": 369.199,
+    "duration": 5.521
+  },
+  {
+    "text": "two axes. So it does a sub agent for",
+    "start": 371.68,
+    "duration": 4.88
+  },
+  {
+    "text": "each one of these. The first one is the",
+    "start": 374.72,
+    "duration": 4.24
+  },
+  {
+    "text": "standards axis. Does the code conform to",
+    "start": 376.56,
+    "duration": 4.96
+  },
+  {
+    "text": "this repo's documented coding standards?",
+    "start": 378.96,
+    "duration": 5.04
+  },
+  {
+    "text": "So, if you've got a coding standards.md",
+    "start": 381.52,
+    "duration": 4.64
+  },
+  {
+    "text": "file somewhere in your repo, then it",
+    "start": 384,
+    "duration": 4.56
+  },
+  {
+    "text": "will read that and check against those.",
+    "start": 386.16,
+    "duration": 4.159
+  },
+  {
+    "text": "I generally think that coding standards",
+    "start": 388.56,
+    "duration": 4.639
+  },
+  {
+    "text": "belong outside of your agents.md file.",
+    "start": 390.319,
+    "duration": 4.16
+  },
+  {
+    "text": "They're supposed to be somewhere",
+    "start": 393.199,
+    "duration": 3.601
+  },
+  {
+    "text": "separate and the code review point is",
+    "start": 394.479,
+    "duration": 4.801
+  },
+  {
+    "text": "where they're most useful. And then once",
+    "start": 396.8,
+    "duration": 3.839
+  },
+  {
+    "text": "you've done the standards, you then go",
+    "start": 399.28,
+    "duration": 3.52
+  },
+  {
+    "text": "on to the spec. Does the code faithfully",
+    "start": 400.639,
+    "duration": 4.56
+  },
+  {
+    "text": "implement the originating issue or PRD",
+    "start": 402.8,
+    "duration": 4.399
+  },
+  {
+    "text": "or spec? They both run as parallel sub",
+    "start": 405.199,
+    "duration": 4.961
+  },
+  {
+    "text": "agents and it does a process here where",
+    "start": 407.199,
+    "duration": 4.961
+  },
+  {
+    "text": "it walks through each part. Now the",
+    "start": 410.16,
+    "duration": 3.52
+  },
+  {
+    "text": "thing that's cool and new about this",
+    "start": 412.16,
+    "duration": 3.36
+  },
+  {
+    "text": "skill is that I've been reading Martin",
+    "start": 413.68,
+    "duration": 4.639
+  },
+  {
+    "text": "Fowler's Refactoring again. And what I",
+    "start": 415.52,
+    "duration": 5.36
+  },
+  {
+    "text": "decided to do is Martin Fowler names a",
+    "start": 418.319,
+    "duration": 5.521
+  },
+  {
+    "text": "bunch of different smells that the agent",
+    "start": 420.88,
+    "duration": 5.52
+  },
+  {
+    "text": "can identify in bad code. Refactoring is",
+    "start": 423.84,
+    "duration": 4.479
+  },
+  {
+    "text": "such an old book, such a well-sighted",
+    "start": 426.4,
+    "duration": 4.799
+  },
+  {
+    "text": "book that these uh kind of smells are",
+    "start": 428.319,
+    "duration": 5.121
+  },
+  {
+    "text": "deep in the agent's prior. And so all",
+    "start": 431.199,
+    "duration": 3.601
+  },
+  {
+    "text": "you need to do is kind of invoke the",
+    "start": 433.44,
+    "duration": 2.96
+  },
+  {
+    "text": "idea of okay mysterious name or",
+    "start": 434.8,
+    "duration": 3.28
+  },
+  {
+    "text": "duplicated code or feature envy data",
+    "start": 436.4,
+    "duration": 3.44
+  },
+  {
+    "text": "clumps primitive obsession repeated",
+    "start": 438.08,
+    "duration": 3.679
+  },
+  {
+    "text": "switches divergent change speculative",
+    "start": 439.84,
+    "duration": 4.16
+  },
+  {
+    "text": "generality message chains you see what I",
+    "start": 441.759,
+    "duration": 4.481
+  },
+  {
+    "text": "mean like these are all deep in the",
+    "start": 444,
+    "duration": 3.919
+  },
+  {
+    "text": "agent's kind of knowledge base and all",
+    "start": 446.24,
+    "duration": 3.6
+  },
+  {
+    "text": "we got to do is just really describe",
+    "start": 447.919,
+    "duration": 4.641
+  },
+  {
+    "text": "them in a sentence and what I found is",
+    "start": 449.84,
+    "duration": 5.04
+  },
+  {
+    "text": "that leads the word or leads the agent",
+    "start": 452.56,
+    "duration": 4.32
+  },
+  {
+    "text": "to repeat that word back to you and say",
+    "start": 454.88,
+    "duration": 4.159
+  },
+  {
+    "text": "yes I found some message chains I need",
+    "start": 456.88,
+    "duration": 4.319
+  },
+  {
+    "text": "to remove them I found a middleman",
+    "start": 459.039,
+    "duration": 4.16
+  },
+  {
+    "text": "situation I need to uh fix that. So, I",
+    "start": 461.199,
+    "duration": 3.28
+  },
+  {
+    "text": "tested this for a couple of weeks and it",
+    "start": 463.199,
+    "duration": 4.161
+  },
+  {
+    "text": "was outrageously useful. It was really,",
+    "start": 464.479,
+    "duration": 4.481
+  },
+  {
+    "text": "really nice at improving the quality of",
+    "start": 467.36,
+    "duration": 3.679
+  },
+  {
+    "text": "my code and it's really cheap to add",
+    "start": 468.96,
+    "duration": 4.239
+  },
+  {
+    "text": "here. Just kind of like 10 lines. But,",
+    "start": 471.039,
+    "duration": 3.921
+  },
+  {
+    "text": "let's go and talk about the one that I'm",
+    "start": 473.199,
+    "duration": 4.641
+  },
+  {
+    "text": "really really excited about, which is a",
+    "start": 474.96,
+    "duration": 5.919
+  },
+  {
+    "text": "whole new change to the way that we kick",
+    "start": 477.84,
+    "duration": 6.32
+  },
+  {
+    "text": "off and shape specs. So, the pre-spec",
+    "start": 480.879,
+    "duration": 5.681
+  },
+  {
+    "text": "bit. In other words, it goes here where",
+    "start": 484.16,
+    "duration": 5.36
+  },
+  {
+    "text": "it may in some situations replace Grill",
+    "start": 486.56,
+    "duration": 5.44
+  },
+  {
+    "text": "with Docs and it's called Wayfinder. I",
+    "start": 489.52,
+    "duration": 4.64
+  },
+  {
+    "text": "will make an entire post, entire video",
+    "start": 492,
+    "duration": 4.879
+  },
+  {
+    "text": "about WFinder, but uh suffice to say is",
+    "start": 494.16,
+    "duration": 5.36
+  },
+  {
+    "text": "that I would love for you in situations",
+    "start": 496.879,
+    "duration": 4.241
+  },
+  {
+    "text": "where you're thinking about using Grill",
+    "start": 499.52,
+    "duration": 4.64
+  },
+  {
+    "text": "with Docs instead to default to Wfinder",
+    "start": 501.12,
+    "duration": 5.04
+  },
+  {
+    "text": "instead. What Wayfinder does is it's",
+    "start": 504.16,
+    "duration": 4.479
+  },
+  {
+    "text": "designed for situations where you have a",
+    "start": 506.16,
+    "duration": 4.96
+  },
+  {
+    "text": "ton of stuff that you want to plan but",
+    "start": 508.639,
+    "duration": 5.041
+  },
+  {
+    "text": "and too big for one agent session. In",
+    "start": 511.12,
+    "duration": 3.919
+  },
+  {
+    "text": "other words, you're going to blow out of",
+    "start": 513.68,
+    "duration": 3.279
+  },
+  {
+    "text": "the smart zone of the agent or you might",
+    "start": 515.039,
+    "duration": 3.44
+  },
+  {
+    "text": "even blow out of the context window of",
+    "start": 516.959,
+    "duration": 3.52
+  },
+  {
+    "text": "the agent. You need to split it into",
+    "start": 518.479,
+    "duration": 3.841
+  },
+  {
+    "text": "multiple parts in order to figure out",
+    "start": 520.479,
+    "duration": 3.521
+  },
+  {
+    "text": "where you're going. A loose idea has",
+    "start": 522.32,
+    "duration": 3.36
+  },
+  {
+    "text": "arrived, too big for one agent session",
+    "start": 524,
+    "duration": 3.76
+  },
+  {
+    "text": "and wrapped in fog. The way from here to",
+    "start": 525.68,
+    "duration": 4.24
+  },
+  {
+    "text": "the destination isn't visible yet. This",
+    "start": 527.76,
+    "duration": 4.8
+  },
+  {
+    "text": "skill charts the way as a shared map on",
+    "start": 529.92,
+    "duration": 4.479
+  },
+  {
+    "text": "the repo's issue tracker, then works its",
+    "start": 532.56,
+    "duration": 3.68
+  },
+  {
+    "text": "tickets one at a time until the route is",
+    "start": 534.399,
+    "duration": 4.241
+  },
+  {
+    "text": "clear. These maps are saved in GitHub",
+    "start": 536.24,
+    "duration": 3.84
+  },
+  {
+    "text": "issues. For instance, this is one on the",
+    "start": 538.64,
+    "duration": 3.6
+  },
+  {
+    "text": "Sand Castle repo where we're doing a",
+    "start": 540.08,
+    "duration": 4.879
+  },
+  {
+    "text": "spike to think about maybe pulling in",
+    "start": 542.24,
+    "duration": 5.279
+  },
+  {
+    "text": "the AI SDK as a dependency. A big big",
+    "start": 544.959,
+    "duration": 4.641
+  },
+  {
+    "text": "change. And so you can see there are no",
+    "start": 547.519,
+    "duration": 4.641
+  },
+  {
+    "text": "decisions that have um been made so far",
+    "start": 549.6,
+    "duration": 4.64
+  },
+  {
+    "text": "and all of the decisions that need to be",
+    "start": 552.16,
+    "duration": 4.64
+  },
+  {
+    "text": "made are saved in sub issues and these",
+    "start": 554.24,
+    "duration": 5.36
+  },
+  {
+    "text": "sub issues have blocking relationships.",
+    "start": 556.8,
+    "duration": 4.8
+  },
+  {
+    "text": "So we can see that no decision can be",
+    "start": 559.6,
+    "duration": 4.64
+  },
+  {
+    "text": "made here before we make this key",
+    "start": 561.6,
+    "duration": 4.4
+  },
+  {
+    "text": "decision at the start. Each one of these",
+    "start": 564.24,
+    "duration": 4.8
+  },
+  {
+    "text": "decisions is scoped to be the size of an",
+    "start": 566,
+    "duration": 4.48
+  },
+  {
+    "text": "agent session. And we can see that",
+    "start": 569.04,
+    "duration": 3.44
+  },
+  {
+    "text": "they're labeled as different types here.",
+    "start": 570.48,
+    "duration": 3.84
+  },
+  {
+    "text": "So for instance, this one is labeled as",
+    "start": 572.48,
+    "duration": 4.32
+  },
+  {
+    "text": "a research task. So, this is really an",
+    "start": 574.32,
+    "duration": 5.04
+  },
+  {
+    "text": "AFK task for the agent to go off, do",
+    "start": 576.8,
+    "duration": 4.8
+  },
+  {
+    "text": "some research, and then come back. This",
+    "start": 579.36,
+    "duration": 4
+  },
+  {
+    "text": "one, I think, is a research as well.",
+    "start": 581.6,
+    "duration": 3.44
+  },
+  {
+    "text": "This one is a research task, and this",
+    "start": 583.36,
+    "duration": 4.479
+  },
+  {
+    "text": "one is a grilling task. So, this one",
+    "start": 585.04,
+    "duration": 4.56
+  },
+  {
+    "text": "needs a grilling session to be done",
+    "start": 587.839,
+    "duration": 4.241
+  },
+  {
+    "text": "here. I think these are all grillers. We",
+    "start": 589.6,
+    "duration": 4.08
+  },
+  {
+    "text": "can see these defined in the ticket",
+    "start": 592.08,
+    "duration": 3.439
+  },
+  {
+    "text": "types down here. So, we have research,",
+    "start": 593.68,
+    "duration": 4.96
+  },
+  {
+    "text": "we have grilling, we also have prototype",
+    "start": 595.519,
+    "duration": 5.361
+  },
+  {
+    "text": "as well. So this is something I've been",
+    "start": 598.64,
+    "duration": 4.48
+  },
+  {
+    "text": "really advocating for recently is doing",
+    "start": 600.88,
+    "duration": 4.56
+  },
+  {
+    "text": "more prototyping before you get to a",
+    "start": 603.12,
+    "duration": 4.32
+  },
+  {
+    "text": "spec. The idea is you raise the fidelity",
+    "start": 605.44,
+    "duration": 3.6
+  },
+  {
+    "text": "of the discussion by making a cheap",
+    "start": 607.44,
+    "duration": 3.839
+  },
+  {
+    "text": "rough concrete artifact to react to an",
+    "start": 609.04,
+    "duration": 4.96
+  },
+  {
+    "text": "outline rough take UI logic code via the",
+    "start": 611.279,
+    "duration": 4.481
+  },
+  {
+    "text": "prototype skill. We'll get to that in a",
+    "start": 614,
+    "duration": 3.76
+  },
+  {
+    "text": "minute. Links to the prototype as an",
+    "start": 615.76,
+    "duration": 4
+  },
+  {
+    "text": "asset. And it says use when how should",
+    "start": 617.76,
+    "duration": 4.24
+  },
+  {
+    "text": "it look or how should it behave is a key",
+    "start": 619.76,
+    "duration": 4.96
+  },
+  {
+    "text": "question. And this is essential for",
+    "start": 622,
+    "duration": 4.56
+  },
+  {
+    "text": "almost anything that touches front-end",
+    "start": 624.72,
+    "duration": 3.44
+  },
+  {
+    "text": "code. So I would definitely be",
+    "start": 626.56,
+    "duration": 3.76
+  },
+  {
+    "text": "recommending using Wfinder for anything",
+    "start": 628.16,
+    "duration": 3.679
+  },
+  {
+    "text": "that touches the front end. The final",
+    "start": 630.32,
+    "duration": 4.079
+  },
+  {
+    "text": "one here is just tasks. So config that",
+    "start": 631.839,
+    "duration": 4.961
+  },
+  {
+    "text": "needs to be set up um provisioning",
+    "start": 634.399,
+    "duration": 4.401
+  },
+  {
+    "text": "access, you know, moving data into the",
+    "start": 636.8,
+    "duration": 3.92
+  },
+  {
+    "text": "shape, you know, all the sort of boring",
+    "start": 638.8,
+    "duration": 3.52
+  },
+  {
+    "text": "stuff that doesn't need a grilling",
+    "start": 640.72,
+    "duration": 4
+  },
+  {
+    "text": "decision and can't really be automated",
+    "start": 642.32,
+    "duration": 4.72
+  },
+  {
+    "text": "by AI. What you end up with is after all",
+    "start": 644.72,
+    "duration": 4.48
+  },
+  {
+    "text": "of these tickets are closed, all of that",
+    "start": 647.04,
+    "duration": 4.72
+  },
+  {
+    "text": "information gets saved onto the map with",
+    "start": 649.2,
+    "duration": 4.639
+  },
+  {
+    "text": "the original tickets as kind of primary",
+    "start": 651.76,
+    "duration": 4.079
+  },
+  {
+    "text": "sources for what was captured. And you",
+    "start": 653.839,
+    "duration": 4.401
+  },
+  {
+    "text": "can then take this map and just turn it",
+    "start": 655.839,
+    "duration": 4.321
+  },
+  {
+    "text": "into a spec in the regular way. What",
+    "start": 658.24,
+    "duration": 3.52
+  },
+  {
+    "text": "I've found that instead of having the",
+    "start": 660.16,
+    "duration": 3.76
+  },
+  {
+    "text": "kind of anxiety of managing my session",
+    "start": 661.76,
+    "duration": 3.92
+  },
+  {
+    "text": "with Grill with Docs, having to hand",
+    "start": 663.92,
+    "duration": 3.84
+  },
+  {
+    "text": "off, worry about the smart zone, with",
+    "start": 665.68,
+    "duration": 4.159
+  },
+  {
+    "text": "Wayfinder, it's kind of all managed for",
+    "start": 667.76,
+    "duration": 4.48
+  },
+  {
+    "text": "me, I just get to close a session, open",
+    "start": 669.839,
+    "duration": 4.56
+  },
+  {
+    "text": "up the next Wayfinder ticket. It's all",
+    "start": 672.24,
+    "duration": 3.92
+  },
+  {
+    "text": "saved in GitHub, so it's collaborative.",
+    "start": 674.399,
+    "duration": 3.601
+  },
+  {
+    "text": "You can share it across your team. And",
+    "start": 676.16,
+    "duration": 3.2
+  },
+  {
+    "text": "once the map is done, once it's",
+    "start": 678,
+    "duration": 3.2
+  },
+  {
+    "text": "complete, you just go to to spec and",
+    "start": 679.36,
+    "duration": 3.039
+  },
+  {
+    "text": "you're good to go. To support the",
+    "start": 681.2,
+    "duration": 3.52
+  },
+  {
+    "text": "wayfinder skill, we have a new research",
+    "start": 682.399,
+    "duration": 5.041
+  },
+  {
+    "text": "skill which is very small, very handy",
+    "start": 684.72,
+    "duration": 4.72
+  },
+  {
+    "text": "for when you just need to do a research",
+    "start": 687.44,
+    "duration": 4.639
+  },
+  {
+    "text": "session or it kind of influences the",
+    "start": 689.44,
+    "duration": 4.48
+  },
+  {
+    "text": "model in researching in the right way as",
+    "start": 692.079,
+    "duration": 3.521
+  },
+  {
+    "text": "well or at least the way that I like.",
+    "start": 693.92,
+    "duration": 3.2
+  },
+  {
+    "text": "Spins up a background agent to do the",
+    "start": 695.6,
+    "duration": 2.88
+  },
+  {
+    "text": "research so you keep working while it",
+    "start": 697.12,
+    "duration": 3.12
+  },
+  {
+    "text": "reads. Investigate the question against",
+    "start": 698.48,
+    "duration": 3.44
+  },
+  {
+    "text": "primary sources. Write the findings to a",
+    "start": 700.24,
+    "duration": 3.599
+  },
+  {
+    "text": "simple markdown file and save it where",
+    "start": 701.92,
+    "duration": 3.84
+  },
+  {
+    "text": "the repo already keeps such notes match",
+    "start": 703.839,
+    "duration": 3.361
+  },
+  {
+    "text": "the existing convention. So this is",
+    "start": 705.76,
+    "duration": 3.04
+  },
+  {
+    "text": "useful too if you need to do any",
+    "start": 707.2,
+    "duration": 2.96
+  },
+  {
+    "text": "research. you can just invoke the",
+    "start": 708.8,
+    "duration": 3.12
+  },
+  {
+    "text": "research skill and you're good to go.",
+    "start": 710.16,
+    "duration": 3.44
+  },
+  {
+    "text": "The next one, of course, is the",
+    "start": 711.92,
+    "duration": 4
+  },
+  {
+    "text": "prototype, which I've kind of shown off",
+    "start": 713.6,
+    "duration": 3.6
+  },
+  {
+    "text": "a little bit before. I don't think I've",
+    "start": 715.92,
+    "duration": 3.12
+  },
+  {
+    "text": "done a full video on it. This is now",
+    "start": 717.2,
+    "duration": 3.84
+  },
+  {
+    "text": "model invoked so that Wayfinder can",
+    "start": 719.04,
+    "duration": 4.4
+  },
+  {
+    "text": "invoke itself and it essentially gives",
+    "start": 721.04,
+    "duration": 5.68
+  },
+  {
+    "text": "you a choice between logic or state. So,",
+    "start": 723.44,
+    "duration": 6.639
+  },
+  {
+    "text": "it's either a logic prototype or a UI",
+    "start": 726.72,
+    "duration": 5.359
+  },
+  {
+    "text": "prototype, and they react quite",
+    "start": 730.079,
+    "duration": 3.2
+  },
+  {
+    "text": "differently. The final change is",
+    "start": 732.079,
+    "duration": 2.641
+  },
+  {
+    "text": "something that people have been asking",
+    "start": 733.279,
+    "duration": 3.601
+  },
+  {
+    "text": "for for a while and I finally decided to",
+    "start": 734.72,
+    "duration": 3.919
+  },
+  {
+    "text": "pull the trigger on it which is before",
+    "start": 736.88,
+    "duration": 4.399
+  },
+  {
+    "text": "in my TDD skill it would recommend a set",
+    "start": 738.639,
+    "duration": 4.961
+  },
+  {
+    "text": "of steps for you to follow and that was",
+    "start": 741.279,
+    "duration": 4.481
+  },
+  {
+    "text": "a little bit awkward sometimes. the",
+    "start": 743.6,
+    "duration": 4.239
+  },
+  {
+    "text": "steps were like it would confirm what",
+    "start": 745.76,
+    "duration": 4.72
+  },
+  {
+    "text": "tests it wanted to write with you and",
+    "start": 747.839,
+    "duration": 4.401
+  },
+  {
+    "text": "then you would you know walk it through",
+    "start": 750.48,
+    "duration": 4.4
+  },
+  {
+    "text": "walk it through and it didn't fit with",
+    "start": 752.24,
+    "duration": 5.76
+  },
+  {
+    "text": "most people's uh idea of how TDD should",
+    "start": 754.88,
+    "duration": 5.199
+  },
+  {
+    "text": "work which is you should be able to pass",
+    "start": 758,
+    "duration": 5.2
+  },
+  {
+    "text": "an AFK agent the TDD skill and it should",
+    "start": 760.079,
+    "duration": 5.76
+  },
+  {
+    "text": "just work and so this TDD skill is now",
+    "start": 763.2,
+    "duration": 4.879
+  },
+  {
+    "text": "reference material only so it doesn't",
+    "start": 765.839,
+    "duration": 4.961
+  },
+  {
+    "text": "specify any particular steps apart from",
+    "start": 768.079,
+    "duration": 4.481
+  },
+  {
+    "text": "just the order in which you should write",
+    "start": 770.8,
+    "duration": 4.32
+  },
+  {
+    "text": "tests in so to do red green refactor so",
+    "start": 772.56,
+    "duration": 4.399
+  },
+  {
+    "text": "It just says red before green one slice",
+    "start": 775.12,
+    "duration": 4.56
+  },
+  {
+    "text": "at a time. And it also splits away uh",
+    "start": 776.959,
+    "duration": 5.68
+  },
+  {
+    "text": "refactoring as as not part of the loop.",
+    "start": 779.68,
+    "duration": 5.2
+  },
+  {
+    "text": "So it's no longer a red green refactor",
+    "start": 782.639,
+    "duration": 5.2
+  },
+  {
+    "text": "loop. It's more just red green. I tend",
+    "start": 784.88,
+    "duration": 5.44
+  },
+  {
+    "text": "to think that putting the refactoring in",
+    "start": 787.839,
+    "duration": 5.281
+  },
+  {
+    "text": "the code review part is a lot more",
+    "start": 790.32,
+    "duration": 4.16
+  },
+  {
+    "text": "productive because then you don't",
+    "start": 793.12,
+    "duration": 4.159
+  },
+  {
+    "text": "overload the implementation. So that is",
+    "start": 794.48,
+    "duration": 5.039
+  },
+  {
+    "text": "all of the changes that have come in on",
+    "start": 797.279,
+    "duration": 5.201
+  },
+  {
+    "text": "the skills. It is a lot of changes. And",
+    "start": 799.519,
+    "duration": 4.641
+  },
+  {
+    "text": "if you're nervous about missing any of",
+    "start": 802.48,
+    "duration": 3.44
+  },
+  {
+    "text": "the updates, then I recommend that you",
+    "start": 804.16,
+    "duration": 4.479
+  },
+  {
+    "text": "clear out all of your skills and do npx",
+    "start": 805.92,
+    "duration": 4.64
+  },
+  {
+    "text": "skills update and grab all of the new",
+    "start": 808.639,
+    "duration": 3.44
+  },
+  {
+    "text": "ones. If you've made updates to your",
+    "start": 810.56,
+    "duration": 2.88
+  },
+  {
+    "text": "skills in the meantime, then you can",
+    "start": 812.079,
+    "duration": 3.2
+  },
+  {
+    "text": "just point your clanker at my repo and",
+    "start": 813.44,
+    "duration": 3.68
+  },
+  {
+    "text": "just say pull down all of the good new",
+    "start": 815.279,
+    "duration": 3.441
+  },
+  {
+    "text": "stuff, especially pointing at the",
+    "start": 817.12,
+    "duration": 3.279
+  },
+  {
+    "text": "release notes. The thing I think this",
+    "start": 818.72,
+    "duration": 3.359
+  },
+  {
+    "text": "release will be remembered for is to",
+    "start": 820.399,
+    "duration": 3.44
+  },
+  {
+    "text": "spec and to tickets changing because",
+    "start": 822.079,
+    "duration": 3.361
+  },
+  {
+    "text": "that is just a little bit of friction,",
+    "start": 823.839,
+    "duration": 3.12
+  },
+  {
+    "text": "but I think good friction because it",
+    "start": 825.44,
+    "duration": 4.32
+  },
+  {
+    "text": "names it properly and I hope to be the",
+    "start": 826.959,
+    "duration": 4.32
+  },
+  {
+    "text": "start of you getting obsessed with",
+    "start": 829.76,
+    "duration": 3.199
+  },
+  {
+    "text": "Wfinder. I'm using Wayfinder for",
+    "start": 831.279,
+    "duration": 3.841
+  },
+  {
+    "text": "literally everything, even non-coding",
+    "start": 832.959,
+    "duration": 3.68
+  },
+  {
+    "text": "stuff. I've actually been planning my",
+    "start": 835.12,
+    "duration": 3.76
+  },
+  {
+    "text": "next course with Wfinder and it's",
+    "start": 836.639,
+    "duration": 3.76
+  },
+  {
+    "text": "really, really good. And in fact, why",
+    "start": 838.88,
+    "duration": 3.6
+  },
+  {
+    "text": "don't I just show you that course now?",
+    "start": 840.399,
+    "duration": 4.721
+  },
+  {
+    "text": "This is the AI coding crash course. This",
+    "start": 842.48,
+    "duration": 4.08
+  },
+  {
+    "text": "is going to be different from the",
+    "start": 845.12,
+    "duration": 3.519
+  },
+  {
+    "text": "cohorts that I usually run. It's going",
+    "start": 846.56,
+    "duration": 4.079
+  },
+  {
+    "text": "to be much much cheaper and it's going",
+    "start": 848.639,
+    "duration": 3.841
+  },
+  {
+    "text": "to be self-paced so you can purchase it",
+    "start": 850.639,
+    "duration": 4
+  },
+  {
+    "text": "anytime. You get help from the Discord",
+    "start": 852.48,
+    "duration": 3.76
+  },
+  {
+    "text": "kind of in the usual way, but it's not",
+    "start": 854.639,
+    "duration": 3.681
+  },
+  {
+    "text": "going to be gated like a normal cohort.",
+    "start": 856.24,
+    "duration": 4.88
+  },
+  {
+    "text": "It is going to be the perfect intro for",
+    "start": 858.32,
+    "duration": 4.8
+  },
+  {
+    "text": "anyone who's looking to get into AI",
+    "start": 861.12,
+    "duration": 4.399
+  },
+  {
+    "text": "coding whether you are a developer or",
+    "start": 863.12,
+    "duration": 4.399
+  },
+  {
+    "text": "whether you are not a developer. So for",
+    "start": 865.519,
+    "duration": 3.521
+  },
+  {
+    "text": "senior engineers, it's going to be a",
+    "start": 867.519,
+    "duration": 3.76
+  },
+  {
+    "text": "conversion course. For folks who are new",
+    "start": 869.04,
+    "duration": 4.08
+  },
+  {
+    "text": "to development, it's going to be the way",
+    "start": 871.279,
+    "duration": 3.68
+  },
+  {
+    "text": "that you can actually get productive",
+    "start": 873.12,
+    "duration": 3.68
+  },
+  {
+    "text": "using these crazy new tools. I've not",
+    "start": 874.959,
+    "duration": 3.68
+  },
+  {
+    "text": "announced a price yet. I am going to",
+    "start": 876.8,
+    "duration": 4.159
+  },
+  {
+    "text": "just be adding signups in here and it",
+    "start": 878.639,
+    "duration": 4.161
+  },
+  {
+    "text": "will be available once I finish filming",
+    "start": 880.959,
+    "duration": 4.56
+  },
+  {
+    "text": "it. Maybe in about uh August time I",
+    "start": 882.8,
+    "duration": 4.24
+  },
+  {
+    "text": "think. But folks, thank you so much for",
+    "start": 885.519,
+    "duration": 2.88
+  },
+  {
+    "text": "watching. It's always a pleasure sharing",
+    "start": 887.04,
+    "duration": 3.599
+  },
+  {
+    "text": "these skills updates with you. It is",
+    "start": 888.399,
+    "duration": 4.56
+  },
+  {
+    "text": "really cool to see the usage just",
+    "start": 890.639,
+    "duration": 4.161
+  },
+  {
+    "text": "absolutely grow and grow. Everyone tells",
+    "start": 892.959,
+    "duration": 3.44
+  },
+  {
+    "text": "me I shouldn't show the star count, but",
+    "start": 894.8,
+    "duration": 4.32
+  },
+  {
+    "text": "it's up to like 160k stars now. There",
+    "start": 896.399,
+    "duration": 5.361
+  },
+  {
+    "text": "are 7 million downloads on Skills.sh. It",
+    "start": 899.12,
+    "duration": 4.64
+  },
+  {
+    "text": "is just bonkers. So, thank you so much",
+    "start": 901.76,
+    "duration": 4.56
+  },
+  {
+    "text": "for enjoying the skills. I hope they are",
+    "start": 903.76,
+    "duration": 4.319
+  },
+  {
+    "text": "helping you ship more and ship more",
+    "start": 906.32,
+    "duration": 5.6
+  },
+  {
+    "text": "productively and I will see you very",
+    "start": 908.079,
+    "duration": 3.841
+  }
+]

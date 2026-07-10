@@ -1,0 +1,1807 @@
+[
+  {
+    "text": "A few weeks ago, I noticed myself doing",
+    "start": 0,
+    "duration": 5.8
+  },
+  {
+    "text": "something with agents that I thought was",
+    "start": 2.12,
+    "duration": 5.72
+  },
+  {
+    "text": "very clever, but I thought it was just",
+    "start": 5.8,
+    "duration": 4.52
+  },
+  {
+    "text": "too simple to require a skill. For those",
+    "start": 7.84,
+    "duration": 4.28
+  },
+  {
+    "text": "who don't know, I'm constantly thinking",
+    "start": 10.32,
+    "duration": 3.52
+  },
+  {
+    "text": "about skills. I'm constantly thinking",
+    "start": 12.12,
+    "duration": 4.32
+  },
+  {
+    "text": "about how to package my instincts and",
+    "start": 13.84,
+    "duration": 4.92
+  },
+  {
+    "text": "coding practices into reusable skills,",
+    "start": 16.44,
+    "duration": 3.92
+  },
+  {
+    "text": "and this has meant my skills repo has",
+    "start": 18.76,
+    "duration": 3.92
+  },
+  {
+    "text": "almost 100,000 stars at the time of",
+    "start": 20.36,
+    "duration": 4.24
+  },
+  {
+    "text": "recording. The skill that I started to",
+    "start": 22.68,
+    "duration": 4.56
+  },
+  {
+    "text": "think about was a handoff [snorts]",
+    "start": 24.6,
+    "duration": 4.36
+  },
+  {
+    "text": "skill. And the theory was that this",
+    "start": 27.24,
+    "duration": 3.8
+  },
+  {
+    "text": "skill would take the context window of",
+    "start": 28.96,
+    "duration": 4.56
+  },
+  {
+    "text": "the current session and compress it down",
+    "start": 31.04,
+    "duration": 4.4
+  },
+  {
+    "text": "into a markdown file that could be",
+    "start": 33.52,
+    "duration": 3.6
+  },
+  {
+    "text": "handed off to another session. And so, a",
+    "start": 35.44,
+    "duration": 3.2
+  },
+  {
+    "text": "couple of weeks ago, I shipped this.",
+    "start": 37.12,
+    "duration": 4.24
+  },
+  {
+    "text": "It's inside skills, inside productivity,",
+    "start": 38.64,
+    "duration": 4.92
+  },
+  {
+    "text": "and it's inside handoff here. And it's a",
+    "start": 41.36,
+    "duration": 4.8
+  },
+  {
+    "text": "very, very simple skill. It says to",
+    "start": 43.56,
+    "duration": 4.52
+  },
+  {
+    "text": "write a handoff document summarizing the",
+    "start": 46.16,
+    "duration": 3.88
+  },
+  {
+    "text": "current conversation so a fresh agent",
+    "start": 48.08,
+    "duration": 3.92
+  },
+  {
+    "text": "can continue the work. Save it to the",
+    "start": 50.04,
+    "duration": 3.6
+  },
+  {
+    "text": "temporary directory of the user's",
+    "start": 52,
+    "duration": 3.28
+  },
+  {
+    "text": "operating system, not the current",
+    "start": 53.64,
+    "duration": 3.36
+  },
+  {
+    "text": "workspace. I put this into my skills",
+    "start": 55.28,
+    "duration": 4
+  },
+  {
+    "text": "folder as an experiment to see how much",
+    "start": 57,
+    "duration": 4.64
+  },
+  {
+    "text": "I would use it. And it turns out I used",
+    "start": 59.28,
+    "duration": 3.92
+  },
+  {
+    "text": "it a lot. In this video, I'm going to",
+    "start": 61.64,
+    "duration": 3.36
+  },
+  {
+    "text": "show you a deep dive of the skill, kind",
+    "start": 63.2,
+    "duration": 3.8
+  },
+  {
+    "text": "of why I designed it, what is the point",
+    "start": 65,
+    "duration": 4.68
+  },
+  {
+    "text": "of it, how it compares to built-in tools",
+    "start": 67,
+    "duration": 4.88
+  },
+  {
+    "text": "in some of these harnesses like compact,",
+    "start": 69.68,
+    "duration": 4.72
+  },
+  {
+    "text": "and also how you can get the most out of",
+    "start": 71.88,
+    "duration": 4.72
+  },
+  {
+    "text": "it to make the most of your grilling",
+    "start": 74.4,
+    "duration": 3.48
+  },
+  {
+    "text": "sessions. And if you dig the kind of",
+    "start": 76.6,
+    "duration": 2.8
+  },
+  {
+    "text": "stuff I've been showing you, then you",
+    "start": 77.88,
+    "duration": 3.44
+  },
+  {
+    "text": "will love the course that I've put",
+    "start": 79.4,
+    "duration": 4.44
+  },
+  {
+    "text": "together, which is AI coding for real",
+    "start": 81.32,
+    "duration": 4.6
+  },
+  {
+    "text": "engineers. A two-week cohort for folks",
+    "start": 83.84,
+    "duration": 4.24
+  },
+  {
+    "text": "who want to use AI coding tools for",
+    "start": 85.92,
+    "duration": 5
+  },
+  {
+    "text": "shipping quality code, not slop. It",
+    "start": 88.08,
+    "duration": 4.24
+  },
+  {
+    "text": "starts on June the 1st. We're doing a",
+    "start": 90.92,
+    "duration": 3.96
+  },
+  {
+    "text": "discount right now. Get into the link",
+    "start": 92.32,
+    "duration": 4.12
+  },
+  {
+    "text": "below so you can check it out. Let's",
+    "start": 94.88,
+    "duration": 3.2
+  },
+  {
+    "text": "start first of all by explaining why I",
+    "start": 96.44,
+    "duration": 4.44
+  },
+  {
+    "text": "made this skill and how it differs from",
+    "start": 98.08,
+    "duration": 4.4
+  },
+  {
+    "text": "compaction, which you may have heard of",
+    "start": 100.88,
+    "duration": 3.68
+  },
+  {
+    "text": "before. When we're inside a session like",
+    "start": 102.48,
+    "duration": 4.44
+  },
+  {
+    "text": "this, a coding session, we essentially,",
+    "start": 104.56,
+    "duration": 4.44
+  },
+  {
+    "text": "as we, you know, converse with the",
+    "start": 106.92,
+    "duration": 3.72
+  },
+  {
+    "text": "agent, as it does tool calls, as it",
+    "start": 109,
+    "duration": 3.56
+  },
+  {
+    "text": "makes file edits, then this context",
+    "start": 110.64,
+    "duration": 3.68
+  },
+  {
+    "text": "window is going to be filled up and",
+    "start": 112.56,
+    "duration": 4.48
+  },
+  {
+    "text": "filled up with more and more stuff in",
+    "start": 114.32,
+    "duration": 4.2
+  },
+  {
+    "text": "it. More and more tokens will fill up",
+    "start": 117.04,
+    "duration": 2.88
+  },
+  {
+    "text": "the context window. Now, in the harness",
+    "start": 118.52,
+    "duration": 3.72
+  },
+  {
+    "text": "I use, Claude code, it's the context",
+    "start": 119.92,
+    "duration": 4.559
+  },
+  {
+    "text": "window is huge, right? You get 1 million",
+    "start": 122.24,
+    "duration": 5.12
+  },
+  {
+    "text": "tokens worth of context window, but",
+    "start": 124.479,
+    "duration": 5.841
+  },
+  {
+    "text": "there is actually a smart zone and a",
+    "start": 127.36,
+    "duration": 4.92
+  },
+  {
+    "text": "dumb zone in these context windows.",
+    "start": 130.32,
+    "duration": 3.68
+  },
+  {
+    "text": "Early on in the context window, you are",
+    "start": 132.28,
+    "duration": 3.28
+  },
+  {
+    "text": "going to get much better performance",
+    "start": 134,
+    "duration": 4.04
+  },
+  {
+    "text": "from the agent because the attention",
+    "start": 135.56,
+    "duration": 5.44
+  },
+  {
+    "text": "relationships are not so strained there.",
+    "start": 138.04,
+    "duration": 5.24
+  },
+  {
+    "text": "Because there's much fewer tokens to",
+    "start": 141,
+    "duration": 4.64
+  },
+  {
+    "text": "calculate, fewer attention relationships",
+    "start": 143.28,
+    "duration": 5.04
+  },
+  {
+    "text": "between those tokens, then the agent's",
+    "start": 145.64,
+    "duration": 4.64
+  },
+  {
+    "text": "attention isn't so diffuse. In other",
+    "start": 148.32,
+    "duration": 4.32
+  },
+  {
+    "text": "words, it's better able to focus when",
+    "start": 150.28,
+    "duration": 4.2
+  },
+  {
+    "text": "there's less content in there. This",
+    "start": 152.64,
+    "duration": 3.44
+  },
+  {
+    "text": "means that as your conversation",
+    "start": 154.48,
+    "duration": 3.68
+  },
+  {
+    "text": "develops, you're going to get dumber and",
+    "start": 156.08,
+    "duration": 3.96
+  },
+  {
+    "text": "dumber and dumber responses from the",
+    "start": 158.16,
+    "duration": 4.32
+  },
+  {
+    "text": "agent all the way up to going up to, you",
+    "start": 160.04,
+    "duration": 5.08
+  },
+  {
+    "text": "know, 800,000 tokens, which personally",
+    "start": 162.48,
+    "duration": 5.36
+  },
+  {
+    "text": "I've never been in because around by the",
+    "start": 165.12,
+    "duration": 6.08
+  },
+  {
+    "text": "120k token mark, I start to feel like",
+    "start": 167.84,
+    "duration": 4.56
+  },
+  {
+    "text": "I'm in the dumb zone. So, this means",
+    "start": 171.2,
+    "duration": 3.2
+  },
+  {
+    "text": "yes, that even though Anthropic",
+    "start": 172.4,
+    "duration": 4.24
+  },
+  {
+    "text": "advertises a ton of context window on",
+    "start": 174.4,
+    "duration": 3.48
+  },
+  {
+    "text": "these models,",
+    "start": 176.64,
+    "duration": 3.44
+  },
+  {
+    "text": "really for, you know, proper smart",
+    "start": 177.88,
+    "duration": 4.92
+  },
+  {
+    "text": "tasks, you've only got about 120k to",
+    "start": 180.08,
+    "duration": 4.48
+  },
+  {
+    "text": "work with, which means you need to",
+    "start": 182.8,
+    "duration": 3.2
+  },
+  {
+    "text": "budget really efficiently and you need",
+    "start": 184.56,
+    "duration": 3.04
+  },
+  {
+    "text": "to be aware of your context window at",
+    "start": 186,
+    "duration": 3
+  },
+  {
+    "text": "all times. So, the question then",
+    "start": 187.6,
+    "duration": 3.12
+  },
+  {
+    "text": "becomes, what do you do when you're",
+    "start": 189,
+    "duration": 4
+  },
+  {
+    "text": "starting to hit up against this dumb",
+    "start": 190.72,
+    "duration": 4.4
+  },
+  {
+    "text": "zone? How do you recover your",
+    "start": 193,
+    "duration": 4.16
+  },
+  {
+    "text": "conversation? How do you continue the",
+    "start": 195.12,
+    "duration": 4.04
+  },
+  {
+    "text": "conversation beyond the dumb zone while",
+    "start": 197.16,
+    "duration": 4.32
+  },
+  {
+    "text": "staying smart? And the answer to that is",
+    "start": 199.16,
+    "duration": 4.6
+  },
+  {
+    "text": "compact. What compact does is it will",
+    "start": 201.48,
+    "duration": 5.039
+  },
+  {
+    "text": "take a large conversation like this and",
+    "start": 203.76,
+    "duration": 5.199
+  },
+  {
+    "text": "summarize it, so you go essentially from",
+    "start": 206.519,
+    "duration": 5.081
+  },
+  {
+    "text": "near to the dumb zone to",
+    "start": 208.959,
+    "duration": 5.401
+  },
+  {
+    "text": "all the way into the smart zone here.",
+    "start": 211.6,
+    "duration": 4.68
+  },
+  {
+    "text": "And there's even sometimes an auto",
+    "start": 214.36,
+    "duration": 4
+  },
+  {
+    "text": "compact buffer depending on what harness",
+    "start": 216.28,
+    "duration": 3.12
+  },
+  {
+    "text": "you're using and whether you've got it",
+    "start": 218.36,
+    "duration": 2.92
+  },
+  {
+    "text": "turned on, which means that when you're",
+    "start": 219.4,
+    "duration": 3.48
+  },
+  {
+    "text": "near to the end of the context window,",
+    "start": 221.28,
+    "duration": 3.52
+  },
+  {
+    "text": "let's say deep in the dumb zone, the",
+    "start": 222.88,
+    "duration": 3.76
+  },
+  {
+    "text": "auto compact buffer will kick in and",
+    "start": 224.8,
+    "duration": 3.439
+  },
+  {
+    "text": "automatically summarize your",
+    "start": 226.64,
+    "duration": 5.12
+  },
+  {
+    "text": "conversation inside a new session. This",
+    "start": 228.239,
+    "duration": 6.041
+  },
+  {
+    "text": "summary usually looks like the files",
+    "start": 231.76,
+    "duration": 4.4
+  },
+  {
+    "text": "reference, so it's just a list of files",
+    "start": 234.28,
+    "duration": 3.36
+  },
+  {
+    "text": "that have been referenced, the things",
+    "start": 236.16,
+    "duration": 3
+  },
+  {
+    "text": "that you said in the conversation are",
+    "start": 237.64,
+    "duration": 4.04
+  },
+  {
+    "text": "usually included, and the general tone",
+    "start": 239.16,
+    "duration": 4.12
+  },
+  {
+    "text": "of the conversation as well. This is",
+    "start": 241.68,
+    "duration": 4
+  },
+  {
+    "text": "then included as a little nugget at the",
+    "start": 243.28,
+    "duration": 4.44
+  },
+  {
+    "text": "start of the new session, and as you",
+    "start": 245.68,
+    "duration": 3.68
+  },
+  {
+    "text": "build up context in the new session,",
+    "start": 247.72,
+    "duration": 3.52
+  },
+  {
+    "text": "then you're continually referencing the",
+    "start": 249.36,
+    "duration": 3.96
+  },
+  {
+    "text": "old session. This means as you continue",
+    "start": 251.24,
+    "duration": 3.84
+  },
+  {
+    "text": "to compact and compact, you're going to",
+    "start": 253.32,
+    "duration": 3.639
+  },
+  {
+    "text": "end up with this kind of sediment of",
+    "start": 255.08,
+    "duration": 3.8
+  },
+  {
+    "text": "different layers here from previous",
+    "start": 256.959,
+    "duration": 4.161
+  },
+  {
+    "text": "conversations. And this can be a little",
+    "start": 258.88,
+    "duration": 4.48
+  },
+  {
+    "text": "bit inefficient, but it's also a decent",
+    "start": 261.12,
+    "duration": 4.56
+  },
+  {
+    "text": "way if you want to do certain types of",
+    "start": 263.36,
+    "duration": 5
+  },
+  {
+    "text": "sessions where you just need to barrel",
+    "start": 265.68,
+    "duration": 4.4
+  },
+  {
+    "text": "on on the same problem again and again",
+    "start": 268.36,
+    "duration": 3.44
+  },
+  {
+    "text": "and again. It can be really useful for",
+    "start": 270.08,
+    "duration": 3.96
+  },
+  {
+    "text": "debugging, actually, because you can",
+    "start": 271.8,
+    "duration": 4.32
+  },
+  {
+    "text": "compact all of the other options that",
+    "start": 274.04,
+    "duration": 4.52
+  },
+  {
+    "text": "you've tried, and then continue to try",
+    "start": 276.12,
+    "duration": 4.799
+  },
+  {
+    "text": "different things, hit the barrier, and",
+    "start": 278.56,
+    "duration": 4.68
+  },
+  {
+    "text": "then compact again to just save your",
+    "start": 280.919,
+    "duration": 4.041
+  },
+  {
+    "text": "state, essentially. So, it's a way of",
+    "start": 283.24,
+    "duration": 4.56
+  },
+  {
+    "text": "doing a long-running session, but it's",
+    "start": 284.96,
+    "duration": 5.08
+  },
+  {
+    "text": "only really one session. So, I continue",
+    "start": 287.8,
+    "duration": 4.4
+  },
+  {
+    "text": "to find compact a really, really useful",
+    "start": 290.04,
+    "duration": 4.4
+  },
+  {
+    "text": "tool for creating these long single",
+    "start": 292.2,
+    "duration": 4.4
+  },
+  {
+    "text": "sessions. But what I started to notice",
+    "start": 294.44,
+    "duration": 4.24
+  },
+  {
+    "text": "was I wanted to do other things with",
+    "start": 296.6,
+    "duration": 4.72
+  },
+  {
+    "text": "compact. I wanted to compact into",
+    "start": 298.68,
+    "duration": 4.88
+  },
+  {
+    "text": "another session. For instance, let's say",
+    "start": 301.32,
+    "duration": 4.72
+  },
+  {
+    "text": "I was in one session here, and while I",
+    "start": 303.56,
+    "duration": 4.56
+  },
+  {
+    "text": "was in this session, I noticed a little",
+    "start": 306.04,
+    "duration": 4.16
+  },
+  {
+    "text": "refactoring opportunity. Something that",
+    "start": 308.12,
+    "duration": 4.08
+  },
+  {
+    "text": "was totally out of bounds, out of scope",
+    "start": 310.2,
+    "duration": 3.84
+  },
+  {
+    "text": "for my current session, but I knew I",
+    "start": 312.2,
+    "duration": 3.56
+  },
+  {
+    "text": "would need to get there eventually. So,",
+    "start": 314.04,
+    "duration": 4
+  },
+  {
+    "text": "what were my choices? I could extend my",
+    "start": 315.76,
+    "duration": 4.36
+  },
+  {
+    "text": "current session, but then I would end up",
+    "start": 318.04,
+    "duration": 4.72
+  },
+  {
+    "text": "with this sort of like diluted context,",
+    "start": 320.12,
+    "duration": 4.2
+  },
+  {
+    "text": "where I was half working on one thing,",
+    "start": 322.76,
+    "duration": 3.44
+  },
+  {
+    "text": "half working on the other, and I would",
+    "start": 324.32,
+    "duration": 3.88
+  },
+  {
+    "text": "definitely hit the dumb zone, right? So,",
+    "start": 326.2,
+    "duration": 3.88
+  },
+  {
+    "text": "I probably wouldn't be able to finish my",
+    "start": 328.2,
+    "duration": 4.8
+  },
+  {
+    "text": "initial goal. I could compact, but then",
+    "start": 330.08,
+    "duration": 4.64
+  },
+  {
+    "text": "I would clobber all of the progress that",
+    "start": 333,
+    "duration": 4.48
+  },
+  {
+    "text": "I'd made in my current session, right?",
+    "start": 334.72,
+    "duration": 4.64
+  },
+  {
+    "text": "What I really wanted to do was just say,",
+    "start": 337.48,
+    "duration": 3.88
+  },
+  {
+    "text": "\"Okay, I want to complete this other",
+    "start": 339.36,
+    "duration": 4.559
+  },
+  {
+    "text": "thing in a separate session, and keep my",
+    "start": 341.36,
+    "duration": 4.2
+  },
+  {
+    "text": "current session pure.\" In other words,",
+    "start": 343.919,
+    "duration": 4.001
+  },
+  {
+    "text": "this was what I wanted. I wanted to",
+    "start": 345.56,
+    "duration": 4.44
+  },
+  {
+    "text": "essentially take the context or take",
+    "start": 347.92,
+    "duration": 4.32
+  },
+  {
+    "text": "just the slice that pertains to this",
+    "start": 350,
+    "duration": 4.64
+  },
+  {
+    "text": "extra bug fix, hand it off to another",
+    "start": 352.24,
+    "duration": 4.12
+  },
+  {
+    "text": "session, and then these two could just",
+    "start": 354.64,
+    "duration": 3.76
+  },
+  {
+    "text": "run independently. And so, for a while,",
+    "start": 356.36,
+    "duration": 4
+  },
+  {
+    "text": "what I was doing was saying, \"Okay, take",
+    "start": 358.4,
+    "duration": 3.88
+  },
+  {
+    "text": "the stuff in my current session. I want",
+    "start": 360.36,
+    "duration": 4.32
+  },
+  {
+    "text": "to fix this particular bug. Write me a",
+    "start": 362.28,
+    "duration": 5.12
+  },
+  {
+    "text": "handoff.md document so that I can then",
+    "start": 364.68,
+    "duration": 5.2
+  },
+  {
+    "text": "just pass that into another agent.\" And",
+    "start": 367.4,
+    "duration": 4.04
+  },
+  {
+    "text": "it turned out I was doing this so",
+    "start": 369.88,
+    "duration": 3.4
+  },
+  {
+    "text": "freaking often that I just decided,",
+    "start": 371.44,
+    "duration": 3.8
+  },
+  {
+    "text": "\"Okay, I need a skill for this.\" I most",
+    "start": 373.28,
+    "duration": 4.2
+  },
+  {
+    "text": "often use handoff while I'm grilling",
+    "start": 375.24,
+    "duration": 4.28
+  },
+  {
+    "text": "here. Here, I'm inside a grilling",
+    "start": 377.48,
+    "duration": 3.48
+  },
+  {
+    "text": "session that I did for planning some",
+    "start": 379.52,
+    "duration": 3.399
+  },
+  {
+    "text": "future features for Sandcastle, which is",
+    "start": 380.96,
+    "duration": 4.24
+  },
+  {
+    "text": "my sort of software factory. And what",
+    "start": 382.919,
+    "duration": 3.961
+  },
+  {
+    "text": "you can see here is that I'm kind of",
+    "start": 385.2,
+    "duration": 3.88
+  },
+  {
+    "text": "answering some questions. I'm only in Q2",
+    "start": 386.88,
+    "duration": 3.88
+  },
+  {
+    "text": "of this grilling session, so not a long",
+    "start": 389.08,
+    "duration": 4.08
+  },
+  {
+    "text": "one. And I say here, \"I think in future",
+    "start": 390.76,
+    "duration": 3.96
+  },
+  {
+    "text": "we may want to move the iterations and",
+    "start": 393.16,
+    "duration": 3.36
+  },
+  {
+    "text": "the completion signal onto a separate",
+    "start": 394.72,
+    "duration": 4.84
+  },
+  {
+    "text": "API. In fact, let's hand off that task",
+    "start": 396.52,
+    "duration": 5.24
+  },
+  {
+    "text": "to a separate agent.\" You can see here",
+    "start": 399.56,
+    "duration": 4.44
+  },
+  {
+    "text": "that when I'm defining handoff, when I'm",
+    "start": 401.76,
+    "duration": 5.52
+  },
+  {
+    "text": "saying, I'm saying the reason why I'm",
+    "start": 404,
+    "duration": 5.64
+  },
+  {
+    "text": "handing off and exactly what should be",
+    "start": 407.28,
+    "duration": 4.28
+  },
+  {
+    "text": "in that document. This does two things.",
+    "start": 409.64,
+    "duration": 3.76
+  },
+  {
+    "text": "First of all, it actually sharpens the",
+    "start": 411.56,
+    "duration": 3.88
+  },
+  {
+    "text": "current grilling session I'm on. So, it",
+    "start": 413.4,
+    "duration": 3.64
+  },
+  {
+    "text": "says that given that constraint, Q2",
+    "start": 415.44,
+    "duration": 3.96
+  },
+  {
+    "text": "collapses. So, it doesn't actually like",
+    "start": 417.04,
+    "duration": 4.32
+  },
+  {
+    "text": "it helps my current grilling session",
+    "start": 419.4,
+    "duration": 3.519
+  },
+  {
+    "text": "because I'm saying that's out of scope,",
+    "start": 421.36,
+    "duration": 3.44
+  },
+  {
+    "text": "we'll pick that up somewhere else. It",
+    "start": 422.919,
+    "duration": 4.441
+  },
+  {
+    "text": "then goes and creates a markdown file",
+    "start": 424.8,
+    "duration": 4.76
+  },
+  {
+    "text": "just here with the focus for the next",
+    "start": 427.36,
+    "duration": 3.76
+  },
+  {
+    "text": "session, file a GitHub issue, and",
+    "start": 429.56,
+    "duration": 2.92
+  },
+  {
+    "text": "eventually design for splitting",
+    "start": 431.12,
+    "duration": 2.84
+  },
+  {
+    "text": "iterations and the completion signal",
+    "start": 432.48,
+    "duration": 3.68
+  },
+  {
+    "text": "into a separate API. And then later, I",
+    "start": 433.96,
+    "duration": 5.32
+  },
+  {
+    "text": "just pass this into a another agent in",
+    "start": 436.16,
+    "duration": 4.72
+  },
+  {
+    "text": "order to create the issue. Simple.",
+    "start": 439.28,
+    "duration": 3.84
+  },
+  {
+    "text": "Another pattern that I really strongly",
+    "start": 440.88,
+    "duration": 4.16
+  },
+  {
+    "text": "recommend is handing off during a",
+    "start": 443.12,
+    "duration": 4.76
+  },
+  {
+    "text": "grilling session to prototype. When",
+    "start": 445.04,
+    "duration": 4.68
+  },
+  {
+    "text": "you're grilling, when the agent is",
+    "start": 447.88,
+    "duration": 3.8
+  },
+  {
+    "text": "asking you questions from a grill me or",
+    "start": 449.72,
+    "duration": 3.4
+  },
+  {
+    "text": "grill with docs, which are more of my",
+    "start": 451.68,
+    "duration": 3.48
+  },
+  {
+    "text": "skills, you will often find there's two",
+    "start": 453.12,
+    "duration": 3.4
+  },
+  {
+    "text": "categories of questions you need to",
+    "start": 455.16,
+    "duration": 3.72
+  },
+  {
+    "text": "answer. There are the kind of known",
+    "start": 456.52,
+    "duration": 4.48
+  },
+  {
+    "text": "unknowns, the ones that the agent can",
+    "start": 458.88,
+    "duration": 3.92
+  },
+  {
+    "text": "ask you about, and then there's stuff",
+    "start": 461,
+    "duration": 4.04
+  },
+  {
+    "text": "that you really need to see in code or",
+    "start": 462.8,
+    "duration": 4.24
+  },
+  {
+    "text": "need to see prototyped. This can be",
+    "start": 465.04,
+    "duration": 5.08
+  },
+  {
+    "text": "really true with like UI prototypes or",
+    "start": 467.04,
+    "duration": 4.56
+  },
+  {
+    "text": "complicated bits of logic that you're",
+    "start": 470.12,
+    "duration": 3.2
+  },
+  {
+    "text": "not quite sure how to deal with yet. So,",
+    "start": 471.6,
+    "duration": 3.4
+  },
+  {
+    "text": "in this grilling session, we're down to",
+    "start": 473.32,
+    "duration": 4.24
+  },
+  {
+    "text": "question 13, actually, and we've got a",
+    "start": 475,
+    "duration": 5
+  },
+  {
+    "text": "sort of final uh resolution from the",
+    "start": 477.56,
+    "duration": 5.44
+  },
+  {
+    "text": "agent. And then we can see I say, \"Hand",
+    "start": 480,
+    "duration": 4.76
+  },
+  {
+    "text": "off to prototype the difficult bits",
+    "start": 483,
+    "duration": 3.72
+  },
+  {
+    "text": "here, the window communication, the teal",
+    "start": 484.76,
+    "duration": 3.48
+  },
+  {
+    "text": "draw SDK integration,\" which was",
+    "start": 486.72,
+    "duration": 3.28
+  },
+  {
+    "text": "something I was building at the time. It",
+    "start": 488.24,
+    "duration": 4.28
+  },
+  {
+    "text": "creates the hand off, and then I go and",
+    "start": 490,
+    "duration": 4.44
+  },
+  {
+    "text": "implement the prototype on that branch.",
+    "start": 492.52,
+    "duration": 3.399
+  },
+  {
+    "text": "So, in the prototype session, this ended",
+    "start": 494.44,
+    "duration": 4.28
+  },
+  {
+    "text": "up being a huge session, so 169 K",
+    "start": 495.919,
+    "duration": 5.121
+  },
+  {
+    "text": "tokens, so way bigger than would have",
+    "start": 498.72,
+    "duration": 5.04
+  },
+  {
+    "text": "fit inside the grilling. And what I did",
+    "start": 501.04,
+    "duration": 5.08
+  },
+  {
+    "text": "was I created this prototype of the UI",
+    "start": 503.76,
+    "duration": 3.76
+  },
+  {
+    "text": "and the kind of interaction that I",
+    "start": 506.12,
+    "duration": 4.48
+  },
+  {
+    "text": "wanted to see. And then I said, \"Okay,",
+    "start": 507.52,
+    "duration": 5.199
+  },
+  {
+    "text": "let's hand this off back to the grilling",
+    "start": 510.6,
+    "duration": 4.04
+  },
+  {
+    "text": "session that spawned this. Take all of",
+    "start": 512.719,
+    "duration": 3.161
+  },
+  {
+    "text": "the learnings from the prototype,",
+    "start": 514.64,
+    "duration": 2.88
+  },
+  {
+    "text": "anything that's not directly captured in",
+    "start": 515.88,
+    "duration": 2.88
+  },
+  {
+    "text": "the prototype itself or that's",
+    "start": 517.52,
+    "duration": 3.32
+  },
+  {
+    "text": "non-obvious, give me a handoff document",
+    "start": 518.76,
+    "duration": 4.64
+  },
+  {
+    "text": "that I can pass back to the planner.\"",
+    "start": 520.84,
+    "duration": 4.8
+  },
+  {
+    "text": "This is actually a really common pattern",
+    "start": 523.4,
+    "duration": 4.08
+  },
+  {
+    "text": "that I'm using here, where you have the",
+    "start": 525.64,
+    "duration": 3.64
+  },
+  {
+    "text": "initial session where you do some work,",
+    "start": 527.48,
+    "duration": 3.84
+  },
+  {
+    "text": "you hand off to another session, that",
+    "start": 529.28,
+    "duration": 3.92
+  },
+  {
+    "text": "session then creates another handoff",
+    "start": 531.32,
+    "duration": 4.24
+  },
+  {
+    "text": "document, and then passes it back to the",
+    "start": 533.2,
+    "duration": 4.12
+  },
+  {
+    "text": "original session. It's almost like",
+    "start": 535.56,
+    "duration": 4.279
+  },
+  {
+    "text": "you've done a kind of DIY sub-agent,",
+    "start": 537.32,
+    "duration": 4.16
+  },
+  {
+    "text": "where you're able to use a context",
+    "start": 539.839,
+    "duration": 4.241
+  },
+  {
+    "text": "window for one specific task, compress",
+    "start": 541.48,
+    "duration": 4.52
+  },
+  {
+    "text": "your learnings from that task, and pass",
+    "start": 544.08,
+    "duration": 4.32
+  },
+  {
+    "text": "it back to the parent. Then I was able",
+    "start": 546,
+    "duration": 4
+  },
+  {
+    "text": "to finish the grilling session and",
+    "start": 548.4,
+    "duration": 4.92
+  },
+  {
+    "text": "create some proper PRDs and issues with",
+    "start": 550,
+    "duration": 5.16
+  },
+  {
+    "text": "the prototype in there. So, it's",
+    "start": 553.32,
+    "duration": 5.16
+  },
+  {
+    "text": "incredibly rich pattern for actually",
+    "start": 555.16,
+    "duration": 6.2
+  },
+  {
+    "text": "getting what you need out of AFK agents",
+    "start": 558.48,
+    "duration": 4.84
+  },
+  {
+    "text": "and using prototypes. It's very, very",
+    "start": 561.36,
+    "duration": 3.72
+  },
+  {
+    "text": "cool. It's worth saying, too, that the",
+    "start": 563.32,
+    "duration": 3.32
+  },
+  {
+    "text": "thing that's cool about just using like",
+    "start": 565.08,
+    "duration": 3.32
+  },
+  {
+    "text": "a markdown documents here and not",
+    "start": 566.64,
+    "duration": 4.68
+  },
+  {
+    "text": "relying on kind of native agent stuff is",
+    "start": 568.4,
+    "duration": 4.8
+  },
+  {
+    "text": "that you can have this first session be",
+    "start": 571.32,
+    "duration": 4.32
+  },
+  {
+    "text": "Claude code, but you can just pass this",
+    "start": 573.2,
+    "duration": 4.72
+  },
+  {
+    "text": "to another agent, right? You can pass it",
+    "start": 575.64,
+    "duration": 4.24
+  },
+  {
+    "text": "to Codex or pass it to, you know,",
+    "start": 577.92,
+    "duration": 4.16
+  },
+  {
+    "text": "Copilot CLI, whatever you're using. So,",
+    "start": 579.88,
+    "duration": 3.28
+  },
+  {
+    "text": "if you want to do any kind of",
+    "start": 582.08,
+    "duration": 4.76
+  },
+  {
+    "text": "adversarial review or any kind of, um,",
+    "start": 583.16,
+    "duration": 5.12
+  },
+  {
+    "text": "you know, interaction between different",
+    "start": 586.84,
+    "duration": 3.2
+  },
+  {
+    "text": "coding agents, this is a very, very",
+    "start": 588.28,
+    "duration": 3.4
+  },
+  {
+    "text": "simple way to do it. We should also just",
+    "start": 590.04,
+    "duration": 3.64
+  },
+  {
+    "text": "read through the final bits of the skill",
+    "start": 591.68,
+    "duration": 3.16
+  },
+  {
+    "text": "here just so you understand the",
+    "start": 593.68,
+    "duration": 2.92
+  },
+  {
+    "text": "reasoning behind everything.",
+    "start": 594.84,
+    "duration": 3.84
+  },
+  {
+    "text": "The theory here is include a suggested",
+    "start": 596.6,
+    "duration": 3.96
+  },
+  {
+    "text": "skill section in the document which",
+    "start": 598.68,
+    "duration": 3.24
+  },
+  {
+    "text": "suggests skills that the agent should",
+    "start": 600.56,
+    "duration": 4.84
+  },
+  {
+    "text": "invoke. I added this because sometimes",
+    "start": 601.92,
+    "duration": 5
+  },
+  {
+    "text": "it would",
+    "start": 605.4,
+    "duration": 3.32
+  },
+  {
+    "text": "I use skills to kind of define the",
+    "start": 606.92,
+    "duration": 4.32
+  },
+  {
+    "text": "flavor of that session and so having a",
+    "start": 608.72,
+    "duration": 4.88
+  },
+  {
+    "text": "suggested skill section means that you",
+    "start": 611.24,
+    "duration": 4.04
+  },
+  {
+    "text": "can kind of just paste the handoff",
+    "start": 613.6,
+    "duration": 3.52
+  },
+  {
+    "text": "document into the new session. It will",
+    "start": 615.28,
+    "duration": 4.04
+  },
+  {
+    "text": "invoke the skills needed like grill with",
+    "start": 617.12,
+    "duration": 4.36
+  },
+  {
+    "text": "docs or diagnose or prototype or",
+    "start": 619.32,
+    "duration": 4.28
+  },
+  {
+    "text": "something and then you're kind of good",
+    "start": 621.48,
+    "duration": 3.64
+  },
+  {
+    "text": "to go. So, you don't need to think about",
+    "start": 623.6,
+    "duration": 2.72
+  },
+  {
+    "text": "the skills that you need to use in the",
+    "start": 625.12,
+    "duration": 2.64
+  },
+  {
+    "text": "next session. It's pretty handy. Another",
+    "start": 626.32,
+    "duration": 3.48
+  },
+  {
+    "text": "one is do not duplicate content already",
+    "start": 627.76,
+    "duration": 4.44
+  },
+  {
+    "text": "captured in other artifacts. I would",
+    "start": 629.8,
+    "duration": 4.08
+  },
+  {
+    "text": "often find these handoff documents just",
+    "start": 632.2,
+    "duration": 3.84
+  },
+  {
+    "text": "got really big and they were just",
+    "start": 633.88,
+    "duration": 3.8
+  },
+  {
+    "text": "duplicating stuff that was already",
+    "start": 636.04,
+    "duration": 4.04
+  },
+  {
+    "text": "present either in other markdown files",
+    "start": 637.68,
+    "duration": 4.56
+  },
+  {
+    "text": "or in resources like GitHub issues or",
+    "start": 640.08,
+    "duration": 4.16
+  },
+  {
+    "text": "things like that. So, it's basically",
+    "start": 642.24,
+    "duration": 4.56
+  },
+  {
+    "text": "saying just use pointers instead of, um,",
+    "start": 644.24,
+    "duration": 3.92
+  },
+  {
+    "text": "you know, repeating everything that's in",
+    "start": 646.8,
+    "duration": 3.039
+  },
+  {
+    "text": "the documents. I also really strongly",
+    "start": 648.16,
+    "duration": 3.08
+  },
+  {
+    "text": "believe that you should save these",
+    "start": 649.839,
+    "duration": 3.241
+  },
+  {
+    "text": "handoff files to the temporary directory",
+    "start": 651.24,
+    "duration": 3.92
+  },
+  {
+    "text": "of the user's OS. In other words, these",
+    "start": 653.08,
+    "duration": 4.6
+  },
+  {
+    "text": "handoff files are disposable. They are",
+    "start": 655.16,
+    "duration": 4.24
+  },
+  {
+    "text": "not something to be kept around for a",
+    "start": 657.68,
+    "duration": 4.04
+  },
+  {
+    "text": "long time to rot in your code base's",
+    "start": 659.4,
+    "duration": 4.6
+  },
+  {
+    "text": "documentation. Another one is redact any",
+    "start": 661.72,
+    "duration": 4.08
+  },
+  {
+    "text": "sensitive information, API keys,",
+    "start": 664,
+    "duration": 4.56
+  },
+  {
+    "text": "passwords, or PII. This is, you know,",
+    "start": 665.8,
+    "duration": 4.24
+  },
+  {
+    "text": "pretty essential. You don't want these",
+    "start": 668.56,
+    "duration": 3.36
+  },
+  {
+    "text": "floating around in markdown files in",
+    "start": 670.04,
+    "duration": 3.96
+  },
+  {
+    "text": "just random places. And finally, if the",
+    "start": 671.92,
+    "duration": 3.48
+  },
+  {
+    "text": "user passed arguments, in other words,",
+    "start": 674,
+    "duration": 3.24
+  },
+  {
+    "text": "what the next session will be used for,",
+    "start": 675.4,
+    "duration": 3.439
+  },
+  {
+    "text": "treat those as a description as to what",
+    "start": 677.24,
+    "duration": 2.84
+  },
+  {
+    "text": "the next session will focus on and",
+    "start": 678.839,
+    "duration": 3.121
+  },
+  {
+    "text": "tailor the doc accordingly. I think of",
+    "start": 680.08,
+    "duration": 4.52
+  },
+  {
+    "text": "this is essential for handoff because in",
+    "start": 681.96,
+    "duration": 5.12
+  },
+  {
+    "text": "order to write a decent document, the",
+    "start": 684.6,
+    "duration": 4.56
+  },
+  {
+    "text": "agent needs to know what the next agent",
+    "start": 687.08,
+    "duration": 4.36
+  },
+  {
+    "text": "session is going to focus on. Every time",
+    "start": 689.16,
+    "duration": 4.76
+  },
+  {
+    "text": "I used handoff, I always describe the",
+    "start": 691.44,
+    "duration": 4.88
+  },
+  {
+    "text": "purpose, the reason that we're handing",
+    "start": 693.92,
+    "duration": 4.92
+  },
+  {
+    "text": "off because I just can't see how you",
+    "start": 696.32,
+    "duration": 3.88
+  },
+  {
+    "text": "would write a good handoff document",
+    "start": 698.84,
+    "duration": 3.16
+  },
+  {
+    "text": "otherwise. And of course, dictation",
+    "start": 700.2,
+    "duration": 3.68
+  },
+  {
+    "text": "makes this really easy cuz I just blast",
+    "start": 702,
+    "duration": 3
+  },
+  {
+    "text": "it out and then we're good to go. So,",
+    "start": 703.88,
+    "duration": 3.2
+  },
+  {
+    "text": "there we go. That's handoff. This is an",
+    "start": 705,
+    "duration": 4.36
+  },
+  {
+    "text": "essential skill in my toolkit that, you",
+    "start": 707.08,
+    "duration": 3.72
+  },
+  {
+    "text": "know, just like a lot of my other skills",
+    "start": 709.36,
+    "duration": 3
+  },
+  {
+    "text": "didn't exist but a few weeks ago. If",
+    "start": 710.8,
+    "duration": 2.76
+  },
+  {
+    "text": "you've been enjoying my skills, then you",
+    "start": 712.36,
+    "duration": 3
+  },
+  {
+    "text": "should check out the Cohort course. It",
+    "start": 713.56,
+    "duration": 3.84
+  },
+  {
+    "text": "is an absolute banger. We had about",
+    "start": 715.36,
+    "duration": 4.64
+  },
+  {
+    "text": "2,500 people take it last time and I'm",
+    "start": 717.4,
+    "duration": 4.52
+  },
+  {
+    "text": "expecting, you know, a decent whack this",
+    "start": 720,
+    "duration": 3.92
+  },
+  {
+    "text": "time, too. Other than that, thank you so",
+    "start": 721.92,
+    "duration": 3.88
+  },
+  {
+    "text": "much for watching. My bookshelf behind",
+    "start": 723.92,
+    "duration": 4.04
+  },
+  {
+    "text": "me is filling up with new coding books",
+    "start": 725.8,
+    "duration": 3.28
+  },
+  {
+    "text": "that I'm going to be reading over the",
+    "start": 727.96,
+    "duration": 3.12
+  },
+  {
+    "text": "next couple of weeks. I'm thinking about",
+    "start": 729.08,
+    "duration": 4.04
+  },
+  {
+    "text": "maybe making a sort of what's on my",
+    "start": 731.08,
+    "duration": 4.32
+  },
+  {
+    "text": "bookshelf video of recommended books.",
+    "start": 733.12,
+    "duration": 3.88
+  },
+  {
+    "text": "And I don't know. If you like that, then",
+    "start": 735.4,
+    "duration": 3.12
+  },
+  {
+    "text": "maybe give us a like and a comment or",
+    "start": 737,
+    "duration": 3.6
+  },
+  {
+    "text": "let me know what you want to see next.",
+    "start": 738.52,
+    "duration": 3.56
+  },
+  {
+    "text": "Either way, thanks for watching and I'll",
+    "start": 740.6,
+    "duration": 4.64
+  },
+  {
+    "text": "see you very soon.",
+    "start": 742.08,
+    "duration": 3.16
+  }
+]

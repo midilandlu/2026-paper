@@ -1,0 +1,1337 @@
+[
+  {
+    "text": "Hello friends.",
+    "start": "00:00:00",
+    "end": "00:00:01"
+  },
+  {
+    "text": "I was dearly hoping to be able to come to the AI engineer World's Fair, but family matters have intruded and I'm not able to make it.",
+    "start": "00:00:01",
+    "end": "00:00:08"
+  },
+  {
+    "text": "However, I will not be leaving you empty-handed.",
+    "start": "00:00:08",
+    "end": "00:00:11"
+  },
+  {
+    "text": "I'm going to give you the talk that I would have given in San Francisco.",
+    "start": "00:00:09",
+    "end": "00:00:15"
+  },
+  {
+    "text": "This talk is called the missing manual.",
+    "start": "00:00:15",
+    "end": "00:00:18"
+  },
+  {
+    "text": "How to write great skills.",
+    "start": "00:00:18",
+    "end": "00:00:18"
+  },
+  {
+    "text": "And I think that the ability to distinguish good skills from bad skills is only getting more important.",
+    "start": "00:00:18",
+    "end": "00:00:23"
+  },
+  {
+    "text": "As developers, we seem to be pretty talented at finding different forms of hell for us to go to.",
+    "start": "00:00:23",
+    "end": "00:00:30"
+  },
+  {
+    "text": "In like a few years ago, we had tutorial hell, which is where you would go into a bunch of tutorials trying to learn something, not be able to piece it together and sort of just get into this cycle you couldn't get out of.",
+    "start": "00:00:30",
+    "end": "00:00:41"
+  },
+  {
+    "text": "We had framework hell where every other 10 minutes there was a JavaScript framework being announced and you know, you had to learn the hot new thing all the time.",
+    "start": "00:00:41",
+    "end": "00:00:49"
+  },
+  {
+    "text": "And now I think we have another version of hell which is skill hell.",
+    "start": "00:00:49",
+    "end": "00:00:52"
+  },
+  {
+    "text": "Skill hell is where you have all of these skills available freely available that you can download, contribute to, you can figure out on your own, but you don't really know how the pieces all work together.",
+    "start": "00:00:52",
+    "end": "00:01:03"
+  },
+  {
+    "text": "You can't tell a good skill from a bad skill.",
+    "start": "00:01:03",
+    "end": "00:01:05"
+  },
+  {
+    "text": "And this means that people are trying to piece together these frameworks trying to try everything that's out there all at once.",
+    "start": "00:01:05",
+    "end": "00:01:10"
+  },
+  {
+    "text": "And they sort of can't, or rather, they don't get the results that the skills themselves promise.",
+    "start": "00:01:10",
+    "end": "00:01:16"
+  },
+  {
+    "text": "This is true at an individual level, but it's also true at an organization level, too.",
+    "start": "00:01:16",
+    "end": "00:01:21"
+  },
+  {
+    "text": "Organizations have no way or no understanding on how to build good skills.",
+    "start": "00:01:19",
+    "end": "00:01:24"
+  },
+  {
+    "text": "How to take their operating procedures and turn them into things that an agent can do.",
+    "start": "00:01:24",
+    "end": "00:01:29"
+  },
+  {
+    "text": "And if you don't do that, then it's hard to get the bounty that skills can offer.",
+    "start": "00:01:29",
+    "end": "00:01:35"
+  },
+  {
+    "text": "Just one more skill, bro.",
+    "start": "00:01:35",
+    "end": "00:01:35"
+  },
+  {
+    "text": "That's kind of seems like what we're saying.",
+    "start": "00:01:35",
+    "end": "00:01:38"
+  },
+  {
+    "text": "And I feel a bit of guilt here, too, because we have Matt PCO skills, which is my skills repo, which is one of the most popular engineering skill sets out there.",
+    "start": "00:01:38",
+    "end": "00:01:47"
+  },
+  {
+    "text": "And so I feel like I want to help the people who use my skills get out of skill hell.",
+    "start": "00:01:47",
+    "end": "00:01:51"
+  },
+  {
+    "text": "So how do we do it?",
+    "start": "00:01:50",
+    "end": "00:01:52"
+  },
+  {
+    "text": "How do we get out of this?",
+    "start": "00:01:52",
+    "end": "00:01:52"
+  },
+  {
+    "text": "Well, what is actually missing here?",
+    "start": "00:01:52",
+    "end": "00:01:54"
+  },
+  {
+    "text": "Well, in my opinion, the thing that we're missing is we don't know what makes a skill great.",
+    "start": "00:01:54",
+    "end": "00:01:59"
+  },
+  {
+    "text": "We can't yet look at a skill and go, okay, this skill is doing these good things and these bad things.",
+    "start": "00:01:59",
+    "end": "00:02:04"
+  },
+  {
+    "text": "There's no shared rubric, no framework for looking at a skill and making it better.",
+    "start": "00:02:04",
+    "end": "00:02:09"
+  },
+  {
+    "text": "And so that's what I'm going to give you in this talk.",
+    "start": "00:02:09",
+    "end": "00:02:12"
+  },
+  {
+    "text": "I'm going to give you a skill checklist.",
+    "start": "00:02:12",
+    "end": "00:02:14"
+  },
+  {
+    "text": "A checklist of things you can look at inside the skill to make sure that it's doing what it says it's doing and ways you can improve it, way you can write skills.",
+    "start": "00:02:14",
+    "end": "00:02:20"
+  },
+  {
+    "text": "This checklist looks like this.",
+    "start": "00:02:20",
+    "end": "00:02:24"
+  },
+  {
+    "text": "We start with the trigger of the skill.",
+    "start": "00:02:22",
+    "end": "00:02:26"
+  },
+  {
+    "text": "How the skill is invoked and the decisions that you need to design there.",
+    "start": "00:02:24",
+    "end": "00:02:31"
+  },
+  {
+    "text": "Then the internal structure of the skill, how the skill is actually composed and laid out internally.",
+    "start": "00:02:29",
+    "end": "00:02:36"
+  },
+  {
+    "text": "Then number three is how do you actually steer using the skill?",
+    "start": "00:02:36",
+    "end": "00:02:40"
+  },
+  {
+    "text": "How do you get the skill to tell the agent what to do?",
+    "start": "00:02:40",
+    "end": "00:02:44"
+  },
+  {
+    "text": "And then four, how do you make the skill as small as possible?",
+    "start": "00:02:42",
+    "end": "00:02:46"
+  },
+  {
+    "text": "Because once we've got a working skill, we then need to basically maximize it.",
+    "start": "00:02:46",
+    "end": "00:02:51"
+  },
+  {
+    "text": "Prune out all of the irrelevant stuff, prune out all of the noops.",
+    "start": "00:02:51",
+    "end": "00:02:53"
+  },
+  {
+    "text": "There's one handy advantage of me not being in the room with you, which is you can immediately go and try this out because I've encoded all of this into a new skill in my repo called writing great skills.",
+    "start": "00:02:53",
+    "end": "00:03:03"
+  },
+  {
+    "text": "So, if you've got an immediate use case for this, then just go to this my skills repo.",
+    "start": "00:03:03",
+    "end": "00:03:08"
+  },
+  {
+    "text": "you know, just close this browser, get out of here, and go and use this skill to either improve your skills or write great new ones.",
+    "start": "00:03:08",
+    "end": "00:03:14"
+  },
+  {
+    "text": "But let's start going through the checklist.",
+    "start": "00:03:14",
+    "end": "00:03:17"
+  },
+  {
+    "text": "Then we have number one, the trigger, the way the skill is invoked.",
+    "start": "00:03:17",
+    "end": "00:03:19"
+  },
+  {
+    "text": "And in order to talk about this, I'm actually going to do a bit of comparison here, which is that my skills are often compared to another set of extremely popular engineering skills called superpowers.",
+    "start": "00:03:19",
+    "end": "00:03:29"
+  },
+  {
+    "text": "And I'm really often asked the question, how do your skills compare to superpowers?",
+    "start": "00:03:29",
+    "end": "00:03:33"
+  },
+  {
+    "text": "What's the difference between them?",
+    "start": "00:03:33",
+    "end": "00:03:35"
+  },
+  {
+    "text": "To understand that we need to understand the difference between user invoked and model invoked skills.",
+    "start": "00:03:35",
+    "end": "00:03:40"
+  },
+  {
+    "text": "Anytime you have a skill you can always invoke it manually.",
+    "start": "00:03:40",
+    "end": "00:03:45"
+  },
+  {
+    "text": "So the skill sits on your file system.",
+    "start": "00:03:43",
+    "end": "00:03:47"
+  },
+  {
+    "text": "The agent will just be able to pull up the skill and understand what's in there.",
+    "start": "00:03:45",
+    "end": "00:03:49"
+  },
+  {
+    "text": "And you can always do that by communicating that to the agent.",
+    "start": "00:03:49",
+    "end": "00:03:53"
+  },
+  {
+    "text": "Doesn't always look like this forward slash depending on the harness but that you can always user invoke your skills.",
+    "start": "00:03:53",
+    "end": "00:03:59"
+  },
+  {
+    "text": "Another way that skills can be invoked is by the agent itself.",
+    "start": "00:03:58",
+    "end": "00:04:02"
+  },
+  {
+    "text": "off.",
+    "start": "00:04:02",
+    "end": "00:04:02"
+  },
+  {
+    "text": "These are called model invocable skills or model invoked skills.",
+    "start": "00:04:02",
+    "end": "00:04:06"
+  },
+  {
+    "text": "You can take a description.",
+    "start": "00:04:06",
+    "end": "00:04:07"
+  },
+  {
+    "text": "So the description of the skill always ends up in the agent's context and the agent can look in that and go okay based on that description I'm going to invoke the skill and I end up reading the skill.",
+    "start": "00:04:07",
+    "end": "00:04:20"
+  },
+  {
+    "text": "md file which is where the meat of the skill is into my context window.",
+    "start": "00:04:20",
+    "end": "00:04:23"
+  },
+  {
+    "text": "That's how you invoke a skill.",
+    "start": "00:04:23",
+    "end": "00:04:24"
+  },
+  {
+    "text": "That's what happens when a skill is invoked.",
+    "start": "00:04:24",
+    "end": "00:04:27"
+  },
+  {
+    "text": "So this description serves as a kind of context pointer.",
+    "start": "00:04:27",
+    "end": "00:04:31"
+  },
+  {
+    "text": "It sits in the agents context pointing to another file where the agent can go if it wants more context for that context pointer.",
+    "start": "00:04:31",
+    "end": "00:04:39"
+  },
+  {
+    "text": "You don't need to put it into the agent's context.",
+    "start": "00:04:37",
+    "end": "00:04:41"
+  },
+  {
+    "text": "It can just be invisible from the agent.",
+    "start": "00:04:41",
+    "end": "00:04:44"
+  },
+  {
+    "text": "And that is what we call a user invocable skill.",
+    "start": "00:04:44",
+    "end": "00:04:47"
+  },
+  {
+    "text": "So some skills can only be invoked by the user because they don't have this context pointer.",
+    "start": "00:04:47",
+    "end": "00:04:51"
+  },
+  {
+    "text": "It's optional.",
+    "start": "00:04:51",
+    "end": "00:04:53"
+  },
+  {
+    "text": "For instance, we can see in my codebased design here, this is a model invocable skill.",
+    "start": "00:04:53",
+    "end": "00:04:55"
+  },
+  {
+    "text": "It has a description that ends up in the agents context window.",
+    "start": "00:04:55",
+    "end": "00:05:00"
+  },
+  {
+    "text": "But if we look at my grill me skill instead, we can see it has disable model invocation true.",
+    "start": "00:05:00",
+    "end": "00:05:04"
+  },
+  {
+    "text": "This means that this little description here will only show to the user.",
+    "start": "00:05:04",
+    "end": "00:05:07"
+  },
+  {
+    "text": "It won't be visible to the agent.",
+    "start": "00:05:07",
+    "end": "00:05:11"
+  },
+  {
+    "text": "So this then is tip number one.",
+    "start": "00:05:09",
+    "end": "00:05:13"
+  },
+  {
+    "text": "Decide if your skill is user invoked or model invoked.",
+    "start": "00:05:13",
+    "end": "00:05:14"
+  },
+  {
+    "text": "Now you might think that model invoked skills are better, right?",
+    "start": "00:05:14",
+    "end": "00:05:19"
+  },
+  {
+    "text": "Because either the model can invoke it itself or the user can invoke it.",
+    "start": "00:05:17",
+    "end": "00:05:23"
+  },
+  {
+    "text": "It's more flexible.",
+    "start": "00:05:23",
+    "end": "00:05:22"
+  },
+  {
+    "text": "But every time you add a model invoked skill into your agent's environment, it increases what I'm going to call the context load on that agent, it adds a new description, which is costing you tokens on every request, but also adding a different thing for the agent to think about.",
+    "start": "00:05:22",
+    "end": "00:05:40"
+  },
+  {
+    "text": "So if you have a 100 model invoked skills, that's going to be 100 descriptions inside the context for your agent.",
+    "start": "00:05:40",
+    "end": "00:05:47"
+  },
+  {
+    "text": "So it seems to make sense then to either tamp down the number of model invoked skills or to just use all user invoked skills.",
+    "start": "00:05:47",
+    "end": "00:05:54"
+  },
+  {
+    "text": "But user invoked skills have a different load which is the more user invoked skills you have the higher cognitive load on the user.",
+    "start": "00:05:54",
+    "end": "00:06:01"
+  },
+  {
+    "text": "In other words, the more things the user needs to keep in their head, the more um skill you require from the pilot.",
+    "start": "00:06:01",
+    "end": "00:06:08"
+  },
+  {
+    "text": "And so if we compare Matt Pot skills to superpowers, superpowers is primarily model invoked skills.",
+    "start": "00:06:08",
+    "end": "00:06:14"
+  },
+  {
+    "text": "gives the agent superpowers.",
+    "start": "00:06:14",
+    "end": "00:06:18"
+  },
+  {
+    "text": "Whereas my skills, I much prefer to be in full control.",
+    "start": "00:06:16",
+    "end": "00:06:20"
+  },
+  {
+    "text": "That means I get to keep the context load on the agent as small as possible, but it does impose more of a cognitive load on me.",
+    "start": "00:06:20",
+    "end": "00:06:29"
+  },
+  {
+    "text": "So I need to understand the skills really deeply in order to get the most use out of.",
+    "start": "00:06:29",
+    "end": "00:06:31"
+  },
+  {
+    "text": "So why have I done this?",
+    "start": "00:06:31",
+    "end": "00:06:34"
+  },
+  {
+    "text": "Why did I prefer user invoked skills?",
+    "start": "00:06:34",
+    "end": "00:06:37"
+  },
+  {
+    "text": "Well, every time you have a model invoked skill, it basically you get a cost in unpredictability because every time you have a context pointer pointing from one resource to another, the model may just choose not to follow it.",
+    "start": "00:06:37",
+    "end": "00:06:50"
+  },
+  {
+    "text": "You know, even if it's absolutely perfect for the task, it may just choose not to invoke the skill.",
+    "start": "00:06:50",
+    "end": "00:06:55"
+  },
+  {
+    "text": "I much prefer removing that level of unpredictability, imposing a bit more cognitive load on the user.",
+    "start": "00:06:55",
+    "end": "00:07:02"
+  },
+  {
+    "text": "And what you get is just you you're removing a class of problem from even being a problem because this unpredictability leaves people to need to eval their skills to make sure they're being called at the right time which is uh really nasty and it's a problem that I prefer to avoid.",
+    "start": "00:07:02",
+    "end": "00:07:17"
+  },
+  {
+    "text": "But what I'm hoping to show you here is that model invoke skills and user invoke skills both have their same costs.",
+    "start": "00:07:16",
+    "end": "00:07:24"
+  },
+  {
+    "text": "So it's not an easy decision which one you choose.",
+    "start": "00:07:24",
+    "end": "00:07:25"
+  },
+  {
+    "text": "So that then is the trigger how the skill gets invoked.",
+    "start": "00:07:25",
+    "end": "00:07:29"
+  },
+  {
+    "text": "Now let's talk about the structure.",
+    "start": "00:07:29",
+    "end": "00:07:30"
+  },
+  {
+    "text": "the internal layout of the skill.",
+    "start": "00:07:30",
+    "end": "00:07:32"
+  },
+  {
+    "text": "I think of there as being two main units that you need to put into most skills.",
+    "start": "00:07:32",
+    "end": "00:07:37"
+  },
+  {
+    "text": "These two units are the steps and the reference.",
+    "start": "00:07:37",
+    "end": "00:07:41"
+  },
+  {
+    "text": "The steps are the step-by-step procedure that the skill is going to walk through.",
+    "start": "00:07:41",
+    "end": "00:07:46"
+  },
+  {
+    "text": "And the reference is any supporting information that helps it walk through those steps.",
+    "start": "00:07:46",
+    "end": "00:07:52"
+  },
+  {
+    "text": "You can have skills that have no steps and are only reference.",
+    "start": "00:07:49",
+    "end": "00:07:54"
+  },
+  {
+    "text": "And you can have skills that are no reference and only a set of simple steps to walk through.",
+    "start": "00:07:54",
+    "end": "00:07:59"
+  },
+  {
+    "text": "But if you start thinking of skills as composed of these two units, it really helps just break them down a lot more.",
+    "start": "00:07:59",
+    "end": "00:08:05"
+  },
+  {
+    "text": "If we look at an example, one of my skills called two PRD creates a product requirements document out of the current context window.",
+    "start": "00:08:03",
+    "end": "00:08:11"
+  },
+  {
+    "text": "It's got three steps in it.",
+    "start": "00:08:11",
+    "end": "00:08:13"
+  },
+  {
+    "text": "So it finds the relevant context.",
+    "start": "00:08:13",
+    "end": "00:08:17"
+  },
+  {
+    "text": "It confirms the test seams with the user.",
+    "start": "00:08:17",
+    "end": "00:08:19"
+  },
+  {
+    "text": "So there's like a little human in the loop checkpoint there just to make sure we're not doing anything weird with the testing, which I find really important.",
+    "start": "00:08:17",
+    "end": "00:08:25"
+  },
+  {
+    "text": "And then we write the product requirements document to handle those three steps.",
+    "start": "00:08:24",
+    "end": "00:08:29"
+  },
+  {
+    "text": "We've got two bits of reference material.",
+    "start": "00:08:29",
+    "end": "00:08:32"
+  },
+  {
+    "text": "We've got a little bit of reference on what is a test seam.",
+    "start": "00:08:32",
+    "end": "00:08:36"
+  },
+  {
+    "text": "And then we've got a product requirements document template.",
+    "start": "00:08:34",
+    "end": "00:08:40"
+  },
+  {
+    "text": "So just a literal markdown template which is used to write the PRD.",
+    "start": "00:08:40",
+    "end": "00:08:43"
+  },
+  {
+    "text": "So this is a great way to write a skill from scratch.",
+    "start": "00:08:43",
+    "end": "00:08:47"
+  },
+  {
+    "text": "You work out if you need some steps.",
+    "start": "00:08:45",
+    "end": "00:08:49"
+  },
+  {
+    "text": "Then you write those steps and you work out what reference material those steps need and you put it in a separate little spot in the skill which is for reference material.",
+    "start": "00:08:47",
+    "end": "00:08:55"
+  },
+  {
+    "text": "However, there's a really important constraint that we need to think about which is tip number three.",
+    "start": "00:08:55",
+    "end": "00:09:03"
+  },
+  {
+    "text": "We want to make the main skill.",
+    "start": "00:09:00",
+    "end": "00:09:04"
+  },
+  {
+    "text": "md file as small as possible.",
+    "start": "00:09:04",
+    "end": "00:09:05"
+  },
+  {
+    "text": "Every skill is composed of its description and then a skill.",
+    "start": "00:09:05",
+    "end": "00:09:08"
+  },
+  {
+    "text": "md file and then any reference material that branches off that.",
+    "start": "00:09:08",
+    "end": "00:09:14"
+  },
+  {
+    "text": "And this skill.",
+    "start": "00:09:14",
+    "end": "00:09:12"
+  },
+  {
+    "text": "md file, if we make it small, then we're saving in a bunch of different ways.",
+    "start": "00:09:12",
+    "end": "00:09:17"
+  },
+  {
+    "text": "Smaller skills are just easier to maintain, easier to audit, fewer words to think about.",
+    "start": "00:09:17",
+    "end": "00:09:23"
+  },
+  {
+    "text": "And every time you shave off a word, that is a token shaved.",
+    "start": "00:09:23",
+    "end": "00:09:26"
+  },
+  {
+    "text": "That multiple token shave from your skills cost.",
+    "start": "00:09:26",
+    "end": "00:09:29"
+  },
+  {
+    "text": "So I do believe that small skills are really important both for maintainers and for users.",
+    "start": "00:09:29",
+    "end": "00:09:35"
+  },
+  {
+    "text": "One really useful way you can make your skill smaller is by thinking about the different branches of the skill, the different ways the skill can be used.",
+    "start": "00:09:35",
+    "end": "00:09:43"
+  },
+  {
+    "text": "Because if you have reference material that's only used in one branch, then that's a candidate for being removed from the main skill.",
+    "start": "00:09:42",
+    "end": "00:09:50"
+  },
+  {
+    "text": "md.",
+    "start": "00:09:50",
+    "end": "00:09:50"
+  },
+  {
+    "text": "For instance, if we look at my two PRD here, we have two pieces of reference material.",
+    "start": "00:09:50",
+    "end": "00:09:55"
+  },
+  {
+    "text": "What is a test seam and the PRD template?",
+    "start": "00:09:55",
+    "end": "00:09:58"
+  },
+  {
+    "text": "Well, we need the PRD template every single time because we are always creating a PRD.",
+    "start": "00:09:58",
+    "end": "00:10:03"
+  },
+  {
+    "text": "And we probably also need the what is a test seam information every time because we're always asking about the test seams.",
+    "start": "00:10:01",
+    "end": "00:10:07"
+  },
+  {
+    "text": "So 2P there's only one branch and all the reference material belongs on that branch.",
+    "start": "00:10:07",
+    "end": "00:10:13"
+  },
+  {
+    "text": "So it probably also belongs in the skill.",
+    "start": "00:10:13",
+    "end": "00:10:15"
+  },
+  {
+    "text": "md file.",
+    "start": "00:10:15",
+    "end": "00:10:16"
+  },
+  {
+    "text": "However, if we look at a different skill of mine which is domain modeling, domain modeling does two things.",
+    "start": "00:10:16",
+    "end": "00:10:21"
+  },
+  {
+    "text": "It updates a local glossery called context.",
+    "start": "00:10:21",
+    "end": "00:10:24"
+  },
+  {
+    "text": "md and then it also creates architectural decision records.",
+    "start": "00:10:24",
+    "end": "00:10:29"
+  },
+  {
+    "text": "In other words, it's doing two different things.",
+    "start": "00:10:27",
+    "end": "00:10:30"
+  },
+  {
+    "text": "Or it might actually choose to do neither of these in which case it doesn't need the template and it doesn't need the ADR template either.",
+    "start": "00:10:30",
+    "end": "00:10:38"
+  },
+  {
+    "text": "So in other words, domain modeling has two or maybe three branches.",
+    "start": "00:10:38",
+    "end": "00:10:42"
+  },
+  {
+    "text": "And this means that we don't need to include the ADR template or the context.",
+    "start": "00:10:42",
+    "end": "00:10:47"
+  },
+  {
+    "text": "md template into the main skill.",
+    "start": "00:10:47",
+    "end": "00:10:48"
+  },
+  {
+    "text": "They can be moved into separate zones.",
+    "start": "00:10:48",
+    "end": "00:10:51"
+  },
+  {
+    "text": "The way you do that is you have the skill.",
+    "start": "00:10:51",
+    "end": "00:10:53"
+  },
+  {
+    "text": "md file.",
+    "start": "00:10:53",
+    "end": "00:10:54"
+  },
+  {
+    "text": "Then you put it behind a context pointer and you point the context template to a separate markdown file inside the skills folder.",
+    "start": "00:10:54",
+    "end": "00:11:03"
+  },
+  {
+    "text": "That context pointer literally just says if you need the template or if you need to update the context.",
+    "start": "00:11:01",
+    "end": "00:11:08"
+  },
+  {
+    "text": "md file, go to this file.",
+    "start": "00:11:08",
+    "end": "00:11:08"
+  },
+  {
+    "text": "And I call that an external reference.",
+    "start": "00:11:08",
+    "end": "00:11:11"
+  },
+  {
+    "text": "It's a reference that's external to the skill.",
+    "start": "00:11:11",
+    "end": "00:11:14"
+  },
+  {
+    "text": "md that you can just easily reference.",
+    "start": "00:11:14",
+    "end": "00:11:17"
+  },
+  {
+    "text": "The agent can pull in very easily because it's bundled along with the skill.",
+    "start": "00:11:17",
+    "end": "00:11:20"
+  },
+  {
+    "text": "So this is a technique you can use for making the skill.",
+    "start": "00:11:20",
+    "end": "00:11:23"
+  },
+  {
+    "text": "md as small as possible, which is has so many benefits.",
+    "start": "00:11:23",
+    "end": "00:11:27"
+  },
+  {
+    "text": "Hide branching reference material behind context pointers.",
+    "start": "00:11:27",
+    "end": "00:11:30"
+  },
+  {
+    "text": "In other words, if you feel like your skill is going to be used in lots of different ways, then take the reference material that's relevant for those branches and hide them behind context pointers.",
+    "start": "00:11:30",
+    "end": "00:11:39"
+  },
+  {
+    "text": "So that is structure.",
+    "start": "00:11:39",
+    "end": "00:11:41"
+  },
+  {
+    "text": "We need to think about making the skill.",
+    "start": "00:11:39",
+    "end": "00:11:41"
+  },
+  {
+    "text": "md super duper small.",
+    "start": "00:11:41",
+    "end": "00:11:44"
+  },
+  {
+    "text": "We need to think about the branches in our skill moving material out behind context pointers.",
+    "start": "00:11:44",
+    "end": "00:11:48"
+  },
+  {
+    "text": "And we need to think about steps and reference, which are the two main units inside a skill.",
+    "start": "00:11:48",
+    "end": "00:11:55"
+  },
+  {
+    "text": "Let's go next to steering, the actual ways we get the agent to do what we want it to do.",
+    "start": "00:11:55",
+    "end": "00:12:01"
+  },
+  {
+    "text": "And for me, steering comes down to one really cool technique, which is the kind of main thing I want you to get from this talk.",
+    "start": "00:12:01",
+    "end": "00:12:06"
+  },
+  {
+    "text": "This technique fixes this issue, which is the agent doesn't do what I want.",
+    "start": "00:12:06",
+    "end": "00:12:11"
+  },
+  {
+    "text": "In other words, I specify something in the skill.",
+    "start": "00:12:11",
+    "end": "00:12:14"
+  },
+  {
+    "text": "I think that I've been clear and then it just doesn't do the thing.",
+    "start": "00:12:14",
+    "end": "00:12:17"
+  },
+  {
+    "text": "Now, I think the main reason this happens is because you're not using a technique called leading words.",
+    "start": "00:12:17",
+    "end": "00:12:23"
+  },
+  {
+    "text": "The idea of leading words or lightvert if you like literary theory I suppose is that there are certain words that pack in a bunch of meaning into a very small space.",
+    "start": "00:12:23",
+    "end": "00:12:34"
+  },
+  {
+    "text": "These leading words are really powerful with agents because you put the leading word in the skill itself in the text and then the agent will repeat the leading word back to itself as part of its operations as part of its thinking tokens and as part of its output to you.",
+    "start": "00:12:34",
+    "end": "00:12:50"
+  },
+  {
+    "text": "And then because it's re-emphasizing that word and that word hopefully describes what you want from the agent that then goes and changes its behavior.",
+    "start": "00:12:50",
+    "end": "00:12:58"
+  },
+  {
+    "text": "Let's make this more concrete with an example.",
+    "start": "00:12:58",
+    "end": "00:13:00"
+  },
+  {
+    "text": "So let's imagine that we have a problem which is a classic problem with agents which is that they code layer by layer.",
+    "start": "00:13:00",
+    "end": "00:13:06"
+  },
+  {
+    "text": "In other words, if you give them a big tranch of work to do, they will generally code up all of the database layer, then all of the schemas, then all of the API endpoints, then all of the front end.",
+    "start": "00:13:06",
+    "end": "00:13:17"
+  },
+  {
+    "text": "they don't do the sort of typical um human thing which is to seek feedback early on, get something small working and then expand out from there.",
+    "start": "00:13:17",
+    "end": "00:13:25"
+  },
+  {
+    "text": "Now, we can try to encourage the agent to do that by just saying, you know, don't code layer by layer.",
+    "start": "00:13:25",
+    "end": "00:13:29"
+  },
+  {
+    "text": "Um make sure that you create a small slice first and then go from there.",
+    "start": "00:13:29",
+    "end": "00:13:33"
+  },
+  {
+    "text": "But what if instead we used a leading word?",
+    "start": "00:13:33",
+    "end": "00:13:36"
+  },
+  {
+    "text": "We said vertical slice is our leading word.",
+    "start": "00:13:36",
+    "end": "00:13:40"
+  },
+  {
+    "text": "We want to slice up the work instead of horizontal slices into vertical slices.",
+    "start": "00:13:40",
+    "end": "00:13:44"
+  },
+  {
+    "text": "A vertical slice is a pretty well-known terminology in development.",
+    "start": "00:13:44",
+    "end": "00:13:48"
+  },
+  {
+    "text": "And so this will hopefully trigger the agent's prior, and it will understand what we mean.",
+    "start": "00:13:48",
+    "end": "00:13:53"
+  },
+  {
+    "text": "We don't just have to like have a two-word skill where it just says vertical slice.",
+    "start": "00:13:53",
+    "end": "00:13:57"
+  },
+  {
+    "text": "What we're doing is we're packing lots of meaning into a relatively short phrase that we then repeat throughout the skill.",
+    "start": "00:13:57",
+    "end": "00:14:03"
+  },
+  {
+    "text": "The cool thing about this technique is you can know if it's worked because you say vertical slice in your skill and then you'll notice in the reasoning traces that it's saying, \"Okay, we're going to do this as a thin vertical slice.",
+    "start": "00:14:03",
+    "end": "00:14:14"
+  },
+  {
+    "text": "\" then you should get better implementation plans.",
+    "start": "00:14:14",
+    "end": "00:14:15"
+  },
+  {
+    "text": "Everyone I've explained this technique to sort of feels like, \"Oh yeah, I've been doing that for a while.",
+    "start": "00:14:15",
+    "end": "00:14:22"
+  },
+  {
+    "text": "I've been using these little phrases to try to encourage the agent to do what I want.",
+    "start": "00:14:20",
+    "end": "00:14:25"
+  },
+  {
+    "text": "\" All I'm asking you now is to use those consistently within your skills and watch in the thinking traces as the agent adopts your way of doing it.",
+    "start": "00:14:25",
+    "end": "00:14:36"
+  },
+  {
+    "text": "So often if the agent isn't doing what you want, you need to make your leading words more consistent, more powerful, and look for others because you know, English is a pretty wide API in terms of different functions you can call, different things you can experiment with, and there are many leading word candidates out there, and agents are actually pretty good at helping you think of them.",
+    "start": "00:14:36",
+    "end": "00:14:56"
+  },
+  {
+    "text": "Another little lever you can use with agents is sometimes the agent just doesn't do enough leg work.",
+    "start": "00:14:56",
+    "end": "00:15:04"
+  },
+  {
+    "text": "What I mean by this is that okay, we're on a step, let's say, and maybe the step is to ask clarifying questions or to explore the codebase and the agent just doesn't do enough of it.",
+    "start": "00:15:02",
+    "end": "00:15:14"
+  },
+  {
+    "text": "It doesn't put enough effort into that particular step.",
+    "start": "00:15:14",
+    "end": "00:15:18"
+  },
+  {
+    "text": "A real classic case of this and something that I have found almost everywhere it exists is plan mode.",
+    "start": "00:15:15",
+    "end": "00:15:24"
+  },
+  {
+    "text": "Because in plan mode, we have two steps.",
+    "start": "00:15:22",
+    "end": "00:15:26"
+  },
+  {
+    "text": "We have ask clarifying questions and then create a plan.",
+    "start": "00:15:24",
+    "end": "00:15:28"
+  },
+  {
+    "text": "And what I have found in every single implementation of plan mode I've tried is that ask clarifying questions just, you know, doesn't ever do enough leg work.",
+    "start": "00:15:28",
+    "end": "00:15:38"
+  },
+  {
+    "text": "It sees that its ultimate goal is to create a plan.",
+    "start": "00:15:38",
+    "end": "00:15:39"
+  },
+  {
+    "text": "And so it just does a small amount of leg work with ask clarifying questions, ask you a couple of things, and then eagerly creates the plan.",
+    "start": "00:15:39",
+    "end": "00:15:48"
+  },
+  {
+    "text": "So what was my solution here?",
+    "start": "00:15:48",
+    "end": "00:15:49"
+  },
+  {
+    "text": "Instead of doing plan mode, I instead have a skill called grill with docs, which is kind of my ask clarifying questions phase.",
+    "start": "00:15:49",
+    "end": "00:15:58"
+  },
+  {
+    "text": "And then I split that up into a separate skill.",
+    "start": "00:15:58",
+    "end": "00:15:59"
+  },
+  {
+    "text": "So I split the planning into its own skill.",
+    "start": "00:15:59",
+    "end": "00:16:02"
+  },
+  {
+    "text": "So grill with docs now is its own skill where the agent only sees that part of the process.",
+    "start": "00:16:02",
+    "end": "00:16:09"
+  },
+  {
+    "text": "And then after grill with docs completes, we then go and do two PRD.",
+    "start": "00:16:09",
+    "end": "00:16:12"
+  },
+  {
+    "text": "In other words, we have step one and step two, but the agent only sees one step at a time.",
+    "start": "00:16:12",
+    "end": "00:16:19"
+  },
+  {
+    "text": "So, this is a really cool technique for increasing leg work on the step that you're on by hiding the future goal, hiding the future steps.",
+    "start": "00:16:19",
+    "end": "00:16:27"
+  },
+  {
+    "text": "It's not always necessary to split skills into individual steps, but in particular cases where you really want an extra chunk of leg work.",
+    "start": "00:16:27",
+    "end": "00:16:35"
+  },
+  {
+    "text": "It really there's no technique like it.",
+    "start": "00:16:35",
+    "end": "00:16:38"
+  },
+  {
+    "text": "It works very, very well.",
+    "start": "00:16:38",
+    "end": "00:16:38"
+  },
+  {
+    "text": "So, that is steering.",
+    "start": "00:16:38",
+    "end": "00:16:41"
+  },
+  {
+    "text": "using leading words to capture what you want in small reusable tokens and then making sure that it's doing the right amount of leg work per step.",
+    "start": "00:16:41",
+    "end": "00:16:49"
+  },
+  {
+    "text": "So let's head now into pruning.",
+    "start": "00:16:49",
+    "end": "00:16:50"
+  },
+  {
+    "text": "Now pruning really is just a quickfire set of failure modes, different things that you can get wrong.",
+    "start": "00:16:50",
+    "end": "00:16:58"
+  },
+  {
+    "text": "And the first is fairly obvious is we do not want massive skills.",
+    "start": "00:16:55",
+    "end": "00:17:01"
+  },
+  {
+    "text": "Massive skills are usually a kind of symptom of something else going wrong.",
+    "start": "00:17:01",
+    "end": "00:17:05"
+  },
+  {
+    "text": "So a symptom of one of these other failure modes.",
+    "start": "00:17:05",
+    "end": "00:17:09"
+  },
+  {
+    "text": "And the first one is pretty simple.",
+    "start": "00:17:09",
+    "end": "00:17:10"
+  },
+  {
+    "text": "Don't repeat yourself.",
+    "start": "00:17:10",
+    "end": "00:17:11"
+  },
+  {
+    "text": "You need to make sure you're watching out for duplication.",
+    "start": "00:17:11",
+    "end": "00:17:16"
+  },
+  {
+    "text": "And in general, I like to have every part of the skill to have a single source of truth.",
+    "start": "00:17:16",
+    "end": "00:17:19"
+  },
+  {
+    "text": "In other words, if you have a piece of reference material like the PRD template, let's say, or something even smaller like what is a test seam, you make sure that you don't repeat that in several places or like cover multiple steps in multiple places.",
+    "start": "00:17:19",
+    "end": "00:17:33"
+  },
+  {
+    "text": "Just make sure each part has a single source of truth and you're not repeating yourself even across reference material too.",
+    "start": "00:17:33",
+    "end": "00:17:40"
+  },
+  {
+    "text": "The next way that skills get big is via sediment.",
+    "start": "00:17:40",
+    "end": "00:17:44"
+  },
+  {
+    "text": "And sediment is just a classic thing when people are working on the same set of docs really which is that everyone starts contributing to a shared markdown file.",
+    "start": "00:17:41",
+    "end": "00:17:52"
+  },
+  {
+    "text": "People add their own stuff.",
+    "start": "00:17:52",
+    "end": "00:17:55"
+  },
+  {
+    "text": "They don't feel brave enough to delete and modify anyone else's.",
+    "start": "00:17:55",
+    "end": "00:17:58"
+  },
+  {
+    "text": "And so you just end up with this huge amount of sediment with often irrelevant material for the skill, especially stuff that hasn't been laid out properly.",
+    "start": "00:17:58",
+    "end": "00:18:05"
+  },
+  {
+    "text": "With a skill with a lot of sediment, you really need to look at structure.",
+    "start": "00:18:05",
+    "end": "00:18:08"
+  },
+  {
+    "text": "That's the first thing you need to do.",
+    "start": "00:18:08",
+    "end": "00:18:10"
+  },
+  {
+    "text": "You need to make sure that the stuff that's been added is relevant for all branches.",
+    "start": "00:18:10",
+    "end": "00:18:14"
+  },
+  {
+    "text": "If it's not, then move it into the correct branches.",
+    "start": "00:18:14",
+    "end": "00:18:17"
+  },
+  {
+    "text": "Or if it's just totally irrelevant, maybe just remove it or kill it.",
+    "start": "00:18:17",
+    "end": "00:18:21"
+  },
+  {
+    "text": "Or maybe there's stuff in there that's totally stale, in which case you just need to kill it dead.",
+    "start": "00:18:21",
+    "end": "00:18:24"
+  },
+  {
+    "text": "The next failure mode is really common when an agent writes your skills, which are no ops.",
+    "start": "00:18:24",
+    "end": "00:18:31"
+  },
+  {
+    "text": "So things inside the skill that appear to do something, but don't actually influence the agent's behavior inside the context of the skill.",
+    "start": "00:18:31",
+    "end": "00:18:38"
+  },
+  {
+    "text": "Let's imagine we have an implement skill and we have an entire paragraph of the skill that tells the agent to write a long detailed commit message.",
+    "start": "00:18:38",
+    "end": "00:18:45"
+  },
+  {
+    "text": "What would happen if you just deleted that paragraph?",
+    "start": "00:18:45",
+    "end": "00:18:49"
+  },
+  {
+    "text": "Well, the agent would probably still write a decent like long commit message.",
+    "start": "00:18:49",
+    "end": "00:18:53"
+  },
+  {
+    "text": "People ask me a lot how I get my skills so small and it's just using these techniques, using deletion tests, using um making sure that I compact things into leading words, I don't have anything irrelevant in there, and I don't have any sediment.",
+    "start": "00:18:53",
+    "end": "00:19:08"
+  },
+  {
+    "text": "And that finally brings us to the full sweep of things.",
+    "start": "00:19:06",
+    "end": "00:19:10"
+  },
+  {
+    "text": "Number one, we check the trigger.",
+    "start": "00:19:10",
+    "end": "00:19:12"
+  },
+  {
+    "text": "We make sure that it's firing at the right times.",
+    "start": "00:19:12",
+    "end": "00:19:15"
+  },
+  {
+    "text": "We check whether we're imposing context load or cognitive load.",
+    "start": "00:19:15",
+    "end": "00:19:18"
+  },
+  {
+    "text": "With structure, we think about branches.",
+    "start": "00:19:18",
+    "end": "00:19:20"
+  },
+  {
+    "text": "We think about um structuring things into steps and reference and we make sure that um material that's only relevant for one branch is outside of the main skill.",
+    "start": "00:19:20",
+    "end": "00:19:30"
+  },
+  {
+    "text": "mmd.",
+    "start": "00:19:30",
+    "end": "00:19:31"
+  },
+  {
+    "text": "For steering, we're thinking about condensing text down into leading words and watching those leading words appear in the reasoning traces.",
+    "start": "00:19:29",
+    "end": "00:19:38"
+  },
+  {
+    "text": "And we're also thinking about leg work.",
+    "start": "00:19:38",
+    "end": "00:19:40"
+  },
+  {
+    "text": "Should we break this skill down further to increase its focus on the current phase by hiding the future phrase phase from it?",
+    "start": "00:19:40",
+    "end": "00:19:47"
+  },
+  {
+    "text": "And with pruning, we're doing a final pruning pass over the entire skill, watching out for sediments, watching out for crud, and watching out especially for no ops.",
+    "start": "00:19:47",
+    "end": "00:19:57"
+  },
+  {
+    "text": "Now, all of this stuff, the best way to get started with this framework is inside this skill, inside the writing great skills skill.",
+    "start": "00:19:55",
+    "end": "00:20:03"
+  },
+  {
+    "text": "You can check it out from map.",
+    "start": "00:20:03",
+    "end": "00:20:04"
+  },
+  {
+    "text": "Got skills, download it, uh, use it to improve your own skills and maybe even use it to run over some community uh, authored skills so that you can check that the skills that you're actually pulling in are any good.",
+    "start": "00:20:04",
+    "end": "00:20:16"
+  },
+  {
+    "text": "If you want to follow along with my stuff, then I have a newsletter up on aihero.",
+    "start": "00:20:15",
+    "end": "00:20:19"
+  },
+  {
+    "text": "dev.",
+    "start": "00:20:19",
+    "end": "00:20:19"
+  },
+  {
+    "text": "And my plans for the next few months are to release an AI coding crash course, which is an intro to a lot of the stuff I've been talking about and how you get off the ground working with engineering and AI.",
+    "start": "00:20:19",
+    "end": "00:20:31"
+  },
+  {
+    "text": "I hope that what I've given you is enough to help you escape from skill hell or at least try to make the bitter journey out of there.",
+    "start": "00:20:31",
+    "end": "00:20:39"
+  },
+  {
+    "text": "I'm so sorry not to be able to attend in person, but thanks for watching.",
+    "start": "00:20:38",
+    "end": "00:20:43"
+  },
+  {
+    "text": "I'll see you very",
+    "start": "00:20:43",
+    "end": "00:20:44"
+  }
+]

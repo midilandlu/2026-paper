@@ -1,0 +1,4077 @@
+[
+  {
+    "text": "Hi everyone. My name is Audit,",
+    "start": 1.64,
+    "duration": 4.76
+  },
+  {
+    "text": "pronounced Audit like a tax audit. Um",
+    "start": 3.16,
+    "duration": 5.08
+  },
+  {
+    "text": "and I'm here to talk to you about what",
+    "start": 6.4,
+    "duration": 3.68
+  },
+  {
+    "text": "if the harness mattered more than the",
+    "start": 8.24,
+    "duration": 3.36
+  },
+  {
+    "text": "model?",
+    "start": 10.08,
+    "duration": 3.48
+  },
+  {
+    "text": "A little bit about me first. I'm a staff",
+    "start": 11.6,
+    "duration": 4.8
+  },
+  {
+    "text": "engineer at Etsy. I'm also Etsy's IC",
+    "start": 13.56,
+    "duration": 5.2
+  },
+  {
+    "text": "initiative lead for agent of commerce. I",
+    "start": 16.4,
+    "duration": 3.88
+  },
+  {
+    "text": "wrote Grokking Algorithms, which is an",
+    "start": 18.76,
+    "duration": 3.56
+  },
+  {
+    "text": "illustrated book on algorithms.",
+    "start": 20.28,
+    "duration": 4.64
+  },
+  {
+    "text": "Uh and I also do illustrated posts on",
+    "start": 22.32,
+    "duration": 5.2
+  },
+  {
+    "text": "ducktyped.org.",
+    "start": 24.92,
+    "duration": 4.32
+  },
+  {
+    "text": "Um",
+    "start": 27.52,
+    "duration": 4.48
+  },
+  {
+    "text": "and I want to talk to you about",
+    "start": 29.24,
+    "duration": 4.88
+  },
+  {
+    "text": "what if the harness mattered more than",
+    "start": 32,
+    "duration": 3.32
+  },
+  {
+    "text": "the model?",
+    "start": 34.12,
+    "duration": 3.04
+  },
+  {
+    "text": "By which I mean",
+    "start": 35.32,
+    "duration": 3.24
+  },
+  {
+    "text": "what if we should be paying more",
+    "start": 37.16,
+    "duration": 3.08
+  },
+  {
+    "text": "attention",
+    "start": 38.56,
+    "duration": 5.36
+  },
+  {
+    "text": "to building expertise in harnesses?",
+    "start": 40.24,
+    "duration": 5.56
+  },
+  {
+    "text": "Um",
+    "start": 43.92,
+    "duration": 4.48
+  },
+  {
+    "text": "and my controversial take here is",
+    "start": 45.8,
+    "duration": 4.72
+  },
+  {
+    "text": "I hear a lot of people say, \"Oh, the",
+    "start": 48.4,
+    "duration": 4.04
+  },
+  {
+    "text": "models are so good that you can just",
+    "start": 50.52,
+    "duration": 4.12
+  },
+  {
+    "text": "keep the harness simple. Just give the",
+    "start": 52.44,
+    "duration": 4.12
+  },
+  {
+    "text": "model a few tools and it'll do the",
+    "start": 54.64,
+    "duration": 3.04
+  },
+  {
+    "text": "rest.\"",
+    "start": 56.56,
+    "duration": 3.52
+  },
+  {
+    "text": "And I've been hearing this so often that",
+    "start": 57.68,
+    "duration": 4.28
+  },
+  {
+    "text": "it has now",
+    "start": 60.08,
+    "duration": 4.759
+  },
+  {
+    "text": "uh started becoming the wisdom of the",
+    "start": 61.96,
+    "duration": 4.48
+  },
+  {
+    "text": "tech industry.",
+    "start": 64.839,
+    "duration": 2.961
+  },
+  {
+    "text": "Uh",
+    "start": 66.44,
+    "duration": 3.72
+  },
+  {
+    "text": "to which my answer is, \"Yes,",
+    "start": 67.8,
+    "duration": 4.88
+  },
+  {
+    "text": "but that's moving in the wrong direction",
+    "start": 70.16,
+    "duration": 5.68
+  },
+  {
+    "text": "because that is making us reliant on",
+    "start": 72.68,
+    "duration": 5.84
+  },
+  {
+    "text": "fancy proprietary models that can't be",
+    "start": 75.84,
+    "duration": 3.84
+  },
+  {
+    "text": "run",
+    "start": 78.52,
+    "duration": 2.4
+  },
+  {
+    "text": "locally.",
+    "start": 79.68,
+    "duration": 2.8
+  },
+  {
+    "text": "So, what if we instead talked about the",
+    "start": 80.92,
+    "duration": 3.76
+  },
+  {
+    "text": "other direction? What if we focused on",
+    "start": 82.48,
+    "duration": 4.44
+  },
+  {
+    "text": "open-source models that can be run",
+    "start": 84.68,
+    "duration": 3.4
+  },
+  {
+    "text": "locally?",
+    "start": 86.92,
+    "duration": 3.04
+  },
+  {
+    "text": "What if we focused on building a harness",
+    "start": 88.08,
+    "duration": 4.2
+  },
+  {
+    "text": "that is so good that we can get the",
+    "start": 89.96,
+    "duration": 4.2
+  },
+  {
+    "text": "performance of a cutting-edge model",
+    "start": 92.28,
+    "duration": 4.84
+  },
+  {
+    "text": "through a local open-source model?",
+    "start": 94.16,
+    "duration": 5.8
+  },
+  {
+    "text": "So, what if the harness mattered",
+    "start": 97.12,
+    "duration": 5.16
+  },
+  {
+    "text": "more than the model? What if our focus",
+    "start": 99.96,
+    "duration": 5.28
+  },
+  {
+    "text": "should be on the harness?",
+    "start": 102.28,
+    "duration": 5.12
+  },
+  {
+    "text": "Um how much does a harness matter?",
+    "start": 105.24,
+    "duration": 3.76
+  },
+  {
+    "text": "Right? This is something I have been",
+    "start": 107.4,
+    "duration": 4.72
+  },
+  {
+    "text": "researching a lot in my spare time.",
+    "start": 109,
+    "duration": 4.2
+  },
+  {
+    "text": "Um",
+    "start": 112.12,
+    "duration": 2.56
+  },
+  {
+    "text": "there's a really interesting paper that",
+    "start": 113.2,
+    "duration": 3.68
+  },
+  {
+    "text": "talks about Harness Bench,",
+    "start": 114.68,
+    "duration": 4.24
+  },
+  {
+    "text": "which is a benchmark for harnesses,",
+    "start": 116.88,
+    "duration": 4.16
+  },
+  {
+    "text": "which is something we haven't seen a lot",
+    "start": 118.92,
+    "duration": 3.68
+  },
+  {
+    "text": "of yet.",
+    "start": 121.04,
+    "duration": 2.92
+  },
+  {
+    "text": "Um",
+    "start": 122.6,
+    "duration": 4.28
+  },
+  {
+    "text": "it's got 106 tasks. Um",
+    "start": 123.96,
+    "duration": 4.76
+  },
+  {
+    "text": "it's testing these different models in",
+    "start": 126.88,
+    "duration": 3.48
+  },
+  {
+    "text": "different harnesses.",
+    "start": 128.72,
+    "duration": 3.84
+  },
+  {
+    "text": "Uh but the point is",
+    "start": 130.36,
+    "duration": 5.04
+  },
+  {
+    "text": "that it's running the same setup. It's",
+    "start": 132.56,
+    "duration": 4.88
+  },
+  {
+    "text": "doing the same evaluation,",
+    "start": 135.4,
+    "duration": 4
+  },
+  {
+    "text": "same model,",
+    "start": 137.44,
+    "duration": 5.12
+  },
+  {
+    "text": "but testing different harnesses.",
+    "start": 139.4,
+    "duration": 4.44
+  },
+  {
+    "text": "Um and the results are pretty",
+    "start": 142.56,
+    "duration": 2.48
+  },
+  {
+    "text": "interesting.",
+    "start": 143.84,
+    "duration": 5
+  },
+  {
+    "text": "So, scores range from 52.4%",
+    "start": 145.04,
+    "duration": 6
+  },
+  {
+    "text": "to 76.2%.",
+    "start": 148.84,
+    "duration": 4.8
+  },
+  {
+    "text": "So, more than a 20-point difference,",
+    "start": 151.04,
+    "duration": 5.36
+  },
+  {
+    "text": "and only the harness changed.",
+    "start": 153.64,
+    "duration": 5.16
+  },
+  {
+    "text": "Um and the really interesting thing is",
+    "start": 156.4,
+    "duration": 5.08
+  },
+  {
+    "text": "that for weaker models, the harness",
+    "start": 158.8,
+    "duration": 5.52
+  },
+  {
+    "text": "matters more.",
+    "start": 161.48,
+    "duration": 4.4
+  },
+  {
+    "text": "Um if the harness matters more than the",
+    "start": 164.32,
+    "duration": 3.6
+  },
+  {
+    "text": "model, that's great news.",
+    "start": 165.88,
+    "duration": 5.16
+  },
+  {
+    "text": "Uh because if the model matters more,",
+    "start": 167.92,
+    "duration": 5.039
+  },
+  {
+    "text": "then we're dependent on a handful of",
+    "start": 171.04,
+    "duration": 5
+  },
+  {
+    "text": "companies who are able to build and",
+    "start": 172.959,
+    "duration": 4.961
+  },
+  {
+    "text": "train these models.",
+    "start": 176.04,
+    "duration": 4.04
+  },
+  {
+    "text": "Uh but if the if a good harness can",
+    "start": 177.92,
+    "duration": 4.88
+  },
+  {
+    "text": "compensate, and can make a weaker model",
+    "start": 180.08,
+    "duration": 5
+  },
+  {
+    "text": "perform better,",
+    "start": 182.8,
+    "duration": 4.24
+  },
+  {
+    "text": "then you can build our own harnesses,",
+    "start": 185.08,
+    "duration": 3.439
+  },
+  {
+    "text": "and that's something that any of us can",
+    "start": 187.04,
+    "duration": 2.4
+  },
+  {
+    "text": "do,",
+    "start": 188.519,
+    "duration": 3.481
+  },
+  {
+    "text": "and we don't have to depend on paid",
+    "start": 189.44,
+    "duration": 3.76
+  },
+  {
+    "text": "models.",
+    "start": 192,
+    "duration": 3.959
+  },
+  {
+    "text": "Um so, I have been spending a lot of",
+    "start": 193.2,
+    "duration": 3.88
+  },
+  {
+    "text": "time",
+    "start": 195.959,
+    "duration": 3.241
+  },
+  {
+    "text": "and doing a lot of research specifically",
+    "start": 197.08,
+    "duration": 3.72
+  },
+  {
+    "text": "into",
+    "start": 199.2,
+    "duration": 4.319
+  },
+  {
+    "text": "what would it take to build a really",
+    "start": 200.8,
+    "duration": 4.84
+  },
+  {
+    "text": "good harness.",
+    "start": 203.519,
+    "duration": 3.401
+  },
+  {
+    "text": "Um",
+    "start": 205.64,
+    "duration": 3.36
+  },
+  {
+    "text": "and",
+    "start": 206.92,
+    "duration": 4.52
+  },
+  {
+    "text": "I realized early on that none of the",
+    "start": 209,
+    "duration": 4.72
+  },
+  {
+    "text": "existing tools or frameworks",
+    "start": 211.44,
+    "duration": 5.96
+  },
+  {
+    "text": "of were able to do what I wanted. And I",
+    "start": 213.72,
+    "duration": 6.48
+  },
+  {
+    "text": "realized that what was actually needed",
+    "start": 217.4,
+    "duration": 6.48
+  },
+  {
+    "text": "was a language-level solution. So, this",
+    "start": 220.2,
+    "duration": 6.36
+  },
+  {
+    "text": "is my other controversial take in this",
+    "start": 223.88,
+    "duration": 5.76
+  },
+  {
+    "text": "talk is I think building a good harness",
+    "start": 226.56,
+    "duration": 5.36
+  },
+  {
+    "text": "actually requires language-level",
+    "start": 229.64,
+    "duration": 3.36
+  },
+  {
+    "text": "support.",
+    "start": 231.92,
+    "duration": 3.4
+  },
+  {
+    "text": "Um and this is kind of where my research",
+    "start": 233,
+    "duration": 5.08
+  },
+  {
+    "text": "has gone in the last 6 months and I've",
+    "start": 235.32,
+    "duration": 4.08
+  },
+  {
+    "text": "spent",
+    "start": 238.08,
+    "duration": 2.4
+  },
+  {
+    "text": "a",
+    "start": 239.4,
+    "duration": 3
+  },
+  {
+    "text": "good part of that 6 months",
+    "start": 240.48,
+    "duration": 6.08
+  },
+  {
+    "text": "building a new language called Agency,",
+    "start": 242.4,
+    "duration": 7.96
+  },
+  {
+    "text": "which is a language for building agents.",
+    "start": 246.56,
+    "duration": 5.44
+  },
+  {
+    "text": "Um",
+    "start": 250.36,
+    "duration": 3.16
+  },
+  {
+    "text": "and just to talk about the terminology",
+    "start": 252,
+    "duration": 4.92
+  },
+  {
+    "text": "there real quick because the terms agent",
+    "start": 253.52,
+    "duration": 4.88
+  },
+  {
+    "text": "and harness",
+    "start": 256.92,
+    "duration": 2.879
+  },
+  {
+    "text": "aren't",
+    "start": 258.4,
+    "duration": 3.96
+  },
+  {
+    "text": "super crisp in the industry yet. They're",
+    "start": 259.799,
+    "duration": 5.321
+  },
+  {
+    "text": "not super well defined. Um but in this",
+    "start": 262.36,
+    "duration": 4.559
+  },
+  {
+    "text": "talk I'll kind of use them",
+    "start": 265.12,
+    "duration": 3.68
+  },
+  {
+    "text": "interchangeably. But when I talk about",
+    "start": 266.919,
+    "duration": 4.521
+  },
+  {
+    "text": "the agent, I really mean",
+    "start": 268.8,
+    "duration": 4.72
+  },
+  {
+    "text": "the harness and the model.",
+    "start": 271.44,
+    "duration": 5.2
+  },
+  {
+    "text": "So if you take Claude code for example,",
+    "start": 273.52,
+    "duration": 6.399
+  },
+  {
+    "text": "Claude code is an agent. It uses Opus,",
+    "start": 276.64,
+    "duration": 5.36
+  },
+  {
+    "text": "which is the model, and then everything",
+    "start": 279.919,
+    "duration": 4.281
+  },
+  {
+    "text": "else is the harness.",
+    "start": 282,
+    "duration": 3.48
+  },
+  {
+    "text": "Um",
+    "start": 284.2,
+    "duration": 4.96
+  },
+  {
+    "text": "but you know, when we talk about Agency,",
+    "start": 285.48,
+    "duration": 6.04
+  },
+  {
+    "text": "it's really for building",
+    "start": 289.16,
+    "duration": 4.84
+  },
+  {
+    "text": "agents, but the thing it's providing is",
+    "start": 291.52,
+    "duration": 3.88
+  },
+  {
+    "text": "the harness.",
+    "start": 294,
+    "duration": 2.68
+  },
+  {
+    "text": "Um",
+    "start": 295.4,
+    "duration": 3.76
+  },
+  {
+    "text": "Agency is really good. Uh you know, it's",
+    "start": 296.68,
+    "duration": 4.04
+  },
+  {
+    "text": "still new.",
+    "start": 299.16,
+    "duration": 3.56
+  },
+  {
+    "text": "Building a language is a lot of work and",
+    "start": 300.72,
+    "duration": 4.16
+  },
+  {
+    "text": "it's only 6 months in.",
+    "start": 302.72,
+    "duration": 4.199
+  },
+  {
+    "text": "Uh but",
+    "start": 304.88,
+    "duration": 4.84
+  },
+  {
+    "text": "I love this quote by Alan Kay. Simple",
+    "start": 306.919,
+    "duration": 4.561
+  },
+  {
+    "text": "things should be simple, complex things",
+    "start": 309.72,
+    "duration": 3.24
+  },
+  {
+    "text": "should be possible.",
+    "start": 311.48,
+    "duration": 4.4
+  },
+  {
+    "text": "And that's something I love about Agency",
+    "start": 312.96,
+    "duration": 4.12
+  },
+  {
+    "text": "is that",
+    "start": 315.88,
+    "duration": 3.76
+  },
+  {
+    "text": "I think you know, when people build",
+    "start": 317.08,
+    "duration": 5.56
+  },
+  {
+    "text": "agents, there are a lot of primitives, a",
+    "start": 319.64,
+    "duration": 7
+  },
+  {
+    "text": "lot of things that every agent",
+    "start": 322.64,
+    "duration": 6.64
+  },
+  {
+    "text": "will need to be able to do",
+    "start": 326.64,
+    "duration": 6.16
+  },
+  {
+    "text": "and those things should be simple to do.",
+    "start": 329.28,
+    "duration": 5.88
+  },
+  {
+    "text": "Um and there's a lot of complex things",
+    "start": 332.8,
+    "duration": 4.24
+  },
+  {
+    "text": "that we want to be able to do with",
+    "start": 335.16,
+    "duration": 4.759
+  },
+  {
+    "text": "agents and it should be possible",
+    "start": 337.04,
+    "duration": 5.72
+  },
+  {
+    "text": "to do those things in the framework of",
+    "start": 339.919,
+    "duration": 4.601
+  },
+  {
+    "text": "your choice and with Agency it is",
+    "start": 342.76,
+    "duration": 3.32
+  },
+  {
+    "text": "possible.",
+    "start": 344.52,
+    "duration": 4.12
+  },
+  {
+    "text": "Um",
+    "start": 346.08,
+    "duration": 4.28
+  },
+  {
+    "text": "So now we have a clear goal, which is",
+    "start": 348.64,
+    "duration": 4.48
+  },
+  {
+    "text": "try to build the best possible harness.",
+    "start": 350.36,
+    "duration": 4.56
+  },
+  {
+    "text": "And we have a great tool to do it, which",
+    "start": 353.12,
+    "duration": 3.4
+  },
+  {
+    "text": "is agency.",
+    "start": 354.92,
+    "duration": 3.44
+  },
+  {
+    "text": "Uh so, the rest of this talk I'm going",
+    "start": 356.52,
+    "duration": 4.72
+  },
+  {
+    "text": "to talk about building a coding agent in",
+    "start": 358.36,
+    "duration": 4.2
+  },
+  {
+    "text": "agency.",
+    "start": 361.24,
+    "duration": 4.48
+  },
+  {
+    "text": "And we'll see the same agent evolve over",
+    "start": 362.56,
+    "duration": 5.12
+  },
+  {
+    "text": "seven different examples.",
+    "start": 365.72,
+    "duration": 4.76
+  },
+  {
+    "text": "We'll see the same model, the same task,",
+    "start": 367.68,
+    "duration": 5.92
+  },
+  {
+    "text": "but the harness will improve each time,",
+    "start": 370.48,
+    "duration": 5.92
+  },
+  {
+    "text": "and we'll see the harness improve the",
+    "start": 373.6,
+    "duration": 5.2
+  },
+  {
+    "text": "agent's performance each time.",
+    "start": 376.4,
+    "duration": 3.48
+  },
+  {
+    "text": "Uh",
+    "start": 378.8,
+    "duration": 2.96
+  },
+  {
+    "text": "So, you know, like I said, I've been",
+    "start": 379.88,
+    "duration": 3.88
+  },
+  {
+    "text": "doing a ton of research on this. My",
+    "start": 381.76,
+    "duration": 4.76
+  },
+  {
+    "text": "goals with this talk are to give you",
+    "start": 383.76,
+    "duration": 5.36
+  },
+  {
+    "text": "like the basics of building a harness.",
+    "start": 386.52,
+    "duration": 4.24
+  },
+  {
+    "text": "When we talk about building a good",
+    "start": 389.12,
+    "duration": 4.12
+  },
+  {
+    "text": "harness, what does that mean? You know,",
+    "start": 390.76,
+    "duration": 4.72
+  },
+  {
+    "text": "you're starting from zero, what are the",
+    "start": 393.24,
+    "duration": 3.64
+  },
+  {
+    "text": "basics?",
+    "start": 395.48,
+    "duration": 2.64
+  },
+  {
+    "text": "Um",
+    "start": 396.88,
+    "duration": 4.32
+  },
+  {
+    "text": "I'll cover a good bit about agent safety",
+    "start": 398.12,
+    "duration": 5.56
+  },
+  {
+    "text": "because, you know, when we talk about",
+    "start": 401.2,
+    "duration": 4.36
+  },
+  {
+    "text": "building agents,",
+    "start": 403.68,
+    "duration": 4.28
+  },
+  {
+    "text": "what you really want them to be able to",
+    "start": 405.56,
+    "duration": 6.28
+  },
+  {
+    "text": "do is take action on our behalf. Um But",
+    "start": 407.96,
+    "duration": 7.16
+  },
+  {
+    "text": "the big problem with that is how do you",
+    "start": 411.84,
+    "duration": 6.8
+  },
+  {
+    "text": "get how do you give agent capabilities",
+    "start": 415.12,
+    "duration": 6.2
+  },
+  {
+    "text": "so they can take actions,",
+    "start": 418.64,
+    "duration": 4.2
+  },
+  {
+    "text": "but",
+    "start": 421.32,
+    "duration": 4.04
+  },
+  {
+    "text": "not so much capability that they do",
+    "start": 422.84,
+    "duration": 5.24
+  },
+  {
+    "text": "something unsafe. So, when we talk about",
+    "start": 425.36,
+    "duration": 5.4
+  },
+  {
+    "text": "agent quality and capability, agent",
+    "start": 428.08,
+    "duration": 6.28
+  },
+  {
+    "text": "safety goes hand in hand with that.",
+    "start": 430.76,
+    "duration": 6.88
+  },
+  {
+    "text": "Um At the end, I'll do an introduction",
+    "start": 434.36,
+    "duration": 4.88
+  },
+  {
+    "text": "to some of the more advanced concepts",
+    "start": 437.64,
+    "duration": 4.12
+  },
+  {
+    "text": "like sub-agents and self-optimization.",
+    "start": 439.24,
+    "duration": 5.8
+  },
+  {
+    "text": "I think that's where, you know, more",
+    "start": 441.76,
+    "duration": 4.8
+  },
+  {
+    "text": "interesting things come in, and we",
+    "start": 445.04,
+    "duration": 3.84
+  },
+  {
+    "text": "really start to talk about like",
+    "start": 446.56,
+    "duration": 4.08
+  },
+  {
+    "text": "what are all the possibilities, you",
+    "start": 448.88,
+    "duration": 3.48
+  },
+  {
+    "text": "know, because when you talk about",
+    "start": 450.64,
+    "duration": 3.2
+  },
+  {
+    "text": "building a good harness, there are so",
+    "start": 452.36,
+    "duration": 3.24
+  },
+  {
+    "text": "many things to explore.",
+    "start": 453.84,
+    "duration": 4.44
+  },
+  {
+    "text": "And so, I hope you stick with me till",
+    "start": 455.6,
+    "duration": 5
+  },
+  {
+    "text": "the end there because that's where we",
+    "start": 458.28,
+    "duration": 6.28
+  },
+  {
+    "text": "get into some really interesting stuff.",
+    "start": 460.6,
+    "duration": 3.96
+  },
+  {
+    "text": "Um so this is the code we're going to",
+    "start": 465.4,
+    "duration": 5.76
+  },
+  {
+    "text": "ask our coding agent to edit.",
+    "start": 468.2,
+    "duration": 6.04
+  },
+  {
+    "text": "This is a code to calculate the median",
+    "start": 471.16,
+    "duration": 5.84
+  },
+  {
+    "text": "of an ordered",
+    "start": 474.24,
+    "duration": 5.24
+  },
+  {
+    "text": "list of numbers.",
+    "start": 477,
+    "duration": 3.56
+  },
+  {
+    "text": "Um",
+    "start": 479.48,
+    "duration": 4.6
+  },
+  {
+    "text": "and if it's an odd length list, you just",
+    "start": 480.56,
+    "duration": 5.76
+  },
+  {
+    "text": "take the middle element. If it's an even",
+    "start": 484.08,
+    "duration": 3.64
+  },
+  {
+    "text": "length list,",
+    "start": 486.32,
+    "duration": 4.24
+  },
+  {
+    "text": "you need to take the middle two elements",
+    "start": 487.72,
+    "duration": 5.6
+  },
+  {
+    "text": "and take the mean of those two elements.",
+    "start": 490.56,
+    "duration": 5.24
+  },
+  {
+    "text": "But right now this function doesn't do",
+    "start": 493.32,
+    "duration": 3.44
+  },
+  {
+    "text": "that.",
+    "start": 495.8,
+    "duration": 3.16
+  },
+  {
+    "text": "So there is a bug in this function.",
+    "start": 496.76,
+    "duration": 3.84
+  },
+  {
+    "text": "There's a test",
+    "start": 498.96,
+    "duration": 4.4
+  },
+  {
+    "text": "that shows the failure um",
+    "start": 500.6,
+    "duration": 5.72
+  },
+  {
+    "text": "and we're going to ask our agent",
+    "start": 503.36,
+    "duration": 6.32
+  },
+  {
+    "text": "to fix this code.",
+    "start": 506.32,
+    "duration": 3.36
+  },
+  {
+    "text": "So let's go ahead and start. Let's just",
+    "start": 509.919,
+    "duration": 3.601
+  },
+  {
+    "text": "dive in.",
+    "start": 512.2,
+    "duration": 4
+  },
+  {
+    "text": "Um this is the first example. This is",
+    "start": 513.52,
+    "duration": 4.399
+  },
+  {
+    "text": "agency code now.",
+    "start": 516.2,
+    "duration": 3.399
+  },
+  {
+    "text": "And you'll notice that",
+    "start": 517.919,
+    "duration": 4.8
+  },
+  {
+    "text": "agency looks a lot like TypeScript. It's",
+    "start": 519.599,
+    "duration": 5.441
+  },
+  {
+    "text": "heavily inspired with by TypeScript with",
+    "start": 522.719,
+    "duration": 3.561
+  },
+  {
+    "text": "some",
+    "start": 525.04,
+    "duration": 3.56
+  },
+  {
+    "text": "Python syntax thrown in.",
+    "start": 526.28,
+    "duration": 5.72
+  },
+  {
+    "text": "Um so the entry point is this node main.",
+    "start": 528.6,
+    "duration": 5.6
+  },
+  {
+    "text": "I have a simple prompt. The Python",
+    "start": 532,
+    "duration": 5.44
+  },
+  {
+    "text": "function median in demo/median.py",
+    "start": 534.2,
+    "duration": 6.16
+  },
+  {
+    "text": "has a bug. Please fix the bug.",
+    "start": 537.44,
+    "duration": 4.8
+  },
+  {
+    "text": "And I just passed that prompt into the",
+    "start": 540.36,
+    "duration": 4.32
+  },
+  {
+    "text": "LLM function. I get the result and I",
+    "start": 542.24,
+    "duration": 4.12
+  },
+  {
+    "text": "print the result.",
+    "start": 544.68,
+    "duration": 3.32
+  },
+  {
+    "text": "Um",
+    "start": 546.36,
+    "duration": 2.92
+  },
+  {
+    "text": "And of course this isn't going to work",
+    "start": 548,
+    "duration": 4.2
+  },
+  {
+    "text": "because it can't read or write to this",
+    "start": 549.28,
+    "duration": 6
+  },
+  {
+    "text": "file. So let's run this example",
+    "start": 552.2,
+    "duration": 5.84
+  },
+  {
+    "text": "real quick.",
+    "start": 555.28,
+    "duration": 2.76
+  },
+  {
+    "text": "Okay. So of course as expected it says",
+    "start": 565.52,
+    "duration": 4
+  },
+  {
+    "text": "you know, in order to help me fix the",
+    "start": 568.32,
+    "duration": 4.04
+  },
+  {
+    "text": "bug I'll need to see the existing code.",
+    "start": 569.52,
+    "duration": 3.88
+  },
+  {
+    "text": "Um",
+    "start": 572.36,
+    "duration": 3.56
+  },
+  {
+    "text": "so this is just the model. Very little",
+    "start": 573.4,
+    "duration": 4.32
+  },
+  {
+    "text": "harness and of course it can't do",
+    "start": 575.92,
+    "duration": 4.12
+  },
+  {
+    "text": "anything. So, the most obvious",
+    "start": 577.72,
+    "duration": 3.96
+  },
+  {
+    "text": "improvement",
+    "start": 580.04,
+    "duration": 5.12
+  },
+  {
+    "text": "to any harness is give it some tools.",
+    "start": 581.68,
+    "duration": 5.56
+  },
+  {
+    "text": "So,",
+    "start": 585.16,
+    "duration": 4.32
+  },
+  {
+    "text": "real quick, let's talk about how tools",
+    "start": 587.24,
+    "duration": 5.36
+  },
+  {
+    "text": "work in the agency cuz it's very simple.",
+    "start": 589.48,
+    "duration": 6.4
+  },
+  {
+    "text": "Um I'll define a function. In this case,",
+    "start": 592.6,
+    "duration": 5.68
+  },
+  {
+    "text": "just for an example, I'm going to define",
+    "start": 595.88,
+    "duration": 4.4
+  },
+  {
+    "text": "a greet function",
+    "start": 598.28,
+    "duration": 3.76
+  },
+  {
+    "text": "that greets a user.",
+    "start": 600.28,
+    "duration": 4.08
+  },
+  {
+    "text": "And then I'll make an LLM call that",
+    "start": 602.04,
+    "duration": 4.24
+  },
+  {
+    "text": "says, \"Use your greet tool to greet",
+    "start": 604.36,
+    "duration": 5.52
+  },
+  {
+    "text": "audit.\" And then pass in that tool.",
+    "start": 606.28,
+    "duration": 4.96
+  },
+  {
+    "text": "Um",
+    "start": 609.88,
+    "duration": 3.72
+  },
+  {
+    "text": "and every function can automatically be",
+    "start": 611.24,
+    "duration": 4.8
+  },
+  {
+    "text": "used as a tool in agency. So, there is",
+    "start": 613.6,
+    "duration": 4.4
+  },
+  {
+    "text": "nothing else to do.",
+    "start": 616.04,
+    "duration": 4.96
+  },
+  {
+    "text": "Uh agency creates a JSON schema out of",
+    "start": 618,
+    "duration": 5.12
+  },
+  {
+    "text": "this function and sends it to the LLM",
+    "start": 621,
+    "duration": 3.2
+  },
+  {
+    "text": "call.",
+    "start": 623.12,
+    "duration": 3.24
+  },
+  {
+    "text": "The doc string here will get used as a",
+    "start": 624.2,
+    "duration": 3.72
+  },
+  {
+    "text": "tool description.",
+    "start": 626.36,
+    "duration": 3.84
+  },
+  {
+    "text": "So, let's go ahead and run the second",
+    "start": 627.92,
+    "duration": 4.4
+  },
+  {
+    "text": "example.",
+    "start": 630.2,
+    "duration": 5.6
+  },
+  {
+    "text": "So, NPX agency",
+    "start": 632.32,
+    "duration": 3.48
+  },
+  {
+    "text": "Oops, actually.",
+    "start": 636.28,
+    "duration": 3.16
+  },
+  {
+    "text": "NPX agency example since actually 01",
+    "start": 639.52,
+    "duration": 6.319
+  },
+  {
+    "text": "cuz we're going to talk about tools",
+    "start": 644.28,
+    "duration": 3.4
+  },
+  {
+    "text": "first.",
+    "start": 645.839,
+    "duration": 3.561
+  },
+  {
+    "text": "So, howdy audit?",
+    "start": 647.68,
+    "duration": 6.08
+  },
+  {
+    "text": "And how can we know that it ran that",
+    "start": 649.4,
+    "duration": 7.12
+  },
+  {
+    "text": "tool and then just generate an example,",
+    "start": 653.76,
+    "duration": 5.36
+  },
+  {
+    "text": "right? So, I'll just also show real",
+    "start": 656.52,
+    "duration": 4.16
+  },
+  {
+    "text": "quick.",
+    "start": 659.12,
+    "duration": 3.04
+  },
+  {
+    "text": "Um",
+    "start": 660.68,
+    "duration": 3.6
+  },
+  {
+    "text": "agency writes out logs and has this",
+    "start": 662.16,
+    "duration": 4.96
+  },
+  {
+    "text": "great log viewer built in.",
+    "start": 664.28,
+    "duration": 5.72
+  },
+  {
+    "text": "So, I'll just expand this last run",
+    "start": 667.12,
+    "duration": 5.68
+  },
+  {
+    "text": "and you can see here it's making this",
+    "start": 670,
+    "duration": 4.96
+  },
+  {
+    "text": "tool call to the greet function with",
+    "start": 672.8,
+    "duration": 5.84
+  },
+  {
+    "text": "these parameters. The tool responds by",
+    "start": 674.96,
+    "duration": 6.08
+  },
+  {
+    "text": "returning howdy audit, and the assistant",
+    "start": 678.64,
+    "duration": 4.8
+  },
+  {
+    "text": "just passes that straight back to us.",
+    "start": 681.04,
+    "duration": 5
+  },
+  {
+    "text": "Um",
+    "start": 683.44,
+    "duration": 2.6
+  },
+  {
+    "text": "So,",
+    "start": 686.44,
+    "duration": 5.64
+  },
+  {
+    "text": "that's tools. Now, let's look at using",
+    "start": 688.6,
+    "duration": 5.12
+  },
+  {
+    "text": "the tools",
+    "start": 692.08,
+    "duration": 5.12
+  },
+  {
+    "text": "in Agency. So, again, this is",
+    "start": 693.72,
+    "duration": 5.6
+  },
+  {
+    "text": "you know, the next step of our agent,",
+    "start": 697.2,
+    "duration": 4.2
+  },
+  {
+    "text": "which is give it tools.",
+    "start": 699.32,
+    "duration": 3.76
+  },
+  {
+    "text": "Um",
+    "start": 701.4,
+    "duration": 4.08
+  },
+  {
+    "text": "here is an example where we're giving",
+    "start": 703.08,
+    "duration": 4.92
+  },
+  {
+    "text": "the agent read and write tools.",
+    "start": 705.48,
+    "duration": 4.56
+  },
+  {
+    "text": "Again, read and write are just functions",
+    "start": 708,
+    "duration": 5
+  },
+  {
+    "text": "that are built into Agency, and because",
+    "start": 710.04,
+    "duration": 5.28
+  },
+  {
+    "text": "every function can be used as a tool, I",
+    "start": 713,
+    "duration": 5
+  },
+  {
+    "text": "can just pass this straight to the LLM.",
+    "start": 715.32,
+    "duration": 5.36
+  },
+  {
+    "text": "Uh except",
+    "start": 718,
+    "duration": 6.08
+  },
+  {
+    "text": "giving the agent the ability to read and",
+    "start": 720.68,
+    "duration": 6.08
+  },
+  {
+    "text": "write arbitrary files on our file system",
+    "start": 724.08,
+    "duration": 6.36
+  },
+  {
+    "text": "is really unsafe. So, by default Agency",
+    "start": 726.76,
+    "duration": 6.6
+  },
+  {
+    "text": "won't allow you to do this. Agency has a",
+    "start": 730.44,
+    "duration": 4.4
+  },
+  {
+    "text": "human-in-the-loop feature that would",
+    "start": 733.36,
+    "duration": 4.08
+  },
+  {
+    "text": "require some sort of approval.",
+    "start": 734.84,
+    "duration": 4.4
+  },
+  {
+    "text": "We're not providing it anywhere, so this",
+    "start": 737.44,
+    "duration": 5.32
+  },
+  {
+    "text": "code will crash and print an error. So,",
+    "start": 739.24,
+    "duration": 7.44
+  },
+  {
+    "text": "let me show you what that looks like.",
+    "start": 742.76,
+    "duration": 3.92
+  },
+  {
+    "text": "Great. So, interrupt standard read was",
+    "start": 753.32,
+    "duration": 3.56
+  },
+  {
+    "text": "not handled.",
+    "start": 755.36,
+    "duration": 3
+  },
+  {
+    "text": "Your interrupt message, \"Are you sure",
+    "start": 756.88,
+    "duration": 3.72
+  },
+  {
+    "text": "you want to read this file?\" You can see",
+    "start": 758.36,
+    "duration": 4.76
+  },
+  {
+    "text": "the file name it's trying to read, and",
+    "start": 760.6,
+    "duration": 6.12
+  },
+  {
+    "text": "it's basically telling us that we didn't",
+    "start": 763.12,
+    "duration": 7.16
+  },
+  {
+    "text": "approve this interrupt. And it's giving",
+    "start": 766.72,
+    "duration": 5.84
+  },
+  {
+    "text": "us a pointer to the guide, right? Tells",
+    "start": 770.28,
+    "duration": 4.4
+  },
+  {
+    "text": "us how to use handlers.",
+    "start": 772.56,
+    "duration": 3.56
+  },
+  {
+    "text": "Um",
+    "start": 774.68,
+    "duration": 3.08
+  },
+  {
+    "text": "so",
+    "start": 776.12,
+    "duration": 4.12
+  },
+  {
+    "text": "we started with just a model, we tried",
+    "start": 777.76,
+    "duration": 6.04
+  },
+  {
+    "text": "tools, and the next step is to make the",
+    "start": 780.24,
+    "duration": 6.84
+  },
+  {
+    "text": "tools safe. So, we're going to do",
+    "start": 783.8,
+    "duration": 6.32
+  },
+  {
+    "text": "exactly what that message asked us to do",
+    "start": 787.08,
+    "duration": 5.52
+  },
+  {
+    "text": "and use a handler.",
+    "start": 790.12,
+    "duration": 5.68
+  },
+  {
+    "text": "So, now, here's the same code",
+    "start": 792.6,
+    "duration": 5.08
+  },
+  {
+    "text": "that you know, passing through that read",
+    "start": 795.8,
+    "duration": 3.2
+  },
+  {
+    "text": "and write",
+    "start": 797.68,
+    "duration": 2.92
+  },
+  {
+    "text": "uh those read and write functions as",
+    "start": 799,
+    "duration": 2.72
+  },
+  {
+    "text": "tools.",
+    "start": 800.6,
+    "duration": 3.6
+  },
+  {
+    "text": "Um but now it's wrapped in a handle",
+    "start": 801.72,
+    "duration": 3.72
+  },
+  {
+    "text": "block.",
+    "start": 804.2,
+    "duration": 3.68
+  },
+  {
+    "text": "Uh and it has a handler function down",
+    "start": 805.44,
+    "duration": 3.44
+  },
+  {
+    "text": "here.",
+    "start": 807.88,
+    "duration": 4.64
+  },
+  {
+    "text": "So, now when those tools call or raise",
+    "start": 808.88,
+    "duration": 5.8
+  },
+  {
+    "text": "an interrupt,",
+    "start": 812.52,
+    "duration": 4.16
+  },
+  {
+    "text": "this code is going to execute.",
+    "start": 814.68,
+    "duration": 3.44
+  },
+  {
+    "text": "So, it'll",
+    "start": 816.68,
+    "duration": 3.84
+  },
+  {
+    "text": "print the information about that",
+    "start": 818.12,
+    "duration": 4
+  },
+  {
+    "text": "interrupt.",
+    "start": 820.52,
+    "duration": 2.96
+  },
+  {
+    "text": "Um,",
+    "start": 822.12,
+    "duration": 4.52
+  },
+  {
+    "text": "it'll ask the user for input using the",
+    "start": 823.48,
+    "duration": 5.44
+  },
+  {
+    "text": "built-in input function. And if the user",
+    "start": 826.64,
+    "duration": 3.68
+  },
+  {
+    "text": "approves,",
+    "start": 828.92,
+    "duration": 3.56
+  },
+  {
+    "text": "the tool call is approved.",
+    "start": 830.32,
+    "duration": 3.8
+  },
+  {
+    "text": "And I know I'm saying interrupt, and I'm",
+    "start": 832.48,
+    "duration": 4.4
+  },
+  {
+    "text": "not really defining what that means.",
+    "start": 834.12,
+    "duration": 5.4
+  },
+  {
+    "text": "Um, and I can get to that a little bit",
+    "start": 836.88,
+    "duration": 4.96
+  },
+  {
+    "text": "later, but it's essentially a way to",
+    "start": 839.52,
+    "duration": 5.24
+  },
+  {
+    "text": "pause execution at some point.",
+    "start": 841.84,
+    "duration": 6.84
+  },
+  {
+    "text": "Um, and ask for human input.",
+    "start": 844.76,
+    "duration": 7.36
+  },
+  {
+    "text": "And so, interrupts are a great feature",
+    "start": 848.68,
+    "duration": 6.24
+  },
+  {
+    "text": "in agency, and all the functions in the",
+    "start": 852.12,
+    "duration": 4.8
+  },
+  {
+    "text": "agency standard library",
+    "start": 854.92,
+    "duration": 3
+  },
+  {
+    "text": "that",
+    "start": 856.92,
+    "duration": 4.12
+  },
+  {
+    "text": "mutate code or mutate something, or have",
+    "start": 857.92,
+    "duration": 4.96
+  },
+  {
+    "text": "some sort of destructive action, or read",
+    "start": 861.04,
+    "duration": 4.08
+  },
+  {
+    "text": "sensitive data data,",
+    "start": 862.88,
+    "duration": 3.44
+  },
+  {
+    "text": "all",
+    "start": 865.12,
+    "duration": 4.24
+  },
+  {
+    "text": "throw an interrupt first.",
+    "start": 866.32,
+    "duration": 5.16
+  },
+  {
+    "text": "So,",
+    "start": 869.36,
+    "duration": 4.96
+  },
+  {
+    "text": "here's the safe version of our agent",
+    "start": 871.48,
+    "duration": 4.48
+  },
+  {
+    "text": "where",
+    "start": 874.32,
+    "duration": 4.12
+  },
+  {
+    "text": "the tools",
+    "start": 875.96,
+    "duration": 5.12
+  },
+  {
+    "text": "will raise an interrupt by default,",
+    "start": 878.44,
+    "duration": 4.8
+  },
+  {
+    "text": "and now this code is going to ask the",
+    "start": 881.08,
+    "duration": 4.52
+  },
+  {
+    "text": "user, do you approve?",
+    "start": 883.24,
+    "duration": 6
+  },
+  {
+    "text": "Let's run this example.",
+    "start": 885.6,
+    "duration": 3.64
+  },
+  {
+    "text": "Okay, are you sure you want to read this",
+    "start": 893.96,
+    "duration": 2.36
+  },
+  {
+    "text": "file?",
+    "start": 895.2,
+    "duration": 3.48
+  },
+  {
+    "text": "I'll just say yes.",
+    "start": 896.32,
+    "duration": 4.32
+  },
+  {
+    "text": "You can see it's reading. Now it's",
+    "start": 898.68,
+    "duration": 4.24
+  },
+  {
+    "text": "trying to write to that file. So, you",
+    "start": 900.64,
+    "duration": 3.32
+  },
+  {
+    "text": "know,",
+    "start": 902.92,
+    "duration": 2.955
+  },
+  {
+    "text": "that's an example of",
+    "start": 903.96,
+    "duration": 2.36
+  },
+  {
+    "text": ">> [snorts]",
+    "start": 905.875,
+    "duration": 2.045
+  },
+  {
+    "text": ">> us",
+    "start": 906.32,
+    "duration": 4.76
+  },
+  {
+    "text": "making the agent safer by asking for",
+    "start": 907.92,
+    "duration": 5
+  },
+  {
+    "text": "user input.",
+    "start": 911.08,
+    "duration": 4.08
+  },
+  {
+    "text": "And this is better, and it is safe, but",
+    "start": 912.92,
+    "duration": 4.32
+  },
+  {
+    "text": "it's also very slow.",
+    "start": 915.16,
+    "duration": 4.12
+  },
+  {
+    "text": "So, the next thing we want to do is make",
+    "start": 917.24,
+    "duration": 4.96
+  },
+  {
+    "text": "the agent autonomous,",
+    "start": 919.28,
+    "duration": 5.48
+  },
+  {
+    "text": "while still keeping it safe, and that's",
+    "start": 922.2,
+    "duration": 5.04
+  },
+  {
+    "text": "the tricky part, right? How do you give",
+    "start": 924.76,
+    "duration": 3.4
+  },
+  {
+    "text": "it",
+    "start": 927.24,
+    "duration": 3.32
+  },
+  {
+    "text": "just enough capability",
+    "start": 928.16,
+    "duration": 4.08
+  },
+  {
+    "text": "so that you don't have to manually",
+    "start": 930.56,
+    "duration": 3.32
+  },
+  {
+    "text": "approve",
+    "start": 932.24,
+    "duration": 3.52
+  },
+  {
+    "text": "every single action",
+    "start": 933.88,
+    "duration": 4.6
+  },
+  {
+    "text": "without giving it without giving it so",
+    "start": 935.76,
+    "duration": 4.72
+  },
+  {
+    "text": "much capability that it's like able to",
+    "start": 938.48,
+    "duration": 4.52
+  },
+  {
+    "text": "do something destructive with your file",
+    "start": 940.48,
+    "duration": 3.84
+  },
+  {
+    "text": "system.",
+    "start": 943,
+    "duration": 4.44
+  },
+  {
+    "text": "Um so agency has a really cool feature",
+    "start": 944.32,
+    "duration": 5.36
+  },
+  {
+    "text": "to handle this. It that's called partial",
+    "start": 947.44,
+    "duration": 3.63
+  },
+  {
+    "text": "function application.",
+    "start": 949.68,
+    "duration": 1.68
+  },
+  {
+    "text": ">> [clears throat]",
+    "start": 951.07,
+    "duration": 1.57
+  },
+  {
+    "text": ">> Um",
+    "start": 951.36,
+    "duration": 2.92
+  },
+  {
+    "text": "it's a concept borrowed from functional",
+    "start": 952.64,
+    "duration": 5.68
+  },
+  {
+    "text": "programming. It's a really fancy term",
+    "start": 954.28,
+    "duration": 7.64
+  },
+  {
+    "text": "for a pretty simple concept.",
+    "start": 958.32,
+    "duration": 6.16
+  },
+  {
+    "text": "So, here's a signature of the read tool,",
+    "start": 961.92,
+    "duration": 3.6
+  },
+  {
+    "text": "right?",
+    "start": 964.48,
+    "duration": 3.72
+  },
+  {
+    "text": "Takes a file name and a directory.",
+    "start": 965.52,
+    "duration": 5.44
+  },
+  {
+    "text": "Um and when you read a file, it's going",
+    "start": 968.2,
+    "duration": 5.2
+  },
+  {
+    "text": "to look inside that directory for that",
+    "start": 970.96,
+    "duration": 3.84
+  },
+  {
+    "text": "file name.",
+    "start": 973.4,
+    "duration": 3.68
+  },
+  {
+    "text": "And with partial function application,",
+    "start": 974.8,
+    "duration": 4.44
+  },
+  {
+    "text": "what we do is we take that read function",
+    "start": 977.08,
+    "duration": 5.08
+  },
+  {
+    "text": "and call the partial on it.",
+    "start": 979.24,
+    "duration": 5.28
+  },
+  {
+    "text": "And give it a directory. And what we're",
+    "start": 982.16,
+    "duration": 4.8
+  },
+  {
+    "text": "doing here is we're locking the",
+    "start": 984.52,
+    "duration": 5.28
+  },
+  {
+    "text": "directory argument to demo.",
+    "start": 986.96,
+    "duration": 4
+  },
+  {
+    "text": "Um",
+    "start": 989.8,
+    "duration": 3.08
+  },
+  {
+    "text": "the LLM isn't going to be able to change",
+    "start": 990.96,
+    "duration": 3.28
+  },
+  {
+    "text": "that argument.",
+    "start": 992.88,
+    "duration": 2.8
+  },
+  {
+    "text": "It's not even going to know that that",
+    "start": 994.24,
+    "duration": 3.599
+  },
+  {
+    "text": "argument exists. When we pass in the",
+    "start": 995.68,
+    "duration": 4.32
+  },
+  {
+    "text": "read tool now, it's just going to see",
+    "start": 997.839,
+    "duration": 4.721
+  },
+  {
+    "text": "one parameter, which is file name.",
+    "start": 1000,
+    "duration": 4.839
+  },
+  {
+    "text": "It's going to pass in a file name.",
+    "start": 1002.56,
+    "duration": 5.24
+  },
+  {
+    "text": "And it will read that file from this",
+    "start": 1004.839,
+    "duration": 4.201
+  },
+  {
+    "text": "directory.",
+    "start": 1007.8,
+    "duration": 2.8
+  },
+  {
+    "text": "So, we've locked the directory",
+    "start": 1009.04,
+    "duration": 4.48
+  },
+  {
+    "text": "parameter. Now, the agent can only read",
+    "start": 1010.6,
+    "duration": 4.16
+  },
+  {
+    "text": "files",
+    "start": 1013.52,
+    "duration": 5.2
+  },
+  {
+    "text": "from and write files to this directory.",
+    "start": 1014.76,
+    "duration": 5.4
+  },
+  {
+    "text": "Uh",
+    "start": 1018.72,
+    "duration": 3.52
+  },
+  {
+    "text": "partial function application is a really",
+    "start": 1020.16,
+    "duration": 5.24
+  },
+  {
+    "text": "great way to constrain the capabilities",
+    "start": 1022.24,
+    "duration": 6.36
+  },
+  {
+    "text": "of your agent. Now, no human input is",
+    "start": 1025.4,
+    "duration": 6.64
+  },
+  {
+    "text": "needed, but it's still safe.",
+    "start": 1028.6,
+    "duration": 6.479
+  },
+  {
+    "text": "So, let's see that in So, again, run NPX",
+    "start": 1032.04,
+    "duration": 4.44
+  },
+  {
+    "text": "agency",
+    "start": 1035.079,
+    "duration": 3.521
+  },
+  {
+    "text": "examples.",
+    "start": 1036.48,
+    "duration": 5.359
+  },
+  {
+    "text": "PFA is partial function application.",
+    "start": 1038.6,
+    "duration": 5.04
+  },
+  {
+    "text": "So, here",
+    "start": 1041.839,
+    "duration": 5.201
+  },
+  {
+    "text": "it's thinking and you can see",
+    "start": 1043.64,
+    "duration": 5.28
+  },
+  {
+    "text": "it read the file.",
+    "start": 1047.04,
+    "duration": 4.08
+  },
+  {
+    "text": "Didn't need to ask us for permission.",
+    "start": 1048.92,
+    "duration": 3.44
+  },
+  {
+    "text": "And now it said, you know, to fix this",
+    "start": 1051.12,
+    "duration": 2.84
+  },
+  {
+    "text": "issue, it's kind of giving us a new",
+    "start": 1052.36,
+    "duration": 2.92
+  },
+  {
+    "text": "code.",
+    "start": 1053.96,
+    "duration": 5.16
+  },
+  {
+    "text": "But it's not updating the code. It asks,",
+    "start": 1055.28,
+    "duration": 5.12
+  },
+  {
+    "text": "\"Would you like me to update the file",
+    "start": 1059.12,
+    "duration": 2.6
+  },
+  {
+    "text": "with this corrected function?\" But it",
+    "start": 1060.4,
+    "duration": 4.68
+  },
+  {
+    "text": "didn't do that itself. So,",
+    "start": 1061.72,
+    "duration": 5
+  },
+  {
+    "text": "you know, this",
+    "start": 1065.08,
+    "duration": 3.84
+  },
+  {
+    "text": "version of this agent",
+    "start": 1066.72,
+    "duration": 4.64
+  },
+  {
+    "text": "is the best one we've seen so far",
+    "start": 1068.92,
+    "duration": 4.56
+  },
+  {
+    "text": "because it does give us the correct",
+    "start": 1071.36,
+    "duration": 3.64
+  },
+  {
+    "text": "solution",
+    "start": 1073.48,
+    "duration": 4.8
+  },
+  {
+    "text": "without any human input needed, but it",
+    "start": 1075,
+    "duration": 6.04
+  },
+  {
+    "text": "hasn't actually fixed the code.",
+    "start": 1078.28,
+    "duration": 4.72
+  },
+  {
+    "text": "So, the next step is to get it to",
+    "start": 1081.04,
+    "duration": 3.88
+  },
+  {
+    "text": "actually fix the code.",
+    "start": 1083,
+    "duration": 4.6
+  },
+  {
+    "text": "Um and that's where the feedback loop",
+    "start": 1084.92,
+    "duration": 3.92
+  },
+  {
+    "text": "comes in.",
+    "start": 1087.6,
+    "duration": 4.12
+  },
+  {
+    "text": "Um so, there's a very popular",
+    "start": 1088.84,
+    "duration": 6.68
+  },
+  {
+    "text": "agent pattern called react. And react",
+    "start": 1091.72,
+    "duration": 7.16
+  },
+  {
+    "text": "stands for reason and act. And",
+    "start": 1095.52,
+    "duration": 6.16
+  },
+  {
+    "text": "essentially, you're asking the agent",
+    "start": 1098.88,
+    "duration": 7.44
+  },
+  {
+    "text": "to work in this loop. Where you reason,",
+    "start": 1101.68,
+    "duration": 6.04
+  },
+  {
+    "text": "act,",
+    "start": 1106.32,
+    "duration": 3.44
+  },
+  {
+    "text": "observe the consequences of your action,",
+    "start": 1107.72,
+    "duration": 4.88
+  },
+  {
+    "text": "and then decide what to do next.",
+    "start": 1109.76,
+    "duration": 5.88
+  },
+  {
+    "text": "So, in this case, reason, read the two",
+    "start": 1112.6,
+    "duration": 4.4
+  },
+  {
+    "text": "files,",
+    "start": 1115.64,
+    "duration": 5.16
+  },
+  {
+    "text": "act, run the tests,",
+    "start": 1117,
+    "duration": 6.96
+  },
+  {
+    "text": "observe, if the tests fail,",
+    "start": 1120.8,
+    "duration": 4.68
+  },
+  {
+    "text": "read the error,",
+    "start": 1123.96,
+    "duration": 4.48
+  },
+  {
+    "text": "and then reason again. So,",
+    "start": 1125.48,
+    "duration": 5.64
+  },
+  {
+    "text": "look at that test failure and think",
+    "start": 1128.44,
+    "duration": 5.72
+  },
+  {
+    "text": "about what you want to do next. And just",
+    "start": 1131.12,
+    "duration": 5.04
+  },
+  {
+    "text": "do this in a loop",
+    "start": 1134.16,
+    "duration": 3.44
+  },
+  {
+    "text": "until",
+    "start": 1136.16,
+    "duration": 3.68
+  },
+  {
+    "text": "the tests pass.",
+    "start": 1137.6,
+    "duration": 5.96
+  },
+  {
+    "text": "So, this is a really key pattern to",
+    "start": 1139.84,
+    "duration": 5.92
+  },
+  {
+    "text": "making the agent better.",
+    "start": 1143.56,
+    "duration": 5.36
+  },
+  {
+    "text": "And so, now let's see the same agent.",
+    "start": 1145.76,
+    "duration": 5.8
+  },
+  {
+    "text": "The only thing we're changing is",
+    "start": 1148.92,
+    "duration": 4.24
+  },
+  {
+    "text": "the prompt",
+    "start": 1151.56,
+    "duration": 4.04
+  },
+  {
+    "text": "and giving it the ability to run these",
+    "start": 1153.16,
+    "duration": 6.32
+  },
+  {
+    "text": "tests and now the agent should",
+    "start": 1155.6,
+    "duration": 5.16
+  },
+  {
+    "text": "work",
+    "start": 1159.48,
+    "duration": 3.76
+  },
+  {
+    "text": "better.",
+    "start": 1160.76,
+    "duration": 2.48
+  },
+  {
+    "text": "In this case, I'm going to also",
+    "start": 1164.64,
+    "duration": 5.44
+  },
+  {
+    "text": "print all the tool calls just so you can",
+    "start": 1167.12,
+    "duration": 4.84
+  },
+  {
+    "text": "see what's happening.",
+    "start": 1170.08,
+    "duration": 4.4
+  },
+  {
+    "text": "Um",
+    "start": 1171.96,
+    "duration": 2.52
+  },
+  {
+    "text": "Well, should maybe",
+    "start": 1187.6,
+    "duration": 4.64
+  },
+  {
+    "text": "All right, hang on.",
+    "start": 1190.2,
+    "duration": 5
+  },
+  {
+    "text": "It's always there.",
+    "start": 1192.24,
+    "duration": 2.96
+  },
+  {
+    "text": "There we go. Okay.",
+    "start": 1202.64,
+    "duration": 4.4
+  },
+  {
+    "text": "Now, let's see it in action.",
+    "start": 1204.88,
+    "duration": 3.32
+  },
+  {
+    "text": "Um",
+    "start": 1207.04,
+    "duration": 2.72
+  },
+  {
+    "text": "So, now",
+    "start": 1208.2,
+    "duration": 4.16
+  },
+  {
+    "text": "you can see it's calling the tools. It's",
+    "start": 1209.76,
+    "duration": 4.96
+  },
+  {
+    "text": "reading those two files, like we said.",
+    "start": 1212.36,
+    "duration": 4.36
+  },
+  {
+    "text": "It's running the tests.",
+    "start": 1214.72,
+    "duration": 3.64
+  },
+  {
+    "text": "The tests fail.",
+    "start": 1216.72,
+    "duration": 4.16
+  },
+  {
+    "text": "It's writing to the file. It's running",
+    "start": 1218.36,
+    "duration": 4.04
+  },
+  {
+    "text": "the test again",
+    "start": 1220.88,
+    "duration": 4.12
+  },
+  {
+    "text": "and confirming success. So, this is a",
+    "start": 1222.4,
+    "duration": 5
+  },
+  {
+    "text": "really important",
+    "start": 1225,
+    "duration": 5.4
+  },
+  {
+    "text": "stage in the harness development because",
+    "start": 1227.4,
+    "duration": 4.24
+  },
+  {
+    "text": "now",
+    "start": 1230.4,
+    "duration": 3.64
+  },
+  {
+    "text": "we finally have an agent that",
+    "start": 1231.64,
+    "duration": 5.16
+  },
+  {
+    "text": "successfully",
+    "start": 1234.04,
+    "duration": 6.16
+  },
+  {
+    "text": "figures out the task, checks",
+    "start": 1236.8,
+    "duration": 6.08
+  },
+  {
+    "text": "that the code is failing,",
+    "start": 1240.2,
+    "duration": 5.96
+  },
+  {
+    "text": "modifies the code, and checks that the",
+    "start": 1242.88,
+    "duration": 5.28
+  },
+  {
+    "text": "code now passes.",
+    "start": 1246.16,
+    "duration": 3.52
+  },
+  {
+    "text": "Um",
+    "start": 1248.16,
+    "duration": 3.2
+  },
+  {
+    "text": "So, let's talk about how we have",
+    "start": 1249.68,
+    "duration": 4.16
+  },
+  {
+    "text": "improved the harness so far.",
+    "start": 1251.36,
+    "duration": 4.32
+  },
+  {
+    "text": "So, we started with just the model,",
+    "start": 1253.84,
+    "duration": 3.56
+  },
+  {
+    "text": "couldn't do anything.",
+    "start": 1255.68,
+    "duration": 3.68
+  },
+  {
+    "text": "Then we added tools,",
+    "start": 1257.4,
+    "duration": 5.16
+  },
+  {
+    "text": "but the agent wasn't safe. Then we added",
+    "start": 1259.36,
+    "duration": 6.68
+  },
+  {
+    "text": "handlers, which added safety,",
+    "start": 1262.56,
+    "duration": 6.04
+  },
+  {
+    "text": "but needed human input.",
+    "start": 1266.04,
+    "duration": 3.92
+  },
+  {
+    "text": "Then we added partial function",
+    "start": 1268.6,
+    "duration": 4.28
+  },
+  {
+    "text": "application, which was safety without",
+    "start": 1269.96,
+    "duration": 5.8
+  },
+  {
+    "text": "requiring human input. And finally, the",
+    "start": 1272.88,
+    "duration": 5.44
+  },
+  {
+    "text": "last one that we just looked at was a",
+    "start": 1275.76,
+    "duration": 5.28
+  },
+  {
+    "text": "feedback loop, which added reasoning.",
+    "start": 1278.32,
+    "duration": 5.2
+  },
+  {
+    "text": "So, the agent made the change and",
+    "start": 1281.04,
+    "duration": 6.88
+  },
+  {
+    "text": "confirmed that the change worked.",
+    "start": 1283.52,
+    "duration": 4.4
+  },
+  {
+    "text": "So, I have two more examples.",
+    "start": 1289.08,
+    "duration": 4.16
+  },
+  {
+    "text": "This one we're going to go in a slightly",
+    "start": 1291.16,
+    "duration": 4.16
+  },
+  {
+    "text": "different direction. And this is where",
+    "start": 1293.24,
+    "duration": 3.32
+  },
+  {
+    "text": "we're getting into some of the more",
+    "start": 1295.32,
+    "duration": 3.12
+  },
+  {
+    "text": "advanced concepts.",
+    "start": 1296.56,
+    "duration": 3.88
+  },
+  {
+    "text": "So, this one is sub-agents.",
+    "start": 1298.44,
+    "duration": 4
+  },
+  {
+    "text": "Um everything so far we've done has made",
+    "start": 1300.44,
+    "duration": 3.8
+  },
+  {
+    "text": "the same task better. But with",
+    "start": 1302.44,
+    "duration": 3.84
+  },
+  {
+    "text": "sub-agents, we're asking, \"How do you",
+    "start": 1304.24,
+    "duration": 4.8
+  },
+  {
+    "text": "make the agent do more things?\"",
+    "start": 1306.28,
+    "duration": 4
+  },
+  {
+    "text": "Um",
+    "start": 1309.04,
+    "duration": 4
+  },
+  {
+    "text": "and let me show you",
+    "start": 1310.28,
+    "duration": 7.8
+  },
+  {
+    "text": "what this code looks like real quick.",
+    "start": 1313.04,
+    "duration": 5.04
+  },
+  {
+    "text": "Okay. So,",
+    "start": 1322.4,
+    "duration": 3.32
+  },
+  {
+    "text": "this program, I'll start by just showing",
+    "start": 1326,
+    "duration": 4.24
+  },
+  {
+    "text": "you the prompt we're giving it because",
+    "start": 1328.32,
+    "duration": 3.76
+  },
+  {
+    "text": "it's slightly different.",
+    "start": 1330.24,
+    "duration": 3.64
+  },
+  {
+    "text": "So, fix the failing test in test",
+    "start": 1332.08,
+    "duration": 3.52
+  },
+  {
+    "text": "median.py.",
+    "start": 1333.88,
+    "duration": 4.4
+  },
+  {
+    "text": "Then research Jensen's inequality for",
+    "start": 1335.6,
+    "duration": 5.04
+  },
+  {
+    "text": "medians with the Wikipedia agent and",
+    "start": 1338.28,
+    "duration": 4
+  },
+  {
+    "text": "explain it to me in the network form.",
+    "start": 1340.64,
+    "duration": 2.56
+  },
+  {
+    "text": "So,",
+    "start": 1342.28,
+    "duration": 2.32
+  },
+  {
+    "text": "here is a case where we're actually",
+    "start": 1343.2,
+    "duration": 2.64
+  },
+  {
+    "text": "asking",
+    "start": 1344.6,
+    "duration": 3.88
+  },
+  {
+    "text": "the agent to do a little more,",
+    "start": 1345.84,
+    "duration": 3.6
+  },
+  {
+    "text": "right?",
+    "start": 1348.48,
+    "duration": 3.96
+  },
+  {
+    "text": "And this one is interesting because",
+    "start": 1349.44,
+    "duration": 5.08
+  },
+  {
+    "text": "this is our main agent,",
+    "start": 1352.44,
+    "duration": 4.8
+  },
+  {
+    "text": "but for tools, we're not giving it the",
+    "start": 1354.52,
+    "duration": 4.88
+  },
+  {
+    "text": "read and write functions. Instead, we're",
+    "start": 1357.24,
+    "duration": 5.64
+  },
+  {
+    "text": "giving it two sub-agents as tools.",
+    "start": 1359.4,
+    "duration": 5.6
+  },
+  {
+    "text": "And",
+    "start": 1362.88,
+    "duration": 4.72
+  },
+  {
+    "text": "I really like this pattern in agency",
+    "start": 1365,
+    "duration": 5.04
+  },
+  {
+    "text": "because I've seen a lot of frameworks",
+    "start": 1367.6,
+    "duration": 5.16
+  },
+  {
+    "text": "make sub-agents their own concept and",
+    "start": 1370.04,
+    "duration": 6.52
+  },
+  {
+    "text": "make them kind of hard to grasp. Um in",
+    "start": 1372.76,
+    "duration": 5.72
+  },
+  {
+    "text": "agency, a sub-agent is just another",
+    "start": 1376.56,
+    "duration": 4.4
+  },
+  {
+    "text": "function. And you just call it, use it",
+    "start": 1378.48,
+    "duration": 4.24
+  },
+  {
+    "text": "like a tool just like you would anywhere",
+    "start": 1380.96,
+    "duration": 2.84
+  },
+  {
+    "text": "else.",
+    "start": 1382.72,
+    "duration": 2.96
+  },
+  {
+    "text": "And that consistency has a lot of",
+    "start": 1383.8,
+    "duration": 4.16
+  },
+  {
+    "text": "benefits. Makes it really easy to write",
+    "start": 1385.68,
+    "duration": 3.8
+  },
+  {
+    "text": "and reason about.",
+    "start": 1387.96,
+    "duration": 4.04
+  },
+  {
+    "text": "So, here's the coding agent",
+    "start": 1389.48,
+    "duration": 3.96
+  },
+  {
+    "text": "sub agent.",
+    "start": 1392,
+    "duration": 2.6
+  },
+  {
+    "text": "Um",
+    "start": 1393.44,
+    "duration": 3.36
+  },
+  {
+    "text": "same one as before. You know, there's a",
+    "start": 1394.6,
+    "duration": 4.6
+  },
+  {
+    "text": "system message.",
+    "start": 1396.8,
+    "duration": 5.44
+  },
+  {
+    "text": "This sub agent has its own LLM call,",
+    "start": 1399.2,
+    "duration": 5.136
+  },
+  {
+    "text": "gets its own set of tools.",
+    "start": 1402.24,
+    "duration": 2.56
+  },
+  {
+    "text": ">> [snorts]",
+    "start": 1404.336,
+    "duration": 3.104
+  },
+  {
+    "text": ">> Similarly, you have the Wikipedia agent",
+    "start": 1404.8,
+    "duration": 4.6
+  },
+  {
+    "text": "that has its own tool, which is the",
+    "start": 1407.44,
+    "duration": 3.44
+  },
+  {
+    "text": "search tool.",
+    "start": 1409.4,
+    "duration": 3.6
+  },
+  {
+    "text": "Uh which is a tool built into this",
+    "start": 1410.88,
+    "duration": 3.88
+  },
+  {
+    "text": "agency standard library that lets you",
+    "start": 1413,
+    "duration": 3.48
+  },
+  {
+    "text": "search Wikipedia.",
+    "start": 1414.76,
+    "duration": 3.36
+  },
+  {
+    "text": "Uh so, agency has a big standard library",
+    "start": 1416.48,
+    "duration": 3.6
+  },
+  {
+    "text": "that lets you do all kinds of things,",
+    "start": 1418.12,
+    "duration": 4.36
+  },
+  {
+    "text": "including this Wikipedia search tool.",
+    "start": 1420.08,
+    "duration": 3.6
+  },
+  {
+    "text": "I'm also",
+    "start": 1422.48,
+    "duration": 4.36
+  },
+  {
+    "text": "using the callback feature to print the",
+    "start": 1423.68,
+    "duration": 5.36
+  },
+  {
+    "text": "tool call information.",
+    "start": 1426.84,
+    "duration": 3.64
+  },
+  {
+    "text": "And now,",
+    "start": 1429.04,
+    "duration": 3.64
+  },
+  {
+    "text": "let's see this example in action. And",
+    "start": 1430.48,
+    "duration": 4.16
+  },
+  {
+    "text": "this is an example where",
+    "start": 1432.68,
+    "duration": 5
+  },
+  {
+    "text": "we're actually asking the agent to do a",
+    "start": 1434.64,
+    "duration": 4.64
+  },
+  {
+    "text": "little bit more.",
+    "start": 1437.68,
+    "duration": 3.36
+  },
+  {
+    "text": "And we're giving it",
+    "start": 1439.28,
+    "duration": 4.76
+  },
+  {
+    "text": "two sub agents to accomplish its task.",
+    "start": 1441.04,
+    "duration": 4.8
+  },
+  {
+    "text": "So, here you can see it's calling those",
+    "start": 1444.04,
+    "duration": 3.44
+  },
+  {
+    "text": "two sub agents.",
+    "start": 1445.84,
+    "duration": 4.56
+  },
+  {
+    "text": "Uh it's calling them in parallel, so",
+    "start": 1447.48,
+    "duration": 5.44
+  },
+  {
+    "text": "the Wikipedia agent is doing the search,",
+    "start": 1450.4,
+    "duration": 6
+  },
+  {
+    "text": "the coding agent is modifying the file,",
+    "start": 1452.92,
+    "duration": 5
+  },
+  {
+    "text": "and",
+    "start": 1456.4,
+    "duration": 3.48
+  },
+  {
+    "text": "that fixed the error, and now here's a",
+    "start": 1457.92,
+    "duration": 3.2
+  },
+  {
+    "text": "limerick.",
+    "start": 1459.88,
+    "duration": 3.76
+  },
+  {
+    "text": "So,",
+    "start": 1461.12,
+    "duration": 2.52
+  },
+  {
+    "text": "sub agents are cool because they let you",
+    "start": 1464.16,
+    "duration": 5.56
+  },
+  {
+    "text": "add new capabilities",
+    "start": 1467.28,
+    "duration": 3.96
+  },
+  {
+    "text": "without",
+    "start": 1469.72,
+    "duration": 3.8
+  },
+  {
+    "text": "bloating context.",
+    "start": 1471.24,
+    "duration": 3.8
+  },
+  {
+    "text": "Um",
+    "start": 1473.52,
+    "duration": 4.08
+  },
+  {
+    "text": "and this is a good pattern because it",
+    "start": 1475.04,
+    "duration": 4.68
+  },
+  {
+    "text": "allows your agent",
+    "start": 1477.6,
+    "duration": 4.4
+  },
+  {
+    "text": "when it has a lot of different tools at",
+    "start": 1479.72,
+    "duration": 3.72
+  },
+  {
+    "text": "its disposal,",
+    "start": 1482,
+    "duration": 3.72
+  },
+  {
+    "text": "it allows your agent to do",
+    "start": 1483.44,
+    "duration": 4.56
+  },
+  {
+    "text": "the right thing more consistently.",
+    "start": 1485.72,
+    "duration": 5.4
+  },
+  {
+    "text": "Often when agents get confused and fail,",
+    "start": 1488,
+    "duration": 5.12
+  },
+  {
+    "text": "it's because",
+    "start": 1491.12,
+    "duration": 4.84
+  },
+  {
+    "text": "they have too much context blow, but",
+    "start": 1493.12,
+    "duration": 4.6
+  },
+  {
+    "text": "also because they have too many",
+    "start": 1495.96,
+    "duration": 4.6
+  },
+  {
+    "text": "unrelated concepts in their context. And",
+    "start": 1497.72,
+    "duration": 4.24
+  },
+  {
+    "text": "they have too many tools that are",
+    "start": 1500.56,
+    "duration": 3.6
+  },
+  {
+    "text": "unrelated. And so they have a hard time",
+    "start": 1501.96,
+    "duration": 4.64
+  },
+  {
+    "text": "picking the right tool to use. In this",
+    "start": 1504.16,
+    "duration": 4.88
+  },
+  {
+    "text": "case, we make that problem a lot",
+    "start": 1506.6,
+    "duration": 3.72
+  },
+  {
+    "text": "cleaner.",
+    "start": 1509.04,
+    "duration": 3.72
+  },
+  {
+    "text": "For the top-level agent, we just say,",
+    "start": 1510.32,
+    "duration": 4.48
+  },
+  {
+    "text": "\"Pick the sub-agent you want to call.\"",
+    "start": 1512.76,
+    "duration": 4.96
+  },
+  {
+    "text": "And then the sub-agents have those tools",
+    "start": 1514.8,
+    "duration": 5.24
+  },
+  {
+    "text": "that are kind of grouped in a way that",
+    "start": 1517.72,
+    "duration": 3.96
+  },
+  {
+    "text": "makes sense.",
+    "start": 1520.04,
+    "duration": 2.92
+  },
+  {
+    "text": "Um",
+    "start": 1521.68,
+    "duration": 4.08
+  },
+  {
+    "text": "So now, let's look at the last example,",
+    "start": 1522.96,
+    "duration": 5.56
+  },
+  {
+    "text": "which is self-optimization.",
+    "start": 1525.76,
+    "duration": 6.52
+  },
+  {
+    "text": "Uh Agency has a Japa optimizer built in.",
+    "start": 1528.52,
+    "duration": 5.92
+  },
+  {
+    "text": "It actually has a few optimizers built",
+    "start": 1532.28,
+    "duration": 3.92
+  },
+  {
+    "text": "in, but the Japa one",
+    "start": 1534.44,
+    "duration": 4.2
+  },
+  {
+    "text": "uh is a really interesting one.",
+    "start": 1536.2,
+    "duration": 3.76
+  },
+  {
+    "text": "And",
+    "start": 1538.64,
+    "duration": 2.68
+  },
+  {
+    "text": "the way",
+    "start": 1539.96,
+    "duration": 2.96
+  },
+  {
+    "text": "the optimization",
+    "start": 1541.32,
+    "duration": 4.96
+  },
+  {
+    "text": "feature works is you mark any variables",
+    "start": 1542.92,
+    "duration": 6.08
+  },
+  {
+    "text": "that you want the optimizer to optimize.",
+    "start": 1546.28,
+    "duration": 5.52
+  },
+  {
+    "text": "You can just use this optimize modifier.",
+    "start": 1549,
+    "duration": 5.24
+  },
+  {
+    "text": "And then you run the optimizer",
+    "start": 1551.8,
+    "duration": 4.16
+  },
+  {
+    "text": "and give it a goal.",
+    "start": 1554.24,
+    "duration": 2.92
+  },
+  {
+    "text": "So,",
+    "start": 1555.96,
+    "duration": 2.76
+  },
+  {
+    "text": "you know, in this case, you can see that",
+    "start": 1557.16,
+    "duration": 4.32
+  },
+  {
+    "text": "the two initial prompts I have",
+    "start": 1558.72,
+    "duration": 5.32
+  },
+  {
+    "text": "are very basic. I'm giving it hardly any",
+    "start": 1561.48,
+    "duration": 4.88
+  },
+  {
+    "text": "information.",
+    "start": 1564.04,
+    "duration": 4.76
+  },
+  {
+    "text": "And then the goal I give it is, \"Fix the",
+    "start": 1566.36,
+    "duration": 4.4
+  },
+  {
+    "text": "bug in median.py",
+    "start": 1568.8,
+    "duration": 3.8
+  },
+  {
+    "text": "using TDD.\"",
+    "start": 1570.76,
+    "duration": 3.2
+  },
+  {
+    "text": "And",
+    "start": 1572.6,
+    "duration": 4.4
+  },
+  {
+    "text": "the reason this is such a great step",
+    "start": 1573.96,
+    "duration": 6.12
+  },
+  {
+    "text": "for our harness is",
+    "start": 1577,
+    "duration": 4.88
+  },
+  {
+    "text": "we're no longer doing trial and error.",
+    "start": 1580.08,
+    "duration": 3.68
+  },
+  {
+    "text": "We're no longer just trying stuff to see",
+    "start": 1581.88,
+    "duration": 5.28
+  },
+  {
+    "text": "what works. Instead, now we have a way",
+    "start": 1583.76,
+    "duration": 5.84
+  },
+  {
+    "text": "to systematically measure and improve",
+    "start": 1587.16,
+    "duration": 3.84
+  },
+  {
+    "text": "performance.",
+    "start": 1589.6,
+    "duration": 4.32
+  },
+  {
+    "text": "So, I'm just going to go ahead and run",
+    "start": 1591,
+    "duration": 4.68
+  },
+  {
+    "text": "this code.",
+    "start": 1593.92,
+    "duration": 6.24
+  },
+  {
+    "text": "Um I'm actually going to also reset.",
+    "start": 1595.68,
+    "duration": 4.48
+  },
+  {
+    "text": "Here, I'm going to",
+    "start": 1602.48,
+    "duration": 4.88
+  },
+  {
+    "text": "modify this code.",
+    "start": 1604.24,
+    "duration": 3.12
+  },
+  {
+    "text": "Cool.",
+    "start": 1613.24,
+    "duration": 4.16
+  },
+  {
+    "text": "So now",
+    "start": 1614.36,
+    "duration": 3.04
+  },
+  {
+    "text": "I won't",
+    "start": 1619.68,
+    "duration": 4.68
+  },
+  {
+    "text": "show the full run here because",
+    "start": 1621.12,
+    "duration": 4.88
+  },
+  {
+    "text": "the optimizer takes a while, but you can",
+    "start": 1624.36,
+    "duration": 4.88
+  },
+  {
+    "text": "see first it's like",
+    "start": 1626,
+    "duration": 5.6
+  },
+  {
+    "text": "checking what",
+    "start": 1629.24,
+    "duration": 4.84
+  },
+  {
+    "text": "prompts it has that it needs to",
+    "start": 1631.6,
+    "duration": 5.8
+  },
+  {
+    "text": "optimize. It's going to run the agent to",
+    "start": 1634.08,
+    "duration": 5.96
+  },
+  {
+    "text": "establish a baseline. So the baseline",
+    "start": 1637.4,
+    "duration": 5.8
+  },
+  {
+    "text": "objective is 0.2 and it's going to try",
+    "start": 1640.04,
+    "duration": 5.32
+  },
+  {
+    "text": "to improve upon that.",
+    "start": 1643.2,
+    "duration": 5.08
+  },
+  {
+    "text": "So in this case I did run the optimizer",
+    "start": 1645.36,
+    "duration": 4.72
+  },
+  {
+    "text": "earlier just so I could show you what a",
+    "start": 1648.28,
+    "duration": 3.88
+  },
+  {
+    "text": "full run looked like.",
+    "start": 1650.08,
+    "duration": 3.28
+  },
+  {
+    "text": "Um",
+    "start": 1652.16,
+    "duration": 5.48
+  },
+  {
+    "text": "and so here is one where you can see",
+    "start": 1653.36,
+    "duration": 6.04
+  },
+  {
+    "text": "it achieved the objective in the first",
+    "start": 1657.64,
+    "duration": 3.44
+  },
+  {
+    "text": "iteration, so it was actually quite",
+    "start": 1659.4,
+    "duration": 3.68
+  },
+  {
+    "text": "quick in this case.",
+    "start": 1661.08,
+    "duration": 5.08
+  },
+  {
+    "text": "Um and you can see that it's",
+    "start": 1663.08,
+    "duration": 4.68
+  },
+  {
+    "text": "rewritten",
+    "start": 1666.16,
+    "duration": 4.72
+  },
+  {
+    "text": "this prompt. Um",
+    "start": 1667.76,
+    "duration": 6.2
+  },
+  {
+    "text": "So the reason this self-optimization is",
+    "start": 1670.88,
+    "duration": 6.28
+  },
+  {
+    "text": "so great is because we're not guessing",
+    "start": 1673.96,
+    "duration": 5.32
+  },
+  {
+    "text": "and checking. We're systematically",
+    "start": 1677.16,
+    "duration": 3.6
+  },
+  {
+    "text": "measuring and improving,",
+    "start": 1679.28,
+    "duration": 4.96
+  },
+  {
+    "text": "which is a big leap forward.",
+    "start": 1680.76,
+    "duration": 4.84
+  },
+  {
+    "text": "So this is the ladder we just went",
+    "start": 1684.24,
+    "duration": 3.88
+  },
+  {
+    "text": "through for improving the harness.",
+    "start": 1685.6,
+    "duration": 3.76
+  },
+  {
+    "text": "Um",
+    "start": 1688.12,
+    "duration": 2.16
+  },
+  {
+    "text": "you know,",
+    "start": 1689.36,
+    "duration": 2.68
+  },
+  {
+    "text": "first step was nothing, just a model",
+    "start": 1690.28,
+    "duration": 4.16
+  },
+  {
+    "text": "can't even read the file. Then we added",
+    "start": 1692.04,
+    "duration": 3.76
+  },
+  {
+    "text": "tools,",
+    "start": 1694.44,
+    "duration": 3.4
+  },
+  {
+    "text": "but in a way that was unsafe and not",
+    "start": 1695.8,
+    "duration": 4.04
+  },
+  {
+    "text": "allowed in agency.",
+    "start": 1697.84,
+    "duration": 6.12
+  },
+  {
+    "text": "Next we added handlers,",
+    "start": 1699.84,
+    "duration": 6.4
+  },
+  {
+    "text": "which added safety, but",
+    "start": 1703.96,
+    "duration": 4.6
+  },
+  {
+    "text": "made things slower because they required",
+    "start": 1706.24,
+    "duration": 3.72
+  },
+  {
+    "text": "human input.",
+    "start": 1708.56,
+    "duration": 2.68
+  },
+  {
+    "text": "Then we added partial function",
+    "start": 1709.96,
+    "duration": 4.24
+  },
+  {
+    "text": "application, which was safe and fast.",
+    "start": 1711.24,
+    "duration": 5
+  },
+  {
+    "text": "Then we added reasoning, which gave us",
+    "start": 1714.2,
+    "duration": 3.92
+  },
+  {
+    "text": "higher confidence in the output of the",
+    "start": 1716.24,
+    "duration": 3.16
+  },
+  {
+    "text": "agent.",
+    "start": 1718.12,
+    "duration": 3.08
+  },
+  {
+    "text": "Uh and then we switched tracks to",
+    "start": 1719.4,
+    "duration": 4.56
+  },
+  {
+    "text": "subagents, added more capabilities,",
+    "start": 1721.2,
+    "duration": 5.6
+  },
+  {
+    "text": "and finally we did self-optimization. So",
+    "start": 1723.96,
+    "duration": 5.76
+  },
+  {
+    "text": "we got measured improvement and not",
+    "start": 1726.8,
+    "duration": 4.36
+  },
+  {
+    "text": "guess and check.",
+    "start": 1729.72,
+    "duration": 2.6
+  },
+  {
+    "text": "So,",
+    "start": 1731.16,
+    "duration": 4.64
+  },
+  {
+    "text": "you know, I hope this gives you an idea",
+    "start": 1732.32,
+    "duration": 4.68
+  },
+  {
+    "text": "of",
+    "start": 1735.8,
+    "duration": 3.36
+  },
+  {
+    "text": "how you can build",
+    "start": 1737,
+    "duration": 5.28
+  },
+  {
+    "text": "harnesses and then slowly improve those",
+    "start": 1739.16,
+    "duration": 6.24
+  },
+  {
+    "text": "harnesses. And I hope, you know, you try",
+    "start": 1742.28,
+    "duration": 6.28
+  },
+  {
+    "text": "doing that and come along on this, you",
+    "start": 1745.4,
+    "duration": 5.44
+  },
+  {
+    "text": "know, experimentation with me",
+    "start": 1748.56,
+    "duration": 5
+  },
+  {
+    "text": "to see if we can build a better harness.",
+    "start": 1750.84,
+    "duration": 3.68
+  },
+  {
+    "text": "Um",
+    "start": 1753.56,
+    "duration": 3.04
+  },
+  {
+    "text": "because what of the harness matters more",
+    "start": 1754.52,
+    "duration": 3.88
+  },
+  {
+    "text": "than the model. You know, what if we can",
+    "start": 1756.6,
+    "duration": 4.32
+  },
+  {
+    "text": "build a harness that's good enough that",
+    "start": 1758.4,
+    "duration": 6.2
+  },
+  {
+    "text": "we can now start using local models and",
+    "start": 1760.92,
+    "duration": 6.52
+  },
+  {
+    "text": "still get the performance we need for",
+    "start": 1764.6,
+    "duration": 5.24
+  },
+  {
+    "text": "the tasks we want to do.",
+    "start": 1767.44,
+    "duration": 4.12
+  },
+  {
+    "text": "So, what language level support does",
+    "start": 1769.84,
+    "duration": 3.64
+  },
+  {
+    "text": "Agency provide? You know, we used Agency",
+    "start": 1771.56,
+    "duration": 5.12
+  },
+  {
+    "text": "for all these examples. How did it help?",
+    "start": 1773.48,
+    "duration": 5.84
+  },
+  {
+    "text": "Um simple syntax for defining tools.",
+    "start": 1776.68,
+    "duration": 4.6
+  },
+  {
+    "text": "Again, you know, the simple thing should",
+    "start": 1779.32,
+    "duration": 4.68
+  },
+  {
+    "text": "be simple. Every agent is going to need",
+    "start": 1781.28,
+    "duration": 6.08
+  },
+  {
+    "text": "tools. Let's make it easy to use them.",
+    "start": 1784,
+    "duration": 5.72
+  },
+  {
+    "text": "Tools for safety, very important for",
+    "start": 1787.36,
+    "duration": 5.2
+  },
+  {
+    "text": "agents. So, interrupts handlers, PFA.",
+    "start": 1789.72,
+    "duration": 5.44
+  },
+  {
+    "text": "True pause and resume execution. I",
+    "start": 1792.56,
+    "duration": 4.84
+  },
+  {
+    "text": "didn't cover this a ton cuz I didn't",
+    "start": 1795.16,
+    "duration": 4.92
+  },
+  {
+    "text": "want to make this talk too long. Um but",
+    "start": 1797.4,
+    "duration": 5.08
+  },
+  {
+    "text": "one of the really killer features of",
+    "start": 1800.08,
+    "duration": 4.28
+  },
+  {
+    "text": "Agency is that",
+    "start": 1802.48,
+    "duration": 4.24
+  },
+  {
+    "text": "when you raise that interrupt, it's",
+    "start": 1804.36,
+    "duration": 5.4
+  },
+  {
+    "text": "actually going to pause execution",
+    "start": 1806.72,
+    "duration": 6
+  },
+  {
+    "text": "and return control back to the user. But",
+    "start": 1809.76,
+    "duration": 4.96
+  },
+  {
+    "text": "in a way where you can resume execution",
+    "start": 1812.72,
+    "duration": 3.96
+  },
+  {
+    "text": "later. Uh",
+    "start": 1814.72,
+    "duration": 3.88
+  },
+  {
+    "text": "and as far as I know,",
+    "start": 1816.68,
+    "duration": 3.8
+  },
+  {
+    "text": "very few languages allow you to do",
+    "start": 1818.6,
+    "duration": 4.64
+  },
+  {
+    "text": "something like this. And so, typically",
+    "start": 1820.48,
+    "duration": 5.44
+  },
+  {
+    "text": "most frameworks you'll use, if they have",
+    "start": 1823.24,
+    "duration": 4.76
+  },
+  {
+    "text": "a human in the loop feature, it has a",
+    "start": 1825.92,
+    "duration": 3.84
+  },
+  {
+    "text": "lot of restrictions. There's a lot of",
+    "start": 1828,
+    "duration": 3.28
+  },
+  {
+    "text": "things you need to do to work around",
+    "start": 1829.76,
+    "duration": 4.52
+  },
+  {
+    "text": "that. Agency is completely different. If",
+    "start": 1831.28,
+    "duration": 5.32
+  },
+  {
+    "text": "you wanted, you could, you know, raise",
+    "start": 1834.28,
+    "duration": 5
+  },
+  {
+    "text": "interrupts inside of a for loop, inside",
+    "start": 1836.6,
+    "duration": 5.96
+  },
+  {
+    "text": "of a tool call, inside of a sub-agent.",
+    "start": 1839.28,
+    "duration": 5.72
+  },
+  {
+    "text": "Um, and it would correctly",
+    "start": 1842.56,
+    "duration": 4.36
+  },
+  {
+    "text": "pause execution,",
+    "start": 1845,
+    "duration": 4.44
+  },
+  {
+    "text": "go back to the user, and then resume",
+    "start": 1846.92,
+    "duration": 5.68
+  },
+  {
+    "text": "execution at that exact point inside",
+    "start": 1849.44,
+    "duration": 5.76
+  },
+  {
+    "text": "that subagent, inside that tool call, at",
+    "start": 1852.6,
+    "duration": 5.24
+  },
+  {
+    "text": "that exact point in that for loop.",
+    "start": 1855.2,
+    "duration": 3.64
+  },
+  {
+    "text": "Um,",
+    "start": 1857.84,
+    "duration": 3.2
+  },
+  {
+    "text": "which is really cool. You can serialize",
+    "start": 1858.84,
+    "duration": 3.96
+  },
+  {
+    "text": "the execution, you can come back to it a",
+    "start": 1861.04,
+    "duration": 3.24
+  },
+  {
+    "text": "week later,",
+    "start": 1862.8,
+    "duration": 2.84
+  },
+  {
+    "text": "and you don't need to change anything",
+    "start": 1864.28,
+    "duration": 3.28
+  },
+  {
+    "text": "about all the code we have been looking",
+    "start": 1865.64,
+    "duration": 5.16
+  },
+  {
+    "text": "at. It just works, which is really cool.",
+    "start": 1867.56,
+    "duration": 4.52
+  },
+  {
+    "text": "Uh, it also has these built-in",
+    "start": 1870.8,
+    "duration": 3.08
+  },
+  {
+    "text": "optimizers, which are great, you know,",
+    "start": 1872.08,
+    "duration": 4.08
+  },
+  {
+    "text": "which kind of get you to a more",
+    "start": 1873.88,
+    "duration": 4.84
+  },
+  {
+    "text": "analytical, mathematical way of doing",
+    "start": 1876.16,
+    "duration": 4.52
+  },
+  {
+    "text": "the improvements. So, if you want to try",
+    "start": 1878.72,
+    "duration": 5.8
+  },
+  {
+    "text": "it out, please do. You can PM install",
+    "start": 1880.68,
+    "duration": 7.4
+  },
+  {
+    "text": "All you need is the package and a API",
+    "start": 1884.52,
+    "duration": 5.32
+  },
+  {
+    "text": "key, and you're set.",
+    "start": 1888.08,
+    "duration": 2.96
+  },
+  {
+    "text": "Um,",
+    "start": 1889.84,
+    "duration": 3.24
+  },
+  {
+    "text": "main takeaways, you know, an agent is a",
+    "start": 1891.04,
+    "duration": 5
+  },
+  {
+    "text": "model plus a harness for this talk, at",
+    "start": 1893.08,
+    "duration": 5.6
+  },
+  {
+    "text": "least. Uh, better harness equals better",
+    "start": 1896.04,
+    "duration": 4.36
+  },
+  {
+    "text": "performance, especially for weaker",
+    "start": 1898.68,
+    "duration": 2.96
+  },
+  {
+    "text": "models.",
+    "start": 1900.4,
+    "duration": 2.68
+  },
+  {
+    "text": "And then, how do you build a better",
+    "start": 1901.64,
+    "duration": 4.28
+  },
+  {
+    "text": "harness? Give it tools, make it safe,",
+    "start": 1903.08,
+    "duration": 5.16
+  },
+  {
+    "text": "make it autonomous, make it reason,",
+    "start": 1905.92,
+    "duration": 4.28
+  },
+  {
+    "text": "give it subagents, and have it",
+    "start": 1908.24,
+    "duration": 3.88
+  },
+  {
+    "text": "self-optimize.",
+    "start": 1910.2,
+    "duration": 3.44
+  },
+  {
+    "text": "Thank you so much. Again, my name is",
+    "start": 1912.12,
+    "duration": 3.76
+  },
+  {
+    "text": "Aditya Parikh, check out agency",
+    "start": 1913.64,
+    "duration": 4.2
+  },
+  {
+    "text": "agencylang.com,",
+    "start": 1915.88,
+    "duration": 3.76
+  },
+  {
+    "text": "uh, and then please follow me on Blue",
+    "start": 1917.84,
+    "duration": 6.28
+  },
+  {
+    "text": "Sky, if you wish. Thank you. Take care.",
+    "start": 1919.64,
+    "duration": 4.48
+  }
+]

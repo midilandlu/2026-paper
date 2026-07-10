@@ -1,0 +1,4522 @@
+[
+  {
+    "text": "Hello, I'm Rajiv. I'm a practicing",
+    "start": 1.52,
+    "duration": 5.68
+  },
+  {
+    "text": "medical doctor here in London",
+    "start": 4.6,
+    "duration": 4.48
+  },
+  {
+    "text": "and been doing some AI engineering for",
+    "start": 7.2,
+    "duration": 3.4
+  },
+  {
+    "text": "the past few years. Particularly",
+    "start": 9.08,
+    "duration": 4.2
+  },
+  {
+    "text": "interested in real world application and",
+    "start": 10.6,
+    "duration": 4.8
+  },
+  {
+    "text": "really the future which is multi-agent",
+    "start": 13.28,
+    "duration": 4.88
+  },
+  {
+    "text": "multi-human multi-institutional",
+    "start": 15.4,
+    "duration": 5.32
+  },
+  {
+    "text": "collaboration through a company called",
+    "start": 18.16,
+    "duration": 4.44
+  },
+  {
+    "text": "Anitcha Labs.",
+    "start": 20.72,
+    "duration": 3.84
+  },
+  {
+    "text": "And really the premise of my talk today",
+    "start": 22.6,
+    "duration": 5.44
+  },
+  {
+    "text": "is to introduce a new design philosophy",
+    "start": 24.56,
+    "duration": 5.96
+  },
+  {
+    "text": "for the future of AI engineering which",
+    "start": 28.04,
+    "duration": 5.88
+  },
+  {
+    "text": "is beyond a harness or beyond a fixed",
+    "start": 30.52,
+    "duration": 6.6
+  },
+  {
+    "text": "static harness and towards adaptive",
+    "start": 33.92,
+    "duration": 6.04
+  },
+  {
+    "text": "engineering.",
+    "start": 37.12,
+    "duration": 2.84
+  },
+  {
+    "text": "This slide basically summarizes my",
+    "start": 41.48,
+    "duration": 4.56
+  },
+  {
+    "text": "entire talk",
+    "start": 43.92,
+    "duration": 5.68
+  },
+  {
+    "text": "and really it's about exploring what the",
+    "start": 46.04,
+    "duration": 6.4
+  },
+  {
+    "text": "current AI engineering paradigm is which",
+    "start": 49.6,
+    "duration": 5.08
+  },
+  {
+    "text": "is to use fixed harnesses",
+    "start": 52.44,
+    "duration": 4.68
+  },
+  {
+    "text": "to steer agents. So we either use or",
+    "start": 54.68,
+    "duration": 4.96
+  },
+  {
+    "text": "build an existing harness like Pi,",
+    "start": 57.12,
+    "duration": 5.04
+  },
+  {
+    "text": "Claude, Code, Cursor, CodeX, whatever it",
+    "start": 59.64,
+    "duration": 5.8
+  },
+  {
+    "text": "is ahead of run time that remains fairly",
+    "start": 62.16,
+    "duration": 5.04
+  },
+  {
+    "text": "consistent throughout the engineering",
+    "start": 65.44,
+    "duration": 5.4
+  },
+  {
+    "text": "process and is largely constrained with",
+    "start": 67.2,
+    "duration": 5.88
+  },
+  {
+    "text": "fixed roles and tools and sequencing",
+    "start": 70.84,
+    "duration": 4.52
+  },
+  {
+    "text": "which again ahead of the process",
+    "start": 73.08,
+    "duration": 4.68
+  },
+  {
+    "text": "beginning of the process we can tweak",
+    "start": 75.36,
+    "duration": 4.52
+  },
+  {
+    "text": "and it essentially produces very",
+    "start": 77.76,
+    "duration": 4.92
+  },
+  {
+    "text": "reliable and orderly work and it's great",
+    "start": 79.88,
+    "duration": 6
+  },
+  {
+    "text": "for most engineering problems and ideas.",
+    "start": 82.68,
+    "duration": 5.8
+  },
+  {
+    "text": "And so your role as an AI engineering",
+    "start": 85.88,
+    "duration": 5
+  },
+  {
+    "text": "right now is to use a harness and steer",
+    "start": 88.48,
+    "duration": 4
+  },
+  {
+    "text": "agents.",
+    "start": 90.88,
+    "duration": 3.32
+  },
+  {
+    "text": "But the future's going to be different",
+    "start": 92.48,
+    "duration": 4.44
+  },
+  {
+    "text": "in at least two ways.",
+    "start": 94.2,
+    "duration": 5.12
+  },
+  {
+    "text": "Number one, models are going to become",
+    "start": 96.92,
+    "duration": 5.04
+  },
+  {
+    "text": "so powerful that existing fixed",
+    "start": 99.32,
+    "duration": 4.8
+  },
+  {
+    "text": "harnesses are constantly going to become",
+    "start": 101.96,
+    "duration": 3.72
+  },
+  {
+    "text": "outdated.",
+    "start": 104.12,
+    "duration": 4.2
+  },
+  {
+    "text": "And number two is there's going to be a",
+    "start": 105.68,
+    "duration": 4.88
+  },
+  {
+    "text": "huge exposure to the real world. Right",
+    "start": 108.32,
+    "duration": 5.04
+  },
+  {
+    "text": "now a lot of AI engineering is software",
+    "start": 110.56,
+    "duration": 7.28
+  },
+  {
+    "text": "based. It's within behind a screen.",
+    "start": 113.36,
+    "duration": 6.6
+  },
+  {
+    "text": "But actually, as things get more",
+    "start": 117.84,
+    "duration": 4.8
+  },
+  {
+    "text": "powerful, as models get more powerful,",
+    "start": 119.96,
+    "duration": 4.4
+  },
+  {
+    "text": "we're going to have exposure to the real",
+    "start": 122.64,
+    "duration": 3.04
+  },
+  {
+    "text": "world where",
+    "start": 124.36,
+    "duration": 3.88
+  },
+  {
+    "text": "I'd argue that this is where the real",
+    "start": 125.68,
+    "duration": 4.2
+  },
+  {
+    "text": "challenges are.",
+    "start": 128.24,
+    "duration": 4.36
+  },
+  {
+    "text": "And the real world is dynamic and messy.",
+    "start": 129.88,
+    "duration": 4.52
+  },
+  {
+    "text": "You know, it's full of multi-agent,",
+    "start": 132.6,
+    "duration": 4.2
+  },
+  {
+    "text": "multi-human, cross-institutional,",
+    "start": 134.4,
+    "duration": 4.72
+  },
+  {
+    "text": "and really touching the physical world,",
+    "start": 136.8,
+    "duration": 4.6
+  },
+  {
+    "text": "which means that a fixed harness is",
+    "start": 139.12,
+    "duration": 4.2
+  },
+  {
+    "text": "quite brittle.",
+    "start": 141.4,
+    "duration": 5
+  },
+  {
+    "text": "And so that's where we enter what I coin",
+    "start": 143.32,
+    "duration": 5.88
+  },
+  {
+    "text": "as adaptive engineering, where you",
+    "start": 146.4,
+    "duration": 7.08
+  },
+  {
+    "text": "actually allow the harness to emerge and",
+    "start": 149.2,
+    "duration": 7.08
+  },
+  {
+    "text": "adapt mid-engineering",
+    "start": 153.48,
+    "duration": 5.64
+  },
+  {
+    "text": "to find its most optimal position and",
+    "start": 156.28,
+    "duration": 3.96
+  },
+  {
+    "text": "structure.",
+    "start": 159.12,
+    "duration": 3
+  },
+  {
+    "text": "And essentially, the engineer's role is",
+    "start": 160.24,
+    "duration": 3.44
+  },
+  {
+    "text": "going to be to design some of the",
+    "start": 162.12,
+    "duration": 3.12
+  },
+  {
+    "text": "constraints, which are kind of the rules",
+    "start": 163.68,
+    "duration": 3.04
+  },
+  {
+    "text": "of play,",
+    "start": 165.24,
+    "duration": 5.4
+  },
+  {
+    "text": "and really allowing the harness",
+    "start": 166.72,
+    "duration": 6.52
+  },
+  {
+    "text": "to emerge, stabilize, change, and",
+    "start": 170.64,
+    "duration": 4.8
+  },
+  {
+    "text": "eventually dissolve",
+    "start": 173.24,
+    "duration": 5.52
+  },
+  {
+    "text": "as you go through the runtime of",
+    "start": 175.44,
+    "duration": 6
+  },
+  {
+    "text": "engineering.",
+    "start": 178.76,
+    "duration": 2.68
+  },
+  {
+    "text": "So, let's look firstly at the current",
+    "start": 183.84,
+    "duration": 6.92
+  },
+  {
+    "text": "paradigm for AI engineering. And it's",
+    "start": 187.6,
+    "duration": 4.76
+  },
+  {
+    "text": "essentially",
+    "start": 190.76,
+    "duration": 3.72
+  },
+  {
+    "text": "where a harness",
+    "start": 192.36,
+    "duration": 5.28
+  },
+  {
+    "text": "serves as the primary method to guide an",
+    "start": 194.48,
+    "duration": 6.52
+  },
+  {
+    "text": "LLM, which is typically stateless,",
+    "start": 197.64,
+    "duration": 5.8
+  },
+  {
+    "text": "and make it into something quite useful.",
+    "start": 201,
+    "duration": 3.88
+  },
+  {
+    "text": "And there's a couple of aspects of a",
+    "start": 203.44,
+    "duration": 4.12
+  },
+  {
+    "text": "harness, which I won't go to in detail,",
+    "start": 204.88,
+    "duration": 4.12
+  },
+  {
+    "text": "but essentially things like system",
+    "start": 207.56,
+    "duration": 3.6
+  },
+  {
+    "text": "prompts, which is established by the",
+    "start": 209,
+    "duration": 3.519
+  },
+  {
+    "text": "harness vendor,",
+    "start": 211.16,
+    "duration": 3.359
+  },
+  {
+    "text": "meaning that users can't actually modify",
+    "start": 212.519,
+    "duration": 4.801
+  },
+  {
+    "text": "it. And this essentially",
+    "start": 214.519,
+    "duration": 5
+  },
+  {
+    "text": "tells the harness what it can and can't",
+    "start": 217.32,
+    "duration": 3.48
+  },
+  {
+    "text": "do.",
+    "start": 219.519,
+    "duration": 4.121
+  },
+  {
+    "text": "You've also got the agents.md files or",
+    "start": 220.8,
+    "duration": 4.96
+  },
+  {
+    "text": "the Claude.md if you're using Claude",
+    "start": 223.64,
+    "duration": 4.76
+  },
+  {
+    "text": "code, which is loaded into every context",
+    "start": 225.76,
+    "duration": 5.24
+  },
+  {
+    "text": "window at the start of a session,",
+    "start": 228.4,
+    "duration": 4.16
+  },
+  {
+    "text": "tool calling,",
+    "start": 231,
+    "duration": 4.56
+  },
+  {
+    "text": "and essentially then you have the",
+    "start": 232.56,
+    "duration": 6.24
+  },
+  {
+    "text": "genesis of agents, which are specialized",
+    "start": 235.56,
+    "duration": 5.64
+  },
+  {
+    "text": "entities that have been harnessed uh,",
+    "start": 238.8,
+    "duration": 5.4
+  },
+  {
+    "text": "granting them unique capabilities",
+    "start": 241.2,
+    "duration": 5.44
+  },
+  {
+    "text": "um, and and allowing them to",
+    "start": 244.2,
+    "duration": 4.8
+  },
+  {
+    "text": "differentiate from other agents. And",
+    "start": 246.64,
+    "duration": 4.36
+  },
+  {
+    "text": "these capabilities are typically",
+    "start": 249,
+    "duration": 4.56
+  },
+  {
+    "text": "manifest as specific skills when it",
+    "start": 251,
+    "duration": 4.56
+  },
+  {
+    "text": "comes to role typology, their",
+    "start": 253.56,
+    "duration": 5.92
+  },
+  {
+    "text": "capabilities, the rules um, and that",
+    "start": 255.56,
+    "duration": 7.04
+  },
+  {
+    "text": "enables them to deliver targeted outputs",
+    "start": 259.48,
+    "duration": 5.48
+  },
+  {
+    "text": "and specified outputs, whether it be",
+    "start": 262.6,
+    "duration": 3.44
+  },
+  {
+    "text": "code",
+    "start": 264.96,
+    "duration": 2.68
+  },
+  {
+    "text": "documentation",
+    "start": 266.04,
+    "duration": 4.72
+  },
+  {
+    "text": "issues, handoffs and and most recently",
+    "start": 267.64,
+    "duration": 6.48
+  },
+  {
+    "text": "we've seen the genesis of kind of loops,",
+    "start": 270.76,
+    "duration": 6.88
+  },
+  {
+    "text": "loop engineering has become a thing um",
+    "start": 274.12,
+    "duration": 6.28
+  },
+  {
+    "text": "so that eventually we reach some sort of",
+    "start": 277.64,
+    "duration": 4.4
+  },
+  {
+    "text": "outcome",
+    "start": 280.4,
+    "duration": 3.92
+  },
+  {
+    "text": "uh, whether it's a feature,",
+    "start": 282.04,
+    "duration": 4.76
+  },
+  {
+    "text": "uh, a problem solved which is eventually",
+    "start": 284.32,
+    "duration": 6.56
+  },
+  {
+    "text": "reviewed by a human. Um, so what you see",
+    "start": 286.8,
+    "duration": 7.32
+  },
+  {
+    "text": "uh, from this is that before running the",
+    "start": 290.88,
+    "duration": 5.039
+  },
+  {
+    "text": "engineering process",
+    "start": 294.12,
+    "duration": 4.24
+  },
+  {
+    "text": "the entire harness has been",
+    "start": 295.919,
+    "duration": 4.921
+  },
+  {
+    "text": "predetermined or pre-engineered. And",
+    "start": 298.36,
+    "duration": 5.28
+  },
+  {
+    "text": "that's harness engineering. And uh, it's",
+    "start": 300.84,
+    "duration": 4.84
+  },
+  {
+    "text": "been remarkable",
+    "start": 303.64,
+    "duration": 5.36
+  },
+  {
+    "text": "at getting the most out of the latest",
+    "start": 305.68,
+    "duration": 5.84
+  },
+  {
+    "text": "models.",
+    "start": 309,
+    "duration": 2.52
+  },
+  {
+    "text": "Um and just sort of stepping a bit back,",
+    "start": 315.88,
+    "duration": 5.56
+  },
+  {
+    "text": "um, defining exactly what a harness is.",
+    "start": 319.24,
+    "duration": 5.36
+  },
+  {
+    "text": "Essentially the model is the engine and",
+    "start": 321.44,
+    "duration": 5.479
+  },
+  {
+    "text": "the harness is everything built around",
+    "start": 324.6,
+    "duration": 5.72
+  },
+  {
+    "text": "to make that engine useful. Um, there's",
+    "start": 326.919,
+    "duration": 5.201
+  },
+  {
+    "text": "many different types of harnesses. I",
+    "start": 330.32,
+    "duration": 4.32
+  },
+  {
+    "text": "mean, there's hundreds uh, actually, but",
+    "start": 332.12,
+    "duration": 4.6
+  },
+  {
+    "text": "I guess the most common ones are,",
+    "start": 334.64,
+    "duration": 5.52
+  },
+  {
+    "text": "um, you know, CLI coding, um, such as",
+    "start": 336.72,
+    "duration": 6.72
+  },
+  {
+    "text": "Claude Code, Codex, Pi. You have IDEs",
+    "start": 340.16,
+    "duration": 5.84
+  },
+  {
+    "text": "like Cursor uh, multi-agent",
+    "start": 343.44,
+    "duration": 5.44
+  },
+  {
+    "text": "orchestration through LangChain",
+    "start": 346,
+    "duration": 5.32
+  },
+  {
+    "text": "and and things like Hermes as well,",
+    "start": 348.88,
+    "duration": 4.68
+  },
+  {
+    "text": "Klein and Goose. And And these are all",
+    "start": 351.32,
+    "duration": 4.44
+  },
+  {
+    "text": "differentiated based on number one,",
+    "start": 353.56,
+    "duration": 5.04
+  },
+  {
+    "text": "properties and how they're configured.",
+    "start": 355.76,
+    "duration": 5.16
+  },
+  {
+    "text": "But actually more importantly,",
+    "start": 358.6,
+    "duration": 4.2
+  },
+  {
+    "text": "number two,",
+    "start": 360.92,
+    "duration": 3.64
+  },
+  {
+    "text": "based on some sort of design and",
+    "start": 362.8,
+    "duration": 4.48
+  },
+  {
+    "text": "engineering philosophy that they believe",
+    "start": 364.56,
+    "duration": 5.6
+  },
+  {
+    "text": "in. And what makes them so great and so",
+    "start": 367.28,
+    "duration": 6.52
+  },
+  {
+    "text": "distinct is that they are opinionated to",
+    "start": 370.16,
+    "duration": 7.4
+  },
+  {
+    "text": "a lesser or greater degree. Um and they",
+    "start": 373.8,
+    "duration": 7.6
+  },
+  {
+    "text": "allow for, I guess different use cases.",
+    "start": 377.56,
+    "duration": 5.48
+  },
+  {
+    "text": "Um and depending on your temperament as",
+    "start": 381.4,
+    "duration": 5.04
+  },
+  {
+    "text": "an engineer, you'd pick one over the",
+    "start": 383.04,
+    "duration": 5.879
+  },
+  {
+    "text": "other.",
+    "start": 386.44,
+    "duration": 2.479
+  },
+  {
+    "text": "But what we do see in all of these is",
+    "start": 390.16,
+    "duration": 5
+  },
+  {
+    "text": "that everything's predefined. You know,",
+    "start": 392.96,
+    "duration": 4.76
+  },
+  {
+    "text": "you can customize them, of course, like",
+    "start": 395.16,
+    "duration": 5.16
+  },
+  {
+    "text": "for example, the Pi agent. It's",
+    "start": 397.72,
+    "duration": 5.36
+  },
+  {
+    "text": "minimalist and it's maximally",
+    "start": 400.32,
+    "duration": 5.16
+  },
+  {
+    "text": "extensible. Um",
+    "start": 403.08,
+    "duration": 4.68
+  },
+  {
+    "text": "but everything is predefined. You know,",
+    "start": 405.48,
+    "duration": 4.56
+  },
+  {
+    "text": "the roles, fixed outputs, sequencing",
+    "start": 407.76,
+    "duration": 6.28
+  },
+  {
+    "text": "protocols, how memory is created. Uh and",
+    "start": 410.04,
+    "duration": 6.04
+  },
+  {
+    "text": "so I want to be absolutely clear here. I",
+    "start": 414.04,
+    "duration": 3.96
+  },
+  {
+    "text": "don't mean that you can't customize",
+    "start": 416.08,
+    "duration": 4.28
+  },
+  {
+    "text": "harnesses. Of course, you can. But the",
+    "start": 418,
+    "duration": 4.36
+  },
+  {
+    "text": "customization occurs ahead of the",
+    "start": 420.36,
+    "duration": 4.44
+  },
+  {
+    "text": "engineering runtime. Uh and not",
+    "start": 422.36,
+    "duration": 4.16
+  },
+  {
+    "text": "mid-engineering. And that's largely",
+    "start": 424.8,
+    "duration": 4.32
+  },
+  {
+    "text": "directed by us as humans. And for",
+    "start": 426.52,
+    "duration": 4.2
+  },
+  {
+    "text": "someone like me who started AI",
+    "start": 429.12,
+    "duration": 3.799
+  },
+  {
+    "text": "engineering about two years ago,",
+    "start": 430.72,
+    "duration": 4.199
+  },
+  {
+    "text": "it's probably the most powerful or",
+    "start": 432.919,
+    "duration": 6.361
+  },
+  {
+    "text": "predictive uh predictable method.",
+    "start": 434.919,
+    "duration": 5.881
+  },
+  {
+    "text": "And it's got really three payoffs. It's",
+    "start": 439.28,
+    "duration": 2.88
+  },
+  {
+    "text": "reliable.",
+    "start": 440.8,
+    "duration": 3.32
+  },
+  {
+    "text": "Um you know, the same input leads to a",
+    "start": 442.16,
+    "duration": 4.08
+  },
+  {
+    "text": "similar set of outputs. Obviously,",
+    "start": 444.12,
+    "duration": 4.76
+  },
+  {
+    "text": "there's going to be some variation.",
+    "start": 446.24,
+    "duration": 5.16
+  },
+  {
+    "text": "It's auditable. Um you can inspect",
+    "start": 448.88,
+    "duration": 4.56
+  },
+  {
+    "text": "exactly what changed and when. And",
+    "start": 451.4,
+    "duration": 3.84
+  },
+  {
+    "text": "there's some sort of linear causality",
+    "start": 453.44,
+    "duration": 2.88
+  },
+  {
+    "text": "where",
+    "start": 455.24,
+    "duration": 2.32
+  },
+  {
+    "text": "uh you know, if something breaks, you",
+    "start": 456.32,
+    "duration": 3.68
+  },
+  {
+    "text": "can actually trace it back to its",
+    "start": 457.56,
+    "duration": 3.6
+  },
+  {
+    "text": "source.",
+    "start": 460,
+    "duration": 2
+  },
+  {
+    "text": "Um",
+    "start": 461.16,
+    "duration": 2.88
+  },
+  {
+    "text": "this is like a factory line though. Like",
+    "start": 462,
+    "duration": 4.32
+  },
+  {
+    "text": "think Taylorism for AI. Just like a",
+    "start": 464.04,
+    "duration": 5.36
+  },
+  {
+    "text": "factory assembly line, every station is",
+    "start": 466.32,
+    "duration": 5.92
+  },
+  {
+    "text": "engineered in advance. Um, each agent",
+    "start": 469.4,
+    "duration": 6
+  },
+  {
+    "text": "has one job, a fixed place, a sequence,",
+    "start": 472.24,
+    "duration": 7.24
+  },
+  {
+    "text": "and maybe a defined handoff to the next",
+    "start": 475.4,
+    "duration": 6.76
+  },
+  {
+    "text": "agent.",
+    "start": 479.48,
+    "duration": 2.68
+  },
+  {
+    "text": "I mean, there's clearly some incredible",
+    "start": 484.64,
+    "duration": 4.84
+  },
+  {
+    "text": "uses for this and, you know, factory",
+    "start": 487.44,
+    "duration": 4.4
+  },
+  {
+    "text": "engineering gives you, you know,",
+    "start": 489.48,
+    "duration": 5.24
+  },
+  {
+    "text": "accuracy, speed, reproducibility,",
+    "start": 491.84,
+    "duration": 5
+  },
+  {
+    "text": "behavior that you can certify, and it",
+    "start": 494.72,
+    "duration": 4.04
+  },
+  {
+    "text": "really shines in these kind of closed",
+    "start": 496.84,
+    "duration": 4.36
+  },
+  {
+    "text": "deterministic systems, where you have a",
+    "start": 498.76,
+    "duration": 4.92
+  },
+  {
+    "text": "well-defined product or problem, and you",
+    "start": 501.2,
+    "duration": 4.28
+  },
+  {
+    "text": "know the kind of features you want to",
+    "start": 503.68,
+    "duration": 3.84
+  },
+  {
+    "text": "build. You know the sort of solutions",
+    "start": 505.48,
+    "duration": 5.84
+  },
+  {
+    "text": "that you need. Um,",
+    "start": 507.52,
+    "duration": 6.639
+  },
+  {
+    "text": "but here's the catch. Um, and and it's a",
+    "start": 511.32,
+    "duration": 6.04
+  },
+  {
+    "text": "real trade-off that that reliability",
+    "start": 514.159,
+    "duration": 6.041
+  },
+  {
+    "text": "isn't free. Um, you buy it by",
+    "start": 517.36,
+    "duration": 5.559
+  },
+  {
+    "text": "suppressing, um,",
+    "start": 520.2,
+    "duration": 5.68
+  },
+  {
+    "text": "variance that I'd argue novelty",
+    "start": 522.919,
+    "duration": 4.401
+  },
+  {
+    "text": "requires.",
+    "start": 525.88,
+    "duration": 4.28
+  },
+  {
+    "text": "Um, and determinism and emergence pull",
+    "start": 527.32,
+    "duration": 5.2
+  },
+  {
+    "text": "kind of in opposite directions.",
+    "start": 530.16,
+    "duration": 3.679
+  },
+  {
+    "text": "Um, and",
+    "start": 532.52,
+    "duration": 2.88
+  },
+  {
+    "text": "this is where we have to pivot to the",
+    "start": 533.839,
+    "duration": 3.161
+  },
+  {
+    "text": "real world, because in real life",
+    "start": 535.4,
+    "duration": 5.36
+  },
+  {
+    "text": "situations, in when when AI eventually,",
+    "start": 537,
+    "duration": 4.72
+  },
+  {
+    "text": "uh,",
+    "start": 540.76,
+    "duration": 4.44
+  },
+  {
+    "text": "when it becomes a norm for AI to capture",
+    "start": 541.72,
+    "duration": 5.8
+  },
+  {
+    "text": "real-world scenarios, where you've got",
+    "start": 545.2,
+    "duration": 4.08
+  },
+  {
+    "text": "multi-agents, multi-humans,",
+    "start": 547.52,
+    "duration": 4.68
+  },
+  {
+    "text": "multi-institutions interacting, and also",
+    "start": 549.28,
+    "duration": 6.12
+  },
+  {
+    "text": "touching the physical world,",
+    "start": 552.2,
+    "duration": 4.36
+  },
+  {
+    "text": "um,",
+    "start": 555.4,
+    "duration": 5.32
+  },
+  {
+    "text": "there's a hard ceiling on novelty, um,",
+    "start": 556.56,
+    "duration": 6
+  },
+  {
+    "text": "because the real world is messy, and it",
+    "start": 560.72,
+    "duration": 5.32
+  },
+  {
+    "text": "keeps changing. And so, fixed harness",
+    "start": 562.56,
+    "duration": 6.32
+  },
+  {
+    "text": "starts to break down. Um, so like I",
+    "start": 566.04,
+    "duration": 4.48
+  },
+  {
+    "text": "mentioned, there's a hard ceiling on",
+    "start": 568.88,
+    "duration": 3.52
+  },
+  {
+    "text": "novelty, um,",
+    "start": 570.52,
+    "duration": 3.04
+  },
+  {
+    "text": "because,",
+    "start": 572.4,
+    "duration": 3.439
+  },
+  {
+    "text": "uh, essentially, its reliability is",
+    "start": 573.56,
+    "duration": 5.16
+  },
+  {
+    "text": "predicated on suppressing",
+    "start": 575.839,
+    "duration": 5.441
+  },
+  {
+    "text": "variants. Um the models are going to",
+    "start": 578.72,
+    "duration": 4.52
+  },
+  {
+    "text": "keep accelerating.",
+    "start": 581.28,
+    "duration": 3.6
+  },
+  {
+    "text": "You know, you can build a careful",
+    "start": 583.24,
+    "duration": 4.12
+  },
+  {
+    "text": "harness today or you can use one off the",
+    "start": 584.88,
+    "duration": 3.84
+  },
+  {
+    "text": "shelf.",
+    "start": 587.36,
+    "duration": 2.92
+  },
+  {
+    "text": "But it could be irrelevant in the next",
+    "start": 588.72,
+    "duration": 5.04
+  },
+  {
+    "text": "month. The model just got so good that",
+    "start": 590.28,
+    "duration": 5.76
+  },
+  {
+    "text": "it didn't need that kind of scaffolding",
+    "start": 593.76,
+    "duration": 3.8
+  },
+  {
+    "text": "anymore.",
+    "start": 596.04,
+    "duration": 4.08
+  },
+  {
+    "text": "Um and that kind of leads to this whole",
+    "start": 597.56,
+    "duration": 4.6
+  },
+  {
+    "text": "dilemma of brutalness where every",
+    "start": 600.12,
+    "duration": 5.2
+  },
+  {
+    "text": "situation you didn't anticipated",
+    "start": 602.16,
+    "duration": 5.6
+  },
+  {
+    "text": "you didn't anticipate needs a human to",
+    "start": 605.32,
+    "duration": 5
+  },
+  {
+    "text": "patch the harness.",
+    "start": 607.76,
+    "duration": 5.08
+  },
+  {
+    "text": "The more real world it needs, the more",
+    "start": 610.32,
+    "duration": 4.16
+  },
+  {
+    "text": "rules you bolt on and eventually the",
+    "start": 612.84,
+    "duration": 3.68
+  },
+  {
+    "text": "harness just becomes ever more",
+    "start": 614.48,
+    "duration": 4
+  },
+  {
+    "text": "complicated than the actual problem that",
+    "start": 616.52,
+    "duration": 3.52
+  },
+  {
+    "text": "you need to solve.",
+    "start": 618.48,
+    "duration": 3.56
+  },
+  {
+    "text": "And I guess if there's one takeaway here",
+    "start": 620.04,
+    "duration": 5.8
+  },
+  {
+    "text": "is that the factory method",
+    "start": 622.04,
+    "duration": 7.28
+  },
+  {
+    "text": "is the right answer to a fixed problem",
+    "start": 625.84,
+    "duration": 6.44
+  },
+  {
+    "text": "and the wrong answer to a moving",
+    "start": 629.32,
+    "duration": 5.56
+  },
+  {
+    "text": "problem.",
+    "start": 632.28,
+    "duration": 2.6
+  },
+  {
+    "text": "And so let's really examine in what the",
+    "start": 637.08,
+    "duration": 5.6
+  },
+  {
+    "text": "real world is about and and I'm going to",
+    "start": 640.04,
+    "duration": 4.6
+  },
+  {
+    "text": "go down a bit of a philosophical route",
+    "start": 642.68,
+    "duration": 3.36
+  },
+  {
+    "text": "here.",
+    "start": 644.64,
+    "duration": 2.56
+  },
+  {
+    "text": "Um",
+    "start": 646.04,
+    "duration": 3.32
+  },
+  {
+    "text": "as we've said,",
+    "start": 647.2,
+    "duration": 4.16
+  },
+  {
+    "text": "you know, agentic systems will",
+    "start": 649.36,
+    "duration": 4.16
+  },
+  {
+    "text": "eventually collide with the real world",
+    "start": 651.36,
+    "duration": 4.32
+  },
+  {
+    "text": "and that raises a question.",
+    "start": 653.52,
+    "duration": 5.16
+  },
+  {
+    "text": "What is the real world actually made of?",
+    "start": 655.68,
+    "duration": 4.8
+  },
+  {
+    "text": "Because there's two ways to answer this",
+    "start": 658.68,
+    "duration": 3.6
+  },
+  {
+    "text": "actually. So the first paradigm, the",
+    "start": 660.48,
+    "duration": 3.44
+  },
+  {
+    "text": "first way to see the world is through",
+    "start": 662.28,
+    "duration": 3.44
+  },
+  {
+    "text": "what we call a reductionist or",
+    "start": 663.92,
+    "duration": 3.64
+  },
+  {
+    "text": "analytical view",
+    "start": 665.72,
+    "duration": 4.52
+  },
+  {
+    "text": "which we're all very used to actually.",
+    "start": 667.56,
+    "duration": 5.6
+  },
+  {
+    "text": "It says to understand the whole",
+    "start": 670.24,
+    "duration": 6
+  },
+  {
+    "text": "a big problem or a system or a big thing",
+    "start": 673.16,
+    "duration": 5.04
+  },
+  {
+    "text": "like an organization",
+    "start": 676.24,
+    "duration": 4.24
+  },
+  {
+    "text": "we've got to take it apart and study the",
+    "start": 678.2,
+    "duration": 5.08
+  },
+  {
+    "text": "individual parts. So essentially the",
+    "start": 680.48,
+    "duration": 5.08
+  },
+  {
+    "text": "world is made up of these individual",
+    "start": 683.28,
+    "duration": 6.28
+  },
+  {
+    "text": "parts which are things that are stable",
+    "start": 685.56,
+    "duration": 6.08
+  },
+  {
+    "text": "and change is just something that",
+    "start": 689.56,
+    "duration": 4.48
+  },
+  {
+    "text": "happens to those stable things now and",
+    "start": 691.64,
+    "duration": 3.6
+  },
+  {
+    "text": "then.",
+    "start": 694.04,
+    "duration": 3.4
+  },
+  {
+    "text": "The relationships amongst those things",
+    "start": 695.24,
+    "duration": 4.64
+  },
+  {
+    "text": "are secondary or an afterthought.",
+    "start": 697.44,
+    "duration": 3.96
+  },
+  {
+    "text": "And this is really the metaphysics of a",
+    "start": 699.88,
+    "duration": 2.92
+  },
+  {
+    "text": "factory",
+    "start": 701.4,
+    "duration": 3.68
+  },
+  {
+    "text": "and of nearly all software that we",
+    "start": 702.8,
+    "duration": 4.16
+  },
+  {
+    "text": "build. You know, you make the",
+    "start": 705.08,
+    "duration": 3.32
+  },
+  {
+    "text": "components.",
+    "start": 706.96,
+    "duration": 2.04
+  },
+  {
+    "text": "Uh",
+    "start": 708.4,
+    "duration": 3.64
+  },
+  {
+    "text": "you wire them together.",
+    "start": 709,
+    "duration": 6.8
+  },
+  {
+    "text": "And you get a product.",
+    "start": 712.04,
+    "duration": 5.64
+  },
+  {
+    "text": "The second paradigm, what we call the",
+    "start": 715.8,
+    "duration": 5.44
+  },
+  {
+    "text": "systems or relational paradigm,",
+    "start": 717.68,
+    "duration": 6.24
+  },
+  {
+    "text": "um takes the emphasis away from there",
+    "start": 721.24,
+    "duration": 5.96
+  },
+  {
+    "text": "being separate things or components",
+    "start": 723.92,
+    "duration": 5.48
+  },
+  {
+    "text": "and actually puts more what we call",
+    "start": 727.2,
+    "duration": 3.76
+  },
+  {
+    "text": "ontological",
+    "start": 729.4,
+    "duration": 4.52
+  },
+  {
+    "text": "emphasis on the relationships amongst",
+    "start": 730.96,
+    "duration": 4.96
+  },
+  {
+    "text": "those things. So, flips the order. It",
+    "start": 733.92,
+    "duration": 4.32
+  },
+  {
+    "text": "says that the real world isn't made up",
+    "start": 735.92,
+    "duration": 4.04
+  },
+  {
+    "text": "of things at all.",
+    "start": 738.24,
+    "duration": 5.68
+  },
+  {
+    "text": "It's made up of processes and um",
+    "start": 739.96,
+    "duration": 7.44
+  },
+  {
+    "text": "relationships which come first.",
+    "start": 743.92,
+    "duration": 6.4
+  },
+  {
+    "text": "So, what we call a stable thing really",
+    "start": 747.4,
+    "duration": 4.8
+  },
+  {
+    "text": "is just a slow pattern in an ongoing",
+    "start": 750.32,
+    "duration": 4.72
+  },
+  {
+    "text": "flow. Think an organism. It's more like",
+    "start": 752.2,
+    "duration": 6
+  },
+  {
+    "text": "a flame than a crystal. A flame looks",
+    "start": 755.04,
+    "duration": 5.2
+  },
+  {
+    "text": "like an object, but it isn't. It's a",
+    "start": 758.2,
+    "duration": 5.4
+  },
+  {
+    "text": "pattern held together moment by moment",
+    "start": 760.24,
+    "duration": 6.24
+  },
+  {
+    "text": "by a process. You stop the process and",
+    "start": 763.6,
+    "duration": 6.88
+  },
+  {
+    "text": "the thing doesn't exist.",
+    "start": 766.48,
+    "duration": 4
+  },
+  {
+    "text": "Uh and there's a really",
+    "start": 770.64,
+    "duration": 3.199
+  },
+  {
+    "text": "good payoff in understanding this",
+    "start": 772.2,
+    "duration": 3.72
+  },
+  {
+    "text": "paradigm. Um and once you see the world",
+    "start": 773.839,
+    "duration": 3.601
+  },
+  {
+    "text": "in this way, you start to notice",
+    "start": 775.92,
+    "duration": 4.08
+  },
+  {
+    "text": "something remarkable. Where where you",
+    "start": 777.44,
+    "duration": 5.92
+  },
+  {
+    "text": "have simple local rules between, let's",
+    "start": 780,
+    "duration": 4.32
+  },
+  {
+    "text": "say,",
+    "start": 783.36,
+    "duration": 3
+  },
+  {
+    "text": "particles or between people or between",
+    "start": 784.32,
+    "duration": 4.2
+  },
+  {
+    "text": "creatures,",
+    "start": 786.36,
+    "duration": 5.08
+  },
+  {
+    "text": "that local interaction gives rise to a",
+    "start": 788.52,
+    "duration": 5.72
+  },
+  {
+    "text": "whole new level",
+    "start": 791.44,
+    "duration": 6.52
+  },
+  {
+    "text": "of order that can't be predicted from",
+    "start": 794.24,
+    "duration": 6.8
+  },
+  {
+    "text": "its constituent parts and that no",
+    "start": 797.96,
+    "duration": 7.04
+  },
+  {
+    "text": "constituent part designed ahead of time.",
+    "start": 801.04,
+    "duration": 7.28
+  },
+  {
+    "text": "For example, water. Water has a property",
+    "start": 805,
+    "duration": 5.84
+  },
+  {
+    "text": "of being wet.",
+    "start": 808.32,
+    "duration": 3.44
+  },
+  {
+    "text": "But it's",
+    "start": 810.84,
+    "duration": 3.6
+  },
+  {
+    "text": "constituent parts, oxygen and hydrogen,",
+    "start": 811.76,
+    "duration": 4.52
+  },
+  {
+    "text": "are not wet.",
+    "start": 814.44,
+    "duration": 4.2
+  },
+  {
+    "text": "But their coming together, again putting",
+    "start": 816.28,
+    "duration": 4.6
+  },
+  {
+    "text": "emphasis on the relationships,",
+    "start": 818.64,
+    "duration": 4.84
+  },
+  {
+    "text": "their coming together is where you had",
+    "start": 820.88,
+    "duration": 5.76
+  },
+  {
+    "text": "the emergence of a novel new property,",
+    "start": 823.48,
+    "duration": 4.96
+  },
+  {
+    "text": "i.e. wetness.",
+    "start": 826.64,
+    "duration": 4.24
+  },
+  {
+    "text": "Another example is a flock of birds. Not",
+    "start": 828.44,
+    "duration": 5.24
+  },
+  {
+    "text": "one bird wakes up every morning",
+    "start": 830.88,
+    "duration": 5.12
+  },
+  {
+    "text": "intending to make a flock.",
+    "start": 833.68,
+    "duration": 4.84
+  },
+  {
+    "text": "Each probably just follows three simple",
+    "start": 836,
+    "duration": 4.52
+  },
+  {
+    "text": "local rules, which is align with your",
+    "start": 838.52,
+    "duration": 5.56
+  },
+  {
+    "text": "neighbor, don't crash into them,",
+    "start": 840.52,
+    "duration": 6.6
+  },
+  {
+    "text": "stay close, and that's it. Local rules,",
+    "start": 844.08,
+    "duration": 4.96
+  },
+  {
+    "text": "local interactions, and out of that you",
+    "start": 847.12,
+    "duration": 3.44
+  },
+  {
+    "text": "get a flock,",
+    "start": 849.04,
+    "duration": 5.56
+  },
+  {
+    "text": "a new pattern alive and coordinated that",
+    "start": 850.56,
+    "duration": 6.24
+  },
+  {
+    "text": "you could never understand by pulling it",
+    "start": 854.6,
+    "duration": 4.56
+  },
+  {
+    "text": "apart and studying one bird because no",
+    "start": 856.8,
+    "duration": 5.92
+  },
+  {
+    "text": "single bird has a flock in it. The flock",
+    "start": 859.16,
+    "duration": 6.44
+  },
+  {
+    "text": "lives in the relationships, not the",
+    "start": 862.72,
+    "duration": 4.36
+  },
+  {
+    "text": "parts.",
+    "start": 865.6,
+    "duration": 3.72
+  },
+  {
+    "text": "So this factory method of engineering",
+    "start": 867.08,
+    "duration": 5.8
+  },
+  {
+    "text": "assumes a world of parts.",
+    "start": 869.32,
+    "duration": 5.84
+  },
+  {
+    "text": "But the non-machine world, and I'd argue",
+    "start": 872.88,
+    "duration": 5.76
+  },
+  {
+    "text": "that AI is sort of on the cusp of that,",
+    "start": 875.16,
+    "duration": 6.08
+  },
+  {
+    "text": "the non-machine world is a world of",
+    "start": 878.64,
+    "duration": 5.68
+  },
+  {
+    "text": "patterns and moving patterns of",
+    "start": 881.24,
+    "duration": 6
+  },
+  {
+    "text": "emergence.",
+    "start": 884.32,
+    "duration": 2.92
+  },
+  {
+    "text": "And that sort of reflects what sort of",
+    "start": 888.72,
+    "duration": 6.84
+  },
+  {
+    "text": "problems we face in this moving messy",
+    "start": 891.32,
+    "duration": 6.76
+  },
+  {
+    "text": "world. Um and there's a line from",
+    "start": 895.56,
+    "duration": 4.32
+  },
+  {
+    "text": "Russell Ackoff that I absolutely love.",
+    "start": 898.08,
+    "duration": 4.28
+  },
+  {
+    "text": "He says that managers aren't handed neat",
+    "start": 899.88,
+    "duration": 4.28
+  },
+  {
+    "text": "separate problems.",
+    "start": 902.36,
+    "duration": 3.56
+  },
+  {
+    "text": "They're handed dynamic situations,",
+    "start": 904.16,
+    "duration": 5.2
+  },
+  {
+    "text": "tangles of problems that keep changing",
+    "start": 905.92,
+    "duration": 5.68
+  },
+  {
+    "text": "and keep bumping to each other. And he",
+    "start": 909.36,
+    "duration": 3.92
+  },
+  {
+    "text": "And he gave that a name. He called it a",
+    "start": 911.6,
+    "duration": 4.8
+  },
+  {
+    "text": "mess. A mess is a isn't just a pile of",
+    "start": 913.28,
+    "duration": 6.08
+  },
+  {
+    "text": "separate parts, it's actually a system",
+    "start": 916.4,
+    "duration": 5.84
+  },
+  {
+    "text": "of relationships in motion.",
+    "start": 919.36,
+    "duration": 5.68
+  },
+  {
+    "text": "Which is exactly why the factory based",
+    "start": 922.24,
+    "duration": 5.12
+  },
+  {
+    "text": "on a fixed harness",
+    "start": 925.04,
+    "duration": 4.88
+  },
+  {
+    "text": "way of engineering will struggle when it",
+    "start": 927.36,
+    "duration": 7.32
+  },
+  {
+    "text": "collides with real-world live scenarios.",
+    "start": 929.92,
+    "duration": 7.68
+  },
+  {
+    "text": "Because you can't decompose a mess into",
+    "start": 934.68,
+    "duration": 5
+  },
+  {
+    "text": "tidy boxes and solve each of them",
+    "start": 937.6,
+    "duration": 5.28
+  },
+  {
+    "text": "because they're not individual parts,",
+    "start": 939.68,
+    "duration": 5.4
+  },
+  {
+    "text": "they're a moving pattern of",
+    "start": 942.88,
+    "duration": 5.04
+  },
+  {
+    "text": "relationships.",
+    "start": 945.08,
+    "duration": 2.84
+  },
+  {
+    "text": "We can then look at problems through",
+    "start": 949.08,
+    "duration": 3.24
+  },
+  {
+    "text": "this",
+    "start": 951.4,
+    "duration": 3.76
+  },
+  {
+    "text": "this distinction between different types",
+    "start": 952.32,
+    "duration": 4.52
+  },
+  {
+    "text": "of problems. So,",
+    "start": 955.16,
+    "duration": 4.04
+  },
+  {
+    "text": "um engineering is all about solving",
+    "start": 956.84,
+    "duration": 5.2
+  },
+  {
+    "text": "problems and I'd argue that very simply",
+    "start": 959.2,
+    "duration": 4.2
+  },
+  {
+    "text": "put there are two kinds of problems.",
+    "start": 962.04,
+    "duration": 3.44
+  },
+  {
+    "text": "There are complicated problems",
+    "start": 963.4,
+    "duration": 3.32
+  },
+  {
+    "text": "um",
+    "start": 965.48,
+    "duration": 2.88
+  },
+  {
+    "text": "and there are complex problems. So, a",
+    "start": 966.72,
+    "duration": 4.6
+  },
+  {
+    "text": "complicated system or complicated",
+    "start": 968.36,
+    "duration": 4.12
+  },
+  {
+    "text": "problem",
+    "start": 971.32,
+    "duration": 3.84
+  },
+  {
+    "text": "is like building a jumbo jet or a clock.",
+    "start": 972.48,
+    "duration": 4.76
+  },
+  {
+    "text": "There are passive parts",
+    "start": 975.16,
+    "duration": 5.48
+  },
+  {
+    "text": "um but experts can take them apart,",
+    "start": 977.24,
+    "duration": 7.08
+  },
+  {
+    "text": "analyze them, plan, predict, document.",
+    "start": 980.64,
+    "duration": 6.52
+  },
+  {
+    "text": "It's hard, but it's actually knowable",
+    "start": 984.32,
+    "duration": 6.68
+  },
+  {
+    "text": "and it works in a very predictable way.",
+    "start": 987.16,
+    "duration": 5.679
+  },
+  {
+    "text": "In contrast, when you have a complex",
+    "start": 991,
+    "duration": 4.839
+  },
+  {
+    "text": "system or a complex problem like a flock",
+    "start": 992.839,
+    "duration": 6.321
+  },
+  {
+    "text": "of birds, a market, a human",
+    "start": 995.839,
+    "duration": 5.081
+  },
+  {
+    "text": "organization,",
+    "start": 999.16,
+    "duration": 5.4
+  },
+  {
+    "text": "it's slightly different. It's parts are",
+    "start": 1000.92,
+    "duration": 5.84
+  },
+  {
+    "text": "constantly interacting and adapting to",
+    "start": 1004.56,
+    "duration": 4.96
+  },
+  {
+    "text": "one another. So, the whole",
+    "start": 1006.76,
+    "duration": 5.28
+  },
+  {
+    "text": "can't be derived",
+    "start": 1009.52,
+    "duration": 4.96
+  },
+  {
+    "text": "from analyzing the parts. So, you don't",
+    "start": 1012.04,
+    "duration": 4.72
+  },
+  {
+    "text": "analyze and plan a complex system.",
+    "start": 1014.48,
+    "duration": 4.8
+  },
+  {
+    "text": "Instead, you probe and sense and respond",
+    "start": 1016.76,
+    "duration": 3.6
+  },
+  {
+    "text": "and",
+    "start": 1019.28,
+    "duration": 2.2
+  },
+  {
+    "text": "this is probably one of the most",
+    "start": 1020.36,
+    "duration": 3.36
+  },
+  {
+    "text": "expensive mistakes we make in the modern",
+    "start": 1021.48,
+    "duration": 5.16
+  },
+  {
+    "text": "world of design and engineering,",
+    "start": 1023.72,
+    "duration": 5.8
+  },
+  {
+    "text": "which is that we treat a complex problem",
+    "start": 1026.64,
+    "duration": 4.84
+  },
+  {
+    "text": "like a complicated one",
+    "start": 1029.52,
+    "duration": 4.439
+  },
+  {
+    "text": "um and and things fail not due to lack",
+    "start": 1031.48,
+    "duration": 6.12
+  },
+  {
+    "text": "of execution, but essentially because",
+    "start": 1033.959,
+    "duration": 6.041
+  },
+  {
+    "text": "there's a failure in categorizing the",
+    "start": 1037.6,
+    "duration": 5.4
+  },
+  {
+    "text": "problem spaces.",
+    "start": 1040,
+    "duration": 3
+  },
+  {
+    "text": "If we go",
+    "start": 1044.079,
+    "duration": 3.481
+  },
+  {
+    "text": "just one step deeper into what a complex",
+    "start": 1045.36,
+    "duration": 3.6
+  },
+  {
+    "text": "system is,",
+    "start": 1047.56,
+    "duration": 3.32
+  },
+  {
+    "text": "um essentially, you know, the",
+    "start": 1048.96,
+    "duration": 4.92
+  },
+  {
+    "text": "ingredients of it are first, you need a",
+    "start": 1050.88,
+    "duration": 6.92
+  },
+  {
+    "text": "diverse set of agents or actors if it's",
+    "start": 1053.88,
+    "duration": 5.64
+  },
+  {
+    "text": "a human organization.",
+    "start": 1057.8,
+    "duration": 4.28
+  },
+  {
+    "text": "Um not clones essentially, but different",
+    "start": 1059.52,
+    "duration": 3.96
+  },
+  {
+    "text": "from one another in some sort of way.",
+    "start": 1062.08,
+    "duration": 3.6
+  },
+  {
+    "text": "So, because the diversity is the fuel",
+    "start": 1063.48,
+    "duration": 3.72
+  },
+  {
+    "text": "there.",
+    "start": 1065.68,
+    "duration": 4.6
+  },
+  {
+    "text": "Um they need to interact locally uh cuz",
+    "start": 1067.2,
+    "duration": 5.68
+  },
+  {
+    "text": "no agent, no individual actor, no",
+    "start": 1070.28,
+    "duration": 6.8
+  },
+  {
+    "text": "individual component sees the whole. Um",
+    "start": 1072.88,
+    "duration": 6.68
+  },
+  {
+    "text": "instead each respond to whoever's next",
+    "start": 1077.08,
+    "duration": 4.32
+  },
+  {
+    "text": "to it. And this is like the bird",
+    "start": 1079.56,
+    "duration": 4.96
+  },
+  {
+    "text": "aligning with the neighbor.",
+    "start": 1081.4,
+    "duration": 5.4
+  },
+  {
+    "text": "And they learn. They learn recursively.",
+    "start": 1084.52,
+    "duration": 4.44
+  },
+  {
+    "text": "They adapt, then they adapt to the",
+    "start": 1086.8,
+    "duration": 4.08
+  },
+  {
+    "text": "results of their own adapting, and it",
+    "start": 1088.96,
+    "duration": 3.92
+  },
+  {
+    "text": "constantly loops, and",
+    "start": 1090.88,
+    "duration": 3.24
+  },
+  {
+    "text": "um",
+    "start": 1092.88,
+    "duration": 3.68
+  },
+  {
+    "text": "you know, with respect to one another",
+    "start": 1094.12,
+    "duration": 4.24
+  },
+  {
+    "text": "and the environment.",
+    "start": 1096.56,
+    "duration": 3.92
+  },
+  {
+    "text": "Everything is moving in response to",
+    "start": 1098.36,
+    "duration": 3.56
+  },
+  {
+    "text": "everything else, and nothing holds",
+    "start": 1100.48,
+    "duration": 4.84
+  },
+  {
+    "text": "still. And out of all of that local",
+    "start": 1101.92,
+    "duration": 6.36
+  },
+  {
+    "text": "adaptive looping interaction,",
+    "start": 1105.32,
+    "duration": 4.76
+  },
+  {
+    "text": "you get something called emergence,",
+    "start": 1108.28,
+    "duration": 3.48
+  },
+  {
+    "text": "which is a key",
+    "start": 1110.08,
+    "duration": 5.12
+  },
+  {
+    "text": "concept in complexity science.",
+    "start": 1111.76,
+    "duration": 7.8
+  },
+  {
+    "text": "Um basically, it's a new novel pattern",
+    "start": 1115.2,
+    "duration": 8.4
+  },
+  {
+    "text": "uh or organization or behavior",
+    "start": 1119.56,
+    "duration": 7.6
+  },
+  {
+    "text": "that uh no single part designed on its",
+    "start": 1123.6,
+    "duration": 6.48
+  },
+  {
+    "text": "own and can't be explained",
+    "start": 1127.16,
+    "duration": 5.64
+  },
+  {
+    "text": "by splitting that whole into its parts",
+    "start": 1130.08,
+    "duration": 4.84
+  },
+  {
+    "text": "and studying them. Again, think the",
+    "start": 1132.8,
+    "duration": 5.2
+  },
+  {
+    "text": "flock of birds. No bird has a flock in",
+    "start": 1134.92,
+    "duration": 5.8
+  },
+  {
+    "text": "it. Think about the wetness of water.",
+    "start": 1138,
+    "duration": 5.52
+  },
+  {
+    "text": "None of the individual oxygen hydrogen",
+    "start": 1140.72,
+    "duration": 6.92
+  },
+  {
+    "text": "molecules have wetness within them. And",
+    "start": 1143.52,
+    "duration": 6.08
+  },
+  {
+    "text": "yet, it leads to the emergence of",
+    "start": 1147.64,
+    "duration": 4.44
+  },
+  {
+    "text": "something quite novel.",
+    "start": 1149.6,
+    "duration": 5.24
+  },
+  {
+    "text": "Now, these systems don't fly apart into",
+    "start": 1152.08,
+    "duration": 4.12
+  },
+  {
+    "text": "chaos.",
+    "start": 1154.84,
+    "duration": 4.04
+  },
+  {
+    "text": "They tend to settle into attractors,",
+    "start": 1156.2,
+    "duration": 5.24
+  },
+  {
+    "text": "which are essentially stable states.",
+    "start": 1158.88,
+    "duration": 3.12
+  },
+  {
+    "text": "Uh",
+    "start": 1161.44,
+    "duration": 2.64
+  },
+  {
+    "text": "they keep pulling back towards some sort",
+    "start": 1162,
+    "duration": 4.36
+  },
+  {
+    "text": "of equilibrium. So, for example, water",
+    "start": 1164.08,
+    "duration": 4.8
+  },
+  {
+    "text": "is stable at room temperature.",
+    "start": 1166.36,
+    "duration": 3.76
+  },
+  {
+    "text": "So, you get this sort of beautiful",
+    "start": 1168.88,
+    "duration": 3.44
+  },
+  {
+    "text": "tension. You've got constant change at a",
+    "start": 1170.12,
+    "duration": 4.16
+  },
+  {
+    "text": "local level,",
+    "start": 1172.32,
+    "duration": 4.92
+  },
+  {
+    "text": "but then you've got recognizable stable",
+    "start": 1174.28,
+    "duration": 6.24
+  },
+  {
+    "text": "patterns at a whole system level.",
+    "start": 1177.24,
+    "duration": 5.8
+  },
+  {
+    "text": "And crucially, nobody's steering here.",
+    "start": 1180.52,
+    "duration": 5.48
+  },
+  {
+    "text": "It's self-organizing. And that's the",
+    "start": 1183.04,
+    "duration": 5.48
+  },
+  {
+    "text": "whole mystery. And I'd argue that's the",
+    "start": 1186,
+    "duration": 4.44
+  },
+  {
+    "text": "whole opportunity",
+    "start": 1188.52,
+    "duration": 4.68
+  },
+  {
+    "text": "for design and engineering. And this is",
+    "start": 1190.44,
+    "duration": 3.8
+  },
+  {
+    "text": "where",
+    "start": 1193.2,
+    "duration": 4.8
+  },
+  {
+    "text": "really want to introduce this new design",
+    "start": 1194.24,
+    "duration": 5.68
+  },
+  {
+    "text": "and engineering philosophy called",
+    "start": 1198,
+    "duration": 5.44
+  },
+  {
+    "text": "adaptive engineering.",
+    "start": 1199.92,
+    "duration": 3.52
+  },
+  {
+    "text": "Before that, let's just take stock a",
+    "start": 1203.48,
+    "duration": 4.16
+  },
+  {
+    "text": "bit. So, everything we covered so far",
+    "start": 1205.08,
+    "duration": 4.24
+  },
+  {
+    "text": "lives inside a particular framework,",
+    "start": 1207.64,
+    "duration": 3.56
+  },
+  {
+    "text": "which is this kind of fixed or factory",
+    "start": 1209.32,
+    "duration": 4.96
+  },
+  {
+    "text": "harness. Uh the human engineer decides",
+    "start": 1211.2,
+    "duration": 5.12
+  },
+  {
+    "text": "it all up front, the sequencing, the",
+    "start": 1214.28,
+    "duration": 4.2
+  },
+  {
+    "text": "roles, capabilities.",
+    "start": 1216.32,
+    "duration": 3.36
+  },
+  {
+    "text": "That's really the factory model, and it",
+    "start": 1218.48,
+    "duration": 4.28
+  },
+  {
+    "text": "works. Um and we've seen that um because",
+    "start": 1219.68,
+    "duration": 6.4
+  },
+  {
+    "text": "problem spaces that are complicated yet",
+    "start": 1222.76,
+    "duration": 5.16
+  },
+  {
+    "text": "predictable",
+    "start": 1226.08,
+    "duration": 3.84
+  },
+  {
+    "text": "is exactly right. And I'd argue for most",
+    "start": 1227.92,
+    "duration": 3.44
+  },
+  {
+    "text": "engineering problems, that is the",
+    "start": 1229.92,
+    "duration": 4.04
+  },
+  {
+    "text": "perfect method.",
+    "start": 1231.36,
+    "duration": 6.52
+  },
+  {
+    "text": "But the moment AI becomes exponentially",
+    "start": 1233.96,
+    "duration": 5.04
+  },
+  {
+    "text": "better,",
+    "start": 1237.88,
+    "duration": 2.76
+  },
+  {
+    "text": "and it collides with the real world,",
+    "start": 1239,
+    "duration": 4.28
+  },
+  {
+    "text": "which is, as we found, messy and",
+    "start": 1240.64,
+    "duration": 5.36
+  },
+  {
+    "text": "complex, not just complicated,",
+    "start": 1243.28,
+    "duration": 4.08
+  },
+  {
+    "text": "we need something genuinely new, a",
+    "start": 1246,
+    "duration": 4.44
+  },
+  {
+    "text": "different idea of what optimal design",
+    "start": 1247.36,
+    "duration": 5.92
+  },
+  {
+    "text": "and engineering even is. Um",
+    "start": 1250.44,
+    "duration": 4.64
+  },
+  {
+    "text": "And it's obviously it rests on those two",
+    "start": 1253.28,
+    "duration": 3.4
+  },
+  {
+    "text": "assumptions that models have become",
+    "start": 1255.08,
+    "duration": 4.76
+  },
+  {
+    "text": "become exponentially better.",
+    "start": 1256.68,
+    "duration": 5.16
+  },
+  {
+    "text": "Uh and that AI will",
+    "start": 1259.84,
+    "duration": 5.08
+  },
+  {
+    "text": "uh come outside of a sandbox situation,",
+    "start": 1261.84,
+    "duration": 7.16
+  },
+  {
+    "text": "and actually um engineering will run in",
+    "start": 1264.92,
+    "duration": 7.4
+  },
+  {
+    "text": "real time in contact with the social and",
+    "start": 1269,
+    "duration": 7.24
+  },
+  {
+    "text": "physical environment. Um so, essentially",
+    "start": 1272.32,
+    "duration": 5.48
+  },
+  {
+    "text": "what we're saying is that the harness",
+    "start": 1276.24,
+    "duration": 5.56
+  },
+  {
+    "text": "must adapt mid-flow. And that's the crux",
+    "start": 1277.8,
+    "duration": 6
+  },
+  {
+    "text": "of harness engineering. And",
+    "start": 1281.8,
+    "duration": 4.4
+  },
+  {
+    "text": "I guess if I were to crystallize",
+    "start": 1283.8,
+    "duration": 4.84
+  },
+  {
+    "text": "um the definition, um",
+    "start": 1286.2,
+    "duration": 4.64
+  },
+  {
+    "text": "adaptive engineering is the discipline",
+    "start": 1288.64,
+    "duration": 4.92
+  },
+  {
+    "text": "of designing constraints",
+    "start": 1290.84,
+    "duration": 5.4
+  },
+  {
+    "text": "to the extent that the harness emerges",
+    "start": 1293.56,
+    "duration": 5.84
+  },
+  {
+    "text": "on its own, stabilizes,",
+    "start": 1296.24,
+    "duration": 7.04
+  },
+  {
+    "text": "and adapts as needed in response to the",
+    "start": 1299.4,
+    "duration": 6.84
+  },
+  {
+    "text": "changing environment in ways that you",
+    "start": 1303.28,
+    "duration": 7.12
+  },
+  {
+    "text": "could not specify in advance.",
+    "start": 1306.24,
+    "duration": 6.64
+  },
+  {
+    "text": "Essentially, the harness becomes the",
+    "start": 1310.4,
+    "duration": 6.2
+  },
+  {
+    "text": "ongoing output rather than the input.",
+    "start": 1312.88,
+    "duration": 4.8
+  },
+  {
+    "text": "And",
+    "start": 1316.6,
+    "duration": 3.28
+  },
+  {
+    "text": "you know, what this means in practice,",
+    "start": 1317.68,
+    "duration": 3.96
+  },
+  {
+    "text": "uh just to make it a bit more concrete,",
+    "start": 1319.88,
+    "duration": 2.72
+  },
+  {
+    "text": "is",
+    "start": 1321.64,
+    "duration": 4.64
+  },
+  {
+    "text": "given that agents have capabilities um",
+    "start": 1322.6,
+    "duration": 6.8
+  },
+  {
+    "text": "to interact with each other,",
+    "start": 1326.28,
+    "duration": 6.2
+  },
+  {
+    "text": "organization emerges from those",
+    "start": 1329.4,
+    "duration": 5.52
+  },
+  {
+    "text": "interactions in response to the",
+    "start": 1332.48,
+    "duration": 5.28
+  },
+  {
+    "text": "environment or a goal,",
+    "start": 1334.92,
+    "duration": 5.76
+  },
+  {
+    "text": "such that new levels of order appear,",
+    "start": 1337.76,
+    "duration": 4.92
+  },
+  {
+    "text": "ones that you could never have specified",
+    "start": 1340.68,
+    "duration": 3.2
+  },
+  {
+    "text": "up front.",
+    "start": 1342.68,
+    "duration": 4.56
+  },
+  {
+    "text": "Um so, think bird in a flock, think",
+    "start": 1343.88,
+    "duration": 5.68
+  },
+  {
+    "text": "agent and harness. So, the agents are",
+    "start": 1347.24,
+    "duration": 5.32
+  },
+  {
+    "text": "actually creating the harness",
+    "start": 1349.56,
+    "duration": 5.48
+  },
+  {
+    "text": "in the same way as the birds are",
+    "start": 1352.56,
+    "duration": 4.84
+  },
+  {
+    "text": "relating to one another so that the",
+    "start": 1355.04,
+    "duration": 4.36
+  },
+  {
+    "text": "flock can emerge. So, you don't build",
+    "start": 1357.4,
+    "duration": 4.52
+  },
+  {
+    "text": "the harness anymore. You let the agents",
+    "start": 1359.4,
+    "duration": 4.88
+  },
+  {
+    "text": "form the harness that best fits the",
+    "start": 1361.92,
+    "duration": 4.92
+  },
+  {
+    "text": "environment in that moment, in that",
+    "start": 1364.28,
+    "duration": 4.03
+  },
+  {
+    "text": "context.",
+    "start": 1366.84,
+    "duration": 2.08
+  },
+  {
+    "text": ">> [snorts]",
+    "start": 1368.31,
+    "duration": 2.25
+  },
+  {
+    "text": ">> The harness then becomes a",
+    "start": 1368.92,
+    "duration": 3.68
+  },
+  {
+    "text": "self-organizing,",
+    "start": 1370.56,
+    "duration": 6.84
+  },
+  {
+    "text": "constantly evolving multi-agent system.",
+    "start": 1372.6,
+    "duration": 7.2
+  },
+  {
+    "text": "And if we're to just simulate what it",
+    "start": 1377.4,
+    "duration": 5.12
+  },
+  {
+    "text": "may become, because this is when agents",
+    "start": 1379.8,
+    "duration": 4.72
+  },
+  {
+    "text": "become a lot more capable. Um",
+    "start": 1382.52,
+    "duration": 3.76
+  },
+  {
+    "text": "essentially, you have agents that are",
+    "start": 1384.52,
+    "duration": 5.52
+  },
+  {
+    "text": "isomorphic um but yet undifferentiated.",
+    "start": 1386.28,
+    "duration": 6.28
+  },
+  {
+    "text": "Um but fully capable of interacting and",
+    "start": 1390.04,
+    "duration": 4.84
+  },
+  {
+    "text": "um learning and changing.",
+    "start": 1392.56,
+    "duration": 4.72
+  },
+  {
+    "text": "Um you let those agents interact. At",
+    "start": 1394.88,
+    "duration": 4.2
+  },
+  {
+    "text": "first, there's nothing. It's a bit of",
+    "start": 1397.28,
+    "duration": 3.72
+  },
+  {
+    "text": "few exchanges here and there.",
+    "start": 1399.08,
+    "duration": 4.2
+  },
+  {
+    "text": "But the coupling continues and slowly",
+    "start": 1401,
+    "duration": 4.52
+  },
+  {
+    "text": "builds until you reach a point where",
+    "start": 1403.28,
+    "duration": 4.96
+  },
+  {
+    "text": "roughly one connection on average um",
+    "start": 1405.52,
+    "duration": 4.28
+  },
+  {
+    "text": "occurs um",
+    "start": 1408.24,
+    "duration": 3.6
+  },
+  {
+    "text": "with each agent. And suddenly, you start",
+    "start": 1409.8,
+    "duration": 4.361
+  },
+  {
+    "text": "to see this whole emerge.",
+    "start": 1411.84,
+    "duration": 2.48
+  },
+  {
+    "text": ">> [snorts]",
+    "start": 1414.161,
+    "duration": 2.759
+  },
+  {
+    "text": ">> Um a system, you could say. Uh and I",
+    "start": 1414.32,
+    "duration": 5.48
+  },
+  {
+    "text": "guess as an engineer, your new lever",
+    "start": 1416.92,
+    "duration": 4.44
+  },
+  {
+    "text": "uh becomes",
+    "start": 1419.8,
+    "duration": 3.8
+  },
+  {
+    "text": "uh how the rate of coupling. Like, do",
+    "start": 1421.36,
+    "duration": 4.88
+  },
+  {
+    "text": "you dial it up or do you",
+    "start": 1423.6,
+    "duration": 5.8
+  },
+  {
+    "text": "dampen it down? Um again, the adaptive",
+    "start": 1426.24,
+    "duration": 6.68
+  },
+  {
+    "text": "path focuses on the interactions.",
+    "start": 1429.4,
+    "duration": 6
+  },
+  {
+    "text": "Um until, you know, agents start to",
+    "start": 1432.92,
+    "duration": 4.84
+  },
+  {
+    "text": "actually specialize with respect to one",
+    "start": 1435.4,
+    "duration": 3.72
+  },
+  {
+    "text": "another.",
+    "start": 1437.76,
+    "duration": 3.32
+  },
+  {
+    "text": "So, let's say you got two agents doing",
+    "start": 1439.12,
+    "duration": 3.96
+  },
+  {
+    "text": "the same thing in the same place. That's",
+    "start": 1441.08,
+    "duration": 4.08
+  },
+  {
+    "text": "just redundant and the environment knows",
+    "start": 1443.08,
+    "duration": 3.8
+  },
+  {
+    "text": "that. The pressure from the environment",
+    "start": 1445.16,
+    "duration": 4.76
+  },
+  {
+    "text": "knows that. So, it rewards anything that",
+    "start": 1446.88,
+    "duration": 6
+  },
+  {
+    "text": "essentially breaks the tie. Um",
+    "start": 1449.92,
+    "duration": 4.52
+  },
+  {
+    "text": "so",
+    "start": 1452.88,
+    "duration": 4.16
+  },
+  {
+    "text": "I guess a tiny difference um",
+    "start": 1454.44,
+    "duration": 4.28
+  },
+  {
+    "text": "you know, who got there first, who is",
+    "start": 1457.04,
+    "duration": 3.12
+  },
+  {
+    "text": "slightly better",
+    "start": 1458.72,
+    "duration": 3.72
+  },
+  {
+    "text": "gets amplified by the feedback until",
+    "start": 1460.16,
+    "duration": 4.44
+  },
+  {
+    "text": "those two agents are no longer",
+    "start": 1462.44,
+    "duration": 4.48
+  },
+  {
+    "text": "interchangeable. And so, the pool stops",
+    "start": 1464.6,
+    "duration": 4.48
+  },
+  {
+    "text": "becoming something uniform and it",
+    "start": 1466.92,
+    "duration": 6.32
+  },
+  {
+    "text": "actually falls into uh niches. And",
+    "start": 1469.08,
+    "duration": 6.48
+  },
+  {
+    "text": "really, the key insight here is that the",
+    "start": 1473.24,
+    "duration": 4.24
+  },
+  {
+    "text": "agent's identity isn't something you",
+    "start": 1475.56,
+    "duration": 3.44
+  },
+  {
+    "text": "gave it.",
+    "start": 1477.48,
+    "duration": 3.44
+  },
+  {
+    "text": "It's actually the position, role, or",
+    "start": 1479,
+    "duration": 4.04
+  },
+  {
+    "text": "capability it took relative to the",
+    "start": 1480.92,
+    "duration": 5.04
+  },
+  {
+    "text": "others and its environment. So, here we",
+    "start": 1483.04,
+    "duration": 4.96
+  },
+  {
+    "text": "see specialization",
+    "start": 1485.96,
+    "duration": 5.76
+  },
+  {
+    "text": "emerges from the interaction.",
+    "start": 1488,
+    "duration": 6
+  },
+  {
+    "text": "And if you go on a bit further, uh they",
+    "start": 1491.72,
+    "duration": 4.68
+  },
+  {
+    "text": "stop connecting at random. Uh in fact,",
+    "start": 1494,
+    "duration": 4.8
+  },
+  {
+    "text": "they start to work well together",
+    "start": 1496.4,
+    "duration": 5.68
+  },
+  {
+    "text": "um, in terms of sort of clusters. Um,",
+    "start": 1498.8,
+    "duration": 5.36
+  },
+  {
+    "text": "and you see the first boundaries appear",
+    "start": 1502.08,
+    "duration": 3.84
+  },
+  {
+    "text": "and crucially the system",
+    "start": 1504.16,
+    "duration": 4.68
+  },
+  {
+    "text": "drew them, you didn't as an engineer",
+    "start": 1505.92,
+    "duration": 4.72
+  },
+  {
+    "text": "ahead of time. Um, so these are kind of",
+    "start": 1508.84,
+    "duration": 3.76
+  },
+  {
+    "text": "emergent clusters.",
+    "start": 1510.64,
+    "duration": 5.8
+  },
+  {
+    "text": "Um, until a new convention crystallizes,",
+    "start": 1512.6,
+    "duration": 5.28
+  },
+  {
+    "text": "you know, a division of norms and",
+    "start": 1516.44,
+    "duration": 3.36
+  },
+  {
+    "text": "protocols, and the system produce some",
+    "start": 1517.88,
+    "duration": 5.96
+  },
+  {
+    "text": "level of governance without a governor.",
+    "start": 1519.8,
+    "duration": 6.6
+  },
+  {
+    "text": "Conventions emerge spontaneously from",
+    "start": 1523.84,
+    "duration": 4.52
+  },
+  {
+    "text": "the local coordination",
+    "start": 1526.4,
+    "duration": 4.16
+  },
+  {
+    "text": "with no central authority because as",
+    "start": 1528.36,
+    "duration": 4.68
+  },
+  {
+    "text": "we've seen, central authority can lead",
+    "start": 1530.56,
+    "duration": 4.2
+  },
+  {
+    "text": "to brittleness in a changing",
+    "start": 1533.04,
+    "duration": 3.24
+  },
+  {
+    "text": "environment.",
+    "start": 1534.76,
+    "duration": 4.72
+  },
+  {
+    "text": "Um, so there's just enough repeated",
+    "start": 1536.28,
+    "duration": 5.64
+  },
+  {
+    "text": "interaction to tip the group into some",
+    "start": 1539.48,
+    "duration": 4.68
+  },
+  {
+    "text": "sort of shared norm. And this is crucial",
+    "start": 1541.92,
+    "duration": 4.08
+  },
+  {
+    "text": "really because it means that it can",
+    "start": 1544.16,
+    "duration": 5.4
+  },
+  {
+    "text": "continue to adapt in a decentralized way",
+    "start": 1546,
+    "duration": 6.52
+  },
+  {
+    "text": "based on the changing environment or",
+    "start": 1549.56,
+    "duration": 6.68
+  },
+  {
+    "text": "problem space.",
+    "start": 1552.52,
+    "duration": 3.72
+  },
+  {
+    "text": "And essentially a new um,",
+    "start": 1557.72,
+    "duration": 4.84
+  },
+  {
+    "text": "emergent order um, arises from those",
+    "start": 1559.72,
+    "duration": 5.52
+  },
+  {
+    "text": "tiny little interactions amongst those",
+    "start": 1562.56,
+    "duration": 4.76
+  },
+  {
+    "text": "agents, you have a new level of",
+    "start": 1565.24,
+    "duration": 5.08
+  },
+  {
+    "text": "organization that is fairly stable up",
+    "start": 1567.32,
+    "duration": 5.32
+  },
+  {
+    "text": "until the next iteration, up until the",
+    "start": 1570.32,
+    "duration": 4.12
+  },
+  {
+    "text": "environment changes",
+    "start": 1572.64,
+    "duration": 4.92
+  },
+  {
+    "text": "and um, the order needs to essentially",
+    "start": 1574.44,
+    "duration": 6.2
+  },
+  {
+    "text": "restructure itself.",
+    "start": 1577.56,
+    "duration": 3.08
+  },
+  {
+    "text": "So the question is that what is the role",
+    "start": 1583.92,
+    "duration": 3.76
+  },
+  {
+    "text": "of an engineer? And and really in",
+    "start": 1585.52,
+    "duration": 4.2
+  },
+  {
+    "text": "adaptive engineering, uh, you don't",
+    "start": 1587.68,
+    "duration": 3.64
+  },
+  {
+    "text": "abolish the engineer, you're just",
+    "start": 1589.72,
+    "duration": 5.16
+  },
+  {
+    "text": "relocating the emphasis of engineering.",
+    "start": 1591.32,
+    "duration": 5.56
+  },
+  {
+    "text": "So if you can exploit the model's",
+    "start": 1594.88,
+    "duration": 4.36
+  },
+  {
+    "text": "capabilities, um, so agents can",
+    "start": 1596.88,
+    "duration": 3.8
+  },
+  {
+    "text": "essentially",
+    "start": 1599.24,
+    "duration": 4.68
+  },
+  {
+    "text": "um, interact, learn, and change. What",
+    "start": 1600.68,
+    "duration": 4.52
+  },
+  {
+    "text": "you're doing as an engineer is",
+    "start": 1603.92,
+    "duration": 3.12
+  },
+  {
+    "text": "essentially um,",
+    "start": 1605.2,
+    "duration": 3.48
+  },
+  {
+    "text": "exploring the constraints, you're",
+    "start": 1607.04,
+    "duration": 3.44
+  },
+  {
+    "text": "dictating the constraints, the rules of",
+    "start": 1608.68,
+    "duration": 4.64
+  },
+  {
+    "text": "the game. You're not deciding what",
+    "start": 1610.48,
+    "duration": 5.12
+  },
+  {
+    "text": "should happen or what you want to",
+    "start": 1613.32,
+    "duration": 5.16
+  },
+  {
+    "text": "happen, but you're giving the agent",
+    "start": 1615.6,
+    "duration": 5.543
+  },
+  {
+    "text": "space to explore that field.",
+    "start": 1618.48,
+    "duration": 2.96
+  },
+  {
+    "text": ">> [clears throat]",
+    "start": 1621.143,
+    "duration": 3.657
+  },
+  {
+    "text": ">> And then, once that emergent harness",
+    "start": 1621.44,
+    "duration": 4
+  },
+  {
+    "text": "uh",
+    "start": 1624.8,
+    "duration": 3.88
+  },
+  {
+    "text": "starts to take shape, you are sensing it",
+    "start": 1625.44,
+    "duration": 6.12
+  },
+  {
+    "text": "and responding to that rather than um",
+    "start": 1628.68,
+    "duration": 5.2
+  },
+  {
+    "text": "stopping the engineering process and",
+    "start": 1631.56,
+    "duration": 4.04
+  },
+  {
+    "text": "starting from scratch.",
+    "start": 1633.88,
+    "duration": 3.48
+  },
+  {
+    "text": "Um",
+    "start": 1635.6,
+    "duration": 4.52
+  },
+  {
+    "text": "And I think this slide sort of um",
+    "start": 1637.36,
+    "duration": 5.52
+  },
+  {
+    "text": "portrays that. This is not",
+    "start": 1640.12,
+    "duration": 5.72
+  },
+  {
+    "text": "binary, this is not either or. Uh in",
+    "start": 1642.88,
+    "duration": 6.24
+  },
+  {
+    "text": "fact, it's very much a continuum.",
+    "start": 1645.84,
+    "duration": 6.44
+  },
+  {
+    "text": "Um if you you there's no purely fixed",
+    "start": 1649.12,
+    "duration": 5.96
+  },
+  {
+    "text": "harness way, and there's no purely",
+    "start": 1652.28,
+    "duration": 5.36
+  },
+  {
+    "text": "uh completely adaptive autonomous way.",
+    "start": 1655.08,
+    "duration": 3.24
+  },
+  {
+    "text": "Um",
+    "start": 1657.64,
+    "duration": 2.48
+  },
+  {
+    "text": "fixed engineering is essentially in one",
+    "start": 1658.32,
+    "duration": 4.84
+  },
+  {
+    "text": "hand um prescribing the structure, which",
+    "start": 1660.12,
+    "duration": 5.72
+  },
+  {
+    "text": "agents run and you rarely change the",
+    "start": 1663.16,
+    "duration": 4.92
+  },
+  {
+    "text": "structure mid-engineering.",
+    "start": 1665.84,
+    "duration": 3.52
+  },
+  {
+    "text": "Um whereas on the other end of the",
+    "start": 1668.08,
+    "duration": 3.04
+  },
+  {
+    "text": "scale, you've got adaptive engineering",
+    "start": 1669.36,
+    "duration": 3.68
+  },
+  {
+    "text": "where you allow the agents to freely",
+    "start": 1671.12,
+    "duration": 3.76
+  },
+  {
+    "text": "interact and allow the harness or the",
+    "start": 1673.04,
+    "duration": 4.2
+  },
+  {
+    "text": "structure that guides them",
+    "start": 1674.88,
+    "duration": 5
+  },
+  {
+    "text": "uh to be created by them and change",
+    "start": 1677.24,
+    "duration": 4.92
+  },
+  {
+    "text": "mid-engineering.",
+    "start": 1679.88,
+    "duration": 4.52
+  },
+  {
+    "text": "Uh so it's not like a swarm of agents",
+    "start": 1682.16,
+    "duration": 4.76
+  },
+  {
+    "text": "loose with no roles and this sort of",
+    "start": 1684.4,
+    "duration": 5.6
+  },
+  {
+    "text": "intelligence that magically appears.",
+    "start": 1686.92,
+    "duration": 6.88
+  },
+  {
+    "text": "Um and it's not sort of better one one",
+    "start": 1690,
+    "duration": 5.36
+  },
+  {
+    "text": "way is not better than the other. They",
+    "start": 1693.8,
+    "duration": 4.56
+  },
+  {
+    "text": "just have two different use cases. And",
+    "start": 1695.36,
+    "duration": 5
+  },
+  {
+    "text": "um if I could just, you know, bring it",
+    "start": 1698.36,
+    "duration": 4.52
+  },
+  {
+    "text": "back to some examples of existing uh",
+    "start": 1700.36,
+    "duration": 6.16
+  },
+  {
+    "text": "harnesses, so for example, Hermes AI um",
+    "start": 1702.88,
+    "duration": 6.36
+  },
+  {
+    "text": "on on their website, it states that it's",
+    "start": 1706.52,
+    "duration": 5.08
+  },
+  {
+    "text": "a self-improving AI agent that creates",
+    "start": 1709.24,
+    "duration": 4.4
+  },
+  {
+    "text": "skills from experience and learns from",
+    "start": 1711.6,
+    "duration": 4.16
+  },
+  {
+    "text": "it. So, obviously, this is a huge step",
+    "start": 1713.64,
+    "duration": 5.24
+  },
+  {
+    "text": "in terms of adaptive direction. Um but I",
+    "start": 1715.76,
+    "duration": 5.4
+  },
+  {
+    "text": "do want to make a distinction here um",
+    "start": 1718.88,
+    "duration": 5.16
+  },
+  {
+    "text": "because um that adaptation is in the",
+    "start": 1721.16,
+    "duration": 5.2
+  },
+  {
+    "text": "form of vertical intelligence, which is",
+    "start": 1724.04,
+    "duration": 6.16
+  },
+  {
+    "text": "about making individual agents smarter.",
+    "start": 1726.36,
+    "duration": 5.2
+  },
+  {
+    "text": "What I'm talking about here is",
+    "start": 1730.2,
+    "duration": 4.16
+  },
+  {
+    "text": "horizontal intelligence, which is all",
+    "start": 1731.56,
+    "duration": 4.52
+  },
+  {
+    "text": "about how groups",
+    "start": 1734.36,
+    "duration": 4.4
+  },
+  {
+    "text": "of agents coordinate. And so, those two",
+    "start": 1736.08,
+    "duration": 6.2
+  },
+  {
+    "text": "directions are a bit orthogonal. Um",
+    "start": 1738.76,
+    "duration": 5.16
+  },
+  {
+    "text": "And the thesis I'm presenting is that",
+    "start": 1742.28,
+    "duration": 5.24
+  },
+  {
+    "text": "it's horizontal intelligence uh that is",
+    "start": 1743.92,
+    "duration": 6.32
+  },
+  {
+    "text": "the most adaptive method, the most agile",
+    "start": 1747.52,
+    "duration": 6.44
+  },
+  {
+    "text": "method. Um and and and arguably the",
+    "start": 1750.24,
+    "duration": 6.92
+  },
+  {
+    "text": "higher leverage point.",
+    "start": 1753.96,
+    "duration": 7
+  },
+  {
+    "text": "Uh compared to vertical.",
+    "start": 1757.16,
+    "duration": 4.84
+  },
+  {
+    "text": "Um",
+    "start": 1760.96,
+    "duration": 3.48
+  },
+  {
+    "text": "Another example is Pi, um",
+    "start": 1762,
+    "duration": 5.76
+  },
+  {
+    "text": "you know, a great harness, uh which is",
+    "start": 1764.44,
+    "duration": 4.12
+  },
+  {
+    "text": "uh",
+    "start": 1767.76,
+    "duration": 4.36
+  },
+  {
+    "text": "sort of essentially minimal, um yet it's",
+    "start": 1768.56,
+    "duration": 6.64
+  },
+  {
+    "text": "maximally extensible. Um so, it's fully",
+    "start": 1772.12,
+    "duration": 6.24
+  },
+  {
+    "text": "customizable to an extent. Um so, you",
+    "start": 1775.2,
+    "duration": 5.32
+  },
+  {
+    "text": "could class that as adaptive, but again,",
+    "start": 1778.36,
+    "duration": 3.48
+  },
+  {
+    "text": "there's a distinction here. There's",
+    "start": 1780.52,
+    "duration": 5.2
+  },
+  {
+    "text": "adaptive at the design stage, like when",
+    "start": 1781.84,
+    "duration": 5.76
+  },
+  {
+    "text": "you're preparing for that engineering",
+    "start": 1785.72,
+    "duration": 4.48
+  },
+  {
+    "text": "process. Um",
+    "start": 1787.6,
+    "duration": 3.2
+  },
+  {
+    "text": "Uh",
+    "start": 1790.2,
+    "duration": 2.92
+  },
+  {
+    "text": "where the engineer can customize and the",
+    "start": 1790.8,
+    "duration": 4.52
+  },
+  {
+    "text": "tool's quite malleable.",
+    "start": 1793.12,
+    "duration": 4.36
+  },
+  {
+    "text": "But, when it comes to adaptive",
+    "start": 1795.32,
+    "duration": 3.76
+  },
+  {
+    "text": "engineering, that's all about being",
+    "start": 1797.48,
+    "duration": 3.68
+  },
+  {
+    "text": "adaptive during the run time, where the",
+    "start": 1799.08,
+    "duration": 6.32
+  },
+  {
+    "text": "system reorganizes itself whilst running",
+    "start": 1801.16,
+    "duration": 6.6
+  },
+  {
+    "text": "in response to the changing problem",
+    "start": 1805.4,
+    "duration": 4.76
+  },
+  {
+    "text": "space of the environment. And you know,",
+    "start": 1807.76,
+    "duration": 4.4
+  },
+  {
+    "text": "Pi is a strong example of the first",
+    "start": 1810.16,
+    "duration": 3.04
+  },
+  {
+    "text": "kind,",
+    "start": 1812.16,
+    "duration": 4.2
+  },
+  {
+    "text": "um but it doesn't make any claims um to",
+    "start": 1813.2,
+    "duration": 5
+  },
+  {
+    "text": "be anything other. Uh it's not a",
+    "start": 1816.36,
+    "duration": 7.2
+  },
+  {
+    "text": "self-organizing multi-agent system yet.",
+    "start": 1818.2,
+    "duration": 5.36
+  },
+  {
+    "text": "I'm just going to skip over some of the",
+    "start": 1824.76,
+    "duration": 4.36
+  },
+  {
+    "text": "uh nitty-gritties of what that could",
+    "start": 1827.28,
+    "duration": 4.56
+  },
+  {
+    "text": "mean. Um so, for example,",
+    "start": 1829.12,
+    "duration": 4.72
+  },
+  {
+    "text": "um",
+    "start": 1831.84,
+    "duration": 5.16
+  },
+  {
+    "text": "uh when it comes to agent capabilities,",
+    "start": 1833.84,
+    "duration": 4.04
+  },
+  {
+    "text": "um",
+    "start": 1837,
+    "duration": 2.64
+  },
+  {
+    "text": "you know, obviously, they need to",
+    "start": 1837.88,
+    "duration": 3.28
+  },
+  {
+    "text": "interact, learn, and change. That's kind",
+    "start": 1839.64,
+    "duration": 3.24
+  },
+  {
+    "text": "of a prerequisite",
+    "start": 1841.16,
+    "duration": 4.16
+  },
+  {
+    "text": "for adaptive engineering and I don't",
+    "start": 1842.88,
+    "duration": 4.68
+  },
+  {
+    "text": "doubt that that will",
+    "start": 1845.32,
+    "duration": 4.8
+  },
+  {
+    "text": "become the case as models get",
+    "start": 1847.56,
+    "duration": 5.04
+  },
+  {
+    "text": "exponentially more powerful.",
+    "start": 1850.12,
+    "duration": 3.72
+  },
+  {
+    "text": "There's a few things that the designer",
+    "start": 1852.6,
+    "duration": 2.56
+  },
+  {
+    "text": "can actually do in the form of",
+    "start": 1853.84,
+    "duration": 2.8
+  },
+  {
+    "text": "constraints and I'm not going to list",
+    "start": 1855.16,
+    "duration": 3.36
+  },
+  {
+    "text": "out all the different types of",
+    "start": 1856.64,
+    "duration": 4.12
+  },
+  {
+    "text": "constraints cuz they're sort of largely",
+    "start": 1858.52,
+    "duration": 5.08
+  },
+  {
+    "text": "dictated by some of the properties like",
+    "start": 1860.76,
+    "duration": 4.52
+  },
+  {
+    "text": "the roles and the sequencing and the",
+    "start": 1863.6,
+    "duration": 3.48
+  },
+  {
+    "text": "memory. These are all sort of categories",
+    "start": 1865.28,
+    "duration": 4.36
+  },
+  {
+    "text": "or properties of harness.",
+    "start": 1867.08,
+    "duration": 3.28
+  },
+  {
+    "text": "But essentially there are three",
+    "start": 1869.64,
+    "duration": 2
+  },
+  {
+    "text": "questions that you could ask yourself as",
+    "start": 1870.36,
+    "duration": 3.08
+  },
+  {
+    "text": "an engineer which is",
+    "start": 1871.64,
+    "duration": 4.28
+  },
+  {
+    "text": "do you want to",
+    "start": 1873.44,
+    "duration": 3.84
+  },
+  {
+    "text": "enable",
+    "start": 1875.92,
+    "duration": 3.84
+  },
+  {
+    "text": "the agents more or do you want to close",
+    "start": 1877.28,
+    "duration": 4.72
+  },
+  {
+    "text": "them in and govern them more",
+    "start": 1879.76,
+    "duration": 3.4
+  },
+  {
+    "text": "and produce more",
+    "start": 1882,
+    "duration": 2.88
+  },
+  {
+    "text": "give them more guardrails.",
+    "start": 1883.16,
+    "duration": 4.96
+  },
+  {
+    "text": "Are you rewarding them to cohere towards",
+    "start": 1884.88,
+    "duration": 6.52
+  },
+  {
+    "text": "a particular goal or are you costing",
+    "start": 1888.12,
+    "duration": 4.48
+  },
+  {
+    "text": "them",
+    "start": 1891.4,
+    "duration": 2.64
+  },
+  {
+    "text": "if they fall outside a particular",
+    "start": 1892.6,
+    "duration": 2.8
+  },
+  {
+    "text": "container?",
+    "start": 1894.04,
+    "duration": 5.44
+  },
+  {
+    "text": "And how fast or slow do you want this um",
+    "start": 1895.4,
+    "duration": 5.76
+  },
+  {
+    "text": "to happen? Some of the properties, you",
+    "start": 1899.48,
+    "duration": 3.92
+  },
+  {
+    "text": "know, what's the speed for example the",
+    "start": 1901.16,
+    "duration": 3.8
+  },
+  {
+    "text": "rate of coupling. So these are some of",
+    "start": 1903.4,
+    "duration": 3.68
+  },
+  {
+    "text": "the engineering tweaks that you can make",
+    "start": 1904.96,
+    "duration": 5.64
+  },
+  {
+    "text": "when it comes to adaptive engineering.",
+    "start": 1907.08,
+    "duration": 5.56
+  },
+  {
+    "text": "And then finally like this emergent",
+    "start": 1910.6,
+    "duration": 4.56
+  },
+  {
+    "text": "harness that is constantly shaping and",
+    "start": 1912.64,
+    "duration": 4.48
+  },
+  {
+    "text": "reshaping itself based on the problem",
+    "start": 1915.16,
+    "duration": 3.76
+  },
+  {
+    "text": "space.",
+    "start": 1917.12,
+    "duration": 3.4
+  },
+  {
+    "text": "You can only really sense and respond to",
+    "start": 1918.92,
+    "duration": 3.6
+  },
+  {
+    "text": "that emergent harness. You're not going",
+    "start": 1920.52,
+    "duration": 3
+  },
+  {
+    "text": "to",
+    "start": 1922.52,
+    "duration": 4
+  },
+  {
+    "text": "completely",
+    "start": 1923.52,
+    "duration": 3
+  },
+  {
+    "text": "be able to",
+    "start": 1927,
+    "duration": 3
+  },
+  {
+    "text": "I guess",
+    "start": 1928.76,
+    "duration": 2.96
+  },
+  {
+    "text": "edit",
+    "start": 1930,
+    "duration": 3.88
+  },
+  {
+    "text": "it in some sort of hard engineering",
+    "start": 1931.72,
+    "duration": 3.68
+  },
+  {
+    "text": "fashion cuz that's not in the best",
+    "start": 1933.88,
+    "duration": 5.88
+  },
+  {
+    "text": "interest of you as an adaptive engineer.",
+    "start": 1935.4,
+    "duration": 4.36
+  },
+  {
+    "text": "This slide is just a more detailed",
+    "start": 1941.56,
+    "duration": 4.72
+  },
+  {
+    "text": "comparison of both approaches and again",
+    "start": 1944.16,
+    "duration": 4.28
+  },
+  {
+    "text": "I want to emphasize that one is not",
+    "start": 1946.28,
+    "duration": 4.4
+  },
+  {
+    "text": "better than the other. It's just two",
+    "start": 1948.44,
+    "duration": 4
+  },
+  {
+    "text": "different design engineering",
+    "start": 1950.68,
+    "duration": 3.88
+  },
+  {
+    "text": "philosophies.",
+    "start": 1952.44,
+    "duration": 5.16
+  },
+  {
+    "text": "Where on one hand in the factory model,",
+    "start": 1954.56,
+    "duration": 5.04
+  },
+  {
+    "text": "um you know, the structure is imposed up",
+    "start": 1957.6,
+    "duration": 4.2
+  },
+  {
+    "text": "front by the engineer, and so the",
+    "start": 1959.6,
+    "duration": 5.08
+  },
+  {
+    "text": "harness becomes the input. Um whereas in",
+    "start": 1961.8,
+    "duration": 6.12
+  },
+  {
+    "text": "the adaptive path, the harness emerges",
+    "start": 1964.68,
+    "duration": 6.56
+  },
+  {
+    "text": "and is essentially the output. Um",
+    "start": 1967.92,
+    "duration": 4.92
+  },
+  {
+    "text": "And And one of the crucial things here",
+    "start": 1971.24,
+    "duration": 5.4
+  },
+  {
+    "text": "is that control is decentralized",
+    "start": 1972.84,
+    "duration": 6.36
+  },
+  {
+    "text": "in the [clears throat] adaptive path.",
+    "start": 1976.64,
+    "duration": 5.96
+  },
+  {
+    "text": "Um in the field continuously",
+    "start": 1979.2,
+    "duration": 6.92
+  },
+  {
+    "text": "um because the problem space eventually",
+    "start": 1982.6,
+    "duration": 7.2
+  },
+  {
+    "text": "when AI um comes or AI engineering comes",
+    "start": 1986.12,
+    "duration": 6.48
+  },
+  {
+    "text": "off a screen into the real world, um the",
+    "start": 1989.8,
+    "duration": 7
+  },
+  {
+    "text": "problem space is constantly changing. Um",
+    "start": 1992.6,
+    "duration": 4.2
+  },
+  {
+    "text": "Now, it's important to understand that,",
+    "start": 1997.88,
+    "duration": 3.56
+  },
+  {
+    "text": "you know, there are particular use cases",
+    "start": 1999.56,
+    "duration": 5.36
+  },
+  {
+    "text": "for this. Um but there are a huge number",
+    "start": 2001.44,
+    "duration": 7.16
+  },
+  {
+    "text": "of failure modes um in this as well. Um",
+    "start": 2004.92,
+    "duration": 6.08
+  },
+  {
+    "text": "you know, just to list a few of those",
+    "start": 2008.6,
+    "duration": 4.84
+  },
+  {
+    "text": "failure modes, you know, emergence leans",
+    "start": 2011,
+    "duration": 5.12
+  },
+  {
+    "text": "towards uh stability, what we call an",
+    "start": 2013.44,
+    "duration": 6.24
+  },
+  {
+    "text": "attractor, uh where you find a structure",
+    "start": 2016.12,
+    "duration": 6.12
+  },
+  {
+    "text": "that feels stable and optimal, but that",
+    "start": 2019.68,
+    "duration": 5.4
+  },
+  {
+    "text": "doesn't necessarily mean it's the best.",
+    "start": 2022.24,
+    "duration": 5.2
+  },
+  {
+    "text": "Um",
+    "start": 2025.08,
+    "duration": 4.16
+  },
+  {
+    "text": "you need some sort of genuine selection",
+    "start": 2027.44,
+    "duration": 3.16
+  },
+  {
+    "text": "pressure. So, if you imagine in the",
+    "start": 2029.24,
+    "duration": 3.16
+  },
+  {
+    "text": "social world or the physical or the",
+    "start": 2030.6,
+    "duration": 5.76
+  },
+  {
+    "text": "natural world, the environment is um",
+    "start": 2032.4,
+    "duration": 7.48
+  },
+  {
+    "text": "giving us certain uh pressures. You",
+    "start": 2036.36,
+    "duration": 5.92
+  },
+  {
+    "text": "know, that's what encourages us to",
+    "start": 2039.88,
+    "duration": 4
+  },
+  {
+    "text": "adapt. That is evolution. You know,",
+    "start": 2042.28,
+    "duration": 3.04
+  },
+  {
+    "text": "there is some sort of selection pressure",
+    "start": 2043.88,
+    "duration": 2.52
+  },
+  {
+    "text": "here.",
+    "start": 2045.32,
+    "duration": 3.68
+  },
+  {
+    "text": "And you kind of need to find that um",
+    "start": 2046.4,
+    "duration": 4.999
+  },
+  {
+    "text": "in or we as a community need to find",
+    "start": 2049,
+    "duration": 3.96
+  },
+  {
+    "text": "that in adaptive engineering, otherwise",
+    "start": 2051.399,
+    "duration": 3.961
+  },
+  {
+    "text": "you just get drift.",
+    "start": 2052.96,
+    "duration": 4.08
+  },
+  {
+    "text": "There is a risk of monoculture, where",
+    "start": 2055.36,
+    "duration": 3.68
+  },
+  {
+    "text": "you don't get genuine diversity amongst",
+    "start": 2057.04,
+    "duration": 3.96
+  },
+  {
+    "text": "agents because they're all trained on",
+    "start": 2059.04,
+    "duration": 3.28
+  },
+  {
+    "text": "the same data.",
+    "start": 2061,
+    "duration": 4.32
+  },
+  {
+    "text": "Um legibility does collapse. Um you",
+    "start": 2062.32,
+    "duration": 6.28
+  },
+  {
+    "text": "know, you as adaptability increases,",
+    "start": 2065.32,
+    "duration": 5.2
+  },
+  {
+    "text": "um",
+    "start": 2068.6,
+    "duration": 4.64
+  },
+  {
+    "text": "you can't really pin down or explain",
+    "start": 2070.52,
+    "duration": 5.04
+  },
+  {
+    "text": "things that well. And again, that's a",
+    "start": 2073.24,
+    "duration": 4.12
+  },
+  {
+    "text": "feature of complex systems. You can't",
+    "start": 2075.56,
+    "duration": 5.2
+  },
+  {
+    "text": "really pin them down.",
+    "start": 2077.36,
+    "duration": 5.76
+  },
+  {
+    "text": "And and and obviously goes without",
+    "start": 2080.76,
+    "duration": 3.399
+  },
+  {
+    "text": "saying that there's no more",
+    "start": 2083.12,
+    "duration": 3.519
+  },
+  {
+    "text": "predictability ahead of runtime because",
+    "start": 2084.159,
+    "duration": 4.881
+  },
+  {
+    "text": "things are constantly moving.",
+    "start": 2086.639,
+    "duration": 4.24
+  },
+  {
+    "text": "Um",
+    "start": 2089.04,
+    "duration": 4.52
+  },
+  {
+    "text": "And and and these are the real failure",
+    "start": 2090.879,
+    "duration": 6.081
+  },
+  {
+    "text": "modes that we must apprehend because I",
+    "start": 2093.56,
+    "duration": 5.08
+  },
+  {
+    "text": "do feel like adaptive engineering is",
+    "start": 2096.96,
+    "duration": 4.28
+  },
+  {
+    "text": "something that we're going to be more",
+    "start": 2098.64,
+    "duration": 5.48
+  },
+  {
+    "text": "inclined towards and it's going to race",
+    "start": 2101.24,
+    "duration": 7.229
+  },
+  {
+    "text": "forward um from the future.",
+    "start": 2104.12,
+    "duration": 6.369
+  },
+  {
+    "text": ">> [clears throat and cough]",
+    "start": 2108.469,
+    "duration": 2.02
+  },
+  {
+    "text": ">> I guess a bit of a takeaway then.",
+    "start": 2113,
+    "duration": 5.08
+  },
+  {
+    "text": "Um you know, as models improve",
+    "start": 2115.56,
+    "duration": 4.52
+  },
+  {
+    "text": "exponentially",
+    "start": 2118.08,
+    "duration": 3.28
+  },
+  {
+    "text": "um",
+    "start": 2120.08,
+    "duration": 4.4
+  },
+  {
+    "text": "AI engineering will move into the real",
+    "start": 2121.36,
+    "duration": 5.2
+  },
+  {
+    "text": "world scenarios.",
+    "start": 2124.48,
+    "duration": 3.76
+  },
+  {
+    "text": "You know, the real world where it",
+    "start": 2126.56,
+    "duration": 5.2
+  },
+  {
+    "text": "touches um the physical space",
+    "start": 2128.24,
+    "duration": 6.04
+  },
+  {
+    "text": "uh on an ongoing basis. It's uh in",
+    "start": 2131.76,
+    "duration": 5.4
+  },
+  {
+    "text": "contact with multiple agents across",
+    "start": 2134.28,
+    "duration": 4.6
+  },
+  {
+    "text": "different institutions. It's in contact",
+    "start": 2137.16,
+    "duration": 4.24
+  },
+  {
+    "text": "with multiple human beings. So",
+    "start": 2138.88,
+    "duration": 6.48
+  },
+  {
+    "text": "So there's a real cost peer where AI is",
+    "start": 2141.4,
+    "duration": 6.56
+  },
+  {
+    "text": "heading towards. And so the discipline",
+    "start": 2145.36,
+    "duration": 4.8
+  },
+  {
+    "text": "of design and engineering is going to be",
+    "start": 2147.96,
+    "duration": 5
+  },
+  {
+    "text": "forced to rethink itself around",
+    "start": 2150.16,
+    "duration": 4.814
+  },
+  {
+    "text": "continual production.",
+    "start": 2152.96,
+    "duration": 2.36
+  },
+  {
+    "text": ">> [snorts]",
+    "start": 2154.974,
+    "duration": 2.506
+  },
+  {
+    "text": ">> And the limiting factor which is the",
+    "start": 2155.32,
+    "duration": 4.48
+  },
+  {
+    "text": "case now, but probably more so in the",
+    "start": 2157.48,
+    "duration": 4.04
+  },
+  {
+    "text": "future, is not going to be the strength",
+    "start": 2159.8,
+    "duration": 3.24
+  },
+  {
+    "text": "of the model.",
+    "start": 2161.52,
+    "duration": 5
+  },
+  {
+    "text": "It's going to be the adaptability of the",
+    "start": 2163.04,
+    "duration": 7.28
+  },
+  {
+    "text": "harness. Um and adaptability really here",
+    "start": 2166.52,
+    "duration": 6.4
+  },
+  {
+    "text": "means multi-agent",
+    "start": 2170.32,
+    "duration": 3.24
+  },
+  {
+    "text": "um",
+    "start": 2172.92,
+    "duration": 2.92
+  },
+  {
+    "text": "which is essentially about coordinating",
+    "start": 2173.56,
+    "duration": 4.56
+  },
+  {
+    "text": "amongst agents. A multi-agent",
+    "start": 2175.84,
+    "duration": 4
+  },
+  {
+    "text": "orchestration",
+    "start": 2178.12,
+    "duration": 4.2
+  },
+  {
+    "text": "which is decentralized.",
+    "start": 2179.84,
+    "duration": 6
+  },
+  {
+    "text": "Um and it's not",
+    "start": 2182.32,
+    "duration": 6.32
+  },
+  {
+    "text": "adaptable ahead of runtime.",
+    "start": 2185.84,
+    "duration": 5.28
+  },
+  {
+    "text": "In fact, it starts becoming adaptable",
+    "start": 2188.64,
+    "duration": 5.48
+  },
+  {
+    "text": "mid run-time or during an entire",
+    "start": 2191.12,
+    "duration": 5.08
+  },
+  {
+    "text": "engineering a process. And I think",
+    "start": 2194.12,
+    "duration": 4.12
+  },
+  {
+    "text": "that's real intelligence. That's Well,",
+    "start": 2196.2,
+    "duration": 3.56
+  },
+  {
+    "text": "when I say real intelligence, I mean",
+    "start": 2198.24,
+    "duration": 3
+  },
+  {
+    "text": "that's the intelligence when it comes to",
+    "start": 2199.76,
+    "duration": 5.96
+  },
+  {
+    "text": "adaptability of the harness.",
+    "start": 2201.24,
+    "duration": 4.48
+  },
+  {
+    "text": "Uh,",
+    "start": 2206.32,
+    "duration": 3.36
+  },
+  {
+    "text": "I'd be really interested in um hearing",
+    "start": 2207.32,
+    "duration": 4.44
+  },
+  {
+    "text": "your thoughts on this um",
+    "start": 2209.68,
+    "duration": 4.68
+  },
+  {
+    "text": "and whether this is something that uh",
+    "start": 2211.76,
+    "duration": 5.04
+  },
+  {
+    "text": "other people are also exploring. Um",
+    "start": 2214.36,
+    "duration": 4.56
+  },
+  {
+    "text": "please do reach out to me.",
+    "start": 2216.8,
+    "duration": 4.6
+  },
+  {
+    "text": "Thank you.",
+    "start": 2218.92,
+    "duration": 2.48
+  }
+]

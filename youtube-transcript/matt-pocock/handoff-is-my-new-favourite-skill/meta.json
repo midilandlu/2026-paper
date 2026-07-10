@@ -1,0 +1,59 @@
+{
+  "videoId": "dtAJ2dOd3ko",
+  "title": "/handoff is my new favourite skill",
+  "channel": "Matt Pocock",
+  "channelId": "UCswG6FSbgZjbWtdf_hMLaow",
+  "description": "Learn how to hand off your AI coding sessions to separate agents using the /handoff skill. In this deep dive, I explain why I built this skill, how it differs from /compact, and show real-world patterns for managing multiple concurrent AI sessions.\n\n0:00 Discovering the handoff skill\n1:36 Context windows and compact explained\n4:49 Why handoff differs from compact\n6:14 Using handoff during grilling sessions\n7:20 Handing off to prototype\n9:23 Cross-agent workflow benefits\n9:50 Skill design decisions\n11:44 Wrap up and course info\n\nJoin AI Coding For Real Engineers cohort (June 1st):\n\nhttps://aihero.dev/s/z2UZDd\n\nKeep up to date with my skills here:\n\nhttps://aihero.dev/s/YL1zWx\n\nFollow Matt on Twitter\n\nhttps://twitter.com/mattpocockuk\n\nJoin the Discord:\n\nhttps://aihero.dev/s/MFKOJM",
+  "duration": 744,
+  "publishDate": "2026-05-21",
+  "url": "https://www.youtube.com/watch?v=dtAJ2dOd3ko",
+  "coverImage": "imgs/cover.jpg",
+  "thumbnailUrl": "https://i.ytimg.com/vi/dtAJ2dOd3ko/maxresdefault.jpg",
+  "language": {
+    "code": "en",
+    "name": "English",
+    "isGenerated": true
+  },
+  "chapters": [
+    {
+      "title": "Discovering the handoff skill",
+      "start": 0,
+      "end": 96
+    },
+    {
+      "title": "Context windows and compact explained",
+      "start": 96,
+      "end": 289
+    },
+    {
+      "title": "Why handoff differs from compact",
+      "start": 289,
+      "end": 374
+    },
+    {
+      "title": "Using handoff during grilling sessions",
+      "start": 374,
+      "end": 440
+    },
+    {
+      "title": "Handing off to prototype",
+      "start": 440,
+      "end": 563
+    },
+    {
+      "title": "Cross-agent workflow benefits",
+      "start": 563,
+      "end": 590
+    },
+    {
+      "title": "Skill design decisions",
+      "start": 590,
+      "end": 704
+    },
+    {
+      "title": "Wrap up and course info",
+      "start": 704,
+      "end": 744
+    }
+  ]
+}

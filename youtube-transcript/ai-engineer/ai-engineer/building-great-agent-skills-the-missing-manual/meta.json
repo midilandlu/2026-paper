@@ -1,0 +1,69 @@
+{
+  "videoId": "UNzCG3lw6O0",
+  "title": "Building Great Agent Skills: The Missing Manual",
+  "channel": "AI Engineer",
+  "channelId": "UCLKPca3kwwd-B59HNr-_lvA",
+  "description": "Let's discuss how to navigate \"skill hell\" by providing a structured framework for building high-quality agent skills. Without a shared rubric, developers and organizations struggle to create effective, maintainable skills for AI agents.\n\nTimestamps:\n\n0:00 - Introduction to the talk and the concept of \"skill hell\"\n2:12 - Overview of the skill checklist framework\n3:16 - Trigger: Choosing between user-invoked and model-invoked skills\n7:29 - Structure: Organizing steps and references\n9:00 - Making the skill.md file minimal\n11:54 - Steering: Using leading words to guide agent behavior\n14:56 - Increasing \"leg work\" per step\n16:48 - Pruning: Removing sediment, crud, and no-ops\n19:06 - Final summary of the checklist framework\n19:55 - Where to find the \"writing great skills\" resource\n\nThe Skill Checklist Framework:\n\nTrigger (3:16 - 7:25): Decide whether a skill should be user-invoked or model-invoked. Matt notes that while model-invoked skills offer more flexibility, they increase context load and introduce unpredictability. User-invoked skills offer more control but require greater cognitive load from the pilot.\n\nStructure (7:29 - 11:53): Organize your skill into two primary units: steps (procedures) and reference (supporting information). To keep the skill.md file minimal, move branching reference material behind context pointers to reduce bloat and maintenance costs.\n\nSteering (11:54 - 16:47): Use leading words—specific terms that pack dense meaning—to influence agent behavior and guide reasoning traces. Additionally, you can force the agent to perform more \"leg work\" on specific tasks by breaking complex processes into smaller, individual skills that hide future steps.\n\nPruning (16:48 - 19:05): Maintain a clean skill set by ensuring a single source of truth, removing \"sediment\" (irrelevant legacy material), and eliminating \"no-ops\" (instructions that don't actually change agent behavior).\n\nhttps://github.com/mattpocock/skills/blob/main/skills/productivity/writing-great-skills/SKILL.md",
+  "duration": 1243,
+  "publishDate": "2026-06-29",
+  "url": "https://www.youtube.com/watch?v=UNzCG3lw6O0",
+  "coverImage": "imgs/cover.jpg",
+  "thumbnailUrl": "https://i.ytimg.com/vi/UNzCG3lw6O0/maxresdefault.jpg",
+  "language": {
+    "code": "en",
+    "name": "English",
+    "isGenerated": true
+  },
+  "chapters": [
+    {
+      "title": "- Introduction to the talk and the concept of \"skill hell\"",
+      "start": 0,
+      "end": 132
+    },
+    {
+      "title": "- Overview of the skill checklist framework",
+      "start": 132,
+      "end": 196
+    },
+    {
+      "title": "- Trigger: Choosing between user-invoked and model-invoked skills",
+      "start": 196,
+      "end": 449
+    },
+    {
+      "title": "- Structure: Organizing steps and references",
+      "start": 449,
+      "end": 540
+    },
+    {
+      "title": "- Making the skill.md file minimal",
+      "start": 540,
+      "end": 714
+    },
+    {
+      "title": "- Steering: Using leading words to guide agent behavior",
+      "start": 714,
+      "end": 896
+    },
+    {
+      "title": "- Increasing \"leg work\" per step",
+      "start": 896,
+      "end": 1008
+    },
+    {
+      "title": "- Pruning: Removing sediment, crud, and no-ops",
+      "start": 1008,
+      "end": 1146
+    },
+    {
+      "title": "- Final summary of the checklist framework",
+      "start": 1146,
+      "end": 1195
+    },
+    {
+      "title": "- Where to find the \"writing great skills\" resource",
+      "start": 1195,
+      "end": 1243
+    }
+  ]
+}

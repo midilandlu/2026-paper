@@ -1,0 +1,1487 @@
+[
+  {
+    "text": "Hello, I'm Rajiv.",
+    "start": "00:00:01",
+    "end": "00:00:04"
+  },
+  {
+    "text": "I'm a practicing medical doctor here in London and been doing some AI engineering for the past few years.",
+    "start": "00:00:04",
+    "end": "00:00:11"
+  },
+  {
+    "text": "Particularly interested in real world application and really the future which is multi-agent multi-human multi-institutional collaboration through a company called Anitcha Labs.",
+    "start": "00:00:11",
+    "end": "00:00:24"
+  },
+  {
+    "text": "And really the premise of my talk today is to introduce a new design philosophy for the future of AI engineering which is beyond a harness or beyond a fixed static harness and towards adaptive engineering.",
+    "start": "00:00:22",
+    "end": "00:00:39"
+  },
+  {
+    "text": "This slide basically summarizes my entire talk and really it's about exploring what the current AI engineering paradigm is which is to use fixed harnesses to steer agents.",
+    "start": "00:00:41",
+    "end": "00:00:56"
+  },
+  {
+    "text": "So we either use or build an existing harness like Pi, Claude, Code, Cursor, CodeX, whatever it is ahead of run time that remains fairly consistent throughout the engineering process and is largely constrained with fixed roles and tools and sequencing which again ahead of the process beginning of the process we can tweak and it essentially produces very reliable and orderly work and it's great for most engineering problems and ideas.",
+    "start": "00:00:56",
+    "end": "00:01:28"
+  },
+  {
+    "text": "And so your role as an AI engineering right now is to use a harness and steer agents.",
+    "start": "00:01:25",
+    "end": "00:01:34"
+  },
+  {
+    "text": "But the future's going to be different in at least two ways.",
+    "start": "00:01:32",
+    "end": "00:01:39"
+  },
+  {
+    "text": "Number one, models are going to become so powerful that existing fixed harnesses are constantly going to become outdated.",
+    "start": "00:01:36",
+    "end": "00:01:48"
+  },
+  {
+    "text": "And number two is there's going to be a huge exposure to the real world.",
+    "start": "00:01:45",
+    "end": "00:01:52"
+  },
+  {
+    "text": "Right now a lot of AI engineering is software based.",
+    "start": "00:01:52",
+    "end": "00:01:54"
+  },
+  {
+    "text": "It's within behind a screen.",
+    "start": "00:01:54",
+    "end": "00:01:59"
+  },
+  {
+    "text": "But actually, as things get more powerful, as models get more powerful, we're going to have exposure to the real world where I'd argue that this is where the real challenges are.",
+    "start": "00:01:57",
+    "end": "00:02:12"
+  },
+  {
+    "text": "And the real world is dynamic and messy.",
+    "start": "00:02:09",
+    "end": "00:02:14"
+  },
+  {
+    "text": "You know, it's full of multi-agent, multi-human, cross-institutional, and really touching the physical world, which means that a fixed harness is quite brittle.",
+    "start": "00:02:12",
+    "end": "00:02:26"
+  },
+  {
+    "text": "And so that's where we enter what I coin as adaptive engineering, where you actually allow the harness to emerge and adapt mid-engineering to find its most optimal position and structure.",
+    "start": "00:02:23",
+    "end": "00:02:42"
+  },
+  {
+    "text": "And essentially, the engineer's role is going to be to design some of the constraints, which are kind of the rules of play, and really allowing the harness to emerge, stabilize, change, and eventually dissolve as you go through the runtime of engineering.",
+    "start": "00:02:40",
+    "end": "00:03:01"
+  },
+  {
+    "text": "So, let's look firstly at the current paradigm for AI engineering.",
+    "start": "00:03:03",
+    "end": "00:03:11"
+  },
+  {
+    "text": "And it's essentially where a harness serves as the primary method to guide an LLM, which is typically stateless, and make it into something quite useful.",
+    "start": "00:03:11",
+    "end": "00:03:24"
+  },
+  {
+    "text": "And there's a couple of aspects of a harness, which I won't go to in detail, but essentially things like system prompts, which is established by the harness vendor, meaning that users can't actually modify it.",
+    "start": "00:03:23",
+    "end": "00:03:35"
+  },
+  {
+    "text": "And this essentially tells the harness what it can and can't do.",
+    "start": "00:03:35",
+    "end": "00:03:43"
+  },
+  {
+    "text": "You've also got the agents.",
+    "start": "00:03:40",
+    "end": "00:03:44"
+  },
+  {
+    "text": "md files or the Claude.",
+    "start": "00:03:44",
+    "end": "00:03:45"
+  },
+  {
+    "text": "md if you're using Claude code, which is loaded into every context window at the start of a session, tool calling, and essentially then you have the genesis of agents, which are specialized entities that have been harnessed uh, granting them unique capabilities um, and and allowing them to differentiate from other agents.",
+    "start": "00:03:45",
+    "end": "00:04:10"
+  },
+  {
+    "text": "And these capabilities are typically manifest as specific skills when it comes to role typology, their capabilities, the rules um, and that enables them to deliver targeted outputs and specified outputs, whether it be code documentation issues, handoffs and and most recently we've seen the genesis of kind of loops, loop engineering has become a thing um so that eventually we reach some sort of outcome uh, whether it's a feature, uh, a problem solved which is eventually reviewed by a human.",
+    "start": "00:04:10",
+    "end": "00:04:50"
+  },
+  {
+    "text": "Um, so what you see uh, from this is that before running the engineering process the entire harness has been predetermined or pre-engineered.",
+    "start": "00:04:50",
+    "end": "00:05:03"
+  },
+  {
+    "text": "And that's harness engineering.",
+    "start": "00:05:03",
+    "end": "00:05:04"
+  },
+  {
+    "text": "And uh, it's been remarkable at getting the most out of the latest models.",
+    "start": "00:05:04",
+    "end": "00:05:11"
+  },
+  {
+    "text": "Um and just sort of stepping a bit back, um, defining exactly what a harness is.",
+    "start": "00:05:15",
+    "end": "00:05:24"
+  },
+  {
+    "text": "Essentially the model is the engine and the harness is everything built around to make that engine useful.",
+    "start": "00:05:21",
+    "end": "00:05:30"
+  },
+  {
+    "text": "Um, there's many different types of harnesses.",
+    "start": "00:05:30",
+    "end": "00:05:34"
+  },
+  {
+    "text": "I mean, there's hundreds uh, actually, but I guess the most common ones are, um, you know, CLI coding, um, such as Claude Code, Codex, Pi.",
+    "start": "00:05:34",
+    "end": "00:05:43"
+  },
+  {
+    "text": "You have IDEs like Cursor uh, multi-agent orchestration through LangChain and and things like Hermes as well, Klein and Goose.",
+    "start": "00:05:43",
+    "end": "00:05:53"
+  },
+  {
+    "text": "And And these are all differentiated based on number one, properties and how they're configured.",
+    "start": "00:05:53",
+    "end": "00:06:00"
+  },
+  {
+    "text": "But actually more importantly, number two, based on some sort of design and engineering philosophy that they believe in.",
+    "start": "00:05:58",
+    "end": "00:06:07"
+  },
+  {
+    "text": "And what makes them so great and so distinct is that they are opinionated to a lesser or greater degree.",
+    "start": "00:06:07",
+    "end": "00:06:19"
+  },
+  {
+    "text": "Um and they allow for, I guess different use cases.",
+    "start": "00:06:19",
+    "end": "00:06:23"
+  },
+  {
+    "text": "Um and depending on your temperament as an engineer, you'd pick one over the other.",
+    "start": "00:06:21",
+    "end": "00:06:28"
+  },
+  {
+    "text": "But what we do see in all of these is that everything's predefined.",
+    "start": "00:06:30",
+    "end": "00:06:36"
+  },
+  {
+    "text": "You know, you can customize them, of course, like for example, the Pi agent.",
+    "start": "00:06:36",
+    "end": "00:06:42"
+  },
+  {
+    "text": "It's minimalist and it's maximally extensible.",
+    "start": "00:06:42",
+    "end": "00:06:46"
+  },
+  {
+    "text": "Um but everything is predefined.",
+    "start": "00:06:46",
+    "end": "00:06:48"
+  },
+  {
+    "text": "You know, the roles, fixed outputs, sequencing protocols, how memory is created.",
+    "start": "00:06:48",
+    "end": "00:06:55"
+  },
+  {
+    "text": "Uh and so I want to be absolutely clear here.",
+    "start": "00:06:55",
+    "end": "00:06:57"
+  },
+  {
+    "text": "I don't mean that you can't customize harnesses.",
+    "start": "00:06:57",
+    "end": "00:06:59"
+  },
+  {
+    "text": "Of course, you can.",
+    "start": "00:06:59",
+    "end": "00:07:01"
+  },
+  {
+    "text": "But the customization occurs ahead of the engineering runtime.",
+    "start": "00:07:01",
+    "end": "00:07:05"
+  },
+  {
+    "text": "Uh and not mid-engineering.",
+    "start": "00:07:05",
+    "end": "00:07:06"
+  },
+  {
+    "text": "And that's largely directed by us as humans.",
+    "start": "00:07:06",
+    "end": "00:07:09"
+  },
+  {
+    "text": "And for someone like me who started AI engineering about two years ago, it's probably the most powerful or predictive uh predictable method.",
+    "start": "00:07:09",
+    "end": "00:07:20"
+  },
+  {
+    "text": "And it's got really three payoffs.",
+    "start": "00:07:19",
+    "end": "00:07:21"
+  },
+  {
+    "text": "It's reliable.",
+    "start": "00:07:21",
+    "end": "00:07:24"
+  },
+  {
+    "text": "Um you know, the same input leads to a similar set of outputs.",
+    "start": "00:07:22",
+    "end": "00:07:27"
+  },
+  {
+    "text": "Obviously, there's going to be some variation.",
+    "start": "00:07:27",
+    "end": "00:07:31"
+  },
+  {
+    "text": "It's auditable.",
+    "start": "00:07:28",
+    "end": "00:07:30"
+  },
+  {
+    "text": "Um you can inspect exactly what changed and when.",
+    "start": "00:07:30",
+    "end": "00:07:34"
+  },
+  {
+    "text": "And there's some sort of linear causality where uh you know, if something breaks, you can actually trace it back to its source.",
+    "start": "00:07:34",
+    "end": "00:07:42"
+  },
+  {
+    "text": "Um this is like a factory line though.",
+    "start": "00:07:41",
+    "end": "00:07:45"
+  },
+  {
+    "text": "Like think Taylorism for AI.",
+    "start": "00:07:45",
+    "end": "00:07:47"
+  },
+  {
+    "text": "Just like a factory assembly line, every station is engineered in advance.",
+    "start": "00:07:47",
+    "end": "00:07:52"
+  },
+  {
+    "text": "Um, each agent has one job, a fixed place, a sequence, and maybe a defined handoff to the next agent.",
+    "start": "00:07:52",
+    "end": "00:08:02"
+  },
+  {
+    "text": "I mean, there's clearly some incredible uses for this and, you know, factory engineering gives you, you know, accuracy, speed, reproducibility, behavior that you can certify, and it really shines in these kind of closed deterministic systems, where you have a well-defined product or problem, and you know the kind of features you want to build.",
+    "start": "00:08:04",
+    "end": "00:08:26"
+  },
+  {
+    "text": "You know the sort of solutions that you need.",
+    "start": "00:08:26",
+    "end": "00:08:32"
+  },
+  {
+    "text": "Um, but here's the catch.",
+    "start": "00:08:32",
+    "end": "00:08:34"
+  },
+  {
+    "text": "Um, and and it's a real trade-off that that reliability isn't free.",
+    "start": "00:08:34",
+    "end": "00:08:39"
+  },
+  {
+    "text": "Um, you buy it by suppressing, um, variance that I'd argue novelty requires.",
+    "start": "00:08:39",
+    "end": "00:08:50"
+  },
+  {
+    "text": "Um, and determinism and emergence pull kind of in opposite directions.",
+    "start": "00:08:47",
+    "end": "00:08:53"
+  },
+  {
+    "text": "Um, and this is where we have to pivot to the real world, because in real life situations, in when when AI eventually, uh, when it becomes a norm for AI to capture real-world scenarios, where you've got multi-agents, multi-humans, multi-institutions interacting, and also touching the physical world, um, there's a hard ceiling on novelty, um, because the real world is messy, and it keeps changing.",
+    "start": "00:08:52",
+    "end": "00:09:25"
+  },
+  {
+    "text": "And so, fixed harness starts to break down.",
+    "start": "00:09:25",
+    "end": "00:09:28"
+  },
+  {
+    "text": "Um, so like I mentioned, there's a hard ceiling on novelty, um, because, uh, essentially, its reliability is predicated on suppressing variants.",
+    "start": "00:09:28",
+    "end": "00:09:39"
+  },
+  {
+    "text": "Um the models are going to keep accelerating.",
+    "start": "00:09:39",
+    "end": "00:09:44"
+  },
+  {
+    "text": "You know, you can build a careful harness today or you can use one off the shelf.",
+    "start": "00:09:43",
+    "end": "00:09:50"
+  },
+  {
+    "text": "But it could be irrelevant in the next month.",
+    "start": "00:09:48",
+    "end": "00:09:51"
+  },
+  {
+    "text": "The model just got so good that it didn't need that kind of scaffolding anymore.",
+    "start": "00:09:51",
+    "end": "00:10:00"
+  },
+  {
+    "text": "Um and that kind of leads to this whole dilemma of brutalness where every situation you didn't anticipated you didn't anticipate needs a human to patch the harness.",
+    "start": "00:09:57",
+    "end": "00:10:12"
+  },
+  {
+    "text": "The more real world it needs, the more rules you bolt on and eventually the harness just becomes ever more complicated than the actual problem that you need to solve.",
+    "start": "00:10:10",
+    "end": "00:10:22"
+  },
+  {
+    "text": "And I guess if there's one takeaway here is that the factory method is the right answer to a fixed problem and the wrong answer to a moving problem.",
+    "start": "00:10:20",
+    "end": "00:10:34"
+  },
+  {
+    "text": "And so let's really examine in what the real world is about and and I'm going to go down a bit of a philosophical route here.",
+    "start": "00:10:37",
+    "end": "00:10:47"
+  },
+  {
+    "text": "Um as we've said, you know, agentic systems will eventually collide with the real world and that raises a question.",
+    "start": "00:10:46",
+    "end": "00:10:58"
+  },
+  {
+    "text": "What is the real world actually made of?",
+    "start": "00:10:55",
+    "end": "00:11:00"
+  },
+  {
+    "text": "Because there's two ways to answer this actually.",
+    "start": "00:10:58",
+    "end": "00:11:01"
+  },
+  {
+    "text": "So the first paradigm, the first way to see the world is through what we call a reductionist or analytical view which we're all very used to actually.",
+    "start": "00:11:01",
+    "end": "00:11:13"
+  },
+  {
+    "text": "It says to understand the whole a big problem or a system or a big thing like an organization we've got to take it apart and study the individual parts.",
+    "start": "00:11:10",
+    "end": "00:11:22"
+  },
+  {
+    "text": "So essentially the world is made up of these individual parts which are things that are stable and change is just something that happens to those stable things now and then.",
+    "start": "00:11:22",
+    "end": "00:11:37"
+  },
+  {
+    "text": "The relationships amongst those things are secondary or an afterthought.",
+    "start": "00:11:35",
+    "end": "00:11:41"
+  },
+  {
+    "text": "And this is really the metaphysics of a factory and of nearly all software that we build.",
+    "start": "00:11:39",
+    "end": "00:11:45"
+  },
+  {
+    "text": "You know, you make the components.",
+    "start": "00:11:45",
+    "end": "00:11:49"
+  },
+  {
+    "text": "Uh you wire them together.",
+    "start": "00:11:48",
+    "end": "00:11:55"
+  },
+  {
+    "text": "And you get a product.",
+    "start": "00:11:52",
+    "end": "00:11:57"
+  },
+  {
+    "text": "The second paradigm, what we call the systems or relational paradigm, um takes the emphasis away from there being separate things or components and actually puts more what we call ontological emphasis on the relationships amongst those things.",
+    "start": "00:11:55",
+    "end": "00:12:15"
+  },
+  {
+    "text": "So, flips the order.",
+    "start": "00:12:15",
+    "end": "00:12:17"
+  },
+  {
+    "text": "It says that the real world isn't made up of things at all.",
+    "start": "00:12:17",
+    "end": "00:12:23"
+  },
+  {
+    "text": "It's made up of processes and um relationships which come first.",
+    "start": "00:12:19",
+    "end": "00:12:30"
+  },
+  {
+    "text": "So, what we call a stable thing really is just a slow pattern in an ongoing flow.",
+    "start": "00:12:27",
+    "end": "00:12:32"
+  },
+  {
+    "text": "Think an organism.",
+    "start": "00:12:32",
+    "end": "00:12:35"
+  },
+  {
+    "text": "It's more like a flame than a crystal.",
+    "start": "00:12:35",
+    "end": "00:12:38"
+  },
+  {
+    "text": "A flame looks like an object, but it isn't.",
+    "start": "00:12:38",
+    "end": "00:12:42"
+  },
+  {
+    "text": "It's a pattern held together moment by moment by a process.",
+    "start": "00:12:42",
+    "end": "00:12:45"
+  },
+  {
+    "text": "You stop the process and the thing doesn't exist.",
+    "start": "00:12:45",
+    "end": "00:12:50"
+  },
+  {
+    "text": "Uh and there's a really good payoff in understanding this paradigm.",
+    "start": "00:12:50",
+    "end": "00:12:54"
+  },
+  {
+    "text": "Um and once you see the world in this way, you start to notice something remarkable.",
+    "start": "00:12:54",
+    "end": "00:13:00"
+  },
+  {
+    "text": "Where where you have simple local rules between, let's say, particles or between people or between creatures, that local interaction gives rise to a whole new level of order that can't be predicted from its constituent parts and that no constituent part designed ahead of time.",
+    "start": "00:13:00",
+    "end": "00:13:28"
+  },
+  {
+    "text": "For example, water.",
+    "start": "00:13:25",
+    "end": "00:13:27"
+  },
+  {
+    "text": "Water has a property of being wet.",
+    "start": "00:13:27",
+    "end": "00:13:31"
+  },
+  {
+    "text": "But it's constituent parts, oxygen and hydrogen, are not wet.",
+    "start": "00:13:30",
+    "end": "00:13:38"
+  },
+  {
+    "text": "But their coming together, again putting emphasis on the relationships, their coming together is where you had the emergence of a novel new property, i.",
+    "start": "00:13:36",
+    "end": "00:13:47"
+  },
+  {
+    "text": "e.",
+    "start": "00:13:47",
+    "end": "00:13:47"
+  },
+  {
+    "text": "wetness.",
+    "start": "00:13:47",
+    "end": "00:13:50"
+  },
+  {
+    "text": "Another example is a flock of birds.",
+    "start": "00:13:48",
+    "end": "00:13:53"
+  },
+  {
+    "text": "Not one bird wakes up every morning intending to make a flock.",
+    "start": "00:13:53",
+    "end": "00:13:58"
+  },
+  {
+    "text": "Each probably just follows three simple local rules, which is align with your neighbor, don't crash into them, stay close, and that's it.",
+    "start": "00:13:56",
+    "end": "00:14:07"
+  },
+  {
+    "text": "Local rules, local interactions, and out of that you get a flock, a new pattern alive and coordinated that you could never understand by pulling it apart and studying one bird because no single bird has a flock in it.",
+    "start": "00:14:07",
+    "end": "00:14:23"
+  },
+  {
+    "text": "The flock lives in the relationships, not the parts.",
+    "start": "00:14:23",
+    "end": "00:14:29"
+  },
+  {
+    "text": "So this factory method of engineering assumes a world of parts.",
+    "start": "00:14:27",
+    "end": "00:14:35"
+  },
+  {
+    "text": "But the non-machine world, and I'd argue that AI is sort of on the cusp of that, the non-machine world is a world of patterns and moving patterns of emergence.",
+    "start": "00:14:32",
+    "end": "00:14:47"
+  },
+  {
+    "text": "And that sort of reflects what sort of problems we face in this moving messy world.",
+    "start": "00:14:48",
+    "end": "00:14:56"
+  },
+  {
+    "text": "Um and there's a line from Russell Ackoff that I absolutely love.",
+    "start": "00:14:56",
+    "end": "00:15:02"
+  },
+  {
+    "text": "He says that managers aren't handed neat separate problems.",
+    "start": "00:14:59",
+    "end": "00:15:05"
+  },
+  {
+    "text": "They're handed dynamic situations, tangles of problems that keep changing and keep bumping to each other.",
+    "start": "00:15:04",
+    "end": "00:15:12"
+  },
+  {
+    "text": "And he And he gave that a name.",
+    "start": "00:15:12",
+    "end": "00:15:14"
+  },
+  {
+    "text": "He called it a mess.",
+    "start": "00:15:14",
+    "end": "00:15:14"
+  },
+  {
+    "text": "A mess is a isn't just a pile of separate parts, it's actually a system of relationships in motion.",
+    "start": "00:15:14",
+    "end": "00:15:25"
+  },
+  {
+    "text": "Which is exactly why the factory based on a fixed harness way of engineering will struggle when it collides with real-world live scenarios.",
+    "start": "00:15:22",
+    "end": "00:15:37"
+  },
+  {
+    "text": "Because you can't decompose a mess into tidy boxes and solve each of them because they're not individual parts, they're a moving pattern of relationships.",
+    "start": "00:15:34",
+    "end": "00:15:47"
+  },
+  {
+    "text": "We can then look at problems through this this distinction between different types of problems.",
+    "start": "00:15:49",
+    "end": "00:15:58"
+  },
+  {
+    "text": "So, um engineering is all about solving problems and I'd argue that very simply put there are two kinds of problems.",
+    "start": "00:15:58",
+    "end": "00:16:05"
+  },
+  {
+    "text": "There are complicated problems um and there are complex problems.",
+    "start": "00:16:03",
+    "end": "00:16:10"
+  },
+  {
+    "text": "So, a complicated system or complicated problem is like building a jumbo jet or a clock.",
+    "start": "00:16:10",
+    "end": "00:16:17"
+  },
+  {
+    "text": "There are passive parts um but experts can take them apart, analyze them, plan, predict, document.",
+    "start": "00:16:15",
+    "end": "00:16:27"
+  },
+  {
+    "text": "It's hard, but it's actually knowable and it works in a very predictable way.",
+    "start": "00:16:24",
+    "end": "00:16:32"
+  },
+  {
+    "text": "In contrast, when you have a complex system or a complex problem like a flock of birds, a market, a human organization, it's slightly different.",
+    "start": "00:16:31",
+    "end": "00:16:44"
+  },
+  {
+    "text": "It's parts are constantly interacting and adapting to one another.",
+    "start": "00:16:44",
+    "end": "00:16:49"
+  },
+  {
+    "text": "So, the whole can't be derived from analyzing the parts.",
+    "start": "00:16:49",
+    "end": "00:16:55"
+  },
+  {
+    "text": "So, you don't analyze and plan a complex system.",
+    "start": "00:16:55",
+    "end": "00:16:59"
+  },
+  {
+    "text": "Instead, you probe and sense and respond and this is probably one of the most expensive mistakes we make in the modern world of design and engineering, which is that we treat a complex problem like a complicated one um and and things fail not due to lack of execution, but essentially because there's a failure in categorizing the problem spaces.",
+    "start": "00:16:56",
+    "end": "00:17:23"
+  },
+  {
+    "text": "If we go just one step deeper into what a complex system is, um essentially, you know, the ingredients of it are first, you need a diverse set of agents or actors if it's a human organization.",
+    "start": "00:17:24",
+    "end": "00:17:42"
+  },
+  {
+    "text": "Um not clones essentially, but different from one another in some sort of way.",
+    "start": "00:17:39",
+    "end": "00:17:45"
+  },
+  {
+    "text": "So, because the diversity is the fuel there.",
+    "start": "00:17:43",
+    "end": "00:17:50"
+  },
+  {
+    "text": "Um they need to interact locally uh cuz no agent, no individual actor, no individual component sees the whole.",
+    "start": "00:17:47",
+    "end": "00:17:59"
+  },
+  {
+    "text": "Um instead each respond to whoever's next to it.",
+    "start": "00:17:59",
+    "end": "00:18:00"
+  },
+  {
+    "text": "And this is like the bird aligning with the neighbor.",
+    "start": "00:18:00",
+    "end": "00:18:06"
+  },
+  {
+    "text": "And they learn.",
+    "start": "00:18:04",
+    "end": "00:18:06"
+  },
+  {
+    "text": "They learn recursively.",
+    "start": "00:18:06",
+    "end": "00:18:08"
+  },
+  {
+    "text": "They adapt, then they adapt to the results of their own adapting, and it constantly loops, and um you know, with respect to one another and the environment.",
+    "start": "00:18:06",
+    "end": "00:18:20"
+  },
+  {
+    "text": "Everything is moving in response to everything else, and nothing holds still.",
+    "start": "00:18:18",
+    "end": "00:18:23"
+  },
+  {
+    "text": "And out of all of that local adaptive looping interaction, you get something called emergence, which is a key concept in complexity science.",
+    "start": "00:18:23",
+    "end": "00:18:39"
+  },
+  {
+    "text": "Um basically, it's a new novel pattern uh or organization or behavior that uh no single part designed on its own and can't be explained by splitting that whole into its parts and studying them.",
+    "start": "00:18:35",
+    "end": "00:18:55"
+  },
+  {
+    "text": "Again, think the flock of birds.",
+    "start": "00:18:55",
+    "end": "00:18:57"
+  },
+  {
+    "text": "No bird has a flock in it.",
+    "start": "00:18:57",
+    "end": "00:18:58"
+  },
+  {
+    "text": "Think about the wetness of water.",
+    "start": "00:18:58",
+    "end": "00:19:03"
+  },
+  {
+    "text": "None of the individual oxygen hydrogen molecules have wetness within them.",
+    "start": "00:19:00",
+    "end": "00:19:08"
+  },
+  {
+    "text": "And yet, it leads to the emergence of something quite novel.",
+    "start": "00:19:08",
+    "end": "00:19:14"
+  },
+  {
+    "text": "Now, these systems don't fly apart into chaos.",
+    "start": "00:19:12",
+    "end": "00:19:18"
+  },
+  {
+    "text": "They tend to settle into attractors, which are essentially stable states.",
+    "start": "00:19:16",
+    "end": "00:19:22"
+  },
+  {
+    "text": "Uh they keep pulling back towards some sort of equilibrium.",
+    "start": "00:19:21",
+    "end": "00:19:25"
+  },
+  {
+    "text": "So, for example, water is stable at room temperature.",
+    "start": "00:19:25",
+    "end": "00:19:30"
+  },
+  {
+    "text": "So, you get this sort of beautiful tension.",
+    "start": "00:19:28",
+    "end": "00:19:30"
+  },
+  {
+    "text": "You've got constant change at a local level, but then you've got recognizable stable patterns at a whole system level.",
+    "start": "00:19:30",
+    "end": "00:19:43"
+  },
+  {
+    "text": "And crucially, nobody's steering here.",
+    "start": "00:19:40",
+    "end": "00:19:46"
+  },
+  {
+    "text": "It's self-organizing.",
+    "start": "00:19:43",
+    "end": "00:19:46"
+  },
+  {
+    "text": "And that's the whole mystery.",
+    "start": "00:19:46",
+    "end": "00:19:47"
+  },
+  {
+    "text": "And I'd argue that's the whole opportunity for design and engineering.",
+    "start": "00:19:47",
+    "end": "00:19:53"
+  },
+  {
+    "text": "And this is where really want to introduce this new design and engineering philosophy called adaptive engineering.",
+    "start": "00:19:53",
+    "end": "00:20:03"
+  },
+  {
+    "text": "Before that, let's just take stock a bit.",
+    "start": "00:20:03",
+    "end": "00:20:05"
+  },
+  {
+    "text": "So, everything we covered so far lives inside a particular framework, which is this kind of fixed or factory harness.",
+    "start": "00:20:05",
+    "end": "00:20:12"
+  },
+  {
+    "text": "Uh the human engineer decides it all up front, the sequencing, the roles, capabilities.",
+    "start": "00:20:12",
+    "end": "00:20:19"
+  },
+  {
+    "text": "That's really the factory model, and it works.",
+    "start": "00:20:18",
+    "end": "00:20:20"
+  },
+  {
+    "text": "Um and we've seen that um because problem spaces that are complicated yet predictable is exactly right.",
+    "start": "00:20:20",
+    "end": "00:20:29"
+  },
+  {
+    "text": "And I'd argue for most engineering problems, that is the perfect method.",
+    "start": "00:20:29",
+    "end": "00:20:37"
+  },
+  {
+    "text": "But the moment AI becomes exponentially better, and it collides with the real world, which is, as we found, messy and complex, not just complicated, we need something genuinely new, a different idea of what optimal design and engineering even is.",
+    "start": "00:20:33",
+    "end": "00:20:54"
+  },
+  {
+    "text": "Um And it's obviously it rests on those two assumptions that models have become become exponentially better.",
+    "start": "00:20:54",
+    "end": "00:21:01"
+  },
+  {
+    "text": "Uh and that AI will uh come outside of a sandbox situation, and actually um engineering will run in real time in contact with the social and physical environment.",
+    "start": "00:20:59",
+    "end": "00:21:15"
+  },
+  {
+    "text": "Um so, essentially what we're saying is that the harness must adapt mid-flow.",
+    "start": "00:21:15",
+    "end": "00:21:20"
+  },
+  {
+    "text": "And that's the crux of harness engineering.",
+    "start": "00:21:20",
+    "end": "00:21:25"
+  },
+  {
+    "text": "And I guess if I were to crystallize um the definition, um adaptive engineering is the discipline of designing constraints to the extent that the harness emerges on its own, stabilizes, and adapts as needed in response to the changing environment in ways that you could not specify in advance.",
+    "start": "00:21:25",
+    "end": "00:21:52"
+  },
+  {
+    "text": "Essentially, the harness becomes the ongoing output rather than the input.",
+    "start": "00:21:50",
+    "end": "00:21:57"
+  },
+  {
+    "text": "And you know, what this means in practice, uh just to make it a bit more concrete, is given that agents have capabilities um to interact with each other, organization emerges from those interactions in response to the environment or a goal, such that new levels of order appear, ones that you could never have specified up front.",
+    "start": "00:21:56",
+    "end": "00:22:27"
+  },
+  {
+    "text": "Um so, think bird in a flock, think agent and harness.",
+    "start": "00:22:23",
+    "end": "00:22:29"
+  },
+  {
+    "text": "So, the agents are actually creating the harness in the same way as the birds are relating to one another so that the flock can emerge.",
+    "start": "00:22:29",
+    "end": "00:22:39"
+  },
+  {
+    "text": "So, you don't build the harness anymore.",
+    "start": "00:22:39",
+    "end": "00:22:41"
+  },
+  {
+    "text": "You let the agents form the harness that best fits the environment in that moment, in that context.",
+    "start": "00:22:41",
+    "end": "00:22:48"
+  },
+  {
+    "text": ">> [snorts] >> The harness then becomes a self-organizing, constantly evolving multi-agent system.",
+    "start": "00:22:48",
+    "end": "00:22:59"
+  },
+  {
+    "text": "And if we're to just simulate what it may become, because this is when agents become a lot more capable.",
+    "start": "00:22:57",
+    "end": "00:23:05"
+  },
+  {
+    "text": "Um essentially, you have agents that are isomorphic um but yet undifferentiated.",
+    "start": "00:23:05",
+    "end": "00:23:12"
+  },
+  {
+    "text": "Um but fully capable of interacting and um learning and changing.",
+    "start": "00:23:10",
+    "end": "00:23:17"
+  },
+  {
+    "text": "Um you let those agents interact.",
+    "start": "00:23:14",
+    "end": "00:23:18"
+  },
+  {
+    "text": "At first, there's nothing.",
+    "start": "00:23:18",
+    "end": "00:23:19"
+  },
+  {
+    "text": "It's a bit of few exchanges here and there.",
+    "start": "00:23:19",
+    "end": "00:23:23"
+  },
+  {
+    "text": "But the coupling continues and slowly builds until you reach a point where roughly one connection on average um occurs um with each agent.",
+    "start": "00:23:21",
+    "end": "00:23:31"
+  },
+  {
+    "text": "And suddenly, you start to see this whole emerge.",
+    "start": "00:23:31",
+    "end": "00:23:34"
+  },
+  {
+    "text": ">> [snorts] >> Um a system, you could say.",
+    "start": "00:23:34",
+    "end": "00:23:38"
+  },
+  {
+    "text": "Uh and I guess as an engineer, your new lever uh becomes uh how the rate of coupling.",
+    "start": "00:23:38",
+    "end": "00:23:45"
+  },
+  {
+    "text": "Like, do you dial it up or do you dampen it down?",
+    "start": "00:23:45",
+    "end": "00:23:48"
+  },
+  {
+    "text": "Um again, the adaptive path focuses on the interactions.",
+    "start": "00:23:48",
+    "end": "00:23:55"
+  },
+  {
+    "text": "Um until, you know, agents start to actually specialize with respect to one another.",
+    "start": "00:23:52",
+    "end": "00:24:01"
+  },
+  {
+    "text": "So, let's say you got two agents doing the same thing in the same place.",
+    "start": "00:23:59",
+    "end": "00:24:04"
+  },
+  {
+    "text": "That's just redundant and the environment knows that.",
+    "start": "00:24:04",
+    "end": "00:24:05"
+  },
+  {
+    "text": "The pressure from the environment knows that.",
+    "start": "00:24:05",
+    "end": "00:24:08"
+  },
+  {
+    "text": "So, it rewards anything that essentially breaks the tie.",
+    "start": "00:24:08",
+    "end": "00:24:13"
+  },
+  {
+    "text": "Um so I guess a tiny difference um you know, who got there first, who is slightly better gets amplified by the feedback until those two agents are no longer interchangeable.",
+    "start": "00:24:13",
+    "end": "00:24:26"
+  },
+  {
+    "text": "And so, the pool stops becoming something uniform and it actually falls into uh niches.",
+    "start": "00:24:26",
+    "end": "00:24:34"
+  },
+  {
+    "text": "And really, the key insight here is that the agent's identity isn't something you gave it.",
+    "start": "00:24:34",
+    "end": "00:24:40"
+  },
+  {
+    "text": "It's actually the position, role, or capability it took relative to the others and its environment.",
+    "start": "00:24:39",
+    "end": "00:24:46"
+  },
+  {
+    "text": "So, here we see specialization emerges from the interaction.",
+    "start": "00:24:46",
+    "end": "00:24:54"
+  },
+  {
+    "text": "And if you go on a bit further, uh they stop connecting at random.",
+    "start": "00:24:51",
+    "end": "00:24:57"
+  },
+  {
+    "text": "Uh in fact, they start to work well together um, in terms of sort of clusters.",
+    "start": "00:24:57",
+    "end": "00:25:03"
+  },
+  {
+    "text": "Um, and you see the first boundaries appear and crucially the system drew them, you didn't as an engineer ahead of time.",
+    "start": "00:25:03",
+    "end": "00:25:10"
+  },
+  {
+    "text": "Um, so these are kind of emergent clusters.",
+    "start": "00:25:10",
+    "end": "00:25:16"
+  },
+  {
+    "text": "Um, until a new convention crystallizes, you know, a division of norms and protocols, and the system produce some level of governance without a governor.",
+    "start": "00:25:12",
+    "end": "00:25:26"
+  },
+  {
+    "text": "Conventions emerge spontaneously from the local coordination with no central authority because as we've seen, central authority can lead to brittleness in a changing environment.",
+    "start": "00:25:23",
+    "end": "00:25:39"
+  },
+  {
+    "text": "Um, so there's just enough repeated interaction to tip the group into some sort of shared norm.",
+    "start": "00:25:36",
+    "end": "00:25:43"
+  },
+  {
+    "text": "And this is crucial really because it means that it can continue to adapt in a decentralized way based on the changing environment or problem space.",
+    "start": "00:25:43",
+    "end": "00:25:56"
+  },
+  {
+    "text": "And essentially a new um, emergent order um, arises from those tiny little interactions amongst those agents, you have a new level of organization that is fairly stable up until the next iteration, up until the environment changes and um, the order needs to essentially restructure itself.",
+    "start": "00:25:57",
+    "end": "00:26:20"
+  },
+  {
+    "text": "So the question is that what is the role of an engineer?",
+    "start": "00:26:23",
+    "end": "00:26:27"
+  },
+  {
+    "text": "And and really in adaptive engineering, uh, you don't abolish the engineer, you're just relocating the emphasis of engineering.",
+    "start": "00:26:27",
+    "end": "00:26:36"
+  },
+  {
+    "text": "So if you can exploit the model's capabilities, um, so agents can essentially um, interact, learn, and change.",
+    "start": "00:26:34",
+    "end": "00:26:44"
+  },
+  {
+    "text": "What you're doing as an engineer is essentially um, exploring the constraints, you're dictating the constraints, the rules of the game.",
+    "start": "00:26:44",
+    "end": "00:26:51"
+  },
+  {
+    "text": "You're not deciding what should happen or what you want to happen, but you're giving the agent space to explore that field.",
+    "start": "00:26:51",
+    "end": "00:27:01"
+  },
+  {
+    "text": ">> [clears throat] >> And then, once that emergent harness uh starts to take shape, you are sensing it and responding to that rather than um stopping the engineering process and starting from scratch.",
+    "start": "00:27:01",
+    "end": "00:27:17"
+  },
+  {
+    "text": "Um And I think this slide sort of um portrays that.",
+    "start": "00:27:15",
+    "end": "00:27:23"
+  },
+  {
+    "text": "This is not binary, this is not either or.",
+    "start": "00:27:23",
+    "end": "00:27:28"
+  },
+  {
+    "text": "Uh in fact, it's very much a continuum.",
+    "start": "00:27:28",
+    "end": "00:27:32"
+  },
+  {
+    "text": "Um if you you there's no purely fixed harness way, and there's no purely uh completely adaptive autonomous way.",
+    "start": "00:27:29",
+    "end": "00:27:38"
+  },
+  {
+    "text": "Um fixed engineering is essentially in one hand um prescribing the structure, which agents run and you rarely change the structure mid-engineering.",
+    "start": "00:27:37",
+    "end": "00:27:49"
+  },
+  {
+    "text": "Um whereas on the other end of the scale, you've got adaptive engineering where you allow the agents to freely interact and allow the harness or the structure that guides them uh to be created by them and change mid-engineering.",
+    "start": "00:27:48",
+    "end": "00:28:04"
+  },
+  {
+    "text": "Uh so it's not like a swarm of agents loose with no roles and this sort of intelligence that magically appears.",
+    "start": "00:28:02",
+    "end": "00:28:13"
+  },
+  {
+    "text": "Um and it's not sort of better one one way is not better than the other.",
+    "start": "00:28:10",
+    "end": "00:28:17"
+  },
+  {
+    "text": "They just have two different use cases.",
+    "start": "00:28:17",
+    "end": "00:28:19"
+  },
+  {
+    "text": "And um if I could just, you know, bring it back to some examples of existing uh harnesses, so for example, Hermes AI um on on their website, it states that it's a self-improving AI agent that creates skills from experience and learns from it.",
+    "start": "00:28:19",
+    "end": "00:28:34"
+  },
+  {
+    "text": "So, obviously, this is a huge step in terms of adaptive direction.",
+    "start": "00:28:34",
+    "end": "00:28:39"
+  },
+  {
+    "text": "Um but I do want to make a distinction here um because um that adaptation is in the form of vertical intelligence, which is about making individual agents smarter.",
+    "start": "00:28:39",
+    "end": "00:28:51"
+  },
+  {
+    "text": "What I'm talking about here is horizontal intelligence, which is all about how groups of agents coordinate.",
+    "start": "00:28:50",
+    "end": "00:28:59"
+  },
+  {
+    "text": "And so, those two directions are a bit orthogonal.",
+    "start": "00:28:59",
+    "end": "00:29:03"
+  },
+  {
+    "text": "Um And the thesis I'm presenting is that it's horizontal intelligence uh that is the most adaptive method, the most agile method.",
+    "start": "00:29:03",
+    "end": "00:29:11"
+  },
+  {
+    "text": "Um and and and arguably the higher leverage point.",
+    "start": "00:29:11",
+    "end": "00:29:20"
+  },
+  {
+    "text": "Uh compared to vertical.",
+    "start": "00:29:17",
+    "end": "00:29:22"
+  },
+  {
+    "text": "Um Another example is Pi, um you know, a great harness, uh which is uh sort of essentially minimal, um yet it's maximally extensible.",
+    "start": "00:29:20",
+    "end": "00:29:35"
+  },
+  {
+    "text": "Um so, it's fully customizable to an extent.",
+    "start": "00:29:35",
+    "end": "00:29:38"
+  },
+  {
+    "text": "Um so, you could class that as adaptive, but again, there's a distinction here.",
+    "start": "00:29:38",
+    "end": "00:29:44"
+  },
+  {
+    "text": "There's adaptive at the design stage, like when you're preparing for that engineering process.",
+    "start": "00:29:44",
+    "end": "00:29:49"
+  },
+  {
+    "text": "Um Uh where the engineer can customize and the tool's quite malleable.",
+    "start": "00:29:49",
+    "end": "00:29:57"
+  },
+  {
+    "text": "But, when it comes to adaptive engineering, that's all about being adaptive during the run time, where the system reorganizes itself whilst running in response to the changing problem space of the environment.",
+    "start": "00:29:55",
+    "end": "00:30:10"
+  },
+  {
+    "text": "And you know, Pi is a strong example of the first kind, um but it doesn't make any claims um to be anything other.",
+    "start": "00:30:10",
+    "end": "00:30:20"
+  },
+  {
+    "text": "Uh it's not a self-organizing multi-agent system yet.",
+    "start": "00:30:20",
+    "end": "00:30:23"
+  },
+  {
+    "text": "I'm just going to skip over some of the uh nitty-gritties of what that could mean.",
+    "start": "00:30:24",
+    "end": "00:30:30"
+  },
+  {
+    "text": "Um so, for example, um uh when it comes to agent capabilities, um you know, obviously, they need to interact, learn, and change.",
+    "start": "00:30:30",
+    "end": "00:30:41"
+  },
+  {
+    "text": "That's kind of a prerequisite for adaptive engineering and I don't doubt that that will become the case as models get exponentially more powerful.",
+    "start": "00:30:41",
+    "end": "00:30:53"
+  },
+  {
+    "text": "There's a few things that the designer can actually do in the form of constraints and I'm not going to list out all the different types of constraints cuz they're sort of largely dictated by some of the properties like the roles and the sequencing and the memory.",
+    "start": "00:30:52",
+    "end": "00:31:06"
+  },
+  {
+    "text": "These are all sort of categories or properties of harness.",
+    "start": "00:31:06",
+    "end": "00:31:10"
+  },
+  {
+    "text": "But essentially there are three questions that you could ask yourself as an engineer which is do you want to enable the agents more or do you want to close them in and govern them more and produce more give them more guardrails.",
+    "start": "00:31:09",
+    "end": "00:31:28"
+  },
+  {
+    "text": "Are you rewarding them to cohere towards a particular goal or are you costing them if they fall outside a particular container?",
+    "start": "00:31:24",
+    "end": "00:31:39"
+  },
+  {
+    "text": "And how fast or slow do you want this um to happen?",
+    "start": "00:31:35",
+    "end": "00:31:40"
+  },
+  {
+    "text": "Some of the properties, you know, what's the speed for example the rate of coupling.",
+    "start": "00:31:40",
+    "end": "00:31:45"
+  },
+  {
+    "text": "So these are some of the engineering tweaks that you can make when it comes to adaptive engineering.",
+    "start": "00:31:45",
+    "end": "00:31:52"
+  },
+  {
+    "text": "And then finally like this emergent harness that is constantly shaping and reshaping itself based on the problem space.",
+    "start": "00:31:50",
+    "end": "00:32:00"
+  },
+  {
+    "text": "You can only really sense and respond to that emergent harness.",
+    "start": "00:31:58",
+    "end": "00:32:02"
+  },
+  {
+    "text": "You're not going to completely be able to I guess edit it in some sort of hard engineering fashion cuz that's not in the best interest of you as an adaptive engineer.",
+    "start": "00:32:02",
+    "end": "00:32:19"
+  },
+  {
+    "text": "This slide is just a more detailed comparison of both approaches and again I want to emphasize that one is not better than the other.",
+    "start": "00:32:21",
+    "end": "00:32:30"
+  },
+  {
+    "text": "It's just two different design engineering philosophies.",
+    "start": "00:32:30",
+    "end": "00:32:37"
+  },
+  {
+    "text": "Where on one hand in the factory model, um you know, the structure is imposed up front by the engineer, and so the harness becomes the input.",
+    "start": "00:32:34",
+    "end": "00:32:45"
+  },
+  {
+    "text": "Um whereas in the adaptive path, the harness emerges and is essentially the output.",
+    "start": "00:32:45",
+    "end": "00:32:52"
+  },
+  {
+    "text": "Um And And one of the crucial things here is that control is decentralized in the [clears throat] adaptive path.",
+    "start": "00:32:52",
+    "end": "00:33:02"
+  },
+  {
+    "text": "Um in the field continuously um because the problem space eventually when AI um comes or AI engineering comes off a screen into the real world, um the problem space is constantly changing.",
+    "start": "00:32:59",
+    "end": "00:33:16"
+  },
+  {
+    "text": "Um Now, it's important to understand that, you know, there are particular use cases for this.",
+    "start": "00:33:16",
+    "end": "00:33:23"
+  },
+  {
+    "text": "Um but there are a huge number of failure modes um in this as well.",
+    "start": "00:33:23",
+    "end": "00:33:30"
+  },
+  {
+    "text": "Um you know, just to list a few of those failure modes, you know, emergence leans towards uh stability, what we call an attractor, uh where you find a structure that feels stable and optimal, but that doesn't necessarily mean it's the best.",
+    "start": "00:33:30",
+    "end": "00:33:47"
+  },
+  {
+    "text": "Um you need some sort of genuine selection pressure.",
+    "start": "00:33:45",
+    "end": "00:33:50"
+  },
+  {
+    "text": "So, if you imagine in the social world or the physical or the natural world, the environment is um giving us certain uh pressures.",
+    "start": "00:33:50",
+    "end": "00:34:01"
+  },
+  {
+    "text": "You know, that's what encourages us to adapt.",
+    "start": "00:34:01",
+    "end": "00:34:02"
+  },
+  {
+    "text": "That is evolution.",
+    "start": "00:34:02",
+    "end": "00:34:04"
+  },
+  {
+    "text": "You know, there is some sort of selection pressure here.",
+    "start": "00:34:04",
+    "end": "00:34:09"
+  },
+  {
+    "text": "And you kind of need to find that um in or we as a community need to find that in adaptive engineering, otherwise you just get drift.",
+    "start": "00:34:06",
+    "end": "00:34:17"
+  },
+  {
+    "text": "There is a risk of monoculture, where you don't get genuine diversity amongst agents because they're all trained on the same data.",
+    "start": "00:34:15",
+    "end": "00:34:25"
+  },
+  {
+    "text": "Um legibility does collapse.",
+    "start": "00:34:22",
+    "end": "00:34:27"
+  },
+  {
+    "text": "Um you know, you as adaptability increases, um you can't really pin down or explain things that well.",
+    "start": "00:34:27",
+    "end": "00:34:35"
+  },
+  {
+    "text": "And again, that's a feature of complex systems.",
+    "start": "00:34:35",
+    "end": "00:34:39"
+  },
+  {
+    "text": "You can't really pin them down.",
+    "start": "00:34:39",
+    "end": "00:34:43"
+  },
+  {
+    "text": "And and and obviously goes without saying that there's no more predictability ahead of runtime because things are constantly moving.",
+    "start": "00:34:40",
+    "end": "00:34:50"
+  },
+  {
+    "text": "Um And and and these are the real failure modes that we must apprehend because I do feel like adaptive engineering is something that we're going to be more inclined towards and it's going to race forward um from the future.",
+    "start": "00:34:49",
+    "end": "00:35:10"
+  },
+  {
+    "text": ">> [clears throat and cough] >> I guess a bit of a takeaway then.",
+    "start": "00:35:08",
+    "end": "00:35:18"
+  },
+  {
+    "text": "Um you know, as models improve exponentially um AI engineering will move into the real world scenarios.",
+    "start": "00:35:15",
+    "end": "00:35:28"
+  },
+  {
+    "text": "You know, the real world where it touches um the physical space uh on an ongoing basis.",
+    "start": "00:35:26",
+    "end": "00:35:35"
+  },
+  {
+    "text": "It's uh in contact with multiple agents across different institutions.",
+    "start": "00:35:35",
+    "end": "00:35:39"
+  },
+  {
+    "text": "It's in contact with multiple human beings.",
+    "start": "00:35:39",
+    "end": "00:35:44"
+  },
+  {
+    "text": "So So there's a real cost peer where AI is heading towards.",
+    "start": "00:35:44",
+    "end": "00:35:47"
+  },
+  {
+    "text": "And so the discipline of design and engineering is going to be forced to rethink itself around continual production.",
+    "start": "00:35:47",
+    "end": "00:35:55"
+  },
+  {
+    "text": ">> [snorts] >> And the limiting factor which is the case now, but probably more so in the future, is not going to be the strength of the model.",
+    "start": "00:35:54",
+    "end": "00:36:06"
+  },
+  {
+    "text": "It's going to be the adaptability of the harness.",
+    "start": "00:36:03",
+    "end": "00:36:07"
+  },
+  {
+    "text": "Um and adaptability really here means multi-agent um which is essentially about coordinating amongst agents.",
+    "start": "00:36:07",
+    "end": "00:36:17"
+  },
+  {
+    "text": "A multi-agent orchestration which is decentralized.",
+    "start": "00:36:17",
+    "end": "00:36:25"
+  },
+  {
+    "text": "Um and it's not adaptable ahead of runtime.",
+    "start": "00:36:22",
+    "end": "00:36:31"
+  },
+  {
+    "text": "In fact, it starts becoming adaptable mid run-time or during an entire engineering a process.",
+    "start": "00:36:28",
+    "end": "00:36:36"
+  },
+  {
+    "text": "And I think that's real intelligence.",
+    "start": "00:36:36",
+    "end": "00:36:38"
+  },
+  {
+    "text": "That's Well, when I say real intelligence, I mean that's the intelligence when it comes to adaptability of the harness.",
+    "start": "00:36:38",
+    "end": "00:36:45"
+  },
+  {
+    "text": "Uh, I'd be really interested in um hearing your thoughts on this um and whether this is something that uh other people are also exploring.",
+    "start": "00:36:46",
+    "end": "00:36:58"
+  },
+  {
+    "text": "Um please do reach out to me.",
+    "start": "00:36:58",
+    "end": "00:37:01"
+  },
+  {
+    "text": "Thank you.",
+    "start": "00:36:58",
+    "end": "00:37:01"
+  }
+]

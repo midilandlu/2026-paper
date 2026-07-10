@@ -1,0 +1,18 @@
+{
+  "videoId": "T0HhO4YtTfE",
+  "title": "AI System Design: From Idea to Production - Apoorva Joshi, MongoDB",
+  "channel": "AI Engineer",
+  "channelId": "UCLKPca3kwwd-B59HNr-_lvA",
+  "description": "Writing code is no longer the hard part. AI can do that. In a world where AI writes the code, the most valuable skill an engineer can have is knowing what to build. Most AI systems never make it to production because of bad decisions made earlier in the process. The pressure to ship fast, the hype around AI, and the lack of a structured approach all push engineers toward building before they've thought through what they're building and why.\n\nIn this talk, you'll learn a structured framework for making the decisions that get AI systems to production. You'll learn how to identify the business problem, define success metrics, select the right architecture, define guardrails and evaluation metrics, and know what to optimize for when you ship. We'll apply the framework to a real-world problem as we go, so you can see how it works on an actual AI application.\n\nSpeakers:\n- Apoorva Joshi (MongoDB): Apoorva is currently a Staff AI Developer Advocate at MongoDB. She has a diverse engineering background with a Bachelor’s in Electrical Engineering, a Master’s in Computer Engineering, and several years of experience as a data scientist, applying AI to problems in the cybersecurity space. She now uses that applied AI expertise to help data science and engineering teams at large enterprises and startups build production-grade AI applications with MongoDB and Voyage AI.\n  LinkedIn: https://www.linkedin.com/in/apoorvajoshi95/\n  GitHub: https://github.com/ajosh0504",
+  "duration": 1732,
+  "publishDate": "2026-06-28",
+  "url": "https://www.youtube.com/watch?v=T0HhO4YtTfE",
+  "coverImage": "imgs/cover.jpg",
+  "thumbnailUrl": "https://i.ytimg.com/vi/T0HhO4YtTfE/maxresdefault.jpg",
+  "language": {
+    "code": "en",
+    "name": "English",
+    "isGenerated": true
+  },
+  "chapters": []
+}

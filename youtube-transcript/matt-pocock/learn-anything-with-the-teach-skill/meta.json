@@ -1,0 +1,74 @@
+{
+  "videoId": "s5T5oQJcJ6U",
+  "title": "Learn anything with the /teach skill",
+  "channel": "Matt Pocock",
+  "channelId": "UCswG6FSbgZjbWtdf_hMLaow",
+  "description": "Learn how to use my /teach skill that creates personalized lessons, tracks progress, and adapts to each learner's zone of proximal development. Perfect for onboarding and independent learning.\n\n0:00 Building a teach skill\n0:39 Stateful vs stateless skills\n2:19 Installing and running teach\n2:47 Mission and resources setup\n3:30 HTML lessons and interactive content\n5:21 Reference materials and glossary\n6:11 Continuing a learning session\n7:16 Zone of proximal development\n8:36 Skill design and philosophy\n10:04 Use cases for teach\n11:06 Developers as AI first movers\n\nLearn more about the teach skill:\n\nhttps://aihero.dev/s/1T2OM1\n\nView my skills repository:\n\nhttps://github.com/mattpocock/skills\n\nKeep up to date with my skills here:\n\nhttps://aihero.dev/s/0DLqMU\n\nFollow Matt on Twitter\n\nhttps://twitter.com/mattpocockuk\n\nJoin the Discord:\n\nhttps://aihero.dev/s/PhJrND",
+  "duration": 784,
+  "publishDate": "2026-06-08",
+  "url": "https://www.youtube.com/watch?v=s5T5oQJcJ6U",
+  "coverImage": "imgs/cover.jpg",
+  "thumbnailUrl": "https://i.ytimg.com/vi/s5T5oQJcJ6U/maxresdefault.jpg",
+  "language": {
+    "code": "en",
+    "name": "English",
+    "isGenerated": true
+  },
+  "chapters": [
+    {
+      "title": "Building a teach skill",
+      "start": 0,
+      "end": 39
+    },
+    {
+      "title": "Stateful vs stateless skills",
+      "start": 39,
+      "end": 139
+    },
+    {
+      "title": "Installing and running teach",
+      "start": 139,
+      "end": 167
+    },
+    {
+      "title": "Mission and resources setup",
+      "start": 167,
+      "end": 210
+    },
+    {
+      "title": "HTML lessons and interactive content",
+      "start": 210,
+      "end": 321
+    },
+    {
+      "title": "Reference materials and glossary",
+      "start": 321,
+      "end": 371
+    },
+    {
+      "title": "Continuing a learning session",
+      "start": 371,
+      "end": 436
+    },
+    {
+      "title": "Zone of proximal development",
+      "start": 436,
+      "end": 516
+    },
+    {
+      "title": "Skill design and philosophy",
+      "start": 516,
+      "end": 604
+    },
+    {
+      "title": "Use cases for teach",
+      "start": 604,
+      "end": 666
+    },
+    {
+      "title": "Developers as AI first movers",
+      "start": 666,
+      "end": 784
+    }
+  ]
+}

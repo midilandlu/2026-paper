@@ -1,0 +1,677 @@
+[
+  {
+    "text": "My Grill Me skills and Grill with Docs have been out there for a while now, and people all around the world are using them as a replacement for plan mode in agents.",
+    "start": "00:00:00",
+    "end": "00:00:09"
+  },
+  {
+    "text": "However, I sometimes hear from people using them, like Codex just ask me 200 questions, this issue here.",
+    "start": "00:00:09",
+    "end": "00:00:16"
+  },
+  {
+    "text": "And I kind of wince a little bit.",
+    "start": "00:00:16",
+    "end": "00:00:18"
+  },
+  {
+    "text": "The idea of these skills is that they relentlessly question you, is that they continually ask you questions until you reach a shared understanding about something.",
+    "start": "00:00:18",
+    "end": "00:00:27"
+  },
+  {
+    "text": "And what that does is it relies on the skill of the person answering the questions.",
+    "start": "00:00:25",
+    "end": "00:00:30"
+  },
+  {
+    "text": "The person answering the questions, in other words, you using the Grill Me skill, need to be good at planning.",
+    "start": "00:00:30",
+    "end": "00:00:36"
+  },
+  {
+    "text": "You need to understand things like scope.",
+    "start": "00:00:36",
+    "end": "00:00:38"
+  },
+  {
+    "text": "You need to have a sense of what questions require what level of fidelity to answer.",
+    "start": "00:00:38",
+    "end": "00:00:43"
+  },
+  {
+    "text": "And this is why I want to make this video.",
+    "start": "00:00:43",
+    "end": "00:00:46"
+  },
+  {
+    "text": "I want to make you really good at using these skills, because these skills themselves are really not super long, and they're designed to aid you as an engineer, not replace you as an engineer.",
+    "start": "00:00:46",
+    "end": "00:00:56"
+  },
+  {
+    "text": "So, I've got a list of nine things that people get wrong with these skills.",
+    "start": "00:00:56",
+    "end": "00:01:00"
+  },
+  {
+    "text": "But before we do that, we're going to look at a few lenses for how to understand those failure modes, because if we don't understand them in the correct way, we're not going to be able to change them.",
+    "start": "00:01:00",
+    "end": "00:01:08"
+  },
+  {
+    "text": "Now, if you like the way I teach and you like the thing I'm teaching about, then you are going to really enjoy my AI coding for real engineers cohort, which the next one starts on June 1st.",
+    "start": "00:01:08",
+    "end": "00:01:18"
+  },
+  {
+    "text": "It has only 1 day and 11 hours left for 30% off.",
+    "start": "00:01:18",
+    "end": "00:01:23"
+  },
+  {
+    "text": "So, definitely you want to get on that.",
+    "start": "00:01:23",
+    "end": "00:01:25"
+  },
+  {
+    "text": "Hopefully, I can post this video today, so you have time to actually purchase it.",
+    "start": "00:01:25",
+    "end": "00:01:28"
+  },
+  {
+    "text": "So, let's get started.",
+    "start": "00:01:28",
+    "end": "00:01:29"
+  },
+  {
+    "text": "The first thing to consider here is that when we go into a grilling session, what we're really trying to do is answer questions.",
+    "start": "00:01:29",
+    "end": "00:01:35"
+  },
+  {
+    "text": "There are probably some things that we don't know about the thing that we're going to build.",
+    "start": "00:01:35",
+    "end": "00:01:40"
+  },
+  {
+    "text": "Now, these questions come at different levels of fidelity that are required to answer.",
+    "start": "00:01:40",
+    "end": "00:01:45"
+  },
+  {
+    "text": "I'm taking this language from Ryan Singer's amazing book Shape Up.",
+    "start": "00:01:44",
+    "end": "00:01:49"
+  },
+  {
+    "text": "High fidelity questions are questions where you need a really zoomed in, really detailed, high fidelity image in order to understand it.",
+    "start": "00:01:49",
+    "end": "00:01:57"
+  },
+  {
+    "text": "And that might mean, for instance, how will this piece of UI feel when we're using it?",
+    "start": "00:01:57",
+    "end": "00:02:03"
+  },
+  {
+    "text": "Should we split all of these form fields into multiple different pages, or should we have one enormous form where we fill them in?",
+    "start": "00:02:03",
+    "end": "00:02:09"
+  },
+  {
+    "text": "The only real way you're going to get kind of understanding of that is a high-fidelity prototype, or actually building the whole thing.",
+    "start": "00:02:09",
+    "end": "00:02:18"
+  },
+  {
+    "text": "Whereas, low-fidelity questions are questions that you don't need a high-fidelity kind of prototype or image to answer.",
+    "start": "00:02:18",
+    "end": "00:02:25"
+  },
+  {
+    "text": "Things like, what should what URL should this route live on, or things like that.",
+    "start": "00:02:25",
+    "end": "00:02:29"
+  },
+  {
+    "text": "You really just need to answer the question.",
+    "start": "00:02:29",
+    "end": "00:02:31"
+  },
+  {
+    "text": "And the first failure mode I see with the Grill Me skills is trying to answer high-fidelity questions during a grilling session.",
+    "start": "00:02:30",
+    "end": "00:02:38"
+  },
+  {
+    "text": "In other words, there are questions that are grillable, in other words, answerable in a grilling session, and questions that are ungrillable, questions that are not answerable in a grilling session.",
+    "start": "00:02:38",
+    "end": "00:02:48"
+  },
+  {
+    "text": "So, then, what do you do when you encounter an ungrillable question?",
+    "start": "00:02:48",
+    "end": "00:02:52"
+  },
+  {
+    "text": "When the question is about feel, when you need to actually see something higher fidelity in order to answer it.",
+    "start": "00:02:52",
+    "end": "00:02:58"
+  },
+  {
+    "text": "Well, the thing I tend to do is I tend to have a prototyping handoff.",
+    "start": "00:02:58",
+    "end": "00:03:02"
+  },
+  {
+    "text": "So, let's imagine that in my first session here in the blue, I've done some grilling, and I reach an ungrillable question, a question that I need to see in a higher fidelity.",
+    "start": "00:03:02",
+    "end": "00:03:11"
+  },
+  {
+    "text": "What I do is I use the handoff skill, which I will link to below, to handoff to a prototyping session, where I will then spend another session kind of just prototyping on that question, seeing it in a higher fidelity.",
+    "start": "00:03:11",
+    "end": "00:03:26"
+  },
+  {
+    "text": "And then, whatever I learn from that, I will handoff back to the original grilling session, so that I can continue with the grillable questions.",
+    "start": "00:03:26",
+    "end": "00:03:32"
+  },
+  {
+    "text": "So, that's what a lot of my sessions look like, where you have a grill with docs, you then handoff to a prototype session, and you handoff back to the original grill with doc session.",
+    "start": "00:03:32",
+    "end": "00:03:41"
+  },
+  {
+    "text": "That's how I answer those more higher fidelity questions.",
+    "start": "00:03:41",
+    "end": "00:03:45"
+  },
+  {
+    "text": "The next concept we need to understand here is scope, how large a thing you are grilling.",
+    "start": "00:03:45",
+    "end": "00:03:50"
+  },
+  {
+    "text": "If the thing you're grilling is too big, then you're going to end up hitting two problems.",
+    "start": "00:03:50",
+    "end": "00:03:55"
+  },
+  {
+    "text": "First of all, if the scope is too large, then you're probably going to have high fidelity questions that are kind of hidden in there that is quite hard to answer without actually seeing the full thing.",
+    "start": "00:03:55",
+    "end": "00:04:08"
+  },
+  {
+    "text": "It's always easier to build off of something that you know works and that you've done a good job on rather than trying to endlessly plan scope out into the future.",
+    "start": "00:04:05",
+    "end": "00:04:15"
+  },
+  {
+    "text": "This is what a lot of people hit when they try to schedule, you know, days and days of tasks for their work on is that they end up with crap because they aren't building on a foundation that they are aligned with.",
+    "start": "00:04:15",
+    "end": "00:04:30"
+  },
+  {
+    "text": "In other words, they've tried to sort of push out too far into the future without building on something solid.",
+    "start": "00:04:30",
+    "end": "00:04:36"
+  },
+  {
+    "text": "There's also a practical constraints here.",
+    "start": "00:04:36",
+    "end": "00:04:38"
+  },
+  {
+    "text": "If you end up grilling on too larger thing, you're going to end up hitting the dumb zone of the model.",
+    "start": "00:04:38",
+    "end": "00:04:42"
+  },
+  {
+    "text": "Sure, you might start your grilling session with a, you know, nearly empty context window, but as you keep going and going and going, okay, you've hardly got to the thing that you're, you know, not even answer half the questions yet and we're still hitting the dumb zone up here, at which point you might need to hand off or compact or do something a little bit awkward, all of which could have been avoided if you just picked a smaller scope to start with and then you'll be able to comfortably grill within the smart zone.",
+    "start": "00:04:42",
+    "end": "00:05:08"
+  },
+  {
+    "text": "For those who don't know, about 120k is where I estimate most state-of-the-art models, that's where their dumb zone begins.",
+    "start": "00:05:08",
+    "end": "00:05:15"
+  },
+  {
+    "text": "And so you've got to keep a really keen eye on your context window in order to make sure you don't push past that because the model will start getting too strained kind of in its attention relationships and start making stupider decisions.",
+    "start": "00:05:15",
+    "end": "00:05:26"
+  },
+  {
+    "text": "What this basically means is if you start out with a large scope like this, which is probably too big for the agent to handle, instead it might be better to ahead of time ask the agent to break down this scope into smaller scopes, which you can then grill on individually and answer all of those questions.",
+    "start": "00:05:26",
+    "end": "00:05:43"
+  },
+  {
+    "text": "The next lens I want you to look at here is whether you're being passive or whether you're being active with the agent and specifically in your grilling sessions.",
+    "start": "00:05:43",
+    "end": "00:05:52"
+  },
+  {
+    "text": "Many of these huge grilling sessions that I see people having, I worry that they're being too passive with the agent.",
+    "start": "00:05:50",
+    "end": "00:05:56"
+  },
+  {
+    "text": "When I'm doing grilling, I'm always quite active, always trying to lead the conversation.",
+    "start": "00:05:56",
+    "end": "00:06:02"
+  },
+  {
+    "text": "And remember, it's a conversation, not an interview.",
+    "start": "00:06:02",
+    "end": "00:06:06"
+  },
+  {
+    "text": "The agent is asking you these questions, but you know, it is your job to figure out where you're going and figure out the scope and keep things on track.",
+    "start": "00:06:04",
+    "end": "00:06:13"
+  },
+  {
+    "text": "And so, if you're being too passive, then it's very easy for the agent to just do stupid things with the interview, like ask you 540 questions, explode the scope, ask questions about stuff that are way too low fidelity.",
+    "start": "00:06:13",
+    "end": "00:06:26"
+  },
+  {
+    "text": "You have to take an active hand.",
+    "start": "00:06:26",
+    "end": "00:06:28"
+  },
+  {
+    "text": "But it's also possible to be too active, to just keep grilling on something that is just too low fidelity when you need to actually build something to see the thing in action.",
+    "start": "00:06:28",
+    "end": "00:06:37"
+  },
+  {
+    "text": "And so, there are two failure modes hidden here, being too passive, in other words, sitting back too much, and actually being a bit too pigheaded, and not getting to code fast enough.",
+    "start": "00:06:37",
+    "end": "00:06:47"
+  },
+  {
+    "text": "So, it's important to consider when you're using these skills where you fall on this axis, whether you're too passive or whether you're actually just a bit too pushy and active.",
+    "start": "00:06:47",
+    "end": "00:06:55"
+  },
+  {
+    "text": "Another failure mode here is that people don't value the thing that they're creating during the grilling session, which is that when you're answering these questions, when you're growing this context window with really valuable, you know, answers that you've given, design decisions that you've taken, this little blue bit of context window here is incredibly valuable.",
+    "start": "00:06:55",
+    "end": "00:07:14"
+  },
+  {
+    "text": "Now, usually your goal here is that if you've got enough budget left, then you can immediately start going ahead and implementing.",
+    "start": "00:07:14",
+    "end": "00:07:20"
+  },
+  {
+    "text": "In other words, you plan for a little while and then you go, \"Okay, let's just implement this.",
+    "start": "00:07:20",
+    "end": "00:07:24"
+  },
+  {
+    "text": "We don't need to hand off.",
+    "start": "00:07:24",
+    "end": "00:07:24"
+  },
+  {
+    "text": "We've got enough space left in the context window to just implement it based on the design decisions I've already taken.",
+    "start": "00:07:24",
+    "end": "00:07:29"
+  },
+  {
+    "text": "\" However, if you're already at the point where you need to, you know, quit out of this, you need to basically hand off, then it's probably time to make a PRD.",
+    "start": "00:07:29",
+    "end": "00:07:38"
+  },
+  {
+    "text": "My two PRD skill is a nice way of creating a handoff document that's kind of more tailored to engineering, which can be useful on a multi-session or just a single session.",
+    "start": "00:07:38",
+    "end": "00:07:46"
+  },
+  {
+    "text": "But one crazy thing I've seen people getting wrong is they actually clear the context first, and they create a new context window, and just run two PRD in there.",
+    "start": "00:07:46",
+    "end": "00:07:56"
+  },
+  {
+    "text": "This is totally crazy to me.",
+    "start": "00:07:56",
+    "end": "00:07:58"
+  },
+  {
+    "text": "What are you doing?",
+    "start": "00:07:58",
+    "end": "00:08:00"
+  },
+  {
+    "text": "You've created this incredible session here where you've got this, you know, 100,000 tokens of really good design decisions, and you're just going to chuck it away?",
+    "start": "00:07:57",
+    "end": "00:08:07"
+  },
+  {
+    "text": "Every grilling session, every decision that you make in that session is so valuable.",
+    "start": "00:08:07",
+    "end": "00:08:12"
+  },
+  {
+    "text": "You know, that should be recorded somewhere, and either turned into code or put into like a handoff document that you can kind of refer to later.",
+    "start": "00:08:12",
+    "end": "00:08:19"
+  },
+  {
+    "text": "It is really important that you don't just chuck away the stuff inside the grilling session.",
+    "start": "00:08:19",
+    "end": "00:08:24"
+  },
+  {
+    "text": "I think probably this is a just a skill issue.",
+    "start": "00:08:24",
+    "end": "00:08:26"
+  },
+  {
+    "text": "People need to be a lot more aware of context management, about kind of the decisions they're making in terms of clearing, compacting, handing off.",
+    "start": "00:08:24",
+    "end": "00:08:33"
+  },
+  {
+    "text": "So yeah, that was a crazy one for me.",
+    "start": "00:08:33",
+    "end": "00:08:36"
+  },
+  {
+    "text": "Make sure you preserve the decisions that you've made in your grilling session, and create some kind of handoff artifact about them.",
+    "start": "00:08:36",
+    "end": "00:08:41"
+  },
+  {
+    "text": "Another thing people get wrong is that they use too dumb a model for grilling.",
+    "start": "00:08:41",
+    "end": "00:08:45"
+  },
+  {
+    "text": "Understanding which questions are low fidelity, understanding which questions are high fidelity, figuring out what the right questions to ask to prompt you to make a stronger design, that is something you need a good model for.",
+    "start": "00:08:45",
+    "end": "00:08:57"
+  },
+  {
+    "text": "If we think about where models draw their knowledge from, there are kind of two sources.",
+    "start": "00:08:57",
+    "end": "00:09:02"
+  },
+  {
+    "text": "The first one is their contextual knowledge, the stuff that you have passed them specifically in their context.",
+    "start": "00:09:02",
+    "end": "00:09:08"
+  },
+  {
+    "text": "This might be from reading files or from user prompts or from research they do by, you know, calling tools and bringing the tool results back.",
+    "start": "00:09:08",
+    "end": "00:09:14"
+  },
+  {
+    "text": "But there's also their parametric knowledge, the things that they were trained to see and understand.",
+    "start": "00:09:14",
+    "end": "00:09:19"
+  },
+  {
+    "text": "This is much less reliable, but it is kind of what we're relying on here.",
+    "start": "00:09:19",
+    "end": "00:09:23"
+  },
+  {
+    "text": "We're relying on the model's innate understanding of systems and applications to prompt us with good ideas of things we might not have considered yet.",
+    "start": "00:09:23",
+    "end": "00:09:34"
+  },
+  {
+    "text": "Because if we had considered them, then we'd have passed them in as contextual knowledge, but we're relying on its kind of innate understanding in order to provide us with off-the-wall suggestions, strange ideas.",
+    "start": "00:09:34",
+    "end": "00:09:45"
+  },
+  {
+    "text": "Now, when you're relying on parametric knowledge like this, you need a model with lots of parameters, and that is usually what the big frontier models have.",
+    "start": "00:09:45",
+    "end": "00:09:53"
+  },
+  {
+    "text": "And not only that, but they're also, you know, top-of-the-line trained.",
+    "start": "00:09:53",
+    "end": "00:09:57"
+  },
+  {
+    "text": "They are also just more capable than smaller models.",
+    "start": "00:09:57",
+    "end": "00:10:01"
+  },
+  {
+    "text": "And so, using too dumb a model is a really common failing mode I see during grilling because we're so reliant on parametric knowledge.",
+    "start": "00:10:01",
+    "end": "00:10:07"
+  },
+  {
+    "text": "What most people don't know is you can actually use a kind of dumber model for implementation because most of the information you're passing there is contextual.",
+    "start": "00:10:07",
+    "end": "00:10:14"
+  },
+  {
+    "text": "You know, by the time you get to implementation, you've usually got a detailed implementation plan.",
+    "start": "00:10:14",
+    "end": "00:10:20"
+  },
+  {
+    "text": "You're passing in the relevant files in the codebase, so it's got some things to copy.",
+    "start": "00:10:18",
+    "end": "00:10:22"
+  },
+  {
+    "text": "You know, not a lot of that is parametric.",
+    "start": "00:10:22",
+    "end": "00:10:24"
+  },
+  {
+    "text": "It's mostly contextual.",
+    "start": "00:10:24",
+    "end": "00:10:26"
+  },
+  {
+    "text": "Finally, and this is a dead simple one, but so many people don't do this.",
+    "start": "00:10:25",
+    "end": "00:10:29"
+  },
+  {
+    "text": "You should grill multiple sessions in parallel.",
+    "start": "00:10:29",
+    "end": "00:10:30"
+  },
+  {
+    "text": "Usually, the way it works is I'm grilling one session, and then I, you know, type something to it, or usually I'm dictating to it.",
+    "start": "00:10:30",
+    "end": "00:10:37"
+  },
+  {
+    "text": "I answer its question, and then I go over into the other other session that's usually finished by that point.",
+    "start": "00:10:37",
+    "end": "00:10:42"
+  },
+  {
+    "text": "I answer its question, and then I go back to the original session.",
+    "start": "00:10:42",
+    "end": "00:10:45"
+  },
+  {
+    "text": "And I just bounce around like this.",
+    "start": "00:10:45",
+    "end": "00:10:46"
+  },
+  {
+    "text": "People say this is, you know, context switching, but really it's just managing two separate Slack threads at the same time.",
+    "start": "00:10:46",
+    "end": "00:10:53"
+  },
+  {
+    "text": "You know, it's really not that hard.",
+    "start": "00:10:53",
+    "end": "00:10:55"
+  },
+  {
+    "text": "And sure, you're making a lot of high-level decisions here, but this is really the only way I found of increasing throughput and getting more planning done in less time.",
+    "start": "00:10:55",
+    "end": "00:11:05"
+  },
+  {
+    "text": "Usually, I max out at two sessions here unless one of them is doing a particularly long-running task like some research, in which case I will try three uh if I'm feeling spicy and feeling high energy, but mostly two is my limit.",
+    "start": "00:11:03",
+    "end": "00:11:15"
+  },
+  {
+    "text": "But either way, I'm doubling my throughput, and it feels pretty nice to do, and you should definitely be doing this if you have the mental capacity for it.",
+    "start": "00:11:15",
+    "end": "00:11:21"
+  },
+  {
+    "text": "I also think that grilling is something that you do get better at, and as you get better at it, you can add more throughput and more parallelism.",
+    "start": "00:11:21",
+    "end": "00:11:27"
+  },
+  {
+    "text": "So, let's summarize all the things we learned.",
+    "start": "00:11:27",
+    "end": "00:11:28"
+  },
+  {
+    "text": "We learned that grilling is primarily about questions.",
+    "start": "00:11:28",
+    "end": "00:11:32"
+  },
+  {
+    "text": "We have low-fidelity questions and high-fidelity questions.",
+    "start": "00:11:32",
+    "end": "00:11:34"
+  },
+  {
+    "text": "Low-fidelity can be answered just by a question and answer.",
+    "start": "00:11:34",
+    "end": "00:11:38"
+  },
+  {
+    "text": "In other words, it's a grillable question.",
+    "start": "00:11:38",
+    "end": "00:11:41"
+  },
+  {
+    "text": "But, high-fidelity ones are ungrillable.",
+    "start": "00:11:41",
+    "end": "00:11:43"
+  },
+  {
+    "text": "You may need to go into a prototype mode by using handoff to handoff to a prototyping session to just figure out that question or maybe that question and a bunch of others and then go back to the original grilling to continue.",
+    "start": "00:11:43",
+    "end": "00:11:55"
+  },
+  {
+    "text": "Figuring out the correct scope of the work is essential.",
+    "start": "00:11:53",
+    "end": "00:11:57"
+  },
+  {
+    "text": "If you try to grill too much, then you will end up just kind of blowing through your contacts window, burning your own stamina, and you won't have anything to show for it.",
+    "start": "00:11:57",
+    "end": "00:12:06"
+  },
+  {
+    "text": "If you're too passive in your grilling sessions, then you're just going to sit there while the computer just says, you know, bombards you with more and more questions.",
+    "start": "00:12:06",
+    "end": "00:12:12"
+  },
+  {
+    "text": "But, if you're too active, then you might end up just grilling endlessly on low-fidelity questions when what you really need is just to get to code.",
+    "start": "00:12:12",
+    "end": "00:12:20"
+  },
+  {
+    "text": "You need a smart model so that you can rely on its parametric information to give you better suggestions and give you better questions to answer.",
+    "start": "00:12:20",
+    "end": "00:12:29"
+  },
+  {
+    "text": "And finally, I would recommend grilling two sessions at once.",
+    "start": "00:12:29",
+    "end": "00:12:31"
+  },
+  {
+    "text": "Once you've mastered these basics and you understand what each session is doing, you should be able to flip between them really nicely.",
+    "start": "00:12:31",
+    "end": "00:12:38"
+  },
+  {
+    "text": "And probably, you could even go up to four if you have a more plastic brain than I do.",
+    "start": "00:12:36",
+    "end": "00:12:40"
+  },
+  {
+    "text": "Overall, thanks for watching, pals.",
+    "start": "00:12:40",
+    "end": "00:12:42"
+  },
+  {
+    "text": "And if you enjoyed this, then you'll really enjoy my AI coding cohort for real engineers, which is whoa, 1 day 10 hours left to get it at a discount.",
+    "start": "00:12:42",
+    "end": "00:12:52"
+  },
+  {
+    "text": "You get a bunch of video content and interactive exercises organized in a way for maximum speed and maximum efficiency of learning.",
+    "start": "00:12:50",
+    "end": "00:12:58"
+  },
+  {
+    "text": "You get me to answer your questions in office hours and in the Discord chat.",
+    "start": "00:12:58",
+    "end": "00:13:02"
+  },
+  {
+    "text": "You know, it's great.",
+    "start": "00:13:02",
+    "end": "00:13:04"
+  },
+  {
+    "text": "By the way, if you dug this video, my YouTube is exploding recently, so thank you all for that.",
+    "start": "00:13:04",
+    "end": "00:13:08"
+  },
+  {
+    "text": "I massively appreciate it.",
+    "start": "00:13:08",
+    "end": "00:13:08"
+  },
+  {
+    "text": "I really enjoy making these videos.",
+    "start": "00:13:08",
+    "end": "00:13:12"
+  },
+  {
+    "text": "I'm loving making the skills.",
+    "start": "00:13:10",
+    "end": "00:13:13"
+  },
+  {
+    "text": "I think we're up to we just beat Gary Tan's G stack in terms of number of stars, which is wild to me.",
+    "start": "00:13:13",
+    "end": "00:13:17"
+  },
+  {
+    "text": "And if you have an idea for a video you want me to make next, then let me know about it cuz I thrive off your suggestions and your ideas.",
+    "start": "00:13:17",
+    "end": "00:13:26"
+  },
+  {
+    "text": "So, thanks for watching, and I will see you very soon.",
+    "start": "00:13:26",
+    "end": "00:13:29"
+  }
+]

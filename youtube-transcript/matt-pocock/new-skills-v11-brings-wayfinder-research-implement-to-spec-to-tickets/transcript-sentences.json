@@ -1,0 +1,947 @@
+[
+  {
+    "text": "Hello friends.",
+    "start": "00:00:00",
+    "end": "00:00:01"
+  },
+  {
+    "text": "First video in a while and that is because I've been working on version 1.",
+    "start": "00:00:01",
+    "end": "00:00:05"
+  },
+  {
+    "text": "1 of my skills repo.",
+    "start": "00:00:05",
+    "end": "00:00:07"
+  },
+  {
+    "text": "It has an astonishing amount of stuff in there.",
+    "start": "00:00:07",
+    "end": "00:00:11"
+  },
+  {
+    "text": "There is an entire new approach to grilling which probably deserves its own video, but I'll try and squeeze it in here.",
+    "start": "00:00:09",
+    "end": "00:00:15"
+  },
+  {
+    "text": "There is a bunch of new changes to existing skills, including a rename of two main flow skills.",
+    "start": "00:00:15",
+    "end": "00:00:23"
+  },
+  {
+    "text": "There is just really way too much for me to summarize in this intro, so you're just going to have to watch the video to find out.",
+    "start": "00:00:23",
+    "end": "00:00:29"
+  },
+  {
+    "text": "We can see the PR is literally ready to merge now.",
+    "start": "00:00:29",
+    "end": "00:00:30"
+  },
+  {
+    "text": "So, why not?",
+    "start": "00:00:30",
+    "end": "00:00:31"
+  },
+  {
+    "text": "Let's actually freaking merge this thing.",
+    "start": "00:00:31",
+    "end": "00:00:35"
+  },
+  {
+    "text": "And just like that, we have our version 1.",
+    "start": "00:00:35",
+    "end": "00:00:37"
+  },
+  {
+    "text": "1 ready to go.",
+    "start": "00:00:37",
+    "end": "00:00:37"
+  },
+  {
+    "text": "Let's start with the two that are probably going to be most annoying for you and the most like why did he do this?",
+    "start": "00:00:37",
+    "end": "00:00:43"
+  },
+  {
+    "text": "And there is a very specific reason that I did it, which is that two skills have been renamed.",
+    "start": "00:00:43",
+    "end": "00:00:51"
+  },
+  {
+    "text": "For instance, two PRD has now been renamed to two spec.",
+    "start": "00:00:51",
+    "end": "00:00:54"
+  },
+  {
+    "text": "And if we go up one level, then we go to two uh issues has been renamed to two tickets.",
+    "start": "00:00:54",
+    "end": "00:01:00"
+  },
+  {
+    "text": "The reason I've done this is that this has just been bugging me for a long time.",
+    "start": "00:01:00",
+    "end": "00:01:05"
+  },
+  {
+    "text": "The thing that we were creating into PRD wasn't actually a PRD.",
+    "start": "00:01:05",
+    "end": "00:01:11"
+  },
+  {
+    "text": "It was a spec.",
+    "start": "00:01:08",
+    "end": "00:01:10"
+  },
+  {
+    "text": "A product requirements document kind of describes more things about the actual product itself, whereas we were allowing things to leak into the PRD that weren't necessarily PRDs.",
+    "start": "00:01:10",
+    "end": "00:01:23"
+  },
+  {
+    "text": "So for a long time I've wanted to rename it to to spec because that's what we were creating.",
+    "start": "00:01:23",
+    "end": "00:01:26"
+  },
+  {
+    "text": "We were just creating a specification.",
+    "start": "00:01:26",
+    "end": "00:01:29"
+  },
+  {
+    "text": "Specification is a much broader term that actually entails what we were building.",
+    "start": "00:01:29",
+    "end": "00:01:34"
+  },
+  {
+    "text": "A specification for a thing we want to build.",
+    "start": "00:01:34",
+    "end": "00:01:36"
+  },
+  {
+    "text": "That can be technical.",
+    "start": "00:01:36",
+    "end": "00:01:36"
+  },
+  {
+    "text": "It can be non-technical and it can blend the two.",
+    "start": "00:01:36",
+    "end": "00:01:39"
+  },
+  {
+    "text": "It doesn't really matter.",
+    "start": "00:01:39",
+    "end": "00:01:40"
+  },
+  {
+    "text": "When it came to two issues, two issues always felt like it was biased towards GitHub and linear that use issues.",
+    "start": "00:01:40",
+    "end": "00:01:45"
+  },
+  {
+    "text": "But really we want this to be tickets.",
+    "start": "00:01:45",
+    "end": "00:01:48"
+  },
+  {
+    "text": "you have a spec and then underneath the spec you have the tickets that are the journey that you uh take to actually enact the spec and create it.",
+    "start": "00:01:48",
+    "end": "00:01:57"
+  },
+  {
+    "text": "This has been annoying me for a long time and finally it no longer annoys me.",
+    "start": "00:01:56",
+    "end": "00:02:01"
+  },
+  {
+    "text": "It brings me joy.",
+    "start": "00:01:59",
+    "end": "00:02:01"
+  },
+  {
+    "text": "Now one irritating thing about this rename is that you will need to probably delete those skills and read them.",
+    "start": "00:02:01",
+    "end": "00:02:07"
+  },
+  {
+    "text": "This means you'll need to run npx skills add mapco skills.",
+    "start": "00:02:07",
+    "end": "00:02:11"
+  },
+  {
+    "text": "I'm pretty sure that this skills installer won't pick up the rename so it won't try to update to prd to turn it into tosp spec.",
+    "start": "00:02:11",
+    "end": "00:02:18"
+  },
+  {
+    "text": "You get what I mean?",
+    "start": "00:02:17",
+    "end": "00:02:19"
+  },
+  {
+    "text": "And so running this command is the safest way to grab all of these new skills cuz you get to just pick and choose which ones you want.",
+    "start": "00:02:19",
+    "end": "00:02:25"
+  },
+  {
+    "text": "And once you've done that, you should probably go through a pass through your skills folder and just check that uh no bad ones are still in there.",
+    "start": "00:02:25",
+    "end": "00:02:32"
+  },
+  {
+    "text": "So you want to make sure that you're intentionally grabbing all the right skills.",
+    "start": "00:02:32",
+    "end": "00:02:36"
+  },
+  {
+    "text": "The next change is that I've fixed a couple of bugs that people were having with grill me and grill with dogs.",
+    "start": "00:02:36",
+    "end": "00:02:41"
+  },
+  {
+    "text": "Both of them rely on this kind of central reference grilling skill that kind of show shows the LLM how to grill a person.",
+    "start": "00:02:41",
+    "end": "00:02:49"
+  },
+  {
+    "text": "I've sharpened up this line here saying asking multiple questions at once is bewildering even with this d direction to ask questions one at a time.",
+    "start": "00:02:49",
+    "end": "00:02:58"
+  },
+  {
+    "text": "It was still occasionally just going have multiple questions at once.",
+    "start": "00:02:58",
+    "end": "00:03:02"
+  },
+  {
+    "text": "So I've told it why we don't want uh multiple questions at once.",
+    "start": "00:03:02",
+    "end": "00:03:06"
+  },
+  {
+    "text": "We've also added a confirmation gate on the end.",
+    "start": "00:03:06",
+    "end": "00:03:09"
+  },
+  {
+    "text": "do not enact the plan until I confirm we've reached a shared understanding.",
+    "start": "00:03:09",
+    "end": "00:03:12"
+  },
+  {
+    "text": "Lots of people on different models were reporting that the grilling session would just end and then it would just go straight into implementation.",
+    "start": "00:03:12",
+    "end": "00:03:18"
+  },
+  {
+    "text": "So this is just an extra little gate there.",
+    "start": "00:03:18",
+    "end": "00:03:22"
+  },
+  {
+    "text": "Finally, on some situations, it would just grill itself, which is very very odd.",
+    "start": "00:03:19",
+    "end": "00:03:26"
+  },
+  {
+    "text": "Not something I've noticed or seen in my personal thing, but I I can only get a small subset of how these skills are actually used.",
+    "start": "00:03:26",
+    "end": "00:03:33"
+  },
+  {
+    "text": "So I've basically tried to use a couple of leading words to indicate the difference between facts and decisions.",
+    "start": "00:03:33",
+    "end": "00:03:39"
+  },
+  {
+    "text": "So sometimes it was using the previous phrasing here by just exploring the codebase and grilling itself.",
+    "start": "00:03:39",
+    "end": "00:03:45"
+  },
+  {
+    "text": "This was especially happening with fable actually.",
+    "start": "00:03:45",
+    "end": "00:03:48"
+  },
+  {
+    "text": "And so I've decided to make a distinction between facts.",
+    "start": "00:03:48",
+    "end": "00:03:53"
+  },
+  {
+    "text": "So facts that are things you find yourself by exploring the codebase and decisions.",
+    "start": "00:03:53",
+    "end": "00:03:58"
+  },
+  {
+    "text": "So decisions are needed to be made by the user.",
+    "start": "00:03:56",
+    "end": "00:03:59"
+  },
+  {
+    "text": "So, just a couple of sentences, added a couple of things changed around, and this has made it a lot more consistent.",
+    "start": "00:03:59",
+    "end": "00:04:04"
+  },
+  {
+    "text": "Definitely getting a lot fewer complaints about those weird issues happening.",
+    "start": "00:04:04",
+    "end": "00:04:07"
+  },
+  {
+    "text": "The next thing to say is that I've added a couple of skills that really just take the process that was primarily a planning process, didn't really hold your hand into implementation and turn it into a proper software development life cycle.",
+    "start": "00:04:07",
+    "end": "00:04:22"
+  },
+  {
+    "text": "So, many folks ask me, what is the flow?",
+    "start": "00:04:22",
+    "end": "00:04:24"
+  },
+  {
+    "text": "What is the main flow you're supposed to use with the skills?",
+    "start": "00:04:22",
+    "end": "00:04:26"
+  },
+  {
+    "text": "And first of all, I mean, this is it.",
+    "start": "00:04:26",
+    "end": "00:04:28"
+  },
+  {
+    "text": "We have number one, you're supposed to instead of using plan mode, you get an agent to grill you and it uses these couple of docs to add a glossery to kind of understand you better as you go along and also add architectural decision records so you can capture the non-obvious stuff.",
+    "start": "00:04:28",
+    "end": "00:04:45"
+  },
+  {
+    "text": "The stuff that goes in the grill for docs then goes into a spec as we saw before.",
+    "start": "00:04:45",
+    "end": "00:04:50"
+  },
+  {
+    "text": "That spec kind of defines the destination where you're going.",
+    "start": "00:04:49",
+    "end": "00:04:55"
+  },
+  {
+    "text": "Then you turn that spec into individual tickets so you can spread the development of it out over multiple agent sessions.",
+    "start": "00:04:55",
+    "end": "00:05:01"
+  },
+  {
+    "text": "That's the purpose of to tickets.",
+    "start": "00:05:01",
+    "end": "00:05:03"
+  },
+  {
+    "text": "You then implement each one of those tickets with a implement skill.",
+    "start": "00:05:03",
+    "end": "00:05:06"
+  },
+  {
+    "text": "And the implement skill is very very simple.",
+    "start": "00:05:06",
+    "end": "00:05:09"
+  },
+  {
+    "text": "It just looks like this.",
+    "start": "00:05:09",
+    "end": "00:05:10"
+  },
+  {
+    "text": "Implement the work described by the user in the spec or tickets.",
+    "start": "00:05:10",
+    "end": "00:05:15"
+  },
+  {
+    "text": "Use TDD where possible at pre-agreed seams.",
+    "start": "00:05:15",
+    "end": "00:05:18"
+  },
+  {
+    "text": "That's a nice one.",
+    "start": "00:05:16",
+    "end": "00:05:18"
+  },
+  {
+    "text": "And run type checking regularly.",
+    "start": "00:05:18",
+    "end": "00:05:19"
+  },
+  {
+    "text": "Single test files regularly.",
+    "start": "00:05:19",
+    "end": "00:05:22"
+  },
+  {
+    "text": "Full test sweep once at the end.",
+    "start": "00:05:20",
+    "end": "00:05:24"
+  },
+  {
+    "text": "Once done, use code review to review the work and then commit your work to the current branch.",
+    "start": "00:05:24",
+    "end": "00:05:26"
+  },
+  {
+    "text": "I almost didn't make a skill for this because it's really simple, right?",
+    "start": "00:05:26",
+    "end": "00:05:32"
+  },
+  {
+    "text": "It's just mostly relying on the agents prior on its, you know, on the harness kind of teaching it what to do.",
+    "start": "00:05:30",
+    "end": "00:05:38"
+  },
+  {
+    "text": "And I didn't honestly think we needed a skill here.",
+    "start": "00:05:38",
+    "end": "00:05:39"
+  },
+  {
+    "text": "But folks kept asking me what's the flow?",
+    "start": "00:05:39",
+    "end": "00:05:41"
+  },
+  {
+    "text": "What's the flow here?",
+    "start": "00:05:41",
+    "end": "00:05:44"
+  },
+  {
+    "text": "And so I figured just an implement skill, make it nice and simple, right?",
+    "start": "00:05:44",
+    "end": "00:05:47"
+  },
+  {
+    "text": "At each stage of the process, call this skill.",
+    "start": "00:05:47",
+    "end": "00:05:49"
+  },
+  {
+    "text": "So that means implement earns its place here because you know okay once we got two tickets then we just got to implement each ticket in a separate coding session.",
+    "start": "00:05:49",
+    "end": "00:05:57"
+  },
+  {
+    "text": "Implement then itself calls code review and code review I graduated this out of in progress on version one.",
+    "start": "00:05:57",
+    "end": "00:06:06"
+  },
+  {
+    "text": "So it's been around for a little bit but I have made some updates to it in this version two.",
+    "start": "00:06:03",
+    "end": "00:06:09"
+  },
+  {
+    "text": "The theory of the code review skill is that it reviews code on two axes.",
+    "start": "00:06:09",
+    "end": "00:06:12"
+  },
+  {
+    "text": "So it does a sub agent for each one of these.",
+    "start": "00:06:12",
+    "end": "00:06:16"
+  },
+  {
+    "text": "The first one is the standards axis.",
+    "start": "00:06:16",
+    "end": "00:06:18"
+  },
+  {
+    "text": "Does the code conform to this repo's documented coding standards?",
+    "start": "00:06:18",
+    "end": "00:06:24"
+  },
+  {
+    "text": "So, if you've got a coding standards.",
+    "start": "00:06:21",
+    "end": "00:06:25"
+  },
+  {
+    "text": "md file somewhere in your repo, then it will read that and check against those.",
+    "start": "00:06:25",
+    "end": "00:06:30"
+  },
+  {
+    "text": "I generally think that coding standards belong outside of your agents.",
+    "start": "00:06:28",
+    "end": "00:06:33"
+  },
+  {
+    "text": "md file.",
+    "start": "00:06:33",
+    "end": "00:06:34"
+  },
+  {
+    "text": "They're supposed to be somewhere separate and the code review point is where they're most useful.",
+    "start": "00:06:33",
+    "end": "00:06:39"
+  },
+  {
+    "text": "And then once you've done the standards, you then go on to the spec.",
+    "start": "00:06:39",
+    "end": "00:06:42"
+  },
+  {
+    "text": "Does the code faithfully implement the originating issue or PRD or spec?",
+    "start": "00:06:42",
+    "end": "00:06:46"
+  },
+  {
+    "text": "They both run as parallel sub agents and it does a process here where it walks through each part.",
+    "start": "00:06:46",
+    "end": "00:06:52"
+  },
+  {
+    "text": "Now the thing that's cool and new about this skill is that I've been reading Martin Fowler's Refactoring again.",
+    "start": "00:06:52",
+    "end": "00:06:59"
+  },
+  {
+    "text": "And what I decided to do is Martin Fowler names a bunch of different smells that the agent can identify in bad code.",
+    "start": "00:06:59",
+    "end": "00:07:06"
+  },
+  {
+    "text": "Refactoring is such an old book, such a well-sighted book that these uh kind of smells are deep in the agent's prior.",
+    "start": "00:07:06",
+    "end": "00:07:13"
+  },
+  {
+    "text": "And so all you need to do is kind of invoke the idea of okay mysterious name or duplicated code or feature envy data clumps primitive obsession repeated switches divergent change speculative generality message chains you see what I mean like these are all deep in the agent's kind of knowledge base and all we got to do is just really describe them in a sentence and what I found is that leads the word or leads the agent to repeat that word back to you and say yes I found some message chains I need to remove them I found a middleman situation I need to uh fix that.",
+    "start": "00:07:13",
+    "end": "00:07:43"
+  },
+  {
+    "text": "So, I tested this for a couple of weeks and it was outrageously useful.",
+    "start": "00:07:43",
+    "end": "00:07:47"
+  },
+  {
+    "text": "It was really, really nice at improving the quality of my code and it's really cheap to add here.",
+    "start": "00:07:47",
+    "end": "00:07:51"
+  },
+  {
+    "text": "Just kind of like 10 lines.",
+    "start": "00:07:51",
+    "end": "00:07:54"
+  },
+  {
+    "text": "But, let's go and talk about the one that I'm really really excited about, which is a whole new change to the way that we kick off and shape specs.",
+    "start": "00:07:54",
+    "end": "00:08:03"
+  },
+  {
+    "text": "So, the pre-spec bit.",
+    "start": "00:08:03",
+    "end": "00:08:04"
+  },
+  {
+    "text": "In other words, it goes here where it may in some situations replace Grill with Docs and it's called Wayfinder.",
+    "start": "00:08:04",
+    "end": "00:08:13"
+  },
+  {
+    "text": "I will make an entire post, entire video about WFinder, but uh suffice to say is that I would love for you in situations where you're thinking about using Grill with Docs instead to default to Wfinder instead.",
+    "start": "00:08:13",
+    "end": "00:08:25"
+  },
+  {
+    "text": "What Wayfinder does is it's designed for situations where you have a ton of stuff that you want to plan but and too big for one agent session.",
+    "start": "00:08:25",
+    "end": "00:08:34"
+  },
+  {
+    "text": "In other words, you're going to blow out of the smart zone of the agent or you might even blow out of the context window of the agent.",
+    "start": "00:08:34",
+    "end": "00:08:39"
+  },
+  {
+    "text": "You need to split it into multiple parts in order to figure out where you're going.",
+    "start": "00:08:39",
+    "end": "00:08:44"
+  },
+  {
+    "text": "A loose idea has arrived, too big for one agent session and wrapped in fog.",
+    "start": "00:08:44",
+    "end": "00:08:47"
+  },
+  {
+    "text": "The way from here to the destination isn't visible yet.",
+    "start": "00:08:47",
+    "end": "00:08:51"
+  },
+  {
+    "text": "This skill charts the way as a shared map on the repo's issue tracker, then works its tickets one at a time until the route is clear.",
+    "start": "00:08:51",
+    "end": "00:08:56"
+  },
+  {
+    "text": "These maps are saved in GitHub issues.",
+    "start": "00:08:56",
+    "end": "00:08:59"
+  },
+  {
+    "text": "For instance, this is one on the Sand Castle repo where we're doing a spike to think about maybe pulling in the AI SDK as a dependency.",
+    "start": "00:08:59",
+    "end": "00:09:08"
+  },
+  {
+    "text": "A big big change.",
+    "start": "00:09:08",
+    "end": "00:09:08"
+  },
+  {
+    "text": "And so you can see there are no decisions that have um been made so far and all of the decisions that need to be made are saved in sub issues and these sub issues have blocking relationships.",
+    "start": "00:09:08",
+    "end": "00:09:21"
+  },
+  {
+    "text": "So we can see that no decision can be made here before we make this key decision at the start.",
+    "start": "00:09:19",
+    "end": "00:09:26"
+  },
+  {
+    "text": "Each one of these decisions is scoped to be the size of an agent session.",
+    "start": "00:09:26",
+    "end": "00:09:30"
+  },
+  {
+    "text": "And we can see that they're labeled as different types here.",
+    "start": "00:09:30",
+    "end": "00:09:34"
+  },
+  {
+    "text": "So for instance, this one is labeled as a research task.",
+    "start": "00:09:32",
+    "end": "00:09:36"
+  },
+  {
+    "text": "So, this is really an AFK task for the agent to go off, do some research, and then come back.",
+    "start": "00:09:36",
+    "end": "00:09:42"
+  },
+  {
+    "text": "This one, I think, is a research as well.",
+    "start": "00:09:42",
+    "end": "00:09:45"
+  },
+  {
+    "text": "This one is a research task, and this one is a grilling task.",
+    "start": "00:09:43",
+    "end": "00:09:47"
+  },
+  {
+    "text": "So, this one needs a grilling session to be done here.",
+    "start": "00:09:47",
+    "end": "00:09:50"
+  },
+  {
+    "text": "I think these are all grillers.",
+    "start": "00:09:50",
+    "end": "00:09:53"
+  },
+  {
+    "text": "We can see these defined in the ticket types down here.",
+    "start": "00:09:53",
+    "end": "00:09:55"
+  },
+  {
+    "text": "So, we have research, we have grilling, we also have prototype as well.",
+    "start": "00:09:55",
+    "end": "00:09:59"
+  },
+  {
+    "text": "So this is something I've been really advocating for recently is doing more prototyping before you get to a spec.",
+    "start": "00:09:59",
+    "end": "00:10:05"
+  },
+  {
+    "text": "The idea is you raise the fidelity of the discussion by making a cheap rough concrete artifact to react to an outline rough take UI logic code via the prototype skill.",
+    "start": "00:10:05",
+    "end": "00:10:15"
+  },
+  {
+    "text": "We'll get to that in a minute.",
+    "start": "00:10:15",
+    "end": "00:10:16"
+  },
+  {
+    "text": "Links to the prototype as an asset.",
+    "start": "00:10:16",
+    "end": "00:10:18"
+  },
+  {
+    "text": "And it says use when how should it look or how should it behave is a key question.",
+    "start": "00:10:18",
+    "end": "00:10:23"
+  },
+  {
+    "text": "And this is essential for almost anything that touches front-end code.",
+    "start": "00:10:23",
+    "end": "00:10:27"
+  },
+  {
+    "text": "So I would definitely be recommending using Wfinder for anything that touches the front end.",
+    "start": "00:10:27",
+    "end": "00:10:33"
+  },
+  {
+    "text": "The final one here is just tasks.",
+    "start": "00:10:33",
+    "end": "00:10:34"
+  },
+  {
+    "text": "So config that needs to be set up um provisioning access, you know, moving data into the shape, you know, all the sort of boring stuff that doesn't need a grilling decision and can't really be automated by AI.",
+    "start": "00:10:34",
+    "end": "00:10:45"
+  },
+  {
+    "text": "What you end up with is after all of these tickets are closed, all of that information gets saved onto the map with the original tickets as kind of primary sources for what was captured.",
+    "start": "00:10:45",
+    "end": "00:10:57"
+  },
+  {
+    "text": "And you can then take this map and just turn it into a spec in the regular way.",
+    "start": "00:10:57",
+    "end": "00:11:01"
+  },
+  {
+    "text": "What I've found that instead of having the kind of anxiety of managing my session with Grill with Docs, having to hand off, worry about the smart zone, with Wayfinder, it's kind of all managed for me, I just get to close a session, open up the next Wayfinder ticket.",
+    "start": "00:11:01",
+    "end": "00:11:15"
+  },
+  {
+    "text": "It's all saved in GitHub, so it's collaborative.",
+    "start": "00:11:15",
+    "end": "00:11:18"
+  },
+  {
+    "text": "You can share it across your team.",
+    "start": "00:11:16",
+    "end": "00:11:19"
+  },
+  {
+    "text": "And once the map is done, once it's complete, you just go to to spec and you're good to go.",
+    "start": "00:11:19",
+    "end": "00:11:23"
+  },
+  {
+    "text": "To support the wayfinder skill, we have a new research skill which is very small, very handy for when you just need to do a research session or it kind of influences the model in researching in the right way as well or at least the way that I like.",
+    "start": "00:11:23",
+    "end": "00:11:37"
+  },
+  {
+    "text": "Spins up a background agent to do the research so you keep working while it reads.",
+    "start": "00:11:35",
+    "end": "00:11:39"
+  },
+  {
+    "text": "Investigate the question against primary sources.",
+    "start": "00:11:39",
+    "end": "00:11:41"
+  },
+  {
+    "text": "Write the findings to a simple markdown file and save it where the repo already keeps such notes match the existing convention.",
+    "start": "00:11:41",
+    "end": "00:11:47"
+  },
+  {
+    "text": "So this is useful too if you need to do any research.",
+    "start": "00:11:47",
+    "end": "00:11:49"
+  },
+  {
+    "text": "you can just invoke the research skill and you're good to go.",
+    "start": "00:11:49",
+    "end": "00:11:53"
+  },
+  {
+    "text": "The next one, of course, is the prototype, which I've kind of shown off a little bit before.",
+    "start": "00:11:51",
+    "end": "00:11:57"
+  },
+  {
+    "text": "I don't think I've done a full video on it.",
+    "start": "00:11:57",
+    "end": "00:11:59"
+  },
+  {
+    "text": "This is now model invoked so that Wayfinder can invoke itself and it essentially gives you a choice between logic or state.",
+    "start": "00:11:59",
+    "end": "00:12:09"
+  },
+  {
+    "text": "So, it's either a logic prototype or a UI prototype, and they react quite differently.",
+    "start": "00:12:09",
+    "end": "00:12:13"
+  },
+  {
+    "text": "The final change is something that people have been asking for for a while and I finally decided to pull the trigger on it which is before in my TDD skill it would recommend a set of steps for you to follow and that was a little bit awkward sometimes.",
+    "start": "00:12:13",
+    "end": "00:12:27"
+  },
+  {
+    "text": "the steps were like it would confirm what tests it wanted to write with you and then you would you know walk it through walk it through and it didn't fit with most people's uh idea of how TDD should work which is you should be able to pass an AFK agent the TDD skill and it should just work and so this TDD skill is now reference material only so it doesn't specify any particular steps apart from just the order in which you should write tests in so to do red green refactor so It just says red before green one slice at a time.",
+    "start": "00:12:27",
+    "end": "00:12:58"
+  },
+  {
+    "text": "And it also splits away uh refactoring as as not part of the loop.",
+    "start": "00:12:58",
+    "end": "00:13:04"
+  },
+  {
+    "text": "So it's no longer a red green refactor loop.",
+    "start": "00:13:02",
+    "end": "00:13:05"
+  },
+  {
+    "text": "It's more just red green.",
+    "start": "00:13:05",
+    "end": "00:13:09"
+  },
+  {
+    "text": "I tend to think that putting the refactoring in the code review part is a lot more productive because then you don't overload the implementation.",
+    "start": "00:13:09",
+    "end": "00:13:18"
+  },
+  {
+    "text": "So that is all of the changes that have come in on the skills.",
+    "start": "00:13:18",
+    "end": "00:13:20"
+  },
+  {
+    "text": "It is a lot of changes.",
+    "start": "00:13:20",
+    "end": "00:13:23"
+  },
+  {
+    "text": "And if you're nervous about missing any of the updates, then I recommend that you clear out all of your skills and do npx skills update and grab all of the new ones.",
+    "start": "00:13:23",
+    "end": "00:13:30"
+  },
+  {
+    "text": "If you've made updates to your skills in the meantime, then you can just point your clanker at my repo and just say pull down all of the good new stuff, especially pointing at the release notes.",
+    "start": "00:13:30",
+    "end": "00:13:39"
+  },
+  {
+    "text": "The thing I think this release will be remembered for is to spec and to tickets changing because that is just a little bit of friction, but I think good friction because it names it properly and I hope to be the start of you getting obsessed with Wfinder.",
+    "start": "00:13:39",
+    "end": "00:13:52"
+  },
+  {
+    "text": "I'm using Wayfinder for literally everything, even non-coding stuff.",
+    "start": "00:13:52",
+    "end": "00:13:55"
+  },
+  {
+    "text": "I've actually been planning my next course with Wfinder and it's really, really good.",
+    "start": "00:13:55",
+    "end": "00:14:00"
+  },
+  {
+    "text": "And in fact, why don't I just show you that course now?",
+    "start": "00:14:00",
+    "end": "00:14:05"
+  },
+  {
+    "text": "This is the AI coding crash course.",
+    "start": "00:14:02",
+    "end": "00:14:06"
+  },
+  {
+    "text": "This is going to be different from the cohorts that I usually run.",
+    "start": "00:14:06",
+    "end": "00:14:09"
+  },
+  {
+    "text": "It's going to be much much cheaper and it's going to be self-paced so you can purchase it anytime.",
+    "start": "00:14:09",
+    "end": "00:14:13"
+  },
+  {
+    "text": "You get help from the Discord kind of in the usual way, but it's not going to be gated like a normal cohort.",
+    "start": "00:14:13",
+    "end": "00:14:21"
+  },
+  {
+    "text": "It is going to be the perfect intro for anyone who's looking to get into AI coding whether you are a developer or whether you are not a developer.",
+    "start": "00:14:18",
+    "end": "00:14:28"
+  },
+  {
+    "text": "So for senior engineers, it's going to be a conversion course.",
+    "start": "00:14:28",
+    "end": "00:14:30"
+  },
+  {
+    "text": "For folks who are new to development, it's going to be the way that you can actually get productive using these crazy new tools.",
+    "start": "00:14:30",
+    "end": "00:14:37"
+  },
+  {
+    "text": "I've not announced a price yet.",
+    "start": "00:14:37",
+    "end": "00:14:39"
+  },
+  {
+    "text": "I am going to just be adding signups in here and it will be available once I finish filming it.",
+    "start": "00:14:39",
+    "end": "00:14:43"
+  },
+  {
+    "text": "Maybe in about uh August time I think.",
+    "start": "00:14:43",
+    "end": "00:14:45"
+  },
+  {
+    "text": "But folks, thank you so much for watching.",
+    "start": "00:14:45",
+    "end": "00:14:47"
+  },
+  {
+    "text": "It's always a pleasure sharing these skills updates with you.",
+    "start": "00:14:47",
+    "end": "00:14:52"
+  },
+  {
+    "text": "It is really cool to see the usage just absolutely grow and grow.",
+    "start": "00:14:52",
+    "end": "00:14:55"
+  },
+  {
+    "text": "Everyone tells me I shouldn't show the star count, but it's up to like 160k stars now.",
+    "start": "00:14:55",
+    "end": "00:15:00"
+  },
+  {
+    "text": "There are 7 million downloads on Skills.",
+    "start": "00:15:00",
+    "end": "00:15:03"
+  },
+  {
+    "text": "sh.",
+    "start": "00:15:03",
+    "end": "00:15:03"
+  },
+  {
+    "text": "It is just bonkers.",
+    "start": "00:15:03",
+    "end": "00:15:03"
+  },
+  {
+    "text": "So, thank you so much for enjoying the skills.",
+    "start": "00:15:03",
+    "end": "00:15:06"
+  },
+  {
+    "text": "I hope they are helping you ship more and ship more productively and I will see you very",
+    "start": "00:15:06",
+    "end": "00:15:11"
+  }
+]

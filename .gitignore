@@ -15,3 +15,11 @@ Thumbs.db
 
 # Node.js
 node_modules/
+
+# Temporary & Scratch files
+scratch/
+temp/
+*temp*
+transcript.md
+translate/
+*.vtt

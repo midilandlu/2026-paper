@@ -1,0 +1,2962 @@
+[
+  {
+    "text": "Hello friends. I was dearly hoping to be",
+    "start": 0,
+    "duration": 3.6
+  },
+  {
+    "text": "able to come to the AI engineer World's",
+    "start": 1.76,
+    "duration": 4.32
+  },
+  {
+    "text": "Fair, but family matters have intruded",
+    "start": 3.6,
+    "duration": 4.64
+  },
+  {
+    "text": "and I'm not able to make it. However, I",
+    "start": 6.08,
+    "duration": 3.68
+  },
+  {
+    "text": "will not be leaving you empty-handed.",
+    "start": 8.24,
+    "duration": 3.359
+  },
+  {
+    "text": "I'm going to give you the talk that I",
+    "start": 9.76,
+    "duration": 4.16
+  },
+  {
+    "text": "would have given in San Francisco. This",
+    "start": 11.599,
+    "duration": 4.16
+  },
+  {
+    "text": "talk is called the missing manual. How",
+    "start": 13.92,
+    "duration": 4.64
+  },
+  {
+    "text": "to write great skills. And I think that",
+    "start": 15.759,
+    "duration": 4.721
+  },
+  {
+    "text": "the ability to distinguish good skills",
+    "start": 18.56,
+    "duration": 4
+  },
+  {
+    "text": "from bad skills is only getting more",
+    "start": 20.48,
+    "duration": 3.76
+  },
+  {
+    "text": "important. As developers, we seem to be",
+    "start": 22.56,
+    "duration": 3.44
+  },
+  {
+    "text": "pretty talented at finding different",
+    "start": 24.24,
+    "duration": 5.199
+  },
+  {
+    "text": "forms of hell for us to go to. In like a",
+    "start": 26,
+    "duration": 5.359
+  },
+  {
+    "text": "few years ago, we had tutorial hell,",
+    "start": 29.439,
+    "duration": 3.361
+  },
+  {
+    "text": "which is where you would go into a bunch",
+    "start": 31.359,
+    "duration": 3.521
+  },
+  {
+    "text": "of tutorials trying to learn something,",
+    "start": 32.8,
+    "duration": 3.68
+  },
+  {
+    "text": "not be able to piece it together and",
+    "start": 34.88,
+    "duration": 4.16
+  },
+  {
+    "text": "sort of just get into this cycle you",
+    "start": 36.48,
+    "duration": 4.72
+  },
+  {
+    "text": "couldn't get out of. We had framework",
+    "start": 39.04,
+    "duration": 4.08
+  },
+  {
+    "text": "hell where every other 10 minutes there",
+    "start": 41.2,
+    "duration": 3.28
+  },
+  {
+    "text": "was a JavaScript framework being",
+    "start": 43.12,
+    "duration": 2.88
+  },
+  {
+    "text": "announced and you know, you had to learn",
+    "start": 44.48,
+    "duration": 4
+  },
+  {
+    "text": "the hot new thing all the time. And now",
+    "start": 46,
+    "duration": 4.32
+  },
+  {
+    "text": "I think we have another version of hell",
+    "start": 48.48,
+    "duration": 4.079
+  },
+  {
+    "text": "which is skill hell. Skill hell is where",
+    "start": 50.32,
+    "duration": 4.399
+  },
+  {
+    "text": "you have all of these skills available",
+    "start": 52.559,
+    "duration": 4.401
+  },
+  {
+    "text": "freely available that you can download,",
+    "start": 54.719,
+    "duration": 4
+  },
+  {
+    "text": "contribute to, you can figure out on",
+    "start": 56.96,
+    "duration": 3.439
+  },
+  {
+    "text": "your own, but you don't really know how",
+    "start": 58.719,
+    "duration": 3.441
+  },
+  {
+    "text": "the pieces all work together. You can't",
+    "start": 60.399,
+    "duration": 3.921
+  },
+  {
+    "text": "tell a good skill from a bad skill. And",
+    "start": 62.16,
+    "duration": 3.279
+  },
+  {
+    "text": "this means that people are trying to",
+    "start": 64.32,
+    "duration": 3.04
+  },
+  {
+    "text": "piece together these frameworks trying",
+    "start": 65.439,
+    "duration": 4
+  },
+  {
+    "text": "to try everything that's out there all",
+    "start": 67.36,
+    "duration": 4.72
+  },
+  {
+    "text": "at once. And they sort of can't, or",
+    "start": 69.439,
+    "duration": 4.481
+  },
+  {
+    "text": "rather, they don't get the results that",
+    "start": 72.08,
+    "duration": 3.52
+  },
+  {
+    "text": "the skills themselves promise. This is",
+    "start": 73.92,
+    "duration": 3.199
+  },
+  {
+    "text": "true at an individual level, but it's",
+    "start": 75.6,
+    "duration": 3.92
+  },
+  {
+    "text": "also true at an organization level, too.",
+    "start": 77.119,
+    "duration": 4.561
+  },
+  {
+    "text": "Organizations have no way or no",
+    "start": 79.52,
+    "duration": 3.84
+  },
+  {
+    "text": "understanding on how to build good",
+    "start": 81.68,
+    "duration": 3.759
+  },
+  {
+    "text": "skills. How to take their operating",
+    "start": 83.36,
+    "duration": 3.68
+  },
+  {
+    "text": "procedures and turn them into things",
+    "start": 85.439,
+    "duration": 3.761
+  },
+  {
+    "text": "that an agent can do. And if you don't",
+    "start": 87.04,
+    "duration": 4.079
+  },
+  {
+    "text": "do that, then it's hard to get the",
+    "start": 89.2,
+    "duration": 5.12
+  },
+  {
+    "text": "bounty that skills can offer. Just one",
+    "start": 91.119,
+    "duration": 5.36
+  },
+  {
+    "text": "more skill, bro. That's kind of seems",
+    "start": 94.32,
+    "duration": 3.52
+  },
+  {
+    "text": "like what we're saying. And I feel a bit",
+    "start": 96.479,
+    "duration": 3.6
+  },
+  {
+    "text": "of guilt here, too, because we have Matt",
+    "start": 97.84,
+    "duration": 4.48
+  },
+  {
+    "text": "PCO skills, which is my skills repo,",
+    "start": 100.079,
+    "duration": 3.761
+  },
+  {
+    "text": "which is one of the most popular",
+    "start": 102.32,
+    "duration": 3.68
+  },
+  {
+    "text": "engineering skill sets out there. And so",
+    "start": 103.84,
+    "duration": 4.16
+  },
+  {
+    "text": "I feel like I want to help the people",
+    "start": 106,
+    "duration": 4.079
+  },
+  {
+    "text": "who use my skills get out of skill hell.",
+    "start": 108,
+    "duration": 3.68
+  },
+  {
+    "text": "So how do we do it? How do we get out of",
+    "start": 110.079,
+    "duration": 4.161
+  },
+  {
+    "text": "this? Well, what is actually missing",
+    "start": 111.68,
+    "duration": 3.84
+  },
+  {
+    "text": "here? Well, in my opinion, the thing",
+    "start": 114.24,
+    "duration": 3.28
+  },
+  {
+    "text": "that we're missing is we don't know what",
+    "start": 115.52,
+    "duration": 4.239
+  },
+  {
+    "text": "makes a skill great. We can't yet look",
+    "start": 117.52,
+    "duration": 4.08
+  },
+  {
+    "text": "at a skill and go, okay, this skill is",
+    "start": 119.759,
+    "duration": 4
+  },
+  {
+    "text": "doing these good things and these bad",
+    "start": 121.6,
+    "duration": 4.72
+  },
+  {
+    "text": "things. There's no shared rubric, no",
+    "start": 123.759,
+    "duration": 4.161
+  },
+  {
+    "text": "framework for looking at a skill and",
+    "start": 126.32,
+    "duration": 3.2
+  },
+  {
+    "text": "making it better. And so that's what I'm",
+    "start": 127.92,
+    "duration": 2.88
+  },
+  {
+    "text": "going to give you in this talk. I'm",
+    "start": 129.52,
+    "duration": 3.52
+  },
+  {
+    "text": "going to give you a skill checklist. A",
+    "start": 130.8,
+    "duration": 4
+  },
+  {
+    "text": "checklist of things you can look at",
+    "start": 133.04,
+    "duration": 3.76
+  },
+  {
+    "text": "inside the skill to make sure that it's",
+    "start": 134.8,
+    "duration": 3.68
+  },
+  {
+    "text": "doing what it says it's doing and ways",
+    "start": 136.8,
+    "duration": 3.36
+  },
+  {
+    "text": "you can improve it, way you can write",
+    "start": 138.48,
+    "duration": 3.68
+  },
+  {
+    "text": "skills. This checklist looks like this.",
+    "start": 140.16,
+    "duration": 4.56
+  },
+  {
+    "text": "We start with the trigger of the skill.",
+    "start": 142.16,
+    "duration": 4.799
+  },
+  {
+    "text": "How the skill is invoked and the",
+    "start": 144.72,
+    "duration": 4.72
+  },
+  {
+    "text": "decisions that you need to design there.",
+    "start": 146.959,
+    "duration": 4.401
+  },
+  {
+    "text": "Then the internal structure of the",
+    "start": 149.44,
+    "duration": 3.36
+  },
+  {
+    "text": "skill, how the skill is actually",
+    "start": 151.36,
+    "duration": 4
+  },
+  {
+    "text": "composed and laid out internally. Then",
+    "start": 152.8,
+    "duration": 4.32
+  },
+  {
+    "text": "number three is how do you actually",
+    "start": 155.36,
+    "duration": 3.84
+  },
+  {
+    "text": "steer using the skill? How do you get",
+    "start": 157.12,
+    "duration": 5.36
+  },
+  {
+    "text": "the skill to tell the agent what to do?",
+    "start": 159.2,
+    "duration": 5.2
+  },
+  {
+    "text": "And then four, how do you make the skill",
+    "start": 162.48,
+    "duration": 4.24
+  },
+  {
+    "text": "as small as possible? Because once we've",
+    "start": 164.4,
+    "duration": 4.8
+  },
+  {
+    "text": "got a working skill, we then need to",
+    "start": 166.72,
+    "duration": 4.48
+  },
+  {
+    "text": "basically maximize it. Prune out all of",
+    "start": 169.2,
+    "duration": 3.759
+  },
+  {
+    "text": "the irrelevant stuff, prune out all of",
+    "start": 171.2,
+    "duration": 3.679
+  },
+  {
+    "text": "the noops. There's one handy advantage",
+    "start": 172.959,
+    "duration": 3.28
+  },
+  {
+    "text": "of me not being in the room with you,",
+    "start": 174.879,
+    "duration": 2.801
+  },
+  {
+    "text": "which is you can immediately go and try",
+    "start": 176.239,
+    "duration": 3.28
+  },
+  {
+    "text": "this out because I've encoded all of",
+    "start": 177.68,
+    "duration": 4.24
+  },
+  {
+    "text": "this into a new skill in my repo called",
+    "start": 179.519,
+    "duration": 4.241
+  },
+  {
+    "text": "writing great skills. So, if you've got",
+    "start": 181.92,
+    "duration": 3.44
+  },
+  {
+    "text": "an immediate use case for this, then",
+    "start": 183.76,
+    "duration": 3.36
+  },
+  {
+    "text": "just go to this my skills repo. you",
+    "start": 185.36,
+    "duration": 3.519
+  },
+  {
+    "text": "know, just close this browser, get out",
+    "start": 187.12,
+    "duration": 4.16
+  },
+  {
+    "text": "of here, and go and use this skill to",
+    "start": 188.879,
+    "duration": 4.64
+  },
+  {
+    "text": "either improve your skills or write",
+    "start": 191.28,
+    "duration": 3.679
+  },
+  {
+    "text": "great new ones. But let's start going",
+    "start": 193.519,
+    "duration": 2.8
+  },
+  {
+    "text": "through the checklist. Then we have",
+    "start": 194.959,
+    "duration": 3.28
+  },
+  {
+    "text": "number one, the trigger, the way the",
+    "start": 196.319,
+    "duration": 3.601
+  },
+  {
+    "text": "skill is invoked. And in order to talk",
+    "start": 198.239,
+    "duration": 2.961
+  },
+  {
+    "text": "about this, I'm actually going to do a",
+    "start": 199.92,
+    "duration": 3.44
+  },
+  {
+    "text": "bit of comparison here, which is that my",
+    "start": 201.2,
+    "duration": 4.08
+  },
+  {
+    "text": "skills are often compared to another set",
+    "start": 203.36,
+    "duration": 4.4
+  },
+  {
+    "text": "of extremely popular engineering skills",
+    "start": 205.28,
+    "duration": 4.4
+  },
+  {
+    "text": "called superpowers. And I'm really often",
+    "start": 207.76,
+    "duration": 3.759
+  },
+  {
+    "text": "asked the question, how do your skills",
+    "start": 209.68,
+    "duration": 3.839
+  },
+  {
+    "text": "compare to superpowers? What's the",
+    "start": 211.519,
+    "duration": 3.28
+  },
+  {
+    "text": "difference between them? To understand",
+    "start": 213.519,
+    "duration": 2.481
+  },
+  {
+    "text": "that we need to understand the",
+    "start": 214.799,
+    "duration": 2.881
+  },
+  {
+    "text": "difference between user invoked and",
+    "start": 216,
+    "duration": 4.48
+  },
+  {
+    "text": "model invoked skills. Anytime you have a",
+    "start": 217.68,
+    "duration": 5.68
+  },
+  {
+    "text": "skill you can always invoke it manually.",
+    "start": 220.48,
+    "duration": 5.119
+  },
+  {
+    "text": "So the skill sits on your file system.",
+    "start": 223.36,
+    "duration": 3.84
+  },
+  {
+    "text": "The agent will just be able to pull up",
+    "start": 225.599,
+    "duration": 3.28
+  },
+  {
+    "text": "the skill and understand what's in",
+    "start": 227.2,
+    "duration": 3.679
+  },
+  {
+    "text": "there. And you can always do that by",
+    "start": 228.879,
+    "duration": 4
+  },
+  {
+    "text": "communicating that to the agent. Doesn't",
+    "start": 230.879,
+    "duration": 3.521
+  },
+  {
+    "text": "always look like this forward slash",
+    "start": 232.879,
+    "duration": 3.201
+  },
+  {
+    "text": "depending on the harness but that you",
+    "start": 234.4,
+    "duration": 3.759
+  },
+  {
+    "text": "can always user invoke your skills.",
+    "start": 236.08,
+    "duration": 3.6
+  },
+  {
+    "text": "Another way that skills can be invoked",
+    "start": 238.159,
+    "duration": 3.601
+  },
+  {
+    "text": "is by the agent itself. off. These are",
+    "start": 239.68,
+    "duration": 3.919
+  },
+  {
+    "text": "called model invocable skills or model",
+    "start": 241.76,
+    "duration": 4.32
+  },
+  {
+    "text": "invoked skills. You can take a",
+    "start": 243.599,
+    "duration": 4.881
+  },
+  {
+    "text": "description. So the description of the",
+    "start": 246.08,
+    "duration": 5.12
+  },
+  {
+    "text": "skill always ends up in the agent's",
+    "start": 248.48,
+    "duration": 4.88
+  },
+  {
+    "text": "context and the agent can look in that",
+    "start": 251.2,
+    "duration": 4.48
+  },
+  {
+    "text": "and go okay based on that description",
+    "start": 253.36,
+    "duration": 4.559
+  },
+  {
+    "text": "I'm going to invoke the skill and I end",
+    "start": 255.68,
+    "duration": 4.799
+  },
+  {
+    "text": "up reading the skill.md file which is",
+    "start": 257.919,
+    "duration": 4.801
+  },
+  {
+    "text": "where the meat of the skill is into my",
+    "start": 260.479,
+    "duration": 3.841
+  },
+  {
+    "text": "context window. That's how you invoke a",
+    "start": 262.72,
+    "duration": 3.12
+  },
+  {
+    "text": "skill. That's what happens when a skill",
+    "start": 264.32,
+    "duration": 3.439
+  },
+  {
+    "text": "is invoked. So this description serves",
+    "start": 265.84,
+    "duration": 4.48
+  },
+  {
+    "text": "as a kind of context pointer. It sits in",
+    "start": 267.759,
+    "duration": 5.281
+  },
+  {
+    "text": "the agents context pointing to another",
+    "start": 270.32,
+    "duration": 4.72
+  },
+  {
+    "text": "file where the agent can go if it wants",
+    "start": 273.04,
+    "duration": 4
+  },
+  {
+    "text": "more context for that context pointer.",
+    "start": 275.04,
+    "duration": 4
+  },
+  {
+    "text": "You don't need to put it into the",
+    "start": 277.04,
+    "duration": 4.08
+  },
+  {
+    "text": "agent's context. It can just be",
+    "start": 279.04,
+    "duration": 4.24
+  },
+  {
+    "text": "invisible from the agent. And that is",
+    "start": 281.12,
+    "duration": 4.56
+  },
+  {
+    "text": "what we call a user invocable skill. So",
+    "start": 283.28,
+    "duration": 4.639
+  },
+  {
+    "text": "some skills can only be invoked by the",
+    "start": 285.68,
+    "duration": 4.64
+  },
+  {
+    "text": "user because they don't have this",
+    "start": 287.919,
+    "duration": 3.921
+  },
+  {
+    "text": "context pointer. It's optional. For",
+    "start": 290.32,
+    "duration": 3.12
+  },
+  {
+    "text": "instance, we can see in my codebased",
+    "start": 291.84,
+    "duration": 3.52
+  },
+  {
+    "text": "design here, this is a model invocable",
+    "start": 293.44,
+    "duration": 4
+  },
+  {
+    "text": "skill. It has a description that ends up",
+    "start": 295.36,
+    "duration": 3.92
+  },
+  {
+    "text": "in the agents context window. But if we",
+    "start": 297.44,
+    "duration": 3.759
+  },
+  {
+    "text": "look at my grill me skill instead, we",
+    "start": 299.28,
+    "duration": 4.32
+  },
+  {
+    "text": "can see it has disable model invocation",
+    "start": 301.199,
+    "duration": 4.241
+  },
+  {
+    "text": "true. This means that this little",
+    "start": 303.6,
+    "duration": 3.599
+  },
+  {
+    "text": "description here will only show to the",
+    "start": 305.44,
+    "duration": 3.759
+  },
+  {
+    "text": "user. It won't be visible to the agent.",
+    "start": 307.199,
+    "duration": 4.081
+  },
+  {
+    "text": "So this then is tip number one. Decide",
+    "start": 309.199,
+    "duration": 4.801
+  },
+  {
+    "text": "if your skill is user invoked or model",
+    "start": 311.28,
+    "duration": 4.32
+  },
+  {
+    "text": "invoked. Now you might think that model",
+    "start": 314,
+    "duration": 3.44
+  },
+  {
+    "text": "invoked skills are better, right?",
+    "start": 315.6,
+    "duration": 3.439
+  },
+  {
+    "text": "Because either the model can invoke it",
+    "start": 317.44,
+    "duration": 3.599
+  },
+  {
+    "text": "itself or the user can invoke it. It's",
+    "start": 319.039,
+    "duration": 4.641
+  },
+  {
+    "text": "more flexible. But every time you add a",
+    "start": 321.039,
+    "duration": 5.361
+  },
+  {
+    "text": "model invoked skill into your agent's",
+    "start": 323.68,
+    "duration": 5.04
+  },
+  {
+    "text": "environment, it increases what I'm going",
+    "start": 326.4,
+    "duration": 5.04
+  },
+  {
+    "text": "to call the context load on that agent,",
+    "start": 328.72,
+    "duration": 5.199
+  },
+  {
+    "text": "it adds a new description, which is",
+    "start": 331.44,
+    "duration": 4.88
+  },
+  {
+    "text": "costing you tokens on every request, but",
+    "start": 333.919,
+    "duration": 4.72
+  },
+  {
+    "text": "also adding a different thing for the",
+    "start": 336.32,
+    "duration": 4.319
+  },
+  {
+    "text": "agent to think about. So if you have a",
+    "start": 338.639,
+    "duration": 4
+  },
+  {
+    "text": "100 model invoked skills, that's going",
+    "start": 340.639,
+    "duration": 4.321
+  },
+  {
+    "text": "to be 100 descriptions inside the",
+    "start": 342.639,
+    "duration": 3.921
+  },
+  {
+    "text": "context for your agent. So it seems to",
+    "start": 344.96,
+    "duration": 3.6
+  },
+  {
+    "text": "make sense then to either tamp down the",
+    "start": 346.56,
+    "duration": 4.24
+  },
+  {
+    "text": "number of model invoked skills or to",
+    "start": 348.56,
+    "duration": 4.72
+  },
+  {
+    "text": "just use all user invoked skills. But",
+    "start": 350.8,
+    "duration": 4.16
+  },
+  {
+    "text": "user invoked skills have a different",
+    "start": 353.28,
+    "duration": 4.08
+  },
+  {
+    "text": "load which is the more user invoked",
+    "start": 354.96,
+    "duration": 4.32
+  },
+  {
+    "text": "skills you have the higher cognitive",
+    "start": 357.36,
+    "duration": 3.839
+  },
+  {
+    "text": "load on the user. In other words, the",
+    "start": 359.28,
+    "duration": 3.84
+  },
+  {
+    "text": "more things the user needs to keep in",
+    "start": 361.199,
+    "duration": 4.401
+  },
+  {
+    "text": "their head, the more um skill you",
+    "start": 363.12,
+    "duration": 4.4
+  },
+  {
+    "text": "require from the pilot. And so if we",
+    "start": 365.6,
+    "duration": 4.56
+  },
+  {
+    "text": "compare Matt Pot skills to superpowers,",
+    "start": 367.52,
+    "duration": 5.44
+  },
+  {
+    "text": "superpowers is primarily model invoked",
+    "start": 370.16,
+    "duration": 6
+  },
+  {
+    "text": "skills. gives the agent superpowers.",
+    "start": 372.96,
+    "duration": 5.84
+  },
+  {
+    "text": "Whereas my skills, I much prefer to be",
+    "start": 376.16,
+    "duration": 4.879
+  },
+  {
+    "text": "in full control. That means I get to",
+    "start": 378.8,
+    "duration": 4.32
+  },
+  {
+    "text": "keep the context load on the agent as",
+    "start": 381.039,
+    "duration": 4.401
+  },
+  {
+    "text": "small as possible, but it does impose",
+    "start": 383.12,
+    "duration": 4.56
+  },
+  {
+    "text": "more of a cognitive load on me. So I",
+    "start": 385.44,
+    "duration": 4.16
+  },
+  {
+    "text": "need to understand the skills really",
+    "start": 387.68,
+    "duration": 3.84
+  },
+  {
+    "text": "deeply in order to get the most use out",
+    "start": 389.6,
+    "duration": 3.599
+  },
+  {
+    "text": "of. So why have I done this? Why did I",
+    "start": 391.52,
+    "duration": 4.72
+  },
+  {
+    "text": "prefer user invoked skills? Well, every",
+    "start": 393.199,
+    "duration": 5.761
+  },
+  {
+    "text": "time you have a model invoked skill, it",
+    "start": 396.24,
+    "duration": 4.32
+  },
+  {
+    "text": "basically you get a cost in",
+    "start": 398.96,
+    "duration": 3.679
+  },
+  {
+    "text": "unpredictability because every time you",
+    "start": 400.56,
+    "duration": 4.079
+  },
+  {
+    "text": "have a context pointer pointing from one",
+    "start": 402.639,
+    "duration": 4.241
+  },
+  {
+    "text": "resource to another, the model may just",
+    "start": 404.639,
+    "duration": 4.801
+  },
+  {
+    "text": "choose not to follow it. You know, even",
+    "start": 406.88,
+    "duration": 5.12
+  },
+  {
+    "text": "if it's absolutely perfect for the task,",
+    "start": 409.44,
+    "duration": 4.96
+  },
+  {
+    "text": "it may just choose not to invoke the",
+    "start": 412,
+    "duration": 5.12
+  },
+  {
+    "text": "skill. I much prefer removing that level",
+    "start": 414.4,
+    "duration": 4.799
+  },
+  {
+    "text": "of unpredictability, imposing a bit more",
+    "start": 417.12,
+    "duration": 4.639
+  },
+  {
+    "text": "cognitive load on the user. And what you",
+    "start": 419.199,
+    "duration": 5.361
+  },
+  {
+    "text": "get is just you you're removing a class",
+    "start": 421.759,
+    "duration": 4.641
+  },
+  {
+    "text": "of problem from even being a problem",
+    "start": 424.56,
+    "duration": 3.6
+  },
+  {
+    "text": "because this unpredictability leaves",
+    "start": 426.4,
+    "duration": 4.239
+  },
+  {
+    "text": "people to need to eval their skills to",
+    "start": 428.16,
+    "duration": 3.68
+  },
+  {
+    "text": "make sure they're being called at the",
+    "start": 430.639,
+    "duration": 3.84
+  },
+  {
+    "text": "right time which is uh really nasty and",
+    "start": 431.84,
+    "duration": 4.32
+  },
+  {
+    "text": "it's a problem that I prefer to avoid.",
+    "start": 434.479,
+    "duration": 3.041
+  },
+  {
+    "text": "But what I'm hoping to show you here is",
+    "start": 436.16,
+    "duration": 3.68
+  },
+  {
+    "text": "that model invoke skills and user invoke",
+    "start": 437.52,
+    "duration": 4.88
+  },
+  {
+    "text": "skills both have their same costs. So",
+    "start": 439.84,
+    "duration": 4.72
+  },
+  {
+    "text": "it's not an easy decision which one you",
+    "start": 442.4,
+    "duration": 4.48
+  },
+  {
+    "text": "choose. So that then is the trigger how",
+    "start": 444.56,
+    "duration": 4.56
+  },
+  {
+    "text": "the skill gets invoked. Now let's talk",
+    "start": 446.88,
+    "duration": 4.56
+  },
+  {
+    "text": "about the structure. the internal layout",
+    "start": 449.12,
+    "duration": 3.68
+  },
+  {
+    "text": "of the skill. I think of there as being",
+    "start": 451.44,
+    "duration": 4.08
+  },
+  {
+    "text": "two main units that you need to put into",
+    "start": 452.8,
+    "duration": 5.76
+  },
+  {
+    "text": "most skills. These two units are the",
+    "start": 455.52,
+    "duration": 6
+  },
+  {
+    "text": "steps and the reference. The steps are",
+    "start": 458.56,
+    "duration": 4.639
+  },
+  {
+    "text": "the step-by-step procedure that the",
+    "start": 461.52,
+    "duration": 4
+  },
+  {
+    "text": "skill is going to walk through. And the",
+    "start": 463.199,
+    "duration": 4.241
+  },
+  {
+    "text": "reference is any supporting information",
+    "start": 465.52,
+    "duration": 4.16
+  },
+  {
+    "text": "that helps it walk through those steps.",
+    "start": 467.44,
+    "duration": 4.879
+  },
+  {
+    "text": "You can have skills that have no steps",
+    "start": 469.68,
+    "duration": 4.56
+  },
+  {
+    "text": "and are only reference. And you can have",
+    "start": 472.319,
+    "duration": 4.401
+  },
+  {
+    "text": "skills that are no reference and only a",
+    "start": 474.24,
+    "duration": 4
+  },
+  {
+    "text": "set of simple steps to walk through. But",
+    "start": 476.72,
+    "duration": 3.28
+  },
+  {
+    "text": "if you start thinking of skills as",
+    "start": 478.24,
+    "duration": 3.679
+  },
+  {
+    "text": "composed of these two units, it really",
+    "start": 480,
+    "duration": 3.599
+  },
+  {
+    "text": "helps just break them down a lot more.",
+    "start": 481.919,
+    "duration": 3.201
+  },
+  {
+    "text": "If we look at an example, one of my",
+    "start": 483.599,
+    "duration": 4.561
+  },
+  {
+    "text": "skills called two PRD creates a product",
+    "start": 485.12,
+    "duration": 4.639
+  },
+  {
+    "text": "requirements document out of the current",
+    "start": 488.16,
+    "duration": 4.479
+  },
+  {
+    "text": "context window. It's got three steps in",
+    "start": 489.759,
+    "duration": 5.44
+  },
+  {
+    "text": "it. So it finds the relevant context. It",
+    "start": 492.639,
+    "duration": 5.041
+  },
+  {
+    "text": "confirms the test seams with the user.",
+    "start": 495.199,
+    "duration": 4
+  },
+  {
+    "text": "So there's like a little human in the",
+    "start": 497.68,
+    "duration": 3.359
+  },
+  {
+    "text": "loop checkpoint there just to make sure",
+    "start": 499.199,
+    "duration": 3.201
+  },
+  {
+    "text": "we're not doing anything weird with the",
+    "start": 501.039,
+    "duration": 3.521
+  },
+  {
+    "text": "testing, which I find really important.",
+    "start": 502.4,
+    "duration": 3.519
+  },
+  {
+    "text": "And then we write the product",
+    "start": 504.56,
+    "duration": 2.88
+  },
+  {
+    "text": "requirements document to handle those",
+    "start": 505.919,
+    "duration": 4.081
+  },
+  {
+    "text": "three steps. We've got two bits of",
+    "start": 507.44,
+    "duration": 4.56
+  },
+  {
+    "text": "reference material. We've got a little",
+    "start": 510,
+    "duration": 4.88
+  },
+  {
+    "text": "bit of reference on what is a test seam.",
+    "start": 512,
+    "duration": 4.24
+  },
+  {
+    "text": "And then we've got a product",
+    "start": 514.88,
+    "duration": 3.68
+  },
+  {
+    "text": "requirements document template. So just",
+    "start": 516.24,
+    "duration": 4.799
+  },
+  {
+    "text": "a literal markdown template which is",
+    "start": 518.56,
+    "duration": 4.399
+  },
+  {
+    "text": "used to write the PRD. So this is a",
+    "start": 521.039,
+    "duration": 4.24
+  },
+  {
+    "text": "great way to write a skill from scratch.",
+    "start": 522.959,
+    "duration": 4.56
+  },
+  {
+    "text": "You work out if you need some steps.",
+    "start": 525.279,
+    "duration": 4
+  },
+  {
+    "text": "Then you write those steps and you work",
+    "start": 527.519,
+    "duration": 3.521
+  },
+  {
+    "text": "out what reference material those steps",
+    "start": 529.279,
+    "duration": 3.601
+  },
+  {
+    "text": "need and you put it in a separate little",
+    "start": 531.04,
+    "duration": 3.84
+  },
+  {
+    "text": "spot in the skill which is for reference",
+    "start": 532.88,
+    "duration": 3.519
+  },
+  {
+    "text": "material. However, there's a really",
+    "start": 534.88,
+    "duration": 3.2
+  },
+  {
+    "text": "important constraint that we need to",
+    "start": 536.399,
+    "duration": 3.921
+  },
+  {
+    "text": "think about which is tip number three.",
+    "start": 538.08,
+    "duration": 5.12
+  },
+  {
+    "text": "We want to make the main skill.md file",
+    "start": 540.32,
+    "duration": 5.12
+  },
+  {
+    "text": "as small as possible. Every skill is",
+    "start": 543.2,
+    "duration": 4.4
+  },
+  {
+    "text": "composed of its description and then a",
+    "start": 545.44,
+    "duration": 4.399
+  },
+  {
+    "text": "skill.md file and then any reference",
+    "start": 547.6,
+    "duration": 4.32
+  },
+  {
+    "text": "material that branches off that. And",
+    "start": 549.839,
+    "duration": 4.721
+  },
+  {
+    "text": "this skill.md file, if we make it small,",
+    "start": 551.92,
+    "duration": 3.919
+  },
+  {
+    "text": "then we're saving in a bunch of",
+    "start": 554.56,
+    "duration": 3.2
+  },
+  {
+    "text": "different ways. Smaller skills are just",
+    "start": 555.839,
+    "duration": 4.241
+  },
+  {
+    "text": "easier to maintain, easier to audit,",
+    "start": 557.76,
+    "duration": 4.8
+  },
+  {
+    "text": "fewer words to think about. And every",
+    "start": 560.08,
+    "duration": 4.319
+  },
+  {
+    "text": "time you shave off a word, that is a",
+    "start": 562.56,
+    "duration": 4.8
+  },
+  {
+    "text": "token shaved. That multiple token shave",
+    "start": 564.399,
+    "duration": 4.88
+  },
+  {
+    "text": "from your skills cost. So I do believe",
+    "start": 567.36,
+    "duration": 4.32
+  },
+  {
+    "text": "that small skills are really important",
+    "start": 569.279,
+    "duration": 4.961
+  },
+  {
+    "text": "both for maintainers and for users. One",
+    "start": 571.68,
+    "duration": 4.159
+  },
+  {
+    "text": "really useful way you can make your",
+    "start": 574.24,
+    "duration": 3.84
+  },
+  {
+    "text": "skill smaller is by thinking about the",
+    "start": 575.839,
+    "duration": 4
+  },
+  {
+    "text": "different branches of the skill, the",
+    "start": 578.08,
+    "duration": 3.92
+  },
+  {
+    "text": "different ways the skill can be used.",
+    "start": 579.839,
+    "duration": 3.761
+  },
+  {
+    "text": "Because if you have reference material",
+    "start": 582,
+    "duration": 3.76
+  },
+  {
+    "text": "that's only used in one branch, then",
+    "start": 583.6,
+    "duration": 4
+  },
+  {
+    "text": "that's a candidate for being removed",
+    "start": 585.76,
+    "duration": 3.84
+  },
+  {
+    "text": "from the main skill.md. For instance, if",
+    "start": 587.6,
+    "duration": 4.88
+  },
+  {
+    "text": "we look at my two PRD here, we have two",
+    "start": 589.6,
+    "duration": 4.48
+  },
+  {
+    "text": "pieces of reference material. What is a",
+    "start": 592.48,
+    "duration": 4.32
+  },
+  {
+    "text": "test seam and the PRD template? Well, we",
+    "start": 594.08,
+    "duration": 5.199
+  },
+  {
+    "text": "need the PRD template every single time",
+    "start": 596.8,
+    "duration": 4.8
+  },
+  {
+    "text": "because we are always creating a PRD.",
+    "start": 599.279,
+    "duration": 4.161
+  },
+  {
+    "text": "And we probably also need the what is a",
+    "start": 601.6,
+    "duration": 3.44
+  },
+  {
+    "text": "test seam information every time because",
+    "start": 603.44,
+    "duration": 3.519
+  },
+  {
+    "text": "we're always asking about the test",
+    "start": 605.04,
+    "duration": 4.96
+  },
+  {
+    "text": "seams. So 2P there's only one branch and",
+    "start": 606.959,
+    "duration": 4.801
+  },
+  {
+    "text": "all the reference material belongs on",
+    "start": 610,
+    "duration": 4.24
+  },
+  {
+    "text": "that branch. So it probably also belongs",
+    "start": 611.76,
+    "duration": 4.639
+  },
+  {
+    "text": "in the skill.md file. However, if we",
+    "start": 614.24,
+    "duration": 3.68
+  },
+  {
+    "text": "look at a different skill of mine which",
+    "start": 616.399,
+    "duration": 4
+  },
+  {
+    "text": "is domain modeling, domain modeling does",
+    "start": 617.92,
+    "duration": 5.039
+  },
+  {
+    "text": "two things. It updates a local glossery",
+    "start": 620.399,
+    "duration": 5.12
+  },
+  {
+    "text": "called context.md and then it also",
+    "start": 622.959,
+    "duration": 4.401
+  },
+  {
+    "text": "creates architectural decision records.",
+    "start": 625.519,
+    "duration": 3.76
+  },
+  {
+    "text": "In other words, it's doing two different",
+    "start": 627.36,
+    "duration": 4
+  },
+  {
+    "text": "things. Or it might actually choose to",
+    "start": 629.279,
+    "duration": 3.921
+  },
+  {
+    "text": "do neither of these in which case it",
+    "start": 631.36,
+    "duration": 3.44
+  },
+  {
+    "text": "doesn't need the template and it doesn't",
+    "start": 633.2,
+    "duration": 4.639
+  },
+  {
+    "text": "need the ADR template either. So in",
+    "start": 634.8,
+    "duration": 4.88
+  },
+  {
+    "text": "other words, domain modeling has two or",
+    "start": 637.839,
+    "duration": 4
+  },
+  {
+    "text": "maybe three branches. And this means",
+    "start": 639.68,
+    "duration": 4.399
+  },
+  {
+    "text": "that we don't need to include the ADR",
+    "start": 641.839,
+    "duration": 4.961
+  },
+  {
+    "text": "template or the context.md template into",
+    "start": 644.079,
+    "duration": 5.121
+  },
+  {
+    "text": "the main skill. They can be moved into",
+    "start": 646.8,
+    "duration": 4.4
+  },
+  {
+    "text": "separate zones. The way you do that is",
+    "start": 649.2,
+    "duration": 5.04
+  },
+  {
+    "text": "you have the skill.md file. Then you put",
+    "start": 651.2,
+    "duration": 5.12
+  },
+  {
+    "text": "it behind a context pointer and you",
+    "start": 654.24,
+    "duration": 4.96
+  },
+  {
+    "text": "point the context template to a separate",
+    "start": 656.32,
+    "duration": 5.519
+  },
+  {
+    "text": "markdown file inside the skills folder.",
+    "start": 659.2,
+    "duration": 4.319
+  },
+  {
+    "text": "That context pointer literally just says",
+    "start": 661.839,
+    "duration": 3.44
+  },
+  {
+    "text": "if you need the template or if you need",
+    "start": 663.519,
+    "duration": 4.161
+  },
+  {
+    "text": "to update the context.md file, go to",
+    "start": 665.279,
+    "duration": 5.201
+  },
+  {
+    "text": "this file. And I call that an external",
+    "start": 667.68,
+    "duration": 4.8
+  },
+  {
+    "text": "reference. It's a reference that's",
+    "start": 670.48,
+    "duration": 4.4
+  },
+  {
+    "text": "external to the skill.md that you can",
+    "start": 672.48,
+    "duration": 4.08
+  },
+  {
+    "text": "just easily reference. The agent can",
+    "start": 674.88,
+    "duration": 3.6
+  },
+  {
+    "text": "pull in very easily because it's bundled",
+    "start": 676.56,
+    "duration": 3.44
+  },
+  {
+    "text": "along with the skill. So this is a",
+    "start": 678.48,
+    "duration": 3.68
+  },
+  {
+    "text": "technique you can use for making the",
+    "start": 680,
+    "duration": 4.8
+  },
+  {
+    "text": "skill.md as small as possible, which is",
+    "start": 682.16,
+    "duration": 5.6
+  },
+  {
+    "text": "has so many benefits. Hide branching",
+    "start": 684.8,
+    "duration": 4.56
+  },
+  {
+    "text": "reference material behind context",
+    "start": 687.76,
+    "duration": 3.04
+  },
+  {
+    "text": "pointers. In other words, if you feel",
+    "start": 689.36,
+    "duration": 3.039
+  },
+  {
+    "text": "like your skill is going to be used in",
+    "start": 690.8,
+    "duration": 3.44
+  },
+  {
+    "text": "lots of different ways, then take the",
+    "start": 692.399,
+    "duration": 3.361
+  },
+  {
+    "text": "reference material that's relevant for",
+    "start": 694.24,
+    "duration": 3.36
+  },
+  {
+    "text": "those branches and hide them behind",
+    "start": 695.76,
+    "duration": 4
+  },
+  {
+    "text": "context pointers. So that is structure.",
+    "start": 697.6,
+    "duration": 3.6
+  },
+  {
+    "text": "We need to think about making the",
+    "start": 699.76,
+    "duration": 3.92
+  },
+  {
+    "text": "skill.md super duper small. We need to",
+    "start": 701.2,
+    "duration": 4.24
+  },
+  {
+    "text": "think about the branches in our skill",
+    "start": 703.68,
+    "duration": 4.32
+  },
+  {
+    "text": "moving material out behind context",
+    "start": 705.44,
+    "duration": 4.079
+  },
+  {
+    "text": "pointers. And we need to think about",
+    "start": 708,
+    "duration": 3.839
+  },
+  {
+    "text": "steps and reference, which are the two",
+    "start": 709.519,
+    "duration": 4.801
+  },
+  {
+    "text": "main units inside a skill. Let's go next",
+    "start": 711.839,
+    "duration": 5.281
+  },
+  {
+    "text": "to steering, the actual ways we get the",
+    "start": 714.32,
+    "duration": 4.56
+  },
+  {
+    "text": "agent to do what we want it to do. And",
+    "start": 717.12,
+    "duration": 4.48
+  },
+  {
+    "text": "for me, steering comes down to one",
+    "start": 718.88,
+    "duration": 4.959
+  },
+  {
+    "text": "really cool technique, which is the kind",
+    "start": 721.6,
+    "duration": 3.679
+  },
+  {
+    "text": "of main thing I want you to get from",
+    "start": 723.839,
+    "duration": 3.68
+  },
+  {
+    "text": "this talk. This technique fixes this",
+    "start": 725.279,
+    "duration": 5.281
+  },
+  {
+    "text": "issue, which is the agent doesn't do",
+    "start": 727.519,
+    "duration": 5.201
+  },
+  {
+    "text": "what I want. In other words, I specify",
+    "start": 730.56,
+    "duration": 3.76
+  },
+  {
+    "text": "something in the skill. I think that",
+    "start": 732.72,
+    "duration": 3.44
+  },
+  {
+    "text": "I've been clear and then it just doesn't",
+    "start": 734.32,
+    "duration": 3.6
+  },
+  {
+    "text": "do the thing. Now, I think the main",
+    "start": 736.16,
+    "duration": 3.76
+  },
+  {
+    "text": "reason this happens is because you're",
+    "start": 737.92,
+    "duration": 4.479
+  },
+  {
+    "text": "not using a technique called leading",
+    "start": 739.92,
+    "duration": 4.719
+  },
+  {
+    "text": "words. The idea of leading words or",
+    "start": 742.399,
+    "duration": 4.721
+  },
+  {
+    "text": "lightvert if you like literary theory I",
+    "start": 744.639,
+    "duration": 5.041
+  },
+  {
+    "text": "suppose is that there are certain words",
+    "start": 747.12,
+    "duration": 5.44
+  },
+  {
+    "text": "that pack in a bunch of meaning into a",
+    "start": 749.68,
+    "duration": 4.8
+  },
+  {
+    "text": "very small space. These leading words",
+    "start": 752.56,
+    "duration": 4.719
+  },
+  {
+    "text": "are really powerful with agents because",
+    "start": 754.48,
+    "duration": 4.88
+  },
+  {
+    "text": "you put the leading word in the skill",
+    "start": 757.279,
+    "duration": 4.401
+  },
+  {
+    "text": "itself in the text and then the agent",
+    "start": 759.36,
+    "duration": 4.24
+  },
+  {
+    "text": "will repeat the leading word back to",
+    "start": 761.68,
+    "duration": 4.56
+  },
+  {
+    "text": "itself as part of its operations as part",
+    "start": 763.6,
+    "duration": 4.56
+  },
+  {
+    "text": "of its thinking tokens and as part of",
+    "start": 766.24,
+    "duration": 4.48
+  },
+  {
+    "text": "its output to you. And then because it's",
+    "start": 768.16,
+    "duration": 4.799
+  },
+  {
+    "text": "re-emphasizing that word and that word",
+    "start": 770.72,
+    "duration": 4
+  },
+  {
+    "text": "hopefully describes what you want from",
+    "start": 772.959,
+    "duration": 4.32
+  },
+  {
+    "text": "the agent that then goes and changes its",
+    "start": 774.72,
+    "duration": 4.239
+  },
+  {
+    "text": "behavior. Let's make this more concrete",
+    "start": 777.279,
+    "duration": 3.761
+  },
+  {
+    "text": "with an example. So let's imagine that",
+    "start": 778.959,
+    "duration": 4
+  },
+  {
+    "text": "we have a problem which is a classic",
+    "start": 781.04,
+    "duration": 3.52
+  },
+  {
+    "text": "problem with agents which is that they",
+    "start": 782.959,
+    "duration": 3.921
+  },
+  {
+    "text": "code layer by layer. In other words, if",
+    "start": 784.56,
+    "duration": 3.92
+  },
+  {
+    "text": "you give them a big tranch of work to",
+    "start": 786.88,
+    "duration": 3.519
+  },
+  {
+    "text": "do, they will generally code up all of",
+    "start": 788.48,
+    "duration": 3.599
+  },
+  {
+    "text": "the database layer, then all of the",
+    "start": 790.399,
+    "duration": 4.081
+  },
+  {
+    "text": "schemas, then all of the API endpoints,",
+    "start": 792.079,
+    "duration": 4.481
+  },
+  {
+    "text": "then all of the front end. they don't do",
+    "start": 794.48,
+    "duration": 5.039
+  },
+  {
+    "text": "the sort of typical um human thing which",
+    "start": 796.56,
+    "duration": 5.12
+  },
+  {
+    "text": "is to seek feedback early on, get",
+    "start": 799.519,
+    "duration": 4.641
+  },
+  {
+    "text": "something small working and then expand",
+    "start": 801.68,
+    "duration": 4.24
+  },
+  {
+    "text": "out from there. Now, we can try to",
+    "start": 804.16,
+    "duration": 3.359
+  },
+  {
+    "text": "encourage the agent to do that by just",
+    "start": 805.92,
+    "duration": 3.359
+  },
+  {
+    "text": "saying, you know, don't code layer by",
+    "start": 807.519,
+    "duration": 3.601
+  },
+  {
+    "text": "layer. Um make sure that you create a",
+    "start": 809.279,
+    "duration": 3.201
+  },
+  {
+    "text": "small slice first and then go from",
+    "start": 811.12,
+    "duration": 3.36
+  },
+  {
+    "text": "there. But what if instead we used a",
+    "start": 812.48,
+    "duration": 5.52
+  },
+  {
+    "text": "leading word? We said vertical slice is",
+    "start": 814.48,
+    "duration": 5.44
+  },
+  {
+    "text": "our leading word. We want to slice up",
+    "start": 818,
+    "duration": 4.399
+  },
+  {
+    "text": "the work instead of horizontal slices",
+    "start": 819.92,
+    "duration": 4.96
+  },
+  {
+    "text": "into vertical slices. A vertical slice",
+    "start": 822.399,
+    "duration": 4.56
+  },
+  {
+    "text": "is a pretty well-known terminology in",
+    "start": 824.88,
+    "duration": 4.079
+  },
+  {
+    "text": "development. And so this will hopefully",
+    "start": 826.959,
+    "duration": 4.32
+  },
+  {
+    "text": "trigger the agent's prior, and it will",
+    "start": 828.959,
+    "duration": 4.081
+  },
+  {
+    "text": "understand what we mean. We don't just",
+    "start": 831.279,
+    "duration": 3.601
+  },
+  {
+    "text": "have to like have a two-word skill where",
+    "start": 833.04,
+    "duration": 3.68
+  },
+  {
+    "text": "it just says vertical slice. What we're",
+    "start": 834.88,
+    "duration": 3.92
+  },
+  {
+    "text": "doing is we're packing lots of meaning",
+    "start": 836.72,
+    "duration": 4.239
+  },
+  {
+    "text": "into a relatively short phrase that we",
+    "start": 838.8,
+    "duration": 4.24
+  },
+  {
+    "text": "then repeat throughout the skill. The",
+    "start": 840.959,
+    "duration": 3.281
+  },
+  {
+    "text": "cool thing about this technique is you",
+    "start": 843.04,
+    "duration": 3.359
+  },
+  {
+    "text": "can know if it's worked because you say",
+    "start": 844.24,
+    "duration": 4.159
+  },
+  {
+    "text": "vertical slice in your skill and then",
+    "start": 846.399,
+    "duration": 3.761
+  },
+  {
+    "text": "you'll notice in the reasoning traces",
+    "start": 848.399,
+    "duration": 3.041
+  },
+  {
+    "text": "that it's saying, \"Okay, we're going to",
+    "start": 850.16,
+    "duration": 3.359
+  },
+  {
+    "text": "do this as a thin vertical slice.\" then",
+    "start": 851.44,
+    "duration": 3.759
+  },
+  {
+    "text": "you should get better implementation",
+    "start": 853.519,
+    "duration": 3.361
+  },
+  {
+    "text": "plans. Everyone I've explained this",
+    "start": 855.199,
+    "duration": 3.44
+  },
+  {
+    "text": "technique to sort of feels like, \"Oh",
+    "start": 856.88,
+    "duration": 3.44
+  },
+  {
+    "text": "yeah, I've been doing that for a while.",
+    "start": 858.639,
+    "duration": 4
+  },
+  {
+    "text": "I've been using these little phrases to",
+    "start": 860.32,
+    "duration": 4.72
+  },
+  {
+    "text": "try to encourage the agent to do what I",
+    "start": 862.639,
+    "duration": 4.721
+  },
+  {
+    "text": "want.\" All I'm asking you now is to use",
+    "start": 865.04,
+    "duration": 5.28
+  },
+  {
+    "text": "those consistently within your skills",
+    "start": 867.36,
+    "duration": 5.12
+  },
+  {
+    "text": "and watch in the thinking traces as the",
+    "start": 870.32,
+    "duration": 4.56
+  },
+  {
+    "text": "agent adopts your way of doing it. So",
+    "start": 872.48,
+    "duration": 4.479
+  },
+  {
+    "text": "often if the agent isn't doing what you",
+    "start": 874.88,
+    "duration": 3.84
+  },
+  {
+    "text": "want, you need to make your leading",
+    "start": 876.959,
+    "duration": 4.161
+  },
+  {
+    "text": "words more consistent, more powerful,",
+    "start": 878.72,
+    "duration": 5.2
+  },
+  {
+    "text": "and look for others because you know,",
+    "start": 881.12,
+    "duration": 5.6
+  },
+  {
+    "text": "English is a pretty wide API in terms of",
+    "start": 883.92,
+    "duration": 4.32
+  },
+  {
+    "text": "different functions you can call,",
+    "start": 886.72,
+    "duration": 2.96
+  },
+  {
+    "text": "different things you can experiment",
+    "start": 888.24,
+    "duration": 3.44
+  },
+  {
+    "text": "with, and there are many leading word",
+    "start": 889.68,
+    "duration": 3.519
+  },
+  {
+    "text": "candidates out there, and agents are",
+    "start": 891.68,
+    "duration": 2.88
+  },
+  {
+    "text": "actually pretty good at helping you",
+    "start": 893.199,
+    "duration": 3.121
+  },
+  {
+    "text": "think of them. Another little lever you",
+    "start": 894.56,
+    "duration": 4.8
+  },
+  {
+    "text": "can use with agents is sometimes the",
+    "start": 896.32,
+    "duration": 5.68
+  },
+  {
+    "text": "agent just doesn't do enough leg work.",
+    "start": 899.36,
+    "duration": 4.719
+  },
+  {
+    "text": "What I mean by this is that okay, we're",
+    "start": 902,
+    "duration": 4.48
+  },
+  {
+    "text": "on a step, let's say, and maybe the step",
+    "start": 904.079,
+    "duration": 4.56
+  },
+  {
+    "text": "is to ask clarifying questions or to",
+    "start": 906.48,
+    "duration": 4.64
+  },
+  {
+    "text": "explore the codebase and the agent just",
+    "start": 908.639,
+    "duration": 5.121
+  },
+  {
+    "text": "doesn't do enough of it. It doesn't put",
+    "start": 911.12,
+    "duration": 4.8
+  },
+  {
+    "text": "enough effort into that particular step.",
+    "start": 913.76,
+    "duration": 4.24
+  },
+  {
+    "text": "A real classic case of this and",
+    "start": 915.92,
+    "duration": 3.76
+  },
+  {
+    "text": "something that I have found almost",
+    "start": 918,
+    "duration": 4.16
+  },
+  {
+    "text": "everywhere it exists is plan mode.",
+    "start": 919.68,
+    "duration": 4.64
+  },
+  {
+    "text": "Because in plan mode, we have two steps.",
+    "start": 922.16,
+    "duration": 4.479
+  },
+  {
+    "text": "We have ask clarifying questions and",
+    "start": 924.32,
+    "duration": 4.639
+  },
+  {
+    "text": "then create a plan. And what I have",
+    "start": 926.639,
+    "duration": 3.841
+  },
+  {
+    "text": "found in every single implementation of",
+    "start": 928.959,
+    "duration": 3.44
+  },
+  {
+    "text": "plan mode I've tried is that ask",
+    "start": 930.48,
+    "duration": 4.32
+  },
+  {
+    "text": "clarifying questions just, you know,",
+    "start": 932.399,
+    "duration": 4.8
+  },
+  {
+    "text": "doesn't ever do enough leg work. It sees",
+    "start": 934.8,
+    "duration": 4.399
+  },
+  {
+    "text": "that its ultimate goal is to create a",
+    "start": 937.199,
+    "duration": 3.921
+  },
+  {
+    "text": "plan. And so it just does a small amount",
+    "start": 939.199,
+    "duration": 3.681
+  },
+  {
+    "text": "of leg work with ask clarifying",
+    "start": 941.12,
+    "duration": 3.36
+  },
+  {
+    "text": "questions, ask you a couple of things,",
+    "start": 942.88,
+    "duration": 4.079
+  },
+  {
+    "text": "and then eagerly creates the plan. So",
+    "start": 944.48,
+    "duration": 4.479
+  },
+  {
+    "text": "what was my solution here? Instead of",
+    "start": 946.959,
+    "duration": 4.081
+  },
+  {
+    "text": "doing plan mode, I instead have a skill",
+    "start": 948.959,
+    "duration": 4.401
+  },
+  {
+    "text": "called grill with docs, which is kind of",
+    "start": 951.04,
+    "duration": 5.039
+  },
+  {
+    "text": "my ask clarifying questions phase. And",
+    "start": 953.36,
+    "duration": 5.44
+  },
+  {
+    "text": "then I split that up into a separate",
+    "start": 956.079,
+    "duration": 5.041
+  },
+  {
+    "text": "skill. So I split the planning into its",
+    "start": 958.8,
+    "duration": 5.279
+  },
+  {
+    "text": "own skill. So grill with docs now is its",
+    "start": 961.12,
+    "duration": 5.68
+  },
+  {
+    "text": "own skill where the agent only sees that",
+    "start": 964.079,
+    "duration": 5.12
+  },
+  {
+    "text": "part of the process. And then after",
+    "start": 966.8,
+    "duration": 4.24
+  },
+  {
+    "text": "grill with docs completes, we then go",
+    "start": 969.199,
+    "duration": 4.481
+  },
+  {
+    "text": "and do two PRD. In other words, we have",
+    "start": 971.04,
+    "duration": 4.719
+  },
+  {
+    "text": "step one and step two, but the agent",
+    "start": 973.68,
+    "duration": 4.8
+  },
+  {
+    "text": "only sees one step at a time. So, this",
+    "start": 975.759,
+    "duration": 4.32
+  },
+  {
+    "text": "is a really cool technique for",
+    "start": 978.48,
+    "duration": 3.68
+  },
+  {
+    "text": "increasing leg work on the step that",
+    "start": 980.079,
+    "duration": 4.721
+  },
+  {
+    "text": "you're on by hiding the future goal,",
+    "start": 982.16,
+    "duration": 4.799
+  },
+  {
+    "text": "hiding the future steps. It's not always",
+    "start": 984.8,
+    "duration": 4.479
+  },
+  {
+    "text": "necessary to split skills into",
+    "start": 986.959,
+    "duration": 5.12
+  },
+  {
+    "text": "individual steps, but in particular",
+    "start": 989.279,
+    "duration": 4.8
+  },
+  {
+    "text": "cases where you really want an extra",
+    "start": 992.079,
+    "duration": 4.401
+  },
+  {
+    "text": "chunk of leg work. It really there's no",
+    "start": 994.079,
+    "duration": 4
+  },
+  {
+    "text": "technique like it. It works very, very",
+    "start": 996.48,
+    "duration": 3.599
+  },
+  {
+    "text": "well. So, that is steering. using",
+    "start": 998.079,
+    "duration": 3.841
+  },
+  {
+    "text": "leading words to capture what you want",
+    "start": 1000.079,
+    "duration": 5.2
+  },
+  {
+    "text": "in small reusable tokens and then making",
+    "start": 1001.92,
+    "duration": 4.96
+  },
+  {
+    "text": "sure that it's doing the right amount of",
+    "start": 1005.279,
+    "duration": 3.601
+  },
+  {
+    "text": "leg work per step. So let's head now",
+    "start": 1006.88,
+    "duration": 4.56
+  },
+  {
+    "text": "into pruning. Now pruning really is just",
+    "start": 1008.88,
+    "duration": 4.72
+  },
+  {
+    "text": "a quickfire set of failure modes,",
+    "start": 1011.44,
+    "duration": 4
+  },
+  {
+    "text": "different things that you can get wrong.",
+    "start": 1013.6,
+    "duration": 4.56
+  },
+  {
+    "text": "And the first is fairly obvious is we do",
+    "start": 1015.44,
+    "duration": 5.519
+  },
+  {
+    "text": "not want massive skills. Massive skills",
+    "start": 1018.16,
+    "duration": 5.2
+  },
+  {
+    "text": "are usually a kind of symptom of",
+    "start": 1020.959,
+    "duration": 4.24
+  },
+  {
+    "text": "something else going wrong. So a symptom",
+    "start": 1023.36,
+    "duration": 3.839
+  },
+  {
+    "text": "of one of these other failure modes. And",
+    "start": 1025.199,
+    "duration": 4.401
+  },
+  {
+    "text": "the first one is pretty simple. Don't",
+    "start": 1027.199,
+    "duration": 4.321
+  },
+  {
+    "text": "repeat yourself. You need to make sure",
+    "start": 1029.6,
+    "duration": 4.16
+  },
+  {
+    "text": "you're watching out for duplication. And",
+    "start": 1031.52,
+    "duration": 5.279
+  },
+  {
+    "text": "in general, I like to have every part of",
+    "start": 1033.76,
+    "duration": 4.96
+  },
+  {
+    "text": "the skill to have a single source of",
+    "start": 1036.799,
+    "duration": 3.681
+  },
+  {
+    "text": "truth. In other words, if you have a",
+    "start": 1038.72,
+    "duration": 3.52
+  },
+  {
+    "text": "piece of reference material like the PRD",
+    "start": 1040.48,
+    "duration": 4.079
+  },
+  {
+    "text": "template, let's say, or something even",
+    "start": 1042.24,
+    "duration": 4.64
+  },
+  {
+    "text": "smaller like what is a test seam, you",
+    "start": 1044.559,
+    "duration": 3.841
+  },
+  {
+    "text": "make sure that you don't repeat that in",
+    "start": 1046.88,
+    "duration": 4.159
+  },
+  {
+    "text": "several places or like cover multiple",
+    "start": 1048.4,
+    "duration": 5.2
+  },
+  {
+    "text": "steps in multiple places. Just make sure",
+    "start": 1051.039,
+    "duration": 4.321
+  },
+  {
+    "text": "each part has a single source of truth",
+    "start": 1053.6,
+    "duration": 3.439
+  },
+  {
+    "text": "and you're not repeating yourself even",
+    "start": 1055.36,
+    "duration": 3.84
+  },
+  {
+    "text": "across reference material too. The next",
+    "start": 1057.039,
+    "duration": 4.88
+  },
+  {
+    "text": "way that skills get big is via sediment.",
+    "start": 1059.2,
+    "duration": 5.76
+  },
+  {
+    "text": "And sediment is just a classic thing",
+    "start": 1061.919,
+    "duration": 5.361
+  },
+  {
+    "text": "when people are working on the same set",
+    "start": 1064.96,
+    "duration": 5.12
+  },
+  {
+    "text": "of docs really which is that everyone",
+    "start": 1067.28,
+    "duration": 4.96
+  },
+  {
+    "text": "starts contributing to a shared markdown",
+    "start": 1070.08,
+    "duration": 4.16
+  },
+  {
+    "text": "file. People add their own stuff. They",
+    "start": 1072.24,
+    "duration": 3.679
+  },
+  {
+    "text": "don't feel brave enough to delete and",
+    "start": 1074.24,
+    "duration": 3.6
+  },
+  {
+    "text": "modify anyone else's. And so you just",
+    "start": 1075.919,
+    "duration": 4
+  },
+  {
+    "text": "end up with this huge amount of sediment",
+    "start": 1077.84,
+    "duration": 4.4
+  },
+  {
+    "text": "with often irrelevant material for the",
+    "start": 1079.919,
+    "duration": 4.321
+  },
+  {
+    "text": "skill, especially stuff that hasn't been",
+    "start": 1082.24,
+    "duration": 3.84
+  },
+  {
+    "text": "laid out properly. With a skill with a",
+    "start": 1084.24,
+    "duration": 3.439
+  },
+  {
+    "text": "lot of sediment, you really need to look",
+    "start": 1086.08,
+    "duration": 3.44
+  },
+  {
+    "text": "at structure. That's the first thing you",
+    "start": 1087.679,
+    "duration": 3.281
+  },
+  {
+    "text": "need to do. You need to make sure that",
+    "start": 1089.52,
+    "duration": 3.2
+  },
+  {
+    "text": "the stuff that's been added is relevant",
+    "start": 1090.96,
+    "duration": 4.079
+  },
+  {
+    "text": "for all branches. If it's not, then move",
+    "start": 1092.72,
+    "duration": 4.4
+  },
+  {
+    "text": "it into the correct branches. Or if it's",
+    "start": 1095.039,
+    "duration": 3.921
+  },
+  {
+    "text": "just totally irrelevant, maybe just",
+    "start": 1097.12,
+    "duration": 4.16
+  },
+  {
+    "text": "remove it or kill it. Or maybe there's",
+    "start": 1098.96,
+    "duration": 4
+  },
+  {
+    "text": "stuff in there that's totally stale, in",
+    "start": 1101.28,
+    "duration": 2.96
+  },
+  {
+    "text": "which case you just need to kill it",
+    "start": 1102.96,
+    "duration": 3.12
+  },
+  {
+    "text": "dead. The next failure mode is really",
+    "start": 1104.24,
+    "duration": 4.559
+  },
+  {
+    "text": "common when an agent writes your skills,",
+    "start": 1106.08,
+    "duration": 5.92
+  },
+  {
+    "text": "which are no ops. So things inside the",
+    "start": 1108.799,
+    "duration": 5.521
+  },
+  {
+    "text": "skill that appear to do something, but",
+    "start": 1112,
+    "duration": 4.32
+  },
+  {
+    "text": "don't actually influence the agent's",
+    "start": 1114.32,
+    "duration": 3.599
+  },
+  {
+    "text": "behavior inside the context of the",
+    "start": 1116.32,
+    "duration": 2.8
+  },
+  {
+    "text": "skill. Let's imagine we have an",
+    "start": 1117.919,
+    "duration": 2.88
+  },
+  {
+    "text": "implement skill and we have an entire",
+    "start": 1119.12,
+    "duration": 3.919
+  },
+  {
+    "text": "paragraph of the skill that tells the",
+    "start": 1120.799,
+    "duration": 4.161
+  },
+  {
+    "text": "agent to write a long detailed commit",
+    "start": 1123.039,
+    "duration": 4
+  },
+  {
+    "text": "message. What would happen if you just",
+    "start": 1124.96,
+    "duration": 4.24
+  },
+  {
+    "text": "deleted that paragraph? Well, the agent",
+    "start": 1127.039,
+    "duration": 4.64
+  },
+  {
+    "text": "would probably still write a decent like",
+    "start": 1129.2,
+    "duration": 4.32
+  },
+  {
+    "text": "long commit message. People ask me a lot",
+    "start": 1131.679,
+    "duration": 4.561
+  },
+  {
+    "text": "how I get my skills so small and it's",
+    "start": 1133.52,
+    "duration": 4.8
+  },
+  {
+    "text": "just using these techniques, using",
+    "start": 1136.24,
+    "duration": 4.799
+  },
+  {
+    "text": "deletion tests, using um making sure",
+    "start": 1138.32,
+    "duration": 4.479
+  },
+  {
+    "text": "that I compact things into leading",
+    "start": 1141.039,
+    "duration": 3.441
+  },
+  {
+    "text": "words, I don't have anything irrelevant",
+    "start": 1142.799,
+    "duration": 3.441
+  },
+  {
+    "text": "in there, and I don't have any sediment.",
+    "start": 1144.48,
+    "duration": 3.84
+  },
+  {
+    "text": "And that finally brings us to the full",
+    "start": 1146.24,
+    "duration": 4.559
+  },
+  {
+    "text": "sweep of things. Number one, we check",
+    "start": 1148.32,
+    "duration": 4.08
+  },
+  {
+    "text": "the trigger. We make sure that it's",
+    "start": 1150.799,
+    "duration": 3.601
+  },
+  {
+    "text": "firing at the right times. We check",
+    "start": 1152.4,
+    "duration": 3.92
+  },
+  {
+    "text": "whether we're imposing context load or",
+    "start": 1154.4,
+    "duration": 4.32
+  },
+  {
+    "text": "cognitive load. With structure, we think",
+    "start": 1156.32,
+    "duration": 4.96
+  },
+  {
+    "text": "about branches. We think about um",
+    "start": 1158.72,
+    "duration": 4.4
+  },
+  {
+    "text": "structuring things into steps and",
+    "start": 1161.28,
+    "duration": 4
+  },
+  {
+    "text": "reference and we make sure that um",
+    "start": 1163.12,
+    "duration": 3.679
+  },
+  {
+    "text": "material that's only relevant for one",
+    "start": 1165.28,
+    "duration": 4
+  },
+  {
+    "text": "branch is outside of the main skill.mmd.",
+    "start": 1166.799,
+    "duration": 4.24
+  },
+  {
+    "text": "For steering, we're thinking about",
+    "start": 1169.28,
+    "duration": 4.639
+  },
+  {
+    "text": "condensing text down into leading words",
+    "start": 1171.039,
+    "duration": 4.801
+  },
+  {
+    "text": "and watching those leading words appear",
+    "start": 1173.919,
+    "duration": 4
+  },
+  {
+    "text": "in the reasoning traces. And we're also",
+    "start": 1175.84,
+    "duration": 3.92
+  },
+  {
+    "text": "thinking about leg work. Should we break",
+    "start": 1177.919,
+    "duration": 4.241
+  },
+  {
+    "text": "this skill down further to increase its",
+    "start": 1179.76,
+    "duration": 4.96
+  },
+  {
+    "text": "focus on the current phase by hiding the",
+    "start": 1182.16,
+    "duration": 4.48
+  },
+  {
+    "text": "future phrase phase from it? And with",
+    "start": 1184.72,
+    "duration": 3.6
+  },
+  {
+    "text": "pruning, we're doing a final pruning",
+    "start": 1186.64,
+    "duration": 4.08
+  },
+  {
+    "text": "pass over the entire skill, watching out",
+    "start": 1188.32,
+    "duration": 4.56
+  },
+  {
+    "text": "for sediments, watching out for crud,",
+    "start": 1190.72,
+    "duration": 4.4
+  },
+  {
+    "text": "and watching out especially for no ops.",
+    "start": 1192.88,
+    "duration": 4.56
+  },
+  {
+    "text": "Now, all of this stuff, the best way to",
+    "start": 1195.12,
+    "duration": 4
+  },
+  {
+    "text": "get started with this framework is",
+    "start": 1197.44,
+    "duration": 3.52
+  },
+  {
+    "text": "inside this skill, inside the writing",
+    "start": 1199.12,
+    "duration": 4.24
+  },
+  {
+    "text": "great skills skill. You can check it out",
+    "start": 1200.96,
+    "duration": 4.56
+  },
+  {
+    "text": "from map. Got skills, download it, uh,",
+    "start": 1203.36,
+    "duration": 4.48
+  },
+  {
+    "text": "use it to improve your own skills and",
+    "start": 1205.52,
+    "duration": 4.399
+  },
+  {
+    "text": "maybe even use it to run over some",
+    "start": 1207.84,
+    "duration": 4.24
+  },
+  {
+    "text": "community uh, authored skills so that",
+    "start": 1209.919,
+    "duration": 3.601
+  },
+  {
+    "text": "you can check that the skills that",
+    "start": 1212.08,
+    "duration": 3.2
+  },
+  {
+    "text": "you're actually pulling in are any good.",
+    "start": 1213.52,
+    "duration": 2.8
+  },
+  {
+    "text": "If you want to follow along with my",
+    "start": 1215.28,
+    "duration": 3.2
+  },
+  {
+    "text": "stuff, then I have a newsletter up on",
+    "start": 1216.32,
+    "duration": 4.8
+  },
+  {
+    "text": "aihero.dev. And my plans for the next",
+    "start": 1218.48,
+    "duration": 4.559
+  },
+  {
+    "text": "few months are to release an AI coding",
+    "start": 1221.12,
+    "duration": 4.16
+  },
+  {
+    "text": "crash course, which is an intro to a lot",
+    "start": 1223.039,
+    "duration": 4
+  },
+  {
+    "text": "of the stuff I've been talking about and",
+    "start": 1225.28,
+    "duration": 4
+  },
+  {
+    "text": "how you get off the ground working with",
+    "start": 1227.039,
+    "duration": 4.321
+  },
+  {
+    "text": "engineering and AI. I hope that what",
+    "start": 1229.28,
+    "duration": 4.16
+  },
+  {
+    "text": "I've given you is enough to help you",
+    "start": 1231.36,
+    "duration": 4.72
+  },
+  {
+    "text": "escape from skill hell or at least try",
+    "start": 1233.44,
+    "duration": 4.8
+  },
+  {
+    "text": "to make the bitter journey out of there.",
+    "start": 1236.08,
+    "duration": 3.839
+  },
+  {
+    "text": "I'm so sorry not to be able to attend in",
+    "start": 1238.24,
+    "duration": 3.36
+  },
+  {
+    "text": "person, but thanks for watching. I'll",
+    "start": 1239.919,
+    "duration": 4.321
+  },
+  {
+    "text": "see you very",
+    "start": 1241.6,
+    "duration": 2.64
+  }
+]

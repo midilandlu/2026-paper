@@ -1,0 +1,18 @@
+{
+  "videoId": "spNAUEgq_A8",
+  "title": "The Future Is Domain-Specific Agents - Justin Schroeder, StandardAgents",
+  "channel": "AI Engineer",
+  "channelId": "UCLKPca3kwwd-B59HNr-_lvA",
+  "description": "“Composition over inheritance” has always been a good engineering rule. It may also be the unlock for useful AI. A Gmail agent is fundamentally more powerful than a Gmail skill — and when composed with Sheets, Notion, and GitHub agents, the system gets more capable, more reliable, and cheaper to run. Suddenly, smaller models can do real work, and AI can move from internal copilots to customer-facing products. In this talk, we’ll unpack why this architecture hasn’t become the default yet, what’s been missing, and how to start building toward it today.\n\nSpeakers:\n- Justin Schroeder (StandardAgents): Co-founder of StandardAgents. Compulsive open source builder. Creator of dmux, ArrowJS, FormKit, AutoAnimate, Tempo, zodown\n  X/Twitter: https://x.com/jpschroeder\n  LinkedIn: https://www.linkedin.com/in/jpschroeder/\n  GitHub: https://github.com/justin-schroeder",
+  "duration": 1838,
+  "publishDate": "2026-06-29",
+  "url": "https://www.youtube.com/watch?v=spNAUEgq_A8",
+  "coverImage": "imgs/cover.jpg",
+  "thumbnailUrl": "https://i.ytimg.com/vi/spNAUEgq_A8/maxresdefault.jpg",
+  "language": {
+    "code": "en",
+    "name": "English",
+    "isGenerated": true
+  },
+  "chapters": []
+}

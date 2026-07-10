@@ -1,0 +1,59 @@
+{
+  "videoId": "UzMNBN6xLLA",
+  "title": "9 Things People Get Wrong With My /grill-* skills",
+  "channel": "Matt Pocock",
+  "channelId": "UCswG6FSbgZjbWtdf_hMLaow",
+  "description": "Learn how to master the /grill-with-docs skill and avoid common mistakes that waste context and planning time. This video covers nine key failure modes and how to fix them.\n\n0:00 Overview\n1:28 Low vs high fidelity questions\n3:44 Managing scope correctly\n5:41 Being active not passive\n6:54 Preserving grilling session value\n8:40 Using smart models for grilling\n10:24 Running parallel grilling sessions\n11:26 Summary and key takeaways\n\nThe Cohort: https://aihero.dev/s/kBCOel\n/handoff: https://aihero.dev/s/hnJZQI\n/grill-with-docs: https://aihero.dev/s/kI3sig\n\nKeep up to date with my skills here: https://aihero.dev/s/K42MXx",
+  "duration": 808,
+  "publishDate": "2026-05-25",
+  "url": "https://www.youtube.com/watch?v=UzMNBN6xLLA",
+  "coverImage": "imgs/cover.jpg",
+  "thumbnailUrl": "https://i.ytimg.com/vi/UzMNBN6xLLA/maxresdefault.jpg",
+  "language": {
+    "code": "en",
+    "name": "English",
+    "isGenerated": true
+  },
+  "chapters": [
+    {
+      "title": "Overview",
+      "start": 0,
+      "end": 88
+    },
+    {
+      "title": "Low vs high fidelity questions",
+      "start": 88,
+      "end": 224
+    },
+    {
+      "title": "Managing scope correctly",
+      "start": 224,
+      "end": 341
+    },
+    {
+      "title": "Being active not passive",
+      "start": 341,
+      "end": 414
+    },
+    {
+      "title": "Preserving grilling session value",
+      "start": 414,
+      "end": 520
+    },
+    {
+      "title": "Using smart models for grilling",
+      "start": 520,
+      "end": 624
+    },
+    {
+      "title": "Running parallel grilling sessions",
+      "start": 624,
+      "end": 686
+    },
+    {
+      "title": "Summary and key takeaways",
+      "start": 686,
+      "end": 808
+    }
+  ]
+}

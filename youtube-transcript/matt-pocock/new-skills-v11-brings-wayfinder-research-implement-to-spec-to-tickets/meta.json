@@ -1,0 +1,69 @@
+{
+  "videoId": "A8mokin_YOs",
+  "title": "New Skills! v1.1 brings /wayfinder, /research, /implement, /to-spec, /to-tickets",
+  "channel": "Matt Pocock",
+  "channelId": "UCswG6FSbgZjbWtdf_hMLaow",
+  "description": "Skills v1.1 is here with major updates including renamed flow skills (/to-spec, /to-tickets), improved grilling, a complete development lifecycle, and the new Wayfinder skill for planning large projects.\n\n0:00 v1.1 Is Ready!\n0:37 /to-spec, /to-tickets\n2:34 Grilling skill improvements\n4:06 Complete development lifecycle flow\n6:45 Code review with refactoring smells\n7:52 Introducing Wayfinder for large plans\n11:21 Supporting skills: research and prototype\n12:12 TDD skill updates\n13:15 Migration guide and closing thoughts\n13:59 AI Coding Crash Course announcement\n\nTo update your skills, run: npx skills add mattpocock/skills\n\nMy Skills Repo: https://github.com/mattpocock/skills\n\nKeep up to date with my skills here:\n\nhttps://aihero.dev/skills/subscribe\n\nFollow Matt on Twitter\n\nhttps://twitter.com/mattpocockuk\n\nJoin the Discord:\n\nhttps://aihero.dev/discord",
+  "duration": 911,
+  "publishDate": "2026-07-08",
+  "url": "https://www.youtube.com/watch?v=A8mokin_YOs",
+  "coverImage": "imgs/cover.jpg",
+  "thumbnailUrl": "https://i.ytimg.com/vi/A8mokin_YOs/maxresdefault.jpg",
+  "language": {
+    "code": "en",
+    "name": "English",
+    "isGenerated": true
+  },
+  "chapters": [
+    {
+      "title": "v1.1 Is Ready!",
+      "start": 0,
+      "end": 37
+    },
+    {
+      "title": "/to-spec, /to-tickets",
+      "start": 37,
+      "end": 154
+    },
+    {
+      "title": "Grilling skill improvements",
+      "start": 154,
+      "end": 246
+    },
+    {
+      "title": "Complete development lifecycle flow",
+      "start": 246,
+      "end": 405
+    },
+    {
+      "title": "Code review with refactoring smells",
+      "start": 405,
+      "end": 472
+    },
+    {
+      "title": "Introducing Wayfinder for large plans",
+      "start": 472,
+      "end": 681
+    },
+    {
+      "title": "Supporting skills: research and prototype",
+      "start": 681,
+      "end": 732
+    },
+    {
+      "title": "TDD skill updates",
+      "start": 732,
+      "end": 795
+    },
+    {
+      "title": "Migration guide and closing thoughts",
+      "start": 795,
+      "end": 839
+    },
+    {
+      "title": "AI Coding Crash Course announcement",
+      "start": 839,
+      "end": 911
+    }
+  ]
+}
