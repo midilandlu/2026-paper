@@ -4,7 +4,7 @@ __pycache__/
 *.pyc
 
 # PDF Files
-*.pdf
+# *.pdf  # Un-commented to allow uploading PDF paper files
 
 # OS generated files
 .DS_Store
@@ -24,3 +24,7 @@ transcript.md
 translate/
 *.vtt
 _scratch/
+work/
+*-draft.md
+
+
