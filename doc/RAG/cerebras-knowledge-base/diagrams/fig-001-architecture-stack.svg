@@ -1,0 +1,150 @@
+<svg viewBox="0 0 840 680" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap');
+      text { font-family: 'JetBrains Mono', 'Noto Sans TC', sans-serif; }
+      .title { font-size: 16px; font-weight: 700; fill: #f8fafc; }
+      .subtitle { font-size: 11px; fill: #94a3b8; }
+      .layer-title { font-size: 13px; font-weight: 700; fill: #38bdf8; }
+      .box-title { font-size: 12px; font-weight: 600; fill: #f1f5f9; }
+      .box-desc { font-size: 10px; fill: #94a3b8; }
+      .arrow { stroke: #38bdf8; stroke-width: 1.5; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Title Block -->
+  <text x="30" y="35" class="title">Cerebras 企業級 AI 知識庫垂直分層架構圖</text>
+  <text x="30" y="55" class="subtitle">Exploded Architecture Stack: From Data Sources to Agentic Synthesis</text>
+
+  <!-- Layer 1: Data Sources -->
+  <g transform="translate(30, 80)">
+    <rect width="780" height="90" rx="8" fill="rgba(30, 41, 59, 0.6)" stroke="#334155" stroke-width="1.5"/>
+    <text x="20" y="25" class="layer-title">1. 資料來源層 (Data Sources)</text>
+    
+    <g transform="translate(20, 35)">
+      <rect width="110" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="55" y="25" class="box-title" text-anchor="middle">Slack 對話</text>
+    </g>
+    <g transform="translate(145, 35)">
+      <rect width="110" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="55" y="25" class="box-title" text-anchor="middle">Wiki / 文檔</text>
+    </g>
+    <g transform="translate(270, 35)">
+      <rect width="110" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="55" y="25" class="box-title" text-anchor="middle">程式碼儲存庫</text>
+    </g>
+    <g transform="translate(395, 35)">
+      <rect width="110" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="55" y="25" class="box-title" text-anchor="middle">Netlists 網表</text>
+    </g>
+    <g transform="translate(520, 35)">
+      <rect width="110" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="55" y="25" class="box-title" text-anchor="middle">PRM 技術文件</text>
+    </g>
+    <g transform="translate(645, 35)">
+      <rect width="115" height="42" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+      <text x="57" y="25" class="box-title" text-anchor="middle">自訂資料庫</text>
+    </g>
+  </g>
+
+  <line x1="420" y1="170" x2="420" y2="195" class="arrow"/>
+
+  <!-- Layer 2: Ingestion & Distillation -->
+  <g transform="translate(30, 200)">
+    <rect width="780" height="90" rx="8" fill="rgba(6, 78, 59, 0.3)" stroke="#059669" stroke-width="1.5"/>
+    <text x="20" y="25" class="layer-title" fill="#34d399">2. 攝取與蒸餾處理層 (Ingestion &amp; Distillation Layer)</text>
+
+    <g transform="translate(20, 35)">
+      <rect width="170" height="42" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+      <text x="85" y="20" class="box-title" text-anchor="middle">Socket Mode 即時推播</text>
+      <text x="85" y="34" class="box-desc" text-anchor="middle">無須頻繁輪詢 Web API</text>
+    </g>
+    <g transform="translate(210, 35)">
+      <rect width="170" height="42" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+      <text x="85" y="20" class="box-title" text-anchor="middle">LLM 討論串摘要蒸餾</text>
+      <text x="85" y="34" class="box-desc" text-anchor="middle">提煉問題、解答與系統參照</text>
+    </g>
+    <g transform="translate(400, 35)">
+      <rect width="170" height="42" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+      <text x="85" y="20" class="box-title" text-anchor="middle">Burst 爆發段落過濾</text>
+      <text x="85" y="34" class="box-desc" text-anchor="middle">高 IDF 詞彙與表情符號加權</text>
+    </g>
+    <g transform="translate(590, 35)">
+      <rect width="170" height="42" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+      <text x="85" y="20" class="box-title" text-anchor="middle">CocoIndex 程式碼切塊</text>
+      <text x="85" y="34" class="box-desc" text-anchor="middle">語法邊界切分與增量同步</text>
+    </g>
+  </g>
+
+  <line x1="420" y1="290" x2="420" y2="315" class="arrow"/>
+
+  <!-- Layer 3: Storage Layer -->
+  <g transform="translate(30, 320)">
+    <rect width="780" height="90" rx="8" fill="rgba(76, 29, 149, 0.3)" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="20" y="25" class="layer-title" fill="#a78bfa">3. 核心統一儲存庫 (Unified PostgreSQL Storage)</text>
+
+    <g transform="translate(40, 35)">
+      <rect width="700" height="42" rx="6" fill="#3b0764" stroke="#8b5cf6" stroke-width="1.5"/>
+      <text x="350" y="20" class="box-title" text-anchor="middle">Postgres 統一向量與全文資料表 (Single Embeddings Table)</text>
+      <text x="350" y="34" class="box-desc" text-anchor="middle">包含：原始文件摘要 (Document) | 向量嵌入 (pgvector) | 關鍵字索引 (GIN Index) | 元資料 (Metadata &amp; Timestamps)</text>
+    </g>
+  </g>
+
+  <line x1="420" y1="410" x2="420" y2="435" class="arrow"/>
+
+  <!-- Layer 4: Retrieval & Fusion -->
+  <g transform="translate(30, 440)">
+    <rect width="780" height="90" rx="8" fill="rgba(120, 53, 15, 0.3)" stroke="#d97706" stroke-width="1.5"/>
+    <text x="20" y="25" class="layer-title" fill="#fbbf24">4. 混合檢索與融合層 (Hybrid Retrieval &amp; Fusion)</text>
+
+    <g transform="translate(20, 35)">
+      <rect width="170" height="42" rx="6" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+      <text x="85" y="20" class="box-title" text-anchor="middle">多路混合檢索器</text>
+      <text x="85" y="34" class="box-desc" text-anchor="middle">Vector + Full-Text + Ripgrep</text>
+    </g>
+    <g transform="translate(210, 35)">
+      <rect width="170" height="42" rx="6" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+      <text x="85" y="20" class="box-title" text-anchor="middle">多訊號評分機制</text>
+      <text x="85" y="34" class="box-desc" text-anchor="middle">IDF 權重 + 時間衰減 (Age Decay)</text>
+    </g>
+    <g transform="translate(400, 35)">
+      <rect width="170" height="42" rx="6" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+      <text x="85" y="20" class="box-title" text-anchor="middle">RRF 倒數排名融合</text>
+      <text x="85" y="34" class="box-desc" text-anchor="middle">Score = Sum 1 / (60 + Rank)</text>
+    </g>
+    <g transform="translate(590, 35)">
+      <rect width="170" height="42" rx="6" fill="#451a03" stroke="#f59e0b" stroke-width="1"/>
+      <text x="85" y="20" class="box-title" text-anchor="middle">Reranker 重排與上下文擴展</text>
+      <text x="85" y="34" class="box-desc" text-anchor="middle">小模型二次精選 + 相鄰段落補充</text>
+    </g>
+  </g>
+
+  <line x1="420" y1="530" x2="420" y2="555" class="arrow"/>
+
+  <!-- Layer 5: Interfaces -->
+  <g transform="translate(30, 560)">
+    <rect width="780" height="90" rx="8" fill="rgba(8, 51, 68, 0.4)" stroke="#0284c7" stroke-width="1.5"/>
+    <text x="20" y="25" class="layer-title" fill="#38bdf8">5. 使用者與代理應用層 (Client Interfaces &amp; Agents)</text>
+
+    <g transform="translate(60, 35)">
+      <rect width="310" height="42" rx="6" fill="#0c4a6e" stroke="#0ea5e9" stroke-width="1"/>
+      <text x="155" y="20" class="box-title" text-anchor="middle">MCP 介面 (Claude Code / IDE)</text>
+      <text x="155" y="34" class="box-desc" text-anchor="middle">直接暴露檢索原語，由 Client 端主導 Agentic 流程</text>
+    </g>
+    <g transform="translate(410, 35)">
+      <rect width="310" height="42" rx="6" fill="#0c4a6e" stroke="#0ea5e9" stroke-width="1"/>
+      <text x="155" y="20" class="box-title" text-anchor="middle">Web UI 端到端 AI 代理</text>
+      <text x="155" y="34" class="box-desc" text-anchor="middle">Planner (規劃) -> Executor (執行) -> Synthesis (合成)</text>
+    </g>
+  </g>
+</svg>

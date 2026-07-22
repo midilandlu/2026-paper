@@ -1,0 +1,69 @@
+<svg viewBox="0 0 840 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap');
+      text { font-family: 'JetBrains Mono', 'Noto Sans TC', sans-serif; }
+      .title { font-size: 16px; font-weight: 700; fill: #f8fafc; }
+      .subtitle { font-size: 11px; fill: #94a3b8; }
+      .box-title { font-size: 12px; font-weight: 600; fill: #f1f5f9; }
+      .box-desc { font-size: 10px; fill: #94a3b8; }
+      .arrow { stroke: #f59e0b; stroke-width: 1.5; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b"/>
+    </marker>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="30" y="35" class="title">專案分區與共享資料來源關聯架構 (Projects &amp; Scoped Search)</text>
+  <text x="30" y="55" class="subtitle">Projects reference shared data sources flexibly without redundant data duplication</text>
+
+  <!-- Left: Projects (Query Scopes) -->
+  <g transform="translate(40, 80)">
+    <!-- Compiler Project -->
+    <g transform="translate(0, 20)">
+      <rect width="240" height="110" rx="8" fill="rgba(8, 51, 68, 0.5)" stroke="#0ea5e9" stroke-width="1.5"/>
+      <text x="120" y="30" class="box-title" fill="#38bdf8" text-anchor="middle">編譯器專案 (Compiler Project)</text>
+      <text x="120" y="50" class="box-desc" text-anchor="middle">編譯器團隊的預設查詢範圍</text>
+      <rect x="20" y="65" width="200" height="28" rx="4" fill="#0c4a6e"/>
+      <text x="120" y="83" class="box-desc" fill="#7dd3fc" text-anchor="middle">Default Query Scope: Compiler</text>
+    </g>
+
+    <!-- Platform Project -->
+    <g transform="translate(0, 170)">
+      <rect width="240" height="110" rx="8" fill="rgba(76, 29, 149, 0.4)" stroke="#8b5cf6" stroke-width="1.5"/>
+      <text x="120" y="30" class="box-title" fill="#a78bfa" text-anchor="middle">雲端平台專案 (Platform Project)</text>
+      <text x="120" y="50" class="box-desc" text-anchor="middle">平台基礎設施團隊的查詢範圍</text>
+      <rect x="20" y="65" width="200" height="28" rx="4" fill="#3b0764"/>
+      <text x="120" y="83" class="box-desc" fill="#c4b5fd" text-anchor="middle">Default Query Scope: Platform</text>
+    </g>
+  </g>
+
+  <!-- Right: Shared Data Sources -->
+  <g transform="translate(500, 70)">
+    <rect width="300" height="310" rx="8" fill="rgba(30, 41, 59, 0.4)" stroke="#475569" stroke-width="1.5"/>
+    <text x="150" y="25" class="box-title" fill="#fbbf24" text-anchor="middle">企業共享資料來源 (Data Sources)</text>
+
+    <g transform="translate(20, 38)"><rect width="260" height="40" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/><text x="130" y="24" class="box-title" text-anchor="middle">Compiler Slack 頻道</text></g>
+    <g transform="translate(20, 90)"><rect width="260" height="40" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/><text x="130" y="24" class="box-title" text-anchor="middle">Monolith 主程式碼庫</text></g>
+    <g transform="translate(20, 142)"><rect width="260" height="40" rx="6" fill="#1e293b" stroke="#fbbf24" stroke-width="2"/><text x="130" y="24" class="box-title" fill="#fbbf24" text-anchor="middle">共享事件頻道 (Shared Incidents) ★</text></g>
+    <g transform="translate(20, 194)"><rect width="260" height="40" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/><text x="130" y="24" class="box-title" text-anchor="middle">Platform 平台程式碼庫</text></g>
+    <g transform="translate(20, 246)"><rect width="260" height="40" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/><text x="130" y="24" class="box-title" text-anchor="middle">Cloud Runbooks 雲端維運手冊</text></g>
+  </g>
+
+  <!-- Connectors from Compiler Project to Data Sources -->
+  <line x1="280" y1="130" x2="515" y2="128" class="arrow"/>
+  <line x1="280" y1="140" x2="515" y2="180" class="arrow"/>
+  <line x1="280" y1="150" x2="515" y2="232" class="arrow"/>
+
+  <!-- Connectors from Platform Project to Data Sources -->
+  <line x1="280" y1="260" x2="515" y2="232" class="arrow"/>
+  <line x1="280" y1="270" x2="515" y2="284" class="arrow"/>
+  <line x1="280" y1="280" x2="515" y2="336" class="arrow"/>
+</svg>

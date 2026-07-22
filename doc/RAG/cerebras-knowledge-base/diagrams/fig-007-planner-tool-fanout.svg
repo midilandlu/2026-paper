@@ -1,0 +1,72 @@
+<svg viewBox="0 0 840 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap');
+      text { font-family: 'JetBrains Mono', 'Noto Sans TC', sans-serif; }
+      .title { font-size: 16px; font-weight: 700; fill: #f8fafc; }
+      .subtitle { font-size: 11px; fill: #94a3b8; }
+      .box-title { font-size: 12px; font-weight: 600; fill: #f1f5f9; }
+      .box-desc { font-size: 10px; fill: #94a3b8; }
+      .arrow { stroke: #38bdf8; stroke-width: 1.5; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="30" y="35" class="title">查詢規劃、工具平行扇出與答案合成流程 (Planner &amp; Fan-out Pipeline)</text>
+  <text x="30" y="55" class="subtitle">Query decomposition, parallel tool execution, evidence normalization, and final LLM synthesis</text>
+
+  <!-- Step 1: User Question -->
+  <g transform="translate(30, 185)">
+    <rect width="120" height="65" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="60" y="28" class="box-title" text-anchor="middle">使用者問題</text>
+    <text x="60" y="46" class="box-desc" text-anchor="middle">User Query</text>
+  </g>
+
+  <line x1="150" y1="217" x2="195" y2="217" class="arrow"/>
+
+  <!-- Step 2: Planner LLM -->
+  <g transform="translate(200, 185)">
+    <rect width="140" height="65" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1.5"/>
+    <text x="70" y="28" class="box-title" text-anchor="middle">規劃器 (Planner)</text>
+    <text x="70" y="46" class="box-desc" text-anchor="middle">輕量級 LLM 分析</text>
+  </g>
+
+  <!-- Step 3: Tool Fanout -->
+  <line x1="340" y1="217" x2="380" y2="217" class="arrow"/>
+  <g transform="translate(380, 70)">
+    <rect width="180" height="300" rx="8" fill="rgba(30, 41, 59, 0.5)" stroke="#475569" stroke-width="1.5"/>
+    <text x="90" y="25" class="box-title" fill="#fbbf24" text-anchor="middle">平行工具扇出</text>
+
+    <g transform="translate(15, 38)"><rect width="150" height="38" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">search (混合搜尋)</text></g>
+    <g transform="translate(15, 86)"><rect width="150" height="38" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">search_slack (Slack檢索)</text></g>
+    <g transform="translate(15, 134)"><rect width="150" height="38" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">search_code (代碼檢索)</text></g>
+    <g transform="translate(15, 182)"><rect width="150" height="38" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">recent_prs (近期PR)</text></g>
+    <g transform="translate(15, 230)"><rect width="150" height="38" rx="4" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">who_knows (專家比對)</text></g>
+  </g>
+
+  <!-- Step 4: Evidence Normalization -->
+  <line x1="560" y1="217" x2="600" y2="217" class="arrow"/>
+  <g transform="translate(605, 125)">
+    <rect width="195" height="70" rx="6" fill="#3b0764" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="97" y="30" class="box-title" text-anchor="middle">證據標準化 (Evidence)</text>
+    <text x="97" y="48" class="box-desc" text-anchor="middle">分數、時效性與來源標記</text>
+  </g>
+
+  <line x1="702" y1="195" x2="702" y2="235" class="arrow"/>
+
+  <!-- Step 5: Synthesis LLM -->
+  <g transform="translate(605, 240)">
+    <rect width="195" height="70" rx="6" fill="#0c4a6e" stroke="#0ea5e9" stroke-width="1.5"/>
+    <text x="97" y="30" class="box-title" text-anchor="middle">最終答案合成 (Synthesis)</text>
+    <text x="97" y="48" class="box-desc" text-anchor="middle">產生包含出處引用的完整回答</text>
+  </g>
+</svg>

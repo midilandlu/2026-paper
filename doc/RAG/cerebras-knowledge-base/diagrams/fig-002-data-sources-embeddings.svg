@@ -1,0 +1,75 @@
+<svg viewBox="0 0 840 480" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&amp;family=Noto+Sans+TC:wght@400;500;700&amp;display=swap');
+      text { font-family: 'JetBrains Mono', 'Noto Sans TC', sans-serif; }
+      .title { font-size: 16px; font-weight: 700; fill: #f8fafc; }
+      .subtitle { font-size: 11px; fill: #94a3b8; }
+      .box-title { font-size: 12px; font-weight: 600; fill: #f1f5f9; }
+      .box-desc { font-size: 10px; fill: #94a3b8; }
+      .arrow { stroke: #38bdf8; stroke-width: 1.5; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0f172a"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Title -->
+  <text x="30" y="35" class="title">多資料來源匯入單一可查詢嵌入資料表 (Unified Queryable Embeddings Table)</text>
+  <text x="30" y="55" class="subtitle">Every source lands in the same Postgres embeddings table via standardized connectors</text>
+
+  <!-- Left: Data Sources -->
+  <g transform="translate(30, 80)">
+    <rect width="180" height="360" rx="8" fill="rgba(30, 41, 59, 0.4)" stroke="#334155" stroke-width="1.5"/>
+    <text x="90" y="25" class="box-title" fill="#38bdf8" text-anchor="middle">多異質資料來源</text>
+    
+    <g transform="translate(15, 40)"><rect width="150" height="38" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">Slack 討論區塊</text></g>
+    <g transform="translate(15, 90)"><rect width="150" height="38" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">Wiki / Confluence</text></g>
+    <g transform="translate(15, 140)"><rect width="150" height="38" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">程式碼儲存庫</text></g>
+    <g transform="translate(15, 190)"><rect width="150" height="38" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">Netlists (晶片網表)</text></g>
+    <g transform="translate(15, 240)"><rect width="150" height="38" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">PRM 技術規格文件</text></g>
+    <g transform="translate(15, 290)"><rect width="150" height="38" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="1"/><text x="75" y="23" class="box-title" text-anchor="middle">自訂資料庫外掛</text></g>
+  </g>
+
+  <!-- Connectors Arrow -->
+  <line x1="210" y1="260" x2="280" y2="260" class="arrow"/>
+  <text x="245" y="245" class="box-desc" text-anchor="middle" fill="#38bdf8">統一連接器介面</text>
+
+  <!-- Center: Single Postgres Embeddings Table -->
+  <g transform="translate(285, 80)">
+    <rect width="270" height="360" rx="8" fill="rgba(76, 29, 149, 0.3)" stroke="#8b5cf6" stroke-width="2"/>
+    <text x="135" y="30" class="box-title" fill="#a78bfa" text-anchor="middle">PostgreSQL 統一嵌入資料表</text>
+    <text x="135" y="48" class="box-desc" fill="#c4b5fd" text-anchor="middle">Single Embeddings Table</text>
+
+    <!-- Cylinder graphic / Table schema -->
+    <g transform="translate(25, 75)">
+      <rect width="220" height="250" rx="6" fill="#2e1065" stroke="#a78bfa" stroke-width="1"/>
+      
+      <g transform="translate(15, 20)"><rect width="190" height="36" rx="4" fill="#4c1d95"/><text x="95" y="22" class="box-title" text-anchor="middle">文件內容 (Document)</text></g>
+      <g transform="translate(15, 65)"><rect width="190" height="36" rx="4" fill="#4c1d95"/><text x="95" y="22" class="box-title" text-anchor="middle">向量嵌入 (Embedding)</text></g>
+      <g transform="translate(15, 110)"><rect width="190" height="36" rx="4" fill="#4c1d95"/><text x="95" y="22" class="box-title" text-anchor="middle">富元資料 (Metadata)</text></g>
+      <g transform="translate(15, 155)"><rect width="190" height="36" rx="4" fill="#4c1d95"/><text x="95" y="22" class="box-title" text-anchor="middle">來源與時間戳記 (Source/TS)</text></g>
+      <g transform="translate(15, 200)"><rect width="190" height="36" rx="4" fill="#5b21b6" stroke="#c4b5fd" stroke-dasharray="4,4"/><text x="95" y="22" class="box-title" fill="#f5f3ff" text-anchor="middle">全文 GIN 索引 (Full-Text)</text></g>
+    </g>
+  </g>
+
+  <!-- Query Arrow -->
+  <line x1="555" y1="260" x2="625" y2="260" class="arrow"/>
+  <text x="590" y="245" class="box-desc" text-anchor="middle" fill="#38bdf8">統一檢索介面</text>
+
+  <!-- Right: Query Consumers -->
+  <g transform="translate(630, 80)">
+    <rect width="180" height="360" rx="8" fill="rgba(6, 78, 59, 0.4)" stroke="#059669" stroke-width="1.5"/>
+    <text x="90" y="30" class="box-title" fill="#34d399" text-anchor="middle">查詢與應用端</text>
+
+    <g transform="translate(15, 60)"><rect width="150" height="60" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/><text x="75" y="28" class="box-title" text-anchor="middle">MCP 工具</text><text x="75" y="44" class="box-desc" text-anchor="middle">Claude Code / IDE</text></g>
+    <g transform="translate(15, 150)"><rect width="150" height="60" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/><text x="75" y="28" class="box-title" text-anchor="middle">Web UI 知識庫</text><text x="75" y="44" class="box-desc" text-anchor="middle">問答介面</text></g>
+    <g transform="translate(15, 240)"><rect width="150" height="60" rx="6" fill="#064e3b" stroke="#10b981" stroke-width="1"/><text x="75" y="28" class="box-title" text-anchor="middle">AI 代理人 (Agents)</text><text x="75" y="44" class="box-desc" text-anchor="middle">自動化腳本與工作流</text></g>
+  </g>
+</svg>
