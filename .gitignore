@@ -25,6 +25,21 @@ translate/
 *.vtt
 _scratch/
 work/
-*-draft.md
 
+# Temporary Scripts
+fix*.ps1
+fix*.js
+*revise*.py
 
+# Caches and Workspaces
+.mcp.json
+.agents/
+.baoyu-skills/
+arxiv_source/
+
+# Intermediate Translation Files
+chunks/
+*draft*
+*analysis*
+*critique*
+*prompt*
