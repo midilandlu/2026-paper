@@ -88,7 +88,7 @@ AI 在翻譯時會讀取您的偏好設定。您可以透過編輯位於您系�
     * **機構設計的 AI 應用** (如 3D CAD AI Agents、工程標準自動檢查)
 * **`doc/LLM/`**
   * 存放大型語言模型（LLM）相關論文的原始 PDF、Markdown 轉換稿與繁體中文翻譯，目前聚焦於 AI 輔助認知流程中的歸因謬誤等主題。
-  * 另收錄業界最佳實務的繁體中文精要導讀，例如 Anthropic〈The AI-native SDLC playbook〉——AI 原生軟體開發生命週期的六階段戰術、治理機制（skills／hooks／managed settings）與衡量指標。
+  * 另收錄業界最佳實務的繁體中文精要導讀，例如 Anthropic〈The AI-native SDLC playbook〉——AI 原生軟體開發生命週期的六階段戰術、治理機制（skills／hooks／managed settings）與衡量指標；並附一份依原文章節順序整理的逐節導讀，附圖以原文網址引用。
 * **`doc/CAD/`**
   * 收錄與 CAD／工程設計工具整合相關的筆記，例如 Claude 與 PTC Creo Parametric 透過 MCP 整合的教學紀錄。
 * **`doc/Issue-Risk-Management/`**
